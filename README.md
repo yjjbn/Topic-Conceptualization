@@ -22,4 +22,8 @@ uv run python initial_classify.py --model [MODEL NAME]
 
 to apply the codebook, run in 02_experiment:
 uv run python apply_codebook.py --model [MODEL NAME] --codebook_path "../01_codebook_dev/out/[NAME OF CODEBOOK].json"
+<<<<<<< HEAD
 -> will output csv with classifications
+=======
+-> will output csv with classifications
+>>>>>>> 7447a1752ccddc9124b0644acf85ce0bb5cdbf30
