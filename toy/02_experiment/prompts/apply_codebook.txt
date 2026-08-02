@@ -1,0 +1,17 @@
+I will give you a qualitative codebook and a text document to classify.
+Relying solely on the information and instructions in the codebook, classify the supplied document using one of these labels:
+
+"1": The document is a case of populism.
+"0": The document is not a case of populism.
+
+Return only a JSON object with these fields:
+
+{
+"label": "1 or 0",
+"decision_basis": "A concise explanation of the rationale for the classification decision."
+}
+
+Requirements:
+* Use only the labels "1" and "0".
+* Do not include Markdown.
+* Do not include text before or after the JSON object.

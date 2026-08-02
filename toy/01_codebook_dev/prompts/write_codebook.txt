@@ -1,0 +1,45 @@
+You previously classified a set of documents as cases of "populism" or not.
+I will give you your original classifications, and your task is to write a qualitative codebook that communicates how you conceptualized and coded the concept "populism."
+
+The input is a JSON object containing:
+
+* `original_classification_instructions`: the instructions used to classify each document;
+* `classification_records`: the complete set of documents, assigned labels, and rationales for each label.
+
+Each classification record contains:
+
+* `text`;
+* `label`;
+* `decision_basis`.
+
+Based on these classification records, fill in the sections of the codebook below.
+The codebook should reflect how you originally conceptualized "populism," such that an external coder can identify "populism" in a new set of documents in the same way.
+
+Your codebook should contain the following sections:
+1) Detailed definition of populism
+2) Inclusion criteria
+3) A text that was classified as population that you think helps illustrate the inclusion criteria
+4) A second text that was classified as population that helps illustrate the inclusion criteria
+5) A third text that was classified as population that helps illustrate the inclusion criteria
+6) Exclusion criteria
+7) A text that was NOT classified as population that you think helps illustrate the exclusion criteria
+8) A second text that was NOT classified as population that helps illustrate the exclusion criteria
+9) A third text that was NOT classified as population that helps illustrate the exclusion criteria
+10) Decision rules for adjudicating ambiguous or borderline cases
+
+Return only a JSON with these fields:
+
+{
+  "definition": "Detailed definition of populism",
+  "inclusion_criteria": "Inclusion criteria",
+  "populism_example_1": "A text that illustrates the inclusion criteria",
+  "populism_example_2": "A text that illustrates the inclusion criteria",
+  "populism_example_3": "A text that illustrates the inclusion criteria",
+  "exclusion_criteria": "Exclusion criteria",
+  "non_populism_example_1": "A text that illustrates the exclusion criteria",
+  "non_populism_example_2": "A text that illustrates the exclusion criteria",
+  "non_populism_example_3": "A text that illustrates the exclusion criteria",
+  "decision_rules": "Decision rules for adjudicating ambiguous or borderline cases"
+}
+
+Do not include any text outside the JSON.
