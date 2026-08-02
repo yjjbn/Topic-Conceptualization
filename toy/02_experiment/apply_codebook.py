@@ -129,7 +129,7 @@ def main() -> None:
                 api_key,
                 {
                     "model": args.model,
-                    "instructions": application_prompt,
+                    "instructions": instructions,
                     "input": json.dumps(model_input, ensure_ascii=False, indent=2),
                     "temperature": 0,
                     "max_output_tokens": args.max_output_tokens,

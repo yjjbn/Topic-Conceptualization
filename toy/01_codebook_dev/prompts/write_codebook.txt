@@ -18,13 +18,13 @@ The codebook should reflect how you originally conceptualized "populism," such t
 Your codebook should contain the following sections:
 1) Detailed definition of populism
 2) Inclusion criteria
-3) A text that was classified as population that you think helps illustrate the inclusion criteria
-4) A second text that was classified as population that helps illustrate the inclusion criteria
-5) A third text that was classified as population that helps illustrate the inclusion criteria
+3) A text that was classified as populism that you think helps illustrate the inclusion criteria
+4) A second text that was classified as populism that helps illustrate the inclusion criteria
+5) A third text that was classified as populism that helps illustrate the inclusion criteria
 6) Exclusion criteria
-7) A text that was NOT classified as population that you think helps illustrate the exclusion criteria
-8) A second text that was NOT classified as population that helps illustrate the exclusion criteria
-9) A third text that was NOT classified as population that helps illustrate the exclusion criteria
+7) A text that was NOT classified as populism that you think helps illustrate the exclusion criteria
+8) A second text that was NOT classified as populism that helps illustrate the exclusion criteria
+9) A third text that was NOT classified as populism that helps illustrate the exclusion criteria
 10) Decision rules for adjudicating ambiguous or borderline cases
 
 Return only a JSON with these fields:
