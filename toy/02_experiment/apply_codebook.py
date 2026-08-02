@@ -166,10 +166,10 @@ def main() -> None:
             print(f"ERROR: {error}")
 
     results_df = documents.with_columns(
-        pl.Series("label", labels, dtype=pl.String),
-        pl.Series("decision_basis", decision_explanations, dtype=pl.String),
-        pl.Series("confidence", confidences, dtype=pl.String),
-        pl.Series("error", errors, dtype=pl.String),
+        pl.Series("label", labels, dtype=pl.String, strict=False),
+        pl.Series("decision_basis", decision_explanations, dtype=pl.String, strict=False),
+        pl.Series("confidence", confidences, dtype=pl.Int64, strict=False),
+        pl.Series("error", errors, dtype=pl.String, strict=False),
     )
 
     args.out_folder.mkdir(parents=True, exist_ok=True)
