@@ -20,13 +20,13 @@ Your codebook should contain the following sections:
 
 2) Inclusion criteria. Supplement your definition with a set of more specific inclusion criteria. These are criteria that, if the labelled text meets one or some combination of them, the text should be classified as "populism." Make explicit how to apply the criteria, for example, if a specific combination of criteria are needed to classify a text as "populism." 
 
-3) Example text(s) that meets the inclusion criteria and so should be coded as populism.
+3) Example text(s) that meets the inclusion criteria and so should be coded as populism. Explain how the inclusion criteria applies to the example(s).
 
-4) Example text(s) that does not meet the inclusion criteria and so should not be coded as populism.
+4) Example text(s) that does not meet the inclusion criteria and so should not be coded as populism. Explain why the inclusion criteria does not apply to the example(s).
 
 5) Edge-case rules. Based on cases with less than 50% confidence, write a set of rules that specify how ambiguous or special cases should be coded. These are meant to help the coder in cases where the inclusion criteria might be difficult to apply.
 
-6) Example text(s) that follows the edge-case rules and so should be coded as populism.
+6) Example text(s) that follows the edge-case rules and so should be coded as populism. Explain how the edge-case rule applies to the example(s).
 
 Return only a JSON with these fields:
 
