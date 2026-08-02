@@ -1,0 +1,12 @@
+[
+  {
+    "document_id": "1432_28",
+    "text": "And so we continue to build our strength, not to wage war, but to be spared war. We can judge today the need of this strength by a simple question: would we feel safe or secure as a nation if we, say five years ago in the past, had already ceased perfecting our military weapons and even abandoned our military draft? That is no formula for peace. It is a design for disaster.",
+    "error": "ValueError: Response did not contain output text. Status: 'completed'"
+  },
+  {
+    "document_id": "2279_1",
+    "text": "The fact is that Richard Nixon's position is a secret because he has neglected the Occupational Safety and Health Act and torpedoed its enforcement. He has catered to large corporate allies who don't want to carry the burden of making their facilities safe for their employees. He has vetoed funds for more industrial hygienists and safety compliance officers; he has packed the Labor Department with businessmen who are trying to gut the Act; he is parceling large parts of the Act out to the state safety departments, who tend to downplay the law because they don't wish to offend their local industries.",
+    "error": "ValueError: Response did not contain output text. Status: 'completed'"
+  }
+]
