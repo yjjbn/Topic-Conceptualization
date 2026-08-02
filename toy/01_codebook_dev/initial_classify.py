@@ -147,6 +147,7 @@ def main() -> None:
             classification = json.loads(output_text)
             label = str(classification.get("label"))
             decision_basis = classification.get("decision_basis")
+            confidence = classification.get("confidence")
 
             if label not in allowed_labels:
                 raise ValueError(f"Invalid label: {label!r}")
@@ -155,10 +156,11 @@ def main() -> None:
                 raise ValueError("Response was missing decision_basis.")
 
             record = {
-            #    "document_id": document_id,
+                "document_id": document_id,
                 "text": document_text,
                 "label": label,
                 "decision_basis": decision_basis,
+                "confidence": confidence,
             }
 
             completed_by_id[document_id] = record
@@ -203,7 +205,14 @@ def main() -> None:
 
     codebook_input = {
         "original_classification_instructions": classification_prompt,
-        "classification_records": classifications,
+        "classification_records": [
+            {
+                "text": record["text"],
+                "label": record["label"],
+                "decision_basis": record["decision_basis"],
+                "confidence": record["confidence"]
+            } for record in classifications
+        ]
     }
 
     print(f"\nGenerating codebook with {args.model}...")

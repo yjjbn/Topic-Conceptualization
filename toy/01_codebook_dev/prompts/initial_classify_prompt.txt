@@ -10,6 +10,7 @@ Return only a JSON object with these fields:
 {
 "label": "1 or 0",
 "decision_basis": "A concise explanation of the rationale for the classification decision."
+"confidence": "A score on a scale of 0-100 that indicates how confident you are in your decision, where 0 is not confident at all and 100 is extremely confident."
 }
 
 Requirements:
