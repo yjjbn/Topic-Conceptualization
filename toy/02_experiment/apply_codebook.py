@@ -108,6 +108,7 @@ def main() -> None:
 
     labels = []
     decision_explanations = []
+    confidences = []
     errors = []
 
     for position, document in enumerate(documents.iter_rows(named=True), start=1):
@@ -141,6 +142,7 @@ def main() -> None:
             classification = json.loads(output_text)
             label = str(classification.get("label"))
             decision_basis = classification.get("decision_basis")
+            confidence = classification.get("confidence")
 
             if label not in args.labels:
                 raise ValueError(f"Unexpected label: {label!r}")
@@ -150,6 +152,7 @@ def main() -> None:
 
             labels.append(label)
             decision_explanations.append(decision_basis)
+            confidences.append(confidence)
             errors.append(None)
 
             print(f"{label}: {decision_basis}")
@@ -157,6 +160,7 @@ def main() -> None:
         except Exception as error:
             labels.append(None)
             decision_explanations.append(None)
+            confidences.append(None)
             errors.append(f"{type(error).__name__}: {error}")
 
             print(f"ERROR: {error}")
@@ -164,6 +168,7 @@ def main() -> None:
     results_df = documents.with_columns(
         pl.Series("label", labels, dtype=pl.String),
         pl.Series("decision_basis", decision_explanations, dtype=pl.String),
+        pl.Series("confidence", confidences, dtype=pl.String),
         pl.Series("error", errors, dtype=pl.String),
     )
 
