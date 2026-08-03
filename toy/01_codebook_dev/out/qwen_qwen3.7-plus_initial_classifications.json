@@ -1,0 +1,16 @@
+[
+  {
+    "document_id": "1047_1",
+    "text": "There is some very important business before our nation, as you all know, and it encourages me to think that these many groups we see all the time have a strong feeling we had better leave the management of our affairs in the hands of the Democratic party. And one reason for this is that it has become harder and harder instead of easier and easier to tell precisely what the Republican party stands for in this campaign. I confess it is early in the morning to be harsh about anybody and to be very critical of anybody. I don't want to be critical or harsh. I have in mind that we are now only a week from our election and we still don't know precisely what the Republicans propose to do about much of anything. We know where they stand on the matter of a new labor relations law, for example. That is precisely where they stood for the past five years. That is an old Republican position.",
+    "label": "0",
+    "decision_basis": "The document is standard partisan campaign rhetoric criticizing the opposing party's lack of a clear platform. It does not exhibit core populist characteristics such as an anti-establishment stance, a dichotomy between the pure people and a corrupt elite, or the claim to be the sole legitimate representative of the general will.",
+    "confidence": 95
+  },
+  {
+    "document_id": "1585_1",
+    "text": "I don't believe this country can afford another recession.  The demands placed upon us are too great.  Every time that we fail to meet our problems, every time that we fail to move our economy forward, we fail not only our own people, but we fail all those who look to us for leadership.  My judgment is that there is a very clear choice between the Republican and the Democratic parties.  They stand for different things, and they have stood for different things all through this century.  Woodrow Wilson, running in 1912, said that the Republican party idea of policy is to sit on the lid.  Franklin Roosevelt carried the fight in 1932 and 1936 and Harry Truman carried the fight in 1948, and on the issues which matter, housing, social security, medical care for the aged, minimum wage, development of the resources of this country, I believe the Democratic party looks forward.  I believe it has presented to this country programs which move the economy of this country.",
+    "label": "0",
+    "decision_basis": "The document consists of standard partisan political rhetoric contrasting the historical policy records of the Democratic and Republican parties. It lacks the core defining features of populism, such as an anti-establishment stance, a dichotomy between a pure people and a corrupt elite, or the claim that the speaker alone represents the true will of the people.",
+    "confidence": 95
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "document_id": "2228_4",
+    "text": "We've learned the concerns of tens of thousands of Americans in the communities where people live and work. And based on the first days of our journey, I am all the more certain that the American people want this nation to become once again the great and good land it ought to be. The people are tired of war and government by the special interests.",
+    "error": "JSONDecodeError: Expecting ',' delimiter: line 4 column 1 (char 194)"
+  }
+]
