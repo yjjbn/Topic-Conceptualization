@@ -23,7 +23,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--labels", nargs="+", default=["1", "0"])
     parser.add_argument("--id-column", default="doc_id")
     parser.add_argument("--text-column", default="text")
-    parser.add_argument("--max-output-tokens", type=int, default=1000)
+    parser.add_argument("--max-output-tokens", type=int, default=100000)
     parser.add_argument("--max-retries", type=int, default=5)
     return parser.parse_args()
 
