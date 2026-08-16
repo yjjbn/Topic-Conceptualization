@@ -1,0 +1,21 @@
+You will receive a press release from a US senator.
+
+Your task is to classify whether the senator is CREDIT-CLAIMING in the press release.
+
+Use one of these labels:
+
+"1": The senator is credit-claiming.
+"0": The senator is not credit-claiming.
+
+Return only a JSON object with these fields:
+
+{
+"label": "0 or 1",
+"decision_basis": "A concise explanation of the rationale for the classification decision.",
+"confidence": "A score on a scale of 0-10 that indicates how confident you are in your decision, where 0 is not confident at all and 10 is extremely confident."
+}
+
+Requirements:
+* Use only the labels "0" or "1"
+* Do not include Markdown.
+* Do not include text before or after the JSON object.
