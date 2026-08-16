@@ -1,0 +1,2 @@
+﻿"metric","alpha","documents","usable_documents","coder_codebook_pairs","valid_ratings","missing_ratings","label_0_ratings","label_1_ratings","observed_disagreement_Do","expected_disagreement_De","selection_rule","missing_handling"
+"Krippendorff alpha (nominal)","0.477155","62","62","9","553","5","214","339","0.248515","0.475313","At least one of nine pairs labeled the document 1","Pair predictions other than 0 or 1 excluded as missing"

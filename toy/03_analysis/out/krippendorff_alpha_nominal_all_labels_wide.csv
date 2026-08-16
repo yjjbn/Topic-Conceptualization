@@ -1,0 +1,2 @@
+﻿"metric","alpha","documents","usable_documents","coder_codebook_pairs","valid_ratings","missing_ratings","label_0_ratings","label_1_ratings","observed_disagreement_Do","expected_disagreement_De","source","missing_handling"
+"Krippendorff alpha (nominal)","0.750248","200","200","9","1795","5","1456","339","0.076562","0.306552","all_labels_wide.csv","Labels other than 0 or 1 excluded as missing"
