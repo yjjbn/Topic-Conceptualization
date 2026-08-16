@@ -1,0 +1,18 @@
+I will give you a qualitative codebook and the text of a press release from a US senator to classify.
+Relying solely on the information and instructions in the codebook, classify the press release using one of these labels:
+
+"1": The senator is credit-claiming.
+"0": The senator is not credit-claiming.
+
+Return only a JSON object with these fields:
+
+{
+"label": "1 or 0",
+"decision_basis": "A concise explanation of the rationale for the classification decision. Include the specific numbered inclusion criteria and edge case rules from the codebook that you used to make your decision."
+"confidence": "A score on a scale of 0-10 that indicates how confident you are in your decision, where 0 is not confident at all and 10 is extremely confident."
+}
+
+Requirements:
+* Use only the labels "1" and "0".
+* Do not include Markdown.
+* Do not include text before or after the JSON object.
