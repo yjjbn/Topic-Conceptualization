@@ -75,6 +75,7 @@ def main():
         "original_classification_instructions": classification_prompt,
         "classification_records": [
             {
+                "document_id": r["document_id"],
                 "text": r["text"],
                 "label": r["label"],
                 "decision_basis": r["decision_basis"],

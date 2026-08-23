@@ -1,0 +1,67 @@
+{
+  "codebook": {
+    "definition": "Credit-claiming occurs when a senator explicitly asserts personal or collective responsibility for securing a tangible benefit, federal funding, or specific legislative achievement for their state or constituents, or when they formally announce the award of targeted federal grants to their state.",
+    "conceptual_elements": [
+      {
+        "element_id": 1,
+        "statement": "The document identifies a specific tangible benefit, federal funding allocation, local project, or legislative achievement."
+      },
+      {
+        "element_id": 2,
+        "statement": "The senator explicitly claims to have authored, secured, or fought for the outcome, or formally announces the delivery of federal funds to their constituency."
+      },
+      {
+        "element_id": 3,
+        "statement": "The action or outcome described has already occurred or been secured (e.g., funds awarded, bill or amendment passed, or grant announced), rather than being a future goal or request."
+      }
+    ],
+    "decision_rules": {
+      "sufficient_combinations": [
+        {
+          "elements": [
+            1,
+            2,
+            3
+          ],
+          "example_document_id": "1320",
+          "explanation": "The senator explicitly announces that she helped secure $3 billion in disaster relief funding that has been passed by Congress, fulfilling all elements of credit-claiming."
+        }
+      ],
+      "disqualifying_conditions": [
+        {
+          "condition": "The senator is merely advocating for future action, urging another government entity to act, or taking a position on an issue without claiming to have secured the outcome.",
+          "example_document_id": "405",
+          "explanation": "The senator is urging state and federal agencies to approve FEMA trailers, which is an act of advocacy and position-taking rather than claiming credit for a secured outcome."
+        },
+        {
+          "condition": "The document is a commemorative statement, tribute, or expression of condolences that does not claim credit for a substantive government action or benefit.",
+          "example_document_id": "3857",
+          "explanation": "The press release is a memorial speech honoring Rosa Parks and does not claim personal credit for any legislative achievements or funding."
+        }
+      ]
+    },
+    "application_tips": [
+      {
+        "tip_id": 1,
+        "element_id": 2,
+        "tip": "In congressional communication, formally announcing a targeted federal grant to a local entity is a standard method of credit-claiming, even if the senator does not explicitly say 'I secured this.'",
+        "example_document_id": "1706",
+        "explanation": "The senator simply announces that 22 Indiana communities will receive HUD grants. Because announcing the distribution of federal funds to constituents associates the politician with the benefit, it is coded as credit-claiming."
+      },
+      {
+        "tip_id": 2,
+        "element_id": 3,
+        "tip": "Distinguish between advocacy (requesting action) and achievement (securing action) by looking at the verbs used. Words like 'urged,' 'called on,' or 'requested' indicate advocacy, while 'secured,' 'authored,' or 'passed' indicate credit-claiming.",
+        "example_document_id": "3383",
+        "explanation": "The senator 'called on' the President to include investments in the budget. Because this is a request for future action rather than a secured achievement, it is not credit-claiming."
+      },
+      {
+        "tip_id": 3,
+        "element_id": 1,
+        "tip": "Credit-claiming applies to specific legislative provisions or amendments successfully attached to larger bills, not just the passage of entire standalone bills.",
+        "example_document_id": "3752",
+        "explanation": "The senator hails the passage of his specific amendment to the Defense Authorization bill, demonstrating credit-claiming for a targeted legislative achievement."
+      }
+    ]
+  }
+}

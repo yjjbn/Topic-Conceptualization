@@ -1,0 +1,72 @@
+You previously classified a set of press releases as cases of "credit-claiming" or not.
+I will give you your original classifications, and your task is to write a qualitative codebook that communicates how you conceptualized and coded "credit-claiming."
+
+The input is a JSON object containing:
+
+* `original_classification_instructions`: the instructions used to classify each document;
+* `classification_records`: the complete set of documents, assigned labels, the decision basis for each label, and a score on a scale of 0-10 indicating how confident you were in your classification (where 0 is not at all confident, 10 is extremely confident).
+
+Each classification record contains:
+
+* `document_id`
+* `text`
+* `label`
+* `decision_basis`
+* `confidence`
+
+Write a codebook that documents how you conceptualized "credit-claiming" when you were coding the documents. The purpose of the codebook is to communicate your conceptualization of [target label], such that an external researcher would be able to code a new set of press releases in the same way that you would.
+
+Your codebook should contain:
+* Definition. A compact definition of [target label] that reflects how you applied it. 
+* Conceptual Elements.Decompose how you conceptualize [target label] into a set of conceptual elements, in a numbered list. A conceptual element is a distinct claim about what CAN be true of a document that is labelled as [target label]. 
+Each element must be logically independent — so that the presence of one element does not automatically guarantee the presence of another element. 
+Do not list more than 5 conceptual elements. 
+*Decision rules. Decision rules offer guidance to a coder who has assessed the absence and presence of all conceptual elements in a document and needs to make a decision. Decision rules should have two parts: 
+(1) Sufficient combinations — a numbered list of every combination of elements that qualifies a document as credit_claming. Any combination not listed receives "0".
+(2) Disqualifying conditions — a numbered list of document features that force "0" even when a sufficient combination is present. If there are none, say so. 
+For each combination and each disqualifying condition, cite one document from your coding by document_id as an example, with a brief explanation of why it illustrates the rule. 
+*Application Tips. Guidance for hard calls in judging whether a specific element is present. Produce a numbered list of tips. For each tip: name the element it applies to, state the tip, and cite one document by document_id that posed the ambiguity, with a sentence on how the tip resolves it. Do not provide more than 5 application tips.  
+
+
+OUTPUT FORMAT
+
+Return the classifications and codebook in JSON format, using this exact template:
+
+{
+  "codebook": {
+    "definition": "One to two sentences stating credit-claiming as you applied it.",
+    "conceptual_elements": [
+      {
+        "element_id": 1,
+        "statement": "A distinct claim about what must be true of the document."
+      }
+    ],
+    "decision_rules": {
+      "sufficient_combinations": [
+        {
+          "elements": [1, 2],
+          "example_document_id": "0042",
+          "explanation": "Why this document illustrates this combination."
+        }
+      ],
+      "disqualifying_conditions": [
+        {
+          "condition": "A document feature that forces 0 despite a sufficient combination.",
+          "example_document_id": "0087",
+          "explanation": "Why this document is disqualified."
+        }
+      ]
+    },
+    "application_tips": [
+      { 
+        "tip_id": 1,
+        "element_id": 3,
+        "tip": "How to decide the hard case.",
+        "example_document_id": "0113",
+        "explanation": "The ambiguity in this document and how the tip resolves it."
+      }
+    ]
+  }
+}
+
+Do not include any text outside the JSON.

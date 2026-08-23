@@ -1,0 +1,123 @@
+{
+  "codebook": {
+    "definition": "Credit-claiming occurs when a senator's press release attributes a specific benefit, outcome, achievement, or positive development (e.g., funding, legislation, program, honor, or successful advocacy) to the senator's own actions, efforts, position, or leadership, rather than merely reporting news, criticizing others, or advocating for future action without reference to personal responsibility for a result.",
+    "conceptual_elements": [
+      {
+        "element_id": 1,
+        "statement": "The document identifies a concrete benefit, outcome, or achievement (e.g., federal funding, a grant, a piece of legislation, a program, an award, or a successful policy result) that is presented as having occurred or been secured, rather than being purely aspirational or hypothetical."
+      },
+      {
+        "element_id": 2,
+        "statement": "The senator (or their office) is explicitly or implicitly linked to causing, securing, sponsoring, authoring, or otherwise being responsible for the benefit or outcome described (e.g., through phrases like 'secured,' 'announces,' 'I fought for,' 'my amendment,' 'worked to,' or through committee/leadership position used as the causal mechanism)."
+      },
+      {
+        "element_id": 3,
+        "statement": "The press release includes self-referential or first-person language (quotes from the senator, use of the senator's name as the subject of action verbs) that frames the senator as an active agent responsible for the outcome, rather than a passive observer or commentator."
+      },
+      {
+        "element_id": 4,
+        "statement": "The document emphasizes the positive impact or benefit of the outcome to constituents, the state, or district, reinforcing the senator's role in delivering value to the people they represent."
+      },
+      {
+        "element_id": 5,
+        "statement": "The claimed credit may pertain to past legislative advocacy or effort (even if the ultimate outcome is still pending, such as a bill passing one chamber, a hearing secured, or a committee vote), not only to fully completed and enacted results."
+      }
+    ],
+    "decision_rules": {
+      "sufficient_combinations": [
+        {
+          "elements": [
+            1,
+            2
+          ],
+          "example_document_id": "3201",
+          "explanation": "A concrete benefit (USDA disaster designation) is explicitly linked to the senator's efforts ('worked with USDA officials to expedite'), satisfying the minimum bar for credit-claiming."
+        },
+        {
+          "elements": [
+            2,
+            3
+          ],
+          "example_document_id": "4074",
+          "explanation": "Even without extensive new funding details, the senator repeatedly uses first-person claims ('my amendment,' 'I offered this amendment') to assert personal responsibility for a Senate vote outcome."
+        },
+        {
+          "elements": [
+            1,
+            2,
+            4
+          ],
+          "example_document_id": "3344",
+          "explanation": "Federal funding for multiple projects is explicitly attributed to the senator ('Bond secured'), and each project's community benefit is described, reinforcing credit-claiming."
+        },
+        {
+          "elements": [
+            2,
+            5
+          ],
+          "example_document_id": "267",
+          "explanation": "The senators claim credit for 'securing a commitment' for a future hearing, an interim legislative achievement rather than a completed law, but the personal agency claim still counts as credit-claiming."
+        }
+      ],
+      "disqualifying_conditions": [
+        {
+          "condition": "The document is purely a request, advocacy, or urging of another actor (e.g., President, agency, or fellow senators) to take future action, with no claim that the senator personally caused a completed benefit or outcome.",
+          "example_document_id": "1310",
+          "explanation": "Senators Hutchison and Cornyn are shown urging the President to expedite a disaster declaration; the outcome has not yet occurred and no personal causal role is claimed for a completed benefit."
+        },
+        {
+          "condition": "The document is a critical or oppositional statement directed at another party (administration, opposing party, agency) without any claim of the senator's own achievement or benefit delivered.",
+          "example_document_id": "838",
+          "explanation": "Corzine criticizes the Bush budget's impact on New Jersey but does not claim any personal accomplishment or benefit he secured."
+        },
+        {
+          "condition": "The document is a commemorative, ceremonial, or tribute statement (e.g., eulogy, holiday greeting, historical retrospective) with no connection to a legislative or funding achievement by the senator.",
+          "example_document_id": "3857",
+          "explanation": "Levin's remarks at Rosa Parks' memorial service are purely commemorative and contain no claim of legislative accomplishment or benefit delivered to constituents."
+        },
+        {
+          "condition": "The document merely reports a third-party decision, award, or event without attributing it to the senator's actions (e.g., a company opening a facility, an agency's policy decision reported neutrally).",
+          "example_document_id": "1816",
+          "explanation": "Cornyn welcomes a private company's new facility opening in El Paso, but the release does not attribute the opening to any action he took."
+        }
+      ]
+    },
+    "application_tips": [
+      {
+        "tip_id": 1,
+        "element_id": 2,
+        "tip": "When a press release describes federal funding or a grant 'awarded' to a local entity, check whether the senator's office is merely relaying/announcing the news (informational) versus explicitly stating they 'secured,' 'fought for,' 'requested,' or 'helped obtain' the funds (credit-claiming). Committee membership alone mentioned as background is not sufficient; look for causal language connecting the senator's role to the outcome.",
+        "example_document_id": "1706",
+        "explanation": "This release simply reports that Sen. Lugar 'was notified' of HUD grants with no claim of his role in securing them, and was coded as non-credit-claiming (0), unlike similar-looking releases where the senator explicitly claims to have secured the funds."
+      },
+      {
+        "tip_id": 2,
+        "element_id": 5,
+        "tip": "Advocacy for future action (letters, calls for hearings, introduced but not-yet-passed bills) can still count as credit-claiming if the senator frames their own effort/leadership as the noteworthy story, even though the outcome is not finalized. Distinguish this from cases where the senator is simply asking another entity to act with no self-attribution of leadership or effort.",
+        "example_document_id": "1907",
+        "explanation": "Schumer announces he 'will introduce legislation' and personally toured the affected area; despite the legislative outcome being pending, his active personal role was emphasized enough to be coded as credit-claiming (1)."
+      },
+      {
+        "tip_id": 3,
+        "element_id": 3,
+        "tip": "Watch for releases where the senator is one of several co-signers of a joint letter or resolution; credit-claiming can still apply if the release frames the senator's individual role or quotes them prominently, even in a group effort.",
+        "example_document_id": "955",
+        "explanation": "Multiple members of the Massachusetts delegation are quoted, and though it's a group effort, each senator's individual claim of responsibility for securing USDA assistance justifies a credit-claiming label."
+      },
+      {
+        "tip_id": 4,
+        "element_id": 4,
+        "tip": "Ceremonial or award-receiving press releases (e.g., 'Senator X named Legislator of the Year') should be scored as credit-claiming only if the underlying legislative record or accomplishments justifying the award are described in a way that attributes concrete benefits to the senator; pure award announcements without substantive achievement details are borderline and should lean toward non-credit-claiming unless a policy achievement is clearly emphasized.",
+        "example_document_id": "3746",
+        "explanation": "Although Sen. Akaka receives an award from an outside organization, the release itself is issued by the third-party organization praising him, not his own office claiming credit, so it was coded 0."
+      },
+      {
+        "tip_id": 5,
+        "element_id": 1,
+        "tip": "Distinguish between benefits that are hypothetical/future ('this bill would provide...') and those that are actual/secured ('this bill provides...' or 'has been awarded'). Purely aspirational descriptions of a bill's potential impact, without an achieved outcome, tend toward non-credit-claiming unless paired with strong personal agency language (see tip 2).",
+        "example_document_id": "1204",
+        "explanation": "Bayh's DRIVE Act release describes future potential impacts of pending legislation, but because Bayh explicitly claims authorship ('my energy plan') and personal responsibility for introducing it, this was still coded as credit-claiming (1) despite the outcome being prospective."
+      }
+    ]
+  }
+}

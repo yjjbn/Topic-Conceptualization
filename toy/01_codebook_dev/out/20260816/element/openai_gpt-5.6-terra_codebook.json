@@ -1,0 +1,81 @@
+{
+  "codebook": {
+    "definition": "Credit-claiming is a senator-centered communication that presents the senator as having taken meaningful action to obtain, advance, protect, create, or improve a policy, program, funding stream, public benefit, or valued civic outcome. Claims could concern completed results or an active legislative, oversight, or advocacy effort framed as producing an intended public benefit.",
+    "conceptual_elements": [
+      {
+        "element_id": 1,
+        "statement": "The release identifies a concrete action by the senator, such as introducing, sponsoring, authoring, co-sponsoring, negotiating, requesting, lobbying for, securing, drafting, leading, investigating, voting for, or otherwise advancing a governmental measure."
+      },
+      {
+        "element_id": 2,
+        "statement": "The release presents a favorable policy, material, symbolic, or constituent-facing benefit that is actual, pending, or anticipated, such as funding, services, protections, reform, recognition, access, jobs, safety, or assistance."
+      },
+      {
+        "element_id": 3,
+        "statement": "The release explicitly or strongly implicitly attributes an achievement, funding outcome, programmatic benefit, or advancement to the senator's role, effort, leadership, request, legislative work, or support."
+      }
+    ],
+    "decision_rules": {
+      "sufficient_combinations": [
+        {
+          "elements": [
+            1,
+            2
+          ],
+          "example_document_id": "2958",
+          "explanation": "Landrieu introduces a disaster-loan bill and describes how it would provide short-term, low-interest assistance to affected small businesses. The bill was not enacted, but her action is framed as advancing a beneficial solution."
+        },
+        {
+          "elements": [
+            2,
+            3
+          ],
+          "example_document_id": "4096",
+          "explanation": "Kohl announces released transportation funding while explicitly stating that he worked to secure it. The funding's local benefits and its attribution to Kohl make this credit-claiming."
+        }
+      ],
+      "disqualifying_conditions": [
+        {
+          "condition": "None. A release was not disqualified merely because the claimed action was incomplete, prospective, bipartisan, symbolic, or attributable in part to others. Proposed legislation, requests, oversight, and partial legislative wins could all be credit-claiming when presented as the senator's beneficial work."
+        }
+      ]
+    },
+    "application_tips": [
+      {
+        "tip_id": 1,
+        "element_id": 3,
+        "tip": "Distinguish an attributed result from a bare announcement of an agency decision. Treat a grant, declaration, or other external decision as credit-claiming when the release connects it to the senator's intervention or presents the senator as having delivered it; do not infer that connection solely because the senator comments favorably on the result.",
+        "example_document_id": "812",
+        "explanation": "Schumer says he personally wrote and called FEMA before the approval of Brooklyn disaster aid, directly linking his advocacy to the result. By contrast, document 878 only reports that Lugar was notified of a HUD grant and was coded 0."
+      },
+      {
+        "tip_id": 2,
+        "element_id": 1,
+        "tip": "Count legislative activity as credit-claiming even when the bill, amendment, or resolution remains pending, provided the release portrays the action as a substantive way to address a public problem. Enactment is not required.",
+        "example_document_id": "2011",
+        "explanation": "Smith's Global Child Survival Act had only been introduced, but the release portrays its strategy and increased resources as meaningful action to save children's lives; it was coded 1."
+      },
+      {
+        "tip_id": 3,
+        "element_id": 3,
+        "tip": "A senator's title or committee membership is not, by itself, enough to establish credit. Use it as supporting context only when the release also makes the senator a visible advocate, contributor, or deliverer of the outcome.",
+        "example_document_id": "4791",
+        "explanation": "Domenici's appropriations-subcommittee role is presented alongside a senator-centered announcement of grants to New Mexico communities, supporting the credit claim. In contrast, document 1379 lists Cornyn's committee memberships but does not connect him to the grant awards and was coded 0."
+      },
+      {
+        "tip_id": 4,
+        "element_id": 2,
+        "tip": "Treat symbolic and nonmaterial accomplishments as benefits when the release depicts them as honoring constituents, advancing a public value, or recognizing a community. Credit-claiming is not limited to appropriations, constituent services, or enacted laws.",
+        "example_document_id": "4490",
+        "explanation": "Alexander's unanimously passed resolution celebrating Black History Month is symbolic rather than material, but the release frames passage as his legislative achievement honoring African American contributions; it was coded 1."
+      },
+      {
+        "tip_id": 5,
+        "element_id": 1,
+        "tip": "Oversight, investigations, hearings, and public pressure can count when the senator claims ownership of the effort and frames it as identifying or correcting a problem. Mere commentary on another institution's report or decision does not count.",
+        "example_document_id": "3328",
+        "explanation": "Kennedy publicizes findings from his own student-loan investigation and presents them as supporting reform, so it was coded 1. Document 1020 merely comments on an intelligence commission report and was coded 0."
+      }
+    ]
+  }
+}
