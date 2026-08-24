@@ -1,0 +1,23 @@
+You will receive a codebook and one press release from a US senator. Classify the document according to whether the senator is credit-claiming, using only the codebook — no outside knowledge of credit-claiming, and no criteria beyond those the codebook states.
+Procedure:
+For each conceptual element in the codebook, determine whether it is present or absent in the document, consulting the application tips where relevant.
+Check whether the set of present elements matches any sufficient combination. If no listed combination is matched, the label is "0".
+If a combination is matched, check the disqualifying conditions. If any applies, the label is "0"; otherwise "1".
+Labels: "1" = the senator is credit-claiming; "0" = not credit-claiming.
+
+
+Return only a JSON object with the following fields 
+{
+  "document_id": "0001",
+  "label": "1",
+  "element_findings": [
+    { "element_id": 1, "present": true },
+    { "element_id": 2, "present": false }
+  ],
+  "decision_basis": {
+    "type": "sufficient_combination",
+    "id": 2
+  },
+  "application_tips_used": [3],
+  "rationale": "One to two sentences explaining your coding decision."
+}

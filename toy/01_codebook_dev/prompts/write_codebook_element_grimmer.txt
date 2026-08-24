@@ -24,13 +24,13 @@ Do not list more than 5 conceptual elements.
 *Decision rules. Decision rules offer guidance to a coder who has assessed the absence and presence of all conceptual elements in a document and needs to make a decision. Decision rules should have two parts: 
 (1) Sufficient combinations — a numbered list of every combination of elements that qualifies a document as credit_claming. Any combination not listed receives "0".
 (2) Disqualifying conditions — a numbered list of document features that force "0" even when a sufficient combination is present. If there are none, say so. 
-For each combination and each disqualifying condition, cite one document from your coding by document_id as an example, with a brief explanation of why it illustrates the rule. 
-*Application Tips. Guidance for hard calls in judging whether a specific element is present. Produce a numbered list of tips. For each tip: name the element it applies to, state the tip, and cite one document by document_id that posed the ambiguity, with a sentence on how the tip resolves it. Do not provide more than 5 application tips.  
+For each combination and each disqualifying condition, cite one document from your coding as an example, with a brief explanation of why it illustrates the rule. For every cited example, include both its document_id and its complete, verbatim text. Copy the text exactly from the corresponding classification record; do not summarize, paraphrase, or truncate it.
+*Application Tips. Guidance for hard calls in judging whether a specific element is present. Produce a numbered list of tips. For each tip: name the element it applies to, state the tip, and cite one document that posed the ambiguity, with a sentence on how the tip resolves it. For every cited example, include both its document_id and its complete, verbatim text. Copy the text exactly from the corresponding classification record; do not summarize, paraphrase, or truncate it. Do not provide more than 5 application tips. 
 
 
 OUTPUT FORMAT
 
-Return the classifications and codebook in JSON format, using this exact template:
+Return the codebook in JSON format, using this exact template:
 
 {
   "codebook": {
@@ -46,6 +46,7 @@ Return the classifications and codebook in JSON format, using this exact templat
         {
           "elements": [1, 2],
           "example_document_id": "0042",
+          "example_document_text": "Complete verbatim text of the cited document.",
           "explanation": "Why this document illustrates this combination."
         }
       ],
@@ -53,6 +54,7 @@ Return the classifications and codebook in JSON format, using this exact templat
         {
           "condition": "A document feature that forces 0 despite a sufficient combination.",
           "example_document_id": "0087",
+          "example_document_text": "Complete verbatim text of the cited document.",
           "explanation": "Why this document is disqualified."
         }
       ]
@@ -63,6 +65,7 @@ Return the classifications and codebook in JSON format, using this exact templat
         "element_id": 3,
         "tip": "How to decide the hard case.",
         "example_document_id": "0113",
+        "example_document_text": "Complete verbatim text of the cited document.",
         "explanation": "The ambiguity in this document and how the tip resolves it."
       }
     ]
