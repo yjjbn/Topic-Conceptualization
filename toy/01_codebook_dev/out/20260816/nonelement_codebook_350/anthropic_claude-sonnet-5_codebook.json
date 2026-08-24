@@ -1,0 +1,79 @@
+{
+  "codebook": {
+    "definition": "Credit-claiming occurs when a senator's press release explicitly or implicitly attributes a beneficial outcome (federal funding, grants, legislation, policy action, program creation, or a favorable government decision) to their own actions, efforts, leadership, advocacy, or position—thereby seeking to be recognized by constituents as responsible for that benefit. This includes announcing secured funding, touting authorship or sponsorship of bills, highlighting personal advocacy that led to a result, or framing legislative/administrative outcomes as achievements attributable to the senator. It excludes releases that are purely informational, critical of opponents/administrations without self-attribution, commemorative, or that describe pending advocacy/requests without linking to a personal accomplishment.",
+    "decision_rules": [
+      {
+        "rule_id": "R1",
+        "rule": "The senator announces that federal funding, a grant, or a specific appropriation has been secured/awarded for their state or constituents, especially when using self-referential language (e.g., 'Senator X announces,' 'I am pleased to announce,' 'I secured') or when their name/role (e.g., committee membership) is prominently tied to the funding.",
+        "positive_example": {
+          "text": "SEN. TALENT SECURES $250,000 FOR HISTORIC COMMERCIAL CLUB BUILDING RESTORATION. Sen. Jim Talent (R-Mo.) has secured $250,000 for the Springfield Commercial Club Building... 'We very much appreciate Senator Talent's ongoing efforts to secure funding on Springfield's behalf for historic preservation,' said Mayor Tom Carlson.",
+          "explanation": "The senator explicitly claims to have 'secured' the funding, and a local official credits him directly, making this a clear and typical example of credit-claiming for federal funding."
+        },
+        "negative_example": {
+          "text": "HUD GRANTS MADE TO INDIANA COMMUNITIES. Sen. Dick Lugar was notified today that 22 Indiana communities will receive various grants totaling more than $37.8 million from HUD... [describes grant programs without further comment attributing the funding to Lugar's efforts].",
+          "explanation": "The release simply reports that the senator was notified of grants awarded by HUD, with no language attributing the funding to his efforts, advocacy, or legislative work—so it reads as informational rather than credit-claiming."
+        }
+      },
+      {
+        "rule_id": "R2",
+        "rule": "The senator highlights their authorship, sponsorship, or introduction of legislation (a bill, amendment, or resolution), especially when quoting themselves describing the bill's purpose or benefits, framing the legislative action as their own initiative or achievement.",
+        "positive_example": {
+          "text": "SEN. WHITEHOUSE SPONSORS GLOBAL WARMING BILL AIMED AT WILDLIFE PROTECTION. ...Whitehouse announced new legislation calling for a national strategy to address the threat of climate change to America's wildlife... 'As the waters of Narragansett Bay grow warmer...' Whitehouse said.",
+          "explanation": "The senator is explicitly credited as sponsor of new legislation and quoted explaining its rationale and benefits, which constitutes claiming credit for introducing a policy solution."
+        },
+        "negative_example": {
+          "text": "SEN. GRASSLEY EXPRESSES CONCERN OVER POSSIBLE U.S.-BRAZIL PARTNERSHIP ON ETHANOL. Sen. Chuck Grassley... is expressing concern to the President that a possible U.S.-Brazil partnership on ethanol could cause the United States to subsidize the production of foreign ethanol...",
+          "explanation": "Although the senator discusses policy, the release is a letter of concern/opposition to a potential government action, not a claim of credit for any legislative accomplishment or benefit delivered."
+        }
+      },
+      {
+        "rule_id": "R3",
+        "rule": "The senator explicitly attributes a policy outcome, program creation, or government decision to their own past advocacy, leadership, or influence, even if the direct action was taken by another entity (e.g., an agency, a president, or another branch of government).",
+        "positive_example": {
+          "text": "Air Force Secretary Tells Senator Murray He's Looking for Funding to Keep 36th Rescue Flight at Fairchild AFB... 'The Air Force has finally heard us and now recognizes that the 36th Rescue Flight plays a critical role...' Murray said.",
+          "explanation": "The senator's direct questioning is credited with causing the Air Force to reconsider its decision, and she takes credit for this reversal through her advocacy, even though the ultimate decision rests with the Air Force."
+        },
+        "negative_example": {
+          "text": "SEN. DORGAN REACTS TO ARMY CORPS OF ENGINEERS DECISION NOT TO CONDUCT 'SPRING PULSE'... 'I am pleased with the U.S. Army Corps of Engineers' decision...' Dorgan said.",
+          "explanation": "The senator is merely reacting favorably to an independent agency decision without asserting that his own actions or advocacy caused that outcome, so no credit is being claimed."
+        }
+      },
+      {
+        "rule_id": "R4",
+        "rule": "The senator highlights their own leadership role, committee position, or personal effort (e.g., writing letters, holding hearings, negotiating, meeting with officials) as directly responsible for achieving an outcome, even if the outcome (funding, decision, or bill passage) has not yet been finalized but progress has been secured through their actions.",
+        "positive_example": {
+          "text": "SEN. DOMENICI GAINS DOE COMMITMENT TO FUND LOS ALAMOS SKI HILL CONNECTOR ROAD... Following intervention by Domenici, NNSA Administrator Linton Brooks reported that the road will be constructed... 'I'm very pleased that the NNSA has listened to my concerns...' Domenici said.",
+          "explanation": "The release explicitly attributes the DOE's commitment to fund the project to the senator's personal intervention, framing the outcome as a direct result of his advocacy."
+        },
+        "negative_example": {
+          "text": "SENS. HUTCHISON, CORNYN CALL ON PRESIDENT TO EXPEDITE EL PASO DISASTER DECLARATION... 'I have been in close contact with community officials and am pleased to hear of the committed support being provided at the local level...' Sen. Hutchison said.",
+          "explanation": "The senators are requesting/urging action from the President but have not yet secured or achieved the outcome; the release describes ongoing advocacy rather than a credit-claimable achievement."
+        }
+      },
+      {
+        "rule_id": "R5",
+        "rule": "The senator's own votes, floor statements, or amendments that successfully passed and directly delivered a concrete legislative or funding outcome are highlighted and attributed to their personal action (e.g., 'my amendment passed', 'I cosponsored and helped pass').",
+        "positive_example": {
+          "text": "SENATE PASSES MENENDEZ AMENDMENT TO INCREASE DEFENSE DEPARTMENT RENEWABLE ENERGY USAGE... Menendez said... 'As the federal government's largest consumer of energy, the Defense Department can be at the vanguard...'",
+          "explanation": "The senator's amendment passed and he is directly named and quoted celebrating the legislative achievement, which is a clear act of claiming credit for a specific successful vote."
+        },
+        "negative_example": {
+          "text": "SEN. DAYTON PUSHES TO RESTORE $1.6 BILLION IN GRANTS FOR LOCAL FIRST RESPONDERS... The amendment failed in a vote of 46-54.",
+          "explanation": "Because the amendment did not pass and no benefit was delivered, this is not credit-claiming for an accomplishment; it is instead advocacy/criticism of the outcome."
+        }
+      },
+      {
+        "rule_id": "R6",
+        "rule": "The senator claims credit for tangible constituent benefits (e.g., appointments, awards, community programs, local investments) they personally announced, hosted, or facilitated, even in smaller or symbolic ways (e.g., ribbon-cuttings, awards ceremonies, event hosting) when the release frames the senator as instrumental to the benefit.",
+        "positive_example": {
+          "text": "Senator Cuts Ribbon on Rugby Jail... Senator Conrad said the jail has already created 34 jobs with an annual payroll of $1 million... The jail was built with a $5.2 million rural development loan... as well as $400,000 appropriated by the North Dakota Congressional delegation.",
+          "explanation": "The senator is directly tied to securing appropriations for the project and personally participates in the ribbon-cutting, framing himself as responsible for delivering this concrete community benefit."
+        },
+        "negative_example": {
+          "text": "SEN. SNOWE HOSTS THREE OF MAINE'S INDIAN TRIBES... 'I pledge to continue to work to address the concerns of all three of Maine's tribes,' said Snowe.",
+          "explanation": "The release describes hosting a meeting and pledging future advocacy but does not claim credit for any specific accomplishment, funding, or legislative outcome already achieved."
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+You previously classified a set of press releases as cases of "credit-claiming" or not.
+I will give you your original classifications, and your task is to write a qualitative codebook that communicates how you conceptualized and coded "credit-claiming."
+
+The input is a JSON object containing:
+
+* `original_classification_instructions`: the instructions used to classify each document;
+* `classification_records`: the complete set of documents, assigned labels, the decision basis for each label, and a score on a scale of 0-10 indicating how confident you were in your classification (where 0 is not at all confident, 10 is extremely confident).
+
+Each classification record contains:
+
+* `text`
+* `label`
+* `decision_basis`
+* `confidence`
+
+Based on only these classification records and no other external information, fill in the sections of the codebook below. The codebook should reflect how you originally conceptualized "credit-claiming", such that an external coder can identify them in a new set of documents in the same way.
+
+Your codebook should contain:
+
+* Definition
+A definition of "credit-claiming" that represents how you applied the concept when coding the texts.
+
+* Decision rules
+Provide up to 6 distinct decision rules that represent how you deteremined whether a text should be classified as "credit-claiming." Provide only the minimum number of rules needed to communicate your classification criteria, up to a maximum of 6.
+Each rule should describe a distinct circumstance that is sufficient to classify a text as "credit-claiming."
+If several criteria must be present together for a circumstance to qualify as credit-claiming, state those criteria together within a single rule.
+A text that does not satisfy one rule may still be classified as "credit-claiming" if it satisfies another.
+A text may satisfy more than one decision rule.
+For each rule, provide
+    1) A statement of the rule
+    2) A positive example of a text where rule applies, with an explanation. Here, try to choose an example that is an illustrative and typical case of the rule.
+    3) A negative example of a text where the rule does not apply, with an explanation. Here, try to choose an edge-case example where the rule may plausibly apply, but does not. This is meant to help define the boundaries of the rule.
+
+
+
+
+OUTPUT FORMAT
+
+Return only one valid JSON object. Do not use comments, Markdown fences, or ellipses. Escape all quotation marks and other special characters appearing inside example text.
+
+{
+  "codebook": {
+    "definition": "Definition of credit-claiming.",
+    "decision_rules": [
+      {
+        "rule_id": "R1",
+        "rule": "Decision rule.",
+        "positive_example": {
+          "text": "Verbatim example text.",
+          "explanation": "Explanation."
+        },
+        "negative_example": {
+          "text": "Verbatim example text.",
+          "explanation": "Explanation."
+        }
+      }
+    ]
+  }
+}
+
+The decision_rules array must contain between 1 and 6 objects following the demonstrated structure.
+
+

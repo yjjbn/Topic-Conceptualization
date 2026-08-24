@@ -1,0 +1,3084 @@
+[
+  {
+    "document_id": "2709",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that $125,000 in federal funding has been awarded to Connecticut, using self-referential language ('Senators Chris Dodd and Joe Lieberman announced today'), and both are quoted praising the program's benefits, framing themselves as responsible for delivering this news/benefit to constituents.",
+    "error": null
+  },
+  {
+    "document_id": "915",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The amendment failed (46-54), so no benefit was delivered. This matches the negative example under R5 directly—advocacy/criticism without an achieved outcome does not constitute credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3491",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces that Congress approved over $158 million in defense funding for specific projects across Illinois, using self-referential language ('Durbin announced') and attributing the securing of this funding directly to congressional/his efforts, consistent with claiming credit for securing federal funding for constituents.",
+    "error": null
+  },
+  {
+    "document_id": "2476",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator explicitly announces federal grant funding secured for his state's neighbor islands, using self-referential language ('Senator Inouye announces') and being quoted explaining the importance of the funding, which fits the pattern of announcing secured funding attributed to his role.",
+    "error": null
+  },
+  {
+    "document_id": "3950",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights Senator Harkin's authorship of the HeLP America Act and frames him as the Senate leader on health/wellness efforts, attributing this legislative initiative to his own actions.",
+    "error": null
+  },
+  {
+    "document_id": "1706",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release simply reports that Senator Lugar was notified of HUD grants awarded to Indiana communities, with no language attributing the funding to his efforts, advocacy, or legislative work. This matches the negative example under R1 exactly - it's purely informational reporting of a grant award notification.",
+    "error": null
+  },
+  {
+    "document_id": "1255",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Schumer and Clinton announce securing $893,000 in federal funding for the University at Albany, explicitly stating they 'pushed for funds to be included' in the omnibus bill, and Schumer is quoted taking credit for the funding's benefits to the region.",
+    "error": null
+  },
+  {
+    "document_id": "102",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "The release highlights Senator Kerry's leadership role as chair of the hearing and his role leading a Senate delegation to Bali, framing him as instrumental in restoring U.S. leadership on climate negotiations, which constitutes highlighting his personal leadership role and effort.",
+    "error": null
+  },
+  {
+    "document_id": "4324",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Frist attributes the passage of the emergency supplemental to Republican-led efforts and his leadership, and highlights his co-sponsorship of the Stop Over-Spending legislation, framing these as achievements tied to his own advocacy and role as Majority Leader.",
+    "error": null
+  },
+  {
+    "document_id": "4554",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release criticizes Republicans for blocking the Farm Bill and expresses disappointment, but does not claim credit for a completed accomplishment, secured funding, or passed legislation. While Salazar mentions working hard on the bill, the bill did not pass (failed to get 60 votes), so no concrete benefit was delivered. This is advocacy and criticism of an unsuccessful outcome rather than credit-claiming, similar to the negative example under R5.",
+    "error": null
+  },
+  {
+    "document_id": "3208",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Harkin explicitly states he 'secured the funds' in the 2005 Omnibus Appropriations bill as a senior member of the relevant subcommittee, directly attributing the HUD grant to his own actions and position, consistent with R1.",
+    "error": null
+  },
+  {
+    "document_id": "2651",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Senator Burns announces federal grants using self-referential language ('I am pleased to announce'), ties his committee role (Chairman of Senate Aviation Subcommittee) to the funding, and a local official credits him directly for supporting the airport's efforts, all indicating credit-claiming for securing federal funding through his position and advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "1810",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a critical floor speech attacking the Republican budget plan without attributing any secured funding, legislation, or outcome to Senator Clinton's own actions. It is purely critical/oppositional rhetoric, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "354",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator is expressing concern over a DHS funding decision that cut funding for some California cities, without claiming credit for any funding secured or outcome achieved through her own advocacy. This is a reactive/critical statement about an agency decision, not a claim of personal responsibility for a beneficial outcome.",
+    "error": null
+  },
+  {
+    "document_id": "77",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Durbin is expressing opposition to an administration decision and calling for congressional review, but he is not claiming credit for any accomplishment, secured funding, or legislative outcome. This is advocacy/criticism without self-attribution of a benefit.",
+    "error": null
+  },
+  {
+    "document_id": "3462",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a statement criticizing Democrat colleagues' conduct during a hearing, without claiming credit for any funding, legislation, or policy outcome attributable to the senator's own actions. It is critical/reactive commentary, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "4288",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release criticizes the Bush Administration and FEMA for mismanagement and cites a prior committee investigation, but it does not attribute any funding, legislative achievement, or policy outcome to Lieberman's own actions. It's critical/informational rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "493",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Collins announces her cosponsorship of the Meningitis Immunization Awareness Act and is quoted explaining its purpose and importance, framing her legislative involvement as a proactive step to protect public health, consistent with credit-claiming for legislative sponsorship/cosponsorship.",
+    "error": null
+  },
+  {
+    "document_id": "2067",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator's amendment failed to be included in the bill, so no credit is claimed for that action (per R5's negative example logic). The statement is primarily critical of the passed legislation, not attributing a beneficial outcome to his own efforts. He does not claim credit for the submarine funding, merely notes it favorably. This is criticism without self-attribution of a positive achievement.",
+    "error": null
+  },
+  {
+    "document_id": "3878",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Shelby explicitly announces securing federal funding for multiple North Alabama projects, citing his role on the Transportation Appropriations Subcommittee and using self-referential quotes explaining the benefits of each project, which clearly attributes the funding outcomes to his efforts.",
+    "error": null
+  },
+  {
+    "document_id": "1997",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator is urging the Governor to declare a state of emergency and pledging future support for federal disaster relief, but no funding, program, or outcome has yet been secured or achieved. This is advocacy for future action, not a claim of credit for an accomplished benefit, aligning with the negative example under R4.",
+    "error": null
+  },
+  {
+    "document_id": "4234",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release criticizes President Bush's energy policy and rhetoric, calling for future action, but does not attribute any funding, legislation, or policy outcome to Senator Reid's own efforts or advocacy. It is purely reactive/critical without self-attribution of any accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "2939",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "explanation": "DeWine announces a grant secured through his own FIRE Act legislation, which he wrote, passed, and secured appropriations for as an Appropriations Committee member. He is quoted celebrating the outcome, directly attributing the funding and program to his legislative efforts.",
+    "error": null
+  },
+  {
+    "document_id": "4484",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a statement made during a budget hearing expressing concerns about the VA budget's impact on veterans. The senator criticizes the budget's reliance on increased fees from veterans and questions the administration's approach, but does not claim credit for securing funding, sponsoring successful legislation, or achieving any specific outcome through personal advocacy. It reads as critical commentary and questioning rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "1699",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Nelson is highlighted as introducing (sponsoring) a resolution, S. Res. 448, and is quoted explaining its purpose, framing this legislative action as his own initiative.",
+    "error": null
+  },
+  {
+    "document_id": "3806",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senator explicitly announces she 'has included' and 'added' $6.95 million in funding for multiple Snohomish County projects, directly attributing this to her position as Chairman of the Senate Appropriations Subcommittee. She is quoted multiple times taking credit for specific project funding, and a local official credits her by name for the outcome.",
+    "error": null
+  },
+  {
+    "document_id": "4328",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "The senators announce that the DOT decision to support new air service resulted from their letter of support/advocacy to the DOT Secretary, framing the beneficial outcome (new air service) as a result of their personal intervention, consistent with R3 and R4.",
+    "error": null
+  },
+  {
+    "document_id": "3798",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Senator Murray explicitly states she 'secured' $1,000,000 in funding for local educational programs, ties this to her position as a senior member of the LHHS Appropriations Subcommittee, and is directly credited by local officials for her efforts. This is a clear case of credit-claiming for federal funding.",
+    "error": null
+  },
+  {
+    "document_id": "2148",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3"
+    ],
+    "explanation": "Lugar highlights his introduction/sponsorship of S.1966 and the Vaccines for the Future Act, and attributes the original 2003 PEPFAR legislation's success to his leadership as Chairman of the Foreign Relations Committee. The release frames both past and current legislative achievements and recognitions as directly attributable to his personal efforts and leadership.",
+    "error": null
+  },
+  {
+    "document_id": "245",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Dorgan is reacting favorably to an independent Army Corps of Engineers decision without claiming his own advocacy or actions caused the outcome. This matches the negative example under R3 exactly.",
+    "error": null
+  },
+  {
+    "document_id": "685",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Kohl highlights his authorship and sponsorship of legislation to restore competition to the oil industry, framing it as his own initiative with a Committee Chairman, and describes his role and rationale for the bill, which is a clear case of credit-claiming for legislative action.",
+    "error": null
+  },
+  {
+    "document_id": "61",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces that a federal grant has been awarded to the airport, using self-referential language ('Sen. Allen announced'), which aligns with R1's criteria for credit-claiming regarding secured funding, even though the funding came from FAA rather than his direct action.",
+    "error": null
+  },
+  {
+    "document_id": "3752",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "The senator's amendment passed the Senate and is directly attributed to him ('Menendez amendment'), with Menendez quoted explaining the rationale. This matches R2 (highlighting sponsorship of legislation) and R5 (amendment successfully passed and attributed to personal action).",
+    "error": null
+  },
+  {
+    "document_id": "2270",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator 'announced' the grant funding to Kansas institutions, and the release ties his committee membership (Senate HELP Committee) to the funding, implying his role in securing it for constituents.",
+    "error": null
+  },
+  {
+    "document_id": "1155",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a statement describing ongoing negotiations and progress toward legislation that has not yet been finalized. While Leahy mentions his role in past hearings and an amendment (Leahy-Hatch medical criteria amendment) that was adopted, the overall tone is about continued advocacy and work-in-progress toward a bipartisan solution, not a completed achievement or secured benefit. The release emphasizes collaborative, unresolved efforts ('we have yet to reach consensus,' 'now we need to build on that progress') rather than claiming credit for a specific accomplished outcome. This aligns with the negative example under R4, where ongoing advocacy without a finalized outcome does not constitute credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3737",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator DeWine highlights his introduction and sponsorship of six specific bills, framing them as his own initiatives with quotes explaining their purpose and benefits, which constitutes credit-claiming for legislative authorship.",
+    "error": null
+  },
+  {
+    "document_id": "3823",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Martinez merely 'applauds' a HUD grant award, without claiming that his own actions, advocacy, or position secured the funding. This is similar to the negative example under R1 where a senator is simply notified of grants without attributing them to his efforts.",
+    "error": null
+  },
+  {
+    "document_id": "1203",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3",
+      "R4"
+    ],
+    "explanation": "Nelson highlights the $1.3 billion in highway funding for Nebraska and the energy bill provisions, attributing the breakthrough in gridlock to his own leadership as part of the 'Gang of Fourteen' and his letter to President Bush urging action. He frames himself as instrumental in restoring Senate function to pass legislation benefiting Nebraska, which is credit-claiming for both funding and legislative outcomes.",
+    "error": null
+  },
+  {
+    "document_id": "1384",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Lieberman advocating for NATO action on Darfur and Iran during a conference speech. It reports his statements and calls for future action, but does not claim credit for any secured funding, passed legislation, or achieved outcome resulting from his efforts. It is purely advocacy/informational in nature, not credit-claiming for an accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "2877",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator highlights his authorship/sponsorship of the SAFE Commission Act (with Rep. Wolf), describing its purpose and benefits, and mentions plans to reintroduce it and introduce new biennial budget legislation, framing these as his own initiatives. While much of the release is critical of Congress's budgeting practices, the explicit self-attribution of legislative authorship qualifies as credit-claiming under R2.",
+    "error": null
+  },
+  {
+    "document_id": "2158",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Cornyn urging DHS to investigate an issue and requesting a briefing/report. It is advocacy/criticism directed at an agency without claiming credit for any achieved outcome, funding, legislation, or decision. No benefit has been delivered or attributed to his actions.",
+    "error": null
+  },
+  {
+    "document_id": "1086",
+    "label": "1",
+    "codebook_rule": [
+      "R5"
+    ],
+    "explanation": "The senator highlights the Senate's passage of additional LIHEAP funding, which he supported and applauded, framing it as a positive outcome he helped achieve through his advocacy and vote. However, the release also emphasizes disappointment that it falls short, and notes his cosponsored amendments to fully fund the program were defeated. The passage of the $1 billion in additional funding, which Dayton is quoted celebrating, represents a concrete legislative outcome tied to his role as a senator supporting the bill, fitting R5's criteria of highlighting a successful legislative action delivering a funding outcome, even though the tone is mixed with criticism about insufficient funding levels.",
+    "error": null
+  },
+  {
+    "document_id": "1927",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Snowe announces that funding she requested for PNSY was included in the appropriations bill that passed, directly attributing this to her advocacy (letter to appropriators). She also highlights her role in supporting veterans funding priorities she requested, framing the outcomes as achievements resulting from her efforts.",
+    "error": null
+  },
+  {
+    "document_id": "3262",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that a specific federal grant ($26,590 from HHS) has been secured for Arkansas State University, using self-referential 'announce' language and quoting themselves expressing pride in the funding being selected, attributing the benefit to their efforts.",
+    "error": null
+  },
+  {
+    "document_id": "214",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative statement honoring the victims and veterans of Pearl Harbor. It does not attribute any funding, legislation, or policy outcome to the senator's own actions or advocacy, so no credit-claiming rule applies.",
+    "error": null
+  },
+  {
+    "document_id": "785",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators highlight their sponsorship and introduction of legislation, quoting themselves explaining its purpose and benefits, framing it as their own initiative.",
+    "error": null
+  },
+  {
+    "document_id": "960",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "Schumer attributes FEMA's decision to send a representative and hold a public hearing directly to his own advocacy—testifying before the Senate Banking Committee, sending letters, and 'ratcheting up pressure.' A local council member explicitly credits 'the Senator's steadfast effort and successful request of FEMA' for this outcome, and Schumer himself frames the FEMA visit as a result of his pressure, satisfying R3 (attributing an agency action to his advocacy) and R4 (personal effort like letters and hearings directly credited with achieving progress).",
+    "error": null
+  },
+  {
+    "document_id": "1096",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator announces a grant awarded by HHS to a local agency and offers general commentary praising the Head Start program, but does not claim personal credit for securing the funding or attribute the award to his own advocacy or efforts. This matches the negative example under R1, where a senator simply reports notification of a grant without self-attribution of effort.",
+    "error": null
+  },
+  {
+    "document_id": "3857",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative eulogy for Rosa Parks with personal reflections; it does not attribute any funding, legislation, or policy outcome to the senator's own actions or advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "3943",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R5"
+    ],
+    "explanation": "Durbin cosponsored an amendment that passed and secured at least $30 million for Illinois bridges, explicitly tying this funding outcome to his cosponsorship and quoting himself on the benefits, which constitutes credit-claiming for a successful legislative/funding action.",
+    "error": null
+  },
+  {
+    "document_id": "1967",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators are highlighted as introducing legislation to designate National Homeless Youth Awareness Month, with each senator quoted explaining the bill's purpose and framing it as their own initiative, which constitutes credit-claiming for legislative sponsorship under R2.",
+    "error": null
+  },
+  {
+    "document_id": "2733",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "explanation": "The senators explicitly announce Senate passage of an appropriations bill they authored amendments for, directly attributing specific funding amounts to their own actions ('Senator Dorgan...included nearly $100 million,' 'an amendment authored by Senator Conrad'). They are quoted celebrating the bill's passage as a personal achievement for the state, meeting criteria for funding secured (R1), legislative authorship (R2), and successful amendment passage (R5).",
+    "error": null
+  },
+  {
+    "document_id": "597",
+    "label": "1",
+    "codebook_rule": [
+      "R6"
+    ],
+    "explanation": "The senator personally hosts and presents an award named after himself, framing himself as instrumental in recognizing and delivering a community benefit (health/fitness recognition), consistent with R6's coverage of ceremonies and events where the senator is portrayed as central to delivering the benefit.",
+    "error": null
+  },
+  {
+    "document_id": "767",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce federal grants totaling over $2.1 million awarded to New Jersey organizations, framing themselves as the ones announcing/delivering this funding to their state, with self-referential quotes about the benefits, consistent with R1's example of announcing secured funding.",
+    "error": null
+  },
+  {
+    "document_id": "1160",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senators announce securing $30 million in levee funding, explicitly attributing this to their own advocacy ('my constant pushing and prodding,' 'our hard work and perseverance has brought us one step closer'). This directly ties personal effort and leadership to a concrete funding outcome, fitting both R1 (announcing secured funding) and R4 (personal effort/advocacy credited with progress toward an outcome).",
+    "error": null
+  },
+  {
+    "document_id": "4104",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Johnson inviting the HHS Secretary to a meeting, cosponsoring amendments/bills offered by other senators, and expressing hope for future action, but does not claim credit for any secured funding, passed legislation, or achieved outcome. The amendments are described as pending, not passed, and the invitation is a request rather than an accomplished result. This is advocacy/pending action, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3291",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Shelby announces that federal funds have been awarded to Mobile County, using self-referential language ('Shelby announces') and a quote framing his commitment to securing resources for first responders, consistent with R1's credit-claiming pattern for announced federal funding.",
+    "error": null
+  },
+  {
+    "document_id": "742",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that federal funding (FAA grant) has been awarded/secured for the local airport, using self-referential 'announce' language and quotes touting the benefits, which fits the pattern of announcing secured funding.",
+    "error": null
+  },
+  {
+    "document_id": "4423",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R5"
+    ],
+    "explanation": "The senators explicitly announce they 'secured funding' for numerous specific projects, using self-referential language ('Senators Warner and Webb secured $2 million'), and highlight passage of a gang violence bill they helped pass. This is a clear example of credit-claiming for federal appropriations and legislative accomplishments.",
+    "error": null
+  },
+  {
+    "document_id": "953",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator merely comments favorably on an appointment made by the Farm Service Agency without claiming personal responsibility for causing the appointment or attributing it to his own advocacy or actions. This is purely reactive/informational commentary, similar to the negative example in R3.",
+    "error": null
+  },
+  {
+    "document_id": "1722",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators highlight their sponsorship/introduction of the Prevention First amendment and related bill (S. 20), quoting themselves describing its purpose and benefits, framing it as their own legislative initiative.",
+    "error": null
+  },
+  {
+    "document_id": "4387",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Senator Shelby announces securing over $1.7 million in federal funding for Birmingham public transit, explicitly stating he 'was instrumental in securing this funding,' and highlights his role on the Appropriations Committee, directly attributing the funding outcome to his own efforts.",
+    "error": null
+  },
+  {
+    "document_id": "276",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is commemorative, honoring the legacy of Dr. Martin Luther King and reflecting on the senator's personal history. It does not attribute any funding, legislation, or policy outcome to the senator's own actions or advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "4121",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator attends a bill signing and praises the legislation, but does not claim personal authorship, sponsorship, or advocacy responsible for the bill's passage or its provisions. She is quoted commenting on fiscal policy generally, not attributing the outcome to her own efforts, so this is informational/commentary rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "4243",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release describes Senator Boxer sending letters urging action on interoperable communications and air cargo screening in response to a 9/11 Commission report. This is advocacy/request-oriented action with no claim of a secured outcome, funding, legislation passed, or completed accomplishment attributable to her efforts. It falls under the exclusion for releases describing pending advocacy without linking to a personal accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "1385",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "explanation": "This release contains multiple instances of credit-claiming. R3/R4: Roberts leads a delegation letter to the President resulting in a FEMA emergency declaration, framing his advocacy as directly responsible for the outcome. R5: He touts his role defeating detrimental amendments to the Farm Bill, framing this as his personal achievement ('I was proud to lead the fight'). R1: He announces $240,000 secured for Kansas STARBASE from DoD, explicitly noting he personally wrote to Defense Secretary Gates to request the funds. R2: He highlights introducing mining legislation with Brownback and Inhofe to address abandoned mine hazards. R5: He also highlights his vote for AMT relief legislation that passed the Senate, framing it as responsive to his advocacy for constituents.",
+    "error": null
+  },
+  {
+    "document_id": "42",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "The senators announce that they reached an agreement to strengthen legislation reorganizing FEMA, with Senator Collins crediting Senator Lott's input and insight as improving the bill, and both senators are tied to the introduction of the Collins-Lieberman legislation. This frames the legislative outcome as a result of their personal negotiation and advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "195",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Durbin announces passage of a resolution he introduced, framing it as his own legislative achievement, with self-referential language ('Durbin Resolution') and quotes from himself explaining its purpose.",
+    "error": null
+  },
+  {
+    "document_id": "3124",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Brown highlights his own legislative initiatives (working with Pryor, Casey, and Obama on specific bills) as his personal efforts to combat toxic toys, and frames his six-point plan and prior actions (requesting testing, calling for CPSC reform) as leadership responsible for addressing the issue, satisfying R2 (authorship/sponsorship of legislation) and R4 (personal effort/leadership framed as driving outcomes).",
+    "error": null
+  },
+  {
+    "document_id": "3471",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a statement of sympathy and encouragement in response to Hurricane Katrina. It reports on Congress passing emergency aid but does not attribute this to the senator's own actions, advocacy, or leadership. There is no claim of personal credit for funding, legislation, or outcomes—just a general call for compassion and support for relief efforts.",
+    "error": null
+  },
+  {
+    "document_id": "534",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator is highlighted as introducing bold, comprehensive natural gas legislation, with detailed provisions attributed to the bill he co-sponsored, and he is quoted explaining its purpose and rationale, framing it as his own legislative achievement.",
+    "error": null
+  },
+  {
+    "document_id": "3428",
+    "label": null,
+    "codebook_rule": null,
+    "explanation": null,
+    "error": "ValueError: Could not find JSON object in response: '{\"id\": \"3428\", \"label\": \"1\", \"codebook_rule\": [\"R4\"], \"explanation\": \"Ensign highlights his personal leadership role in organizing the Senate Fiscal Watch Team, securing 35 signatures for a veto commitment letter, and filing a motion to strip excess spending from the bill. The release frames this outcome (35 senators committing to uphold the veto) as directly resulting from his personal effort and leadership, even though the ultimate legislative outcome (the bill\\'s final form) had not yet been finalized.'",
+    "raw_response": "{\"id\": \"3428\", \"label\": \"1\", \"codebook_rule\": [\"R4\"], \"explanation\": \"Ensign highlights his personal leadership role in organizing the Senate Fiscal Watch Team, securing 35 signatures for a veto commitment letter, and filing a motion to strip excess spending from the bill. The release frames this outcome (35 senators committing to uphold the veto) as directly resulting from his personal effort and leadership, even though the ultimate legislative outcome (the bill's final form) had not yet been finalized."
+  },
+  {
+    "document_id": "1177",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes senators calling on the Air Force to take responsibility and reimburse subcontractors, and mounting pressure for future action. This is advocacy/criticism directed at an agency's failure, not a claim of credit for an accomplished outcome. No funding secured, no legislation passed, no outcome attributed to their efforts—only ongoing pressure and consideration of future legislative fixes, which falls short of credit-claiming under the codebook.",
+    "error": null
+  },
+  {
+    "document_id": "1321",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2"
+    ],
+    "explanation": "The senator announces authorized federal construction funds for VA facilities in Florida, framing it as an outcome he is announcing and tying it to legislation (S. 3421). He is quoted emphasizing his priorities related to veterans, linking the funding outcome to his advocacy and role in passing the bill.",
+    "error": null
+  },
+  {
+    "document_id": "3383",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes a letter urging the President to include certain investments in his upcoming budget. It is a request for future action, not an announcement of any secured funding, passed legislation, or achieved outcome. No credit is claimed for a completed accomplishment; it is purely advocacy pending a future decision by the President.",
+    "error": null
+  },
+  {
+    "document_id": "723",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senator 'welcomes' approval of $300,000 for a specific local project, framing the funding as a positive step she is announcing, with self-referential quotes explaining the benefit to constituents, consistent with claiming credit for progress toward securing funding.",
+    "error": null
+  },
+  {
+    "document_id": "52",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators explicitly announce introducing new legislation ('Preserve Access to Affordable Generics Act'), with each senator quoted describing the bill's purpose and benefits. The release also highlights past legislative achievements, such as Grassley and Leahy's Drug Competition Act being included in the Medicare Modernization Act, and Schumer's authorship of the Greater Access to Affordable Pharmaceuticals Act, framing these as personal accomplishments that benefited consumers.",
+    "error": null
+  },
+  {
+    "document_id": "2701",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Casey highlights his role as cosponsor of the Sudan Divestment Act, notes he chaired a portion of the committee hearing on the bill, and touts the committee's passage of the legislation, framing himself as actively involved in advancing this legislative outcome.",
+    "error": null
+  },
+  {
+    "document_id": "1237",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Harkin announces that Story County is receiving DOJ funding, framing himself as the source of the announcement and noting his senior position on the Appropriations Committee, which ties his role to securing the funds. This matches R1's pattern of announcing secured federal funding with self-referential language and prominent mention of committee position.",
+    "error": null
+  },
+  {
+    "document_id": "1406",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Shelby announces specific federal funding ($115,767) secured for a local fire department, using self-referential framing ('Shelby Announces') and his role on the Appropriations Committee is highlighted, consistent with R1's credit-claiming for announced funding.",
+    "error": null
+  },
+  {
+    "document_id": "3837",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is purely informational/announcement of an event participation and does not claim credit for securing funding, passing legislation, or achieving a specific outcome. While Bennett is noted as co-author of the Healthy Americans Act, the release does not attribute any benefit or accomplishment to his efforts—it simply announces his participation in a discussion forum.",
+    "error": null
+  },
+  {
+    "document_id": "4359",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "The senator announces $2.53 million in grant funding for West Virginia schools and libraries, and explicitly credits his own past efforts in creating the E-Rate program in 1996 as responsible for this ongoing benefit, framing the funding announcement as tied to his personal legislative achievement.",
+    "error": null
+  },
+  {
+    "document_id": "2294",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator merely praises the President's budget and states future intent to work on Kentucky priorities but does not claim credit for any specific accomplishment, funding secured, or legislative outcome achieved. This is prospective advocacy, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "2740",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release expresses the senator's opinion supporting a presidential veto and calls for future reforms, but does not claim credit for any accomplished funding, legislation, or outcome attributable to his own actions. It is advocacy/position statement, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3177",
+    "label": "1",
+    "codebook_rule": [
+      "R5"
+    ],
+    "explanation": "The senator is highlighted as a cosponsor of an amendment that passed by a wide margin (89-1), delivering concrete border security funding and measures. She is quoted praising the outcome, framing her vote/cosponsorship as contributing to this achievement, which fits R5's criteria of claiming credit for a successful vote/amendment that delivered a concrete outcome.",
+    "error": null
+  },
+  {
+    "document_id": "1789",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a reaction/statement praising foreign leaders' actions on Middle East peace. Senator Frist does not attribute any funding, legislation, or policy outcome to his own actions or advocacy; he merely comments on and applauds events involving other parties. No rule applies.",
+    "error": null
+  },
+  {
+    "document_id": "794",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3"
+    ],
+    "explanation": "Bond highlights his role in visiting Asian capitals to promote Missouri's economic interests overseas (R3, attributing outcome to personal advocacy), and claims credit for co-authoring the federal highway bill which is 'providing Missouri with much-needed resources, including $1 billion in new money' (R2, authorship of legislation tied to a concrete benefit).",
+    "error": null
+  },
+  {
+    "document_id": "507",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Stabenow is credited as co-author of the legislation that passed the House and Senate, and is quoted celebrating this achievement, framing it as her own legislative accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "746",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Shelby explicitly announces that he secured/announced over $200,000 in FAA funding for Scottsboro Municipal Word Field, using self-referential language ('I am pleased to announce') and citing his committee membership, which directly attributes the funding outcome to his position and advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "3100",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Dayton announces passage of the bill, is quoted explaining its benefits, and frames himself as co-sponsor advocating for constituents ('Minnesotans will know...'), attributing the legislative outcome partly to his role, though the bill was introduced by Dorgan. His self-referential framing and quote emphasizing benefit to Minnesotans constitutes credit-claiming for his co-sponsorship role in passing the legislation.",
+    "error": null
+  },
+  {
+    "document_id": "247",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Clinton is credited with introducing legislation to rename the post office, framing this action as her own initiative, which aligns with R2's criteria for claiming credit for sponsoring/introducing legislation, even though the subject matter is commemorative.",
+    "error": null
+  },
+  {
+    "document_id": "812",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "Schumer explicitly attributes the FEMA disaster aid approval to his own advocacy, noting he wrote letters and personally called FEMA's Administrator to push for the aid. The release frames the federal decision as a result of his direct lobbying efforts, fitting R3 (attributing a government decision to his advocacy) and R4 (personal effort like letters/calls directly responsible for the outcome).",
+    "error": null
+  },
+  {
+    "document_id": "1076",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "The release highlights Senator Murray's personal advocacy efforts to boost VA funding, including her attempts to increase funding and being honored for her work on veterans' issues, framing her as instrumental in advocating for veterans despite obstacles from the administration and Congress.",
+    "error": null
+  },
+  {
+    "document_id": "34",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The release announces a federal NEA grant secured for the Idaho Dance Theater tour, prominently naming Senator Crapo as announcing it and quoting him, and noting he is working on securing an additional grant, which attributes the benefit to his involvement.",
+    "error": null
+  },
+  {
+    "document_id": "466",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3",
+      "R4"
+    ],
+    "explanation": "Senator Clinton is credited with announcing and securing the tree donation and grant funding, and the entire initiative is framed as her own 'Urban Forestry Initiative' that she launched and led, with the funding secured through a partnership she personally facilitated. This attributes the tangible benefit (grants, trees) directly to her leadership and advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "519",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative/historical piece about Benjamin Franklin for Independence Day, with no attribution of any benefit, funding, legislation, or outcome to the senator's own actions or advocacy. It is purely informational and celebratory in nature.",
+    "error": null
+  },
+  {
+    "document_id": "2895",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "McCaskill is credited with voting for and specifically amending the bill (her amendment on whistleblower protection for airport screeners), and she is quoted touting the benefits of the legislation for Missouri first responders, framing the outcome as tied to her actions.",
+    "error": null
+  },
+  {
+    "document_id": "2334",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "explanation": "Senator DeWine announces a grant to Willoughby, attributing it directly to his authored and passed FIRE Act legislation. He is credited with writing, passing, and securing appropriations for the program, and is quoted celebrating the outcome of his legislative efforts.",
+    "error": null
+  },
+  {
+    "document_id": "411",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R5"
+    ],
+    "explanation": "The senators explicitly state they 'secured' $31 million in funding for Montana projects and directly attribute the successful passage of the Defense Appropriations Bill to their efforts ('fought hard for these projects,' 'delivering on our promise'), claiming personal credit for the funding outcome.",
+    "error": null
+  },
+  {
+    "document_id": "2011",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator is highlighted as co-introducing legislation (the U.S. Commitment to Global Child Survival Act of 2007) and is quoted describing its purpose and rationale, framing the bill's introduction as his own initiative and achievement.",
+    "error": null
+  },
+  {
+    "document_id": "799",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators explicitly announce that they 'secured' $181 million in federal funding for Maine, using self-referential language and being directly named as responsible for delivering this funding, which is a clear example of credit-claiming per R1.",
+    "error": null
+  },
+  {
+    "document_id": "4192",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator explains her vote and expresses concerns about a nominee, discussing her past advocacy in general terms ('I have fought for...') but does not claim credit for a specific secured outcome, funding, legislation passed, or concrete achievement. This is a statement of position/concerns rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "1087",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators explicitly announce funding they 'worked to secure' for Maine projects, using self-referential language and detailing specific dollar amounts attributed to their advocacy in the appropriations bill.",
+    "error": null
+  },
+  {
+    "document_id": "3942",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative statement marking the anniversary of September 11th. It calls for policy changes and unity but does not claim credit for any funding, legislation, or outcome attributable to the senator's own actions or advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "3518",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "Schumer explicitly attributes the inclusion of the $50 million funding measure to his own aggressive lobbying, meetings with TSA, and advocacy efforts on behalf of SureScan, framing the legislative outcome as a result of his personal intervention and leadership.",
+    "error": null
+  },
+  {
+    "document_id": "4585",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Schumer announces federal grants secured for Westchester County fire departments, using self-referential language ('Schumer Announces') and directly attributing the establishment/expansion of the funding program to his own advocacy ('Schumer has Pushed for Additional Funding', 'Schumer was among the first senators who recognized the need...'), which fits both R1 (announcing secured funding) and R3 (claiming credit for a program's creation/expansion through personal advocacy).",
+    "error": null
+  },
+  {
+    "document_id": "2144",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3"
+    ],
+    "explanation": "Lugar is credited as the author/introducer of S.193 and S.Res.30, with his own quotes explaining the bill's rationale (R2). Additionally, the release states 'At Lugar's urging, Secretary of State Rice has already begun implementing provisions of the bill,' explicitly attributing an administration action to his personal advocacy (R3).",
+    "error": null
+  },
+  {
+    "document_id": "2259",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Domenici announces USDA grants totaling $318,000, uses self-referential language ('Sen. Domenici announced'), is quoted praising the funding, and the release ties his Appropriations Committee membership to the funding decision, fitting R1's pattern of announcing secured funding tied to the senator's role.",
+    "error": null
+  },
+  {
+    "document_id": "3228",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Senator Domenici, as Chairman of the Energy and Water Appropriations Subcommittee, announces that his subcommittee approved his appropriations bill, explicitly noting funding levels he personally 'appropriated' and provided ($380 million above the administration's request, $10 million for CAP, etc.). He is quoted taking personal credit for the funding decisions and policy provisions, framing the outcome as a direct result of his leadership and effort as chairman.",
+    "error": null
+  },
+  {
+    "document_id": "1765",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Bingaman explicitly states funding was secured 'at Bingaman's request' and repeatedly attributes specific appropriations to his own advocacy, including language he wrote and past funding he secured. This is a clear case of credit-claiming for federal funding directed to his state through his personal efforts.",
+    "error": null
+  },
+  {
+    "document_id": "2437",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "explanation": "DeWine announces specific grant funding for a local fire department, ties it to his authored FIRE Act legislation ('wrote and passed'), and highlights his role securing appropriations as a member of the Appropriations Committee. This combines funding announcement, legislative authorship, and personal advocacy credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "2230",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The release describes Bingaman's requests for funding for FY2007 (pending advocacy under R4), but also explicitly states he 'secured' funding in prior years ($200,000 in FY2006, $2 million in FY2002, $1 million in 2006, etc.) for specific projects, which is a direct claim of credit for securing federal funding per R1. The mix of pending requests and past secured funding, both attributed to his personal efforts, supports a credit-claiming classification.",
+    "error": null
+  },
+  {
+    "document_id": "1398",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators explicitly announce that they secured/approved $9.2 million in defense funding for their region, using self-referential language ('Schumer, Clinton Announce...') and direct quotes taking credit for the funding's benefits to the region.",
+    "error": null
+  },
+  {
+    "document_id": "1372",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senator announces a specific federal grant awarded to a Minnesota organization, using self-referential language ('Sen. Coleman today announced'), and ties the outcome to his advocacy (circulating a letter to the Appropriations Subcommittee for Head Start funding), framing himself as instrumental in supporting the program.",
+    "error": null
+  },
+  {
+    "document_id": "5",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Senator Murray explicitly claims to have 'delivered' and 'secured' funding for channel deepening, jetty repair, and dredging projects, using self-referential language ('Murray advocated for,' 'Senator Murray added,' 'included funding'). A local official credits her directly, and the release emphasizes her role as a subcommittee member securing more funding than the President requested, framing the outcome as her personal achievement.",
+    "error": null
+  },
+  {
+    "document_id": "1620",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Carper blocking a confirmation vote due to the administration's refusal to provide requested information, and discusses his prior legislative proposal (Clean Air Planning Act) without claiming credit for any secured funding, passed legislation, or achieved outcome. It is critical of the administration and describes ongoing advocacy/frustration rather than attributing a beneficial outcome to his own actions. No funding was secured, no bill passed, and no concrete benefit was delivered or attributed to his efforts.",
+    "error": null
+  },
+  {
+    "document_id": "4221",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Shelby explicitly announces securing federal funding ('I am pleased to announce $14,612 for Lauderdale County'), using self-referential language and his Appropriations Subcommittee chairmanship to tie himself directly to the outcome.",
+    "error": null
+  },
+  {
+    "document_id": "4019",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a floor speech explaining the content and rationale of FDA reauthorization legislation and expressing support for it, but the senator does not claim personal authorship, sponsorship, or credit for the bill. She mentions working on FDA reforms in the 1990s alongside 'other members of the Senate' but does not attribute the current bill's provisions or benefits to her own advocacy or effort. The speech is informational/explanatory about the bill's provisions rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "1862",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators explicitly announce securing over $12M in federal funding for specific Butte projects, using self-referential language ('delivered on their promise to secure federal funding') and are directly credited by a local business executive for the outcome.",
+    "error": null
+  },
+  {
+    "document_id": "2153",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Mikulski explicitly claims to have 'fought to include funding' for specific transportation projects, framing the outcome as a direct result of her advocacy and committee position, with self-referential quotes taking credit for delivering the funding.",
+    "error": null
+  },
+  {
+    "document_id": "1115",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that DHS has approved specific funding amounts for named fire companies, framing themselves (via committee membership and self-referential quotes) as responsible for delivering this benefit to constituents.",
+    "error": null
+  },
+  {
+    "document_id": "989",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators are highlighted as introducing/co-sponsoring legislation to provide $1.5 billion in funding for Metrorail, and are quoted explaining the bill's purpose and benefits, framing this as their own legislative initiative.",
+    "error": null
+  },
+  {
+    "document_id": "2274",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senators explicitly announce that they 'secured' $225 million in earmarks for South Dakota, tying the funding directly to their negotiation role on the conference committee. Thune and Johnson are quoted taking credit for securing funding for specific projects, and the release frames their advocacy and negotiation as directly responsible for the outcome.",
+    "error": null
+  },
+  {
+    "document_id": "1848",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights Sessions as the 'Senate author' of legislation and quotes him explaining and advocating for it, framing the bill's introduction and push for passage as his own initiative, which fits R2. However, since the legislation has not yet passed (it's still being blocked), this is more about ongoing advocacy for his own authored bill rather than a completed accomplishment, but the authorship framing itself satisfies R2's credit-claiming criteria.",
+    "error": null
+  },
+  {
+    "document_id": "3429",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "The senator announces that her sponsored amendment was approved by the Senate, explicitly attributing the legislative outcome to her own initiative ('the Senator's legislation') and quoting herself extensively explaining its purpose and benefits.",
+    "error": null
+  },
+  {
+    "document_id": "773",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative resolution honoring the late Senator Eagleton's life and legacy. While McCaskill introduced the resolution alongside others, the release does not attribute any beneficial outcome, funding, or policy achievement to her own efforts—it is purely commemorative in nature, praising Eagleton rather than claiming credit for any accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "1694",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Senator Clinton highlights that the passed bill includes two provisions she personally offered (capping loan payments and income exemptions), directly attributing these legislative outcomes to her own actions. She also references her sponsorship of other bills, framing herself as a champion on this issue.",
+    "error": null
+  },
+  {
+    "document_id": "417",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Baucus is credited with helping introduce disaster assistance legislation, incorporating provisions from bills he previously introduced, and a local farm organization praises his advocacy on behalf of Montana producers. This frames the legislative effort as his personal initiative and achievement, satisfying R2 (highlighting sponsorship/introduction of legislation) and R4 (personal effort/leadership tied to outcome).",
+    "error": null
+  },
+  {
+    "document_id": "75",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Bunning announces federal funding awarded to the fire department, using self-referential 'Bunning Announces' framing and a quote expressing personal satisfaction, though not explicitly claiming he secured it, the announcement style and prominence of his name tie him to the funding delivery.",
+    "error": null
+  },
+  {
+    "document_id": "2293",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator is highlighted as author of language establishing an Office on Indian Mens Health within the bill, and is quoted explaining the benefits of provisions he authored, framing the legislative action as his own achievement.",
+    "error": null
+  },
+  {
+    "document_id": "1204",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Bayh is highlighted as author of the DRIVE Act ('my energy plan'), quoted describing its purpose, and credited with leadership on the legislation, which constitutes claiming credit for introducing this bill.",
+    "error": null
+  },
+  {
+    "document_id": "733",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes ongoing advocacy by Sununu urging a Senate subcommittee to fund IDEA, but does not claim credit for an achieved funding outcome, secured appropriation, or passed legislation. It is a request/urging letter, not a claim of accomplishment, so it falls under the negative example pattern of R4 (advocacy without secured outcome).",
+    "error": null
+  },
+  {
+    "document_id": "1027",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Harkin requesting an audit and asking questions of Inspectors General regarding food safety oversight. It is an advocacy/informational release about a pending request, not a claim of credit for any secured funding, legislation passed, or achieved outcome. No benefit has been delivered or attributed to his actions; he is merely calling for an evaluation.",
+    "error": null
+  },
+  {
+    "document_id": "413",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces that $20 million in HUD funding has been awarded for a local project, using self-referential language ('Shelby Announces') and his committee chairmanship is prominently noted, framing him as central to securing the funds.",
+    "error": null
+  },
+  {
+    "document_id": "629",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "Murray's direct questioning of the Air Force Secretary is credited with prompting reconsideration of the funding decision. She is quoted saying 'The Air Force has finally heard us,' attributing the reversal to her advocacy, consistent with R3's positive example almost verbatim. This is also an example of R4, as her personal effort (questioning at a hearing) is framed as directly responsible for the outcome, even though the funding restoration is not yet finalized.",
+    "error": null
+  },
+  {
+    "document_id": "3746",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release originates from FLEOA announcing an award to Senator Akaka, not the senator's own office claiming credit. While it mentions his legislative actions (opposing pay-for-performance, introducing S. 3584) and committee roles, there is no self-referential language from the senator claiming credit for securing funding, passing legislation, or causing an outcome. It reads as informational/commemorative recognition rather than credit-claiming by the senator himself.",
+    "error": null
+  },
+  {
+    "document_id": "3357",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that over $5 million in federal HUD funding has been secured for Delaware, with self-referential quotes from Biden and Carper framing this as fulfilling their commitment/advocacy, which constitutes credit-claiming for federal funding.",
+    "error": null
+  },
+  {
+    "document_id": "2874",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator is criticizing the President's veto and expressing values/priorities, without attributing any accomplishment, funding, or outcome to her own actions or advocacy. This is reactive criticism, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "4675",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release reports that Delaware will receive federal grants from OJJDP, but it does not attribute the awarding of these grants to Senator Biden's own advocacy, effort, or legislative action. He simply announces the grants and comments on their importance, which is informational rather than credit-claiming per the negative example under R1 (e.g., Lugar/HUD grants).",
+    "error": null
+  },
+  {
+    "document_id": "3174",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release reports that a grant was awarded by the Office of National Drug Control Policy and announced by Senator Roberts, but there is no language attributing the funding to his efforts, advocacy, or influence. This mirrors the negative example under R1 where a senator merely announces/reports on funding without claiming responsibility for securing it.",
+    "error": null
+  },
+  {
+    "document_id": "3555",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces grants awarded to Florida fishery organizations, using self-referential language ('Martinez announces') and personal commentary framing the funding as beneficial, consistent with R1's pattern of announcing secured federal grants.",
+    "error": null
+  },
+  {
+    "document_id": "4248",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "explanation": "The senator announces a specific grant awarded to a local fire department, ties it to legislation he wrote and passed (the FIRE Act), highlights his role on the Appropriations Committee in securing $650 million funding, and quotes himself claiming credit for passing and funding the Act.",
+    "error": null
+  },
+  {
+    "document_id": "333",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces that federal funds have been awarded to the Prattville Fire Department, using self-referential language ('Shelby announces') and quoting himself about continuing efforts to secure resources, framing the funding announcement as tied to his role.",
+    "error": null
+  },
+  {
+    "document_id": "4580",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The press release explicitly states that the Arkansas congressional delegation, including the senators, 'successfully fought to include' numerous funding items in the omnibus appropriations package. This attributes the securing of millions in federal funding across various sectors (agriculture, justice, transportation, defense, etc.) directly to the delegation's advocacy and effort, which is a clear example of credit-claiming for federal funding secured through personal/collective legislative action.",
+    "error": null
+  },
+  {
+    "document_id": "4075",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "The senators highlight that their sponsored bill passed a committee milestone, quote themselves taking pride in sponsoring the legislation, and are credited by local officials for advocacy leading to this progress, constituting credit-claiming for legislative sponsorship and advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "240",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator is commenting favorably on the confirmation of a cabinet nominee and expressing intent to work with him in the future. There is no claim that the senator's own actions, advocacy, or efforts caused the confirmation or produced any specific benefit; this is reactive/informational commentary, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "4050",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is purely critical of President Bush's Social Security privatization plan and does not attribute any beneficial outcome, funding, legislation, or policy achievement to Senator Corzine's own actions or advocacy. It is criticism of an opposing plan without self-attribution of credit.",
+    "error": null
+  },
+  {
+    "document_id": "1310",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senators are urging the President to expedite a disaster declaration that has not yet been secured. This matches the negative example under R4 (requesting/urging action without having achieved the outcome), so this is advocacy rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "504",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senators announce Senate approval of specific funding for named projects, using self-referential language ('I am pleased,' 'I will continue working') and framing themselves as instrumental to securing this funding for their constituents, consistent with R1 and R4.",
+    "error": null
+  },
+  {
+    "document_id": "3859",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Senator Collins announces federal grant funding awarded to Maine fire departments, prominently tied to her role as ranking member of the Homeland Security Committee. She also explicitly claims credit for the existence of the program itself, stating she 'strongly supported the creation of the FIRE Act Grant program,' attributing the policy outcome to her own advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "3992",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "The senator explicitly attributes the DOE/NNSA's commitment to fund the road construction to his own personal intervention ('Following intervention by Domenici'), and he is quoted celebrating that the agency 'listened to my concerns.' This is a clear example of claiming credit for influencing an agency decision through personal advocacy, matching both R3 (attributing outcome to advocacy even though another entity made the decision) and R4 (highlighting personal intervention as directly responsible for the outcome).",
+    "error": null
+  },
+  {
+    "document_id": "3938",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Senator Allard explicitly announces that funding he requested ($400,000) was approved by the subcommittee of which he is a member, directly attributing the funding outcome to his request and role, and also highlights his cosponsorship and ongoing personal effort to combat the tamarisk problem.",
+    "error": null
+  },
+  {
+    "document_id": "3184",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator explicitly states he 'secured' $250,000 in federal funding, and a local official (the mayor) credits Talent directly for his efforts, matching the clear positive example under R1.",
+    "error": null
+  },
+  {
+    "document_id": "3137",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Schumer announces specific federal grants for fire departments, explicitly attributing the funding announcement to himself ('Schumer Announces'). He also claims credit for pushing for the funding program's establishment and continued funding, stating he was 'among the first senators who recognized the need' for the program, linking the grant program's existence and expanded funding to his advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "2662",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Shelby announces that specific federal funding ($34,200) has been secured/awarded for the Hamilton Fire Department, prominently tying his announcement and committee membership to the funding, and is quoted describing its benefits to constituents.",
+    "error": null
+  },
+  {
+    "document_id": "4689",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "The release highlights the senators' introduction of new legislation to stop pay-off agreements, with each senator quoted explaining its purpose. It also cites past legislative achievements attributed to their sponsorship: Kohl's success in securing $10 million in appropriations, Grassley and Leahy's Drug Competition Act inclusion in the Medicare Modernization Act, and Schumer's authorship of the enacted Greater Access to Affordable Pharmaceuticals Act. These are framed as personal legislative accomplishments, satisfying both R2 (bill sponsorship/authorship) and R5 (past successful legislative actions attributed to personal effort).",
+    "error": null
+  },
+  {
+    "document_id": "4767",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Senator Salazar explicitly claims to have 'secured' and 'fought to include' specific funding amounts for Colorado law enforcement, framing the appropriations outcome as a result of his personal advocacy, consistent with R1 and R4.",
+    "error": null
+  },
+  {
+    "document_id": "573",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce specific federal grant funding ($3.6 million) secured for Connecticut, using self-referential language ('Dodd, Lieberman Announce') and quoting themselves describing the benefits of the funding, which constitutes credit-claiming for securing federal funds.",
+    "error": null
+  },
+  {
+    "document_id": "3226",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "The release credits Klobuchar's personal work with the State Department for expediting nearly a thousand passports for Minnesotans, framing her advocacy as directly responsible for a concrete constituent benefit, even though the underlying policy decision (the waiver) was made by the State Department itself.",
+    "error": null
+  },
+  {
+    "document_id": "32",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "The senator highlights his role as member of the Senate Armed Services Committee working to secure resources for veterans, and explicitly touts his introduction of the Cellulosic Ethanol Incentive Act, framing it as his own legislative initiative. He also frames his advocacy for Lockheed Martin employees as a personal achievement through his committee position, consistent with credit-claiming for legislative authorship and personal advocacy leading to outcomes.",
+    "error": null
+  },
+  {
+    "document_id": "3845",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Bayh highlights his authorship/sponsorship of the Vehicle and Fuel Choices for American Security Act, framing it as his own legislative initiative and repeatedly referring to it as 'my energy plan' and urging Congress to pass 'my plan,' which constitutes claiming credit for the legislative solution he introduced.",
+    "error": null
+  },
+  {
+    "document_id": "4794",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "explanation": "The senator claims credit for establishing the E-Rate program with Sen. Rockefeller in 1996, framing this as a personal achievement ('Sen. John Rockefeller and I established the E-Rate program'). The release attributes the program's success and over $40 million in federal funds for Maine schools to this original legislative action. Additionally, the senator highlights their committee membership and participation in hearings as ongoing advocacy to maintain funding, framing themselves as instrumental to the program's continuation and benefits to Maine constituents.",
+    "error": null
+  },
+  {
+    "document_id": "3047",
+    "label": "1",
+    "codebook_rule": [
+      "R3"
+    ],
+    "explanation": "The release attributes USDA's decision to purchase potatoes to the Idaho Congressional Delegation's letter requesting this action, framing the outcome as a result of the senator's advocacy even though USDA made the actual decision.",
+    "error": null
+  },
+  {
+    "document_id": "4293",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "While the release is primarily a defensive statement refuting an inaccurate news story, it also includes credit-claiming elements: Dorgan attributes the securing of funding for the Three Affiliated Tribes BIA School to his own support and advocacy ('we succeeded in getting funding from this program for the Three Affiliated Tribes BIA School in North Dakota this year'), and he highlights his leadership role in investigating Abramoff/Scanlon with Sen. McCain as his own personal effort and achievement. These elements attribute a beneficial outcome (funding) and an ongoing investigative effort to his own advocacy, satisfying R3 and R4, even though the overall tone is defensive/corrective.",
+    "error": null
+  },
+  {
+    "document_id": "3522",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes senators urging President Bush to take action on climate change assistance for developing nations. It is advocacy for future action, not a claim of credit for any accomplished outcome, funding secured, or legislation passed. No benefit is attributed to the senators' own efforts as having been achieved.",
+    "error": null
+  },
+  {
+    "document_id": "4511",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Hatch highlights his introduction of legislation in June 2006 to strengthen HSAs, framing it as his own initiative, and emphasizes his role in creating HSAs through his work on the Medicare Modernization Act conference committee. This constitutes credit-claiming for legislative authorship and past policy achievement.",
+    "error": null
+  },
+  {
+    "document_id": "4677",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "Hutchison highlights her role as Ranking Member on the subcommittee and her personal advocacy/questioning at the hearing that secured assurances on BRAC implementation status and expressed support leading to funding inclusion ($18 million) for Fort Hood facilities, framing herself as instrumental to this outcome.",
+    "error": null
+  },
+  {
+    "document_id": "1907",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Schumer highlights that he is introducing/announcing new legislation to allow SBA grants to disaster victims, framing this as his own initiative. This matches R2's criteria of touting authorship/introduction of legislation. The disaster declaration request is separate advocacy not yet achieved (not credit-claiming under R4), but the legislative announcement itself qualifies under R2.",
+    "error": null
+  },
+  {
+    "document_id": "338",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release announces a DOL eligibility determination and expansion of benefits, but does not attribute this outcome to Harkin's personal advocacy, effort, or intervention. It simply reports the DOL declaration and explains the program, which is informational rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "4411",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "explanation": "Burns highlights his introduction of S. 2315 (R2), attributes the Combat Meth Act's passage and $900 million in Byrne/JAG funding restoration to his own efforts and amendments (R5), touts his founding of the Senate Anti-Meth Caucus and advocacy leading to national attention on meth (R3, R4), and frames multiple outcomes (legislation, funding restoration, national awareness) as directly resulting from his personal leadership and actions.",
+    "error": null
+  },
+  {
+    "document_id": "4508",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "The release explicitly links the movement of trailers/mobile homes to Mississippi to Lott's personal appeal to President Bush the day before, framing the outcome as a direct result of his advocacy, even though the action was executed by FEMA.",
+    "error": null
+  },
+  {
+    "document_id": "1687",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "Domenici announces SBA disaster assistance and personally attributes the outcome to his 'best efforts' and continued advocacy ('I have dedicated my best efforts to ensure that the areas affected receive the financial assistance they need'), framing the SBA action as a result of his personal advocacy, even though SBA is the actual decision-making entity.",
+    "error": null
+  },
+  {
+    "document_id": "924",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Shelby explicitly announces securing over $1 million in FAA funding for the Huntsville airport, using self-referential language ('I was pleased to play a role in securing these funds') and highlighting his position on the Senate Appropriations Committee, directly attributing the funding to his own efforts.",
+    "error": null
+  },
+  {
+    "document_id": "4209",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "explanation": "The senators explicitly link their letter-writing advocacy and bill introduction to the inclusion of medication safety language in the final legislation, framing the outcome as a result of their personal effort. They are quoted celebrating the legislative achievement and describing its benefits, which constitutes claiming credit for both the advocacy that led to inclusion of the provision and for introducing similar legislation.",
+    "error": null
+  },
+  {
+    "document_id": "700",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "Leahy explicitly states he 'requested this committee field hearing' to secure Vermont-specific priorities in the Farm Bill, framing his personal action (requesting and chairing the hearing) as directly responsible for advancing Vermont's interests in the legislative process, even though the final outcome (the Farm Bill) has not yet been achieved.",
+    "error": null
+  },
+  {
+    "document_id": "2626",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a critical statement about the 9/11 Commission's report card on homeland security failures by the government/Washington. Kerry does not attribute any beneficial outcome, funding, legislation, or policy action to his own efforts or advocacy. It is purely critical/reactive commentary without self-attribution, so it does not meet any credit-claiming criteria.",
+    "error": null
+  },
+  {
+    "document_id": "1284",
+    "label": "1",
+    "codebook_rule": [
+      "R4",
+      "R6"
+    ],
+    "explanation": "Rockefeller is credited as leading and organizing the Homeland Security Summit, an event he personally facilitated in coordination with the state, framing him as instrumental to this beneficial community program/initiative.",
+    "error": null
+  },
+  {
+    "document_id": "2931",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release reports on USDA Secretary Johanns' announcement of expanding the AGR Lite insurance program to Wyoming and other states. Enzi merely reacts favorably and encourages farmers to consider the program, but does not claim credit for causing this expansion through his own advocacy, effort, or legislative action. There is no self-attribution language indicating he secured, sponsored, or influenced this outcome.",
+    "error": null
+  },
+  {
+    "document_id": "393",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3",
+      "R4"
+    ],
+    "explanation": "The release explicitly states Bond 'earmarked over $450 million for plant genomics,' 'secured $34 million for the Life Sciences Center,' and 'poured' federal funding into biotechnology development, directly attributing these funding outcomes to his own actions and leadership as Appropriations Subcommittee Chairman. It also frames his advocacy as responsible for advancing biotechnology policy both domestically and internationally.",
+    "error": null
+  },
+  {
+    "document_id": "1125",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators explicitly announce that federal funding has been awarded to the Ticonderoga Municipal Airport, using self-referential language ('Schumer, Clinton Announce'). Schumer is quoted framing the funding as a result of his ongoing fight for federal funds ('I will continue to fight for federal funds'), and both senators are prominently tied to securing this benefit for their constituents.",
+    "error": null
+  },
+  {
+    "document_id": "1146",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3",
+      "R4"
+    ],
+    "explanation": "Allard is credited with securing $449,000 in prior funding and sending a letter to the Corps advocating for use of FY2007 funds, which resulted in the Corps allocating $300,000. The release directly ties his personal advocacy (letter-writing, Appropriations Committee membership) to the funding outcome, and he is quoted celebrating the result while noting his own role in securing prior funds.",
+    "error": null
+  },
+  {
+    "document_id": "1885",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "explanation": "Senator Clinton is credited with authoring an amendment included in the NDAA conference report, is quoted describing her past advocacy and pledge to fight for the base, and the release attributes her prior BRAC-related efforts to a positive outcome. It also references her joint announcement of secured military construction funding, reinforcing her role as instrumental to these outcomes.",
+    "error": null
+  },
+  {
+    "document_id": "3763",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The headline states Kyl 'garnered' the grant, and the text notes the funding resulted from 'his request,' explicitly attributing the $3.4 million federal grant to his advocacy—matching R1's criteria for credit-claiming on secured funding.",
+    "error": null
+  },
+  {
+    "document_id": "3594",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator explicitly announces that transit funding was 'secured by Bingaman' in a spending bill, directly attributing the federal funding to his own actions, which is a clear case of credit-claiming for securing funds.",
+    "error": null
+  },
+  {
+    "document_id": "2126",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Senator Roberts highlights his committee membership and personal advocacy for CRP tax provisions, and explicitly claims authorship of the Agricultural Business Security Tax Credit Act, framing these legislative outcomes as his own achievements.",
+    "error": null
+  },
+  {
+    "document_id": "2805",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release primarily criticizes the EPA's new mercury rule and expresses disappointment, without claiming credit for any secured funding, passed legislation, or achieved outcome. While Feinstein mentions co-sponsoring the Clean Power Act, this is presented as a pending bill that 'would do much more,' not something she has achieved or that has passed—there's no attribution of a concrete beneficial outcome to her own actions. This is criticism of an administration decision without self-attribution of credit.",
+    "error": null
+  },
+  {
+    "document_id": "4356",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce funding secured for Tennessee military construction projects, framing the appropriations bill's passage and its benefits as tied to their advocacy and role, with self-referential quotes touting the funding's benefits to constituents.",
+    "error": null
+  },
+  {
+    "document_id": "4620",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative release honoring American Indian Heritage Month and paying tribute to deceased tribal leaders. It does not attribute any specific funding, legislation, or policy outcome to the senator's own actions, advocacy, or leadership. While it mentions tribal opposition stalling legislation and hopes for future legislative action, it does not claim personal credit for these outcomes.",
+    "error": null
+  },
+  {
+    "document_id": "838",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is critical of President Bush's budget proposal and its negative impacts on New Jersey, but it does not claim credit for any funding secured, legislation authored, or outcomes achieved by Senator Corzine. While it mentions that Corzine 'worked to thwart' offshore drilling proposals in past Congresses and introduced a moratorium bill, these are mentioned briefly in passing within a larger critical assessment, not as the central credit-claiming focus of the release. The primary content is criticism of the administration's budget without self-attribution of a beneficial outcome delivered to constituents. The release describes future intent ('I will fight to protect our state's priorities') rather than an accomplished outcome, which does not meet the bar for credit-claiming under R4 or R5.",
+    "error": null
+  },
+  {
+    "document_id": "2468",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Nelson highlights his role as co-sponsor of the America COMPETES Act, which passed the Senate, and quotes himself explaining its benefits for Nebraska students and research funding, framing the outcome as tied to his legislative involvement.",
+    "error": null
+  },
+  {
+    "document_id": "4501",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is primarily commemorative, focusing on the bicentennial celebration of Sakakawea's history. While it mentions the senator has been 'instrumental in developing several projects' like the Legacy Trails, this is a brief, general mention without specific claims of securing funding, sponsoring legislation, or personally delivering a concrete outcome. The bulk of the release is historical/educational commemoration rather than credit-claiming for a specific benefit or accomplishment attributable to the senator's actions.",
+    "error": null
+  },
+  {
+    "document_id": "4753",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release simply announces an upcoming USDA-hosted Farm Bill Forum event. Burns is not claiming credit for securing funding, authoring legislation, or influencing a government decision through his own advocacy—he is merely announcing an informational event and encouraging constituents to attend. No outcome is attributed to his own efforts.",
+    "error": null
+  },
+  {
+    "document_id": "3335",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "The release explicitly attributes the opening of the archives to Biden's own long-standing advocacy, including his letters to ambassadors and continued pressure on non-ratifying countries, framing the outcome as a result of his personal efforts even though the actual decision was made by the International Commission and Red Cross/German government.",
+    "error": null
+  },
+  {
+    "document_id": "122",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Conrad's advocacy, questioning of nominees, letters, and calls for hearings on the mad cow disease issue, but does not claim credit for any secured funding, passed legislation, or achieved policy outcome. The actions described (urging, questioning, requesting reconsideration) represent ongoing advocacy rather than a claimed accomplishment. No funding was secured (R1), no legislation is highlighted as authored/passed (R2/R5), no outcome is attributed to his influence as having been achieved (R3), and while he highlights his committee position and personal effort (hearings, letters), these are framed as ongoing requests/urging rather than outcomes achieved through his intervention (R4 requires an achieved outcome, not just requests). No tangible constituent benefit is claimed (R6).",
+    "error": null
+  },
+  {
+    "document_id": "2315",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Schumer highlights his sponsorship of the Transportation Security Improvements Act, co-sponsorship of other security bills, and his plan to offer an amendment to the Homeland Security spending bill, framing these legislative actions as his own initiative to improve security.",
+    "error": null
+  },
+  {
+    "document_id": "2855",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce a $300,000 federal grant for Toccoa using self-referential language ('I am pleased to announce this grant'), tying themselves to the funding outcome, which fits R1's pattern of credit-claiming for secured federal funding.",
+    "error": null
+  },
+  {
+    "document_id": "26",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senators announce funding for drinking water projects included in a bill, attributing the inclusion of these authorizations to their own efforts ('we were able to work to include this authorization'), and frame the outcome as a direct benefit to their constituents resulting from their advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "3119",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator describes ongoing advocacy—sending a letter and urging FEMA to approve assistance—but no outcome has been achieved or secured. This is advocacy in progress rather than a claim of credit for an accomplished result, consistent with the negative example under R4.",
+    "error": null
+  },
+  {
+    "document_id": "871",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Salazar questioning and criticizing the Administration's budget proposals and policy changes without claiming credit for any secured funding, legislation, or achieved outcome. It is critical of the administration's actions rather than self-attributing a benefit or accomplishment, which falls outside the scope of credit-claiming as defined in the codebook.",
+    "error": null
+  },
+  {
+    "document_id": "3582",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces that a specific grant has been awarded to an organization in his state, using self-referential language ('Graham Announces'), consistent with R1's pattern of announcing secured/awarded federal funding for constituents even though the grant was awarded by DOJ.",
+    "error": null
+  },
+  {
+    "document_id": "2363",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Dorgan highlights his co-sponsorship of legislation and quotes himself explaining its purpose (R2). He also emphasizes his personal role and position on the Appropriations Committee to advocate for keeping disaster relief language in the bill, and notes his past success in attaching similar relief language to a spending bill, framing this as his own achievement (R4).",
+    "error": null
+  },
+  {
+    "document_id": "2263",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative statement mourning the death of Pope John Paul II. While the senator mentions personally presenting the Congressional Gold Medal to the Pope, this is a factual recollection of a past event and not an attempt to claim credit for a beneficial outcome for constituents, funding, or legislation. The release is purely tribute/commemorative in nature and does not attribute any policy outcome, funding, or legislative achievement to the senator's own actions or advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "3973",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator is reacting to a third-party report and discussing policy priorities for future legislation reauthorization, but does not claim credit for securing funding, passing legislation, or achieving a specific outcome through his own advocacy. This is informational/reactive commentary on an independent study, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3625",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "explanation": "The senator explicitly states he 'secured $188,000' for the initiative, and highlights that the Task Force was created through legislation he authored (Missouri River Protection and Improvement Act). He also attributes the creation and function of the task force to his legislative efforts, framing the outcome as his achievement.",
+    "error": null
+  },
+  {
+    "document_id": "1079",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator is praising NASA's successful shuttle launch and the hard work of NASA employees, but does not attribute this outcome to his own advocacy, effort, or actions. This is a commemorative/reactive statement without self-attribution, so it does not meet the credit-claiming criteria.",
+    "error": null
+  },
+  {
+    "document_id": "267",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "The senators highlight their authorship/re-introduction of bipartisan drug importation legislation and claim credit for personally securing a commitment from the Majority Leader and Committee Chairman to hold a hearing specifically on their bill, framing this procedural progress as a direct result of their advocacy and meeting with leadership.",
+    "error": null
+  },
+  {
+    "document_id": "1020",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is Feinstein's reaction/commentary on a commission report, without claiming credit for causing the report, its recommendations, or any resulting outcome. She does not attribute the report or its findings to her own advocacy or actions. This is purely informational/reactive commentary, excluded under the definition.",
+    "error": null
+  },
+  {
+    "document_id": "1787",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release criticizes the Bush administration's decision to allow drilling in Bristol Bay, without attributing any beneficial outcome, funding, legislation, or policy action to the senator's own efforts. It is purely critical commentary, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3955",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that federal defense spending legislation has secured over $1 billion for Baltimore-area projects, framing this as an outcome they helped deliver through their efforts ('I will keep fighting to put money in the federal checkbook', 'we continue to work hard to ensure that Maryland's military installations...have the resources'), attributing the funding to their advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "455",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Schumer announces federal grants secured for New York fire departments, using self-referential language ('Schumer Announces') and attributing the funding program's existence and continued expansion to his early advocacy ('Schumer was among the first senators who recognized the need...'), thereby claiming credit for both the specific grants and the broader program.",
+    "error": null
+  },
+  {
+    "document_id": "1163",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "Dorgan states he will use his position on the Appropriations Committee to redirect $83 million toward North Dakota's water needs, framing this future action as a direct result of his committee leadership and personal effort, which aligns with R4's criteria of highlighting a leadership role/position as responsible for achieving an outcome.",
+    "error": null
+  },
+  {
+    "document_id": "3201",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "Sen. Talent explicitly states he 'worked with USDA officials to expedite the approval' of the disaster declaration, attributing the federal decision to his own advocacy and effort, even though the ultimate decision was made by USDA. He also announces prior secured funding (ECP funds), reinforcing his role as instrumental to delivering benefits to Missouri farmers.",
+    "error": null
+  },
+  {
+    "document_id": "2958",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Landrieu is highlighted as introducing the Small Business Disaster Recovery Improvement Act, with quotes explaining its purpose and benefits, framing it as her legislative initiative. Kerry's quote also credits her 'tireless advocacy and leadership' on the issue, reinforcing the credit-claiming for authorship of the bill.",
+    "error": null
+  },
+  {
+    "document_id": "1340",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Senator Clinton welcomes the Senate Appropriations Committee's restoration of funding, but the release does not attribute this outcome to her own advocacy, effort, or actions. It reads as a reaction to a committee decision rather than a claim of personal responsibility for the outcome.",
+    "error": null
+  },
+  {
+    "document_id": "2544",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights Senator Kennedy's role as 'chief author' and 'lead author' of the No Child Left Behind Act, framing the law's creation and reforms as his own legislative achievement, consistent with claiming credit for authorship of major legislation.",
+    "error": null
+  },
+  {
+    "document_id": "2037",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Collins expressing support for and urging continued funding of CDBG and CSBG programs, and provides informational statistics about past funding to Maine. It does not claim credit for securing this funding or attribute the programs' benefits to her own advocacy or actions—it is a request/advocacy letter for future funding, not a claim of an achieved outcome.",
+    "error": null
+  },
+  {
+    "document_id": "4295",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3"
+    ],
+    "explanation": "Murkowski highlights her authorship/introduction of legislation seeking to change the Medicaid FMAP formula, and also attributes past funding success ('she helped win a two-year change') to her own advocacy, framing both past and current outcomes as tied to her personal efforts.",
+    "error": null
+  },
+  {
+    "document_id": "1008",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Shelby explicitly announces that he secured/announced $2 million in FAA funding for Huntsville International Airport, using self-referential language ('I am pleased to announce') and highlighting his role as a member of the Senate Appropriations Committee, directly attributing the funding to his position and announcement.",
+    "error": null
+  },
+  {
+    "document_id": "4424",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Cantwell is highlighted as lead sponsor of anti-price gouging legislation (S. 1735), framing it as her own initiative, and her personal advocacy (letters, leading requests for GAO investigation, pressing case with Judiciary Committee) is framed as driving progress on the issue, consistent with R2 and R4.",
+    "error": null
+  },
+  {
+    "document_id": "1879",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce a $665,000 federal grant secured for the University of Arkansas, using self-referential 'announce' language and quotes expressing satisfaction that the grant will help the center, framing it as an achievement they are responsible for delivering to their state.",
+    "error": null
+  },
+  {
+    "document_id": "1643",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Shelby announces that DHS will release $750,080 to a local fire department, prominently noting his Appropriations Committee membership and using self-referential language ('Shelby Announces'), which fits R1's pattern of announcing secured/awarded federal funding tied to the senator's role.",
+    "error": null
+  },
+  {
+    "document_id": "2253",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "explanation": "Senator DeWine announces a specific grant secured for Lakeside through his FIRE Act, which he wrote and passed. He explicitly links funding to his authorship of legislation and his role on the Appropriations Committee in securing $545 million for the program, directly attributing the outcome to his own actions and advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "1883",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a letter urging the President to take future action on gas prices and energy policy. It criticizes the administration's inaction and outlines requested actions, but does not attribute any secured funding, passed legislation, or achieved outcome to the senators' own efforts. It is advocacy/criticism without a claim of accomplishment, matching the excluded category of 'describing pending advocacy/requests without linking to a personal accomplishment.'",
+    "error": null
+  },
+  {
+    "document_id": "806",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator highlights her reintroduction/sponsorship of legislation, is quoted describing its purpose and benefits, framing it as her own initiative alongside a co-sponsor.",
+    "error": null
+  },
+  {
+    "document_id": "2831",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Durbin spearheading a bipartisan letter urging President Bush to take future action on Darfur. It is advocacy urging action rather than claiming credit for a secured outcome, funding, or legislative achievement already delivered.",
+    "error": null
+  },
+  {
+    "document_id": "3195",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senators announce that they secured $225,000 in federal funding for Lancaster's water system upgrade, with Gregg's role on the Appropriations Subcommittee highlighted and a local official crediting the senators for 'securing this earmark,' fitting the pattern of R1 (announcing secured funding) and R4 (leadership/committee position tied to outcome).",
+    "error": null
+  },
+  {
+    "document_id": "683",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Collins highlights her role as 'one of the authors of the Safe Ports Act' and ties the strategy's recognition of maritime cargo security to her own legislative work, framing this as a personal achievement.",
+    "error": null
+  },
+  {
+    "document_id": "669",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes senators urging the President to take action on climate change at an upcoming summit. It is advocacy directed at the administration without any claim of a personal accomplishment, secured funding, passed legislation, or outcome attributed to the senators' own efforts. This matches the negative example pattern (letters urging action, not claiming credit for results).",
+    "error": null
+  },
+  {
+    "document_id": "4726",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "Reid explicitly attributes the DOT's action to his own advocacy ('I've been working closely with the Department of Transportation for several months now to encourage them to add the two corridors'), framing the outcome as a result of his personal effort, even though the final decision remains pending.",
+    "error": null
+  },
+  {
+    "document_id": "1926",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R6"
+    ],
+    "explanation": "The senator personally cuts the ribbon on the new facility and the release ties federal appropriations from the North Dakota Congressional delegation (which includes Conrad) to the project's funding, framing him as instrumental to delivering this concrete community benefit.",
+    "error": null
+  },
+  {
+    "document_id": "246",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a commemorative biographical piece about artist Tom Lea, with no attribution of any funding, legislation, or policy outcome to Senator Cornyn's actions or advocacy. It is purely informational/commemorative.",
+    "error": null
+  },
+  {
+    "document_id": "3318",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Coburn is urging FEMA to expedite assistance and describing ongoing advocacy, but the release does not claim credit for an outcome already achieved. No funding or decision has been secured; it describes future/ongoing efforts and commends state officials rather than himself. This matches the negative example under R4 (advocacy without a secured achievement).",
+    "error": null
+  },
+  {
+    "document_id": "4204",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Schumer announces specific federal funding ($21,001) coming to Cheektowaga, using self-referential language ('Schumer Announces') and being quoted describing the benefit, which fits R1's pattern of announcing secured funding for constituents.",
+    "error": null
+  },
+  {
+    "document_id": "2475",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3",
+      "R5"
+    ],
+    "explanation": "Landrieu explicitly claims credit for pushing the Farm Bill through the Senate and highlights multiple amendments and provisions she authored or added (turtle market study, hypoxia provision, sweet potato disaster assistance, oyster industry crop insurance, rice loan rates), framing these as her own legislative achievements. She is quoted celebrating the outcome as a personal victory ('I will continue this momentum'), satisfying R2 (authorship/sponsorship of legislative provisions), R3 (attributing outcomes to her advocacy), and R5 (her amendments successfully passed as part of the bill).",
+    "error": null
+  },
+  {
+    "document_id": "1869",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Senator Burr is highlighted as the introducer of bipartisan legislation, framing it as his initiative to address public health preparedness. He is quoted explaining the bill's purpose and his personal role, including his leadership as subcommittee chairman, holding hearings, and traveling to New Orleans to gather information that informed the bill. This constitutes claiming credit for authorship/sponsorship of legislation and personal leadership efforts leading to the bill's introduction.",
+    "error": null
+  },
+  {
+    "document_id": "3493",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The press release announces that Senator Durbin, along with Senator Obama and Rep. Hare, introduced the Positive Behavior for Effective Schools Act. Durbin is quoted explaining the rationale and benefits of the bill, framing it as his own legislative initiative aimed at improving school environments. This matches the criteria for claiming credit for sponsoring/introducing legislation.",
+    "error": null
+  },
+  {
+    "document_id": "2066",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator expresses disappointment with a regulatory ruling and criticizes the DOE, but does not claim credit for any accomplishment. He states he 'will continue working' against the project, which is a statement of ongoing/future advocacy rather than a claimed achievement or outcome he caused.",
+    "error": null
+  },
+  {
+    "document_id": "2871",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes the senator requesting clarification from the Attorney General and criticizing his response, but does not claim credit for any funding, legislation, or policy outcome achieved through the senator's efforts. It is critical/oversight-focused rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "1278",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3",
+      "R4"
+    ],
+    "explanation": "The senator explicitly announces securing $2.2 million in federal funding for specific Maryland projects, using self-referential language ('Senator Mikulski...announced', 'I work to put money in the federal checkbook'). She also claims credit for fighting to include language protecting Baltimore City's housing program status, and cites her creation of HOPE VI in 1992, framing multiple outcomes as directly attributable to her personal advocacy and leadership on the Appropriations Subcommittee.",
+    "error": null
+  },
+  {
+    "document_id": "3607",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Senator Conrad highlights his personal advocacy with the President on energy policy and explicitly claims credit for having 'drafted several provisions in the last energy bill' that boosted incentives for wind, ethanol, and biodiesel production, framing this as his own legislative achievement. He also emphasizes his ongoing personal effort ('I've been working on legislation for several months') as directly responsible for advancing this policy direction.",
+    "error": null
+  },
+  {
+    "document_id": "3650",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a joint statement expressing views on impeachment and criticizing the Bush administration. It does not attribute any funding, legislation, or government decision to the senators' own efforts or advocacy. It is purely a statement of political position and priorities, not a credit-claiming release.",
+    "error": null
+  },
+  {
+    "document_id": "795",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights Senator Landrieu as the sponsor of S. 1668, the Gulf Coast Housing Recovery Act, framing it as her legislative initiative, with the City Council's endorsement of 'Senator Landrieu's bill' and her quote celebrating the vote as progress on her legislation.",
+    "error": null
+  },
+  {
+    "document_id": "59",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release describes Murray opposing an administration proposal and advocating against it, but does not claim credit for securing funding, passing legislation, or achieving a concrete outcome. It's criticism and ongoing advocacy, not credit-claiming for an accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "2319",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Dorgan highlights his cosponsorship of the Biofuels Security Act, his key position as Chairman of the Energy Subcommittee to advance it, and his authorship of the Renewable Fuels Standard, framing these legislative actions as his own achievements and initiatives with quoted rationale for benefits to North Dakota and the nation.",
+    "error": null
+  },
+  {
+    "document_id": "438",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators announce introduction of the Cluster Munitions Amendment and quote themselves explaining its purpose and rationale, framing it as their own legislative initiative aimed at achieving a policy change—consistent with R2's criteria for credit-claiming through authorship/sponsorship of legislation.",
+    "error": null
+  },
+  {
+    "document_id": "4570",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Shelby announces specific federal funding ($85,493) secured for a local fire department, noting his role on the Appropriations Committee and quoting himself on the significance of the funding, fitting R1's pattern of announcing secured funding tied to the senator's position.",
+    "error": null
+  },
+  {
+    "document_id": "475",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes senators urging federal agencies to investigate rising gas prices. It is a request for future action, not a claim of credit for an achieved outcome, funding secured, or legislation passed. No self-attribution of a benefit is made.",
+    "error": null
+  },
+  {
+    "document_id": "2082",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Feinstein is highlighted as advocating for and cosponsoring the bill, quoted explaining its purpose and benefits, framing the legislative push as tied to her efforts, consistent with R2's authorship/sponsorship credit-claiming, though the bill has not yet passed.",
+    "error": null
+  },
+  {
+    "document_id": "2875",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce over $2.3 million in secured federal funding for specific Maine health care and education projects, explicitly noting funds 'which we requested,' and framing themselves as responsible for delivering these tangible benefits to their state.",
+    "error": null
+  },
+  {
+    "document_id": "639",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights Sen. Chambliss's introduction of legislation on cellulosic ethanol production, describing its specific provisions and framing it as his own policy initiative, which constitutes claiming credit for legislative authorship under R2. The rest of the release is largely informational about hearing testimony, but the explicit mention of his introduced bill and its goals ties a concrete legislative action to his personal effort.",
+    "error": null
+  },
+  {
+    "document_id": "3319",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senators applaud DHS for awarding the grant but do not claim personal credit for securing it or attribute the outcome to their own advocacy; they simply thank DHS. This matches the negative example under R1 where funding is reported without self-attribution.",
+    "error": null
+  },
+  {
+    "document_id": "501",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release describes Harkin's legislative proposal and criticism of Bush's tax policy, but does not claim credit for securing funding, passing legislation, or achieving any concrete outcome. It focuses on advocacy for a not-yet-passed proposal and criticism of the administration, which falls outside credit-claiming per the definition's exclusions.",
+    "error": null
+  },
+  {
+    "document_id": "2212",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights that the bill was authored by Sen. Domenici and signed into law, quoting him explaining the benefits and purpose of the legislation, which constitutes claiming credit for authorship and passage of a bill.",
+    "error": null
+  },
+  {
+    "document_id": "412",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2"
+    ],
+    "explanation": "Sen. Lott explicitly announces $7 million in federal funding secured for airport repairs, directly attributing the awards to a bill he authored, and highlights his role in drafting the legislation with the FAA. This is a clear instance of both funding announcement and legislative credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "2166",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R5"
+    ],
+    "explanation": "Hutchison explicitly claims to have 'secured' hurricane recovery funds and $235 million for education costs, and highlights her amendment that passed raising the reimbursement rate, directly attributing these concrete funding outcomes to her own actions and negotiations.",
+    "error": null
+  },
+  {
+    "document_id": "4662",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that federal funding has been awarded to a local fire department, explicitly tying the funding to Mikulski's committee role fighting to increase AFGP funding, and both senators are quoted discussing the importance of this funding, framing themselves as responsible for delivering this benefit.",
+    "error": null
+  },
+  {
+    "document_id": "3864",
+    "label": "1",
+    "codebook_rule": [
+      "R4",
+      "R5"
+    ],
+    "explanation": "The senators highlight their personal advocacy efforts to bring new missions and infrastructure investment to Minot AFB, and explicitly claim credit for a successful amendment ('their amendment') that passed the Senate to block bomber fleet reductions, directly attributing this legislative outcome to their own action.",
+    "error": null
+  },
+  {
+    "document_id": "964",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes the senators calling for action and writing a letter to the Small Business Administration to advocate for local contracts and speeding up loss verification. This is ongoing advocacy/request, not a claim of a completed accomplishment, secured funding, or outcome attributable to the senators' actions. Per R4's negative example, urging or requesting action without securing a result does not constitute credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "1159",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator highlights his own introduction of multiple pieces of legislation (streamlining refinery construction, requiring oil companies to pay fair share on public lands, removing ethanol tariff), framing these as his personal legislative initiatives to address gas prices, which constitutes credit-claiming for authorship/sponsorship under R2.",
+    "error": null
+  },
+  {
+    "document_id": "2382",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3"
+    ],
+    "explanation": "The senators highlight their sponsorship of S. 1588, quoting themselves about its purpose (R2). Additionally, the release attributes Rayan's ability to travel to the US for treatment directly to Sen. Landrieu's personal intervention with the Department of Homeland Security, framing this outcome as a result of her advocacy (R3).",
+    "error": null
+  },
+  {
+    "document_id": "3482",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "The senators announce a specific federal grant ($294,980 SAFER grant) awarded to Allegany County, explicitly noting Mikulski's position on the Homeland Security Appropriations Subcommittee that funds the program and her efforts to increase its funding, tying the funding outcome to her advocacy and committee role.",
+    "error": null
+  },
+  {
+    "document_id": "158",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Reed is highlighted as the sponsor/author of the Prescribe a Book Act, quoted explaining its purpose and benefits, and credited by a local organization for his leadership on the issue, framing the legislative initiative as his personal achievement.",
+    "error": null
+  },
+  {
+    "document_id": "547",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that USDA funding has been awarded to Maine entities, framing themselves as the announcers of this benefit with self-referential quotes describing the impact of 'the funding recently awarded,' tying their names to the outcome even though they did not directly control USDA's decision.",
+    "error": null
+  },
+  {
+    "document_id": "334",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce federal grants totaling over $5 million secured for the University of Tennessee, with self-referential language and quotes tying the funding announcement to their own roles and advocacy, fitting the pattern of announcing secured federal funding for constituents.",
+    "error": null
+  },
+  {
+    "document_id": "1399",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senators are merely recommending a nominee to the President for consideration; no funding, legislation, or completed outcome is being claimed as their own achievement. This is a pending action, not a secured accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "793",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senators announce that $80 million for NH initiatives, including $1.4 million for a specific facility, was secured in the Defense Appropriations bill. Senator Gregg's committee membership is highlighted, and both senators are quoted taking credit for the funding and its benefits to their state, framing the outcome as tied to their efforts and positions.",
+    "error": null
+  },
+  {
+    "document_id": "2328",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator is credited as sponsor of new legislation and is quoted explaining its purpose and rationale, matching the R2 positive example almost exactly.",
+    "error": null
+  },
+  {
+    "document_id": "2872",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "The release explicitly states Leahy was 'instrumental in securing' the funds and that Congress, 'led by Leahy's efforts,' reversed the Army's decision to scale back the rocket program, directly attributing the funding outcome to his advocacy. It also highlights his position on the Appropriations Committee's Defense Subcommittee as tied to the outcome.",
+    "error": null
+  },
+  {
+    "document_id": "1285",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Grassley expressing concern to the President via letter about a potential policy decision, urging the President not to pursue a certain partnership. There is no claim of credit for any funding secured, legislation passed, or outcome achieved through his efforts—only advocacy/opposition to a pending decision, which matches the negative example under R2.",
+    "error": null
+  },
+  {
+    "document_id": "2952",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R6"
+    ],
+    "explanation": "The release explicitly states Senator Ensign 'secured $1,000,000 for the project,' directly attributing federal funding to his efforts. He also participated in the groundbreaking, framing himself as instrumental to delivering this tangible community benefit.",
+    "error": null
+  },
+  {
+    "document_id": "4634",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes the senators sending a letter requesting the Forest Service hold public meetings before making a decision. No outcome has been secured, and there is no claim of credit for any funding, legislation, or completed action—only ongoing advocacy/request. This matches the negative example under R4 (requesting action without securing an outcome).",
+    "error": null
+  },
+  {
+    "document_id": "2719",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Bingaman urging the Bush Administration, writing letters, and meeting with officials to resolve the Japanese beef ban and Mexican cattle ban—advocacy actions that have not yet achieved a resolved outcome. No funding, legislation, or decision has been secured or attributed to his efforts; it is ongoing advocacy without a completed accomplishment, similar to the negative example under R4.",
+    "error": null
+  },
+  {
+    "document_id": "3916",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce specific federal grant funding amounts secured for Connecticut ports and emergency management, using self-referential 'announced' language and quotes framing the funding as a benefit they are delivering to constituents.",
+    "error": null
+  },
+  {
+    "document_id": "1957",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that a specific federal grant ($2,250,000) has been secured for the airport, using self-referential language ('Sens. Dodd and Lieberman today announced') and quoting themselves touting the benefits, which constitutes credit-claiming for securing funding.",
+    "error": null
+  },
+  {
+    "document_id": "1782",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release merely reports optimism about a possible future Air Force decision regarding CSAR-X basing at Kirtland. Domenici expresses hope and mentions his committee membership, but does not claim that his own actions or advocacy caused the Air Force's review or any outcome. No funding, legislation, or decision has been secured or attributed to his efforts; this is informational/speculative rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "2591",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release criticizes the EPA and the Bush Administration for failing to conduct environmental justice reviews, citing an Inspector General report. The senators are quoted expressing outrage and calling for accountability, but they do not attribute any beneficial outcome, funding, legislation, or policy change to their own actions or advocacy. It is purely critical/informational without self-attribution of credit.",
+    "error": null
+  },
+  {
+    "document_id": "208",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Shelby is merely reacting to DoD's BRAC recommendations, expressing pleasure and disappointment about outcomes determined by another entity. He does not attribute the outcomes to his own advocacy or actions; he only states intent to 'work with' the commission going forward, which is prospective advocacy, not credit-claiming for an accomplished result.",
+    "error": null
+  },
+  {
+    "document_id": "2051",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Snowe highlights her sponsorship of specific provisions in the Port Security Act that passed, and frames the legislative outcome as directly resulting from her advocacy (e.g., provisions 'you championed', 'you have called for'). She is quoted describing the bill's benefits, and the release explicitly ties her authorship to specific successful provisions, consistent with R2 and R5.",
+    "error": null
+  },
+  {
+    "document_id": "4809",
+    "label": "1",
+    "codebook_rule": [
+      "R4",
+      "R5"
+    ],
+    "explanation": "Dole highlights her personal advocacy and cosponsorship of amendments (raising CAFE standards, protecting consumers from fuel/food costs, blocking offshore drilling and RPS mandates) as directly responsible for improving the bill and protecting North Carolina interests, framing these as her personal achievements despite not supporting the final bill overall.",
+    "error": null
+  },
+  {
+    "document_id": "1627",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The release announces specific federal funding amounts (CDBG, HOME, ESG, HOPWA) for Iowa communities, with Harkin quoted saying the funds will benefit Iowa, framing the funding announcement as tied to his role and advocacy, including his letter and planned cosponsorship of an amendment to restore funding.",
+    "error": null
+  },
+  {
+    "document_id": "1198",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release expresses concern and describes upcoming meetings/advocacy regarding proposed mergers, but does not claim credit for any accomplished outcome, funding, or legislative achievement. It is forward-looking advocacy rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "2956",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4",
+      "R5"
+    ],
+    "explanation": "Senator Levin details his personal negotiation and modification of the Graham-Levin amendment, his objections that prevented certain jurisdiction-stripping language from being included, and directly attributes the final legislative outcome to his own actions and advocacy, framing himself as responsible for shaping the law's final language.",
+    "error": null
+  },
+  {
+    "document_id": "3093",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Senator Frist, as Majority Leader, hails the passage of a health package and frames it as an achievement he is 'very proud' to see completed, calling it 'the most significant health package of the 109th Congress.' While he does not claim sole authorship, his leadership role and personal statement celebrating the successful passage of legislation constitutes credit-claiming for a concrete legislative outcome he helped shepherd through Congress.",
+    "error": null
+  },
+  {
+    "document_id": "3781",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights Leahy's role as sponsor/filer of the resolution of disapproval and his procedural action (filing the discharge motion), framing this legislative initiative as his own achievement in advancing the resolution to a vote.",
+    "error": null
+  },
+  {
+    "document_id": "396",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R4"
+    ],
+    "explanation": "The release features a state official crediting Senator Murray ('the support that Patty and others have been able to bring from the federal government') for securing federal funding that benefits local ferry systems, attributing the funding outcome to her advocacy/efforts even though the direct funding decision came from the federal government.",
+    "error": null
+  },
+  {
+    "document_id": "1043",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "explanation": "DeWine announces a specific grant awarded to a local fire department and directly ties it to legislation he authored and passed (the FIRE Act), as well as appropriations he secured as a member of the Appropriations Committee. He is quoted taking credit for passing and funding the Act, clearly attributing the constituent benefit to his own legislative efforts.",
+    "error": null
+  },
+  {
+    "document_id": "2458",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is primarily a message of condolence and reaction to a tragic event, describing the impact of the war on Hawaii's service members and their families. While the senator mentions being a member of the Armed Services Committee and Ranking Member of Veterans Affairs Committee and states they are 'working hard to address the needs' of service members, this is vague, future-oriented language about ongoing efforts rather than a claim of credit for any specific accomplishment, funding secured, legislation passed, or concrete outcome achieved. No specific benefit, program, or funding is attributed to the senator's actions.",
+    "error": null
+  },
+  {
+    "document_id": "1320",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator explicitly states she helped 'secure this funding' as a member of the Appropriations Committee, framing the $3 billion disaster relief as a result of her own efforts, which fits the pattern of announcing secured federal funding with self-referential language.",
+    "error": null
+  },
+  {
+    "document_id": "827",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release describes a CBO report requested by Senator Conrad, but it does not claim credit for a beneficial outcome, funding secured, legislation passed, or policy achievement. Instead, it critiques the Bush administration's Iraq policy and cost projections. This is informational/critical content, not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3529",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator explicitly states he 'secured' $1.5 million in funding for a specific project, using self-referential language and framing it as a personal achievement ('this funding win'), which is a clear example of credit-claiming for federal appropriations.",
+    "error": null
+  },
+  {
+    "document_id": "3592",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Schumer urging the Governor to appeal a FEMA decision, which is an ongoing advocacy effort rather than a claimed accomplishment. No funding has been secured, no legislation passed, and no outcome has yet been achieved that is attributed to Schumer's actions. This matches the negative example under R4, where requesting/urging action is not yet a credit-claimable achievement.",
+    "error": null
+  },
+  {
+    "document_id": "3217",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce a federal grant awarded to Kansas City, using self-referential language ('I am pleased to announce this funding') and highlighting Senator Bond's Appropriations Committee role, framing the funding as tied to their efforts and position.",
+    "error": null
+  },
+  {
+    "document_id": "4532",
+    "label": "1",
+    "codebook_rule": [
+      "R3",
+      "R5"
+    ],
+    "explanation": "Sen. Hutchison claims credit for leading the effort to extend and pass the state and local sales tax deduction, stating she 'led the effort' and worked with Rep. Brady to include this deduction in prior tax relief legislation. She attributes the successful passage of this provision in the budget reconciliation bill to her advocacy and prior legislative work, framing the outcome as tied to her personal leadership.",
+    "error": null
+  },
+  {
+    "document_id": "3657",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senators announce $2 million in funding secured for a Western Maryland defense project, highlighting their committee positions and framing themselves as instrumental in delivering this benefit to constituents.",
+    "error": null
+  },
+  {
+    "document_id": "2967",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Senator Clinton is credited with introducing/authoring the measure that was approved as part of the defense authorization act, and she is quoted celebrating the successful passage of her legislative provision, directly attributing the outcome to her own initiative and effort.",
+    "error": null
+  },
+  {
+    "document_id": "235",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "explanation": "Bond highlights his role as co-author of the highway bill and chairman of the Transportation Appropriations subcommittee, attributing Missouri's increased funding share and highway dollars to his leadership and legislative efforts. He frames his committee position and authorship as directly responsible for benefits to Missouri, satisfying rules on legislative authorship (R2), attributing outcomes to leadership/advocacy (R3), and highlighting personal effort/position as responsible for progress (R4).",
+    "error": null
+  },
+  {
+    "document_id": "428",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This is a hearing statement expressing concerns about a merger, criticizing telecom consolidation, and referencing past votes/bill introductions, but it does not claim credit for securing funding, achieving a legislative outcome, or delivering a concrete benefit. It's primarily critical and questioning in nature rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "4707",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator is highlighted as a co-sponsor/introducer of the Wired for Health Care Quality Act of 2007, and is quoted describing the bill's purpose and benefits, framing the legislative introduction as his own achievement.",
+    "error": null
+  },
+  {
+    "document_id": "3233",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "explanation": "The senator claims credit for shaping legislation through personal advocacy, specifically noting that 'several provisions impacting Maine were included in the MSA at my request,' and describes conducting listening sessions and working with committee chairs to influence the bill's content, directly attributing legislative outcomes to personal efforts and leadership position.",
+    "error": null
+  },
+  {
+    "document_id": "4690",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators highlight their introduction/sponsorship of the Platte River Recovery Implementation Act, with each senator quoted describing the bill's purpose and benefits, framing the legislative action as their own initiative.",
+    "error": null
+  },
+  {
+    "document_id": "518",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release criticizes Senate Republicans for rejecting Democratic budget amendments. Although Lieberman cosponsored several amendments, none passed—they were all rejected/failed. Per R5's logic, failed amendments do not constitute credit-claiming since no benefit was delivered; the release is critical of the opposing party's actions rather than claiming credit for an accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "1231",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Senator Domenici, as chairman of the Energy Committee, takes personal pride and credit for leading the process that produced the bipartisan energy bill conference report, explicitly stating 'I am proud of this conference report' and 'I am particularly proud of the conservation and efficiency measures.' He frames the legislative outcome as a result of his leadership and the process he oversaw, fitting R2 (authorship/sponsorship framing) and R4 (leadership role credited for achieving outcome).",
+    "error": null
+  },
+  {
+    "document_id": "450",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "The senator highlights his own pending amendment based on legislation he authored (Safe Internet Pharmacy Act of 2007), framing the policy solution as his own initiative and personal effort ('my amendment'), even though it has not yet passed. This fits R2 for touting authorship/sponsorship of legislation and R4 for highlighting personal effort toward an outcome not yet finalized.",
+    "error": null
+  },
+  {
+    "document_id": "3314",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a reaction to an international report on climate change, expressing concern and urging the President to work with Congress. There is no mention of the senator's own legislation, funding secured, or advocacy that led to a specific outcome. It is purely a statement of concern and a call to action, not a claim of credit for any accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "1899",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a congratulatory statement on the inauguration of a foreign president, describing a past meeting and expressing hope for future cooperation. It does not attribute any funding, legislation, or policy outcome to the senator's own actions or advocacy, so it does not meet any credit-claiming criteria.",
+    "error": null
+  },
+  {
+    "document_id": "2164",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "explanation": "The senators explicitly announce securing $4 million in federal funding for Mount Vernon and $215 million overall for Illinois, directly attributing this to their efforts ('Durbin and Obama have secured', 'Securing this funding... is the result of'). Obama also claims credit for helping write the transportation bill, and the bill's passage is directly tied to their advocacy and legislative work.",
+    "error": null
+  },
+  {
+    "document_id": "4257",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Schumer announces secured federal grant funding for a fire company using self-referential language ('Schumer Announces...Will Receive'), and attributes the program's existence and funding levels to his own past advocacy ('Schumer was among the first senators who recognized the need...has Successfully Pushed for Additional Funding').",
+    "error": null
+  },
+  {
+    "document_id": "2070",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senator issues a statement expressing concern about gas prices and advocating for future policy commitments to renewable energy, but does not claim credit for any specific funding, legislation passed, or outcome achieved through his own actions. This is advocacy/commentary rather than credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3149",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator highlights a provision he 'championed' to help establish an affordable housing fund, framing this as his own initiative, and discusses proposing further legislation to build on this, which constitutes claiming credit for a policy achievement within the budget resolution.",
+    "error": null
+  },
+  {
+    "document_id": "1085",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "The senator explicitly states he 'secured' $18.2 million in funding, using self-referential language and citing his Appropriations Committee membership as instrumental in achieving this outcome, which fits R1. Additionally, the release frames his continued efforts ('I'll keep pushing') as directly responsible for the progress made on this funding, fitting R4.",
+    "error": null
+  },
+  {
+    "document_id": "2084",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4",
+      "R5"
+    ],
+    "explanation": "Snowe is credited as a Senate negotiator who worked to secure specific provisions in the bill, several of which are explicitly tied to legislation she introduced or co-sponsored (Save More for Retirement Act, Retirement Account Portability Act, Women's Pension Protection Act). The bill passed the Senate, and she is quoted touting its benefits, framing the outcome as a result of her negotiation efforts and legislative authorship.",
+    "error": null
+  },
+  {
+    "document_id": "2482",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators highlight their introduction of a resolution (S. Con. Res. 62) and are quoted explaining its purpose, framing the legislative action as their own initiative to honor Rosa Parks.",
+    "error": null
+  },
+  {
+    "document_id": "880",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release describes Snowe hosting a meeting with tribal representatives and pledging future advocacy, but does not claim credit for any specific funding, legislation, or accomplished outcome. This matches the negative example under R6 directly.",
+    "error": null
+  },
+  {
+    "document_id": "2357",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes Senator Snowe urging the Appropriations Committee to maintain CDBG funding levels, essentially advocating for a future outcome that has not yet been secured. It does not claim credit for having personally secured funding, authored successful legislation, or achieved a concrete outcome through her own advocacy—it's a letter urging future action, similar to the negative example in R4 where advocacy without an achieved outcome does not constitute credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3431",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release criticizes Attorney General Gonzales and describes Sanders' cosponsorship of a no-confidence resolution, but it does not attribute any secured funding, achieved policy outcome, or legislative success to Sanders' own actions. It is critical/advocacy-oriented without claiming credit for an accomplishment.",
+    "error": null
+  },
+  {
+    "document_id": "1894",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release simply announces that federal Student Support Services grants from the U.S. Department of Education were awarded to various South Dakota schools. There is no language attributing the funding to Thune's personal efforts, advocacy, or actions—he merely 'announced' the grants, similar to the negative example under R1 where a senator was 'notified' of grants without claiming responsibility for securing them.",
+    "error": null
+  },
+  {
+    "document_id": "2013",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The senators are applauding a grant awarded by the Department of Homeland Security, thanking DHS for the funding rather than attributing the grant to their own advocacy, effort, or influence. There is no language claiming they 'secured' the funding or that their actions caused the award; this reads as informational/announcement with appreciation directed at the awarding agency, consistent with the negative example in R1.",
+    "error": null
+  },
+  {
+    "document_id": "3503",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that federal funding has been secured/approved for the Operation Oak Program, using self-referential language ('I am pleased that the Senate was able to help fund...') and tying their roles (Chambliss as Committee Chairman) to the funding outcome, framing it as their achievement for the state.",
+    "error": null
+  },
+  {
+    "document_id": "1379",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces that federal funding has been awarded to Texas first responders, using self-referential language ('Sen. Cornyn announces') and being quoted describing the benefit of the funding, which fits the pattern of announcing secured federal funding under R1.",
+    "error": null
+  },
+  {
+    "document_id": "3115",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R4"
+    ],
+    "explanation": "Durbin highlights his introduction of the Emergency Agriculture Disaster Assistance Act, describing its provisions and framing it as his own initiative to help Illinois farmers ('legislation he introduced this week', 'my colleagues... I have been working to provide'). He also discusses his advocacy role regarding WRDA, framing his personal effort as important to the legislation's progress and benefits for the state, which aligns with credit-claiming for authorship of legislation and personal advocacy efforts.",
+    "error": null
+  },
+  {
+    "document_id": "3674",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R3"
+    ],
+    "explanation": "Leahy states 'I wrote the current all state minimum formula as part of the USA PATRIOT Act of 2001' claiming authorship of the policy provision, and he attributes past benefits ('first responders have received resources to help them meet their new responsibilities') to this formula he authored. He also describes offering an amendment (though it failed), but the core credit-claiming is his explicit attribution of authorship of the existing formula that has benefited states, satisfying R2 and R3.",
+    "error": null
+  },
+  {
+    "document_id": "4022",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Senator Kennedy explicitly announces he is introducing legislation ('Medicare for All') and frames it as his own initiative, describing its provisions and purpose extensively, which constitutes claiming credit for authoring a policy solution.",
+    "error": null
+  },
+  {
+    "document_id": "3003",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Feingold announces a federal grant awarded to a Milwaukee organization and explicitly ties his own action—writing a letter of support—to the outcome, stating he was 'happy I was able to help in that effort.' This attributes the beneficial outcome partly to his personal advocacy, satisfying both the funding announcement rule and the personal effort rule.",
+    "error": null
+  },
+  {
+    "document_id": "3103",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "Hatch highlights his sponsorship of multiple energy bill provisions that passed the Senate, quoting himself explaining their benefits and framing them as his own legislative achievements ('My provisions will address...', 'Hatch's provision would allow...'). This is a clear case of claiming credit for successful legislative outcomes he authored.",
+    "error": null
+  },
+  {
+    "document_id": "4185",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The release highlights Senator Clinton's introduction of the Hudson Fulton Champlain Quadricentennial Commemoration Commission Act and features multiple senators (Leahy, Jeffords, Schumer) quoted discussing the bill's purpose and urging its passage, framing it as their own legislative initiative. While the primary ask is for a hearing (advocacy), the release explicitly credits Clinton with authoring/introducing the bill, which satisfies R2's criteria for touting sponsorship/authorship of legislation.",
+    "error": null
+  },
+  {
+    "document_id": "1950",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R4"
+    ],
+    "explanation": "Schumer announces federal grants secured for fire departments, using self-referential language ('Schumer Announces') and highlighting his role in pushing for the funding program's establishment and continued funding, framing himself as instrumental in securing these benefits for his constituents.",
+    "error": null
+  },
+  {
+    "document_id": "202",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senators highlight their introduction of the Biennial Budgeting and Appropriations Act of 2005, with Domenici noted as a longtime advocate since 1987 and Lieberman as cosponsor since 1999. Both are quoted explaining the bill's purpose and benefits, framing the legislation as their own initiative and achievement in improving the budget process.",
+    "error": null
+  },
+  {
+    "document_id": "4040",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Harkin expresses being 'pleased' that Iowa will receive funds, similar to the negative example under R3 where a senator reacts favorably to a decision without claiming responsibility. There is no language indicating Harkin secured, advocated for, or was responsible for obtaining this funding—it reads as informational reporting of funds allocated by a federal program (Project Safe Neighborhoods) with detailed descriptions of how local entities will use the funds, rather than crediting his own actions for the outcome.",
+    "error": null
+  },
+  {
+    "document_id": "948",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "The senator highlights her role as Chair of the Senate Subcommittee overseeing the Coast Guard and frames her personal meeting with the Coast Guard Commandant, and her continued work with local, state, and federal authorities, as directly tied to ensuring resources and response efforts—framing her leadership position and personal advocacy as instrumental to the outcome, even though most of the release describes ongoing advocacy rather than fully secured benefits.",
+    "error": null
+  },
+  {
+    "document_id": "206",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "The senator is highlighted as author of the amendment that passed the Senate 78-19, and he is extensively quoted explaining its purpose and importance. He is also credited as co-author of the original Nunn-Lugar Act and subsequent expansions, framing the program's successes as his own legislative achievement.",
+    "error": null
+  },
+  {
+    "document_id": "689",
+    "label": "1",
+    "codebook_rule": [
+      "R3"
+    ],
+    "explanation": "The release notes Lugar helped the Community Hospital of Bremen secure USDA loan guarantees, attributing a concrete outcome to his personal assistance/advocacy. The naming of the center itself is commemorative rather than credit-claiming, but the loan guarantee assistance falls under R3.",
+    "error": null
+  },
+  {
+    "document_id": "928",
+    "label": "1",
+    "codebook_rule": [
+      "R1",
+      "R3"
+    ],
+    "explanation": "Senator Murray explicitly announces that she 'secured' and 'helped steer' federal funding for numerous Pierce County and Tacoma projects, using self-referential language throughout ('funding secured by Senator Murray,' 'the funding provided by Senator Murray'). She also ties her committee position (senior member of Senate Appropriations Committee) to the funding and credits her legislative work (SAFE Port Act) for enabling a specific project, clearly attributing these concrete benefits to her own efforts and advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "178",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "Jeffords highlights his co-introduction of S. 1836, describing its provisions and purpose, framing this legislative action as his own initiative to address Katrina recovery issues.",
+    "error": null
+  },
+  {
+    "document_id": "3935",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Shelby explicitly announces securing $2.4 million in NOAA funding for the University of South Alabama, tying his role as Appropriations Subcommittee Chairman to the funding announcement, which fits R1's pattern of self-referential funding announcement.",
+    "error": null
+  },
+  {
+    "document_id": "3122",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Coleman announces a grant awarded by the Department of Education but does not attribute the grant to his own advocacy or efforts; he merely expresses pleasure that the grant was received, similar to the negative example under R1 where a senator is 'notified' of grants without claiming responsibility.",
+    "error": null
+  },
+  {
+    "document_id": "3577",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is primarily critical of FEMA's handling of flood insurance claims and raises concerns about the program's future. While Sarbanes mentions he worked with Senator Bunning on reforms, he does not claim credit for a specific accomplishment or benefit delivered; instead he emphasizes that FEMA has failed to implement those reforms, framing this as a criticism of the agency rather than a self-attributed achievement. There is no announcement of secured funding, passed legislation, or a favorable outcome attributed to his advocacy.",
+    "error": null
+  },
+  {
+    "document_id": "3675",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "The release announces that Texas cities/ports are eligible to apply for DHS security funding, but does not claim the senator secured or caused this eligibility through her own advocacy or actions. It is informational, describing a DHS program and eligibility criteria based on risk analysis, without attributing the outcome to Hutchison's efforts. Her quote praises DHS's risk-based approach rather than claiming personal credit for the funding decision.",
+    "error": null
+  },
+  {
+    "document_id": "3391",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release describes a conference hosted by Domenici and Bingaman to gather input on water management issues, but it does not claim credit for securing funding, passing legislation, or achieving a specific outcome. It is primarily informational, reporting on presentations and advocacy from various stakeholders without attributing any concrete benefit or accomplishment to the senator's own actions. No decision rule applies as this is descriptive of an information-gathering event rather than a credit-claiming announcement.",
+    "error": null
+  },
+  {
+    "document_id": "2955",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Domenici announces a defense contract award for a New Mexico company, tying his committee role (Senate Defense Appropriations Subcommittee) to the outcome, which frames the funding as connected to his position and advocacy for New Mexico-based companies.",
+    "error": null
+  },
+  {
+    "document_id": "3817",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "Sessions is reacting favorably to TVA's Board decision, expressing approval and stating it has been a 'priority' of his, but he does not claim that his own actions or advocacy caused the TVA Board's decision. This mirrors the negative example under R3 (Dorgan reacting to Army Corps decision) where mere approval without attribution of causation is not credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "3145",
+    "label": "1",
+    "codebook_rule": [
+      "R2",
+      "R5"
+    ],
+    "explanation": "The senator is credited as author of the legislation, which passed the committee unanimously, and is quoted describing the bill's purpose. Another senator (committee chairman) explicitly praises Ensign's leadership and work as directly responsible for the bill's passage, reinforcing credit attribution for a successful legislative outcome.",
+    "error": null
+  },
+  {
+    "document_id": "656",
+    "label": "0",
+    "codebook_rule": [],
+    "explanation": "This release is a critical statement about the Bush Administration's handling of port security following the collapse of the Dubai Ports World deal. Kerry does not attribute the outcome (the deal's demise) to his own actions, advocacy, or legislative efforts. There is no claim of securing funding, sponsoring legislation, or personal intervention leading to this result—it's purely critical commentary on an administration failure, which the codebook explicitly excludes from credit-claiming.",
+    "error": null
+  },
+  {
+    "document_id": "4719",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces a specific federal grant awarded to a local fire department, using self-referential framing ('Sen. Burns announces') and personal comment expressing satisfaction, tying the funding announcement to himself even though the program is federally administered.",
+    "error": null
+  },
+  {
+    "document_id": "2627",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator explicitly announces he 'secured' $1.5 million in federal appropriations for a specific project, and multiple officials credit him directly for obtaining the funding, matching the classic credit-claiming pattern in R1.",
+    "error": null
+  },
+  {
+    "document_id": "3260",
+    "label": "1",
+    "codebook_rule": [
+      "R4"
+    ],
+    "explanation": "Coleman claims personal leadership in past successful efforts to protect farm policy ('Since 2003, I have successfully led bipartisan efforts...ultimately helping to fend off deep cuts'), attributing a past outcome to his own advocacy while continuing that effort. This fits R4's criteria of highlighting personal leadership as responsible for achieving an outcome.",
+    "error": null
+  },
+  {
+    "document_id": "3068",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senators announce that federal funding (over $450,000 through DHS Assistance to Firefighters Grant Program) has been awarded to Michigan organizations, using self-referential language ('Senators Levin, Stabenow Announce') and quoting themselves about the benefits of the funding, framing the announcement as tied to their role in securing/announcing it.",
+    "error": null
+  },
+  {
+    "document_id": "3687",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "The senator announces that federal funding has been awarded to a New Mexico institution, using self-referential language ('Sen. Bingaman... announced'). This frames the senator as the source of the announcement of a tangible benefit to constituents, consistent with R1's criteria for credit-claiming around securing/announcing funding.",
+    "error": null
+  },
+  {
+    "document_id": "4587",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Allen announces a federal grant awarded to a local fire department, using self-referential framing ('Sen. Allen announces', quotes highlighting his priorities), fitting R1's pattern of announcing secured funding tied to the senator's role, even though the grant was administered by DHS.",
+    "error": null
+  },
+  {
+    "document_id": "477",
+    "label": "1",
+    "codebook_rule": [
+      "R1"
+    ],
+    "explanation": "Senator Dayton announces federal funding secured for the airport, using self-referential language ('Sen. Mark Dayton today announced') and framing the grant as a benefit delivered to Minnesotans, consistent with R1.",
+    "error": null
+  },
+  {
+    "document_id": "1938",
+    "label": "1",
+    "codebook_rule": [
+      "R2"
+    ],
+    "explanation": "The senator announces the grant but explicitly credits the Lumbee Tribe ('I applaud the Lumbee Tribe for securing this significant funding') rather than herself for the funding, so R1 does not apply. However, the release highlights her authorship of legislation to grant the tribe full federal recognition, framing this as her own initiative to benefit the tribe, which satisfies R2 (claiming credit for sponsoring legislation).",
+    "error": null
+  }
+]

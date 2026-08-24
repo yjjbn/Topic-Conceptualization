@@ -104,6 +104,11 @@ def main():
     )
 
     output_text = response["choices"][0]["message"]["content"]
+    args.out_folder.mkdir(parents=True, exist_ok=True)
+
+    raw_path = args.out_folder / f"{safe_name(args.model)}_codebook_raw.txt"
+    raw_path.write_text(output_text, encoding="utf-8")
+    print("Raw response:", raw_path)
     codebook = json.loads(clean_json(output_text))
 
     args.out_folder.mkdir(parents=True, exist_ok=True)

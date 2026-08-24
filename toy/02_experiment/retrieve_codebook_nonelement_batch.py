@@ -19,12 +19,12 @@ def parse_args():
     parser.add_argument(
         "--output-path",
         type=Path,
-        help="Override the default output path ending in _element.csv.",
+        help="Override the default output path ending in _rules.csv.",
     )
     parser.add_argument(
         "--json-output-path",
         type=Path,
-        help="Override the companion JSON output path ending in _element.json.",
+        help="Override the companion JSON output path ending in _rules.json.",
     )
     parser.add_argument("--max-retries", type=int, default=5)
     return parser.parse_args()
@@ -33,7 +33,7 @@ def parse_args():
 def clean_json(text):
     start, end = text.find("{"), text.rfind("}")
     if start == -1 or end == -1 or end < start:
-        raise ValueError(f"Could not find JSON in response: {text!r}")
+        raise ValueError(f"Could not find JSON object in response: {text!r}")
     return text[start : end + 1]
 
 
@@ -58,15 +58,9 @@ def get_batch(api_key, batch_id, max_retries):
     return response.json()
 
 
-def json_string(value):
-    if value is None:
-        return None
-    return json.dumps(value, ensure_ascii=False, separators=(",", ":"))
-
-
 def default_output_path(meta):
     original = Path(meta["output_path"])
-    return original.with_name(f"{original.stem}_element{original.suffix}")
+    return original.with_name(f"{original.stem}_rules{original.suffix}")
 
 
 def default_json_output_path(csv_output_path):
@@ -97,7 +91,9 @@ def main():
         raise RuntimeError("Batch is not complete yet. Run this script again later.")
 
     documents = pl.read_csv(meta["data_path"])
-    submitted = {record["custom_id"]: record for record in meta["submitted_documents"]}
+    submitted = {
+        record["custom_id"]: record for record in meta["submitted_documents"]
+    }
     results_by_id = {}
     json_results_by_id = {}
 
@@ -109,7 +105,6 @@ def main():
             continue
         document_id = str(submitted_record["document_id"])
         raw_response = None
-        classification = None
 
         try:
             if result.get("error"):
@@ -126,72 +121,54 @@ def main():
             raw_response = response["body"]["choices"][0]["message"]["content"]
             classification = json.loads(clean_json(raw_response))
 
-            response_document_id = classification.get("document_id")
-            if response_document_id is not None and str(response_document_id) != document_id:
-                raise ValueError(
-                    f"Response document_id {response_document_id!r} did not match "
-                    f"submitted document_id {document_id!r}."
-                )
-
             label = str(classification.get("label"))
             if label not in meta["labels"]:
                 raise ValueError(f"Unexpected label: {label!r}")
 
-            element_findings = classification.get("element_findings")
-            decision_basis = classification.get("decision_basis")
-            application_tips_used = classification.get("application_tips_used")
-            rationale = classification.get("rationale")
-
-            if not isinstance(element_findings, list):
-                raise ValueError("element_findings must be a JSON array.")
-            if not isinstance(decision_basis, dict):
-                raise ValueError("decision_basis must be a JSON object.")
-            if not isinstance(application_tips_used, list):
-                raise ValueError("application_tips_used must be a JSON array.")
-            if not isinstance(rationale, str) or not rationale.strip():
-                raise ValueError("rationale must be a non-empty string.")
+            codebook_rule = classification.get("codebook_rule")
+            explanation = classification.get("explanation")
+            if not isinstance(codebook_rule, list) or not all(
+                isinstance(rule, str) for rule in codebook_rule
+            ):
+                raise ValueError("codebook_rule must be an array of strings.")
+            if not isinstance(explanation, str) or not explanation.strip():
+                raise ValueError("explanation must be a non-empty string.")
 
             results_by_id[document_id] = {
                 "label": label,
-                "element_findings": json_string(element_findings),
-                "decision_basis": json_string(decision_basis),
-                "application_tips_used": json_string(application_tips_used),
-                "rationale": rationale,
+                "codebook_rule": json.dumps(
+                    codebook_rule, ensure_ascii=False, separators=(",", ":")
+                ),
+                "explanation": explanation,
                 "error": None,
             }
-            # Preserve the original parsed model JSON without flattening it.
-            json_results_by_id[document_id] = classification
+            json_results_by_id[document_id] = {
+                "document_id": document_id,
+                "label": label,
+                "codebook_rule": codebook_rule,
+                "explanation": explanation,
+                "error": None,
+            }
 
         except Exception as error:
             error_message = f"{type(error).__name__}: {error}"
             results_by_id[document_id] = {
                 "label": None,
-                "element_findings": None,
-                "decision_basis": None,
-                "application_tips_used": None,
-                "rationale": None,
+                "codebook_rule": None,
+                "explanation": None,
                 "error": error_message,
             }
-            if isinstance(classification, dict):
-                json_error_record = dict(classification)
-                json_error_record["_retrieval_error"] = error_message
-            else:
-                json_error_record = {
-                    "document_id": document_id,
-                    "_retrieval_error": error_message,
-                    "_raw_response": raw_response,
-                }
-            json_results_by_id[document_id] = json_error_record
+            json_results_by_id[document_id] = {
+                "document_id": document_id,
+                "label": None,
+                "codebook_rule": None,
+                "explanation": None,
+                "error": error_message,
+                "raw_response": raw_response,
+            }
 
     ids = documents.get_column(meta["id_column"]).cast(pl.String).to_list()
-    fields = [
-        "label",
-        "element_findings",
-        "decision_basis",
-        "application_tips_used",
-        "rationale",
-        "error",
-    ]
+    fields = ["label", "codebook_rule", "explanation", "error"]
     output_columns = {
         field: [
             results_by_id.get(document_id, {}).get(
@@ -222,7 +199,10 @@ def main():
             document_id,
             {
                 "document_id": document_id,
-                "_retrieval_error": "Missing batch result",
+                "label": None,
+                "codebook_rule": None,
+                "explanation": None,
+                "error": "Missing batch result",
             },
         )
         for document_id in ids
