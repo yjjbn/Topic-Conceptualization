@@ -32,8 +32,8 @@ INPUT FORMAT
 The documents are provided as JSON objects with an ID and text:
 
 [
-  {"id": "doc_001", "text": "..."},
-  {"id": "doc_002", "text": "..."},
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
   ...
 ]
 
@@ -45,16 +45,16 @@ Return the classifications and codebook in JSON format, using this template as a
 {
   "classifications": [
     {
-      "id":"doc_001",
+      "document_id":"doc_001",
       "label": "Return only 1 or 0"
     },
 	  {
-      "id":"doc_002",
+      "document_id":"doc_002",
       "label": "Return only 1 or 0"
     },
     ...
 		{
-      "id":"doc_500",
+      "document_id":"doc_500",
       "label": "Return only 1 or 0"
     }
   ],

@@ -9,27 +9,19 @@ import requests
 from dotenv import load_dotenv
 
 BATCHES_URL = "https://openrouter.ai/api/beta/batches"
-RETRYABLE_STATUS_CODES = {429, 502, 503, 504}
-
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--meta-path", type=Path, required=True)
-    parser.add_argument(
-        "--output-format",
-        choices=("csv", "json"),
-        default="csv",
-        help="Save a joined CSV or the raw model-output JSON (default: csv).",
-    )
-    parser.add_argument("--max-retries", type=int, default=5)
     return parser.parse_args()
 
 
 def clean_json(text):
-    start, end = text.find("{"), text.rfind("}")
+    start = text.find("[")
+    end = text.rfind("]")
     if start == -1 or end == -1:
-        raise ValueError(f"Could not find JSON in response: {text!r}")
-    return text[start:end + 1]
+        raise ValueError(f"Could not find a JSON array in response: {text!r}")
+    return text[start : end + 1]
 
 
 def csv_value(value):
@@ -41,23 +33,11 @@ def csv_value(value):
 
 
 def get_batch(api_key, batch_id, max_retries):
-    for attempt in range(max_retries + 1):
-        response = requests.get(
-            f"{BATCHES_URL}/{batch_id}",
-            headers={"Authorization": f"Bearer {api_key}"},
-            timeout=600,
-        )
-        if response.status_code not in RETRYABLE_STATUS_CODES or attempt == max_retries:
-            break
-        try:
-            delay = float(response.headers.get("Retry-After"))
-        except (TypeError, ValueError):
-            delay = 30
-        print(f"Retrying in {delay} seconds")
-        time.sleep(delay)
-
-    if not response.ok:
-        raise RuntimeError(f"OpenRouter returned {response.status_code}: {response.text}")
+    response = requests.get(
+        f"{BATCHES_URL}/{batch_id}",
+        headers={"Authorization": f"Bearer {api_key}"},
+        timeout=600,
+    )
     return response.json()
 
 
@@ -70,13 +50,17 @@ def main():
     batch = get_batch(api_key, meta["batch_id"], args.max_retries)
 
     documents = pl.read_csv(meta["data_path"])
-    submitted = {x["custom_id"]: x for x in meta["submitted_documents"]}
+    submitted_requests = meta["submitted_requests"]
+
+    submitted = {item["custom_id"]: item for item in submitted_requests}
     results_by_id = {}
     output_fields = []
+    raw_outputs_by_custom_id = {}
 
     for result in batch["results"]:
         custom_id = result["custom_id"]
-        document_id = str(submitted[custom_id]["document_id"])
+        request_documents = submitted[custom_id]["documents"]
+        expected_ids = {str(document["document_id"]) for document in request_documents}
 
         try:
             if result.get("error"):
@@ -87,45 +71,66 @@ def main():
                 raise RuntimeError(f"HTTP {response['status_code']}: {response.get('body')}")
 
             text = response["body"]["choices"][0]["message"]["content"]
-            classification = json.loads(clean_json(text))
-            if not isinstance(classification, dict):
-                raise ValueError("The model output must be a JSON object.")
+            model_output = json.loads(clean_json(text))
+            raw_outputs_by_custom_id[custom_id] = model_output
+            if not isinstance(model_output, list):
+                raise ValueError(
+                    "The model output must be a JSON array."
+                )
+            classifications = model_output
+            if not all(isinstance(item, dict) for item in classifications):
+                raise ValueError("Every result must be a JSON object.")
 
-            for field in classification:
-                if field not in output_fields:
-                    output_fields.append(field)
+            request_results = {}
+            for classification in classifications:
+                document_id = str(classification["document_id"])
+                if document_id not in expected_ids:
+                    raise ValueError(f"Unexpected document ID: {document_id!r}")
 
-            results_by_id[document_id] = {
-                "values": classification,
-                "error": None,
-            }
+                for field in classification:
+                    if field not in output_fields:
+                        output_fields.append(field)
+
+                request_results[document_id] = classification
+
+            for document_id in expected_ids:
+                if document_id in request_results:
+                    results_by_id[document_id] = {
+                        "values": request_results[document_id],
+                        "error": None,
+                    }
+                else:
+                    results_by_id[document_id] = {
+                        "values": {},
+                        "error": "Missing document result in model response",
+                    }
 
         except Exception as error:
-            results_by_id[document_id] = {
-                "values": {},
-                "error": f"{type(error).__name__}: {error}",
-            }
+            for document_id in expected_ids:
+                results_by_id[document_id] = {
+                    "values": {},
+                    "error": f"{type(error).__name__}: {error}",
+                }
 
     ids = documents.get_column(meta["id_column"]).cast(pl.String).to_list()
 
     errors = [results_by_id.get(i, {}).get("error", "Missing batch result") for i in ids]
-    output_path = Path(meta["output_path"]).with_suffix(f".{args.output_format}")
+    output_path = Path(meta["output_path"])
+    raw_output_path = output_path.with_name(
+        f"{output_path.stem.removesuffix('_results')}_raw_results.json"
+    )
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    if args.output_format == "json":
-        raw_outputs = [
-            results_by_id[document_id]["values"]
-            for document_id in ids
-            if document_id in results_by_id
-            and results_by_id[document_id]["error"] is None
-        ]
-
-        output_path.write_text(
-            json.dumps(raw_outputs, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
-        print("Results:", output_path)
-        return
+    raw_outputs = [
+        model_result
+        for item in submitted_requests
+        for model_result in raw_outputs_by_custom_id.get(item["custom_id"], [])
+    ]
+    raw_output_path.write_text(
+        json.dumps(raw_outputs, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print("Raw results:", raw_output_path)
 
     output_columns = [
         pl.Series(
@@ -145,7 +150,7 @@ def main():
     )
 
     results_df.write_csv(output_path)
-    print("Results:", output_path)
+    print("CSV results:", output_path)
 
 if __name__ == "__main__":
     main()

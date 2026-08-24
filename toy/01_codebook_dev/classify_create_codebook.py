@@ -10,28 +10,27 @@ from dotenv import load_dotenv
 
 RESPONSES_URL = "https://openrouter.ai/api/v1/responses"
 
+# run like
+# uv run classify_create_codebook.py --model "anthropic/claude-sonnet-5" --nametag "elemental" --note "helpful note" --data-path "==PATH==" --prompt-path "==PATH==" --test-rows ==e.g. 5, if you want to test 5 rows==
+# will output a .csv with the classifications, and a .json with the codebook
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Classify the codebook-development documents and create a codebook."
-    )
+    parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True)
-    parser.add_argument(
-        "--nametag",
-        default="",
-        help="Optional tag added to output filenames, such as 'experiment-1'.",
-    )
+    parser.add_argument("--nametag", default="", help="add a descriptive tag to add to output names, like 'elemental'")
+    parser.add_argument("--note", default=None, help="add a note if you want")
     parser.add_argument("--data-path", type=Path, default=Path("./data/grimmer_codebookdev_350.csv"))
     parser.add_argument("--prompt-path", type=Path, default=Path("./prompts/prompt_classify-create-codebook_grimmer_elemental.txt"))
+    parser.add_argument("--test-rows", type=int, default=None, help="if you want to test a few random rows")
     parser.add_argument("--out-folder", type=Path, default=Path("./out"))
-    parser.add_argument("--test-rows", type=int, default=None)
-    parser.add_argument("--id-column", default="doc_id")
+    parser.add_argument("--id-column", default="document_id")
     parser.add_argument("--text-column", default="text")
     parser.add_argument("--max-output-tokens", type=int, default=50000)
     return parser.parse_args()
 
 
 def safe_name(value: str) -> str:
+    # make name safe for a file name
     return re.sub(r"[^A-Za-z0-9._-]+", "_", value)
 
 
@@ -43,8 +42,6 @@ def get_response_text(body: dict) -> str:
 def clean_json(text: str) -> str:
     start = text.find("{")
     end = text.rfind("}")
-    if start == -1 or end == -1 or end < start:
-        raise ValueError(f"error in response format:\n{text}")
     return text[start : end + 1]
 
 
@@ -58,17 +55,7 @@ def send_request(api_key: str, request_body: dict) -> dict:
         json=request_body,
         timeout=600,
     )
-
-    if not response.ok:
-        raise RuntimeError(f"OpenRouter returned {response.status_code}: {response.text}")
-
     body = response.json()
-    if body.get("error"):
-        raise RuntimeError(f"OpenRouter response error: {body['error']}")
-    if body.get("status") == "incomplete":
-        raise RuntimeError(
-            f"Response was incomplete: {body.get('incomplete_details')}"
-        )
     return body
 
 
@@ -77,64 +64,79 @@ def main() -> None:
     load_dotenv()
 
     api_key = os.environ.get("OPENROUTER_API_KEY")
-    if not api_key:
-        raise RuntimeError("OPENROUTER_API_KEY is not set.")
 
     prompt = args.prompt_path.read_text(encoding="utf-8")
     data = pl.read_csv(args.data_path)
 
+    # if you are sampling rows for a test run
     if args.test_rows is not None:
         data = data.sample(n=args.test_rows, seed=1)
 
+    # format data into a array of json objects, each one is a text
     documents = [
-        {"id": str(row[args.id_column]), "text": str(row[args.text_column])}
+        {"document_id": str(row[args.id_column]), "text": str(row[args.text_column])}
         for row in data.iter_rows(named=True)
     ]
+
     print(
         f"Classifying {len(documents)} documents and generating a codebook "
         f"with {args.model}..."
     )
+
     response_body = send_request(
         api_key,
         {
             "model": args.model,
             "instructions": prompt,
-            "input": json.dumps(documents, ensure_ascii=False),
+            "input": json.dumps(documents),
             "temperature": 0,
             "max_output_tokens": args.max_output_tokens,
         },
     )
 
-    output_text = get_response_text(response_body)
-    result = json.loads(clean_json(output_text))
-
-    args.out_folder.mkdir(parents=True, exist_ok=True)
+    # prep file names
     model_name = safe_name(args.model)
-    nametag = safe_name(args.nametag).strip("._-")
-    if nametag:
-        model_name = f"{model_name}_{nametag}"
-    if args.test_rows is not None:
-        model_name = f"{model_name}_{args.test_rows}-rows"
-    classifications_path = (
-        args.out_folder / f"{model_name}_classifications.csv"
+    nametag = safe_name(args.nametag)
+    rows_folder = (
+        "all-rows"
+        if args.test_rows is None
+        else f"test-{args.test_rows}-rows"
     )
-    codebook_path = args.out_folder / f"{model_name}_codebook.json"
+    output_folder = (
+        args.out_folder
+        / f"tag-{nametag}"
+        / f"model-{model_name}"
+        / rows_folder
+    )
+    file_prefix = f"{model_name}_{nametag}"
+    output_folder.mkdir(parents=True, exist_ok=True)
 
+    print("saving raw output in", output_folder)
+    output_text = get_response_text(response_body)
+    # save raw output first before parsing anything, in case there's an issue
+    raw_output_path = output_folder / f"{file_prefix}_raw_output.txt"
+    raw_output_path.write_text(output_text, encoding="utf-8")
+
+    classifications_path = output_folder / f"{file_prefix}_classifications.csv"
+    codebook_path = output_folder / f"{file_prefix}_codebook.json"
+
+    result = json.loads(clean_json(output_text))
     classifications = pl.DataFrame(result["classifications"]).with_columns(
-        pl.col("id").cast(pl.String)
+        pl.col("document_id").cast(pl.String)
     )
     original_texts = pl.DataFrame(documents)
-    classifications.join(original_texts, on="id", how="left").select(
-        "id", "text", "label"
+    classifications.join(original_texts, on="document_id", how="left").select(
+        "document_id", "text", "label"
     ).write_csv(classifications_path)
     codebook_path.write_text(
-        json.dumps(result["codebook"], ensure_ascii=False, indent=2) + "\n",
+        json.dumps(result["codebook"], indent=2) + "\n",
         encoding="utf-8",
     )
 
-    print("Classifications:", classifications_path)
-    print("Codebook:", codebook_path)
+    if args.note is not None:
+        (output_folder / f"{file_prefix}_note.txt").write_text(args.note)
 
+    print("parsed and saved classifications and codebook")
 
 if __name__ == "__main__":
     main()

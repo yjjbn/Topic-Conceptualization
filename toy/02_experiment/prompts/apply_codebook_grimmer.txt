@@ -13,8 +13,7 @@ For each text, return:
 * ID: ID of the text document
 * Label: Your classification, 1 or 0
 * Codebook Rule: The codebook rule(s) that support your classification. If more than one rule applies, list all applicable rules. If the text is classified as "0" because no decision rule applies, return an empty array.
-Codebook Rule: The codebook rule(s) (e.g. R1, R2, etc.) that you used to make your decision.
-Explanation: An explanation of the rationale for your classification or how you applied the rules. If you faced any ambiguities or difficulties in applying the rules or making a classification, you can describe that here.
+* Explanation: An explanation of the rationale for your classification or how you applied the rules. If you faced any ambiguities or difficulties in applying the rules or making a classification, you can describe that here.
 
 
 ## OUTPUT FORMAT
@@ -22,7 +21,7 @@ Explanation: An explanation of the rationale for your classification or how you 
 Return only valid JSON, with other formatting or text. For each document, use this structure:
 
 {
-  "id": "doc_001",
+  "document_id": "doc_001",
   "label": "1",
   "codebook_rule": ["R1", "R3"],
   "explanation": "Rationale for your decision"
@@ -31,7 +30,7 @@ Return only valid JSON, with other formatting or text. For each document, use th
 For a document classified as `"0"`:
 
 {
-  "id": "doc_002",
+  "document_id": "doc_002",
   "label": "0",
   "codebook_rule": [],
   "explanation": "Rationale for your decision"

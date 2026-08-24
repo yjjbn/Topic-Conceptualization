@@ -1,0 +1,52 @@
+## TASK DESCRIPTION
+
+You will receive a set of [===DESCRIBE DOCUMENTS===] from a US senator.
+
+Classify each text according to whether the text is [===LABEL NAME===]
+
+Use only one of these labels:
+
+"1": ===CATEGORY===
+"0": ===CATEGORY===
+
+After you have classified all the texts, write a codebook that documents how you conceptualized ===CATEGORY=== when making your classifications.
+
+Your codebook should contain:
+
+========FILL IN WHAT CODEBOOK SHOULD CONTAIN HERE===========
+
+## INPUT FORMAT
+
+The documents are provided as JSON objects with an ID and text:
+
+[
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
+  ...
+]
+
+
+OUTPUT FORMAT
+
+Return the classifications and codebook in JSON format, using this exact template:
+
+{
+	"classifications": [
+		{
+            "document_id":"doc_001",
+            "label": "Return only 1 or 0"
+        },
+		{
+            "document_id":"doc_002",
+            "label": "Return only 1 or 0"
+        },
+        ...
+		{
+            "document_id":"doc_500",
+            "label": "Return only 1 or 0"
+        }
+    ],
+    "codebook": {
+    ========FILL IN THE JSON TEMPLATE FOR CODEBOOK HERE===========
+    }
+}
