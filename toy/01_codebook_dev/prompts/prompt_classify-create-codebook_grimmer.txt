@@ -1,0 +1,95 @@
+TASK DESCRIPTION
+
+You will receive a set of 500 press releases from a US senator.
+
+Classify each text according to whether the senator is "credit-claiming."
+
+Use only one of these labels:
+
+"1": The senator is credit-claiming.
+"0": The senator is not credit-claiming.
+
+After you have classified all the texts, write a codebook that documents how you conceptualized "credit-claiming" when making your classifications.
+
+Your codebook should contain:
+
+* Definition
+A definition of "credit-claiming" that represents how you applied the concept when coding the texts.
+
+* Decision rules
+Provide up to 6 distinct decision rules that represent how you deteremined whether a text should be classified as "credit-claiming." Provide only the minimum number of rules needed to communicate your classification criteria, up to a maximum of 6.
+Each rule should describe a distinct circumstance that is sufficient to classify a text as "credit-claiming."
+If several criteria must be present together for a circumstance to qualify as credit-claiming, state those criteria together within a single rule.
+A text that does not satisfy one rule may still be classified as "credit-claiming" if it satisfies another.
+A text may satisfy more than one decision rule.
+For each rule, provide
+    1) A statement of the rule
+    2) A positive example of a text where rule applies, with an explanation. Here, try to choose an example that is an illustrative and typical case of the rule.
+    3) A negative example of a text where the rule does not apply, with an explanation. Here, try to choose an edge-case example where the rule may plausibly apply, but does not. This is meant to help define the boundaries of the rule.
+
+
+INPUT FORMAT
+
+The documents are provided as JSON objects with an ID and text:
+
+[
+  {"id": "doc_001", "text": "..."},
+  {"id": "doc_002", "text": "..."},
+  ...
+]
+
+
+OUTPUT FORMAT
+
+Return the classifications and codebook in JSON format, using this exact template:
+
+{
+	"classifications": [
+		{
+            "id":"doc_001",
+            "label": "Return only 1 or 0"
+        },
+		{
+            "id":"doc_002",
+            "label": "Return only 1 or 0"
+        },
+        ...
+		{
+            "id":"doc_500",
+            "label": "Return only 1 or 0"
+        }
+    ],
+    "codebook": {
+        "definition": "A definition of ‘credit-claiming’ that represents how you conceptualized the concept when you were coding",
+        "decision_rules": [
+            {
+                "rule_id": "R1",
+                "rule": "...",
+                "positive_example": {
+                    "text": "...",
+                    "explanation": "..."
+                },
+                "negative_example": {
+                    "text": "...",
+                    "explanation": "..."
+                }
+            },
+            {
+                "rule_id": "R2",
+                "rule": "...",
+                "positive_example": {
+                    "text": "...",
+                    "explanation": "..."
+                },
+                "negative_example": {
+                    "text": "...",
+                    "explanation": "..."
+                }
+            },
+            ...
+        ]
+    }
+}
+
+The "decision_rules" array must contain at least 1 and no more than 6 objects.
+

@@ -16,11 +16,15 @@ RETRYABLE_STATUS_CODES = {429, 502, 503, 504}
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True)
+    parser.add_argument(
+        "--nametag",
+        default="",
+        help="Optional tag added to output filenames, such as 'experiment-1'.",
+    )
     parser.add_argument("--codebook-path", type=Path, required=True)
     parser.add_argument("--data-path", type=Path, default=Path("./data/grimmer_codebookapply.csv"))
-    parser.add_argument("--prompt-path", type=Path, default=Path("./prompts/apply_codebook_grimmer.txt"))
+    parser.add_argument("--prompt-path", type=Path, default=Path("./prompts/apply_codebook_grimmer_elemental.txt"))
     parser.add_argument("--out-folder", type=Path, default=Path("./out"))
-    parser.add_argument("--labels", nargs="+", default=["1", "0"])
     parser.add_argument("--id-column", default="doc_id")
     parser.add_argument("--text-column", default="text")
     parser.add_argument("--max-output-tokens", type=int, default=5000)
@@ -58,6 +62,8 @@ def main():
     args = parse_args()
     load_dotenv()
     api_key = os.environ.get("OPENROUTER_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENROUTER_API_KEY is not set.")
 
     documents = pl.read_csv(args.data_path)
     codebook = json.loads(args.codebook_path.read_text(encoding="utf-8"))
@@ -77,9 +83,7 @@ def main():
         custom_id = f"doc-{position:08d}"
         all_document_ids.append(document_id)
 
-        model_input = {
-            "document": {"document_id": document_id, "text": document_text},
-        }
+        model_input = {"id": document_id, "text": document_text}
 
         requests_list.append({
             "custom_id": custom_id,
@@ -120,15 +124,18 @@ def main():
 
     args.out_folder.mkdir(parents=True, exist_ok=True)
     model_name = safe_name(args.model)
+    nametag = safe_name(args.nametag).strip("._-")
+    if nametag:
+        model_name = f"{model_name}_{nametag}"
     codebook_name = safe_name(args.codebook_path.stem)
-    output_name = f"model_{model_name}_codebook_{codebook_name}_labels"
+    output_name = f"model_{model_name}_codebook_{codebook_name}_results"
     csv_path = args.out_folder / f"{output_name}.csv"
     meta_path = args.out_folder / f"{output_name}_{batch_id}_meta.json"
 
     meta = {
         "batch_id": batch_id,
         "model": args.model,
-        "labels": args.labels,
+        "nametag": args.nametag,
         "id_column": args.id_column,
         "text_column": args.text_column,
         "data_path": str(args.data_path.resolve()),

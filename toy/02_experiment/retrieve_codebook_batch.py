@@ -15,6 +15,12 @@ RETRYABLE_STATUS_CODES = {429, 502, 503, 504}
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--meta-path", type=Path, required=True)
+    parser.add_argument(
+        "--output-format",
+        choices=("csv", "json"),
+        default="csv",
+        help="Save a joined CSV or the raw model-output JSON (default: csv).",
+    )
     parser.add_argument("--max-retries", type=int, default=5)
     return parser.parse_args()
 
@@ -24,6 +30,14 @@ def clean_json(text):
     if start == -1 or end == -1:
         raise ValueError(f"Could not find JSON in response: {text!r}")
     return text[start:end + 1]
+
+
+def csv_value(value):
+    if value is None:
+        return None
+    if isinstance(value, (dict, list)):
+        return json.dumps(value, ensure_ascii=False)
+    return str(value)
 
 
 def get_batch(api_key, batch_id, max_retries):
@@ -58,6 +72,7 @@ def main():
     documents = pl.read_csv(meta["data_path"])
     submitted = {x["custom_id"]: x for x in meta["submitted_documents"]}
     results_by_id = {}
+    output_fields = []
 
     for result in batch["results"]:
         custom_id = result["custom_id"]
@@ -73,43 +88,64 @@ def main():
 
             text = response["body"]["choices"][0]["message"]["content"]
             classification = json.loads(clean_json(text))
+            if not isinstance(classification, dict):
+                raise ValueError("The model output must be a JSON object.")
 
-            label = str(classification.get("label"))
-            if label not in meta["labels"]:
-                raise ValueError(f"Unexpected label: {label!r}")
+            for field in classification:
+                if field not in output_fields:
+                    output_fields.append(field)
 
             results_by_id[document_id] = {
-                "label": label,
-                "decision_basis": classification.get("decision_basis"),
-                "confidence": classification.get("confidence"),
+                "values": classification,
                 "error": None,
             }
 
         except Exception as error:
             results_by_id[document_id] = {
-                "label": None,
-                "decision_basis": None,
-                "confidence": None,
+                "values": {},
                 "error": f"{type(error).__name__}: {error}",
             }
 
     ids = documents.get_column(meta["id_column"]).cast(pl.String).to_list()
 
-    labels = [results_by_id.get(i, {}).get("label") for i in ids]
-    decision_basis = [results_by_id.get(i, {}).get("decision_basis") for i in ids]
-    confidence = [results_by_id.get(i, {}).get("confidence") for i in ids]
     errors = [results_by_id.get(i, {}).get("error", "Missing batch result") for i in ids]
+    output_path = Path(meta["output_path"]).with_suffix(f".{args.output_format}")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if args.output_format == "json":
+        raw_outputs = [
+            results_by_id[document_id]["values"]
+            for document_id in ids
+            if document_id in results_by_id
+            and results_by_id[document_id]["error"] is None
+        ]
+
+        output_path.write_text(
+            json.dumps(raw_outputs, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print("Results:", output_path)
+        return
+
+    output_columns = [
+        pl.Series(
+            field,
+            [
+                csv_value(results_by_id.get(i, {}).get("values", {}).get(field))
+                for i in ids
+            ],
+            dtype=pl.String,
+        )
+        for field in output_fields
+    ]
 
     results_df = documents.with_columns(
-        pl.Series("label", labels, dtype=pl.String, strict=False),
-        pl.Series("decision_basis", decision_basis, dtype=pl.String, strict=False),
-        pl.Series("confidence", confidence, strict=False),
-        pl.Series("error", errors, dtype=pl.String, strict=False),
+        *output_columns,
+        pl.Series("_retrieval_error", errors, dtype=pl.String, strict=False),
     )
 
-    output_path = Path(meta["output_path"])
-    output_path.parent.mkdir(parents=True, exist_ok=True)
     results_df.write_csv(output_path)
+    print("Results:", output_path)
 
 if __name__ == "__main__":
     main()

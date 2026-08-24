@@ -1,18 +1,40 @@
-I will give you a qualitative codebook and the text of a press release from a US senator to classify.
-Relying solely on the information and instructions in the codebook, classify the press release using one of these labels:
+## TASK DESCRIPTION
+
+You will receive a a codebook and a set of press releases from a US senator.
+
+Following the codebook, classify each text according to whether the senator is "credit-claiming." Use only the information provided in the codebook, and no other information.
+
+Use only one of these labels:
 
 "1": The senator is credit-claiming.
 "0": The senator is not credit-claiming.
 
-Return only a JSON object with these fields:
+For each text, return:
+* ID: ID of the text document
+* Label: Your classification, 1 or 0
+* Codebook Rule: The codebook rule(s) that support your classification. If more than one rule applies, list all applicable rules. If the text is classified as "0" because no decision rule applies, return an empty array.
+Codebook Rule: The codebook rule(s) (e.g. R1, R2, etc.) that you used to make your decision.
+Explanation: An explanation of the rationale for your classification or how you applied the rules. If you faced any ambiguities or difficulties in applying the rules or making a classification, you can describe that here.
+
+
+## OUTPUT FORMAT
+
+Return only valid JSON, with other formatting or text. For each document, use this structure:
 
 {
-"label": "1 or 0",
-"decision_basis": "A concise explanation of the rationale for the classification decision. Include the specific numbered inclusion criteria and edge case rules from the codebook that you used to make your decision."
-"confidence": "A score on a scale of 0-10 that indicates how confident you are in your decision, where 0 is not confident at all and 10 is extremely confident."
+  "id": "doc_001",
+  "label": "1",
+  "codebook_rule": ["R1", "R3"],
+  "explanation": "Rationale for your decision"
 }
 
-Requirements:
-* Use only the labels "1" and "0".
-* Do not include Markdown.
-* Do not include text before or after the JSON object.
+For a document classified as `"0"`:
+
+{
+  "id": "doc_002",
+  "label": "0",
+  "codebook_rule": [],
+  "explanation": "Rationale for your decision"
+}
+
+If there are multiple documents, return an array of JSON objects.
