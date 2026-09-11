@@ -1,0 +1,29 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself as responsible for, instrumental in obtaining, or actively advancing a governmental benefit, policy, program, funding outcome, or legislative action. It includes claims of securing or delivering concrete results and claims of authorship, sponsorship, or other leadership in advancing legislation. Mere policy opinions, criticism, ceremonial statements, announcements without a claimed senatorial role, and requests that have not produced an attributed result are not credit-claiming.",
+  "decision_rules": [
+    {
+      "rule_id": "1",
+      "rule": "Classify as credit-claiming when the senator attributes a concrete governmental outcome, funding award, program, designation, or other benefit to their own efforts, such as securing funds, obtaining agency action, delivering a project, or successfully intervening on behalf of constituents.",
+      "positive_example": {
+        "text": "\u201cSen. Talent ... worked with USDA officials to expedite the approval of the Governor's request\u201d for Missouri's disaster designation.",
+        "explanation": "The release explicitly connects Talent's work to a completed federal disaster designation and the resulting assistance for Missouri producers."
+      },
+      "negative_example": {
+        "text": "\u201cBradley International Airport will receive a federal grant totaling $2,250,000\u201d from the Department of Transportation.",
+        "explanation": "Although senators announce a concrete grant, the release does not say they secured it, requested it, or otherwise caused the award."
+      }
+    },
+    {
+      "rule_id": "2",
+      "rule": "Classify as credit-claiming when the senator claims a leading legislative role, including introducing, authoring, sponsoring, securing passage of, or successfully adding a provision or amendment to legislation, even if final enactment or implementation remains pending.",
+      "positive_example": {
+        "text": "\u201cDorgan authored legislation, which was signed into law, that created the National Center designation.\u201d",
+        "explanation": "The senator explicitly claims authorship of the law that produced the designation."
+      },
+      "negative_example": {
+        "text": "\u201cSen. Jeffords ... voted in support of the Sens. Kerry and Levin amendments today.\u201d",
+        "explanation": "A statement explaining a vote and policy position does not claim authorship, sponsorship, leadership, or responsibility for advancing the amendments."
+      }
+    }
+  ]
+}

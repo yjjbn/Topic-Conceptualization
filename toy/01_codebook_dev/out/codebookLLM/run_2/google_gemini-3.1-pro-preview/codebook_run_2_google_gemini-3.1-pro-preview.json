@@ -1,0 +1,25 @@
+{
+  "definition": "Credit-claiming refers to statements in which a senator acts to generate the belief that they are personally or collaboratively responsible for securing tangible, particularized benefits for their state, district, or specific constituents. This includes claiming responsibility for securing federal grants, funding for local projects, preserving local military bases, obtaining disaster relief, successfully resolving casework, or passing amendments that bring targeted relief to their constituency.",
+  "clarification": "Look for active phrases linking the senator to a desirable local outcome, such as 'secured,' 'delivered,' 'authored legislation that created,' or 'announced funding' (in contexts where congressional press releases use grant announcements to signal their role in delivering federal dollars). A document is credit-claiming if it highlights the successful allocation of federal resources or policies to the senator's specific geographic constituency or constituents.",
+  "positive_examples": [
+    {
+      "text": "Montana Senators Max Baucus and Jon Tester have delivered on their promise to secure federal funding for the Mining City. The Senators announced today that $12.5 million for vital military projects in Butte has been included in the Defense Appropriations Bill...",
+      "explanation": "This text explicitly claims credit ('delivered on their promise to secure federal funding') for obtaining a tangible, particularized financial benefit ($12.5 million) directed specifically to their state."
+    },
+    {
+      "text": "U.S. Senator Daniel K. Inouye announced that $225,000 will be available very shortly as the first wave of federal funding support to control and contain the coqui frogs on the Big Island... 'I then went looking and found another federal funding source to at least begin the control and containment process,' Senator Inouye stated.",
+      "explanation": "The senator explicitly claims personal responsibility ('I then went looking and found') for securing particularized funding for a local issue in their home state."
+    }
+  ],
+  "negative_clarification": "Do not classify a document as credit-claiming if the senator is merely introducing or co-sponsoring legislation that has not passed, stating a policy position, holding a town hall, or commenting on broad national legislation without highlighting a specific local benefit. Furthermore, broad national policy achievements (e.g., nationwide tax cuts or regulatory relief) do not count unless the text explicitly claims credit for a localized benefit carved out specifically for the senator's constituency.",
+  "negative_examples": [
+    {
+      "text": "Today Senator Edward M Kennedy introduced legislation to enhance stem cell research and to strengthen anti cloning provisions... The bill makes human cloning of any kind a felony and punishable by immense monetary fines...",
+      "explanation": "This is an example of position-taking and legislative activity. The senator is introducing broad national legislation, not claiming credit for having successfully secured a specific, tangible benefit or funding for their state."
+    },
+    {
+      "text": "Nebraska's Senator Ben Nelson voted against both resolutions because he supports setting measurable goals for progress in Iraq and not arbitrary timetables and dates.",
+      "explanation": "This statement explains a legislative vote and takes a policy position on an international issue. It contains no claim of credit for delivering localized, particularized benefits or federal funds."
+    }
+  ]
+}

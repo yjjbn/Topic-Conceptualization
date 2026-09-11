@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself, their legislative work, advocacy, influence, or congressional role as having produced or helped produce a concrete governmental action, benefit, resource, policy outcome, or recognition.",
+  "clarification": "Classify a release as credit-claiming when it links the senator to an achievement or beneficial result. This includes statements that the senator secured funding, authored or passed a measure that yielded a benefit, successfully pressed an agency, helped obtain a designation or federal decision, or claims that prior legislative work produced a current outcome. Credit can be claimed individually or jointly with colleagues, a delegation, or a party. A bill's passage or committee approval can qualify when the senator highlights their authorship, sponsorship, amendment, or other substantive role in that achievement.",
+  "positive_examples": [
+    {
+      "text": "Sen. Talent announced that USDA declared most of Missouri a disaster area and stated that he \"worked with USDA officials to expedite the approval\" of the Governor's request.",
+      "explanation": "The release directly attributes a concrete federal disaster designation and resulting assistance eligibility to Talent's efforts to expedite approval."
+    },
+    {
+      "text": "Sen. Dorgan announced Bismarck State College's national designation and stated that he \"authored legislation, which was signed into law, that created the National Center designation.\"",
+      "explanation": "Dorgan explicitly connects his authorship of enacted legislation to the beneficial designation received by an institution in his state."
+    },
+    {
+      "text": "Sens. Baucus and Tester stated they had \"delivered on their promise to secure federal funding\" for $12.5 million in military projects in Butte.",
+      "explanation": "This is an explicit claim of responsibility for obtaining specific federal funds for a local community."
+    }
+  ],
+  "negative_clarification": "Do not classify releases as credit-claiming when they merely state a policy view, criticize an administration or other officials, announce an agency action without connecting it to the senator's efforts, commemorate a person or event, invite constituents to an event, or express support for or opposition to pending legislation. Introducing, cosponsoring, or voting for a bill without an asserted accomplishment or result is generally treated as position-taking rather than credit-claiming.",
+  "negative_examples": [
+    {
+      "text": "Sen. Kerry criticized the Dubai Ports deal as a \"mismanaged and misguided debacle\" and called for congressional review.",
+      "explanation": "The statement criticizes the Administration's actions but does not claim that Kerry obtained a benefit or produced a governmental outcome."
+    },
+    {
+      "text": "Sen. Allard invited residents to attend a Greeley town meeting to discuss issues important to them.",
+      "explanation": "This is constituent outreach, with no claimed policy achievement, resource delivery, or successful intervention."
+    },
+    {
+      "text": "Sen. Salazar announced that he joined colleagues in supporting a White House compromise on the PATRIOT Act.",
+      "explanation": "The release conveys support for a compromise but does not claim that Salazar secured, enacted, or otherwise produced the outcome."
+    }
+  ]
+}

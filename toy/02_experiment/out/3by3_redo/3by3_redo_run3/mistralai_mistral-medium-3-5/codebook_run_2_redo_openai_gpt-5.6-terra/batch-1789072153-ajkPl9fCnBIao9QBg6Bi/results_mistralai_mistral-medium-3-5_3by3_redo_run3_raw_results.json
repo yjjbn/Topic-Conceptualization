@@ -1,0 +1,1465 @@
+{
+  "id": "batch-1789072153-ajkPl9fCnBIao9QBg6Bi",
+  "object": "batch",
+  "endpoint": "/v1/chat/completions",
+  "model": "mistralai/mistral-medium-3.5-20260430",
+  "completion_window": "24h",
+  "status": "completed",
+  "created_at": 1789072153,
+  "finalized_at": 1789072599,
+  "request_counts": {
+    "total": 30,
+    "completed": 30,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 200077,
+    "completion_tokens": 33864,
+    "total_tokens": 233941,
+    "cost": 0.27704775,
+    "is_byok": false
+  },
+  "error": null,
+  "results": [
+    {
+      "id": "batch-4d866232-e4afeec1-739570",
+      "custom_id": "request-00000021",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-00655fdc05068173f87b",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"229\": {\n    \"document_id\": \"229\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces that Senator Gregg received an award for his work supporting legislation for the National Park System. However, it does not explicitly attribute a concrete accomplishment or beneficial result to the senator's own actions (e.g., no mention of introducing, securing, or authoring specific legislation). The award itself is recognition of past support, but the text does not tie a favorable outcome to the senator's direct work. This aligns with the negative clarification: it describes past support but does not claim credit for a specific action or outcome.\"\n  },\n  \"239\": {\n    \"document_id\": \"239\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Hutchison's support for an amendment to restore funding for military facilities, including a letter urging debate and a vote. However, the text does not state that the senator secured, authored, or directly caused the funding or amendment to pass. The focus is on advocating for future action (e.g., urging debate), which falls under the negative clarification: it describes intentions to advocate rather than a concrete accomplishment tied to the senator's actions.\"\n  },\n  \"291\": {\n    \"document_id\": \"291\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that the THUD Appropriations bill 'contains many provisions I have fought to include, not the least of which is my language increasing the mandatory retirement age for commercial airline pilots.' The use of 'my language' and 'I have fought to include' directly attributes the inclusion of specific provisions to Senator Inhofe's actions. This matches the codebook's clarification, as it ties a favorable outcome (inclusion of language in the bill) to the senator's work.\"\n  },\n  \"541\": {\n    \"document_id\": \"541\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a statement of opposition to the President's plan to increase troops in Iraq. It criticizes the administration's strategy and outlines the senator's position but does not claim credit for any concrete accomplishment or beneficial result tied to the senator's actions. This aligns with the negative clarification: it is a policy position and criticism, not a credit-claiming statement.\"\n  },\n  \"834\": {\n    \"document_id\": \"834\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces that Senator Cornyn received an award for his support of pro-economic growth policies. However, it does not explicitly attribute a concrete accomplishment or beneficial result to the senator's own actions (e.g., no mention of securing, authoring, or causing a specific policy or funding). The text focuses on the senator's general support for policies and future intentions, which falls under the negative clarification.\"\n  },\n  \"1574\": {\n    \"document_id\": \"1574\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Pryor's preparation for a BRAC hearing and his plans to accompany the BRAC Chairman on site visits. It outlines his intentions to advocate for Arkansas military installations but does not claim that he has already secured or caused any specific outcome. This aligns with the negative clarification: it describes future intentions to advocate rather than a concrete accomplishment.\"\n  },\n  \"1829\": {\n    \"document_id\": \"1829\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release states that 'Johnson has been a long-time supporter of Horizon Health Care and was instrumental in getting funding for this grant.' The phrase 'was instrumental in getting funding' directly attributes the securing of the grant to Senator Johnson's actions. This matches the codebook's clarification, as it ties a favorable outcome (the grant funding) to the senator's work.\"\n  },\n  \"2482\": {\n    \"document_id\": \"2482\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces that Senators McConnell and Dodd introduced a resolution to honor Rosa Parks with a statue. While the senators are taking action (introducing a resolution), the text does not explicitly claim that they caused or secured the statue's creation. The focus is on honoring Rosa Parks, not on a concrete accomplishment tied to the senators' actions. This aligns with the negative clarification: it describes an action (introducing a resolution) but does not claim credit for a specific outcome.\"\n  },\n  \"3518\": {\n    \"document_id\": \"3518\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that 'Schumer Aggressively Lobbied For Measure That Would Allocate 50 Million to Select Companies Like SureScan' and that 'Schumer who first brought the TSA to meet with SureScan in 2003 lobbied aggressively for inclusion of the language in the Senate Homeland Security Appropriations bill.' The use of 'aggressively lobbied' and 'brought the TSA to meet' directly attributes the inclusion of the measure to Senator Schumer's actions. This matches the codebook's clarification, as it ties a favorable outcome (allocation of funds) to the senator's work.\"\n  },\n  \"4550\": {\n    \"document_id\": \"4550\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senators Alexander and Corker cosponsoring legislation to make the state sales tax deduction permanent. However, it does not explicitly state that they caused, secured, or authored the legislation. The text focuses on their support for the bill and its potential benefits but does not tie a concrete accomplishment to their actions. This aligns with the negative clarification: it describes support for legislation without claiming credit for its creation or passage.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5811,
+            "completion_tokens": 1254,
+            "total_tokens": 7065,
+            "prompt_tokens_details": {
+              "cached_tokens": 5771,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-771559",
+      "custom_id": "request-00000022",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-d1e00a0c15b08cb105dc",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"64\": {\n    \"document_id\": \"64\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Collins' vote and position on the Patriot Act reauthorization bill but does not explicitly attribute any concrete accomplishment or beneficial result to her own actions. It focuses on her support for the legislation and its provisions, which falls under stating a policy position rather than credit-claiming. This aligns with the negative clarification: 'Do not classify a release as credit-claiming when it merely states a policy position.'\"\n  },\n  \"388\": {\n    \"document_id\": \"388\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces that funding for several Pennsylvania projects has been approved by the Senate Appropriations Committee, but it does not explicitly state that Senator Specter (or Santorum) secured, requested, or influenced the funding. The announcement is attributed to the committee's action, not the senators' direct efforts. This matches the negative example: 'U.S. Senator Jeff Bingaman today announced that New Mexico State University has been awarded $599,691... the text does not say that he secured, requested, or influenced the award.'\"\n  },\n  \"669\": {\n    \"document_id\": \"669\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senators Biden and Snowe urging the administration to develop an international strategy for global warming. This is a call for future action and does not claim any concrete accomplishment or beneficial result tied to their own actions. It aligns with the negative clarification: 'Do not classify a release as credit-claiming when it... describes future intentions to advocate.'\"\n  },\n  \"996\": {\n    \"document_id\": \"996\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces Senator Isakson's selection as a Deputy Whip, which is a role assignment rather than a claim of having caused, secured, or materially contributed to a government action, policy, or benefit. This falls under the negative clarification: 'Membership on a committee, attendance at a meeting, or generic support for a program is not sufficient on its own.'\"\n  },\n  \"1384\": {\n    \"document_id\": \"1384\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Lieberman urging NATO to take action against genocide in Darfur and addressing Iran's nuclear program. This is a call for action and criticism of inaction, not a claim of having caused or secured any specific outcome. It aligns with the negative clarification: 'Do not classify a release as credit-claiming when it merely states a policy position, criticizes another official or administration.'\"\n  },\n  \"1894\": {\n    \"document_id\": \"1894\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces that several South Dakota schools will receive Student Support Services grants, but it does not explicitly state that Senator Thune secured, requested, or influenced the grants. The announcement is attributed to the Department of Education's decision, not the senator's direct efforts. This matches the negative example: 'U.S. Senator Jeff Bingaman today announced that New Mexico State University has been awarded $599,691... the text does not say that he secured, requested, or influenced the award.'\"\n  },\n  \"2166\": {\n    \"document_id\": \"2166\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Hutchison 'secured' hurricane recovery funds for Texas and introduced and passed an amendment to raise the federal reimbursement rate. This directly attributes concrete accomplishments (securing funds and passing an amendment) to her actions, which aligns with the codebook's definition of credit-claiming: 'Classify a release as credit-claiming when it explicitly attributes a concrete accomplishment or beneficial result to the senator's own actions.' The phrase 'I secured' is a clear example of credit-claiming language.\"\n  },\n  \"2227\": {\n    \"document_id\": \"2227\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes the passage of a postal reform bill and Senator Akaka's role in the conference committee, but it does not explicitly claim that he caused, secured, or materially contributed to the bill's passage or its provisions. The focus is on the bill's content and the senator's involvement in the process, not on a direct claim of accomplishment. This aligns with the negative clarification: 'Membership on a committee... is not sufficient on its own.'\"\n  },\n  \"4552\": {\n    \"document_id\": \"4552\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Grassley's comments on an Inspector General's report and his oversight of the FBI, but it does not claim that he caused, secured, or materially contributed to any specific government action or policy. The focus is on criticism and oversight, not credit-claiming. This aligns with the negative clarification: 'Do not classify a release as credit-claiming when it... criticizes another official or administration.'\"\n  },\n  \"4726\": {\n    \"document_id\": \"4726\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Reid has been 'working closely with the Department of Transportation for several months now to encourage them to add the two corridors.' This directly ties a beneficial outcome (the corridors being semi-finalists) to his prior work, which aligns with the codebook's clarification: 'Credit-claiming also includes statements tying a favorable outcome to prior work by the senator, including language such as 'worked to expedite' or 'responded to my concerns.' The phrase 'I've been working closely... to encourage them' is a clear example of credit-claiming language.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 4958,
+            "completion_tokens": 1276,
+            "total_tokens": 6234,
+            "prompt_tokens_details": {
+              "cached_tokens": 4875,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-800714",
+      "custom_id": "request-00000023",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-16276439fbe2e643824f",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"246\": {\n    \"document_id\": \"246\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a biographical tribute to Tom Lea, with no mention of the senator (Cornyn) taking any action, securing funding, or claiming credit for any government action, policy, or benefit. It only describes Cornyn's committee memberships and past roles, which, per the negative clarification, are not sufficient for credit-claiming.\"\n  },\n  \"723\": {\n    \"document_id\": \"723\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces the approval of funding for the Lowville Sewer Treatment Plant but does not explicitly attribute this to Senator Clinton's actions (e.g., no language like 'secured,' 'requested,' or 'helped obtain'). Per the negative clarification, announcing an agency action without connecting it to the senator's work does not qualify as credit-claiming.\"\n  },\n  \"769\": {\n    \"document_id\": \"769\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a speech advocating for the restoration of habeas corpus rights. It expresses a policy position and criticizes past actions but does not claim any concrete accomplishment or tie a favorable outcome to the senator's own actions. This aligns with the negative clarification.\"\n  },\n  \"1602\": {\n    \"document_id\": \"1602\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Santorum's visits to local facilities and discussions on policy issues (e.g., immigration, methamphetamine). It does not claim any specific accomplishment, funding secured, or policy outcome tied to his actions. This falls under the negative clarification (e.g., describing future intentions or generic support).\"\n  },\n  \"2354\": {\n    \"document_id\": \"2354\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Harkin 'has secured funding' for various Iowa initiatives and that he 'authored provisions in the 2002 farm bill creating the CSP.' This directly attributes concrete accomplishments to his actions, matching the codebook's clarification (e.g., 'secured,' 'authored').\"\n  },\n  \"2871\": {\n    \"document_id\": \"2871\",\n    \"label\": \"0\",\n    \"explanation\": \"The text criticizes the Attorney General's testimony and expresses dissatisfaction but does not claim any specific accomplishment or tie a favorable outcome to Senator Leahy's actions. This aligns with the negative clarification (criticism without credit-claiming).\"\n  },\n  \"3260\": {\n    \"document_id\": \"3260\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Coleman's advocacy against budget cuts to farm programs but does not explicitly claim credit for any specific outcome (e.g., no language like 'secured,' 'won,' or 'helped obtain'). It focuses on future intentions and past efforts, which, per the negative clarification, are insufficient for credit-claiming.\"\n  },\n  \"3752\": {\n    \"document_id\": \"3752\",\n    \"label\": \"1\",\n    \"explanation\": \"The text states that the Senate passed 'his amendment' (Menendez's) to increase renewable energy usage, explicitly tying the outcome to his authorship and advocacy. This matches the codebook's clarification (e.g., 'authored,' 'his amendment').\"\n  },\n  \"3781\": {\n    \"document_id\": \"3781\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces a news conference about a resolution of disapproval but does not claim any specific accomplishment or tie a favorable outcome to Senator Leahy's actions. It describes procedural steps (e.g., filing a motion) but not a concrete result, aligning with the negative clarification.\"\n  },\n  \"4121\": {\n    \"document_id\": \"4121\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces the signing of the Deficit Reduction Act and expresses support for its goals but does not explicitly attribute the act's passage or any specific outcome to Senator Dole's actions. Per the negative clarification, this is insufficient for credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8339,
+            "completion_tokens": 935,
+            "total_tokens": 9274,
+            "prompt_tokens_details": {
+              "cached_tokens": 8325,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-845709",
+      "custom_id": "request-00000024",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-0d2ebdb1bad8060c3fa8",
+          "created": 1789072157,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"847\": {\n    \"document_id\": \"847\",\n    \"label\": \"0\",\n    \"explanation\": \"The text does not attribute any concrete accomplishment or beneficial result to Senator Kennedy's own actions. Instead, it focuses on his advocacy for comprehensive immigration reform, his criticism of an enforcement-only approach, and his explanation of the McCain-Kennedy legislation. This aligns with the negative clarification, as it describes policy positions, future intentions, and criticism without tying a favorable outcome to the senator's prior work.\"\n  },\n  \"1124\": {\n    \"document_id\": \"1124\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement by Senator Johnson criticizing a state abortion ban. It does not claim any personal accomplishment or attribute a beneficial result to his actions. This falls under the negative clarification, as it is a policy position and criticism, not credit-claiming.\"\n  },\n  \"2126\": {\n    \"document_id\": \"2126\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly attributes concrete accomplishments to Senator Roberts. It states that he 'has long supported efforts to clarify the tax treatment of CRP payments' and that the bill includes provisions he authored (e.g., the Agricultural Business Security Tax Credit Act of 2007). This directly ties favorable outcomes to his prior work, matching the clarification for credit-claiming.\"\n  },\n  \"2635\": {\n    \"document_id\": \"2635\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces that the Andover School System will receive funding from the Teaching American History Grants Program, but it does not state that Senators Kerry or Kennedy secured, requested, or influenced the award. This aligns with the negative example provided in the codebook, where a grant is announced without connecting it to the senator's work.\"\n  },\n  \"2892\": {\n    \"document_id\": \"2892\",\n    \"label\": \"1\",\n    \"explanation\": \"The text states that Senator Domenici 'wrote President Bush and Commerce Secretary Carlos Gutierrez urging them to suspend or reduce the American tariff imposed on Mexican cement.' It then describes the resulting agreement as a 'very welcome development' and ties it to his prior advocacy. This explicitly attributes a beneficial outcome (the trade deal) to his actions, matching the clarification for credit-claiming.\"\n  },\n  \"3624\": {\n    \"document_id\": \"3624\",\n    \"label\": \"0\",\n    \"explanation\": \"The text criticizes the President's proposal to privatize Social Security and describes its potential negative impacts. It does not attribute any concrete accomplishment or beneficial result to Senator Schumer's actions. This falls under the negative clarification, as it is a policy position and criticism, not credit-claiming.\"\n  },\n  \"3934\": {\n    \"document_id\": \"3934\",\n    \"label\": \"1\",\n    \"explanation\": \"The text states that Senator Pryor was a 'chief negotiator to broker a compromise' and that he 'announced a deal had been struck.' This explicitly attributes the successful compromise (a concrete accomplishment) to his actions, matching the clarification for credit-claiming.\"\n  },\n  \"3943\": {\n    \"document_id\": \"3943\",\n    \"label\": \"1\",\n    \"explanation\": \"The text states that Senator Durbin 'cosponsored an amendment' and that 'Illinois will receive about $30.31 million from this amendment.' It also mentions that he joined the Illinois Congressional Delegation in urging swift passage of a state capital bill. This ties a favorable outcome (funding for Illinois bridges) to his actions, matching the clarification for credit-claiming.\"\n  },\n  \"4185\": {\n    \"document_id\": \"4185\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senators Leahy, Jeffords, Clinton, and Schumer calling for a hearing on a bill and discussing its importance. However, it does not explicitly attribute any concrete accomplishment or beneficial result to their actions. The bill is introduced by Senator Clinton, but the text does not state that she secured or caused its passage. This aligns with the negative clarification, as it describes future intentions and advocacy without tying a favorable outcome to prior work.\"\n  },\n  \"4559\": {\n    \"document_id\": \"4559\",\n    \"label\": \"1\",\n    \"explanation\": \"The text states that Senator Collins 'requested [Governor Kempthorne's] support for the Penobscot River Restoration Project' and that 'Senators Collins and Snowe have secured $2.5 million for this project over the last two fiscal years.' This explicitly attributes a concrete accomplishment (securing funding) to her actions, matching the clarification for credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7508,
+            "completion_tokens": 1053,
+            "total_tokens": 8561,
+            "prompt_tokens_details": {
+              "cached_tokens": 7423,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-888627",
+      "custom_id": "request-00000025",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-3ab3e9a9a241163f3136",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"428\": {\n    \"document_id\": \"428\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement by Sen. Patrick Leahy during a hearing on the ATT and BellSouth merger. It primarily expresses concerns, critiques policies, and discusses future intentions (e.g., 'I will be raising questions today'). There is no explicit attribution of a concrete accomplishment or beneficial result to the senator's own actions, such as securing funding, authoring legislation, or influencing an agency decision. The negative clarification in the codebook specifies that criticism, policy positions, or future intentions do not qualify as credit-claiming.\"\n  },\n  \"504\": {\n    \"document_id\": \"504\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that the Senate approved funding for several projects in northwestern Pennsylvania, and both Senators Specter and Casey express pleasure and approval of this funding. The phrase 'I am pleased my colleagues have approved this important funding' and 'I am thrilled that members of the Senate approved this funding' ties the beneficial outcome (funding approval) to their roles as senators. This aligns with the codebook's clarification that credit-claiming includes attributing a concrete accomplishment (e.g., securing funding) to the senator's actions.\"\n  },\n  \"765\": {\n    \"document_id\": \"765\",\n    \"label\": \"1\",\n    \"explanation\": \"The text describes Sen. Leahy's introduction of legislation (the Guard and Reserve Readiness and Retention Act of 2005) and explicitly states that he and his coalition 'successfully advanced and enacted last year' reforms for TRICARE eligibility. The phrase 'we successfully advanced and enacted' directly attributes a concrete accomplishment (legislative success) to the senator's actions, which matches the codebook's definition of credit-claiming.\"\n  },\n  \"948\": {\n    \"document_id\": \"948\",\n    \"label\": \"0\",\n    \"explanation\": \"The text discusses Sen. Cantwell's support for flood response efforts, her meetings with officials, and her advocacy for federal assistance. However, it does not explicitly attribute a concrete accomplishment or beneficial result to her own actions. For example, the federal disaster declaration is attributed to the President, not the senator. The text primarily describes her support, meetings, and future intentions, which do not meet the criteria for credit-claiming as per the codebook's negative clarification.\"\n  },\n  \"1087\": {\n    \"document_id\": \"1087\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that the senators 'worked to secure' funding in the Commerce Justice and Science Appropriations bill. The phrase 'the funding we worked to secure' directly ties the beneficial outcome (funding for Maine projects) to the senators' actions, which aligns with the codebook's clarification that credit-claiming includes attributing a concrete accomplishment to the senator's work.\"\n  },\n  \"1304\": {\n    \"document_id\": \"1304\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes the introduction of the Women's Retirement Security Act of 2007 by a bipartisan group of senators, including Sen. Kerry. However, it does not explicitly attribute a concrete accomplishment or beneficial result to any individual senator's actions. The text focuses on the purpose and goals of the legislation rather than any achieved outcomes, which does not meet the criteria for credit-claiming as per the codebook's negative clarification.\"\n  },\n  \"2284\": {\n    \"document_id\": \"2284\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement by Sen. John Kerry criticizing the White House's estimates for Medicare costs and discussing the broader health care crisis. It does not attribute any concrete accomplishment or beneficial result to the senator's actions. The negative clarification in the codebook specifies that criticism or policy positions do not qualify as credit-claiming.\"\n  },\n  \"2347\": {\n    \"document_id\": \"2347\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces that the Senate will begin consideration of gun liability legislation before the August recess. It does not explicitly attribute a concrete accomplishment or beneficial result to Sen. Frist's actions. The text primarily describes future intentions and the rationale for the legislation, which does not meet the criteria for credit-claiming as per the codebook's negative clarification.\"\n  },\n  \"3137\": {\n    \"document_id\": \"3137\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Sen. Schumer 'announced' federal grants for fire departments and that he 'has pushed for additional funding' for such programs. The phrase 'Schumer Has Pushed For Additional Funding For Assistance To Fire Departments And First Responders' ties the beneficial outcome (grants) to his advocacy efforts. Additionally, the text describes the grants as part of a program he supported, which aligns with the codebook's clarification that credit-claiming includes attributing a concrete accomplishment to the senator's work.\"\n  },\n  \"3174\": {\n    \"document_id\": \"3174\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces a $500,000 grant awarded to the Harvey County Drug Free Youth Coalition but does not explicitly attribute the grant to Sen. Roberts' actions. The funding is described as being awarded by the Office of National Drug Control Policy, with no mention of the senator's role in securing it. The negative clarification in the codebook specifies that announcing an agency action without connecting it to the senator's work does not qualify as credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8441,
+            "completion_tokens": 1241,
+            "total_tokens": 9682,
+            "prompt_tokens_details": {
+              "cached_tokens": 8328,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-935759",
+      "custom_id": "request-00000026",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-1ee11afddaf183d4c906",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"666\": {\n    \"document_id\": \"666\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Sen. Levin 'actively worked to clarify that congressional intent prior to the votes on this matter in the Senate.' This directly attributes a concrete action (clarifying congressional intent) to the senator's own work, which aligns with the codebook's definition of credit-claiming (e.g., 'worked to' or 'helped secure').\"\n  },\n  \"733\": {\n    \"document_id\": \"733\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Sen. Sununu 'is urging' and 'has fought for the federal government to fully fund its portion of the Individuals with Disabilities Education Act.' While the primary action is advocacy, the phrase 'has fought for' ties the senator to prior work on the issue, which qualifies as credit-claiming under the codebook's clarification (e.g., 'worked to' or 'helped secure'). Additionally, the text highlights his long-standing commitment ('Since I was first elected... I have fought for...'), reinforcing the attribution of effort to the senator.\"\n  },\n  \"1034\": {\n    \"document_id\": \"1034\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Sen. Kennedy 'passed an amendment last August requiring Negroponte to task the intelligence community to prepare an updated NIE.' This directly attributes a concrete legislative action (passing an amendment) to the senator, which fits the codebook's definition of credit-claiming (e.g., 'authored,' 'secured,' or 'advanced').\"\n  },\n  \"3745\": {\n    \"document_id\": \"3745\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement criticizing the Bush administration's military commissions legislation and does not attribute any concrete accomplishment or beneficial result to Sen. Dodd's actions. It merely expresses opposition and concern, which aligns with the negative clarification (e.g., 'criticizes another official or administration').\"\n  },\n  \"3851\": {\n    \"document_id\": \"3851\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Sens. Cornyn and Kyl 'introduced comprehensive border security and immigration reform legislation.' This directly attributes the authorship and introduction of a bill to the senators, which matches the codebook's definition of credit-claiming (e.g., 'authored legislation' or 'introduced').\"\n  },\n  \"3944\": {\n    \"document_id\": \"3944\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Sen. Kohl 'led a bipartisan group of Senators in the fight to fund the MEP program at $106 million' and is 'the sponsor of bipartisan legislation.' These phrases explicitly attribute concrete actions (leading a funding effort, sponsoring legislation) to the senator, which aligns with the codebook's definition of credit-claiming (e.g., 'secured,' 'authored,' or 'worked to').\"\n  },\n  \"4017\": {\n    \"document_id\": \"4017\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Sen. Cantwell and other senators calling on the Senate Budget Committee to protect Medicaid funding. It does not attribute any concrete accomplishment or beneficial result to the senators' actions; it merely states a policy position and advocacy, which aligns with the negative clarification (e.g., 'merely states a policy position' or 'describes future intentions to advocate').\"\n  },\n  \"4166\": {\n    \"document_id\": \"4166\",\n    \"label\": \"0\",\n    \"explanation\": \"The release expresses outrage over the release of a convicted terrorist and describes Sen. Mikulski's letter to the Secretary of State. However, it does not attribute any concrete accomplishment or beneficial result to the senator's actions. The text focuses on criticism and advocacy, not a claim of achievement, which aligns with the negative clarification (e.g., 'criticizes another official or administration').\"\n  },\n  \"4526\": {\n    \"document_id\": \"4526\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Sen. Ensign 'called Blakey and reiterated in a letter his expectation that the problems at the Reno Tahoe Airport be addressed,' and the FAA's response is framed as a result of his directive ('Following the November shutdown, Ensign called Blakey...'). This ties a favorable outcome (FAA's actions) to the senator's prior work, which qualifies as credit-claiming under the codebook's clarification (e.g., 'responded to my concerns' or 'worked to expedite').\"\n  },\n  \"4794\": {\n    \"document_id\": \"4794\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Sen. Rockefeller 'established the E-Rate program in 1996' and describes his ongoing efforts to support it ('I recently participated in several hearings... I encouraged my colleagues to continue their support'). The explicit claim of establishing the program and the attribution of its success to his work ('With the help of this funding...') aligns with the codebook's definition of credit-claiming (e.g., 'authored,' 'secured,' or 'advanced').\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8407,
+            "completion_tokens": 1197,
+            "total_tokens": 9604,
+            "prompt_tokens_details": {
+              "cached_tokens": 8322,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-980843",
+      "custom_id": "request-00000027",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-e0b30588e809e97bf1c7",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"93\": {\n    \"document_id\": \"93\",\n    \"label\": \"0\",\n    \"explanation\": \"The text does not attribute any concrete accomplishment or beneficial result to the senators' own actions. It merely announces an agreement between committees and includes statements of support or acknowledgment of others' work, which falls under the negative clarification (e.g., 'commented on the agreement,' 'acknowledge my colleagues'). There is no language tying a favorable outcome to the senators' direct actions.\"\n  },\n  \"235\": {\n    \"document_id\": \"235\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly attributes a concrete accomplishment to Senator Bond's actions. It states that Bond, as Chairman of the Senate Transportation Appropriations subcommittee, worked to ensure Missouri receives increased funding under the new highway bill, including a 25% increase in highway funding and a higher return on federal transportation taxes. This aligns with the clarification of credit-claiming, as it ties a favorable outcome (increased funding for Missouri) to Bond's role and work.\"\n  },\n  \"1379\": {\n    \"document_id\": \"1379\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces federal funding for Texas first responders but does not explicitly state that Senator Cornyn secured, requested, or influenced the award. The funding is attributed to the Department of Homeland Security's program, and Cornyn's role is limited to announcing the grants and expressing support. This matches the negative example where a grant is announced without connecting it to the senator's work.\"\n  },\n  \"2315\": {\n    \"document_id\": \"2315\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Schumer's future intentions to advocate for rail and mass transit security (e.g., 'I intend to offer amendments,' 'Schumer has repeatedly urged'). It does not claim any concrete accomplishment or beneficial result tied to his actions. This falls under the negative clarification, as it describes future intentions rather than a delivered achievement.\"\n  },\n  \"2486\": {\n    \"document_id\": \"2486\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement commemorating Veterans' Day and expressing appreciation for veterans. It does not attribute any concrete accomplishment or beneficial result to Senator Tester's actions. This aligns with the negative clarification, as it is a commemorative statement rather than a claim of credit for a policy or program.\"\n  },\n  \"2843\": {\n    \"document_id\": \"2843\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly attributes a concrete accomplishment to Senator Ensign's actions. It states that Ensign sponsored the Adam Walsh Child Protection and Safety Act of 2006 and worked to increase funding for it, tying a favorable outcome (protecting children from sexual predators) to his legislative efforts. This matches the clarification of credit-claiming, as it directly connects the senator's work to a beneficial result.\"\n  },\n  \"2948\": {\n    \"document_id\": \"2948\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Vitter secured a major victory by having his amendment on drug reimportation adopted by the Senate. It ties the favorable outcome (allowing individuals to import cheaper prescription drugs from Canada) to Vitter's direct actions, including co-authoring the amendment. This aligns with the clarification of credit-claiming.\"\n  },\n  \"3383\": {\n    \"document_id\": \"3383\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Dorgan's call for the President to invest in agriculture and renewable energy programs. It does not attribute any concrete accomplishment or beneficial result to Dorgan's actions. Instead, it describes a policy position and future advocacy, which falls under the negative clarification.\"\n  },\n  \"3502\": {\n    \"document_id\": \"3502\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly attributes the inclusion of funding for North Country projects in the Omnibus Appropriations bill to the work of Senators Schumer and Clinton. It states that the funding is 'announced' by them and ties the beneficial outcome (economic growth, improved services) to their efforts. This matches the clarification of credit-claiming, as it connects the senators' actions to a concrete accomplishment.\"\n  },\n  \"4717\": {\n    \"document_id\": \"4717\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Harkin 'helped secure' assistance for the Driftless Area National Wildlife Refuge as a senior member of the Senate Appropriations Committee. This directly ties a favorable outcome (protecting endangered species) to Harkin's actions, aligning with the clarification of credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6215,
+            "completion_tokens": 1063,
+            "total_tokens": 7278,
+            "prompt_tokens_details": {
+              "cached_tokens": 6149,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-1013049",
+      "custom_id": "request-00000028",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-3bce9cede901fc54422d",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"449\": {\n    \"document_id\": \"449\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Cantwell honoring a veteran and presenting a Purple Heart Medal to the veteran's wife. This is a commemoration of an event/person, not a claim of the senator causing, securing, or materially contributing to a government action, policy, or benefit. The negative clarification explicitly states that commemorating an event or person does not qualify as credit-claiming.\"\n  },\n  \"837\": {\n    \"document_id\": \"837\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces federal funding for Katrina recovery but does not explicitly attribute the funding to Sen. Lott's actions. The text states that the funds were approved and awarded by FEMA, and while Sen. Lott expresses support for the funding, there is no language such as 'secured,' 'helped obtain,' or 'my request' tying the outcome to his work. The negative example of Sen. Bingaman announcing a grant without connecting it to his work aligns with this case.\"\n  },\n  \"1276\": {\n    \"document_id\": \"1276\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces grants awarded to Kansas fire departments but does not state that Sen. Roberts secured, requested, or influenced the awards. The funding is attributed to the 2005 Assistance to Firefighters Grant Program under the Department of Homeland Security. This aligns with the negative example where Sen. Bingaman announced a grant without connecting it to his work.\"\n  },\n  \"2082\": {\n    \"document_id\": \"2082\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Feinstein calling for the passage of a measure to increase fuel economy standards. This is a statement of policy position and future advocacy, not a claim of having already caused or secured a government action. The negative clarification explicitly states that describing future intentions to advocate does not qualify as credit-claiming.\"\n  },\n  \"2219\": {\n    \"document_id\": \"2219\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Sen. Gregg announced funding for the Elliot Health Initiative included in the Fiscal Year 2008 Omnibus Appropriations bill. The inclusion of the funding in the bill is presented as a result of his work, and the language implies his role in securing it. This aligns with the positive examples where a senator's actions are tied to a concrete accomplishment or beneficial result.\"\n  },\n  \"2956\": {\n    \"document_id\": \"2956\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a statement by Sen. Levin criticizing the Department of Justice's motion to dismiss the Hamdan case and explaining his role in the legislative process. While he describes his past actions (e.g., objecting to language, working with Sen. Graham), the text does not claim that he caused or secured a specific government action or benefit. Instead, it focuses on his position and the legislative history. This aligns with the negative clarification that criticism or describing legislative history without tying it to a concrete accomplishment does not qualify as credit-claiming.\"\n  },\n  \"3068\": {\n    \"document_id\": \"3068\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces grants awarded to Michigan fire departments but does not state that Sens. Levin or Stabenow secured, requested, or influenced the awards. The funding is attributed to the Department of Homeland Security's Assistance to Firefighters Grant Program. This aligns with the negative example where Sen. Bingaman announced a grant without connecting it to his work.\"\n  },\n  \"3138\": {\n    \"document_id\": \"3138\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces that farmers in 25 Upstate New York counties are eligible for emergency loans due to a USDA designation. While Sen. Schumer announces the designation, the text does not state that he secured, requested, or influenced the USDA's decision. The designation is presented as a result of natural disasters, not the senator's actions. This aligns with the negative clarification that announcing an agency action without connecting it to the senator's work does not qualify as credit-claiming.\"\n  },\n  \"3243\": {\n    \"document_id\": \"3243\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Sen. Landrieu 'secured' small business international trade reforms by adding a key provision to the Small Business Lending Reauthorization and Improvements Act. The use of the word 'secured' and the description of her role in adding the provision directly ties the beneficial outcome to her actions, aligning with the positive examples of credit-claiming.\"\n  },\n  \"3265\": {\n    \"document_id\": \"3265\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Bayh cosponsoring a bill and urging further action on currency manipulation. This is a statement of policy position and future advocacy, not a claim of having already caused or secured a government action. The negative clarification explicitly states that describing future intentions to advocate does not qualify as credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6373,
+            "completion_tokens": 1171,
+            "total_tokens": 7544,
+            "prompt_tokens_details": {
+              "cached_tokens": 6274,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-1047880",
+      "custom_id": "request-00000029",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-63b4d948f1aca8b4a8cb",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"34\": {\n    \"document_id\": \"34\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces a federal grant for the Idaho Dance Theater but does not explicitly attribute the grant to Senator Crapo's actions. The text states that Crapo is 'working with the dance company on an additional grant,' which is a future intention, not a concrete accomplishment. According to the negative clarification, announcing an agency action without connecting it to the senator's work does not qualify as credit-claiming.\"\n  },\n  \"122\": {\n    \"document_id\": \"122\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Conrad's actions in questioning the Agriculture Secretary nominee and advocating for oversight, but it does not explicitly claim that he caused, secured, or materially contributed to a specific government action or outcome. The text focuses on his calls for hearings and concerns about policy, which aligns with the negative clarification that criticism or future advocacy does not constitute credit-claiming.\"\n  },\n  \"383\": {\n    \"document_id\": \"383\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Senators Obama and Durbin 'reintroduced the STOP FRAUD Act,' which is legislation they authored. According to the clarification, introducing or authoring legislation is a clear example of credit-claiming, as it directly attributes a concrete action (introducing legislation) to the senators.\"\n  },\n  \"1329\": {\n    \"document_id\": \"1329\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release praises the BRAC Commission's decision but does not explicitly attribute the outcome to the delegation's actions. The statement is a collective one from the delegation and focuses on the importance of Dover Air Force Base rather than claiming credit for the decision. This aligns with the negative clarification that merely announcing or praising an agency action without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"1694\": {\n    \"document_id\": \"1694\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that the College Cost Reduction and Access Act 'includes two provisions offered by Senator Clinton.' This directly ties a beneficial outcome (specific provisions in the bill) to her work, which matches the clarification's definition of credit-claiming as attributing a concrete accomplishment to the senator's actions.\"\n  },\n  \"1907\": {\n    \"document_id\": \"1907\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release states that Senator Schumer 'is working on new legislation' and 'will introduce legislation creating a new program.' While the first part describes future intentions, the latter explicitly claims he will introduce legislation, which is a concrete action. Additionally, the text ties his efforts to a specific goal (allowing SBA grants for disaster victims), which aligns with the clarification's examples of credit-claiming, such as introducing legislation or securing benefits.\"\n  },\n  \"2376\": {\n    \"document_id\": \"2376\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Lugar hosting a luncheon and sharing gifts from Indiana businesses, but it does not claim that he caused, secured, or materially contributed to any government action, policy, or benefit. This falls under the negative clarification, as it is an announcement of an event without connecting it to a legislative or policy achievement.\"\n  },\n  \"2701\": {\n    \"document_id\": \"2701\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release states that Senator Casey is a cosponsor of the Sudan Divestment Act and chaired a hearing, but it does not explicitly claim that he caused or secured the committee's approval of the act. The text focuses on his support and involvement rather than a direct attribution of the outcome to his actions, which aligns with the negative clarification that generic support or committee membership is not sufficient for credit-claiming.\"\n  },\n  \"4335\": {\n    \"document_id\": \"4335\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release criticizes the Senate's vote and the EPA's rule, but it does not claim that Senator Lieberman caused, secured, or materially contributed to any government action or outcome. This is an example of criticism, which the negative clarification explicitly states is not credit-claiming.\"\n  },\n  \"4501\": {\n    \"document_id\": \"4501\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release commemorates the bicentennial of Sakakawea's return and describes Senator Conrad's involvement in related projects, but it does not explicitly claim that he caused or secured any specific government action or benefit. The text focuses on his participation in commemorative events, which does not meet the criteria for credit-claiming as outlined in the clarification.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6858,
+            "completion_tokens": 1076,
+            "total_tokens": 7934,
+            "prompt_tokens_details": {
+              "cached_tokens": 6792,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-1086339",
+      "custom_id": "request-00000030",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-d1864eddd03a6337d10f",
+          "created": 1789072158,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"614\": {\n    \"document_id\": \"614\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Collins cosponsoring the Access to Life-Saving Medicine Act and explains its purpose and benefits. However, it does not explicitly attribute any concrete accomplishment or beneficial result to her own actions. The language focuses on the bill's potential future impact rather than a secured or achieved outcome tied to her work. This aligns with the negative clarification: it describes future intentions to advocate or the introduction of legislation without connecting it to a delivered outcome.\"\n  },\n  \"1237\": {\n    \"document_id\": \"1237\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces that Story County is receiving funds from the DOJ's Justice and Mental Health Collaboration Program. While Senator Harkin is mentioned as a senior member of the Senate Appropriations Committee, the text does not state that he secured, requested, or influenced the award. This matches the negative example where a grant is announced without connecting it to the senator's work.\"\n  },\n  \"1886\": {\n    \"document_id\": \"1886\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Domenici 'penned' the Fort Stanton-Snowy River National Cave Conservation Act, which passed the Senate. This directly attributes authorship and advancement of legislation to the senator, aligning with the clarification that credit-claiming includes 'authored' or 'advanced' legislation. The passage of the bill is a concrete accomplishment tied to his actions.\"\n  },\n  \"2740\": {\n    \"document_id\": \"2740\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement from Senator Feingold supporting the President's veto of the WRDA bill and advocating for reforms. This is a policy position and criticism of the bill, not a claim of having delivered a policy achievement or constituent benefit. It aligns with the negative clarification about stating a policy position or criticizing another official.\"\n  },\n  \"3879\": {\n    \"document_id\": \"3879\",\n    \"label\": \"1\",\n    \"explanation\": \"The text states that Senators Schumer and Clinton announced that $30 million for improvements to the Susquehanna and Upper Delaware River Watershed was included in the Water Resources Development Act of 2007. Senator Clinton explicitly says, 'I am very pleased that the Senate has approved this funding,' and adds, 'I will continue to fight for this funding to be included in the... conference report.' While the first part does not explicitly claim credit, the context of the announcement and the senator's role in advocating for the funding (as implied by her statement) suggests her involvement in securing it. This aligns with the clarification that credit-claiming includes tying a favorable outcome to prior work by the senator.\"\n  },\n  \"4040\": {\n    \"document_id\": \"4040\",\n    \"label\": \"0\",\n    \"explanation\": \"The text states that Iowa will receive funds to combat gun crimes and describes how the funds will be used. However, it does not explicitly attribute the funding to Senator Harkin's actions. The statement 'I am pleased that Iowa will be receiving these important funds' does not claim that he secured or influenced the award. This matches the negative example where a grant or funding is announced without connecting it to the senator's work.\"\n  },\n  \"4490\": {\n    \"document_id\": \"4490\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces the passage of Senator Alexander's resolution celebrating Black History Month. This is a commemorative action, not a claim of having caused, secured, or materially contributed to a government action, policy, or benefit. It aligns with the negative clarification about commemorating an event or person.\"\n  },\n  \"4627\": {\n    \"document_id\": \"4627\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator DeWine's support for the Voting Rights Act Reauthorization, including his role as a cosponsor and member of the Judiciary Committee. However, it does not explicitly attribute the passage of the bill or any concrete accomplishment to his actions. The focus is on the bill's importance and history, not on his personal contribution to securing it. This aligns with the negative clarification that generic support for a program or membership on a committee is not sufficient on its own.\"\n  },\n  \"4735\": {\n    \"document_id\": \"4735\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Clinton announced funding for the Glenville Navy Reserve Center and says, 'Schenectady County leaders thanked Senator Hillary Rodham Clinton and Congressman Mike McNulty for their help in securing funding for the Navy Reserve Project.' Additionally, Clinton states, 'I will work very hard to be sure that these funds remain in the FY 06 Budget,' implying her prior involvement in securing the initial funding. This directly ties a favorable outcome to her work, aligning with the clarification that credit-claiming includes 'securing' or 'helped secure' funding.\"\n  },\n  \"4806\": {\n    \"document_id\": \"4806\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Leahy granting the Administration's request for an extension on subpoenas related to the warrantless wiretapping program. While he is involved in the oversight process, the text does not claim that he caused, secured, or materially contributed to a government action or benefit. Instead, it focuses on procedural steps and future intentions, aligning with the negative clarification about describing future intentions or oversight actions without claiming a delivered accomplishment.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 4993,
+            "completion_tokens": 1246,
+            "total_tokens": 6239,
+            "prompt_tokens_details": {
+              "cached_tokens": 4991,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-0",
+      "custom_id": "request-00000001",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-5759aee9f315a97d0040",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"52\": {\n    \"document_id\": \"52\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces the introduction of a bill (the Preserve Access to Affordable Generics Act) but does not explicitly attribute any concrete accomplishment, policy outcome, or benefit to the senators' own actions. The text describes the purpose and context of the bill but does not use language like 'secured,' 'authored,' or 'helped obtain' to tie a favorable outcome to the senators' work. It primarily outlines the problem and the proposed solution without claiming credit for any achieved result. This aligns with the negative clarification: it describes future intentions to advocate and policy positions, not a completed credit-claiming action.\"\n  },\n  \"877\": {\n    \"document_id\": \"877\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Sen. Harkin, as a senior member of the Senate Appropriations Committee, announced the approval of $1.75 million for transportation and economic development projects in Sioux City. The text directly ties the funding to Harkin's role ('announced this morning that it has approved...'), and the funds are described as addressing specific local needs (e.g., preventing property tax increases, demolishing unsafe structures). This matches the codebook's clarification of credit-claiming, as it attributes a concrete accomplishment (securing funding) to the senator's actions.\"\n  },\n  \"1681\": {\n    \"document_id\": \"1681\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces that FEMA and the Governor's Office of Emergency Services have committed $5.6 million for levee repairs in Humboldt County. However, the text does not explicitly state that Sen. Feinstein secured, requested, or influenced the grant. It only mentions that she announced the commitment. This aligns with the negative example where a grant is announced without connecting it to the senator's work. Thus, it does not meet the criteria for credit-claiming.\"\n  },\n  \"1938\": {\n    \"document_id\": \"1938\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release states that HUD approved a $12.6 million grant for the Lumbee Tribe, but it does not explicitly attribute this approval to Sen. Dole's actions. While Dole applauds the tribe for securing the funding, the text does not use language like 'I secured' or 'my request led to' to tie the outcome to her work. The background information about her legislation for federal recognition does not connect to the grant itself. This falls under the negative clarification: it announces an agency action without linking it to the senator's efforts.\"\n  },\n  \"1967\": {\n    \"document_id\": \"1967\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes the introduction of a bill to designate November as National Homeless Youth Awareness Month. However, it does not claim that the senators have already secured or caused this designation to happen. The text focuses on the intent and importance of the bill, not on any completed action or outcome. This aligns with the negative clarification, as it describes future advocacy and policy positions rather than a concrete accomplishment.\"\n  },\n  \"2263\": {\n    \"document_id\": \"2263\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a statement commemorating the death of Pope John Paul II. It reflects on his life, legacy, and personal memories but does not attribute any government action, policy, or benefit to Sen. Mikulski's own actions. This falls under the negative clarification, as it is a commemoration and does not involve credit-claiming.\"\n  },\n  \"2805\": {\n    \"document_id\": \"2805\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a statement criticizing the EPA's ruling on mercury emissions. Sen. Feinstein expresses disappointment and advocates for alternative legislation (the Clean Power Act) but does not claim to have caused, secured, or influenced any specific government action or outcome. This aligns with the negative clarification, as it involves criticism of an agency action and policy positioning, not credit-claiming.\"\n  },\n  \"3168\": {\n    \"document_id\": \"3168\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Sen. Durbin 'helped secure $4 billion in emergency aid' as part of the Supplemental Appropriations bill approved by the Senate Appropriations Committee. The text ties this funding directly to Durbin's actions ('I helped secure'), and it describes the concrete benefits (e.g., crop disaster assistance, livestock support) that would result from this aid. This matches the codebook's clarification of credit-claiming, as it attributes a specific accomplishment to the senator's work.\"\n  },\n  \"3728\": {\n    \"document_id\": \"3728\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Conrad introducing a bill for farm disaster aid and criticizes the lack of action on previous attempts. However, it does not claim that Conrad or other senators have already secured or caused any specific government action or funding to be approved. The text focuses on the need for a vote and the challenges faced, not on a completed credit-claiming action. This aligns with the negative clarification, as it describes future intentions and policy positions.\"\n  },\n  \"3880\": {\n    \"document_id\": \"3880\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces the introduction of a bill (The American Veterans Disabled for Life Commemorative Coin Act) to honor disabled veterans. While it mentions that Sen. Johnson introduced the bill and worked on related measures, it does not explicitly claim that he secured or caused any specific government action, funding, or outcome. The text focuses on the intent and purpose of the bill, not on a completed accomplishment. This falls under the negative clarification, as it describes legislative introduction and future advocacy.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6189,
+            "completion_tokens": 1324,
+            "total_tokens": 7513,
+            "prompt_tokens_details": {
+              "cached_tokens": 6149,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-33874",
+      "custom_id": "request-00000002",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-4a81fd5a2a597167a0dc",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"198\": {\n    \"document_id\": \"198\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces that the Department of Homeland Security approved grants for two New Hampshire communities, but it does not explicitly state that Sen. Sununu secured, requested, or influenced the award. According to the negative clarification, announcing an agency action without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"673\": {\n    \"document_id\": \"673\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Bunning's committee assignments and his intentions to work on certain issues, but it does not explicitly attribute any concrete accomplishment or beneficial result to his actions. The negative clarification states that describing future intentions to advocate or generic support for a program is not sufficient for credit-claiming.\"\n  },\n  \"689\": {\n    \"document_id\": \"689\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Sen. Lugar 'helped the CHB secure loan guarantees through the U.S. Department of Agriculture.' This directly attributes a concrete accomplishment (securing loan guarantees) to the senator's actions, which aligns with the clarification for credit-claiming.\"\n  },\n  \"1020\": {\n    \"document_id\": \"1020\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a statement by Sen. Feinstein on a report by the Commission on Intelligence Capabilities. It does not attribute any concrete accomplishment or beneficial result to her actions. It primarily discusses recommendations and critiques, which, per the negative clarification, do not constitute credit-claiming.\"\n  },\n  \"1869\": {\n    \"document_id\": \"1869\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release states that Sen. Burr 'introduced S.3678, the Pandemic and All-Hazards Preparedness Act.' This explicitly attributes the authorship and introduction of legislation to the senator, which is a clear example of credit-claiming as per the clarification.\"\n  },\n  \"2156\": {\n    \"document_id\": \"2156\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Kennedy's advocacy for a comprehensive immigration reform bill and outlines the provisions of the McCain-Kennedy bill. However, it does not explicitly attribute any concrete accomplishment or beneficial result to his actions. The negative clarification states that describing future intentions or generic support is not sufficient for credit-claiming.\"\n  },\n  \"3032\": {\n    \"document_id\": \"3032\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release discusses Sen. Cornyn's resolution and his critique of policies regarding Iraq, but it does not attribute any concrete accomplishment or beneficial result to his actions. The negative clarification states that criticizing another official or administration is not credit-claiming.\"\n  },\n  \"3093\": {\n    \"document_id\": \"3093\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release states that Sen. Frist is proud of the passage of a series of health-related bills, but it does not explicitly attribute the passage or any specific action to his own efforts. The negative clarification indicates that merely announcing or expressing pride in legislation without tying it to personal action is not credit-claiming.\"\n  },\n  \"3233\": {\n    \"document_id\": \"3233\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that 'several provisions impacting Maine were included in the MSA at my request,' which directly attributes the inclusion of specific provisions to the senator's actions. This aligns with the clarification for credit-claiming, as it ties a favorable outcome to the senator's prior work.\"\n  },\n  \"3713\": {\n    \"document_id\": \"3713\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a joint statement by Sens. Enzi and Kennedy about holding hearings on FDA drug safety. It does not attribute any concrete accomplishment or beneficial result to either senator's actions. The negative clarification states that announcing hearings or future intentions does not constitute credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7214,
+            "completion_tokens": 934,
+            "total_tokens": 8148,
+            "prompt_tokens_details": {
+              "cached_tokens": 7173,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-74692",
+      "custom_id": "request-00000003",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-e94579d2ee2137238a53",
+          "created": 1789072174,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"993\": {\n    \"document_id\": \"993\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces funding for the Brunswick Harbor deepening project but does not explicitly attribute the funding to the actions of Sens. Chambliss or Isakson. The text states that the funding was included in the fiscal year 2006 Energy and Water Appropriations bill, but it does not say that the senators secured, requested, or influenced the award. According to the negative clarification, announcing an agency action without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"1806\": {\n    \"document_id\": \"1806\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes the distribution of federal funds for 9/11 responders but does not explicitly attribute the funding to the actions of Senators Clinton or Schumer. While it mentions that the New York delegation 'fought hard to save' the money, it does not use language like 'secured,' 'authored,' or 'my request' to directly tie the outcome to the senators' actions. The negative clarification states that announcing an agency action without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"2052\": {\n    \"document_id\": \"2052\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is an announcement of a teleconference and does not describe any concrete accomplishment or beneficial result attributed to Senator Bunning's actions. It merely states that the senator held a call and answered questions. According to the negative clarification, this does not meet the criteria for credit-claiming.\"\n  },\n  \"2473\": {\n    \"document_id\": \"2473\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release criticizes the U.S. official policy on the Armenian Genocide and urges the nominee to clarify his position. It does not describe any concrete accomplishment or beneficial result attributed to Senator Schumer's actions. According to the negative clarification, criticizing another official or administration is not credit-claiming.\"\n  },\n  \"2795\": {\n    \"document_id\": \"2795\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Senators Murray and Cantwell 'secured' $90 million in funding for Pacific Salmon Recovery Efforts and Disaster Assistance. The use of the word 'secured' directly ties the funding to the senators' actions, which aligns with the clarification that credit-claiming includes language such as 'secured' or 'helped secure.'\"\n  },\n  \"3391\": {\n    \"document_id\": \"3391\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes a conference hosted by Senator Domenici to discuss water management issues but does not explicitly attribute any concrete accomplishment or beneficial result to his actions. The text focuses on the senator's role in hosting the event and seeking input, which does not meet the criteria for credit-claiming as per the negative clarification.\"\n  },\n  \"3400\": {\n    \"document_id\": \"3400\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release criticizes the President's decision to commute Lewis Libby's prison sentence. It does not describe any concrete accomplishment or beneficial result attributed to Senator Cardin's actions. According to the negative clarification, criticizing another official or administration is not credit-claiming.\"\n  },\n  \"3522\": {\n    \"document_id\": \"3522\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes a group of senators urging President Bush to help poorer nations deal with climate change. It does not explicitly attribute any concrete accomplishment or beneficial result to the senators' actions. The text focuses on future advocacy and does not use language like 'secured' or 'authored.' According to the negative clarification, this does not meet the criteria for credit-claiming.\"\n  },\n  \"3552\": {\n    \"document_id\": \"3552\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a statement by Senator Leahy on an amendment to the Comprehensive Immigration Reform Bill. It describes the senator's appreciation for compromises and modifications but does not explicitly attribute any concrete accomplishment or beneficial result to his actions. According to the negative clarification, describing future intentions or generic support for a program is not credit-claiming.\"\n  },\n  \"4608\": {\n    \"document_id\": \"4608\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senators Dodd and Lieberman joining colleagues in pushing for solutions to Medicare Part D problems. It does not explicitly attribute any concrete accomplishment or beneficial result to their actions. The text focuses on future advocacy and does not use language like 'secured' or 'authored.' According to the negative clarification, this does not meet the criteria for credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7096,
+            "completion_tokens": 1087,
+            "total_tokens": 8183,
+            "prompt_tokens_details": {
+              "cached_tokens": 7039,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-114535",
+      "custom_id": "request-00000004",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-2796a6cf29082157e143",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"340\": {\n    \"document_id\": \"340\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces the passage of a bill (S. 763) but does not explicitly attribute the passage or any concrete accomplishment to Senator Dodd's own actions. While Dodd is the sponsor and the bill is described in detail, the text does not state that he 'secured,' 'authored,' or 'won' the passage—it merely states that the bill passed as part of a larger package. The negative clarification specifies that announcing an agency action (or in this case, legislative action) without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"450\": {\n    \"document_id\": \"450\",\n    \"label\": \"0\",\n    \"explanation\": \"The release consists of Senator Gregg's comments on an FDA warning and his advocacy for an amendment to the FDA reform bill. However, it does not claim that he has already secured, authored, or materially contributed to any government action or policy. The text focuses on his position and future intentions (e.g., 'I hope the Senate will approve my amendment'), which the negative clarification explicitly excludes from credit-claiming.\"\n  },\n  \"799\": {\n    \"document_id\": \"799\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Sens. Snowe and Collins 'secured' $181 million in federal funding for R&D projects in Maine. The word 'secured' directly ties the funding to their actions, aligning with the codebook's clarification that credit-claiming includes language like 'secured' or 'helped secure.' The funding is a concrete accomplishment attributed to their work.\"\n  },\n  \"1292\": {\n    \"document_id\": \"1292\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Bond re-introducing legislation to restore access to SBIR grants for biotechnology companies. However, it does not claim that he has already secured, authored, or materially contributed to a government action or policy. The focus is on his advocacy and the need for the legislation, not on a concrete accomplishment. The negative clarification specifies that describing future intentions or generic support is not sufficient for credit-claiming.\"\n  },\n  \"1579\": {\n    \"document_id\": \"1579\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that the Committee passed Senator Dodd's bill but does not explicitly attribute the passage to his actions. While Dodd is the sponsor and the bill is part of his broader strategy, the text does not state that he 'secured' or 'won' the passage. The negative clarification notes that announcing an action without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"1898\": {\n    \"document_id\": \"1898\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces the senators' support for Georgia's bid for a new facility but does not claim that they have already secured, authored, or materially contributed to any government action. The text focuses on their advocacy and the state's qualifications, not on a concrete accomplishment. The negative clarification specifies that generic support or future intentions are not sufficient for credit-claiming.\"\n  },\n  \"2780\": {\n    \"document_id\": \"2780\",\n    \"label\": \"0\",\n    \"explanation\": \"The release consists of Senator Harkin's statement praising an Institute of Medicine report and advocating for legislation to regulate tobacco products. However, it does not claim that he has already secured, authored, or materially contributed to any government action or policy. The focus is on his position and the need for action, not on a concrete accomplishment. The negative clarification excludes such statements from credit-claiming.\"\n  },\n  \"2974\": {\n    \"document_id\": \"2974\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Senator Allard 'received a letter from Secretary of Defense Rumsfeld containing assurances' that the Air Force Space Command would not be downgraded. The text explicitly ties this outcome to Allard's prior actions ('I asked the Secretary of the Air Force to assure me... and I got it'), which aligns with the codebook's clarification that credit-claiming includes tying a favorable outcome to the senator's work.\"\n  },\n  \"2980\": {\n    \"document_id\": \"2980\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that Region Six Planning Commission received $75,000 in funding but does not explicitly attribute the funding to Senator Harkin's actions. While Harkin is mentioned, the text does not state that he 'secured,' 'helped secure,' or otherwise materially contributed to the award. The negative clarification specifies that announcing funding without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"3262\": {\n    \"document_id\": \"3262\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that Arkansas State University received a $26,590 grant but does not explicitly attribute the grant to the senators' actions. While Senators Lincoln and Pryor are mentioned, the text does not state that they 'secured,' 'helped secure,' or otherwise materially contributed to the award. The negative clarification specifies that announcing funding without connecting it to the senator's work is not credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5463,
+            "completion_tokens": 1202,
+            "total_tokens": 6665,
+            "prompt_tokens_details": {
+              "cached_tokens": 5381,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-146163",
+      "custom_id": "request-00000005",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-cff691bc2cb08375cc14",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"633\": {\n    \"document_id\": \"633\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Sens. Baucus and Tester 'recovered more than $1.25 million in federal funding' and that Baucus says 'I've very pleased that we were able to secure these dollars.' This directly ties a concrete accomplishment (securing funding) to the senators' actions, aligning with the codebook's clarification of credit-claiming as attributing a beneficial result to the senator's own work.\"\n  },\n  \"838\": {\n    \"document_id\": \"838\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a criticism of President Bush's budget proposal and does not attribute any concrete accomplishment or beneficial result to Sen. Corzine's actions. It primarily outlines negative impacts and future intentions to advocate, which falls under the negative clarification of the codebook (criticism of another official or administration, future intentions).\"\n  },\n  \"1107\": {\n    \"document_id\": \"1107\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Dodd's request for increased funding for Head Start and CCDBG, but it does not explicitly attribute any secured or accomplished outcome to his actions. The language is framed as a request or advocacy for future funding, which aligns with the negative clarification (describing future intentions to advocate).\"\n  },\n  \"1696\": {\n    \"document_id\": \"1696\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Sen. Shelby 'announced funding for projects in the Birmingham area included in the fiscal year 2008 spending bill.' This directly ties the funding to Shelby's role as a senior member of the Appropriations Subcommittee, aligning with the codebook's clarification of credit-claiming (securing appropriations or grants).\"\n  },\n  \"2171\": {\n    \"document_id\": \"2171\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Allen co-sponsoring a bill and expressing support for its provisions, but it does not attribute any concrete accomplishment or beneficial result to his actions. This falls under the negative clarification (merely stating a policy position or generic support for a program).\"\n  },\n  \"2799\": {\n    \"document_id\": \"2799\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Cornyn's statement about a disaster declaration and mentions that he and Sen. Hutchison 'urged President Bush... to expedite the federal major disaster declaration.' However, it does not explicitly attribute the declaration or its benefits to Cornyn's actions. The language is more about acknowledging the declaration rather than claiming credit for securing it, aligning with the negative clarification (announcing an agency action without connecting it to the senator's work).\"\n  },\n  \"3838\": {\n    \"document_id\": \"3838\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Chambliss being honored with an award for his voting record, but it does not attribute any concrete accomplishment or beneficial result to his actions. The award is based on his votes, not on securing or causing a specific government action, aligning with the negative clarification (merely stating a policy position or generic support).\"\n  },\n  \"3990\": {\n    \"document_id\": \"3990\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sens. Menendez and Lautenberg urging the Army Corps of Engineers to remove unexploded munitions, but it does not attribute any concrete accomplishment or beneficial result to their actions. The language is framed as a request or advocacy, aligning with the negative clarification (describing future intentions to advocate or urging action without claiming credit for an outcome).\"\n  },\n  \"4192\": {\n    \"document_id\": \"4192\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Mikulski's statement on the nomination of Dr. von Eschenbach to head the FDA. It does not attribute any concrete accomplishment or beneficial result to her actions. The language is about her concerns and hopes for the future, aligning with the negative clarification (merely stating a policy position or future intentions).\"\n  },\n  \"4251\": {\n    \"document_id\": \"4251\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Dole's disappointment about the failure to pass a TAA extension and her intention to continue efforts to strengthen the program. It does not attribute any concrete accomplishment or beneficial result to her actions, aligning with the negative clarification (describing future intentions to advocate).\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8646,
+            "completion_tokens": 1040,
+            "total_tokens": 9686,
+            "prompt_tokens_details": {
+              "cached_tokens": 8578,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-191811",
+      "custom_id": "request-00000006",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-2f2d17acc0137d3f29a3",
+          "created": 1789072174,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"181\": {\n    \"document_id\": \"181\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that the legislation was 'authored by Sens. Chris Dodd and Joe Lieberman,' which directly attributes the creation of the bill to the senators. This aligns with the codebook's clarification that credit-claiming includes 'authored legislation' and 'introducing or authoring legislation.'\"\n  },\n  \"482\": {\n    \"document_id\": \"482\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Kerry's concerns and warnings about compromised satellites and their impact on climate study, but it does not attribute any concrete accomplishment or beneficial result to his actions. It focuses on criticism and future risks, which falls under the negative clarification: 'merely states a policy position, criticizes another official or administration... or describes future intentions to advocate.'\"\n  },\n  \"746\": {\n    \"document_id\": \"746\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces a grant awarded by the FAA to Scottsboro Municipal Word Field but does not explicitly state that Senator Shelby secured, requested, or influenced the award. The codebook's negative clarification specifies that announcing an agency action without connecting it to the senator's work is not credit-claiming. The text also lacks language like 'helped secure' or 'my request.'\"\n  },\n  \"1067\": {\n    \"document_id\": \"1067\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement on a Supreme Court decision and Senator Mikulski's position on reproductive choice. It does not attribute any concrete accomplishment or beneficial result to her actions. Instead, it focuses on her stance and past advocacy, which aligns with the negative clarification: 'merely states a policy position... or describes future intentions to advocate.'\"\n  },\n  \"1380\": {\n    \"document_id\": \"1380\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Senator Durbin's request for Judge Kavanaugh to recuse himself from certain cases. This is a call to action or criticism rather than a claim of an accomplishment. The codebook's negative clarification states that criticizing another official or administration is not credit-claiming.\"\n  },\n  \"2070\": {\n    \"document_id\": \"2070\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement on high gas prices and Senator Burns' advocacy for energy independence policies. It does not attribute any concrete accomplishment or beneficial result to his actions. Instead, it focuses on his stance and future intentions, which aligns with the negative clarification: 'merely states a policy position... or describes future intentions to advocate.'\"\n  },\n  \"2931\": {\n    \"document_id\": \"2931\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces the expansion of a farm insurance plan to Wyoming but does not explicitly state that Senator Enzi secured, requested, or influenced the expansion. The codebook's negative clarification specifies that announcing an agency action without connecting it to the senator's work is not credit-claiming. The text also lacks language like 'helped secure' or 'my request.'\"\n  },\n  \"3916\": {\n    \"document_id\": \"3916\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces grants for port security and emergency management but does not explicitly state that Senators Dodd and Lieberman secured, requested, or influenced the grants. The codebook's negative clarification specifies that announcing an agency action without connecting it to the senators' work is not credit-claiming. The text also lacks language like 'helped secure' or 'my request.'\"\n  },\n  \"4261\": {\n    \"document_id\": \"4261\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces a grant for SLED Homeland Security activities but does not explicitly state that Senator Graham secured, requested, or influenced the grant. The codebook's negative clarification specifies that announcing an agency action without connecting it to the senator's work is not credit-claiming. The text also lacks language like 'helped secure' or 'my request.'\"\n  },\n  \"4427\": {\n    \"document_id\": \"4427\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senator Brown 'secured Senate approval for an amendment,' which directly attributes the passage of the amendment to his actions. This aligns with the codebook's clarification that credit-claiming includes 'securing' a government action or policy.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5515,
+            "completion_tokens": 1024,
+            "total_tokens": 6539,
+            "prompt_tokens_details": {
+              "cached_tokens": 5509,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-223090",
+      "custom_id": "request-00000007",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-de355e47e280252fc1c5",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1931\": {\n    \"document_id\": \"1931\",\n    \"label\": \"0\",\n    \"explanation\": \"The release does not explicitly attribute any concrete accomplishment or beneficial result to Sen. Snowe's actions. It primarily expresses her stance on monitoring the Verizon-Fairpoint merger and her concerns for Maine's workforce and service quality. This aligns with the negative clarification, as it describes future intentions to advocate and does not claim credit for securing or causing any specific outcome.\"\n  },\n  \"1952\": {\n    \"document_id\": \"1952\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Sen. Murkowski stressing the importance of an Alaskan natural gas pipeline during a committee hearing and questioning nominees. However, it does not explicitly attribute any concrete accomplishment or beneficial result to her actions. This falls under the negative clarification, as it merely states a policy position and does not claim credit for securing or causing a specific outcome.\"\n  },\n  \"2168\": {\n    \"document_id\": \"2168\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces Sen. Snowe's introduction of the Call Home Act of 2006, which aims to reduce the cost of calling home for troops. However, it does not claim that she has already secured or caused any specific outcome. The text focuses on future intentions and the potential benefits of the legislation, not a concrete accomplishment. This aligns with the negative clarification.\"\n  },\n  \"2176\": {\n    \"document_id\": \"2176\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that fire departments in Iowa will receive grant funding through the Assistance to Firefighters Grant Program. However, it does not explicitly state that Sen. Grassley secured, requested, or influenced the award. The text merely announces the funding, which aligns with the negative clarification and negative example provided in the codebook.\"\n  },\n  \"2964\": {\n    \"document_id\": \"2964\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces a $500,000 grant awarded to the University of Rhode Island for the 'Rhodes to Independence' program. However, it does not explicitly attribute the grant to Sen. Chafee's actions. The text does not state that he secured, requested, or influenced the award, which aligns with the negative clarification and negative example in the codebook.\"\n  },\n  \"3199\": {\n    \"document_id\": \"3199\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Sen. Murray presenting an award to Scott Hoekman for work on special needs housing. However, it does not explicitly attribute any concrete accomplishment or beneficial result to Sen. Murray's actions. The text focuses on the recognition of another entity's work, not her own credit-claiming. This aligns with the negative clarification.\"\n  },\n  \"3291\": {\n    \"document_id\": \"3291\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that Mobile County Water, Sewer, and FPA will receive $225,000 in federal funds. However, it does not explicitly state that Sen. Shelby secured, requested, or influenced the award. The text merely announces the funding, which aligns with the negative clarification and negative example in the codebook.\"\n  },\n  \"3303\": {\n    \"document_id\": \"3303\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Sen. Martinez and other senators sending a letter to President Bush calling for sanctions against the Sudanese government. However, it does not explicitly attribute any concrete accomplishment or beneficial result to Sen. Martinez's actions. The text focuses on advocating for a policy position, not claiming credit for a specific outcome. This aligns with the negative clarification.\"\n  },\n  \"3859\": {\n    \"document_id\": \"3859\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that the Department of Homeland Security has awarded grant funding to three Maine fire departments. However, it does not explicitly state that Sen. Collins secured, requested, or influenced the award. While it mentions her support for the FIRE Act Grant program, it does not tie the funding to her actions. This aligns with the negative clarification and negative example in the codebook.\"\n  },\n  \"4791\": {\n    \"document_id\": \"4791\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that 25 New Mexico communities will receive homeland security equipment grants. However, it does not explicitly state that Sen. Domenici secured, requested, or influenced the award. While it mentions his role on the Homeland Security Appropriations Subcommittee, it does not tie the funding to his actions. This aligns with the negative clarification and negative example in the codebook.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5068,
+            "completion_tokens": 1075,
+            "total_tokens": 6143,
+            "prompt_tokens_details": {
+              "cached_tokens": 4988,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-250446",
+      "custom_id": "request-00000008",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-f1e9b48abdde894a45ec",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"305\": {\n    \"document_id\": \"305\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Sen. Inhofe's legislation was included in the Federal Drug Administration Reauthorization Act of 2007, which passed the Senate. This directly attributes a concrete accomplishment (the inclusion of his legislation) to the senator's own actions, aligning with the codebook's clarification of credit-claiming as presenting oneself as having caused or materially contributed to a government action or policy. The phrase 'Sen. Inhofe has introduced this legislation in the 108th, 109th, and 110th Congresses' further reinforces his role in advancing the legislation.\"\n  },\n  \"547\": {\n    \"document_id\": \"547\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces the awarding of grants and loans by the U.S. Department of Agriculture but does not explicitly connect the funding to the senators' actions or efforts. The joint statement by Sens. Snowe and Collins describes the benefits of the funding but does not claim that they secured, requested, or influenced the award, as required by the codebook's clarification for credit-claiming. This aligns with the negative example where a grant is announced without attribution to the senator's work.\"\n  },\n  \"1421\": {\n    \"document_id\": \"1421\",\n    \"label\": \"0\",\n    \"explanation\": \"The text discusses the senator's support for ALS research and mentions legislation introduced by the senator (along with Sen. Specter) to expand stem cell research. However, the focus is on future advocacy and the current state of research, not on a concrete accomplishment or beneficial result directly attributed to the senator's actions. The codebook's negative clarification specifies that describing future intentions to advocate is not sufficient for credit-claiming.\"\n  },\n  \"2049\": {\n    \"document_id\": \"2049\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Snowe raising questions about a newly revealed NSA program and requesting information from the Director of National Intelligence. This is an inquiry and expression of concern, not a claim of having caused, secured, or materially contributed to a government action or policy. The codebook's negative clarification states that criticizing or questioning an administration or program does not constitute credit-claiming.\"\n  },\n  \"2939\": {\n    \"document_id\": \"2939\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Sen. DeWine 'wrote and passed the FIRE Act (S. 1941) in 2000' and 'helped secure $650 million for the FIRE Act' during the appropriations process. This directly attributes concrete accomplishments (authoring and securing funding for legislation) to the senator's actions, which aligns with the codebook's definition and positive examples of credit-claiming.\"\n  },\n  \"3119\": {\n    \"document_id\": \"3119\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Conrad's efforts to advocate for federal disaster aid for Northwood, including sending a letter to FEMA. However, it does not explicitly state that his actions secured or caused the aid to be approved. The focus is on his ongoing fight and arguments for assistance, which falls under future intentions or advocacy rather than a concrete accomplishment, as per the codebook's negative clarification.\"\n  },\n  \"3332\": {\n    \"document_id\": \"3332\",\n    \"label\": \"0\",\n    \"explanation\": \"The text discusses public health advancements and the importance of healthy living but does not attribute any specific government action, policy, or benefit to the senator's efforts. It is a general informational release, which does not meet the criteria for credit-claiming as outlined in the codebook.\"\n  },\n  \"3430\": {\n    \"document_id\": \"3430\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement by Sen. Stabenow criticizing the government's treatment of military personnel and expressing support for the Webb Amendment. This is a policy position and criticism, not a claim of having caused or secured a specific government action or benefit, as required by the codebook's definition of credit-claiming.\"\n  },\n  \"3575\": {\n    \"document_id\": \"3575\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes Sen. Brown's support for the National Guard Empowerment Act and his advocacy for the Ohio National Guard. However, it does not explicitly state that he caused, secured, or materially contributed to the passage or implementation of the legislation. The focus is on his push for the bill and its potential benefits, which aligns with the codebook's negative clarification that describing future intentions or generic support is not sufficient for credit-claiming.\"\n  },\n  \"4365\": {\n    \"document_id\": \"4365\",\n    \"label\": \"0\",\n    \"explanation\": \"The text criticizes the disclosure of a terror finance surveillance system and discusses its negative impact on intelligence efforts. It does not attribute any concrete accomplishment or beneficial result to Sen. Bond's actions. The codebook's negative clarification specifies that criticism of an administration or policy does not constitute credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6084,
+            "completion_tokens": 1175,
+            "total_tokens": 7259,
+            "prompt_tokens_details": {
+              "cached_tokens": 6018,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-284021",
+      "custom_id": "request-00000009",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-d290aa65f00eb9af56c9",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"335\": {\n    \"document_id\": \"335\",\n    \"label\": \"0\",\n    \"explanation\": \"The release does not explicitly attribute a concrete accomplishment or beneficial result to Senator Rockefeller's own actions. While he is described as a co-author of the CHIP reauthorization bill, the text focuses on criticism of the House's failure to override the veto and does not claim that Rockefeller secured, authored, or otherwise materially contributed to a specific government action or benefit. This aligns with the negative clarification: it is a statement of policy position and criticism, not a claim of credit for an achievement.\"\n  },\n  \"935\": {\n    \"document_id\": \"935\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Senator Mikulski 'created' the Community Innovations for Aging in Place program and that she 'received a promise' from other senators to secure funding for it. This directly ties a beneficial outcome (the program and its potential funding) to her prior work, as defined in the clarification. The phrase 'Senator Mikulski created' and the description of her efforts to establish NORC models further support this classification.\"\n  },\n  \"981\": {\n    \"document_id\": \"981\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement on climate change and does not attribute any concrete accomplishment or beneficial result to Senator Whitehouse's actions. It describes his attendance at a hearing, his support for legislation, and his advocacy for environmental issues, but there is no claim of having caused, secured, or materially contributed to a government action or benefit. This aligns with the negative clarification: it is a policy position and advocacy statement, not credit-claiming.\"\n  },\n  \"1160\": {\n    \"document_id\": \"1160\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly attributes the inclusion of $30 million in funding for levee repairs to Senator Landrieu's work. Phrases like 'my constant pushing and prodding... has paid off with the inclusion of this funding' and 'Our hard work and perseverance has brought us one step closer' directly tie the beneficial outcome (funding) to her actions, as per the clarification. This is a clear example of credit-claiming.\"\n  },\n  \"1231\": {\n    \"document_id\": \"1231\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Domenici's role in the energy bill conference process and his pride in the bill, but it does not explicitly attribute a concrete accomplishment or beneficial result to his own actions. The text focuses on the process and the bill's contents, not on Domenici securing, authoring, or otherwise materially contributing to a specific outcome. This aligns with the negative clarification: it is a description of legislative process and policy, not credit-claiming.\"\n  },\n  \"2875\": {\n    \"document_id\": \"2875\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that the funding for Maine projects was 'requested' by Senators Snowe and Collins. The phrase 'funds, which we requested' directly ties the beneficial outcome (funding for local projects) to their actions, as defined in the clarification. This is a clear example of credit-claiming.\"\n  },\n  \"3550\": {\n    \"document_id\": \"3550\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement on the death of Saddam Hussein and does not attribute any concrete accomplishment or beneficial result to Senator Dodd's actions. It is a commentary on an event, not a claim of credit for a government action or benefit. This aligns with the negative clarification: it is a commemorative or reactive statement, not credit-claiming.\"\n  },\n  \"4179\": {\n    \"document_id\": \"4179\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Cornyn's co-sponsorship of the Patent Reform Act and his support for its provisions, but it does not explicitly attribute a concrete accomplishment or beneficial result to his actions. The text focuses on future intentions ('I'll work with Chairman Leahy...') and the bill's goals, not on Cornyn having secured or caused a specific outcome. This aligns with the negative clarification: it is a description of legislative support and future advocacy, not credit-claiming.\"\n  },\n  \"4634\": {\n    \"document_id\": \"4634\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes the Wyoming Delegation's request for the Forest Service to host a public meeting and seek community input. It does not attribute any concrete accomplishment or beneficial result to the senators' actions. The text focuses on a request for future action, not on having secured or caused a specific outcome. This aligns with the negative clarification: it is a call for action and criticism of a process, not credit-claiming.\"\n  },\n  \"4651\": {\n    \"document_id\": \"4651\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Collins meeting with a constituent to discuss her volunteer work. It does not attribute any concrete accomplishment or beneficial result to Senator Collins' actions. The text is a commemoration of the constituent's achievements, not a claim of credit for a government action or benefit. This aligns with the negative clarification: it is a commemorative statement, not credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7311,
+            "completion_tokens": 1197,
+            "total_tokens": 8508,
+            "prompt_tokens_details": {
+              "cached_tokens": 7301,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-324834",
+      "custom_id": "request-00000010",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-e097128b5f565a01674a",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"202\": {\n    \"document_id\": \"202\",\n    \"label\": \"0\",\n    \"explanation\": \"The text discusses Senators Domenici and Lieberman advocating for a two-year federal budget cycle but does not explicitly attribute any concrete accomplishment or beneficial result to their own actions. The release describes their efforts to introduce legislation and their arguments for its benefits, but it does not state that they have secured, authored, or otherwise materially contributed to a government action, policy, or program. This aligns with the negative clarification: it describes future intentions to advocate and policy positions without tying a favorable outcome to prior work by the senators.\"\n  },\n  \"245\": {\n    \"document_id\": \"245\",\n    \"label\": \"0\",\n    \"explanation\": \"The text states that Sen. Dorgan is pleased with the U.S. Army Corps of Engineers' decision not to conduct a 'spring pulse,' but it does not explicitly attribute this decision to Dorgan's own actions or prior work. The release does not claim that Dorgan secured, authored, or influenced the decision. This aligns with the negative clarification: it announces an agency action without connecting it to the senator's work.\"\n  },\n  \"338\": {\n    \"document_id\": \"338\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces that workers from First Choice Distribution are eligible for job training assistance through the Trade Adjustment Assistance Act, but it does not state that Sen. Harkin secured, requested, or influenced this eligibility. The release explains the context and benefits but does not tie the outcome to Harkin's actions. This aligns with the negative clarification: it announces an agency action without connecting it to the senator's work.\"\n  },\n  \"643\": {\n    \"document_id\": \"643\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement by Sen. Leahy on comprehensive immigration reform, discussing the Senate's steps and his support for the Committee bill. However, it does not explicitly attribute any concrete accomplishment or beneficial result to Leahy's own actions. The release describes the legislative process and Leahy's support but does not claim he secured, authored, or materially contributed to a specific outcome. This aligns with the negative clarification: it describes policy positions and future intentions without tying a favorable outcome to prior work by the senator.\"\n  },\n  \"2238\": {\n    \"document_id\": \"2238\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Sen. Leahy 'helped the Rutland Drug Court Initiative secure nearly $500,000 in funding' and that he 'played a leading role in enacting the legislation that created the program.' This directly attributes a concrete accomplishment (securing funding and enacting legislation) to Leahy's actions, which matches the definition and clarification of credit-claiming.\"\n  },\n  \"3124\": {\n    \"document_id\": \"3124\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces Sen. Brown's new six-point plan to combat toxic toys and describes his past actions, such as requesting tests and introducing legislation. However, it does not explicitly state that Brown has already secured, authored, or materially contributed to a specific government action, policy, or program. The release focuses on future intentions and advocacy rather than concrete accomplishments. This aligns with the negative clarification: it describes future intentions to advocate and policy positions.\"\n  },\n  \"3857\": {\n    \"document_id\": \"3857\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a eulogy by Sen. Levin at the Rosa Parks Memorial Service, commemorating Rosa Parks and her contributions. It does not attribute any concrete accomplishment or beneficial result to Levin's own actions. This aligns with the negative clarification: it commemorates an event or person without tying a favorable outcome to the senator's work.\"\n  },\n  \"4356\": {\n    \"document_id\": \"4356\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces that the FY 2006 Military Construction Appropriations bill includes funding for Tennessee projects but does not explicitly attribute this funding to the actions of Sens. Frist or Alexander. While they express pride in Tennessee's role, the release does not state that they secured, authored, or influenced the funding. This aligns with the negative clarification: it announces an agency action (or in this case, a legislative action) without connecting it to the senators' work.\"\n  },\n  \"4477\": {\n    \"document_id\": \"4477\",\n    \"label\": \"1\",\n    \"explanation\": \"The text explicitly states that Senators Sununu, Craig, Murkowski, and Hagel 'have reached agreement with the White House regarding the reauthorization of the USA PATRIOT Act.' This directly attributes a concrete accomplishment (reaching an agreement on reauthorization) to their actions, which matches the definition and clarification of credit-claiming. The language 'we have made real progress' and 'we have eliminated language' further ties the outcome to their work.\"\n  },\n  \"4667\": {\n    \"document_id\": \"4667\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a statement by Sen. Martinez on the Flag Desecration Resolution, discussing his support for the amendment and his reasoning. However, it does not explicitly attribute any concrete accomplishment or beneficial result to Martinez's own actions. The release describes his position and arguments but does not claim he secured, authored, or materially contributed to a specific outcome. This aligns with the negative clarification: it describes a policy position without tying a favorable outcome to prior work by the senator.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7561,
+            "completion_tokens": 1241,
+            "total_tokens": 8802,
+            "prompt_tokens_details": {
+              "cached_tokens": 7560,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-367599",
+      "custom_id": "request-00000011",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-b2ce7d7db5296faef08d",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"254\": {\n    \"document_id\": \"254\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement by Sen. Landrieu commenting on a FEMA issue (travel trailer locks). It criticizes FEMA's oversight and expresses concern but does not claim that Sen. Landrieu caused, secured, or materially contributed to any government action or outcome. This aligns with the negative clarification: it is a critique of an agency action without connecting it to the senator's work.\"\n  },\n  \"559\": {\n    \"document_id\": \"559\",\n    \"label\": \"0\",\n    \"explanation\": \"Sen. Domenici discusses his support for an energy efficiency bill and his experience test-driving a Tesla car, but he does not explicitly claim to have caused, secured, or authored any specific government action, policy, or funding. The text describes future intentions (e.g., 'moving a bill') and general advocacy, which, per the negative clarification, does not qualify as credit-claiming.\"\n  },\n  \"968\": {\n    \"document_id\": \"968\",\n    \"label\": \"0\",\n    \"explanation\": \"Sen. Jeffords' statement is about his vote in favor of General Hayden's nomination. While he discusses Hayden's qualifications and his own concerns, he does not claim to have caused, secured, or materially contributed to any government action or outcome. This is a policy position and commentary, not credit-claiming, as per the negative clarification.\"\n  },\n  \"1079\": {\n    \"document_id\": \"1079\",\n    \"label\": \"0\",\n    \"explanation\": \"Sen. Shelby applauds NASA's successful launch of the Space Shuttle Discovery but does not claim personal responsibility for the outcome. The statement praises NASA and its employees but does not attribute the success to his own actions, aligning with the negative clarification (announcing an agency action without connecting it to the senator's work).\"\n  },\n  \"1741\": {\n    \"document_id\": \"1741\",\n    \"label\": \"0\",\n    \"explanation\": \"Sen. Johnson presents service medals to veterans, but this is a ceremonial act of recognition, not a claim of having caused, secured, or authored a government action or policy. The negative clarification explicitly states that commemorating an event or person does not qualify as credit-claiming.\"\n  },\n  \"1809\": {\n    \"document_id\": \"1809\",\n    \"label\": \"1\",\n    \"explanation\": \"Sen. Thune explicitly states that the Senate passed *his* energy transmission amendment to the energy bill, which he authored. The text directly ties the legislative outcome to his own actions ('Thune's amendment... would promote...'), which matches the definition and clarification of credit-claiming (e.g., 'authored legislation' or 'secured' a policy outcome).\"\n  },\n  \"2428\": {\n    \"document_id\": \"2428\",\n    \"label\": \"0\",\n    \"explanation\": \"Sen. Dole discusses the BRAC Commission's vote and her stance on military base realignments, but she does not claim to have caused, secured, or authored the vote or its outcomes. The text describes her advocacy and opinions but does not explicitly attribute a concrete accomplishment to her actions, per the negative clarification.\"\n  },\n  \"2662\": {\n    \"document_id\": \"2662\",\n    \"label\": \"0\",\n    \"explanation\": \"Sen. Shelby announces funding for the Hamilton Fire Department but does not state that he secured, requested, or influenced the award. The text attributes the funding to the Department of Homeland Security and FEMA, not his own actions. This aligns with the negative example where a grant is announced without connecting it to the senator's work.\"\n  },\n  \"3268\": {\n    \"document_id\": \"3268\",\n    \"label\": \"1\",\n    \"explanation\": \"Sen. Schumer explicitly states that his initiative, 'Math for America,' which he authored, was included in the America COMPETES Act and passed by the Senate. The text directly ties the legislative outcome to his own actions ('Schumer authored and that was included...'), which matches the definition and positive examples of credit-claiming (e.g., 'authored legislation' or 'secured' a policy outcome).\"\n  },\n  \"4284\": {\n    \"document_id\": \"4284\",\n    \"label\": \"0\",\n    \"explanation\": \"Sen. Cantwell's weekly report discusses her positions on various issues (e.g., media ownership, veterans' funding, water resources) and her legislative efforts, but it does not explicitly claim that she caused, secured, or authored any specific government action or outcome. The text describes future intentions, critiques, and general advocacy, which do not qualify as credit-claiming per the negative clarification.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5690,
+            "completion_tokens": 1063,
+            "total_tokens": 6753,
+            "prompt_tokens_details": {
+              "cached_tokens": 5637,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-400264",
+      "custom_id": "request-00000012",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-b7d7bb7e92287deda461",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"396\": {\n    \"document_id\": \"396\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces increased federal support for local ferries and mentions Secretary MacDonald's comments about the benefits of the funding. However, there is no explicit attribution of the funding or its benefits to Senator Murray's actions. The codebook's negative clarification states that announcing an agency action without connecting it to the senator's work is not credit-claiming. Thus, this does not meet the criteria for credit-claiming.\"\n  },\n  \"878\": {\n    \"document_id\": \"878\",\n    \"label\": \"0\",\n    \"explanation\": \"The release states that the City of Columbus will receive a HUD grant, and Senator Lugar comments on the value of such programs. However, there is no explicit claim that Senator Lugar secured, requested, or influenced the award. The negative example in the codebook (Bingaman's announcement of a grant without attribution) aligns with this case, so it is not credit-claiming.\"\n  },\n  \"1185\": {\n    \"document_id\": \"1185\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Senator Pryor's legislation (the Virginia Graeme Baker Pool and Spa Safety Act) has passed the Senate. This directly attributes a concrete legislative accomplishment to the senator's actions, aligning with the codebook's clarification that credit-claiming includes 'authored' or 'introduced legislation.'\"\n  },\n  \"1620\": {\n    \"document_id\": \"1620\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Carper's decision to block a vote on an EPA nominee due to the administration's refusal to provide requested information. While this involves the senator's actions, it does not claim a concrete accomplishment or beneficial result tied to his work. The codebook's negative clarification notes that criticizing an administration or announcing future intentions (e.g., blocking a vote) is not credit-claiming. Thus, this is classified as '0.'\"\n  },\n  \"2544\": {\n    \"document_id\": \"2544\",\n    \"label\": \"1\",\n    \"explanation\": \"The op-ed explicitly states that Senator Kennedy is the 'chief author of the No Child Left Behind Act' and discusses his role in its reauthorization. This directly attributes authorship of a major legislative achievement to the senator, matching the codebook's positive example of credit-claiming (e.g., Dorgan 'authored legislation').\"\n  },\n  \"3118\": {\n    \"document_id\": \"3118\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement by Senator Kerry criticizing the President's State of the Union address and outlining policy positions. The codebook's negative clarification specifies that criticism of another official or administration, or stating policy positions, does not constitute credit-claiming. Thus, this is classified as '0.'\"\n  },\n  \"3274\": {\n    \"document_id\": \"3274\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes the Subcommittee's funding efforts and achievements (e.g., appropriating $6 billion for public health systems). However, it does not explicitly attribute these actions or outcomes to the senator's personal work. The codebook's negative clarification notes that generic support for a program or describing past funding without direct attribution is not credit-claiming. Thus, this is classified as '0.'\"\n  },\n  \"3492\": {\n    \"document_id\": \"3492\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Senator Dodd is the 'author of the landmark Family and Medical Leave Act (FMLA)' and announces new legislation he will introduce. The codebook's clarification explicitly includes 'authored' as a form of credit-claiming, and the positive example of Dorgan 'authored legislation' aligns with this case. Thus, this is classified as '1.'\"\n  },\n  \"4575\": {\n    \"document_id\": \"4575\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Sununu's vote to advance the Death Tax Repeal Permanency Act and his past support for similar legislation. However, it does not explicitly claim that his actions secured or caused the bill's passage or any concrete outcome. The codebook's negative clarification notes that stating future intentions or past support without tying it to a concrete accomplishment is not credit-claiming. Thus, this is classified as '0.'\"\n  },\n  \"4746\": {\n    \"document_id\": \"4746\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that legislation raising the pilot retirement age has become law and mentions Senator Hutchison's role as Ranking Member of the Senate Aviation Subcommittee. However, it does not explicitly attribute the bill's passage or any concrete outcome to her actions. The codebook's negative clarification states that announcing an agency action (or legislative outcome) without connecting it to the senator's work is not credit-claiming. Thus, this is classified as '0.'\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6170,
+            "completion_tokens": 1125,
+            "total_tokens": 7295,
+            "prompt_tokens_details": {
+              "cached_tokens": 6146,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-435064",
+      "custom_id": "request-00000013",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-6ef499a8f08ae6215fe2",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"321\": {\n    \"document_id\": \"321\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces funding for Auburn University but does not explicitly attribute the funding to Senator Shelby's actions. The text states that the Department of Health and Human Services will release the funds, and Shelby's role is only mentioned as a member of the Appropriations Committee. There is no language such as 'secured,' 'authored,' or 'helped obtain' tying the funding to Shelby's direct efforts. This aligns with the negative clarification: announcing agency action without connecting it to the senator's work.\"\n  },\n  \"737\": {\n    \"document_id\": \"737\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Kerry's plans to hold a community forum on Iraq and his stance on the war. It does not claim any concrete accomplishment or beneficial result tied to Kerry's actions. Instead, it focuses on future intentions (holding a forum, discussing policy) and criticism of the administration. This matches the negative clarification: describing future intentions to advocate or criticizing another official.\"\n  },\n  \"742\": {\n    \"document_id\": \"742\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces federal funding for the Elmira Corning Regional Airport but does not state that Senators Schumer or Clinton secured, requested, or influenced the award. The text only mentions that the Department of Transportation awarded the funds. This aligns with the negative example: 'U.S. Senator Jeff Bingaman today announced that New Mexico State University has been awarded $599,691...' where the announcement does not connect the award to the senator's work.\"\n  },\n  \"908\": {\n    \"document_id\": \"908\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release discusses Senator Corker's position on Iraq funding resolutions and his future voting intentions. It does not claim any concrete accomplishment or beneficial result tied to Corker's actions. This falls under the negative clarification: stating a policy position or describing future intentions to advocate.\"\n  },\n  \"1026\": {\n    \"document_id\": \"1026\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Obama's call for the expansion of the Children's Health Insurance Program (CHIP) and his past actions as a State Senator. However, it does not explicitly attribute any concrete accomplishment or beneficial result to Obama's actions as a U.S. Senator. The text focuses on advocacy and past state-level work, not on securing or authoring federal legislation or funding. This aligns with the negative clarification: describing future intentions or past actions without tying a federal accomplishment to the senator's work.\"\n  },\n  \"1338\": {\n    \"document_id\": \"1338\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Enzi's work on advancing a bill to revitalize the FDA, including his role in managing the bill and developing an amendment. However, it does not explicitly claim that Enzi caused, secured, or authored a government action, policy, or program. The text focuses on the legislative process and Enzi's role in it, but does not tie a concrete accomplishment to his actions. This aligns with the negative clarification: describing committee work or generic support for a program without explicitly claiming credit for a specific outcome.\"\n  },\n  \"2148\": {\n    \"document_id\": \"2148\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Senator Lugar 'introduced S.1966, the HIV/AIDS Assistance Reauthorization Act of 2007,' and that he 'led bipartisan Senate efforts to enact the legislation' in 2003. This directly ties a concrete accomplishment (introducing and leading efforts to enact legislation) to Lugar's actions. The text also mentions his role as co-author of another bill. This matches the positive examples, such as 'Dorgan authored legislation, which was signed into law...' where authorship of enacted legislation is claimed.\"\n  },\n  \"2724\": {\n    \"document_id\": \"2724\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Senator Reid's call for action on gas price gouging and energy independence. It focuses on criticism of the administration and Republicans, as well as future plans for oversight and legislation. There is no explicit claim that Reid caused, secured, or authored a specific government action or policy. This aligns with the negative clarification: criticizing another official or administration and describing future intentions.\"\n  },\n  \"2954\": {\n    \"document_id\": \"2954\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Senator Domenici 'recently requested $28 million for the National Infrastructure Simulation and Analysis Center (NISAC)' and 'recently requested over $40 million for the Department's UAV program.' This directly ties funding requests to Domenici's actions, matching the clarification: 'explicitly attributes a concrete accomplishment or beneficial result to the senator's own actions, such as... securing appropriations or grants.' The use of 'requested' aligns with the example 'my request' in the codebook.\"\n  },\n  \"3569\": {\n    \"document_id\": \"3569\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Senators Schumer and Clinton announced Senate passage of funding for specific projects (YMCA, Community Center, WiFi service) and ties this to their work: 'weve cleared another hurdle in the appropriations process.' The text also notes that the Mayor of Schenectady 'personally lobbied both senators for its funding,' implying the senators' involvement in securing the funds. This aligns with the positive examples, such as 'Sen. Talent announced that the Senate has approved his request for $1.5 million...' where a senator's actions are tied to a concrete funding outcome.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7127,
+            "completion_tokens": 1309,
+            "total_tokens": 8436,
+            "prompt_tokens_details": {
+              "cached_tokens": 7048,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-475105",
+      "custom_id": "request-00000014",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-17a560bb4b4b03f287e8",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"91\": {\n    \"document_id\": \"91\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a tribute to Lieutenant Governor Win Rockefeller and does not attribute any concrete accomplishment or beneficial result to Senator Pryor's own actions. It merely commemorates an event/person, which falls under the negative clarification.\"\n  },\n  \"989\": {\n    \"document_id\": \"989\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces the introduction of a bill to provide funding for the Metrorail system but does not explicitly attribute the funding or its potential passage to the senators' own actions. It describes future intentions to advocate, which is not sufficient for credit-claiming per the negative clarification.\"\n  },\n  \"1236\": {\n    \"document_id\": \"1236\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that the senators 'introduced an amendment' to raise funding for the Securing Our Cities program. This directly attributes a concrete action (introducing legislation) to the senators, which aligns with the definition of credit-claiming. Additionally, the text notes that the senators 'personally asked the Senate Appropriations committee to support the program,' further tying the outcome to their actions.\"\n  },\n  \"1589\": {\n    \"document_id\": \"1589\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release discusses Senator Harkin's position on the Supreme Court's decision to hear cases about Guantanamo Bay detainees and his introduction of legislation to close the facility. However, it does not explicitly attribute any concrete accomplishment or beneficial result to his actions. It primarily states a policy position and future intentions, which are not sufficient for credit-claiming per the negative clarification.\"\n  },\n  \"1779\": {\n    \"document_id\": \"1779\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release states that Senator Shelby 'commended passage' of a tax relief package and is an 'original cosponsor' of the bill. However, it does not explicitly attribute the passage or any specific benefit to his own actions. The text focuses on his support for the bill rather than a direct claim of causing or securing the outcome, which is not sufficient for credit-claiming per the negative clarification.\"\n  },\n  \"2741\": {\n    \"document_id\": \"2741\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release expresses Senator Dodd's disappointment about the Senate not passing the FHA Modernization Act and states his intention to continue working for its passage. This is a statement of future advocacy and does not attribute any concrete accomplishment to his actions, per the negative clarification.\"\n  },\n  \"2904\": {\n    \"document_id\": \"2904\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces the introduction of legislation to allow U.S. companies to explore for oil in Cuban waters but does not explicitly attribute any concrete accomplishment or beneficial result to Senator Craig's actions. It primarily describes the legislation and its goals, which is not sufficient for credit-claiming per the negative clarification.\"\n  },\n  \"3498\": {\n    \"document_id\": \"3498\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release praises the Senate's confirmation of a judicial nominee but does not explicitly attribute the confirmation to Senator Burr's actions. It merely states his support for the nominee, which is not sufficient for credit-claiming per the negative clarification.\"\n  },\n  \"3796\": {\n    \"document_id\": \"3796\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that 'Sen. Landrieu Secures Military Construction Funding' and that the funding is 'included in the Military Construction and Veterans Affairs Appropriations bill that passed the Senate Appropriations Committee.' This directly attributes the securing of funding to her actions, which aligns with the definition of credit-claiming.\"\n  },\n  \"3973\": {\n    \"document_id\": \"3973\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release is a statement by Senator Kennedy responding to a report on the No Child Left Behind Act. It does not attribute any concrete accomplishment or beneficial result to his actions. It primarily discusses the goals of the act and the need for reforms, which is not sufficient for credit-claiming per the negative clarification.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 4837,
+            "completion_tokens": 979,
+            "total_tokens": 5816,
+            "prompt_tokens_details": {
+              "cached_tokens": 4741,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-503275",
+      "custom_id": "request-00000015",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-e9455a947b1c0ac3d5e6",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"251\": {\n    \"document_id\": \"251\",\n    \"label\": \"0\",\n    \"explanation\": \"The release states Senator Kennedy's position on stem cell legislation and expresses hope for future progress but does not explicitly attribute any concrete accomplishment or beneficial result to his own actions. According to the negative clarification, this is not credit-claiming as it merely states a policy position and describes future intentions to advocate.\"\n  },\n  \"2200\": {\n    \"document_id\": \"2200\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces a proposal filed by Great Lakes Airlines for a third flight and mentions Senator Dorgan's support for it. However, it does not state that the senator secured, requested, or influenced the proposal. The text only indicates his encouragement and future advocacy, which, per the negative clarification, does not qualify as credit-claiming.\"\n  },\n  \"2775\": {\n    \"document_id\": \"2775\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement on a judicial nomination, criticizing the nominee and discussing broader issues of civil rights and judicial appointments. It does not attribute any concrete accomplishment or beneficial result to Senator Leahy's actions. This falls under the negative clarification as it is criticism and commentary, not credit-claiming.\"\n  },\n  \"2945\": {\n    \"document_id\": \"2945\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senators Stabenow and Levin's opposition to proposed tolls and their efforts to defeat the proposal, but it does not explicitly attribute a concrete accomplishment or beneficial result to their actions. The text focuses on their stance and concerns, which, per the negative clarification, does not qualify as credit-claiming.\"\n  },\n  \"3103\": {\n    \"document_id\": \"3103\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that the Senate passed an energy bill with several provisions sponsored by Senator Hatch. It details his role in pushing these provisions (e.g., CLEAR Act, Oil Shale and Tar Sands Development Act) and attributes the inclusion of these measures to his work. This aligns with the clarification, as it ties favorable outcomes (passage of provisions) to the senator's actions.\"\n  },\n  \"3185\": {\n    \"document_id\": \"3185\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a critique of the FY2008 Congressional Budget Plan and Senator Domenici's vote against it. It does not attribute any concrete accomplishment or beneficial result to his actions. This is classified as not credit-claiming per the negative clarification, as it is criticism of another body's plan.\"\n  },\n  \"3343\": {\n    \"document_id\": \"3343\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Cantwell's efforts to promote trade with China, including writing a letter to President Hu. However, it does not explicitly state that her actions secured or caused any concrete outcome. The text focuses on her advocacy and future intentions, which, per the negative clarification, does not qualify as credit-claiming.\"\n  },\n  \"3468\": {\n    \"document_id\": \"3468\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces the introduction of a bill by Senators Feingold and Sununu but does not attribute any concrete accomplishment or beneficial result to their actions. It describes their past work on similar legislation but does not claim they secured or caused a specific outcome. This falls under the negative clarification as it is a policy position and future advocacy.\"\n  },\n  \"3825\": {\n    \"document_id\": \"3825\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that the senator introduced legislation to allow servicemembers to terminate cell phone contracts without fees and that a modified version of his proposal was included in a major veterans bill awaiting final consideration. This ties a favorable outcome (inclusion in a major bill) to his prior work, aligning with the clarification for credit-claiming.\"\n  },\n  \"4153\": {\n    \"document_id\": \"4153\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement by Senator Collins on the nomination of Robert Gates. It expresses her respect for his experience and her past appreciation for his assistance but does not attribute any concrete accomplishment or beneficial result to her actions. This is classified as not credit-claiming per the negative clarification, as it is commentary and not a claim of achievement.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8718,
+            "completion_tokens": 1004,
+            "total_tokens": 9722,
+            "prompt_tokens_details": {
+              "cached_tokens": 8703,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-551247",
+      "custom_id": "request-00000016",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-8887fad77de39d5c4305",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"61\": {\n    \"document_id\": \"61\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces a federal grant to Shenandoah Valley Regional Airport but does not explicitly attribute the funding to Sen. Allen's actions. The text states that the FAA awarded the grant, and while Sen. Allen comments on the importance of the airport, there is no language such as 'secured,' 'helped obtain,' or similar credit-claiming phrasing. This aligns with the negative example where a grant is announced without connecting it to the senator's work.\"\n  },\n  \"334\": {\n    \"document_id\": \"334\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces federal grants for the University of Tennessee but does not explicitly state that Sens. Frist or Alexander secured, requested, or influenced the awards. The senators praise the grants and the university's role, but there is no direct attribution of the funding to their actions. This matches the negative clarification that announcing an agency action without connecting it to the senator's work is not credit-claiming.\"\n  },\n  \"668\": {\n    \"document_id\": \"668\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that Sen. Hagel recommended the Mossmans for the Angels in Adoption award, but it does not explicitly claim that his recommendation caused or secured the award. The text focuses on the Mossmans' achievements and the purpose of the award, not on Hagel's direct role in obtaining it. This aligns with the negative clarification that generic support or recognition without explicit attribution of a concrete accomplishment is not credit-claiming.\"\n  },\n  \"1085\": {\n    \"document_id\": \"1085\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Sen. Dorgan 'secured $18.2 million in federal funding' for new housing at Minot Air Force Base. This directly attributes a concrete accomplishment (securing funding) to the senator's actions, which matches the codebook's definition of credit-claiming and the positive examples provided.\"\n  },\n  \"1310\": {\n    \"document_id\": \"1310\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Sens. Hutchison and Cornyn urging the President to expedite a disaster declaration but does not claim that they caused, secured, or otherwise materially contributed to the declaration. The text focuses on their advocacy and future intentions, which aligns with the negative clarification that future intentions to advocate or generic support are not sufficient for credit-claiming.\"\n  },\n  \"1788\": {\n    \"document_id\": \"1788\",\n    \"label\": \"0\",\n    \"explanation\": \"The release outlines Sen. DeMint's principles for immigration reform but does not claim any concrete accomplishment or beneficial result tied to his actions. It focuses on policy positions and principles, which aligns with the negative clarification that stating a policy position is not credit-claiming.\"\n  },\n  \"2464\": {\n    \"document_id\": \"2464\",\n    \"label\": \"0\",\n    \"explanation\": \"The release criticizes the Energy Secretary's policy on contractor pensions and urges the President to change course. It does not claim any concrete accomplishment or beneficial result tied to the senators' actions. This aligns with the negative clarification that criticizing another official or administration is not credit-claiming.\"\n  },\n  \"3319\": {\n    \"document_id\": \"3319\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces a grant to the Nashville Fire Department and applauds the Department of Homeland Security for awarding it. However, it does not explicitly state that Sens. Frist or Alexander secured, requested, or influenced the grant. This matches the negative example where a grant is announced without connecting it to the senator's work.\"\n  },\n  \"3694\": {\n    \"document_id\": \"3694\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Sens. Allard and McConnell 'successfully added an amendment' to the Defense Appropriations Bill, setting a legally binding deadline for the cleanup of chemical depots. This directly attributes a concrete accomplishment (adding an amendment) to the senators' actions, which matches the codebook's definition of credit-claiming and the positive examples provided.\"\n  },\n  \"4393\": {\n    \"document_id\": \"4393\",\n    \"label\": \"0\",\n    \"explanation\": \"The release criticizes the Supreme Court's denial of certiorari in Boumediene v. Bush and urges Congress to act. It does not claim any concrete accomplishment or beneficial result tied to Sen. Leahy's actions. This aligns with the negative clarification that criticizing another official or administration is not credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5090,
+            "completion_tokens": 1062,
+            "total_tokens": 6152,
+            "prompt_tokens_details": {
+              "cached_tokens": 5000,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-580913",
+      "custom_id": "request-00000017",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-36c080e7bf95f5853b2a",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"707\": {\n    \"document_id\": \"707\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement by Senator Frist commenting on a jury's decision regarding Zacarias Moussaoui's eligibility for the death penalty. This is a reaction to an external event (the jury verdict) and does not attribute any government action, policy, or benefit to the senator's own actions. It falls under the negative clarification as it does not claim any accomplishment or material contribution by the senator.\"\n  },\n  \"777\": {\n    \"document_id\": \"777\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a speech by Senator Hatch urging the Senate to support legislation granting immunity to communication service providers. While the senator advocates for a position, the text does not explicitly attribute any concrete accomplishment or beneficial result to his own actions. It is a call for future action and policy support, not a claim of past credit. This aligns with the negative clarification, as it does not tie a favorable outcome to the senator's prior work.\"\n  },\n  \"1223\": {\n    \"document_id\": \"1223\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Conrad organizing a conference on agriculture. While the senator is active in hosting the event, the text does not explicitly attribute a concrete accomplishment, government action, or benefit to his own actions. It is more about announcing an event and discussing future strategies, which falls under the negative clarification (e.g., describing future intentions to advocate or generic support for a program).\"\n  },\n  \"1315\": {\n    \"document_id\": \"1315\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a joint statement by Senator Durbin and Congressman Emanuel praising the efforts of Chicagoans and BP America's decision to reverse its plan to dump more ammonia into Lake Michigan. The text does not explicitly attribute the outcome to the senators' own actions (e.g., no language like 'we secured' or 'we caused'). It commends external parties and does not claim credit for the decision, aligning with the negative clarification.\"\n  },\n  \"2071\": {\n    \"document_id\": \"2071\",\n    \"label\": \"0\",\n    \"explanation\": \"The release states that Senator Kerry delivered a radio address about Social Security. This is a description of an action (delivering a speech) but does not attribute any concrete accomplishment or government action to the senator. It falls under the negative clarification as it does not claim credit for any policy or benefit.\"\n  },\n  \"2212\": {\n    \"document_id\": \"2212\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that President Bush signed into law a bill 'authored by Sen. Pete Domenici' to acquire mineral rights at the Valles Caldera National Preserve. This directly attributes a concrete legislative accomplishment (authoring a bill that became law) to the senator, which matches the definition and positive examples of credit-claiming (e.g., 'authored legislation, which was signed into law').\"\n  },\n  \"2866\": {\n    \"document_id\": \"2866\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Senator Feinstein 'authored legislation in the 109th Congress to criminalize the act of constructing or financing a tunnel or subterranean passage across an international border into the United States,' and that this legislation was included in a bill and signed into law. This explicitly attributes a concrete legislative accomplishment to the senator, matching the definition and positive examples of credit-claiming (e.g., 'authored legislation, which was signed into law').\"\n  },\n  \"3504\": {\n    \"document_id\": \"3504\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Salazar's efforts to secure cooperation from the BLM and Department of Interior, including placing a 'hold' on a nominee and requesting commitments. However, the text does not explicitly attribute a concrete accomplishment or beneficial result to the senator's actions. It describes ongoing advocacy and future intentions, which aligns with the negative clarification (e.g., describing future intentions to advocate or generic support for a program).\"\n  },\n  \"4287\": {\n    \"document_id\": \"4287\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Senators Conrad and Dorgan 'have helped connect companies in the state... with large contractors and federal agencies,' and that this effort led to SEO Precision winning a contract with Boeing. The phrase 'have helped connect' explicitly attributes a beneficial outcome (a company winning a contract) to the senators' actions, which matches the definition of credit-claiming (e.g., 'helped secure' or 'worked to expedite').\"\n  },\n  \"4411\": {\n    \"document_id\": \"4411\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Senator Burns 'introduced S. 2315, the Meth Awareness and Prevention Act of 2006,' and that he 'fought for passing the Combat Meth Act as part of the Patriot Act reauthorization.' Additionally, it states he 'restored over $900 million for Byrne/JAG funding in an amendment to the Budget Resolution.' These are concrete legislative accomplishments and funding actions directly attributed to the senator, matching the definition and positive examples of credit-claiming (e.g., 'authored legislation' or 'securing appropriations').\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6972,
+            "completion_tokens": 1206,
+            "total_tokens": 8178,
+            "prompt_tokens_details": {
+              "cached_tokens": 6914,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-620235",
+      "custom_id": "request-00000018",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-f6b269b53220d5b67835",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"703\": {\n    \"document_id\": \"703\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces a recommendation for a federal judge nomination but does not attribute any concrete accomplishment or beneficial result to the senators' own actions. The senators are merely endorsing a candidate, which falls under the negative clarification: 'merely states a policy position, commemorates an event or person, or announces an agency action without connecting it to the senator's work.'\"\n  },\n  \"997\": {\n    \"document_id\": \"997\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a speech by Sen. Kerry criticizing the government's response to Hurricane Katrina and broader policy failures. It does not claim any personal accomplishment or credit for securing, authoring, or advancing a policy or benefit. This aligns with the negative clarification: 'merely states a policy position, criticizes another official or administration.'\"\n  },\n  \"1096\": {\n    \"document_id\": \"1096\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release announces a grant awarded by the Department of Health and Human Services but does not state that Sen. Allen secured, requested, or influenced the award. This matches the negative example: 'U.S. Senator Jeff Bingaman today announced that New Mexico State University has been awarded $599,691... The text does not say that he secured, requested, or influenced the award.'\"\n  },\n  \"1863\": {\n    \"document_id\": \"1863\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release explicitly states that Sens. Leahy and Bond 'secured key elements of the Empowerment Act in the final version of the Defense Authorization bill' and that they 'were able to secure key victories for the National Guard.' This directly attributes concrete accomplishments (e.g., elevating the Chief of the National Guard, repealing changes to the Insurrection Act) to their legislative work, fitting the definition of credit-claiming: 'explicitly attributes a concrete accomplishment or beneficial result to the senator's own actions.'\"\n  },\n  \"1883\": {\n    \"document_id\": \"1883\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a letter from Senate Democrats outlining actions for the President to lower gas prices. It criticizes the administration and proposes future actions but does not claim any personal accomplishment or credit for the senators. This aligns with the negative clarification: 'merely states a policy position, criticizes another official or administration, or describes future intentions to advocate.'\"\n  },\n  \"2802\": {\n    \"document_id\": \"2802\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Durbin meeting with a nominee to discuss issues but does not attribute any concrete accomplishment or beneficial result to his actions. It focuses on future advocacy and concerns, which falls under the negative clarification: 'describes future intentions to advocate.'\"\n  },\n  \"2888\": {\n    \"document_id\": \"2888\",\n    \"label\": \"0\",\n    \"explanation\": \"The text is a transcript of an interview where Sen. Graham discusses foreign policy and domestic issues. There is no claim of personal accomplishment or credit for securing, authoring, or advancing a policy or benefit. This aligns with the negative clarification: 'merely states a policy position, criticizes another official or administration.'\"\n  },\n  \"3312\": {\n    \"document_id\": \"3312\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release describes Sen. Snowe's position on fuel efficiency standards and her cosponsorship of a bill, but it does not explicitly attribute any concrete accomplishment or beneficial result to her actions. Cosponsoring a bill alone is not sufficient for credit-claiming under the codebook, as it falls under the negative clarification: 'Membership on a committee, attendance at a meeting, or generic support for a program is not sufficient on its own.'\"\n  },\n  \"3896\": {\n    \"document_id\": \"3896\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release states that Sens. Reid and Ensign 'announce today that Nevada counties will receive a record level of funding from the PILT program' and that Sen. Reid 'is already working to ensure that next year's funding levels are even higher.' Additionally, it mentions that Sen. Reid 'led a bipartisan effort... to encourage the Senate Interior Appropriations Subcommittee panel to increase PILT funding.' This explicitly ties the funding to their advocacy and work, fitting the definition of credit-claiming: 'explicitly attributes a concrete accomplishment or beneficial result to the senator's own actions.'\"\n  },\n  \"4141\": {\n    \"document_id\": \"4141\",\n    \"label\": \"1\",\n    \"explanation\": \"The press release announces a $14.7 million contract for school construction and explicitly ties it to Sen. Domenici's role, stating he 'announced today that the Department of the Army has awarded a $14.7 million contract.' While the text does not use phrases like 'secured' or 'helped obtain,' the announcement of the contract in his capacity as a senator, combined with his statement of pride in the outcome, implies his involvement in the process. This aligns with the positive examples, such as 'Sen. Talent announced that the Senate has approved his request for $1.5 million dollars...' where the senator is presenting themselves as connected to the outcome.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 9751,
+            "completion_tokens": 1218,
+            "total_tokens": 10969,
+            "prompt_tokens_details": {
+              "cached_tokens": 9730,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-673593",
+      "custom_id": "request-00000019",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-d388e1776dc424dc4016",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"518\": {\n    \"document_id\": \"518\",\n    \"label\": \"0\",\n    \"explanation\": \"The press release criticizes the Republican budget and discusses Democratic amendments that were rejected. It does not explicitly attribute any concrete accomplishment or beneficial result to Senator Lieberman's own actions. The text focuses on policy positions and criticism, which, per the negative clarification, does not qualify as credit-claiming.\"\n  },\n  \"955\": {\n    \"document_id\": \"955\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that the USDA 'accepted the request on behalf of the Massachusetts delegation' for assistance to aquaculturists. Senator Kennedy explicitly ties this outcome to their prior work, saying, 'This is great news... This assistance from the Department of Agriculture will enable the industry to rebuild after the red tide disaster.' The attached letter also shows the delegation (including Kennedy) directly requested this assistance, which aligns with the clarification of credit-claiming as attributing a beneficial result to the senator's actions.\"\n  },\n  \"962\": {\n    \"document_id\": \"962\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Clinton joining others to call for federal government action but does not claim that she caused, secured, or otherwise materially contributed to any specific outcome. It is a call for future action, which, per the negative clarification, does not qualify as credit-claiming.\"\n  },\n  \"1847\": {\n    \"document_id\": \"1847\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement mourning the passing of Pope John Paul II. It does not attribute any government action, policy, or benefit to Senator Johnson's own actions. This falls under the negative clarification as it is a commemoration, not credit-claiming.\"\n  },\n  \"1885\": {\n    \"document_id\": \"1885\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Senator Clinton's amendment was included in the National Defense Authorization Act and that she 'played a key role... in removing the Niagara Falls Air Reserve Station from the list of recommended base closures.' This directly attributes a concrete accomplishment (securing the amendment and protecting the base) to her actions, which matches the definition and clarification of credit-claiming.\"\n  },\n  \"2013\": {\n    \"document_id\": \"2013\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces a grant awarded by the Department of Homeland Security to the Columbia Fire Department but does not state that Senators Frist or Alexander secured, requested, or influenced the award. Per the negative clarification and negative example (Bingaman's announcement of a grant without tying it to his work), this does not qualify as credit-claiming.\"\n  },\n  \"3051\": {\n    \"document_id\": \"3051\",\n    \"label\": \"0\",\n    \"explanation\": \"The release is a statement about the renewal of the Voting Rights Act. Senator Coleman expresses support for the legislation but does not claim to have caused, secured, or materially contributed to its passage. This is a policy position, not credit-claiming, as per the negative clarification.\"\n  },\n  \"3142\": {\n    \"document_id\": \"3142\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that the Terre Haute Chamber of Commerce 'thanked Senator Lugar for his help in bringing two Air National Guard missions to the Hulman Regional Airport.' This directly attributes a concrete accomplishment (securing the missions) to Senator Lugar's actions, which aligns with the definition and clarification of credit-claiming.\"\n  },\n  \"3267\": {\n    \"document_id\": \"3267\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Senators Byrd and Rockefeller 'reached agreement on a comprehensive Senate mine safety bill' and that the bill 'includes some of the core principles contained in the West Virginia Congressional Delegation's mine safety legislation, introduced in February.' Senator Byrd explicitly ties the legislation to their efforts, saying, 'We have a moral obligation to apply the lessons from these mine accidents... The MINER Act is a strong step forward for our coal miners.' This attributes a concrete accomplishment (the bill) to their actions, qualifying as credit-claiming.\"\n  },\n  \"3852\": {\n    \"document_id\": \"3852\",\n    \"label\": \"0\",\n    \"explanation\": \"The release criticizes the Senate and the President for insufficient funding for LIHEAP and does not attribute any concrete accomplishment or beneficial result to the senator's own actions. It focuses on policy positions and criticism, which, per the negative clarification, does not qualify as credit-claiming.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6246,
+            "completion_tokens": 1046,
+            "total_tokens": 7292,
+            "prompt_tokens_details": {
+              "cached_tokens": 6149,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-4d866232-e4afeec1-708996",
+      "custom_id": "request-00000020",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1789072153-70bbc07525245c6c68d0",
+          "created": 1789072173,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"158\": {\n    \"document_id\": \"158\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly attributes the introduction of 'The Prescribe a Book Act' to Senator Reed, stating he 'unveiled' the initiative and that his legislation would allow doctors to provide books to low-income parents. This aligns with the codebook's clarification of credit-claiming, as Reed presents himself as the author of the bill and ties the potential benefits (e.g., promoting childhood literacy) to his legislative action.\"\n  },\n  \"244\": {\n    \"document_id\": \"244\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces that a nonprofit will receive federal grants but does not explicitly state that Senator Inouye secured, requested, or influenced the award. According to the negative clarification, merely announcing an agency action (here, HUD grants) without connecting it to the senator's work does not qualify as credit-claiming.\"\n  },\n  \"501\": {\n    \"document_id\": \"501\",\n    \"label\": \"0\",\n    \"explanation\": \"The text primarily criticizes the President's budget and tax policies and proposes alternative measures. It does not claim that Senator Harkin caused, secured, or authored any specific government action or benefit. This falls under the negative clarification, as it involves policy positions and criticism rather than credit-claiming.\"\n  },\n  \"806\": {\n    \"document_id\": \"806\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Senator Cantwell 'announced their introduction of bipartisan legislation' to create the Ice Age Floods National Geologic Trail. This directly attributes the legislative action (introducing the bill) to Cantwell, which matches the codebook's definition of credit-claiming as presenting oneself as having authored or advanced a government action.\"\n  },\n  \"812\": {\n    \"document_id\": \"812\",\n    \"label\": \"1\",\n    \"explanation\": \"The release states that Senator Schumer 'aggressively lobbied for emergency aid in letters and calls' and that FEMA approved additional disaster assistance as a result. This ties a favorable outcome (FEMA aid) to Schumer's direct actions, fulfilling the codebook's criteria for credit-claiming (e.g., 'securing' or 'worked to expedite').\"\n  },\n  \"1693\": {\n    \"document_id\": \"1693\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Boxer writing letters to request information and urging committee action, but it does not claim that she caused, secured, or authored any specific government action or benefit. This aligns with the negative clarification, as it involves oversight and criticism rather than credit-claiming.\"\n  },\n  \"1757\": {\n    \"document_id\": \"1757\",\n    \"label\": \"0\",\n    \"explanation\": \"The release states that Senator Durbin is 'pleased' about a trade agreement and describes its benefits, but it does not explicitly attribute the resolution of the dispute to his actions. While he mentions leading a bipartisan effort to urge resolution, the text does not claim he caused or secured the agreement. This falls under the negative clarification, as it lacks a direct link between Durbin's work and the outcome.\"\n  },\n  \"1940\": {\n    \"document_id\": \"1940\",\n    \"label\": \"0\",\n    \"explanation\": \"The release announces a port visit by the U.S.S. De Wert during a festival but does not attribute the visit to Senator Collins' actions. While she expresses pleasure and mentions her committee membership, the text does not claim she caused or secured the visit. This aligns with the negative clarification, as it lacks a direct connection between her work and the event.\"\n  },\n  \"4209\": {\n    \"document_id\": \"4209\",\n    \"label\": \"1\",\n    \"explanation\": \"The release explicitly states that Senators Bayh and Lugar 'introduced a bill' and that 'medication safety language was added to the Tax Relief and Health Care Act of 2006 after Senators Bayh and Lugar sent a letter... urging the Committee to take action.' This ties the legislative outcome (inclusion of medication safety measures) to their direct actions, fulfilling the codebook's definition of credit-claiming.\"\n  },\n  \"4268\": {\n    \"document_id\": \"4268\",\n    \"label\": \"0\",\n    \"explanation\": \"The release describes Senator Murray's travel and meetings but does not claim she caused, secured, or authored any government action or benefit. This falls under the negative clarification, as it involves describing activities (e.g., meetings) without linking them to a concrete accomplishment.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5426,
+            "completion_tokens": 1041,
+            "total_tokens": 6467,
+            "prompt_tokens_details": {
+              "cached_tokens": 5387,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ## TASK DESCRIPTION
 
-You will receive a a codebook and a set of press releases from a US senator.
+You will receive a codebook and a set of press releases from US senators.
 
 Following the codebook, classify each text according to whether the senator is "credit-claiming." Use only the information provided in the codebook, and no other information.
 
@@ -12,28 +12,16 @@ Use only one of these labels:
 For each text, return:
 * ID: ID of the text document
 * Label: Your classification, 1 or 0
-* Codebook Rule: The codebook rule(s) that support your classification. If more than one rule applies, list all applicable rules. If the text is classified as "0" because no decision rule applies, return an empty array.
-* Explanation: An explanation of the rationale for your classification or how you applied the rules. If you faced any ambiguities or difficulties in applying the rules or making a classification, you can describe that here.
-
+* Codebook Rule: The codebook rule(s) that you used to make your classification. If more than one rule applies, list all applicable rules. If none of the rules apply and the document is thus labelled 0, leave this blank.
+* Explanation: An explanation of the rationale for your classification or how you applied any rules. If you faced any ambiguities or difficulties in applying the rules or making a classification, you can describe that here.
 
 ## OUTPUT FORMAT
 
-Return only valid JSON, with other formatting or text. For each document, use this structure:
+Return only a single valid JSON object matching the supplied response schema.
+The object must be keyed by the exact input document IDs, including every input ID exactly once and no additional IDs.
 
-{
-  "document_id": "doc_001",
-  "label": "1",
-  "codebook_rule": ["R1", "R3"],
-  "explanation": "Rationale for your decision"
-}
-
-For a document classified as `"0"`:
-
-{
-  "document_id": "doc_002",
-  "label": "0",
-  "codebook_rule": [],
-  "explanation": "Rationale for your decision"
-}
-
-If there are multiple documents, return an array of JSON objects.
+Each value must contain all of these four fields and no additional fields:
+* document_id: The exact input ID as a string, matching the enclosing key.
+* label: The string "0" or "1".
+* codebook_rule: An array of rule ID strings copied exactly from the provided codebook. If none of the rules applied, return an empty array.
+* explanation: A string explaining your classification.

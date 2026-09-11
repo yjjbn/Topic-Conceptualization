@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents himself or herself as personally responsible for producing, securing, obtaining, advancing, or delivering a particularized benefit, policy outcome, governmental action, funding award, recognition, or accomplishment. The claim may be direct (for example, 'I secured' or 'Senator X announced that funding was obtained through his effort') or indirect through language and context that clearly attributes the outcome to the senator's intervention, leadership, sponsorship, or persistence. The central idea is personal responsibility for an outcome that can be valued by constituents or other audiences.",
+  "clarification": "Classify as 1 if the text explicitly or strongly implies the senator's personal role in achieving or securing a particular outcome, especially when the release uses verbs such as announced, secured, obtained, helped, worked to, authored, won, delivered, secured approval, or includes third-party praise crediting the senator. Grant announcements, earmarks, disaster designations, military/base/facility wins, regulatory or legislative wins tied to the senator's efforts, and awards recognizing the senator's own record are treated as credit-claiming. Classify as 0 if the text only announces a general position, introduces a proposal, criticizes others, comments on events, commemorates someone, or describes government action without attributing the outcome to the senator.",
+  "positive_examples": [
+    {
+      "text": "Parma Fire Department will receive $105,550 as part of his Firefighter Investment and Response Enhancement (FIRE) Act ... Senator DeWine wrote and passed the FIRE Act ... By working to pass and fund the FIRE Act, we have ensured that fire departments in Ohio and elsewhere will have the resources...",
+      "explanation": "The senator announces a local grant and explicitly connects it to his legislation and his efforts to pass and fund the program. This is a clear claim of personal responsibility for a particularized benefit."
+    },
+    {
+      "text": "Montana Senators Max Baucus and Jon Tester have delivered on their promise to secure federal funding for the Mining City. The Senators announced today that $12.5 million for vital military projects in Butte has been included in the Defense Appropriations Bill... Jon and I were proud to go to bat for these dollars...",
+      "explanation": "The senators claim to have delivered funding and use language such as 'secured,' 'delivered,' and 'proud to go to bat,' which directly attributes the appropriation to their effort."
+    },
+    {
+      "text": "The budget resolution which Senator Jack Reed D RI supported provides a spending blueprint ... A provision championed by Reed to help establish an affordable housing fund financed by government sponsored enterprises ... This budget also confronts America s growing affordable housing crisis I will be proposing legislation...",
+      "explanation": "The release attributes a state-specific federal funding outcome to the senator's amendment and states that the provision was championed by him. This is credit-claiming for a budgetary outcome, even though the overall budget passed collectively."
+    }
+  ],
+  "negative_clarification": "Do not classify as credit-claiming merely because a senator announces information, expresses support, introduces legislation, cosponsors a bill, votes, attends a meeting, requests action, urges an agency to act, criticizes an opponent or administration, commemorates an event or person, honors a third party, or describes a general policy priority. Also do not classify as credit-claiming when a federal award or agency decision is announced but the senator is presented only as the messenger and the text provides no indication that the senator's effort produced or influenced the outcome. Legislative proposals without enactment or secured benefits are not credit-claiming. Party-led or broadly collective accomplishments are not credit-claiming unless the senator is singled out as a decisive or contributing actor.",
+  "negative_examples": [
+    {
+      "text": "Senator Allard to Hold Greeley Town Meeting on Wednesday January 12 ... U S Senator R Colorado will hold a town meeting in Greeley ... This is a chance for citizens to visit one on one with me about the issues that are important to them Senator Allard is a member of the Senate Appropriations Committee ... Anyone with questions ... can contact Senator Allard s Loveland office ...",
+      "explanation": "The senator announces a town meeting and lists committee assignments, but does not claim responsibility for any accomplishment or particularized benefit."
+    },
+    {
+      "text": "Today in Mexico President Bush said he would work as hard as he possibly can to pass comprehensive immigration reform Senator Kennedy chair of the Judiciary Subcommittee on Immigration Refugees and Border Security issued the following statement I commend the President for his call for comprehensive immigration reform today in Mexico Now it is time to turn talk into action ... There is no excuse for inaction we must get comprehensive immigration reform done this year and done right ...",
+      "explanation": "The senator criticizes an administration decision and urges action, but does not claim personal responsibility for an outcome."
+    },
+    {
+      "text": "Arkansas Delegation Announces Over 877 000 in Federal Housing Grants ... U S Senators Blanche Lincoln D and Mark Pryor D and Representatives ... today announced 877 749 in grants from the Department of Housing and Urban Development HUD Grants were awarded through two separate programs ... Public housing agencies in Arkansas will receive 765 892 through the FSS program ...",
+      "explanation": "The text announces a federal housing grant, but does not attribute the award to the senators' efforts. The delegation merely announces the grant and comments on its importance, so it is treated as an informational announcement rather than credit-claiming."
+    }
+  ]
+}

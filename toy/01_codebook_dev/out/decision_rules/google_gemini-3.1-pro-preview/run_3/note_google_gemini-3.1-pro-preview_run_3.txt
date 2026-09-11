@@ -1,0 +1,24 @@
+gemini, codebook generation
+
+Parsed arguments (including defaults):
+{
+  "model": "google/gemini-3.1-pro-preview",
+  "session_id": "gemini",
+  "nametag": "run_3",
+  "note": "gemini, codebook generation",
+  "data_path": "data\\grimmer_codebookdev_200.csv",
+  "prompt_path": "prompts\\prompt_classify-create-codebook_grimmer.txt",
+  "test_rows": null,
+  "out_folder": "out",
+  "id_column": "document_id",
+  "text_column": "text",
+  "max_output_tokens": 50000
+}
+
+Generation ID: gen-1788969311-GWu1HX0HryZoutlvixMG
+Cost (OpenRouter credits): 0.520256
+Input tokens: 121876
+Output tokens: 23042
+Cached input tokens: 0
+Cache write tokens: 0
+API key (masked): ...7547

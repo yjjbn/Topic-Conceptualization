@@ -1,0 +1,65 @@
+{
+  "definition": "Credit-claiming is a communication in which a U.S. senator presents himself or herself as personally responsible for producing, securing, or receiving recognition for a concrete benefit, policy outcome, governmental action, or achievement. This includes announcing funds or grants secured for the state, claiming passage or inclusion of legislation or provisions, claiming prevention or reversal of an undesirable outcome, asserting authorship of laws or programs, claiming successful intervention with executive agencies, and publicizing awards or honors received for official service. Texts that merely announce future intentions, express policy positions, criticize opponents, commemorate events, offer condolences, describe meetings or oversight without a claimed result, or describe legislation without claiming success are not credit-claiming.",
+  "decision_rules": [
+    {
+      "rule_id": "1",
+      "rule": "The text states or strongly implies that the senator personally brought about a concrete outcome, such as obtaining funding, securing approval or designation, winning passage or inclusion of a provision, blocking or preventing an action, or producing a policy change, and the senator is presented as responsible for that outcome.",
+      "positive_example": {
+        "text": "SENS. BAUCUS, TESTER ANNOUNCE MORE THAN $12M FOR BUTTE Montana Senators Max Baucus and Jon Tester have delivered on their promise to secure federal funding for the Mining City. The Senators announced today that $12.5 million for vital military projects in Butte has been included in the Defense Appropriations Bill, which passed the Senate Appropriations Committee today. \"Butte is known for its great work ethic, and innovative spirit, and these dollars will keep Montana on the cutting edge of military technology,\" Baucus said. \"Jon and I were proud to go to bat for these dollars, and we are going to make sure the ball gets across the goal.\" \"These dollars will advance projects that will keep our nation safe from all kinds of threats,\" Tester said. \"And I can't think of any better investment then safety, which is why Max and I are going to make sure these dollars get delivered.\"",
+        "explanation": "The release explicitly attributes a concrete resource outcome to the senators: they \"delivered on their promise\" and \"$12.5 million for vital military projects in Butte has been included in the Defense Appropriations Bill.\" The text identifies the secured dollars, the projects, and frames them as the senators' achievement, satisfying the rule."
+      },
+      "negative_example": {
+        "text": "SEN. DAYTON, COLLEAGUES PASS MODEST LIHEAP FUNDING PACKAGE; NOT ENOUGH TO MEET MINNESOTA'S NEED, SEN. DAYTON FEARS Sen. Mark Dayton today applauded the Senate's passage of an additional $1 billion for the Low Income Home Energy Assistance Program (LIHEAP), but expressed disappointment that it will not be enough to cover every eligible Minnesotan. The bill (S.2320), which passed last night, allocates an additional $1 billion for the program, in FY2006. \"Though it falls far short of Minnesota's needs, I am pleased that the Senate today approved $1 billion in additional LIHEAP funding,\" said Dayton. \"I hope that the House will quickly follow suit, to help ease the pain of soaring energy costs for our nation's neediest citizens.\" So far, in FY2006, only 145,859 of Minnesota's 450,000 eligible households have received heating assistance from LIHEAP - less than 1/3. Minnesota has received $81.6 million LIHEAP funding in FY2006. The additional $1 billion approved today by the Senate would bring total LIHEAP funding to $3.16 for FY2006 - nearly $2 billion below the federally authorized level. Dayton has cosponsored four amendments to fully fund LIHEAP at the authorized level of $5.1 billion, but all were defeated by the Republican-controlled Congress. In his FY2007 budget proposal, President Bush allocates only $1.78 billion for LIHEAP.",
+        "explanation": "This text is a critical statement about the President's budget and administration policy. Although it contains a first-person claim of legislative work (\"I supported legislation\"), the release is not framed as credit-claiming: there is no concrete policy outcome, no resource secured, and no framing that attributes a benefit to the senator's own action. Instead, it functions as a policy objection and warning, so it should not be coded as credit-claiming."
+      }
+    },
+    {
+      "rule_id": "2",
+      "rule": "The text announces, describes, or attributes a legislative accomplishment as achieved or secured by the senator, including laws passed, amendments adopted, provisions included in enacted or committee-approved bills, programs created, or votes won on the senator's initiative.",
+      "positive_example": {
+        "text": "SEN. DORGAN ANNOUNCES BISMARCK STATE COLLEGE DESIGNATION AS NATIONAL POWER PLANT OPERATIONS TECHNOLOGY AND EDUCATIONAL CENTER Sen. Byron Dorgan (D-ND) announced Friday that U.S. Energy Secretary Samuel Bodman has officially designated Bismarck State College (BSC) as the National Power Plant Operations Technology and Educational Center. ... Dorgan authored legislation, which was signed into law, that created the National Center designation.",
+        "explanation": "The release attributes an enacted legislative achievement to the senator: the text says \"Dorgan authored legislation, which was signed into law, that created the National Center designation,\" and announces the resulting designation. This is a concrete outcome linked to the senator's own action."
+      },
+      "negative_example": {
+        "text": "SENS. DORGAN, LOTT ANNOUNCE BI-PARTISAN BILL TO HALT FCC RUSH TOWARD EASING MEDIA OWNERSHIP RULES U.S. Senators Byron Dorgan (D-ND) and Trent Lott (R-MS) will introduce legislation later today to halt the Federal Communications Commission's (FCC) \"fast march\" toward easing media ownership rules. \"We believe localism and diversity of media ownership is vital in a democracy,\" Senator Dorgan said.",
+        "explanation": "This release describes the senator introducing a bill. It identifies legislative activity but does not describe a completed or secured outcome, nor does it claim that the senator obtained a benefit or produced a policy change. Therefore it does not meet this rule."
+      }
+    },
+    {
+      "rule_id": "3",
+      "rule": "The text presents the senator as receiving an award, honor, endorsement, or favorable external recognition tied to the senator's official performance, service, or policy positions.",
+      "positive_example": {
+        "text": "SEN. ROBERTS RECEIVES COVETED 'GUARDIAN OF SMALL BUSINESS' AWARD Sen. Pat Roberts (R-KS) was recently named a \"Guardian of Small Business\" by the National Federation of Independent Business (NFIB). ... The \"Guardian of Small Business\" award from NFIB is based on a member of Congress' voting record on behalf of America's small-business owners in the 109th Congress.",
+        "explanation": "The release explicitly presents an external organization's award to the senator and frames the award as recognition of the senator's voting record and support for small business. The senator is receiving credit, so it meets the rule."
+      },
+      "negative_example": {
+        "text": "SEN. SALAZAR QUESTIONS SECRETARY OF THE INTERIOR ON LACKLUSTER SUPPORT FOR RURAL COMMUNITIES Sen. Ken Salazar questioned Secretary of the Interior Gale Norton today about the Administration's budget from his seat on the Energy and Natural Resources Committee.",
+        "explanation": "This text describes a senator attending a hearing, questioning an official, and expressing policy concerns. Even though it shows activity and oversight, it does not claim an award, honor, or positive external evaluation of the senator. It is not credit-claiming under this rule."
+      }
+    },
+    {
+      "rule_id": "4",
+      "rule": "The text claims that the senator's intervention, advocacy, pressure, or oversight directly produced or secured a concrete benefit, decision, protection, or remedy for constituents, communities, institutions, or a state.",
+      "positive_example": {
+        "text": "Medicare Penalty to Be Waived for Hurricane Affected Seniors ... Administrator finally responds to Sen Landrieu s letter ... The agency s position last month simply didn t make sense granting a so called extension while still charging the same penalties as for any other late filer Sen Landrieu said I am pleased that the agency has finally come to its senses and recognized the inconsistency our delegation brought to its attention last month The news will bring significant relief to the more than a quarter million Louisiana seniors who were facing a lifetime of pointless penalty payments",
+        "explanation": "The release credits a concrete outcome to the senator's advocacy: the agency changed its position after the senator's letter, and the senator is quoted claiming that the delegation brought the issue to the agency's attention. The text presents the senator as responsible for achieving relief for seniors, satisfying the rule."
+      },
+      "negative_example": {
+        "text": "Diabetes is a deadly disease which now affects more than 18 million Americans We must do everything we can to both prevent this disease and help those who have it live longer and healthier lives Harkin said ... Established in 1996 the Finley Diabetes Center offers a fully integrated program of diabetes care ... Harkin is the Senate leader in federal efforts to promote health and wellness among adults and children. He recently authored the HeLP America Act comprehensive legislation ...",
+        "explanation": "Although this text contains a positive self-description (\"Harkin is the Senate leader in federal efforts to promote health and wellness\"), it does not identify a specific concrete outcome produced by that effort. It is reputational or aspirational rather than a claim of a secured result, so it should not be coded as credit-claiming under this rule."
+      }
+    },
+    {
+      "rule_id": "5",
+      "rule": "The text explicitly connects a named law, amendment, program, designation, or provision to the senator as author, sponsor, or principal cause of its success.",
+      "positive_example": {
+        "text": "SEN. DORGAN ANNOUNCES BISMARCK STATE COLLEGE DESIGNATION AS NATIONAL POWER PLANT OPERATIONS TECHNOLOGY AND EDUCATIONAL CENTER ... Dorgan authored legislation, which was signed into law, that created the National Center designation. He said he will present the designation formally to BSC officials ...",
+        "explanation": "The release states that \"Dorgan authored legislation, which was signed into law, that created the National Center designation.\" This directly links a law to the senator and presents it as an accomplishment, satisfying the rule."
+      },
+      "negative_example": {
+        "text": "SEN. REID: THERE IS MORE WORK TO BE DONE IN IRAQ Today, Senate Democratic Leader Harry Reid released the following statement on the challenges ahead in Iraq: \"The parliamentary elections in Iraq this week are an important step forward ... However, a significant amount of work lies ahead ... Democrats will continue to ask the hard questions and demand a strategy for success ...\"",
+        "explanation": "The senator discusses policy priorities and criticizes other actors, but the release does not claim the senator authored or passed a specific law or provision, nor does it attribute a concrete outcome to the senator. It is a policy statement, not credit-claiming."
+      }
+    }
+  ]
+}

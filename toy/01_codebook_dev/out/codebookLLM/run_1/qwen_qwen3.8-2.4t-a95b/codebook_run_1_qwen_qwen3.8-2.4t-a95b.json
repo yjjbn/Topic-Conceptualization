@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themselves as personally responsible for producing or delivering a concrete benefit, accomplishment, funding award, program designation, policy outcome, or official recognition to constituents, communities, institutions, or the state. This includes announcements of grants, appropriations, federal awards, legislative provisions, completed votes or enacted measures, and successful interventions that are framed as the senator's work or achievement.",
+  "clarification": "Credit-claiming texts typically announce, publicize, or take credit for actions that benefit constituents, localities, or the state, especially when the action is completed or has a clear outcome. Announcements of funding awards, grants, designations, and program expansions are included, even if the funds were awarded by an agency. Claims of credit can be individual or shared with colleagues or the delegation. Texts that announce successful votes or passage of legislation are also included if the text frames the outcome as the senator's contribution or accomplishment. Texts that highlight the senator's role in obtaining or preserving military installations, programs, or projects are included. Mentions of ongoing efforts or promises to fight are not sufficient unless the text also reports a completed outcome attributable to the senator.",
+  "positive_examples": [
+    {
+      "text": "Sens. Barbara A. Mikulski and Benjamin L. Cardin ... announced that the Allegany County Commissioners have been awarded a $294,980 Staffing for Adequate Fire and Emergency Response (SAFER) grant ... Sen. Mikulski is on the Homeland Security Appropriations Subcommittee that funds the AFGP and fights each year to increase its federal funding.",
+      "explanation": "The text announces a federal grant and explicitly connects the funding to the senators' role in providing or fighting for the program. It highlights a concrete monetary benefit delivered to a local community and presents the senators as responsible advocates. This fits credit-claiming because the senators are associated with obtaining or securing a tangible benefit for constituents."
+    },
+    {
+      "text": "Sen. Jim Talent today announced that the Senate has approved his request for $1.5 million dollars for the Health Sciences Research and Education Facility at the University of Missouri-Columbia ... I commend Senator Talent for his support",
+      "explanation": "The senator claims direct responsibility for obtaining a completed policy outcome: Senate approval of funding requested by him for a university facility. The text quotes university officials thanking him, reinforcing the attribution of the benefit to his action. This is a classic earmark/appropriation credit claim."
+    },
+    {
+      "text": "The U.S. Senate has approved legislation by Sen. Robert C. Byrd ... to boost funding for the National Guard Youth ChalleNGe program ... Byrd's provision in the Fiscal Year 2006 Defense Authorization Bill would phase in an increase",
+      "explanation": "The senator announces a completed legislative outcome: Senate passage of a bill containing his provision to increase funding for a program. The text explicitly attributes the legislation and funding boost to him and describes his historical role in creating the program. This is credit-claiming because it presents a concrete accomplishment benefiting constituents."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as credit-claiming when the senator is only expressing an opinion, taking a policy position, criticizing opponents, commemorating people or events, announcing meetings or hearings, introducing or co-sponsoring legislation without a completed outcome, making promises, or describing general advocacy. Merely attending events, issuing condolences, supporting or opposing proposals, and calling on others to act are not credit-claiming. Grant announcements that do not involve the senator's claimed role may be excluded if the text is purely informational. If the only reference to the senator is procedural or institutional, without an outcome attributed to the senator, classify as 0.",
+  "negative_examples": [
+    {
+      "text": "Senator Allard to Hold Greeley Town Meeting on Wednesday January 12 ... U.S. Senator will hold a town meeting in Greeley ... This is a chance for citizens to visit one on one with me about the issues that are important to them",
+      "explanation": "The senator is announcing a town meeting and inviting constituents to attend. There is no claim of delivering a benefit, securing funding, passing legislation, or achieving an outcome. This is a constituent-service or event announcement, not credit-claiming."
+    },
+    {
+      "text": "Sen. Tom Carper, D-Del., issued the following statement on the constitutional amendment to ban gay marriage, which was rejected today by the U.S. Senate ... I am not convinced that we need to take the extraordinary step of amending the Constitution to define marriage.",
+      "explanation": "The senator is issuing a statement about the defeat of a constitutional amendment and explaining his constitutional and federalism rationale. Although he describes a prior action as governor, the text is a policy position on a Senate vote, not a claim of delivering a concrete benefit or accomplishment."
+    },
+    {
+      "text": "Senator Kennedy ... issued the following statement ... I commend the President for his call for comprehensive immigration reform ... There is no excuse for inaction we must get comprehensive immigration reform done this year",
+      "explanation": "The senator is criticizing the administration and urging action on immigration reform. The text contains advocacy and condemnation of raids but no completed outcome, award, or accomplishment attributed to the senator."
+    }
+  ]
+}

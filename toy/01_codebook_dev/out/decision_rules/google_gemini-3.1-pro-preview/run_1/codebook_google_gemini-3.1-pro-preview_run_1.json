@@ -1,0 +1,53 @@
+{
+  "definition": "A text is classified as 'credit-claiming' if the senator claims personal responsibility for or announces the delivery of a tangible government benefit, such as federal funding, grants, projects, or the successful passage of legislation, that is beneficial to their constituents, their state, or a specific group.",
+  "decision_rules": [
+    {
+      "rule_id": "1",
+      "rule": "Securing Funding or Grants: The senator announces the awarding of a federal grant, loan, or funding allocation to a local entity within their state or district.",
+      "positive_example": {
+        "text": "Senator X today announced that the Department of Transportation has awarded a $1 million grant to City Y to improve local highways. 'I am proud to have secured this funding for our local first responders,' Senator X said.",
+        "explanation": "The senator acts as the messenger for federal money flowing into their state and claims a role in securing it, a classic form of credit-claiming."
+      },
+      "negative_example": {
+        "text": "Senator X today announced that communities in the state are now eligible to apply for a new round of federal highway grants.",
+        "explanation": "The senator is merely announcing a program's availability or eligibility, not an actual award of funds to a specific entity."
+      }
+    },
+    {
+      "rule_id": "2",
+      "rule": "Legislative Achievements: The senator claims responsibility for authoring, sponsoring, or passing legislation or amendments that have successfully passed a committee or the full chamber, or explicitly highlights their past legislative successes.",
+      "positive_example": {
+        "text": "Senator X praised the passage of the Farm Bill today, which includes an amendment she authored to increase subsidies for local dairy farmers.",
+        "explanation": "The senator explicitly claims credit for a legislative outcome that has been achieved (passage of a bill with her amendment)."
+      },
+      "negative_example": {
+        "text": "Senator X today introduced the Farm Relief Act to increase subsidies for local dairy farmers.",
+        "explanation": "Introducing a bill is position-taking, not credit-claiming, because the legislative outcome has not yet been achieved."
+      }
+    },
+    {
+      "rule_id": "3",
+      "rule": "Agency Action or Intervention: The senator highlights their direct intervention (e.g., a letter, meeting, or request) in securing a favorable decision, action, or policy change from a federal agency or executive branch official.",
+      "positive_example": {
+        "text": "Following a direct request from Senator X, the Department of Agriculture announced it will purchase surplus potatoes to assist local farmers.",
+        "explanation": "The senator claims their action directly caused the agency's favorable decision, delivering a benefit."
+      },
+      "negative_example": {
+        "text": "Senator X sent a letter to the Secretary of Agriculture today urging the Department to purchase surplus potatoes.",
+        "explanation": "The senator is advocating for an action, but the favorable outcome has not yet occurred."
+      }
+    },
+    {
+      "rule_id": "4",
+      "rule": "Securing Nominations or Appointments: The senator claims credit for the successful appointment, nomination, or confirmation of a specific individual to a federal position or service academy.",
+      "positive_example": {
+        "text": "Senator X announced today that his nominee, John Doe, has been accepted to the U.S. Naval Academy.",
+        "explanation": "The senator is taking credit for a specific individual's successful appointment resulting from their nomination."
+      },
+      "negative_example": {
+        "text": "Senator X voted to confirm Jane Doe as the new Secretary of Defense.",
+        "explanation": "Voting for a nominee without claiming a role in their initial selection or nomination is not considered credit-claiming."
+      }
+    }
+  ]
+}

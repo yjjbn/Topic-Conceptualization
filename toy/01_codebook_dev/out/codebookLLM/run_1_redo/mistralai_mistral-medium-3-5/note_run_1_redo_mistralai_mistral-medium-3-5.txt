@@ -1,0 +1,58 @@
+
+
+Parsed arguments (including defaults):
+{
+  "model": "mistralai/mistral-medium-3-5",
+  "session_id": "mistral",
+  "nametag": "run_1_redo",
+  "note": "",
+  "data_path": "data\\grimmer_codebookdev_100.csv",
+  "prompt_path": "prompts\\prompt_codebookLLM_grimmer.txt",
+  "codebook": "codebook_LLM",
+  "test_rows": null,
+  "out_folder": "out\\codebookLLM",
+  "id_column": "document_id",
+  "text_column": "text",
+  "max_output_tokens": 50000
+}
+
+Generation ID: gen-1789066953-peRHLAehLjAO97EtvZz0
+Cost (OpenRouter credits): 0.1028595
+Input tokens: 55413
+Output tokens: 2632
+Cached input tokens: 55336
+Cache write tokens: 0
+API key (masked): ...7547
+
+
+System instructions:
+You will receive a set of press releases from US senators.
+
+Classify each text according to whether the senator is "credit-claiming."
+
+Use only one of these labels:
+
+"1": The senator is credit-claiming.
+"0": The senator is not credit-claiming.
+
+The documents will be provided as JSON objects with an ID and text:
+
+[
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
+  ...
+]
+
+After you have classified all the texts, write a codebook that documents how you conceptualized "credit-claiming" when making your classifications.
+
+Your codebook should contain:
+
+1. DEFINITION: Your definition of "credit-claiming."
+2. CLARIFICATION: Additional explanation, such as inclusion criteria, that helps clarify when to classify a text as "credit-claiming."
+3. POSITIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your clarification, up to 3 example texts that illustrate distinctive cases of "credit-claiming."
+4. POSITIVE EXAMPLE EXPLANATION: For each positive example, an explanation of why the positive example counts as "credit-claiming."
+5. NEGATIVE CLARIFICATION: Additional explanation, such as exclusion criteria, that helps clarify when NOT to classify a text as "credit-claiming."
+6. NEGATIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your negative clarification, up to 3 example texts that illustrate distinctive negative cases of "credit-claiming."
+7. NEGATIVE EXAMPLE EXPLANATION: For each negative example, an explanation of why the negative example does not count as "credit-claiming."
+
+Return classifications as a JSON object mapping each input document_id to its label (0 or 1), and the codebook as specified in the JSON schema. There are 100 documents in this request. 

@@ -1,0 +1,985 @@
+{
+  "id": "batch-1788988204-W0cigwhyT0QDrTmGTk8d",
+  "object": "batch",
+  "endpoint": "/v1/chat/completions",
+  "model": "qwen/qwen3.8-2.4t-a95b-20260812",
+  "completion_window": "24h",
+  "status": "completed",
+  "created_at": 1788988204,
+  "finalized_at": 1788988593,
+  "request_counts": {
+    "total": 20,
+    "completed": 20,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 171786,
+    "completion_tokens": 25049,
+    "total_tokens": 196835,
+    "cost": 0.261578,
+    "is_byok": false
+  },
+  "error": null,
+  "results": [
+    {
+      "id": "request-00000001",
+      "custom_id": "request-00000001",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-379166a3784bc55a2f1e",
+          "created": 1788988215,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"2318\": {\n    \"codebook_rule\": [\"1\", \"4\"],\n    \"document_id\": \"2318\",\n    \"explanation\": \"The release contains explicit claims that Senator Durbin personally helped produce concrete governmental outcomes for the South Suburban Airport project: he states, 'I helped secure an expedited environmental review from the federal government and facilitated the return of the project to the national priority list for federal funding.' These are concrete outcomes (expedited review, restored priority-list status) attributed to his intervention, even though the release’s main purpose is to urge state action. That satisfies Rule 1 and Rule 4. The rest of the letter describes future intentions and oversight/urging, but the self-attributed secured actions are enough to classify the document as credit-claiming.\",\n    \"label\": \"1\"\n  },\n  \"3482\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"3482\",\n    \"explanation\": \"The release announces a specific concrete benefit: a $294,980 SAFER grant awarded to Allegany County Commissioners through a federal program. Senators Mikulski and Cardin announce the award, and Mikulski is described as being on the appropriations subcommittee that funds the program and fighting each year to increase funding. While the release does not use strong language saying she secured this exact grant, the structure is an announcement of federal funding for the state associated with the senators, and it presents them as responsible advocates for the funding stream. Under Rule 1, this strongly implies personal/official responsibility for obtaining a concrete resource outcome. The criticism of the President’s budget does not change the credit-claiming nature of the grant announcement.\",\n    \"label\": \"1\"\n  },\n  \"3577\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3577\",\n    \"explanation\": \"The text is a statement for a hearing about the National Flood Insurance Program and FEMA performance. It is primarily oversight, concern, and criticism of implementation failures. Although Senator Sarbanes says he 'worked with Senator Bunning and others on the Committee to formulate and move' reforms through, the passage is used to highlight that FEMA has not implemented those reforms; it does not present a concrete benefit, successful policy outcome, or secured result attributable to the senator. It does not meet Rules 1, 2, 4, or 5 because there is no completed accomplishment or claimed direct benefit. It also does not meet Rule 3 because no award or honor is involved.\",\n    \"label\": \"0\"\n  },\n  \"4585\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"4585\",\n    \"explanation\": \"Senator Schumer announces that two Westchester County fire departments will receive specific federal grants ($40,755 and $93,249) under the Assistance to Firefighters Grant program. The release presents the grants as a concrete benefit to local first responders and associates Schumer with pushing for additional funding for the program. The announcement of funds for the state and the framing that he has pushed for the program satisfy Rule 1 as credit-claiming. The release also describes the program and funding levels but does not need Rule 2 because the key claim is a concrete funding outcome for constituents.\",\n    \"label\": \"1\"\n  },\n  \"4771\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"4771\",\n    \"explanation\": \"The release states that in 2005 Senator Clinton 'played a key role along with SMAC in preventing the removal of four C-130 Aircraft' from Stratton Air National Guard base as part of BRAC recommendations. This is a claim of blocking/preventing an undesirable outcome and producing a concrete benefit for a state institution, satisfying Rule 1. Although the release also describes a current meeting and future commitment, the explicit past claim of preventing removal is a claimed success and makes the document credit-claiming.\",\n    \"label\": \"1\"\n  },\n  \"57\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"57\",\n    \"explanation\": \"The release describes Senator Kennedy introducing legislation, explaining its provisions, and urging Senate action. It is legislative advocacy and a policy position statement, not a claim that a law was passed, a provision was included, or a concrete outcome was secured. The senator is not presented as personally responsible for an achieved benefit. Therefore none of the credit-claiming rules apply.\",\n    \"label\": \"0\"\n  },\n  \"597\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"597\",\n    \"explanation\": \"The release describes Senator Lugar presenting a health and fitness award to community organizations and individuals. It does not present the senator as receiving an award or external recognition, nor does it claim he produced a concrete policy outcome or secured a benefit. It is a commemorative/constituent event announcement. Rule 3 does not apply because the award is given by the senator, not received by him. Other rules do not apply because no legislative or governmental accomplishment is claimed.\",\n    \"label\": \"0\"\n  },\n  \"656\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"656\",\n    \"explanation\": \"The statement by Senator Kerry discusses the demise of the Dubai Ports deal and criticizes the Bush Administration’s handling of port security. It does not claim that Kerry personally caused the deal’s demise or secured a concrete outcome. It is a policy/criticism statement. Therefore no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"89\": {\n    \"codebook_rule\": [\"2\", \"5\"],\n    \"document_id\": \"89\",\n    \"explanation\": \"The release announces that Bismarck State College was designated as a national center and explicitly says 'Dorgan authored legislation, which was signed into law, that created the National Center designation.' This directly connects a named designation/law to the senator as author and presents it as an accomplishment. Rule 5 applies because the law/designation is explicitly connected to the senator as author. Rule 2 applies because it describes a legislative accomplishment achieved and secured by the senator.\",\n    \"label\": \"1\"\n  },\n  \"918\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"918\",\n    \"explanation\": \"The release announces a town meeting and lists Senator Allard’s committee assignments. It describes constituent outreach and future meeting availability, not a concrete outcome, legislative accomplishment, award received, or intervention producing a benefit. No credit-claiming rule applies.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 9039,
+            "completion_tokens": 1485,
+            "total_tokens": 10524,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000002",
+      "custom_id": "request-00000002",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-f82a6378c83deac2f459",
+          "created": 1788988227,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1021\": {\n    \"codebook_rule\": [\"1\", \"2\"],\n    \"document_id\": \"1021\",\n    \"explanation\": \"The release announces that the Senate Appropriations Committee approved funding for Pacific Coast Salmon Recovery Fund and OSU oceanic observation research, and presents Sens. Wyden and Smith as gaining that funding approval. This attributes a concrete legislative/appropriations outcome to the senators, satisfying Rule 1 and Rule 2.\",\n    \"label\": \"1\"\n  },\n  \"1957\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"1957\",\n    \"explanation\": \"The release announces that Bradley International Airport will receive $2,250,000 in federal grants and frames Sens. Dodd and Lieberman as announcing/securing the funding. This presents the senators as responsible for obtaining a concrete benefit for Connecticut, satisfying Rule 1.\",\n    \"label\": \"1\"\n  },\n  \"240\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"240\",\n    \"explanation\": \"The text is a statement after the Senate confirmation of Michael Chertoff. The senator comments on the nominee's qualifications and expresses support, but does not claim personal responsibility for a concrete outcome or present himself as securing a benefit. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"2807\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2807\",\n    \"explanation\": \"The release describes Sen. Lincoln helping recognize March as Arkansas Women in Agriculture month and praising women in agriculture. It is commemorative and descriptive of her committee role, and does not claim a concrete outcome, funding, legislative success, award, or intervention-produced benefit. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"3659\": {\n    \"codebook_rule\": [\"4\"],\n    \"document_id\": \"3659\",\n    \"explanation\": \"The release welcomes the NIOSH Advisory Board recommendation to approve a Special Exposure Cohort for Linde Ceramics nuclear workers and states that Sen. Clinton 'will continue to press' for compensation. The text presents her advocacy as connected to the favorable board recommendation and the prospect of compensation for workers, which satisfies Rule 4 as claiming intervention/advocacy produced or secured a concrete benefit or remedy. The outcome is not final because the HHS Secretary must still adopt the recommendation, which creates some ambiguity, but the release still credits the senator with advancing a concrete benefit for constituents.\",\n    \"label\": \"1\"\n  },\n  \"3687\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"3687\",\n    \"explanation\": \"The release announces that New Mexico State University has been awarded $599,691 through USDA and quotes Sen. Bingaman describing the funding. It presents the senator as announcing/securing a concrete funding benefit for a state institution, satisfying Rule 1.\",\n    \"label\": \"1\"\n  },\n  \"4208\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4208\",\n    \"explanation\": \"The release announces that Sens. Dorgan and Lott will introduce legislation to halt FCC action on media ownership rules. It describes future legislative activity and policy concerns, but does not claim a completed legislative accomplishment, secured funding, or other concrete outcome. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"453\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"453\",\n    \"explanation\": \"The release describes Sen. Nelson voting against two Iraq withdrawal resolutions and explains his support for measurable goals rather than arbitrary dates. It is a policy position and vote explanation, not a claim of producing, securing, or receiving recognition for a concrete benefit or achievement. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"50\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"50\",\n    \"explanation\": \"The text is a statement by Sen. Reid criticizing the Bush Administration on global warming. It expresses policy criticism and hope for future action, but does not claim a concrete outcome, legislative success, funding, award, or intervention-produced benefit. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"967\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"967\",\n    \"explanation\": \"The release announces that HHS will release $3,305,732 for Head Start programs in Talladega, Clay, Randolph, and Coosa, and presents Sen. Shelby as announcing the funds. This presents the senator as responsible for or associated with securing a concrete funding benefit for the state, satisfying Rule 1.\",\n    \"label\": \"1\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6152,
+            "completion_tokens": 1126,
+            "total_tokens": 7278,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000003",
+      "custom_id": "request-00000003",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-9207d025d369cf816511",
+          "created": 1788988235,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1086\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"4\",\n      \"5\"\n    ],\n    \"document_id\": \"1086\",\n    \"explanation\": \"The headline and text state that “SEN. DAYTON, COLLEAGUES PASS MODEST LIHEAP FUNDING PACKAGE” and that Dayton “applauded the Senate's passage of an additional $1 billion” for LIHEAP. The release presents the senator as involved in passing a concrete funding outcome. Although the codebook’s negative example for rule 1 uses similar language and emphasizes disappointment and unmet need, the supplied document goes further by explicitly crediting Dayton and colleagues with passage of the funding package in its headline, which strongly implies personal responsibility for the legislative result. Because of the ambiguity between announcing a Senate passage and claiming personal responsibility, I treated the headline attribution to Dayton as sufficient for credit-claiming under rules 1, 2, 4, and 5.\",\n    \"label\": \"1\"\n  },\n  \"1155\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"5\"\n    ],\n    \"document_id\": \"1155\",\n    \"explanation\": \"The text discusses progress on asbestos trust fund legislation and specifically says that “With the unanimous adoption of the Leahy Hatch medical criteria amendment this committee reached consensus...” This links a named amendment adopted by the committee to Senator Leahy, satisfying rules 2 and 5. More broadly, the text presents Leahy as having chaired the first hearing and helped build consensus around parts of the legislation, which implies personal responsibility for a concrete committee-level outcome, so rule 1 also applies. The overall purpose is partly forward-looking, but the adopted amendment is a completed legislative step attributed to him.\",\n    \"label\": \"1\"\n  },\n  \"1313\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1313\",\n    \"explanation\": \"Senator Lieberman expresses frustration that the House did not take up a D.C. voting rights bill and urges future action. He praises other actors and describes support for the bill, but the text does not state that he secured passage, obtained a concrete benefit, received an award, or caused a completed outcome. It describes legislative activity and disappointment without a claimed success, so it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"1827\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"5\"\n    ],\n    \"document_id\": \"1827\",\n    \"explanation\": \"The release says provisions of Senator Lugar’s Good Samaritan Hunger Relief Act “will be included” in the Grassley-Baucus tax relief package. This connects a named provision to Lugar as its author and announces its inclusion in a tax package, satisfying rules 2 and 5. It also presents Lugar as responsible for securing a concrete policy provision in a broader legislative package, so rule 1 applies. The inclusion is not yet enactment, but the codebook includes provisions included in bills or packages as legislative accomplishments.\",\n    \"label\": \"1\"\n  },\n  \"2003\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"4\"\n    ],\n    \"document_id\": \"2003\",\n    \"explanation\": \"Senator Clinton announces that the Air Force will place a new Predator squadron in New York and frames it as good news for New York. The release does not explicitly say she secured the squadron, but it presents her as announcing a concrete benefit for the state and implies her involvement in obtaining that mission. This satisfies rules 1 and 4 as a claimed concrete benefit or decision for constituents. There is some ambiguity because the text does not directly state that Clinton caused the Air Force decision, but the announcement of a specific military/economic benefit for New York is credit-claiming.\",\n    \"label\": \"1\"\n  },\n  \"3201\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"4\"\n    ],\n    \"document_id\": \"3201\",\n    \"explanation\": \"Senator Talent announces USDA disaster designation for Missouri and explicitly states that he “worked with USDA officials to expedite the approval of the Governor's request.” This directly claims that his intervention helped secure a concrete benefit and decision for Missouri farmers and ranchers, satisfying rules 1 and 4. The release also notes prior federal funds sent to Missouri, but the main credit-claim is the expedited disaster designation.\",\n    \"label\": \"1\"\n  },\n  \"3914\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3914\",\n    \"explanation\": \"Senator Frist comments on job growth and defends Republican economic policies, criticizing Democrats. The text is a policy and partisan statement, not a claim that Frist personally produced or secured a concrete benefit, legislative outcome, or recognition. No codebook rule applies.\",\n    \"label\": \"0\"\n  },\n  \"3950\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3950\",\n    \"explanation\": \"The text discusses diabetes and a diabetes facility and describes Harkin as “the Senate leader in federal efforts” and as having recently authored comprehensive legislation. However, it does not identify a concrete outcome secured by Harkin, nor does it present the facility as resulting from his action. The codebook’s negative example for rule 4 closely matches this text, treating such reputational or aspirational statements as not credit-claiming. Therefore, no rule applies.\",\n    \"label\": \"0\"\n  },\n  \"4124\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4124\",\n    \"explanation\": \"Senator Kennedy commends the President for calling for comprehensive immigration reform and urges Congress to act. The statement expresses a policy position, criticizes recent raids, and calls for future action. It does not claim that Kennedy secured a concrete outcome, passed legislation, obtained funds, or received recognition. Thus it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"721\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"721\",\n    \"explanation\": \"Senator Reid discusses Iraq elections and says more work remains, while criticizing the Administration and calling for a strategy. This is a policy statement and does not claim that Reid authored or secured a law, obtained a benefit, received an award, or produced a concrete outcome. No codebook rule applies.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 6714,
+            "completion_tokens": 1477,
+            "total_tokens": 8191,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000004",
+      "custom_id": "request-00000004",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-67edfdddbac7bc9a01af",
+          "created": 1788988246,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"1060\": {\"codebook_rule\": [\"1\", \"2\", \"5\"], \"document_id\": \"1060\", \"explanation\": \"The release credits Senator Nelson with helping pass the SCHIP reauthorization and explicitly connects an included small business health care amendment to him as co-sponsor. It presents the amendment's inclusion as a concrete legislative accomplishment, satisfying Rules 1, 2, and 5.\", \"label\": \"1\"}, \"133\": {\"codebook_rule\": [], \"document_id\": \"133\", \"explanation\": \"This is a statement criticizing the Dubai Ports deal. The senator expresses opposition and concerns about policy, but does not claim to have produced, secured, or been responsible for any concrete outcome, benefit, legislation, or recognition.\", \"label\": \"0\"}, \"214\": {\"codebook_rule\": [], \"document_id\": \"214\", \"explanation\": \"The text commemorates Pearl Harbor and honors fallen Americans. It does not claim any concrete outcome, legislative achievement, intervention success, award, or credit for the senator.\", \"label\": \"0\"}, \"2143\": {\"codebook_rule\": [], \"document_id\": \"2143\", \"explanation\": \"This is a condolence and commemorative statement on the passing of Karen Marchioro. It does not describe a concrete outcome secured by the senator or present the senator as personally responsible for any achievement.\", \"label\": \"0\"}, \"299\": {\"codebook_rule\": [\"3\"], \"document_id\": \"299\", \"explanation\": \"The text announces that Senator Alexander was named a 'Hero of the Taxpayer' by Americans for Tax Reform based on key votes. This is an award or honor received by the senator and tied to official performance, so Rule 3 applies.\", \"label\": \"1\"}, \"3047\": {\"codebook_rule\": [\"1\", \"4\"], \"document_id\": \"3047\", \"explanation\": \"The release describes USDA's decision to purchase potatoes after the Idaho Congressional Delegation wrote to the Secretary requesting this action. It presents the delegation's advocacy as leading to a concrete benefit for potato growers, satisfying Rules 1 and 4. The senator is part of the delegation and is implicitly credited with prompting the purchase.\", \"label\": \"1\"}, \"4344\": {\"codebook_rule\": [], \"document_id\": \"4344\", \"explanation\": \"The senator expresses support for a Patriot Act compromise and describes provisions he favors. However, he does not claim to have authored, secured, or personally brought about the compromise. The text is a statement of position and support, not credit-claiming for a concrete outcome.\", \"label\": \"0\"}, \"490\": {\"codebook_rule\": [], \"document_id\": \"490\", \"explanation\": \"This is a foreign policy statement criticizing the administration's approach to Iran and Syria. It does not attribute any concrete outcome to the senator or present him as personally responsible for a benefit, legislative success, or award.\", \"label\": \"0\"}, \"630\": {\"codebook_rule\": [], \"document_id\": \"630\", \"explanation\": \"The senator comments on the President's budget and says certain defense programs are important to Connecticut. This is a policy statement about budget priorities, not a claim that he secured funding, passed legislation, or produced a concrete outcome.\", \"label\": \"0\"}, \"773\": {\"codebook_rule\": [\"2\", \"5\"], \"document_id\": \"773\", \"explanation\": \"The release announces that a resolution honoring Senator Thomas Eagleton passed the Senate and notes it was introduced by Senator McCaskill and others. It presents the senator as connected to a successful legislative action, satisfying Rules 2 and 5. Although commemorative in subject, the senator's own introduced resolution passing is framed as a legislative accomplishment.\", \"label\": \"1\"}}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 5433,
+            "completion_tokens": 828,
+            "total_tokens": 6261,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000005",
+      "custom_id": "request-00000005",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-60f80ffa27b289b56aad",
+          "created": 1788988255,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1747\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"5\"\n    ],\n    \"document_id\": \"1747\",\n    \"explanation\": \"The text presents Sen. Robert C. Byrd as responsible for a legislative outcome: the Senate approved legislation by him to boost funding for the National Guard Youth ChalleNGe program. It also explicitly connects a named provision in the Fiscal Year 2006 Defense Authorization Bill to Byrd, says the bill passed the Senate 98-0, and notes he helped create the program in 1991. These claims fit credit-claiming under the rules about concrete outcomes, legislative accomplishments, and named legislation tied to the senator. There is no ambiguity because the outcome is described as achieved in the Senate and directly linked to Byrd.\",\n    \"label\": \"1\"\n  },\n  \"1862\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"4\"\n    ],\n    \"document_id\": \"1862\",\n    \"explanation\": \"The text says Montana Senators Max Baucus and Jon Tester have delivered on their promise to secure federal funding for Butte and announces that $12.5 million for military projects has been included in the Defense Appropriations Bill. It frames the senators as responsible for obtaining the dollars through phrases like proud to go to bat for these dollars and make sure these dollars get delivered. It also includes an external statement thanking the senators for support and leadership. This is a concrete funding outcome attributed to the senators, satisfying credit-claiming rules. There is no ambiguity because the release explicitly attributes the funding achievement to them.\",\n    \"label\": \"1\"\n  },\n  \"2627\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"4\"\n    ],\n    \"document_id\": \"2627\",\n    \"explanation\": \"The text announces that the Senate approved Sen. Jim Talent's request for $1.5 million for the Health Sciences Research and Education Facility at the University of Missouri-Columbia as part of an appropriations bill. It repeatedly credits Talent with securing the money, including statements commending him for support and thanking him for securing the money we need to begin planning. This is a concrete funding outcome directly attributed to the senator, satisfying credit-claiming rules. There is no ambiguity because the release explicitly states the outcome was approved and secured by Talent.\",\n    \"label\": \"1\"\n  },\n  \"2675\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2675\",\n    \"explanation\": \"The text describes Sens. Chris Dodd and Joe Lieberman, along with Rep. Rob Simmons, meeting with BRAC commissioners to argue against closing Sub Base New London. It emphasizes that this is only one more step in a marathon and that their work is not done. There is no claimed concrete outcome, secured benefit, policy change, or successful intervention. It describes advocacy and meetings without a claimed result, so it is not credit-claiming. There is no ambiguity because the text explicitly presents the process as ongoing.\",\n    \"label\": \"0\"\n  },\n  \"3477\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3477\",\n    \"explanation\": \"The text reports that the Senate unanimously confirmed Carol E. Dinkins to serve as Chairman of the Privacy and Civil Liberties Oversight Board and notes Sen. John Cornyn chaired the nominations hearing. It contains policy statements about civil liberties and describes Cornyn's role in the confirmation process, but it does not present him as personally responsible for a concrete outcome, nor does it claim he secured a benefit, authored a law, or received an award. The reference to Cornyn chairing the nominations hearing is procedural oversight or committee activity without a claimed credit outcome. There is no ambiguity because no rule directly applies to the senator's own achievement.\",\n    \"label\": \"0\"\n  },\n  \"3501\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3501\",\n    \"explanation\": \"The text is a statement by Sen. Jon Tester expressing disappointment that the Air Force is targeting elimination of Minuteman III missiles from Malmstrom Air Force Base. It announces future intentions to fight for Malmstrom and work toward getting another mission at the base, but it does not claim a concrete outcome, secured benefit, legislative accomplishment, or successful intervention. Therefore it is not credit-claiming. There is no ambiguity because the text only describes a policy position and future intentions.\",\n    \"label\": \"0\"\n  },\n  \"3534\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3534\",\n    \"explanation\": \"The text says Sen. Pete Domenici credited President Bush for taking decisive steps to address gasoline prices and discusses energy policy priorities. It does not present Domenici as personally responsible for a concrete outcome, secured funding, legislative accomplishment, award, or successful intervention. Instead, it praises the President and calls for congressional action. There is no ambiguity because the senator is not claiming credit for an outcome.\",\n    \"label\": \"0\"\n  },\n  \"3560\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3560\",\n    \"explanation\": \"The text announces over $877,000 in HUD grants for Arkansas public housing agencies and includes statements from Sens. Blanche Lincoln and Mark Pryor and House members. However, the grants are presented as awarded through HUD programs, and the legislators commend the public housing agencies that sought out these federal funds. The text does not state or strongly imply that the senators personally secured or produced the grants. It describes federal funding recipients and policy support without attributing the outcome to the senators' actions. There is no ambiguity because no direct credit is claimed by the senators for obtaining the funds.\",\n    \"label\": \"0\"\n  },\n  \"3744\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3744\",\n    \"explanation\": \"The text announces that the CDC plans to establish a field station in Hawaii to strengthen Asia Pacific disease detection and response. It says Sen. Daniel K. Inouye was informed by the CDC director and describes the planned station as beneficial. However, it does not state that Inouye secured, produced, or was responsible for the outcome. The funding and location still need to be worked out, and the release presents the decision as CDC-led. There is no ambiguity because the text does not directly connect the outcome to Inouye's intervention or achievement.\",\n    \"label\": \"0\"\n  },\n  \"871\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"871\",\n    \"explanation\": \"The text describes Sen. Ken Salazar questioning Secretary of the Interior Gale Norton about the Administration's budget and proposed cuts to rural programs. It presents oversight and criticism of the Administration but does not claim a concrete outcome, secured benefit, legislative accomplishment, or successful intervention. Therefore it is not credit-claiming. There is no ambiguity because the text focuses on questioning and policy concerns rather than a claimed result.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7708,
+            "completion_tokens": 1601,
+            "total_tokens": 9309,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000006",
+      "custom_id": "request-00000006",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-c9117ada96c5c403dce4",
+          "created": 1788988265,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1118\": {\n    \"codebook_rule\": [\"2\"],\n    \"document_id\": \"1118\",\n    \"explanation\": \"The release is a statement about the Senate's defeat of a constitutional amendment, a completed legislative outcome. Carper presents his position and highlights his prior executive action as governor (signing legislation defining marriage), but the main event is the Senate vote. The document describes a legislative outcome (amendment rejected) without claiming he personally secured a benefit, and the focus is on expressing a policy position after a vote. Since the text does not present Carper as personally responsible for producing the outcome, and is primarily a policy statement, it is not credit-claiming. However, the definition of rule 2 includes \\\"votes won on the senator's initiative.\\\" The amendment was rejected, not won on Carper's initiative; he is merely responding. Therefore, no rule applies.\",\n    \"label\": \"0\"\n  },\n  \"1177\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"1177\",\n    \"explanation\": \"The senators call on the Air Force to reimburse subcontractors, announce they will continue to mount pressure, and are working on a legislative fix. The text describes advocacy and future intentions, but does not claim that their intervention already produced or secured a concrete benefit, decision, protection, or remedy. It is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"1230\": {\n    \"codebook_rule\": [\"2\", \"4\", \"5\"],\n    \"document_id\": \"1230\",\n    \"explanation\": \"The text announces publication of GMP regulations and states that Hatch and Harkin were principal authors of DSHEA, which gave FDA authority to write GMPs, and that they have been pushing FDA for more than a decade. It presents them as responsible for the regulatory outcome by connecting their past legislative authorship and ongoing pressure to the published regulations. This satisfies rules 2, 4, and 5.\",\n    \"label\": \"1\"\n  },\n  \"1320\": {\n    \"codebook_rule\": [\"1\", \"2\"],\n    \"document_id\": \"1320\",\n    \"explanation\": \"The release announces that Congress passed a conference report containing $3 billion for drought and wildfire disaster relief and quotes Hutchison saying she was pleased to help secure this funding. This presents her as personally responsible for securing a concrete funding outcome included in passed legislation, satisfying rules 1 and 2.\",\n    \"label\": \"1\"\n  },\n  \"2026\": {\n    \"codebook_rule\": [\"2\", \"5\"],\n    \"document_id\": \"2026\",\n    \"explanation\": \"The Senate Judiciary Committee passed the Leahy-Specter data privacy and security bill, introduced by Leahy and Specter. The text describes committee passage as a legislative achievement and explicitly connects the named bill to Leahy as author/introducer, satisfying rules 2 and 5.\",\n    \"label\": \"1\"\n  },\n  \"3271\": {\n    \"codebook_rule\": [\"1\", \"2\", \"5\"],\n    \"document_id\": \"3271\",\n    \"explanation\": \"The text reports unanimous Senate passage of S. 2856, authored by Senator Crapo, and presents him as the Senate leader prompting reforms. It connects the named law to the senator as author and describes passage as an achievement, satisfying rules 1, 2, and 5.\",\n    \"label\": \"1\"\n  },\n  \"3729\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"3729\",\n    \"explanation\": \"The release states President Bush named Matt Dummermuth interim U.S. Attorney and that Grassley expects nomination. It notes Dummermuth was one of three names Grassley nominated. This is an announcement of an executive appointment, but the senator is not presented as personally responsible for producing the appointment; he only submitted names. No concrete outcome is claimed as secured by the senator, so it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"3845\": {\n    \"codebook_rule\": [\"2\"],\n    \"document_id\": \"3845\",\n    \"explanation\": \"Bayh responds to OPEC's decision, describes himself as lead sponsor of S.2025, and urges Congress to pass his plan. The text announces future intentions and legislative sponsorship, not a completed legislative accomplishment or concrete outcome secured by the senator. Rule 2 does not apply because no law is passed or provision secured. It is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4531\": {\n    \"codebook_rule\": [\"2\"],\n    \"document_id\": \"4531\",\n    \"explanation\": \"The release announces introduction of legislation to extend child care eligibility for children of fallen soldiers. It describes future legislative action, not passage or a secured outcome. The additional sentences mention prior co-sponsored or supported legislation, but do not claim those measures passed or were secured. Thus, it is not credit-claiming under rule 2.\",\n    \"label\": \"0\"\n  },\n  \"817\": {\n    \"codebook_rule\": [\"2\"],\n    \"document_id\": \"817\",\n    \"explanation\": \"The text describes a hearing on legislation sponsored by Collins and Feinstein, and Collins' testimony in support. It notes the legislation has been endorsed by organizations, but does not describe passage, adoption, or a concrete outcome. Endorsement of legislation is not an award or honor to the senator, and rule 2 requires an achieved or secured legislative accomplishment. It is not credit-claiming.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 9047,
+            "completion_tokens": 1293,
+            "total_tokens": 10340,
+            "prompt_tokens_details": {
+              "cached_tokens": 6336,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000007",
+      "custom_id": "request-00000007",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-e9f7d88a02bc75036a43",
+          "created": 1788988273,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1257\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"5\"\n    ],\n    \"document_id\": \"1257\",\n    \"explanation\": \"The release announces a specific $105,550 grant to the Parma Fire Department and explicitly links that benefit to DeWine's legislation. It states that DeWine 'wrote and passed the FIRE Act,' 'helped secure approximately $650 million for the FIRE Act,' and 'passed an updated version of the bill.' This presents him as personally responsible for producing a concrete benefit and for a legislative accomplishment, satisfying Rules 1, 2, and 5.\",\n    \"label\": \"1\"\n  },\n  \"1749\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1749\",\n    \"explanation\": \"The text states that Hutchison signed on as an original cosponsor of a bill and expresses support for it. It describes the legislation and future intentions, but it does not claim that the bill passed, was included in a larger bill, or otherwise achieved a concrete outcome. Mere cosponsorship or legislative activity without a secured result is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"2869\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2869\",\n    \"explanation\": \"The senator explains why he voted for amendments and expresses policy positions on Iraq. The text does not claim that the amendments passed or that he secured a concrete outcome. It describes legislative activity and policy advocacy, not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4022\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4022\",\n    \"explanation\": \"This is a long policy statement introducing legislation for Medicare for All and criticizing the existing health-care system and administration. It announces future legislative intentions and argues for a policy proposal, but it does not claim that the senator passed, secured, or achieved a concrete benefit or policy outcome. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4122\": {\n    \"codebook_rule\": [\n      \"4\"\n    ],\n    \"document_id\": \"4122\",\n    \"explanation\": \"The release announces a hearing and describes ongoing oversight, but it also explicitly claims concrete results from the subcommittee's oversight: 'Due to the Subcommittee's oversight collections from delinquent Defense contractors skyrocketed by 4,415...' and 'Over the course of the Subcommittee's investigation levies... have jumped 746, raking in an additional $122 million in back taxes.' These statements present the senators' committee work as having produced or secured concrete recoveries of taxpayer funds, satisfying Rule 4. The hearing itself is not enough, but the claimed resulting collections make this credit-claiming.\",\n    \"label\": \"1\"\n  },\n  \"4184\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4184\",\n    \"explanation\": \"The text says Kyl co-sponsored legislation and offered an amendment to add border patrol agents, and it advocates for the amendment. It does not state that the amendment passed, was adopted, or otherwise secured a concrete outcome. It describes legislative activity and future policy goals, not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4207\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4207\",\n    \"explanation\": \"The release describes Cornyn sending a letter to DHS, hosting a roundtable, and urging consideration of a proposal. It also mentions past efforts and an added amendment requiring a report, but it does not claim a concrete secured benefit or successful outcome resulting from those efforts. The text mostly describes meetings, advocacy, and oversight without a claimed result. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4508\": {\n    \"codebook_rule\": [\n      \"4\"\n    ],\n    \"document_id\": \"4508\",\n    \"explanation\": \"The release announces that trailers and mobile homes are being moved to Mississippi for Katrina victims and directly connects this action to Lott's appeal to President Bush: 'The announcement follows the Senator's Monday appeal to President Bush...' This strongly implies that Lott's intervention produced a concrete benefit for constituents, satisfying Rule 4.\",\n    \"label\": \"1\"\n  },\n  \"4774\": {\n    \"codebook_rule\": [\n      \"2\",\n      \"5\"\n    ],\n    \"document_id\": \"4774\",\n    \"explanation\": \"The release states that the Senate unanimously approved an amendment offered by Bayh and Durbin to eliminate the Patriot Penalty. This presents a legislative accomplishment achieved by the senator: an amendment adopted by the Senate. It also connects a named provision to Bayh as its author/sponsor. Therefore Rules 2 and 5 apply. The remaining effort to retain the provision in conference does not negate the claimed success already achieved.\",\n    \"label\": \"1\"\n  },\n  \"805\": {\n    \"codebook_rule\": [\n      \"1\"\n    ],\n    \"document_id\": \"805\",\n    \"explanation\": \"The release announces that DHS will release $3,510 to the Homewood Fire Department and attributes the announcement to Shelby. It presents him as announcing a concrete funding benefit for a local institution. Although the program is competitive and the release does not detail how Shelby secured it, the announcement of a specific grant through the senator satisfies Rule 1 by presenting him as responsible for delivering the benefit.\",\n    \"label\": \"1\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 10298,
+            "completion_tokens": 1294,
+            "total_tokens": 11592,
+            "prompt_tokens_details": {
+              "cached_tokens": 10176,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000008",
+      "custom_id": "request-00000008",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-0928610d598f9351e282",
+          "created": 1788988280,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"1325\": {\"codebook_rule\": [], \"document_id\": \"1325\", \"explanation\": \"The text is a floor statement criticizing the judicial nominations process and Democratic tactics, particularly the use of filibusters against President Bush's nominees. It expresses policy positions and political criticism but does not attribute a concrete outcome, such as passing legislation or securing funding, to Senator Dole. It is not a credit-claim.\", \"label\": \"0\"}, \"1897\": {\"codebook_rule\": [], \"document_id\": \"1897\", \"explanation\": \"The text is a statement from Senator Martinez regarding pending House Resources Committee legislation on oil and gas exploration. He expresses opposition to the current version of the bill and outlines conditions under which he would support it. This text expresses policy positions and future intentions rather than claiming responsibility for a concrete outcome or achievement.\", \"label\": \"0\"}, \"1927\": {\"codebook_rule\": [\"1\", \"2\"], \"document_id\": \"1927\", \"explanation\": \"The text announces that $8.1 million for the Portsmouth Naval Shipyard was included in a spending bill and that this funding was requested by Senator Snowe and Senator Collins. It also states that the bill, which includes $23.816 billion for veteran's projects supported by Snowe, passed the Senate. This fits Rule 1 (obtaining funding) and Rule 2 (claiming passage/inclusion of provisions).\", \"label\": \"1\"}, \"2335\": {\"codebook_rule\": [\"5\"], \"document_id\": \"2335\", \"explanation\": \"The text announces an essay contest to honor fathers. While the announcement itself is not credit-claiming, it mentions that 'One of Senator Bayh's first pieces of legislation in the Senate was the Responsible Fatherhood Act, parts of which were signed into the law by President Bush earlier this year.' This explicit connection of a named law (Responsible Fatherhood Act) to the senator as its author and its passage into law satisfies Rule 5.\", \"label\": \"1\"}, \"3252\": {\"codebook_rule\": [\"2\"], \"document_id\": \"3252\", \"explanation\": \"The text announces that the Senate adopted Senator Nelson's amendment (72-26) to prevent the USDA from allowing Japanese beef imports until reciprocal market access is granted for US beef. This describes an amendment adopted on the senator's initiative, which fits Rule 2.\", \"label\": \"1\"}, \"42\": {\"codebook_rule\": [\"1\", \"2\"], \"document_id\": \"42\", \"explanation\": \"The text announces that Senators Lott and Collins reached an agreement on a plan to strengthen FEMA, which resulted in specific provisions being included in the Collins-Lieberman legislation. It presents the senators as personally responsible for this outcome through their negotiation and agreement. This fits Rule 1 (bringing about a concrete outcome) and Rule 2 (provisions included).\", \"label\": \"1\"}, \"4295\": {\"codebook_rule\": [], \"document_id\": \"4295\", \"explanation\": \"The text announces that Senator Murkowski introduced legislation to change the Medicaid formula. While it mentions past successes (e.g., 'helped win a two-year change'), the primary focus is on the introduction of the new bill and the rationale behind it. According to the codebook's definition and the negative example for Rule 2, introducing a bill is a legislative activity but not a completed or secured outcome. Therefore, this is not classified as credit-claiming.\", \"label\": \"0\"}, \"4677\": {\"codebook_rule\": [], \"document_id\": \"4677\", \"explanation\": \"The text describes Senator Hutchison addressing a subcommittee hearing, posing questions to an Assistant Secretary, and expressing support for a budget request. It describes oversight and participation but does not claim a concrete result or credit for a specific outcome.\", \"label\": \"0\"}, \"714\": {\"codebook_rule\": [\"1\"], \"document_id\": \"714\", \"explanation\": \"The text discusses the work of U.S. Marshals and states, 'I helped secure more than $3 billion in the fiscal year 2006 Homeland Security appropriations bill... as well as funding for 250 additional criminal investigators.' This claim of securing funding for a specific agency fits Rule 1.\", \"label\": \"1\"}, \"794\": {\"codebook_rule\": [\"5\"], \"document_id\": \"794\", \"explanation\": \"The text describes a visit where Senator Bond discussed various topics. It explicitly credits Bond with a legislative accomplishment, stating, 'The new federal highway bill, which Bond co-authored, is providing Missouri with much-needed resources, including $1 billion in new money.' This satisfies Rule 5 by connecting a named law (highway bill) to the senator as an author and describing it as providing concrete benefits.\", \"label\": \"1\"}}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8946,
+            "completion_tokens": 1051,
+            "total_tokens": 9997,
+            "prompt_tokens_details": {
+              "cached_tokens": 8832,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000009",
+      "custom_id": "request-00000009",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-2c80d7acb989f7bd31bc",
+          "created": 1788988286,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1043\": {\n    \"codebook_rule\": [\"1\", \"2\", \"5\"],\n    \"document_id\": \"1043\",\n    \"explanation\": \"The text announces a specific grant for a fire department and ties that outcome to Senator DeWine's legislative work. It says DeWine wrote and passed the FIRE Act, helped secure $650 million for the program, and that the grant is provided through his bill. This presents the senator as personally responsible for securing a concrete benefit and for a legislative accomplishment.\",\n    \"label\": \"1\"\n  },\n  \"1139\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1139\",\n    \"explanation\": \"This is a statement of condolences following Rep. Charlie Norwood's death. Although the senator says he worked with Norwood on healthcare initiatives, the release does not claim a concrete outcome or achievement produced by the senator. It functions as a commemorative and condolence statement, so it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"157\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"157\",\n    \"explanation\": \"The text only indicates that the Small Business Committee held a markup on venture capital and education bills. It does not identify any concrete outcome, nor does it attribute a benefit or achievement to the senator. It is a brief schedule or event reference, not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"1736\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1736\",\n    \"explanation\": \"The senator is requesting an expedited hearing and markup on legislation he cosponsored and urging emergency aid. The release describes legislative activity and future intentions, not a secured or achieved outcome attributable to the senator. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"189\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"189\",\n    \"explanation\": \"This is a hearing statement about allowing cameras in federal courtrooms and broader transparency issues. The senator describes advocacy, cosponsored bills, and policy positions, but does not claim that he secured a concrete outcome or achieved a legislative success. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"2368\": {\n    \"codebook_rule\": [\"4\"],\n    \"document_id\": \"2368\",\n    \"explanation\": \"The release announces expanded veterans' health services and presents Senator Craig as having raised concerns with VA officials, who then responded by expanding services. This frames the expansion as a concrete benefit secured through the senator's intervention or advocacy, satisfying the intervention rule.\",\n    \"label\": \"1\"\n  },\n  \"2382\": {\n    \"codebook_rule\": [\"4\"],\n    \"document_id\": \"2382\",\n    \"explanation\": \"The main release describes introducing legislation, which is not a completed accomplishment. However, it also states that by intervening with the Department of Homeland Security and removing bureaucratic red tape, Senator Landrieu recently ensured that a specific child from Iraq could come to the United States for treatment. This presents her intervention as directly producing a concrete benefit, satisfying the intervention rule. The rest of the text does not by itself establish credit-claiming because the bill is only introduced.\",\n    \"label\": \"1\"\n  },\n  \"3038\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3038\",\n    \"explanation\": \"This is a statement supporting a nominee and praising the Coast Guard. It describes participation in a confirmation hearing and expresses policy views, but it does not claim that the senator produced a concrete outcome, secured a benefit, or achieved a legislative result. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"3817\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3817\",\n    \"explanation\": \"The senator comments on TVA's decision to proceed with a nuclear application and says this has been a priority of his. The text praises the board's action but does not state or strongly imply that the senator personally brought about the decision. Without a claimed result attributable to the senator, it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4328\": {\n    \"codebook_rule\": [\"4\"],\n    \"document_id\": \"4328\",\n    \"explanation\": \"The release announces that the Department of Transportation decided to support nonstop air service and explicitly says the senators wrote a letter in support of Jackson's application. This presents the senators' advocacy as connected to a concrete transportation benefit for constituents, satisfying the intervention/advocacy rule.\",\n    \"label\": \"1\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8270,
+            "completion_tokens": 1095,
+            "total_tokens": 9365,
+            "prompt_tokens_details": {
+              "cached_tokens": 8192,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000010",
+      "custom_id": "request-00000010",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-97be731b87e6eb24f510",
+          "created": 1788988292,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1610\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1610\",\n    \"explanation\": \"The text is a statement by Senator Reid urging the President not to reject CHIP legislation and praising bipartisan work on it. It describes a bill being sent to the President and criticizes the President’s threatened rejection, but it does not present Reid as personally responsible for producing, securing, or receiving recognition for a concrete outcome. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"2697\": {\n    \"codebook_rule\": [\"1\", \"4\"],\n    \"document_id\": \"2697\",\n    \"explanation\": \"Senator Inouye announces that $225,000 in federal funding will become available to control and contain coqui frogs, and he states that after OMB denied Hawaii’s request he 'went looking and found another federal funding source.' This presents him as personally responsible for securing a concrete funding benefit for Hawaii, satisfying Rule 1 and Rule 4.\",\n    \"label\": \"1\"\n  },\n  \"2827\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2827\",\n    \"explanation\": \"This is an op-ed by Senator Lieberman about 9/11, the war on terror, and Iraq. It expresses policy positions and criticizes retreat, but does not claim a concrete legislative or policy outcome produced by the senator, nor any award or recognition. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"2895\": {\n    \"codebook_rule\": [\"1\", \"2\"],\n    \"document_id\": \"2895\",\n    \"explanation\": \"The release announces Senate passage of the Improving America’s Security Act and says McCaskill and colleagues approved it. It also highlights that the bill contains McCaskill’s amendment, presenting her as responsible for an included provision and for supporting passage of legislation. This satisfies Rule 2, and the vote/passage framing satisfies Rule 1.\",\n    \"label\": \"1\"\n  },\n  \"3143\": {\n    \"codebook_rule\": [\"1\", \"2\"],\n    \"document_id\": \"3143\",\n    \"explanation\": \"The text announces Senate passage of the Farm Bill and says Graham voted for it and worked to include additional grant programs and a Graham-backed provision. It also quotes an agriculture official appreciating Graham’s efforts in securing passage. These statements present Graham as contributing to a passed bill and specific included provisions, satisfying Rule 1 and Rule 2.\",\n    \"label\": \"1\"\n  },\n  \"3149\": {\n    \"codebook_rule\": [\"2\"],\n    \"document_id\": \"3149\",\n    \"explanation\": \"The release announces Senate passage of the FY2008 budget resolution and states that it includes a provision 'championed by Reed' to help establish an affordable housing fund. This attributes a committee/passage-related legislative outcome and a provision to Reed’s initiative, satisfying Rule 2. Other statements about future legislation are not credit-claiming, but the inclusion of the championed provision is sufficient.\",\n    \"label\": \"1\"\n  },\n  \"4403\": {\n    \"codebook_rule\": [\"2\", \"5\"],\n    \"document_id\": \"4403\",\n    \"explanation\": \"The release describes Domenici as a primary cosponsor of a rural health care bill and says it includes provisions he has championed. It also explicitly connects provisions in the Medicare Modernization Act to Domenici, stating that he 'first authored' them. Although the current bill is being introduced and not yet enacted, the text connects a named law/provision to Domenici as author and presents him as a principal cause of provisions’ success, satisfying Rule 2 and Rule 5.\",\n    \"label\": \"1\"\n  },\n  \"744\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"744\",\n    \"explanation\": \"Senator Allard sent a letter requesting that the Air Force clarify religious expression guidelines. The text describes oversight/advocacy and hopes for draft guidelines, but does not claim that his action produced a concrete result or that the Air Force agreed. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  },\n  \"873\": {\n    \"codebook_rule\": [\"1\", \"4\"],\n    \"document_id\": \"873\",\n    \"explanation\": \"The release states that the Medicare Administrator finally responded to Senator Landrieu’s letter and confirmed that hurricane-affected seniors could enroll without penalty. It credits Landrieu’s delegation with bringing the issue to the agency’s attention and presents the agency’s change as relief secured through her intervention. This satisfies Rule 1 and Rule 4.\",\n    \"label\": \"1\"\n  },\n  \"964\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"964\",\n    \"explanation\": \"The text says Senators Landrieu and Kerry called for local contracts and wrote to the Small Business Administration to speed up loss verification. It describes advocacy and a request but does not state that this produced or secured a concrete outcome. Therefore, no credit-claiming rule applies.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 10764,
+            "completion_tokens": 1198,
+            "total_tokens": 11962,
+            "prompt_tokens_details": {
+              "cached_tokens": 10688,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000011",
+      "custom_id": "request-00000011",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-5ecdefdb1b079c23ac2c",
+          "created": 1788988298,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1250\": {\"codebook_rule\": [\"1\", \"2\", \"5\"], \"document_id\": \"1250\", \"explanation\": \"The release announces final Congressional approval of the highway bill and lists $115 million in Oregon projects secured by Senators Smith and Wyden. It presents the senators as having secured concrete funding and connects the legislation/projects to their effort, satisfying rules 1, 2, and 5.\", \"label\": \"1\"},\n  \"1660\": {\"codebook_rule\": [\"1\", \"2\"], \"document_id\": \"1660\", \"explanation\": \"The release says Clinton was proud to announce Senate passage of the SAFER Act proposal included in the Department of Defense Authorization bill and enacted in November 2003. It also notes she continuously fought for full funding and passage, attributing a legislative accomplishment to her. This is credit-claiming under rules 1 and 2.\", \"label\": \"1\"},\n  \"178\": {\"codebook_rule\": [], \"document_id\": \"178\", \"explanation\": \"The statement describes an oversight hearing, expresses concern, and mentions introducing legislation, but it does not claim a concrete outcome, passage, funding secured, or personal responsibility for a benefit. It is not credit-claiming.\", \"label\": \"0\"},\n  \"2018\": {\"codebook_rule\": [], \"document_id\": \"2018\", \"explanation\": \"The release describes a subcommittee considering a bill introduced by Reed and explains the bill's provisions. It does not claim passage, adoption, funding secured, or another concrete outcome produced by the senator. It describes legislative activity and future consideration, so it is not credit-claiming.\", \"label\": \"0\"},\n  \"2153\": {\"codebook_rule\": [\"1\", \"2\"], \"document_id\": \"2153\", \"explanation\": \"The release states Mikulski fought to include funding in the 2008 spending bill for Maryland transportation projects, fulfilling a promise, and the bill passed the Senate Appropriations Committee. It presents her as responsible for securing concrete funding, satisfying rules 1 and 2.\", \"label\": \"1\"},\n  \"2174\": {\"codebook_rule\": [], \"document_id\": \"2174\", \"explanation\": \"The release announces committee approval of a nomination and praises the nominee. It does not present the senator as personally responsible for a concrete benefit, policy outcome, or achievement, nor does it give the senator an award or recognition. It describes committee action and a nomination, so it is not credit-claiming.\", \"label\": \"0\"},\n  \"2328\": {\"codebook_rule\": [], \"document_id\": \"2328\", \"explanation\": \"The release announces new legislation sponsored by Whitehouse and describes what the bill would do. It does not claim passage, enactment, inclusion, funding secured, or another concrete outcome. It is an introduction of a bill, not credit-claiming.\", \"label\": \"0\"},\n  \"3175\": {\"codebook_rule\": [], \"document_id\": \"3175\", \"explanation\": \"The statement discusses President Bush's withdrawal of the Miers nomination and criticizes political actors. It does not claim the senator produced a concrete outcome, secured a benefit, or achieved a policy result. It is a policy/political statement, not credit-claiming.\", \"label\": \"0\"},\n  \"4668\": {\"codebook_rule\": [], \"document_id\": \"4668\", \"explanation\": \"The statement announces introduction of the Professional Boxing Amendments Act and explains its provisions. Although it mentions a prior Senate-approved identical measure, it does not claim the current bill's passage or a concrete outcome secured by the senator. It is legislative proposal, not credit-claiming.\", \"label\": \"0\"},\n  \"928\": {\"codebook_rule\": [\"1\", \"2\", \"4\"], \"document_id\": \"928\", \"explanation\": \"The release announces critical federal funding in the FY2008 Omnibus bill and repeatedly states Murray helped steer or secured funding for specific Pierce County projects. It presents her intervention as producing concrete benefits for constituents, satisfying rules 1, 2, and 4.\", \"label\": \"1\"}\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 10891,
+            "completion_tokens": 929,
+            "total_tokens": 11820,
+            "prompt_tokens_details": {
+              "cached_tokens": 10816,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000012",
+      "custom_id": "request-00000012",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-5138c3298f4b0c49998c",
+          "created": 1788988304,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1059\": {\n    \"codebook_rule\": [\"2\", \"5\"],\n    \"document_id\": \"1059\",\n    \"explanation\": \"The press release describes Sen. Hutchison highlighting the recently-passed Surface Transportation Reauthorization Bill and its provisions. It claims she \\\"worked to increase Texas' rate of return to 92 percent\\\" resulting in \\\"nearly $800 million per year\\\" more in highway funding for Texas, and that the bill \\\"includes rail safety language based on legislation Sen. Hutchison introduced in April, 2005.\\\" These statements connect concrete legislative accomplishments to the senator's own initiative, satisfying both Rule 2 (legislative accomplishments achieved/secured) and Rule 5 (explicitly connecting a named provision/law to the senator as author or principal cause of its success). Although the language \\\"worked to increase\\\" is somewhat less direct than \\\"secured,\\\" in context it presents the concrete outcome (Texas's rate of return increase and specific rail safety provisions) as attributable to the senator's own legislative efforts.\",\n    \"label\": \"1\"\n  },\n  \"1848\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1848\",\n    \"explanation\": \"The press release describes Sen. Sessions calling on Senate Democrats to stop blocking legislation he authored regarding the Mount Soledad Veterans Memorial. It describes ongoing legislative activity (attempts to bring the bill to a vote, plans to invoke parliamentary maneuvers) and criticism of opponents. However, the bill has not yet passed; it has been blocked by parliamentary holds. Per the codebook definition and the negative examples, announcing intentions to introduce or advance legislation without claiming a completed outcome does not constitute credit-claiming. Rule 5 might seem applicable since Sessions is identified as the author, but the rule requires \\\"its success\\\" — the bill has not yet succeeded, so Rule 5 does not apply. No concrete outcome is attributed to the senator.\",\n    \"label\": \"0\"\n  },\n  \"2650\": {\n    \"codebook_rule\": [\"1\", \"4\"],\n    \"document_id\": \"2650\",\n    \"explanation\": \"The press release announces that Sens. Schumer and Clinton secured over $1 million in Federal Aviation Administration Airport Improvement Program funds for Stewart International Airport to improve its terminal building. The release explicitly states the senators \\\"today announced\\\" the DOT has awarded the funds, and includes quotes from both senators claiming credit: Schumer says \\\"I will continue to fight tooth and nail for federal funds\\\" and Clinton says \\\"I am pleased that we can continue to support the airport with this federal funding.\\\" This is a concrete funding outcome secured by the senators for their state, satisfying Rule 1 (concrete outcome: obtaining funding) and Rule 4 (senators' advocacy/pressure produced a concrete benefit for constituents). The release also mentions a separate $250,000 SCASDP grant announced the previous week.\",\n    \"label\": \"1\"\n  },\n  \"279\": {\n    \"codebook_rule\": [\"2\", \"5\"],\n    \"document_id\": \"279\",\n    \"explanation\": \"The press release announces that Sen. Durbin authored the Senate version of the Lincoln Commemorative Dollar Bill, which passed the Senate and was on its way to the President's desk. It explicitly states \\\"The bill was authored by Rep Ray LaHood R IL in the House and by Durbin in the Senate,\\\" directly connecting a named law to the senator as author. Additionally, the release states that \\\"In December Durbin passed separate legislation known as the Abraham Lincoln Bicentennial One Cent Coin Redesign Act,\\\" connecting another named law to the senator's passage. These satisfy Rule 2 (legislative accomplishment achieved: bill passed Senate, headed to President) and Rule 5 (explicitly connecting named laws to the senator as author).\",\n    \"label\": \"1\"\n  },\n  \"3328\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3328\",\n    \"explanation\": \"The press release announces that Chairman Kennedy released a report on marketing practices in the student loan industry, presenting findings from his investigation. It describes oversight activity and calls for reform, and states that the Senate higher education bill \\\"would prohibit\\\" the identified practices. However, the bill is described in future/conditional terms (\\\"would prohibit\\\"), not as a completed outcome. No concrete result is claimed as having been achieved by the senator. The release describes investigation, report publication, and policy advocacy without attributing a secured benefit, passed law, or produced policy change to the senator. Per the codebook definition and negative examples, this is oversight/policy position expression, not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"3503\": {\n    \"codebook_rule\": [\"1\", \"2\", \"4\"],\n    \"document_id\": \"3503\",\n    \"explanation\": \"The press release announces that Sens. Chambliss and Isakson secured final Congressional approval of the fiscal year 2006 USDA funding bill, which includes \\\"more than $400,000 in funding for the Operation Oak Program.\\\" Chambliss is quoted saying \\\"I am so pleased that the Senate was able to help fund the Operation Oak Program,\\\" and Isakson says \\\"I am pleased the Senate saw fit to support this worthy program.\\\" The senators are presented as having secured a concrete funding outcome for a specific program, satisfying Rule 1 (concrete outcome: obtaining funding), Rule 2 (funding included in a committee-approved/congressionally approved bill as secured by the senators), and Rule 4 (senators' advocacy produced a concrete benefit for their state's timber industry and forests).\",\n    \"label\": \"1\"\n  },\n  \"3648\": {\n    \"codebook_rule\": [\"2\"],\n    \"document_id\": \"3648\",\n    \"explanation\": \"The press release announces that the Senate approved a resolution sponsored by Sens. Alexander and Corker congratulating the UT Lady Vols basketball team. It states \\\"The U.S. Senate today approved a resolution sponsored by U.S. Senators Lamar Alexander and Bob Corker\\\" and \\\"The resolution passed the Senate by unanimous consent.\\\" This constitutes a legislative accomplishment: a resolution sponsored by the senators achieved passage. Under Rule 2, \\\"votes won on the senator's initiative\\\" includes resolutions. The resolution is a concrete legislative action completed, and the senators are presented as the sponsors responsible for it. Therefore, this satisfies Rule 2. No other rules apply.\",\n    \"label\": \"1\"\n  },\n  \"4580\": {\n    \"codebook_rule\": [\"1\", \"2\", \"4\"],\n    \"document_id\": \"4580\",\n    \"explanation\": \"The press release announces that the Arkansas congressional delegation (including Sens. Lincoln and Pryor) finalized an omnibus appropriations package containing millions of dollars for Arkansas state and local priorities. It states the delegation \\\"successfully fought to include\\\" numerous earmarks in the omnibus package, which passed the House and was expected to pass the Senate. This is a concrete funding outcome secured by the delegation for Arkansas constituents, satisfying Rule 1 (concrete outcome: obtaining funding), Rule 2 (funding provisions included in a committee-approved/passed bill as secured by the senators), and Rule 4 (senators' advocacy/pressure produced concrete benefits for Arkansas communities). The extensive list of specific dollar amounts for named projects, institutions, and communities constitutes concrete benefits secured through the senators' efforts.\",\n    \"label\": \"1\"\n  },\n  \"685\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"685\",\n    \"explanation\": \"The press release describes Sen. Kohl announcing legislation he \\\"will introduce\\\" to restore competition to the oil industry, and his involvement in a Judiciary Committee hearing. It mentions he \\\"will introduce a bill\\\" with Chairman Specter, and that he is \\\"the author of legislation\\\" to direct the Secretary of Energy to establish a strategic refining reserve. However, these are descriptions of legislative activity and future intentions. The bill is not yet introduced, let alone passed. Per the codebook definition and the negative examples for Rule 2, describing legislation without claiming a completed outcome does not constitute credit-claiming. The hearing description is oversight activity without a claimed result. No concrete outcome is attributed to the senator.\",\n    \"label\": \"0\"\n  },\n  \"952\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"952\",\n    \"explanation\": \"The press release publishes Sen. Kennedy's op-ed on the need for the United States to lead on Iraqi refugees. The text is a policy advocacy statement expressing positions on the Iraq refugee crisis and calling for action. It criticizes the administration's handling of the crisis and calls for an international conference. No concrete outcome, secured benefit, passed legislation, or award is attributed to the senator. Per the codebook definition, texts that \\\"express policy positions\\\" or \\\"criticize opponents\\\" are not credit-claiming.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 12641,
+            "completion_tokens": 1980,
+            "total_tokens": 14621,
+            "prompt_tokens_details": {
+              "cached_tokens": 12544,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000013",
+      "custom_id": "request-00000013",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-97eb81213b4cf9929279",
+          "created": 1788988316,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1011\": {\n    \"codebook_rule\": [\"1\", \"4\"],\n    \"document_id\": \"1011\",\n    \"explanation\": \"The text states that Sen. Santorum 'delivers' funding to the Allentown Housing Authority and presents $20,000,000. It explicitly attributes the securing of the HOPE VI grant to his intervention: 'Senator Santorum sent a letter to the Department of Housing and Urban Development urging them to support... application for HOPE VI funding'. A resident also thanks him for being 'instrumental in securing the HOPE VI grant.' This meets the definition of credit-claiming as the senator is presented as personally responsible for producing/securing a concrete benefit.\",\n    \"label\": \"1\"\n  },\n  \"162\": {\n    \"codebook_rule\": [\"1\", \"2\"],\n    \"document_id\": \"162\",\n    \"explanation\": \"The text describes Sen. Inouye asking colleagues to retain a provision and states that 'Senator Inouyes colleagues agreed and the provision was retained.' This attributes a concrete legislative outcome (the retention of the provision) to the senator's initiative and advocacy, satisfying Rule 1 and Rule 2 (legislative accomplishment achieved/won).\",\n    \"label\": \"1\"\n  },\n  \"1687\": {\n    \"codebook_rule\": [\"1\", \"4\"],\n    \"document_id\": \"1687\",\n    \"explanation\": \"The text announces SBA assistance and quotes the senator saying 'I have dedicated my best efforts to ensure that the areas affected receive the financial assistance they need'. This presents the senator as responsible for the outcome of the SBA declaring disaster and providing funds, satisfying the rules for credit-claiming based on advocacy/intervention producing a benefit.\",\n    \"label\": \"1\"\n  },\n  \"2080\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2080\",\n    \"explanation\": \"The text describes a scheduled trip to Iraq to examine conditions and meet with leaders. It describes an activity or future intention and does not claim a concrete outcome, benefit, or achievement produced by the senator. Therefore, it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"2259\": {\n    \"codebook_rule\": [\"1\", \"4\"],\n    \"document_id\": \"2259\",\n    \"explanation\": \"The text announces that Sen. Domenici 'announced that the U.S. Department of Agriculture (USDA) has awarded... grants'. It concludes by noting his role on the Appropriations Committee which sets funding for the USDA. This implies he is responsible for the funding outcome (obtaining funding/grants), satisfying Rule 1 and Rule 4.\",\n    \"label\": \"1\"\n  },\n  \"2294\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2294\",\n    \"explanation\": \"The text is a statement applauding the President's budget and expressing an intention to work to protect Kentucky priorities. It does not claim a concrete outcome achieved or secured by the senator, but rather a policy position and future intent. Thus, it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"3216\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3216\",\n    \"explanation\": \"The text describes the senator voting for a bill (FHA Modernization Act) and cosponsoring another bill. While it mentions the bill passed the Senate, it frames the senator's action as 'voted with his colleagues' and 'cosponsored'. It does not present the senator as personally responsible for the passage or claim it as his specific achievement/credit, similar to the negative example in Rule 1 regarding LIHEAP funding. Therefore, it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"406\": {\n    \"codebook_rule\": [\"2\", \"5\"],\n    \"document_id\": \"406\",\n    \"explanation\": \"The text explicitly states 'Created by Harkin in the 2002 farm bill and made permanent in the Child Nutrition and WIC Reauthorization Act... the program is available...'. This attributes the creation and permanence of a program to the senator as author/creator, satisfying Rule 2 (legislative accomplishment) and Rule 5 (explicit connection to named law/program as author).\",\n    \"label\": \"1\"\n  },\n  \"573\": {\n    \"codebook_rule\": [\"1\"],\n    \"document_id\": \"573\",\n    \"explanation\": \"The headline is 'Dodd Lieberman Announce More Than 3 6 Million In Grants to Boost Connecticut Crime Control' and the text says the senators 'announced today that Connecticut will receive...'. Announcing funds or grants secured for the state is explicitly listed in the definition as credit-claiming. Rule 1 applies as they are announcing a concrete resource outcome.\",\n    \"label\": \"1\"\n  },\n  \"718\": {\n    \"codebook_rule\": [\"1\", \"2\"],\n    \"document_id\": \"718\",\n    \"explanation\": \"The headline is 'Obama Secures Funding...' and the text states the committee 'approved his funding requests' and 'Obama secured these funds'. This is a clear claim of securing funding/appropriations, satisfying Rule 1 and Rule 2 (legislative accomplishment/votes won on initiative).\",\n    \"label\": \"1\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7129,
+            "completion_tokens": 1243,
+            "total_tokens": 8372,
+            "prompt_tokens_details": {
+              "cached_tokens": 7040,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000014",
+      "custom_id": "request-00000014",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-a724a49030ee55b322c5",
+          "created": 1788988324,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1340\": {\"codebook_rule\": [\"1\"], \"document_id\": \"1340\", \"explanation\": \"Senator Clinton frames the restored AIP funding as a concrete outcome achieved in response to her advocacy, explicitly stating she fought for and secured the restoration.\", \"label\": \"1\"},\n  \"1678\": {\"codebook_rule\": [\"2\", \"5\"], \"document_id\": \"1678\", \"explanation\": \"The release explicitly attributes authorship of the housing recovery legislation to Senator Landrieu and describes related Senate action, satisfying both rules.\", \"label\": \"1\"},\n  \"1760\": {\"codebook_rule\": [\"4\"], \"document_id\": \"1760\", \"explanation\": \"The text describes Senator Dorgan meeting with State Department officials and pressing them to change a visa decision, presenting his intervention as aimed at securing a concrete benefit for farmers.\", \"label\": \"1\"},\n  \"1782\": {\"codebook_rule\": [\"1\"], \"document_id\": \"1782\", \"explanation\": \"Senator Domenici describes the CSAR-X aircraft as a potential future basing outcome and presents himself as involved in securing it for New Mexico.\", \"label\": \"1\"},\n  \"1790\": {\"codebook_rule\": [\"2\"], \"document_id\": \"1790\", \"explanation\": \"The release celebrates introduction and sponsorship of a Rocky Mountain National Park wilderness bill, presenting it as a bipartisan legislative accomplishment.\", \"label\": \"1\"},\n  \"2855\": {\"codebook_rule\": [\"1\"], \"document_id\": \"2855\", \"explanation\": \"The senators announce a $300,000 Appalachian Regional Commission grant for Toccoa and present it as a concrete funding benefit associated with their support.\", \"label\": \"1\"},\n  \"3587\": {\"codebook_rule\": [\"2\"], \"document_id\": \"3587\", \"explanation\": \"Senator Cardin is described as a co-sponsor of the Deceptive Practices and Voter Intimidation Prevention Act and as supporting the legislation at a press conference, presenting the bill as a legislative action.\", \"label\": \"1\"},\n  \"3746\": {\"codebook_rule\": [\"3\"], \"document_id\": \"3746\", \"explanation\": \"FLEOA selected Senator Akaka as the 2006 National Legislator of the Year in recognition of his official performance and support for federal law enforcement officers, satisfying the external recognition rule.\", \"label\": \"1\"},\n  \"4662\": {\"codebook_rule\": [\"1\"], \"document_id\": \"4662\", \"explanation\": \"The senators announce federal AFGP funding for Baltimore County firefighters and present it as a concrete grant benefit tied to their support for first responders.\", \"label\": \"1\"},\n  \"795\": {\"codebook_rule\": [\"3\"], \"document_id\": \"795\", \"explanation\": \"The New Orleans City Council endorsed Senator Landrieu's housing bill, and the release presents this favorable external recognition as tied to her official service.\", \"label\": \"1\"}\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8782,
+            "completion_tokens": 684,
+            "total_tokens": 9466,
+            "prompt_tokens_details": {
+              "cached_tokens": 8704,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000015",
+      "custom_id": "request-00000015",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-9d64e69627ae78483e9f",
+          "created": 1788988328,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1024\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1024\",\n    \"explanation\": \"The text is an 'ICYMI' compilation of news editorials and columns about immigration reform. It includes a brief mention of Senator Lindsey Graham reading a historical quote into the Senate record, but it does not present him as personally responsible for a concrete benefit, policy outcome, legislative success, award, or remedy. It is primarily commentary and policy discussion, not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"1278\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"5\"\n    ],\n    \"document_id\": \"1278\",\n    \"explanation\": \"The release explicitly presents Senator Mikulski as securing federal funding and protections in a spending bill. It says the 2008 spending bill includes $2.2 million for Maryland projects and that she 'specifically fought to include language' protecting Baltimore City's 'Moving to Work' status. It also says the bill restores HOPE VI funding and states 'HOPE VI was created by Senator Mikulski in 1992.' These are concrete legislative outcomes and provisions attributed to the senator, satisfying rules 1, 2, and 5.\",\n    \"label\": \"1\"\n  },\n  \"276\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"276\",\n    \"explanation\": \"The release commemorates the legacy of Dr. Martin Luther King Jr. and describes Senator Bond's recollections and reflections. It does not claim a concrete outcome, legislative accomplishment, award, or secured benefit attributable to the senator. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"2988\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\"\n    ],\n    \"document_id\": \"2988\",\n    \"explanation\": \"The release states that Senators Stabenow and Levin announced funding in the Agriculture Appropriations bill for Michigan-specific problems such as emerald ash borer, bovine TB, and cormorant control. It lists specific amounts included in the Senate bill and notes Senate appropriators agreed to request additional funding in conference. The senators are presented as securing or obtaining these concrete funding outcomes, satisfying rules 1 and 2. There is a possible ambiguity because the bill had only been approved by the Senate and the final conference amount was still a request, but the release still presents specific appropriated funding as obtained through the senators' efforts.\",\n    \"label\": \"1\"\n  },\n  \"3675\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"4\"\n    ],\n    \"document_id\": \"3675\",\n    \"explanation\": \"The release announces that Texas cities and ports are eligible for Homeland Security security funding. It says 'I am pleased that the Department of Homeland Security has prioritized risk analysis in determining funding eligibility,' and lists designated Tier 1 ports and dollar amounts they may apply for. The framing presents the senator as announcing a beneficial decision or outcome tied to her role. This is borderline because it describes eligibility rather than direct awards, but the announcement of designated eligibility and specific dollar amounts for Texas communities can be understood as a secured benefit or result of advocacy, satisfying rules 1 and 4. If eligibility alone were treated merely as informational, it would be less clearly credit-claiming, but the release's framing supports a positive classification.\",\n    \"label\": \"1\"\n  },\n  \"384\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"384\",\n    \"explanation\": \"The release describes Senator Schumer demanding that the NTSB reopen an investigation into a 2001 plane crash based on new FAA information. It is advocacy and oversight activity, but it does not claim that the senator produced a concrete outcome, secured a benefit, or achieved a decision. It describes a request, not a claimed result. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4293\": {\n    \"codebook_rule\": [\n      \"4\"\n    ],\n    \"document_id\": \"4293\",\n    \"explanation\": \"Most of the release is a defensive statement responding to an inaccurate news story and criticizing allegations involving Jack Abramoff. However, it includes a concrete credit-claim: 'I should note that we succeeded in getting funding from this program for the Three Affiliated Tribes BIA School in North Dakota this year.' This states that the senator succeeded in obtaining funding for a constituent institution, satisfying rule 4. Although the overall document is largely about rebutting allegations, the specific claim of secured funding makes it credit-claiming under the codebook.\",\n    \"label\": \"1\"\n  },\n  \"4423\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\"\n    ],\n    \"document_id\": \"4423\",\n    \"explanation\": \"The release announces that Senators Warner and Webb 'secured' funding in the FY2008 Commerce, Justice and Science Appropriations bill for Virginia law enforcement, broadband, and other projects. It lists named projects and dollar amounts, and says 'Senators Warner and Webb secured $2 million' for broadband installation. This attributes concrete appropriated funding and legislative provisions to the senators, satisfying rules 1 and 2.\",\n    \"label\": \"1\"\n  },\n  \"4525\": {\n    \"codebook_rule\": [\n      \"4\"\n    ],\n    \"document_id\": \"4525\",\n    \"explanation\": \"The release announces that Senator Shelby nominated students to U.S. service academies. Nominating students is an official senatorial function that can produce a concrete benefit or opportunity for constituents. The text says he 'was pleased to have been able to nominate' the students and lists the nominees. Although final selection is made by the academies, the senator's nomination itself is a concrete official action benefiting constituents and is presented as his role. This fits rule 4 as an advocacy/intervention producing a concrete benefit or opportunity. It does not clearly satisfy rules 1, 2, or 5 because no law, funding, award, or passed provision is involved.\",\n    \"label\": \"1\"\n  },\n  \"793\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\"\n    ],\n    \"document_id\": \"793\",\n    \"explanation\": \"The release announces that Senators Gregg and Sununu secured $80 million for New Hampshire initiatives in the Defense Appropriations bill, including $1.4 million for a specific federal laboratory. The bill passed and was signed by the President, and the senators are presented as responsible for including funds for New Hampshire. This is a concrete funding outcome attributed to the senators, satisfying rules 1 and 2.\",\n    \"label\": \"1\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 9302,
+            "completion_tokens": 1548,
+            "total_tokens": 10850,
+            "prompt_tokens_details": {
+              "cached_tokens": 9216,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000016",
+      "custom_id": "request-00000016",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-bd6a09f242d8ea5134e9",
+          "created": 1788988337,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1970\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1970\",\n    \"explanation\": \"The text describes the introduction of a new bill, the HERO Act, and details its provisions and supporters. It mentions other bills sponsored by the senators but does not claim any legislative success or passage. Since it only describes legislative activity and future intentions, it does not meet the criteria for credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"2357\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2357\",\n    \"explanation\": \"Senator Snowe urges the Appropriations Committee to maintain funding levels that were agreed to in a previous budget resolution. While the text mentions a past amendment that passed, the release itself describes an ongoing request or oversight without claiming a specific secured result or completed outcome. It functions as an expression of policy position and advocacy.\",\n    \"label\": \"0\"\n  },\n  \"2548\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2548\",\n    \"explanation\": \"The release describes Senator Clinton presenting awards to two constituents. This is a commemorative event recognizing others, not the senator receiving an award or claiming personal responsibility for a concrete benefit or policy outcome. Thus, it does not satisfy any credit-claiming rules.\",\n    \"label\": \"0\"\n  },\n  \"3824\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3824\",\n    \"explanation\": \"The text announces the introduction of legislation to ban the shipment of tobacco through the mail. It describes a legislative proposal and future intentions rather than claiming that a law has been passed or a specific outcome achieved.\",\n    \"label\": \"0\"\n  },\n  \"3891\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3891\",\n    \"explanation\": \"The senator expresses disappointment with a bill passed by the Senate and describes an alternative bill he supported. There is no claim of a concrete outcome secured by the senator; instead, it is a policy statement criticizing a legislative outcome.\",\n    \"label\": \"0\"\n  },\n  \"3968\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3968\",\n    \"explanation\": \"Senator Murray reacts to a GAO report regarding inadequate VA spending. The text describes oversight and policy concerns. Although it mentions she has 'worked for increases' and 'fought tooth and nail,' it does not identify a specific concrete outcome or resource secured as a result of these efforts.\",\n    \"label\": \"0\"\n  },\n  \"4232\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4232\",\n    \"explanation\": \"The text discusses a resolution by a federal panel and states that it confirms the need for reforms the senator has urged. It mentions the introduction of the 'Count Every Vote Act' and plans to reintroduce it. This describes legislative activity and future intentions rather than a completed or secured accomplishment.\",\n    \"label\": \"0\"\n  },\n  \"4554\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4554\",\n    \"explanation\": \"Senator Salazar expresses disappointment that the Farm Bill was blocked by a filibuster. The text describes legislative failure and criticizes the opposition. It does not claim a concrete benefit or successful outcome was secured.\",\n    \"label\": \"0\"\n  },\n  \"4704\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4704\",\n    \"explanation\": \"Senator Reid comments on the Senate's vote on FISA legislation. He criticizes the administration's proposal and notes that the bill will sunset in six months, expecting more permanent legislation later. This is a policy statement and description of a vote, not a claim of personal credit for a specific secured outcome.\",\n    \"label\": \"0\"\n  },\n  \"4778\": {\n    \"codebook_rule\": [\"1\", \"2\", \"5\"],\n    \"document_id\": \"4778\",\n    \"explanation\": \"Senator Lugar praises the first use of a debt-for-nature agreement in Africa. The text explicitly links this concrete outcome (the agreement with Botswana reducing debt and funding conservation) to the 'Lugar-Biden Tropical Rain Forest Conservation Act,' which was authored by the senator. This satisfies rules regarding concrete outcomes, legislative accomplishments, and authorship.\",\n    \"label\": \"1\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 9023,
+            "completion_tokens": 1023,
+            "total_tokens": 10046,
+            "prompt_tokens_details": {
+              "cached_tokens": 8896,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000017",
+      "custom_id": "request-00000017",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-84d0313903e0a31018c2",
+          "created": 1788988343,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1641\": {\n    \"codebook_rule\": [\n      \"4\"\n    ],\n    \"document_id\": \"1641\",\n    \"explanation\": \"The text describes a concrete outcome: HHS Secretary Mike Leavitt designated former Iowa Army Ammunition Plant workers as members of a special exposure cohort, making them eligible for compensation and medical expenses. Senator Grassley presents himself as personally involved in bringing this about, saying he had a 'very good feeling after my meeting with Secretary Leavitt yesterday' and that 'this is one member of Congress who isn't going to let anything happen to change this decision.' This strongly implies that Grassley's advocacy and intervention directly produced or secured the designation and resulting benefits for constituents, satisfying rule 4.\",\n    \"label\": \"1\"\n  },\n  \"1983\": {\n    \"codebook_rule\": [\n      \"3\"\n    ],\n    \"document_id\": \"1983\",\n    \"explanation\": \"The text explicitly states that Senator Pat Roberts received the 'Guardian of Small Business' award from the National Federation of Independent Business, based on his voting record on behalf of small-business owners. It also notes he has received this award every session of Congress since 1981. This is a clear case of a senator receiving external recognition tied to official performance, satisfying rule 3.\",\n    \"label\": \"1\"\n  },\n  \"2450\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2450\",\n    \"explanation\": \"Senator Shelby commends the Senate passage of the energy bill and discusses provisions in it, including halting FERC's Standard Market Design and including report language on LNG facility siting. He says he was 'able to work with Chairman Domenici and Ranking Member Bingaman to include report language' and notes provisions allowing Alabama to receive royalties. However, the bill has only passed the Senate and is heading to conference committee; it is not enacted. While Shelby mentions working to include report language, this is not presented as a completed legislative accomplishment or concrete secured outcome. The text is largely about a bill passing one chamber and future conference hopes, without clearly claiming Shelby as personally responsible for a concrete, achieved outcome. Thus, it does not meet the threshold for credit-claiming under the codebook.\",\n    \"label\": \"0\"\n  },\n  \"2885\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2885\",\n    \"explanation\": \"The text describes Senator Grassley urging Chinese officials to take concrete action on trade issues and mentions legislation he introduced with Senator Baucus. However, it does not claim any concrete outcome secured by Grassley, such as a policy change, agreement, or legislative success. It is a letter urging future action and describing introduced legislation, not claiming an achieved result. Therefore, it does not meet any credit-claiming rules.\",\n    \"label\": \"0\"\n  },\n  \"3438\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"3438\",\n    \"explanation\": \"The text is a statement celebrating Greek Independence Day. It commemorates a historical event and expresses pride in Greek heritage and U.S.-Greece relations. There is no claim of a concrete benefit, legislative accomplishment, award, or outcome secured by Senator Snowe. It is a commemorative statement, not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"3763\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"4\"\n    ],\n    \"document_id\": \"3763\",\n    \"explanation\": \"The text states that Senator Kyl was informed that his request for a $3.4 million educational training grant was granted to Arizona. The grant is a concrete benefit for Arizona, and the text directly attributes it to Kyl's request, presenting him as responsible for securing it. This satisfies rule 1, which covers obtaining funding, and rule 4, which covers intervention or advocacy producing a concrete benefit.\",\n    \"label\": \"1\"\n  },\n  \"4058\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4058\",\n    \"explanation\": \"The text is a statement by Senate Republican Leader Mitch McConnell regarding the release of the Social Security and Medicare trustees' report. He calls for congressional action to address entitlement programs. There is no claim of any concrete outcome, legislative accomplishment, secured funding, or award. It is a policy statement and call to action, not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"4168\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4168\",\n    \"explanation\": \"The text describes Connecticut lawmakers, including Senators Lieberman and Dodd, writing a letter to DHS Secretary Chertoff seeking answers about an immigration raid. It is an oversight activity requesting information. There is no claimed result, concrete benefit, or policy change achieved by the senators. Describing meetings or oversight without a claimed result is not credit-claiming per the codebook definition.\",\n    \"label\": \"0\"\n  },\n  \"4424\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4424\",\n    \"explanation\": \"The text describes Senator Cantwell pressing for an investigation of petroleum markets and supporting anti-price gouging legislation. It mentions she is lead sponsor of a pending bill and has requested GAO investigations. However, there is no claim of a concrete outcome secured, such as a law passed, investigation completed, or benefit obtained. The bill is pending and the efforts are ongoing. This is advocacy and legislative activity without a claimed success, so it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"850\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"850\",\n    \"explanation\": \"The text is a statement criticizing the Bush Administration regarding the Iraq war and the Downing Street Minutes. It expresses policy positions and criticizes opponents. There is no claim of any concrete benefit, legislative accomplishment, award, or secured outcome by the senator. It is not credit-claiming.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8259,
+            "completion_tokens": 1377,
+            "total_tokens": 9636,
+            "prompt_tokens_details": {
+              "cached_tokens": 8192,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000018",
+      "custom_id": "request-00000018",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-26b2bf8b95de58402d76",
+          "created": 1788988351,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n    \"209\": {\n      \"codebook_rule\": [],\n      \"document_id\": \"209\",\n      \"explanation\": \"The text is a statement criticizing the White House and Vice President Cheney over the Senate filibuster battle. It expresses policy opposition and does not claim a concrete outcome, legislative achievement, award, or constituent benefit produced by the senator.\",\n      \"label\": \"0\"\n    },\n    \"2626\": {\n      \"codebook_rule\": [],\n      \"document_id\": \"2626\",\n      \"explanation\": \"The text is a statement by Senator Kerry reacting to a 9/11 Commission report and criticizing Washington's homeland security performance. It does not attribute a concrete outcome, legislative accomplishment, award, or benefit to the senator.\",\n      \"label\": \"0\"\n    },\n    \"2687\": {\n      \"codebook_rule\": [],\n      \"document_id\": \"2687\",\n      \"explanation\": \"The text announces the introduction of the Stopping Overseas Subsidies Act and describes the bill's purpose. It does not claim that the legislation passed, was included in law, or produced a concrete outcome; it is a bill introduction and policy statement.\",\n      \"label\": \"0\"\n    },\n    \"3625\": {\n      \"codebook_rule\": [\n        \"1\",\n        \"2\",\n        \"5\"\n      ],\n      \"document_id\": \"3625\",\n      \"explanation\": \"The release states that Senator Conrad authored legislation creating the Missouri River Task Force, that Congress passed that legislation, and that he secured $188,000 for the initiative from an appropriations bill. These are concrete legislative and funding outcomes attributed to the senator.\",\n      \"label\": \"1\"\n    },\n    \"3673\": {\n      \"codebook_rule\": [\n        \"1\",\n        \"2\",\n        \"5\"\n      ],\n      \"document_id\": \"3673\",\n      \"explanation\": \"The text explicitly states that Senator Allard secured $12 million for a highway project and $110 million for specific transportation projects in the final transportation authorization bill through his role on the conference committee. This is a concrete funding and legislative outcome credited to the senator.\",\n      \"label\": \"1\"\n    },\n    \"4238\": {\n      \"codebook_rule\": [],\n      \"document_id\": \"4238\",\n      \"explanation\": \"The text describes Senator Snowe praising subpoenas and saying they will be enforced. It concerns oversight and a dispute with the Department of Defense, but it does not claim that the senator secured a concrete result, benefit, or policy change.\",\n      \"label\": \"0\"\n    },\n    \"4426\": {\n      \"codebook_rule\": [],\n      \"document_id\": \"4426\",\n      \"explanation\": \"The text is a policy statement about Iraq and the nomination of a new Joint Chiefs chairman. It does not attribute a concrete outcome, legislative accomplishment, award, or constituent benefit to the senator.\",\n      \"label\": \"0\"\n    },\n    \"570\": {\n      \"codebook_rule\": [],\n      \"document_id\": \"570\",\n      \"explanation\": \"The text criticizes homeland security funding allocations to New York. It does not claim that the senator secured funding, produced a policy change, achieved a legislative outcome, or received recognition.\",\n      \"label\": \"0\"\n    },\n    \"590\": {\n      \"codebook_rule\": [\n        \"5\"\n      ],\n      \"document_id\": \"590\",\n      \"explanation\": \"The release is primarily about introducing reauthorization legislation, which alone would not be credit-claiming. However, it explicitly states that Domenici authored the Special Diabetes Program for Indians and Type 1 Diabetes Research programs as part of the 1997 Balanced Budget Act, connecting a named enacted program to the senator as author. That satisfies rule 5.\",\n      \"label\": \"1\"\n    },\n    \"925\": {\n      \"codebook_rule\": [],\n      \"document_id\": \"925\",\n      \"explanation\": \"The text is a statement on the resignation of Defense Secretary Rumsfeld. It expresses views on Iraq and national security but does not claim a concrete outcome, legislative achievement, award, or benefit attributable to the senator.\",\n      \"label\": \"0\"\n    }\n  }",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7299,
+            "completion_tokens": 995,
+            "total_tokens": 8294,
+            "prompt_tokens_details": {
+              "cached_tokens": 7232,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000019",
+      "custom_id": "request-00000019",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-fb4b2d9779b059fa80fd",
+          "created": 1788988356,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"1326\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\"\n    ],\n    \"document_id\": \"1326\",\n    \"explanation\": \"The release states that Senator Martinez \\\"added\\\" an amendment requiring the Air Force to conduct a rigorous review of any realignment at Eglin AFB and that the amendment \\\"was approved by the full Senate.\\\" This presents the senator as responsible for a concrete legislative outcome: the amendment's approval. That satisfies Rule 1's concrete-outcome framing and Rule 2's legislative-accomplishment framing. There is a slight ambiguity in whether \\\"would require\\\" refers to the amendment's prospective effect or whether the amendment had not yet become law; however, because Senate approval of the amendment on Martinez's initiative is explicitly claimed as achieved, it is credit-claiming under Rules 1 and 2.\",\n    \"label\": \"1\"\n  },\n  \"1540\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"1540\",\n    \"explanation\": \"The text is a condolence and well-wishes statement after Senator Harry Reid suffered a mini stroke. It expresses prayers and hope for recovery but does not claim that Senator Ensign produced, secured, or received recognition for any concrete benefit, policy outcome, governmental action, or achievement. It therefore does not meet any codebook rule and is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"1884\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"4\",\n      \"5\"\n    ],\n    \"document_id\": \"1884\",\n    \"explanation\": \"Senator Mikulski congratulates the Maryland National Guard on certification of its WMD Civil Support Team, but the release also explicitly claims that she \\\"fought for federal funding\\\" for the team and that she \\\"secured authorization for the team in the 2004 Department of Defense spending bill.\\\" This directly presents the senator as responsible for a concrete outcome—authorization/funding of the team—and connects that achievement to a named spending-bill provision. The certification of the team is described as a result of the secured authorization, making this credit-claiming under Rules 1, 4, and 5. Rule 2 could also be relevant because authorization in a spending bill is a legislative accomplishment, but Rules 1, 4, and 5 most directly capture the secured authorization and intervention claim.\",\n    \"label\": \"1\"\n  },\n  \"2458\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2458\",\n    \"explanation\": \"The text offers condolences after the deaths of Marines and describes Hawaii military families' sacrifices. It also says the senator is \\\"working hard to address the needs\\\" of service members and families, but this is a general statement of effort or intention rather than a claimed concrete result. There is no specific funding secured, law passed, agency decision changed, award received, or other concrete outcome attributed to the senator. Thus no codebook rule applies.\",\n    \"label\": \"0\"\n  },\n  \"2591\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2591\",\n    \"explanation\": \"This release criticizes the EPA and the Bush Administration after an Inspector General report found EPA failed to conduct environmental justice reviews. Senators Kerry and Durbin and Rep. Solis express concern and demand accountability, but the text does not present a senator as personally responsible for producing, securing, or receiving recognition for a concrete benefit or outcome. It describes oversight/report findings and policy criticism, not a claimed result attributable to the senator. Therefore it is not credit-claiming.\",\n    \"label\": \"0\"\n  },\n  \"2975\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"4\"\n    ],\n    \"document_id\": \"2975\",\n    \"explanation\": \"The headline and text state that the Administration \\\"agrees to Dorgan request\\\" to remove a hold on a North Dakota wind energy project and that Dorgan had called on Administration officials to allow the project to move forward. The release presents Dorgan's advocacy/intervention as having produced a concrete outcome: the project is now allowed to move forward. This satisfies Rule 1's concrete-outcome standard and Rule 4's intervention/advocacy producing a benefit or decision. The text also says he would offer legislation if delays continued, but that future intention does not negate the already-claimed outcome.\",\n    \"label\": \"1\"\n  },\n  \"2982\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"2982\",\n    \"explanation\": \"The release criticizes the Senate's failure to pass the Employee Free Choice Act, which Senators Lautenberg and Menendez cosponsored. Although it describes a vote and the senators' support, it does not claim a legislative success, secured benefit, or concrete outcome produced by the senators. The bill failed to reach the 60-vote threshold, and the release frames the event as disappointment and criticism rather than credit-claiming. Thus no codebook rule applies.\",\n    \"label\": \"0\"\n  },\n  \"3806\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"2\",\n      \"4\",\n      \"5\"\n    ],\n    \"document_id\": \"3806\",\n    \"explanation\": \"Senator Murray announces that she \\\"included\\\" $6.95 million in a Senate bill for transportation and community investments in Snohomish County and used her position as chair of an appropriations subcommittee to add the funding. The bill passed the full Senate Appropriations Committee. This is a concrete funding outcome attributed to the senator and tied to a committee-approved appropriations bill. It satisfies Rule 1 (obtaining/adding funding), Rule 2 (legislative accomplishment in committee-approved bill), Rule 4 (advocacy securing benefits for constituents and local projects), and Rule 5 (connecting specific funding provisions to Murray as the principal cause). Although the bill still must go to the Senate floor, the codebook includes provisions included in committee-approved bills and does not require enactment.\",\n    \"label\": \"1\"\n  },\n  \"4096\": {\n    \"codebook_rule\": [\n      \"1\",\n      \"4\"\n    ],\n    \"document_id\": \"4096\",\n    \"explanation\": \"Senator Kohl announces that the Department of Transportation released $3,306,667 for the Marquette Interchange and $2,060,036 for Wisconsin State Patrol communications upgrades, and says Kohl \\\"worked to secure\\\" the funding in the FY05 transportation appropriations bill. This presents the senator as responsible for concrete federal funding benefits for Wisconsin. It satisfies Rule 1's funding outcome and Rule 4's advocacy-securing-benefit standard. Rule 2 could also be relevant, but the release focuses on released funds secured through appropriations rather than on a law's passage as such.\",\n    \"label\": \"1\"\n  },\n  \"4188\": {\n    \"codebook_rule\": [],\n    \"document_id\": \"4188\",\n    \"explanation\": \"Senators Clinton, Murray, and colleagues urge the GAO to release its audit of the FDA's Plan B approval process and call for a Senate hearing. This is oversight and advocacy concerning an ongoing investigation, but it does not claim that the senators produced a concrete outcome, secured a benefit, changed agency policy, passed legislation, or received recognition. It describes a request and expresses concern, so it is not credit-claiming.\",\n    \"label\": \"0\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 7723,
+            "completion_tokens": 1688,
+            "total_tokens": 9411,
+            "prompt_tokens_details": {
+              "cached_tokens": 7616,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "request-00000020",
+      "custom_id": "request-00000020",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "qwen/qwen3.8-2.4t-a95b",
+          "id": "gen-batch-1788988204-20698e935535e2446664",
+          "created": 1788988364,
+          "system_fingerprint": "default",
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n    \"1627\": {\n        \"codebook_rule\": [\n            \"1\"\n        ],\n        \"document_id\": \"1627\",\n        \"explanation\": \"The text describes how Senator Harkin and others requested that the Senate Budget Committee restore cuts to CDBG funding, and during debate he will cosponsor an amendment to do so. It also details the amount of federal funding received by Iowa's communities from various programs, which could imply that he secured these funds for his constituents.\",\n        \"label\": \"1\"\n    },\n    \"2112\": {\n        \"codebook_rule\": [],\n        \"document_id\": \"2112\",\n        \"explanation\": \"This text is a news article reporting that Senator Conrad has become the ranking member of the Senate Social Security and Family Policy Subcommittee. While it notes his position, it does not claim that he is responsible for achieving a specific outcome. It also does not fall under the rules for receiving awards or honors, so it does not qualify as credit-claiming.\",\n        \"label\": \"0\"\n    },\n    \"2293\": {\n        \"codebook_rule\": [\n            \"2\",\n            \"5\"\n        ],\n        \"document_id\": \"2293\",\n        \"explanation\": \"This text states that the Senate Finance Committee approved legislative language authored by Senator Crapo, and that he completed the markup of related legislation. This corresponds to the rule concerning legislative achievements, and also corresponds to the rule of explicitly linking the legislation to the senator as its author.\",\n        \"label\": \"1\"\n    },\n    \"2363\": {\n        \"codebook_rule\": [],\n        \"document_id\": \"2363\",\n        \"explanation\": \"This text describes Senator Dorgan's introduction of a bill and his stated intent to try to attach the legislation to an emergency supplemental spending bill, but it does not indicate a completed or secured outcome. There is a reference to a past success ('last December, succeeded in attaching the disaster relief package to a major spending bill'), but the main purpose of this release is the bill introduction and future intent, not the claim of a specific achievement secured by the senator himself. Also, the text explicitly states that 'the majority party in the House removed the language from the final bill,' which indicates that the previous attempt ultimately did not succeed. Therefore, this text does not meet the credit-claiming criteria.\",\n        \"label\": \"0\"\n    },\n    \"25\": {\n        \"codebook_rule\": [],\n        \"document_id\": \"25\",\n        \"explanation\": \"This text is a statement by Senator Feinstein regarding a CIA report. She is commenting on oversight and the importance of reforms, but there is no claim of any concrete result or achievement by the senator herself.\",\n        \"label\": \"0\"\n    },\n    \"3278\": {\n        \"codebook_rule\": [\n            \"1\",\n            \"4\"\n        ],\n        \"document_id\": \"3278\",\n        \"explanation\": \"The text states that Senator Schumer announced a federal grant for the Germantown Hose Company, and explicitly claims that he successfully pushed for additional funding for the Assistance to Firefighters Grant Program. This corresponds to both the rule concerning concrete outcomes (securing funding) and the rule concerning advocacy producing concrete benefits.\",\n        \"label\": \"1\"\n    },\n    \"4329\": {\n        \"codebook_rule\": [],\n        \"document_id\": \"4329\",\n        \"explanation\": \"The senators are requesting that the GSA postpone the implementation of a policy, and asking for a GAO review. They are expressing concern and seeking action, but there is no claim of a concrete result having been achieved.\",\n        \"label\": \"0\"\n    },\n    \"4359\": {\n        \"codebook_rule\": [\n            \"1\",\n            \"4\"\n        ],\n        \"document_id\": \"4359\",\n        \"explanation\": \"Senator Rockefeller announces $2.53 million in grants for West Virginia, and claims that he contributed to the creation of the E-Rate program that provides such funding. This falls under the rule of securing funding, and also matches the rule of claiming that his advocacy produced concrete benefits.\",\n        \"label\": \"1\"\n    },\n    \"595\": {\n        \"codebook_rule\": [],\n        \"document_id\": \"595\",\n        \"explanation\": \"This release lists bills introduced by Senator Allard on the first day of Congress. It describes legislative activity and future intent, but does not claim that any of the bills were passed or enacted, so it does not qualify as credit-claiming.\",\n        \"label\": \"0\"\n    },\n    \"648\": {\n        \"codebook_rule\": [],\n        \"document_id\": \"648\",\n        \"explanation\": \"Senator Landrieu testified on the insurance crisis and is cosponsoring a bill, but the text does not claim any concrete result or achievement. It describes activity and positions, but does not claim credit for any outcome.\",\n        \"label\": \"0\"\n    }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 8366,
+            "completion_tokens": 1134,
+            "total_tokens": 9500,
+            "prompt_tokens_details": {
+              "cached_tokens": 8256,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Together"
+        }
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+You will receive a codebook and a set of press releases from US senators.
+
+Following the codebook, classify each text according to whether the senator is "credit-claiming." Use only the information provided in the codebook, and no other information.
+
+Use only one of these labels:
+
+"1": The senator is credit-claiming.
+"0": The senator is not credit-claiming.
+
+The documents will be provided as JSON objects with an ID and text:
+
+[
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
+  ...
+]
+
+For each text, return:
+* ID: ID of the text document
+* Label: Your classification, 1 or 0
+* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.
+
+Return a JSON object matching the supplied output format schema.
+

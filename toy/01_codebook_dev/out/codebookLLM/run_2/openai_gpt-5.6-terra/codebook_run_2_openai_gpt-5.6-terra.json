@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself, alone or with colleagues, as responsible for obtaining, creating, protecting, advancing, or delivering a concrete governmental benefit, policy, program, funding stream, institutional decision, or other favorable outcome.",
+  "clarification": "Classify a release as credit-claiming when it explicitly connects the senator to an accomplishment or a meaningful effort to produce one. This includes saying the senator authored, introduced, passed, secured, requested, negotiated, obtained, helped deliver, successfully advocated for, or otherwise advanced legislation, appropriations, grants, agency decisions, services, or local projects. It also includes claims of prior successful intervention, even when the release chiefly announces the resulting federal action. Sponsorship and legislative authorship count because they attribute policy-making activity to the senator.",
+  "positive_examples": [
+    {
+      "text": "Sen. Talent announces that the Senate has approved his request for $1.5 million for the Health Sciences Research and Education Facility at the University of Missouri-Columbia.",
+      "explanation": "This explicitly credits Talent's request with obtaining a specific appropriation for a named in-state project."
+    },
+    {
+      "text": "Dorgan authored legislation, which was signed into law, that created the National Center designation.",
+      "explanation": "The release directly attributes the creation of the designation to Dorgan's enacted legislation."
+    },
+    {
+      "text": "Senator Clinton ... played a key role ... in preventing the removal of four C-130 Aircraft ... from the Stratton Air National Guard base.",
+      "explanation": "Clinton claims a successful personal role in preserving a valued military asset for New York."
+    }
+  ],
+  "negative_clarification": "Do not classify statements as credit-claiming when they merely express a policy opinion, criticize another official or administration, commemorate an event or person, explain a vote without claiming an accomplishment, invite constituents to an event, or report an agency action without linking it to the senator's efforts. A generic announcement of a grant or federal decision is not enough unless the senator claims to have secured, requested, or materially helped produce it. Purely prospective pledges to fight or work on an issue also do not alone constitute credit-claiming.",
+  "negative_examples": [
+    {
+      "text": "Sen. Reid criticized the Bush Administration's position on global warming and said he hoped the announcement marked a policy reversal.",
+      "explanation": "This is criticism of the administration and an expression of policy preference, not a claim that Reid delivered a result."
+    },
+    {
+      "text": "Sens. Dodd and Lieberman announced that Bradley International Airport will receive a federal grant totaling $2,250,000.",
+      "explanation": "Although the senators announce beneficial funding, the release does not say that either senator obtained, requested, or influenced the grant."
+    },
+    {
+      "text": "Senator Allard invited residents of Greeley and the surrounding area to attend a town meeting.",
+      "explanation": "An invitation to a constituent meeting is constituent outreach, not a claim of having delivered a governmental benefit or policy outcome."
+    }
+  ]
+}

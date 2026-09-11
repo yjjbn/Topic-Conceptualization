@@ -1,0 +1,53 @@
+{
+  "definition": "Credit-claiming refers to instances where a senator publicly asserts responsibility for, or announces the delivery of, a desirable outcome for their state, constituents, or specific groups. This typically involves announcing the receipt of federal grants, localized funding, project approvals, disaster relief, or taking credit for the successful passage of a specific legislative provision, amendment, or resolution that the senator authored or supported.",
+  "decision_rules": [
+    {
+      "rule_id": "1",
+      "rule": "Securing or Announcing Federal Funds, Grants, or Projects: The senator announces that they have secured, delivered, or helped to obtain federal funding, grants, or localized projects for their state, or they simply announce the award of such federal funds to state or local entities (as announcing these funds is a primary way politicians claim credit for them).",
+      "positive_example": {
+        "text": "Senator Smith announced today that the Department of Transportation has awarded a $2 million grant to the city to improve local highways.",
+        "explanation": "The senator is announcing the delivery of specific federal funds to their state, thereby claiming credit for bringing those resources home."
+      },
+      "negative_example": {
+        "text": "Senator Smith strongly supports the city's application for federal funding and urges the agency to approve it.",
+        "explanation": "The senator is advocating for the funds and taking a position, but has not yet secured an outcome or announced an award."
+      }
+    },
+    {
+      "rule_id": "2",
+      "rule": "Passing Legislation, Amendments, or Resolutions: The senator claims credit for the successful passage or inclusion of a bill, amendment, or resolution they authored, sponsored, or championed, specifically highlighting the benefits it provides or the milestone it achieved (e.g., passing a committee, passing the Senate, or being signed into law).",
+      "positive_example": {
+        "text": "Today the Senate passed my amendment to the Farm Bill, which will provide much-needed disaster relief to our state's farmers.",
+        "explanation": "The senator takes credit for an actual legislative victory (passing an amendment) that yields specific benefits."
+      },
+      "negative_example": {
+        "text": "Today I introduced a bill to provide disaster relief to our state's farmers.",
+        "explanation": "Introducing a bill is merely position-taking; the senator is not claiming credit for a realized legislative outcome."
+      }
+    },
+    {
+      "rule_id": "3",
+      "rule": "Influencing Agency Decisions: The senator claims that their direct intervention, such as sending a letter, making a formal request, or holding a meeting, successfully resulted in a favorable decision, action, or policy change by a federal agency or the executive branch.",
+      "positive_example": {
+        "text": "Following my meeting with the Secretary of the Interior, the Department has agreed to my request to keep the local national park open year-round.",
+        "explanation": "The senator claims their direct intervention caused the executive branch to deliver a favorable outcome."
+      },
+      "negative_example": {
+        "text": "I sent a letter to the Secretary of the Interior urging him to keep the local national park open year-round.",
+        "explanation": "The senator took action to pressure the agency, but no favorable outcome has been achieved yet."
+      }
+    },
+    {
+      "rule_id": "4",
+      "rule": "Patronage and Appointments: The senator claims credit for successfully nominating or recommending an individual for a federal appointment, military service academy admission, or other honor.",
+      "positive_example": {
+        "text": "I am proud to announce that John Doe, whom I nominated, has been accepted into the U.S. Naval Academy.",
+        "explanation": "The senator claims credit for the successful outcome of their nomination."
+      },
+      "negative_example": {
+        "text": "My office is currently accepting applications from high school students seeking a nomination to a U.S. service academy.",
+        "explanation": "The senator is describing an administrative process but is not claiming credit for a specific, successful appointment."
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "definition": "Credit-claiming is when a legislator claims responsibility for or announces the provision of a particularistic benefit (such as a federal grant, project, or funding) to their state or district, or when they claim personal responsibility for successfully advancing or passing substantive legislation or amendments that deliver tangible benefits.",
+  "clarification": "A text should be classified as credit-claiming if it explicitly associates the senator with securing a tangible benefit. This includes announcing federal grants awarded to local entities like fire departments or airports. Even if the senator merely 'announces' a grant rather than detailing their direct role, the purpose of the announcement is to associate the senator with the delivery of federal funds. It also includes statements where the senator notes that a federal agency took a requested action due to the senator's intervention, or when a bill or amendment authored or sponsored by the senator successfully passes a legislative hurdle (e.g., committee approval or full Senate passage). Retrospective credit-claims (mentioning a past accomplishment to provide context for a current statement) also qualify as credit-claiming.",
+  "positive_examples": [
+    {
+      "text": "Sen. Mike DeWine (R-OH) today announced that Troy Township Fire Department will receive $78,046 as part of his Firefighter Investment and Response Enhancement (FIRE) Act, which provides competitive grants...",
+      "explanation": "The senator explicitly announces the awarding of a federal grant to a local entity and links the funding to legislation he originally authored, clearly claiming credit for the material benefit provided to his state."
+    },
+    {
+      "text": "The U.S. Senate has approved legislation by Sen. Robert C. Byrd, D-W.Va., to boost funding for the National Guard Youth ChalleNGe program...",
+      "explanation": "The senator claims credit for the successful passage of legislation he authored that boosts funding for a specific program, demonstrating responsibility for a substantive policy outcome."
+    }
+  ],
+  "negative_clarification": "A text should NOT be classified as credit-claiming if the senator is merely introducing or cosponsoring a bill that has not yet passed, stating a policy position, urging another entity to take action without announcing a successful outcome, criticizing an opposing party, or announcing purely symbolic or memorial resolutions. Furthermore, merely applauding the passage of a bill they did not explicitly claim a role in advancing or authoring does not count.",
+  "negative_examples": [
+    {
+      "text": "Sen. Kay Bailey Hutchison (R-TX) today signed on as an original cosponsor of the Veterans Housing Benefits Enhancement Act of 2007.",
+      "explanation": "The senator is merely announcing her cosponsorship of a newly introduced bill, which does not constitute securing a tangible benefit or successfully passing legislation."
+    },
+    {
+      "text": "Senator Hillary Rodham Clinton welcomed a decision yesterday by the Advisory Board on Radiation and Worker Health... to recommend approval of a Special Exposure Cohort...",
+      "explanation": "The senator is welcoming a policy decision made by an independent executive board but does not claim that her actions or legislation brought about the decision, meaning she is not claiming credit for the outcome."
+    }
+  ]
+}

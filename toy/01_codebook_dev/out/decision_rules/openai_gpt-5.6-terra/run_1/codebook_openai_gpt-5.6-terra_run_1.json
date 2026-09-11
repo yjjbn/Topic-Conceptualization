@@ -1,0 +1,41 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself, alone or with colleagues, as having caused, secured, created, advanced, protected, or materially contributed to a concrete governmental benefit, policy, program, funding outcome, or local/state result. It includes credit for legislative or oversight activity when the senator explicitly identifies their role, whether or not the effort has become law.",
+  "decision_rules": [
+    {
+      "rule_id": "1",
+      "rule": "Classify as credit-claiming when the senator explicitly takes credit for obtaining, securing, delivering, restoring, protecting, or otherwise helping produce a specific allocation, grant, designation, project, administrative decision, or other concrete benefit.",
+      "positive_example": {
+        "text": "Sen. Mikulski delivers on commitment to BRAC-related transportation projects and states that she fought to include funding for specified Maryland projects.",
+        "explanation": "The release directly attributes concrete appropriations outcomes to the senator's own efforts."
+      },
+      "negative_example": {
+        "text": "Sens. Dodd and Lieberman announce that Bradley International Airport will receive a federal transportation grant.",
+        "explanation": "The senators announce and praise an award, but the text does not say that they secured it, requested it, or otherwise caused the grant."
+      }
+    },
+    {
+      "rule_id": "2",
+      "rule": "Classify as credit-claiming when the senator claims authorship, sponsorship, introduction, successful amendment activity, or other identifiable leadership on legislation or a program, including a pending proposal.",
+      "positive_example": {
+        "text": "Sen. Dorgan says he authored legislation, signed into law, that created Bismarck State College's National Center designation.",
+        "explanation": "The senator claims both authorship and a resulting enacted policy that generated the designation."
+      },
+      "negative_example": {
+        "text": "Sen. Nelson explains why he voted against Iraq withdrawal resolutions.",
+        "explanation": "Casting and explaining a vote is a policy position, but it does not claim authorship, leadership, or credit for creating a policy accomplishment."
+      }
+    },
+    {
+      "rule_id": "3",
+      "rule": "Classify as credit-claiming when the senator claims to have used official intervention or oversight\u2014such as letters, meetings, hearings, investigations, requests, or pressure\u2014to advance or protect a specific constituency interest or government action.",
+      "positive_example": {
+        "text": "Sen. Santorum states that he wrote HUD urging support for Allentown's HOPE VI application and presents the resulting $20 million award.",
+        "explanation": "The text connects the senator's specific intervention to a concrete local outcome."
+      },
+      "negative_example": {
+        "text": "Sen. Cornyn asks the Homeland Security Secretary to consider a local levee proposal.",
+        "explanation": "The senator advocates for consideration of a proposal, but the release does not claim that the request produced an outcome."
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "definition": "Credit-claiming refers to instances where a senator asserts or implies that they are personally responsible for, or instrumental in, securing a specific, tangible benefit for their state, constituents, or a targeted group. This typically includes announcing the awarding of federal grants, local project funding, disaster relief, specific federal installations, constituency casework, or federal patronage appointments.",
+  "clarification": "Include texts where the senator announces federal funds, grants, awards, or local projects coming to their state. It is standard practice for senators to use the announcement of federal funds as a way to implicitly or explicitly take credit for them (e.g., 'I secured', 'my legislation provided', or simply 'Senator X announces $Y for Z'). Targeted constituency service or successful federal appointments should also be included.",
+  "positive_examples": [
+    {
+      "text": "United States Senator Richard Shelby Press Room Press Room News Releases SHELBY ANNOUNCES OVER 3 MILLION FOR TALLADEGA January 27 2006 Washington D C U S Senator Richard Shelby R AL a member of the Senate Appropriations Committee announced today that the U S Department of Health and Human Services will release 3 305 732 to the Talladega Clay Randolph and Coosa Childcare Programs...",
+      "explanation": "This text explicitly announces the awarding of a specific federal grant to local entities in the senator's state. By serving as the conduit for the announcement and emphasizing his position on the Appropriations Committee, the senator is claiming credit for delivering federal resources to his constituents."
+    },
+    {
+      "text": "SENS. BAUCUS, TESTER ANNOUNCE MORE THAN $12M FOR BUTTE Montana Senators Max Baucus and Jon Tester have delivered on their promise to secure federal funding for the Mining City. The Senators announced today that $12.5 million for vital military projects in Butte has been included in the Defense Appropriations Bill... 'Jon and I were proud to go to bat for these dollars, and we are going to make sure the ball gets across the goal.'",
+      "explanation": "The senators claim direct, explicit responsibility for securing particularized benefits (military projects and associated funding) for a specific city in their state, portraying themselves as the primary causal agents of this positive outcome."
+    }
+  ],
+  "negative_clarification": "Exclude texts that merely announce the introduction of broad policy legislation, express support for or opposition to a policy, state a legislative position, or criticize other officials. Even if the senator claims to have authored or cosponsored a piece of legislation, it should not be coded as credit-claiming unless they are pointing to a specific, particularized benefit, project, or localized funding outcome that was successfully secured as a result.",
+  "negative_examples": [
+    {
+      "text": "PRESS RELEASE NELSON SUPPORTS SETTING MEASURABLE GOALS IN IRAQ NOT ARBITRARY DATES Press Release June 22 2006... Nebraska s Senator Ben Nelson voted against both resolutions because he supports setting measurable goals for progress in Iraq and not arbitrary timetables and dates... Both amendments considered today were defeated",
+      "explanation": "The senator is engaging in position-taking on a broad national policy issue (the war in Iraq) and explaining a vote. He is not claiming credit for securing a tangible, specific benefit or funding for his state."
+    },
+    {
+      "text": "FOR IMMEDIATE RELEASE Washington D C Today Senator Edward M Kennedy introduced legislation to enhance stem cell research and to strengthen anti cloning provisions Kennedy joined by his colleagues and co sponsors of the Human Cloning Ban and Stem Cell Research Protection Act highlighted the key provisions that separate this bill from similar pieces of legislation...",
+      "explanation": "Although the senator is announcing the introduction of a bill and explaining its provisions, this is position-taking and policy advocacy on a broad national issue. He is not claiming credit for having successfully secured a specific, particularized localized benefit or project."
+    }
+  ]
+}

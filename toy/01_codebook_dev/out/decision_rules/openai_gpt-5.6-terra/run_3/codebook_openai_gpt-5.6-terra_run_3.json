@@ -1,0 +1,41 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself as having taken a meaningful action that produced, secured, advanced, protected, or directly helped obtain a policy, program, funding award, government decision, or other concrete benefit. Mere opinions, votes stated as positions, criticism, ceremonial remarks, and neutral announcements are not credit-claiming unless the text also attributes a substantive contribution to the senator.",
+  "decision_rules": [
+    {
+      "rule_id": "1",
+      "rule": "Classify as credit-claiming when the senator claims authorship, sponsorship, introduction, negotiation, amendment activity, or other legislative work that advanced or enacted a specified policy or bill.",
+      "positive_example": {
+        "text": "Sen. Byrd bolsters National Guard's Youth ChalleNGe: the Senate approved legislation by Sen. Robert C. Byrd to boost funding for the program.",
+        "explanation": "The release directly attributes the legislative provision and its successful Senate approval to Byrd."
+      },
+      "negative_example": {
+        "text": "Sen. Jeffords comments on voting in support of Kerry and Levin amendments on Iraq.",
+        "explanation": "The senator explains why he voted for amendments, but does not claim to have authored, secured, or advanced them."
+      }
+    },
+    {
+      "rule_id": "2",
+      "rule": "Classify as credit-claiming when the senator attributes the receipt, restoration, protection, or approval of specific federal funds, grants, projects, services, or government decisions to their own request, advocacy, appropriations work, or intervention.",
+      "positive_example": {
+        "text": "Sen. Kyl garners $3.4 million for Arizona high-tech training program: the Department of Labor granted his request for the training grant.",
+        "explanation": "The text explicitly connects the awarded grant to Kyl's request."
+      },
+      "negative_example": {
+        "text": "Sens. Dodd and Lieberman announce a $2.25 million federal grant for Bradley International Airport.",
+        "explanation": "The senators announce the grant, but the release does not claim that they secured it, requested it, or otherwise caused the award."
+      }
+    },
+    {
+      "rule_id": "3",
+      "rule": "Classify as credit-claiming when the senator presents advocacy, oversight, or direct engagement with an agency or other officials as instrumental in obtaining a response, advancing a constituent interest, or addressing a concrete problem.",
+      "positive_example": {
+        "text": "Administration agrees to Dorgan request to remove hold on North Dakota wind energy project.",
+        "explanation": "The announcement explicitly credits Dorgan's request and advocacy with the Administration's decision to let the project proceed."
+      },
+      "negative_example": {
+        "text": "Sen. Cornyn asks Homeland Security chief to consider proposed Valley levee plans.",
+        "explanation": "Cornyn requests consideration of a proposal, but the release reports no resulting decision or concrete achievement."
+      }
+    }
+  ]
+}

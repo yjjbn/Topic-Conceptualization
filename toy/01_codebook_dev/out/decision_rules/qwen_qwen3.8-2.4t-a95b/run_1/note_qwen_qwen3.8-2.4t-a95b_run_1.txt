@@ -1,0 +1,24 @@
+qwen, codebook generation
+
+Parsed arguments (including defaults):
+{
+  "model": "qwen/qwen3.8-2.4t-a95b",
+  "session_id": "qwen",
+  "nametag": "run_1",
+  "note": "qwen, codebook generation",
+  "data_path": "data\\grimmer_codebookdev_200.csv",
+  "prompt_path": "prompts\\prompt_classify-create-codebook_grimmer.txt",
+  "test_rows": null,
+  "out_folder": "out",
+  "id_column": "document_id",
+  "text_column": "text",
+  "max_output_tokens": 50000
+}
+
+Generation ID: gen-1788969535-gYRMMIjQpz9iUrYHbpDk
+Cost (OpenRouter credits): 0.434354
+Input tokens: 114070
+Output tokens: 34369
+Cached input tokens: 0
+Cache write tokens: 0
+API key (masked): ...7547
