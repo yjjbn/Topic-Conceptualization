@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself, their office, or their legislative coalition as responsible for obtaining, creating, advancing, preserving, or materially influencing a governmental policy, funding award, program, service, or other public benefit.",
+  "clarification": "Classify a release as credit-claiming when it explicitly links the senator to an accomplishment or concrete effort, such as securing appropriations, authoring or passing a law, obtaining agency action, successfully pressing an agency, or helping deliver a local benefit. Claims may concern individual, bipartisan, delegation, committee, or party accomplishments. Sponsoring or introducing legislation can qualify when the release prominently presents the senator as leading a substantive policy initiative.",
+  "positive_examples": [
+    {
+      "text": "Dorgan authored legislation, which was signed into law, that created the National Center designation.",
+      "explanation": "This explicitly attributes the beneficial designation to legislation authored by the senator and enacted into law."
+    },
+    {
+      "text": "I helped secure an expedited environmental review from the federal government and facilitated the return of the project to the national priority list for federal funding.",
+      "explanation": "The senator directly claims responsibility for advancing a specific airport project's federal review and funding status."
+    },
+    {
+      "text": "The Senate has approved legislation by Sen. Robert C. Byrd ... to boost funding for the National Guard Youth ChalleNGe program.",
+      "explanation": "This connects an approved legislative result and program benefit directly to the senator."
+    }
+  ],
+  "negative_clarification": "Do not classify statements as credit-claiming when they only express an opinion, criticize another official, commemorate a person or event, announce an agency decision without taking responsibility for it, invite constituents to an event, or request future action without reporting a result. A vote or policy preference alone is generally not enough unless the release frames it as part of a concrete accomplishment or enacted measure.",
+  "negative_examples": [
+    {
+      "text": "The Bush Administration's 'head in the sand' position on global warming has defied reason and common sense.",
+      "explanation": "This is criticism of the administration, not a claim that the senator delivered a policy outcome."
+    },
+    {
+      "text": "I want to extend an invitation to everyone in Greeley and the surrounding area to attend a very informal community meeting.",
+      "explanation": "This merely announces a town meeting and does not claim credit for a public benefit or accomplishment."
+    },
+    {
+      "text": "The funding was awarded through the U.S. Department of Agriculture and will help NMSU make advancements in the study of ways to reduce incidents of food borne illness.",
+      "explanation": "The senator announces an agency award but does not say that he secured, requested, or otherwise influenced it."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself as responsible, in whole or in part, for obtaining, creating, advancing, protecting, or delivering a concrete governmental action, policy, funding award, program, or benefit.",
+  "clarification": "I classified a release as credit-claiming when it explicitly attributes a tangible result to the senator's action, such as saying the senator authored or introduced an enacted measure, secured funding, obtained agency action, negotiated a provision, or successfully intervened for constituents. Claims can be shared with colleagues and can concern committee, appropriations, oversight, or constituent-service work. A senator's clear claim of having created or passed the underlying program also counts when the release announces benefits flowing from it.",
+  "positive_examples": [
+    {
+      "text": "\u201cDorgan authored legislation, which was signed into law, that created the National Center designation.\u201d",
+      "explanation": "This directly attributes the institutional designation to Dorgan's own enacted legislation."
+    },
+    {
+      "text": "\u201cSen. Talent ... announced that the Senate has approved his request for $1.5 million dollars for the Health Sciences Research and Education Facility.\u201d",
+      "explanation": "Talent explicitly claims responsibility for securing a specific appropriation."
+    },
+    {
+      "text": "\u201cLast month, the Senate unanimously approved an amendment offered by Senators Bayh and Richard Durbin ... that would help end the Patriot Penalty.\u201d",
+      "explanation": "The release identifies Bayh as an author of a successfully adopted amendment with a concrete benefit."
+    }
+  ],
+  "negative_clarification": "I did not classify statements as credit-claiming when they only announce an agency grant or decision without asserting the senator caused it; express support, opposition, concern, or a vote; request future action; praise another official; or commemorate an event or person. Merely sponsoring or cosponsoring a bill that has not yet produced a result is generally advocacy rather than credit for an accomplishment.",
+  "negative_examples": [
+    {
+      "text": "\u201cJudge Chertoff comes to this position with a great deal of experience ... I look forward to working with Judge Chertoff.\u201d",
+      "explanation": "This is praise for a confirmed official and a statement of future cooperation, not a claim of achievement."
+    },
+    {
+      "text": "\u201cI voted in support of the Sens. Kerry and Levin amendments today because our nation needs a plan...\u201d",
+      "explanation": "The senator explains a policy vote but does not claim the amendments passed or that he delivered a result."
+    },
+    {
+      "text": "\u201cSenator Shelby ... announced that the Department of Homeland Security will release $3,510 to the Homewood Fire Department.\u201d",
+      "explanation": "The release simply reports an agency award and does not say Shelby secured, requested, or otherwise caused it."
+    }
+  ]
+}

@@ -13,7 +13,7 @@ BATCHES_URL = "https://openrouter.ai/api/beta/batches"
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("batch_id", help="batch ID to retrieve")
+    parser.add_argument("--batch-id", help="batch ID to retrieve")
     args = parser.parse_args()
     try:
         args.meta_path = find_meta_path(

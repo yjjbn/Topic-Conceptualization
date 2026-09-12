@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator explicitly attributes a positive outcome, action, or achievement to their own efforts, leadership, or legislative work.",
+  "clarification": "Credit-claiming is identified when a senator uses first-person language (e.g., 'I secured,' 'I authored,' 'I announced') or explicitly ties a positive development to their direct involvement. This includes taking pride in past actions, announcing funding or programs they helped create, or highlighting their role in legislative or policy successes. The focus is on the senator's explicit assertion of responsibility for a beneficial result.",
+  "positive_examples": [
+    {
+      "text": "Sen. Byron Dorgan (D-ND) announced Friday that U.S. Energy Secretary Samuel Bodman has officially designated Bismarck State College (BSC) as the National Power Plant Operations Technology and Educational Center. Dorgan said the designation is a recognition of the school's cutting-edge education and training program. This designation will help attract students, industry, and federal funding to help carry out BSC's mission. Dorgan authored legislation, which was signed into law, that created the National Center designation.",
+      "explanation": "Senator Dorgan explicitly states that he authored the legislation that created the National Center designation, directly claiming credit for the outcome."
+    },
+    {
+      "text": "Senator Clinton explicitly states that she played a key role along with SMAC in preventing the removal of four C-130 Aircraft as part of the 109th Airlift Wing recommended by the Department of Defense.",
+      "explanation": "Senator Clinton explicitly attributes the prevention of the removal of aircraft to her own efforts, which is a direct claim of credit."
+    },
+    {
+      "text": "Senators Wyden and Smith explicitly state that they gained funding approval for the Pacific Coast Salmon Recovery Fund and for Oregon State University (OSU) for oceanic observation research.",
+      "explanation": "The senators explicitly state that they secured funding approval, directly tying the positive outcome to their actions."
+    }
+  ],
+  "negative_clarification": "Credit-claiming does not occur when a senator merely discusses issues, criticizes others, or expresses support or opposition without explicitly attributing a positive outcome to their own efforts. Statements that are purely informational, critical, or supportive without a direct link to the senator's actions do not qualify as credit-claiming.",
+  "negative_examples": [
+    {
+      "text": "The Bush Administration's 'head in the sand' position on global warming has defied reason and common sense. For six long years, it has suppressed scientists and scientific evidence, undermined international efforts to find solutions and delayed implementation of a strategy to protect the long-term interests of the nation.",
+      "explanation": "The statement criticizes the Administration but does not claim any personal or legislative credit for addressing global warming."
+    },
+    {
+      "text": "The parliamentary elections in Iraq this week are an important step forward and I salute the bravery of the Iraqi people and our troops who are working to make these elections possible.",
+      "explanation": "The statement acknowledges progress in Iraq but does not attribute any positive outcome to the senator's own efforts."
+    },
+    {
+      "text": "I believe that marriage is between a man and a woman. When I was governor of Delaware, I signed legislation defining marriage as between a man and a woman.",
+      "explanation": "While the senator mentions past actions, the statement does not explicitly claim credit for a current or recent positive outcome tied to their efforts."
+    }
+  ]
+}

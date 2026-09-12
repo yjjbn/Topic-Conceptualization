@@ -1,0 +1,33 @@
+{
+  "definition": "Credit-claiming occurs when a senator presents themself, alone or with colleagues, as having caused, secured, authored, advanced, or otherwise materially contributed to a concrete governmental benefit, legislative outcome, funding award, program, or policy change.",
+  "clarification": "Classify as credit-claiming when the release explicitly connects the senator to an accomplishment or effort in a way that invites credit. This includes statements that the senator secured funding, authored or introduced legislation, won inclusion of a provision or amendment, obtained agency action, helped create a program, or prompted a decision through a letter, request, or intervention. Joint credit with a delegation or bipartisan group still qualifies.",
+  "positive_examples": [
+    {
+      "text": "Talent says the Senate approved his request for $1.5 million for a University of Missouri health-sciences facility.",
+      "explanation": "The senator explicitly identifies the appropriated funding as his request, claiming a direct role in obtaining a local benefit."
+    },
+    {
+      "text": "Nelson says the Senate adopted his amendment to prevent Japanese beef imports until U.S. beef can enter Japan.",
+      "explanation": "This claims authorship of a specific amendment and reports its successful adoption."
+    },
+    {
+      "text": "Lott says FEMA's trailer deployment followed his appeal to President Bush for immediate transport of available trailers.",
+      "explanation": "The release links the senator's intervention to a subsequent disaster-relief action."
+    }
+  ],
+  "negative_clarification": "Do not classify as credit-claiming when a senator only states a policy view, explains a vote, criticizes another official or party, offers condolences, holds a meeting, announces an agency action without asserting a role in it, or promises future work. General praise for a program or acknowledgement of a grant is insufficient unless the senator claims to have helped produce it.",
+  "negative_examples": [
+    {
+      "text": "Reid criticizes the Bush administration's handling of global warming and says the announcement may be a public-relations stunt.",
+      "explanation": "This is criticism of another actor, not a claim that Reid achieved anything."
+    },
+    {
+      "text": "Allard invites constituents to attend a town meeting in Greeley.",
+      "explanation": "An event invitation does not claim credit for a governmental result or benefit."
+    },
+    {
+      "text": "Dodd and Lieberman announce a Transportation Department grant for Bradley International Airport.",
+      "explanation": "They report the grant, but the release does not say they requested, secured, or otherwise caused it."
+    }
+  ]
+}

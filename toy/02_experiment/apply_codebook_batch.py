@@ -37,17 +37,17 @@ class GoogleClassifications(StrictModel):
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True)
-    parser.add_argument("--nametag", default="3by3_redo")
-    parser.add_argument("--note", default="", help="add a note if you want")
+    parser.add_argument("--nametag", default="explanation_codebookLLM")
+    parser.add_argument("--run", type=int, default=1)
     parser.add_argument("--codebook-path", type=Path, required=True)
     parser.add_argument("--data-path", type=Path, default=Path("./data/grimmer_codebookapply_300.csv"))
     parser.add_argument("--prompt-path", type=Path, default=Path("./prompts/apply_codebookLLM_grimmer.txt"))
     parser.add_argument("--out-folder", type=Path, default=Path("./out"))
     parser.add_argument("--test-rows", type=int, default=None)
-    parser.add_argument("--id-column", default="document_id")
-    parser.add_argument("--text-column", default="text")
-    parser.add_argument("--max-output-tokens", type=int, default=5000)
-    return parser.parse_args()
+    parser.add_argument("--note", default="", help="add a note if you want")
+    # parser.add_argument("--max-output-tokens", type=int, default=5000)
+    args = parser.parse_args()
+    return args
 
 
 def safe_name(value):
@@ -96,7 +96,11 @@ def request_json(method, url, api_key, body):
         data=json.dumps(body, ensure_ascii=False),
         timeout=600,
     )
-    return response.json()
+    result = response.json()
+    if not response.ok or result.get("error"):
+        error = result.get("error", result)
+        raise RuntimeError(f"Batch API request failed (HTTP {response.status_code}): {error}")
+    return result
 
 
 def main():
@@ -126,8 +130,8 @@ def main():
 
     document_inputs = [
         {
-            "document_id": str(document[args.id_column]),
-            "text": str(document[args.text_column]),
+            "document_id": str(document["document_id"]),
+            "text": str(document["text"]),
         }
         for document in documents.iter_rows(named=True)
     ]
@@ -180,6 +184,8 @@ def main():
     submitted_at = datetime.now(timezone.utc).isoformat()
     submission = request_json("POST", BATCHES_URL, api_key, payload)
     batch_id = submission.get("id")
+    if not isinstance(batch_id, str) or not batch_id.strip():
+        raise RuntimeError(f"Batch submission returned no batch ID: {submission}")
 
     model_name = safe_name(args.model)
     nametag = safe_name(args.nametag)
@@ -187,15 +193,16 @@ def main():
     output_folder = (
         args.out_folder
         / f"{nametag}"
+        / f"run_{args.run}"
         / f"{model_name}"
         / f"{codebook_name}"
         / f"{batch_id}"
     )
     output_folder.mkdir(parents=True, exist_ok=True)
     if args.test_rows is None:
-        file_prefix = f"{model_name}_{nametag}"
+        file_prefix = f"{model_name}_{nametag}_run_{args.run}"
     else:
-        file_prefix = f"test_{args.test_rows}_{model_name}_{nametag}"
+        file_prefix = f"test_{args.test_rows}_{model_name}_{nametag}_run_{args.run}"
 
     meta_path = output_folder / f"batch_meta_{file_prefix}.json"
 
