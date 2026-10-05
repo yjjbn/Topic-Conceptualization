@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political communication that appeals to moral values, ethical duties, human rights, social justice, fairness, compassion, or systemic right/wrong, rather than presenting arguments solely based on technical, economic, or administrative efficiency.",
+  "clarification": "A text should be classified as containing moral rhetoric (1) if it meets one or more of the following inclusion criteria: 1. Uses ethically charged words (e.g., 'respect', 'justice', 'corruption', 'terror', 'repression', 'fairness', 'courage', 'patriotism'). 2. Appeals to human dignity, equal rights, social justice, or the protection of vulnerable groups (e.g., the sick, elderly, or children). 3. Claims that certain states of affairs are 'intolerable', 'unjust', or represents a systemic 'burdens' or 'traps' on humanity. 4. Invokes duties, moral responsibilities, or claims what people 'deserve'.",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "Explicitly references the fundamental moral value of respect."
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Invokes human dignity and the intrinsic worth of vulnerable individuals, presenting a deeply ethical worldview."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Uses humanitarian language focusing on compassion ('comfort and aid'), human suffering ('suffering people'), and injustice ('persecution')."
+    }
+  ],
+  "negative_clarification": "A text should NOT be classified as moral rhetoric (0) if it meets one or more of the following exclusion criteria: 1. Focuses purely on technical, budgetary, procedural, or administrative policies. 2. Explains economic mechanisms or projects neutral statistical metrics (e.g., GDP, tax percentages, or employment rates) without moralistic framing. 3. Uses descriptive or informative language to report historical actions or state services without declaring a moral stance or invoking values.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "The text describes a purely administrative and logistical objective for transit infrastructure without moral appeals."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This text details a highly technical corporate tax policy mechanism designed for financial convenience, with no moral framing."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "A straightforward, neutral programmatic policy statement regarding digital infrastructure."
+    }
+  ]
+}

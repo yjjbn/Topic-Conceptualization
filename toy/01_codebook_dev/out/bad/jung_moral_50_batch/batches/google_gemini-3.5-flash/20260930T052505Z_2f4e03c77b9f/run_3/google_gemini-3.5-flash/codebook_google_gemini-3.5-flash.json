@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political or social language that appeals to ethical values, moral duties, fundamental human rights, fairness, human dignity, or notions of absolute right and wrong to justify political goals or critique existing conditions, rather than relying on pragmatic, economic, administrative, or technical considerations.",
+  "clarification": "To be classified as containing moral rhetoric, a text must use language that frames issues in terms of ethical imperatives or values. Look for keywords and concepts that signal moral evaluation, such as 'respect', 'dignity', 'fairness', 'justice', 'human rights', 'corruption', 'bribery', 'terror', 'compassion', 'vulnerability', 'equality', or appeals to a sacred social contract/responsibility. Policy descriptions or critiques only qualify if they are framed explicitly as moral obligations, systemic injustices, or human rights issues.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text makes a profound ethical claim regarding the intrinsic worth of the individual ('Every person... has a place and a purpose in this world'), highlighting moral responsibility toward the 'vulnerable' or 'frail'."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This statement appeals to a humanitarian and ethical duty to provide relief, using moral concepts like 'comfort', 'suffering', and 'persecution' to justify policy."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text explicitly names 'respect' as a core moral value, invoking ethical principles directly."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric if it is purely administrative, technical, economic, or legalistic, even if it aims at socially beneficial outcomes (e.g., funding healthcare or schools). Generic political slogans, partisan attacks that accuse opponents of bad planning (without accusing them of moral corruption), and standard descriptions of social or cultural trends also do not qualify. Protectionist or nationalist statements emphasizing domestic preferences must not be treated as moral unless they use explicit ethical duty language.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a standard administrative policy goal focused on school transit 'efficiency' and 'accessibility', lacking any ethical framing or moral vocabulary."
+    },
+    {
+      "text": "»  The Government have based their  fiscal plans on 1.75% growth in the  economy which cannot and will  not be achieved under their plans",
+      "explanation": "This is a standard partisan debate about fiscal and macroeconomic forecasting, relying entirely on economic performance data rather than moral arguments."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This details a specific, technical tax policy proposal aiming to reduce compliance burdens, which is entirely practical and administrative."
+    }
+  ]
+}

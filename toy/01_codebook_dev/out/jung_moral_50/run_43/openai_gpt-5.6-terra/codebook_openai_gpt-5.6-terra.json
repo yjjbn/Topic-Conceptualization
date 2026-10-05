@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, duties, rights, deservingness, justice, equality, freedom, dignity, compassion, or condemnation of wrongdoing in order to assess, justify, or criticise a policy, group, or situation.",
+  "clarification": "Code as moral rhetoric when the passage does more than state a policy or practical outcome and frames an issue in normative ethical terms. This includes appeals to respect, rights, equality, fairness, protection of vulnerable people, freedom, common welfare, compassion, or anti-corruption; it also includes explicit claims that a condition is intolerable, justified, discriminatory, or wrongful.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It makes a direct claim about the inherent worth and purpose of every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It uses a moral imperative ('must be closed') to condemn educational inequality between social and ethnic groups."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "It explicitly rejects corruption and endorses anti-bribery enforcement, treating integrity as a moral standard."
+    }
+  ],
+  "negative_clarification": "Do not code purely administrative, technical, economic, descriptive, or instrumental claims merely because they concern socially important subjects. References to jobs, health, poverty, public services, environmental risks, efficiency, or positive outcomes are not moral rhetoric unless the text explicitly frames them through ethical values, rights, fairness, obligation, or moral approval/disapproval.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a detailed technical proposal for simplifying corporate-tax compliance, with no ethical evaluation."
+    },
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This sets a school-testing policy but does not invoke fairness, rights, values, or moral obligation."
+    },
+    {
+      "text": "Development of a land transition plan which will include regulation of farming practices to reduce environmental damage,",
+      "explanation": "It proposes environmental regulation, but frames it as damage reduction rather than an explicit moral duty or value claim."
+    }
+  ]
+}

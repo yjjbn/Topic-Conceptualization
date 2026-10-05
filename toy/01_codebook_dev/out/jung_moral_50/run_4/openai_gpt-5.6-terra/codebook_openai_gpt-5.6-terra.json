@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, actions, institutions, or outcomes through moral principles or values, such as fairness, equality, rights, respect, freedom, dignity, protection of the vulnerable, humanitarian concern, civic duty, or condemnation of wrongdoing.",
+  "clarification": "Classify a text as moral rhetoric when it makes a normative appeal beyond technical policy effectiveness or material benefit. This includes explicit claims about what people deserve, equal or unfair treatment, rights, respect, freedom, justified grievance, protection of vulnerable people, humanitarian obligations, or morally condemned practices such as repression and corruption. It can also include explicit praise of moral virtues such as courage or patriotism.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement affirms the inherent worth and purpose of every person, including frail and vulnerable people."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the need to break down barriers facing minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes principles of universal access to courts and the justice that people deserve."
+    }
+  ],
+  "negative_clarification": "Do not classify text as moral rhetoric when it merely states a policy, administrative procedure, empirical fact, economic forecast, funding proposal, or practical benefit. References to health, poverty, employment, safety, environmental risks, or public services are not sufficient on their own; the text must expressly frame them through a moral value, duty, right, fairness claim, or evaluative judgment.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a straightforward proposal for literacy and numeracy testing, with no moral principle or evaluation."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "The passage details a tax-compliance reform in technical administrative terms."
+    },
+    {
+      "text": "We will re-open the Western Rail Corridor from Ennis to Claremorris and examine the feasibility of reopening the line from Claremorris to Sligo.",
+      "explanation": "The text proposes rail reopening and a feasibility assessment without moral language."
+    }
+  ]
+}

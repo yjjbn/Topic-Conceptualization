@@ -1,0 +1,1088 @@
+{
+  "batch_id": "batch-1790582473-cW4Cywjg30CGMgbxP84f",
+  "note": "",
+  "submitted_at": "2026-09-28T08:01:12.147968+00:00",
+  "batches_url": "https://openrouter.ai/api/beta/batches",
+  "endpoint": "/v1/chat/completions",
+  "arguments": {
+    "codebooks_root": "..\\01_codebook_dev\\out\\schub",
+    "codebook": null,
+    "source_run": 1,
+    "models": null,
+    "data_path": "data\\schub_codebookapply_200.csv",
+    "data_encoding": "utf8",
+    "prompt_path": "prompts\\apply_codebookLLM_schub.txt",
+    "nametag": "schub_4x4",
+    "run": 1,
+    "out_folder": "out",
+    "test_rows": null,
+    "note": "",
+    "dry_run": false,
+    "model": "openai/gpt-5.6-terra",
+    "codebook_path": "..\\01_codebook_dev\\out\\schub\\run_1\\mistralai_mistral-medium-3-5\\codebook_mistralai_mistral-medium-3-5.json"
+  },
+  "documents_per_request": 40,
+  "document_count": 200,
+  "request_count": 5,
+  "source": {
+    "model": "mistralai/mistral-medium-3-5",
+    "run": 1,
+    "codebook_path": "C:\\Users\\yjjby\\Documents\\projects\\Topic-Conceptualization\\toy\\01_codebook_dev\\out\\schub\\run_1\\mistralai_mistral-medium-3-5\\codebook_mistralai_mistral-medium-3-5.json"
+  },
+  "submitted_requests": [
+    {
+      "custom_id": "request-00000001",
+      "document_ids": [
+        "DSCN0705_Brzezinski_1-10-2c.rtf_101",
+        "FRUS268p::Schlesinger_102",
+        "FRUS103p.rtf_103",
+        "FRUS103bp.rtf_104",
+        "FRUS36p::Mcnamara_105",
+        "FRUS83p::Mcnamara_106",
+        "FRUS646::President_107",
+        "FRUSB115p::Dulles_108",
+        "FRUS252p::Kissinger_109",
+        "FRUS81p::President_110",
+        "DSCN0698::Turner_111",
+        "FRUS266p.rtf_112",
+        "FRUSEXCOMM8::Nitze_113",
+        "FRUS212p::Kissinger_114",
+        "FRUS299::Kissinger_115",
+        "FRUS278p::Rusk_116",
+        "FRUS25presponsetonixreq.rtf_117",
+        "FRUSC56.rtf_118",
+        "FRUS225p::Helms_119",
+        "FRUSB146::President_120",
+        "FRUS158p::Fortas_121",
+        "FRUSC57p.rtf_122",
+        "FRUS102p.rtf_123",
+        "FRUS286p::Kissinger_124",
+        "FRUS23p::Taylor_125",
+        "FRUS93p::President_126",
+        "FRUS818p::SmithWalter_127",
+        "FRUSEXCOMM1::Mcnamara_128",
+        "DSCN0837_Turner_25-39-7c.rt.rtf_129",
+        "FRUS295::Schlesinger_130",
+        "FRUS273.rtf_131",
+        "FRUS173p::President_132",
+        "FRUS368p::Lemnitzer_133",
+        "FRUS113::Colby_134",
+        "FRUS104p::Clifford_135",
+        "FRUS299::President_136",
+        "Christopher_Argentina_NSA2_P2.rtf_137",
+        "FRUS80p::Wheeler_138",
+        "FRUS266p.rtf_139",
+        "FRUS620::Dulles_140"
+      ],
+      "documents": [
+        {
+          "document_id": "DSCN0705_Brzezinski_1-10-2c.rtf_101",
+          "text": " According to the NSC staff,recent developments in Soviet policy and propaganda demonstrate that Moscow, -- is now actively preparing for the contingency of sending Soviet Central Asian troops to Afghanistan if nothing less will save the Khalq regime in and -- has considered and decided to disregard the costs elsewhere of such a move to them. In the light of the above,we will review with other agencies the following possible steps to deter Soviet troop intervention, -- The Constellation could be moved somewhere between the Iranian border and Karachi. We could propose to Pakistan that we deploy one AWACS over Pakistan,thus enabling Pakistani (and US.) air reconnaissance and fighter vectoring up to the Afghan border. -- The Soviets could be told that we would consider Soviet troop entry into Afghanistan a move gravely endangering Soviet-U.S.,relations,with implications for U.S. relations with its allies and other"
+        },
+        {
+          "document_id": "FRUS268p::Schlesinger_102",
+          "text": "First,once we get to the point where we have to have air cover,we should pull out anyway. SPLIT They may only be doing this shooting to bloody us. If they see fighters,they may hit us hard. SPLIT They may have pre-positioned orders to attack us. SPLIT I think we can go in over the area with less equipment. SPLIT The North Vietnamese have 4 000 sappers in Saigon. They will hit the Embassy if we attack by fire. SPLIT Should we soften up the artillery first?"
+        },
+        {
+          "document_id": "FRUS103p.rtf_103",
+          "text": "days,together with her appropriate escorts,these could be added to the force. Application for transit of the Canal has been filed. Even with these additions,however,such a force would be devoid of adequate self-contained air cover and ASW protection and thus subject to attack and damage by UAR sea and air forces in the area (the reinforcing force could provide some air cover over the Tiran area,but the distances from the Eastern Mediterranean would limit operational effectiveness). A stronger,better balanced protective force'97augmented primarily by US naval units from CONUS'97could be assembled in 25'9630 days. US and UK forces already in the Mediterranean provide a powerful reinforcing force (consisting of 3 US carriers,1 UK carrier,and numerous other vessels). British air forces in Cyprus may also be available. If the UAR fired on merchantmen and their escorts,aircraft from these Mediterranean forces could,and might have to,intervene in the Tiran area or strike at major air bases and installations in the UAR. The risks involved in testing the blockade with a limited or even an augmented protective force are not negligible. If Nasser is not deterred,the possibility would exist of wider conflict. This possibility is being urgently studied,both politically and militarily."
+        },
+        {
+          "document_id": "FRUS103bp.rtf_104",
+          "text": " As you know,our scenario on the Middle East situation envisages three steps, c. Contingency planning for testing UAR interference with the right of free passage for ships of all nations through the Strait and the Gulf,and contingency planning for the use of force,as necessary,to support that right. Implementing action would be undertaken only after measures in the United Nations had been exhausted and after Congressional approval had been obtained. 4. A Military Plan to Deal With the Straits of Tiran Question A military task force may be required to support,with force,the right of innocent passage,on behalf of the international community,through the Gulf of Aqaba in view of the UAR's announced blockade. The essence of this concept is that an international force could keep the Strait open for all flags,thereby obviating an Arab-Israeli war. Such a task force should be composed"
+        },
+        {
+          "document_id": "FRUS36p::Mcnamara_105",
+          "text": "stated that following the start of an air attack,the initial units of the landing force could invade Cuba within 7 days. 3. The SPLIT reported that,based on information which became available during the night,it now appears that there is equipment in Cuba for approximately 40 MRBM or IRBM launchers. The location of the sites for 36 of these launchers is known. 32 of the 36 known sites appear to have sufficient equipment on them to be included in any air strike directed against Cuba's missile capability. 4."
+        },
+        {
+          "document_id": "FRUS83p::Mcnamara_106",
+          "text": "that the antiaircraft battery could not be destroyed by Vietnamese pilots using T'9628 airplanes,as Ambassador Unger believed. The T'9628s would be lost to ground fire if they tried to attack an antiaircraft battery and the Vietnamese pilots had insufficient inability to deal with the targets. The SPLIT said we have to take some military action. He doubted that we could push the Pathet Lao back to where they were before their recent attack,but we must take some military action,such as the air strike,if we are to prevent further deterioration in our position in the area. The"
+        },
+        {
+          "document_id": "FRUS646::President_107",
+          "text": "basis of expanding the ANZUS Treaty. There were in any case only two possible ways of carrying this thing through. One was to induce the United Nations to intervene. The other was to get Vietnam to invite certain specific nations to come to its assistance on the basis of a treaty between Vietnam and each of the assisting nations. This latter offered the United States a good chance,since we could in all probability get the necessary two-thirds majority vote in the Senate on such a treaty. There was the added advantage,continued the President,that this procedure avoided solely Occidental assistance to Vietnam. Admiral SPLIT said that he thought that such a grouping of nations would probably have to be confined to those nations in or near Southeast Asia itself. If an attempt were made to expand the number to include,for instance,Japan and Korea,we would run"
+        },
+        {
+          "document_id": "FRUSB115p::Dulles_108",
+          "text": "this current situation. The SPLIT noted that even if the Nationalists gave up the Quemoys and the Matsus,the problem of Formosa would not be solved. He added that the Communists were worried by the Nationalist Army on Formosa,which was a threat to the middle of their coastal area. He said the Communists wanted to destroy a rival and to disband the present government on Formosa. He added that the British and the Canadians did not agree with this view of the Communist objective,but that they were wrong on this point. The"
+        },
+        {
+          "document_id": "FRUS252p::Kissinger_109",
+          "text": "government by keeping to make demands for further change. The only glue holding the country together is the military. They have the only viable administrative structure. Huong will probably be replaced soon and his replacement soon after. Some of the terms of the debate on aid are no longer relevant. The thought that aid is an open commitment is no longer relevant,as is the argument that it would prolong the fighting. What it does now is give North Vietnam some incentive to say in a negotiation they have stopped our aid,and to give the government some confidence to keep things under control. We think it is important to vote some part of the aid package to give us some control over these tragic events. The President'92s objective from the outset was to achieve a controlled situation,and these events,while happening rapidly,were somewhat predictable. It is important"
+        },
+        {
+          "document_id": "FRUS81p::President_110",
+          "text": "continually raised the question of what we see down the road. The SPLIT then said what if we do not take out the entire battery. Are we in danger,and secondly,are we violating the sovereignty of Laos. SPLIT then asked where we were going,or was this a day-to-day affair. He seemed to be concerned that we were getting in a little deeper all the time and not really answering the problem."
+        },
+        {
+          "document_id": "DSCN0698::Turner_111",
+          "text": "said he did not think it was that clear. Although that was a good line to take publicly -- and it could be defended -- it was not entirely clear that the militants would in fact have let the hostages go if ordered to do so by the Revolutionary Council. The"
+        },
+        {
+          "document_id": "FRUS266p.rtf_112",
+          "text": "at least wish to discuss other actions against the DRV associated with their patrol boat activity. I have in mind the aerial mining of the harbor or harbors from which these boats emerge. I understand that this probably could be done effectively by the VNAF,who have been trained in this technique. Another possibility,of course,is an unidentified airstrike against one or more of these harbors. A recent JCS paper includes several such harbors as a possible VNAF target."
+        },
+        {
+          "document_id": "FRUSEXCOMM8::Nitze_113",
+          "text": "What would be the reaction if the Soviet Union was to reply that they were going to maintain three atomic [missile] submarines off the United States coast? SPLIT I think there are alternatives. One of them is to plan that we'92re going to make this 500 sorties which I think is going to result in an attack by them someplace,even if you do this about Turkey. In some- place or other. The other alternative is to make the blockade total [including POL and everything else],and live with the missiles. They'92re not going to let you conduct reconnaissance over them. You'92re going to have planes that are shot down. [Unclear],same as the 500 attack. SPLIT I think you'92ve just got to take out that SAM site. You can'92t continue surveillance."
+        },
+        {
+          "document_id": "FRUS212p::Kissinger_114",
+          "text": "would be caused by the United States. It would give Saigon the least opportunity to negotiate. It would imperil 6 000 Americans,and it would make it impossible to evacuate any Vietnamese. The international implications would compound those that I have described. But,it would provoke the least dissension in this country. Between that and the $722 million that Fred has mentioned,you can about pick your own figure. You can go for $300 million saying that this is all that is immediately available. You can say that you will either try to get some more later,or you can say that you will specifically try for the $422 million later. SPLIT That is correct. The $300 million is designed to bring supply stocks up to the 60-day level. SPLIT The problem with $300 million is that it will be hard to defend. It is important to get the debate behind"
+        },
+        {
+          "document_id": "FRUS299::Kissinger_115",
+          "text": "territorial ambitions vis-'e0-vis Jordan,however,they did believe that an attack in support of the King must have some '93political cause'94 and that some adjustment of a technical nature would have to be made as a result of their attack to preclude future technical difficulties. Among Israeli conditions were assurances that the U.S. would protect Israel against Soviet counteraction. 2 Following this call,Dr. SPLIT then called the SPLIT pointed out,that they have no territorial designs in Jordan,although this certainly remains to be seen. Secretary SPLIT agreed but noted it might not be sufficient to do the job. The SPLIT stated that those conditions established yesterday by Israel occurred before the exchange with the Israelis the previous night. Assistant Secretary SPLIT stated that the only thing the British know at this point is that we have conveyed the message they received from the King requesting intervention. 8 The"
+        },
+        {
+          "document_id": "FRUS278p::Rusk_116",
+          "text": "An immediate and direct reaction by us is necessary. The unprovoked attack on the high seas is an act of war for all practical purposes. We have been trying to get a signal to Hanoi and Peking. Our response to this attack may be that signal. We are informing NATO,SEATO,and the UN. As an indication of Hanoi's intentions,this second attack was a more serious decision for the North Vietnamese than the decision to make the first attack. Secretary SPLIT We should ask the Congressional leaders whether we should seek a Congressional resolution. (The draft resolution read by Secretary Rusk is attached.) This short and clear draft is similar to the Mid-East resolution. Secretary"
+        },
+        {
+          "document_id": "FRUS25presponsetonixreq.rtf_117",
+          "text": "since the US decision against Libya was '97refuse,as a matter of general policy,authorization for third- country sales of military equipment or technology to '97refuse to authorize the sale of an air defense-radar system which Libya is interested in purchasing from an American instruct the interested companies to cease all discussions with the Libyans on this '97terminate Lockheed contract for C'96130 maintenance and '97continue U.S. reconnaissance or operational flights through Libya'92s proclaimed '93Restricted'94 area,HLR 22. Under this option the United States would also begin a process through a variety of channels to try to limit Libyan influence. In doing so,it would seek the cooperation of friendly governments,including Exercise of the foregoing option could result in the Libyan closure of the American Embassy in withdrawal of the Libyan Embassy in and possible nationalization of the remaining US oil company assets in Libya."
+        },
+        {
+          "document_id": "FRUSC56.rtf_118",
+          "text": "Lanchou is only partially complete and thus could not contribute fissionable material for a nuclear test in the near future. 3. More recent information on the Lop Nor test site has confirmed the earlier estimate of its probable readiness date. Preparations for a test were essentially completed at the Lop Nor nuclear test site by October 1964. Included in these preparations is a 340 foot shot tower that was installed prior to April 1964 and is now surrounded by a double fence. Arrays for instrument emplacement are located around the tower. These include arcs at 9 800,16 000,23 000 and 33 000 feet respectively and a number of radial lines from the tower with bunkers and platforms emplaced along the lines. Two small towers,approximately 50 feet high,are located on the arc at 9 800 feet from the shot tower and at 905 from each other. Available information does not permit determination"
+        },
+        {
+          "document_id": "FRUS225p::Helms_119",
+          "text": "We are programmed for that area. Secretary SPLIT If we send a plane up there he had better be ready for a fight. They have MIGs flying cover for the divers,I am sure. Secretary SPLIT We will send the plane tonight our time,which is early morning there. What we get will depend on the climatic conditions. The SPLIT We do not see any signs of a major offensive action by the North Koreans into South Korea. The"
+        },
+        {
+          "document_id": "FRUSB146::President_120",
+          "text": "said that of course the United States alone could not save Formosa if its people did not want to be saved from Communism. What Secretary dulles had had to report on the subject put things in a very different light than he had hitherto regarded them in. Secretary SPLIT said that at least he thought that Chiang'92s army was loyal to him. Admiral SPLIT responded with a statement that while this might be true,he could not see what the Quemoys and the Matsus had to do with the business. Admiral"
+        },
+        {
+          "document_id": "FRUS158p::Fortas_121",
+          "text": "The U.S. has never had in mind winning a military victory out there; we always have wanted to reach an agreement or settle for the status quo between North Vietnam and South Vietnam. I agree with General Taylor and Bob Murphy. This is not the time for an overture on our part. I do not think a cessation of the bombing would do any good at this time. I do not believe in drama for the sake of drama."
+        },
+        {
+          "document_id": "FRUSC57p.rtf_122",
+          "text": "c. The company can be transported to and landed in the objective area. d. The concept of the plan and the known or expected location of Cuban military forces indicate that surprise should be achieved and that the landing will be unopposed. e. The company will have the capability to protect the provisional government representation and to sustain itself ashore for a minimum of three to four days and will have a good chance of sustaining itself indefinitely. f. The proposed operation can be supported logistically. 4. It is recommended that, a. The Secretary of Defense support the views of the Joint Chiefs of Staff as expressed in the above conclusions. b. The views expressed in the above conclusions be transmitted to the Director of Central Intelligence for his information."
+        },
+        {
+          "document_id": "FRUS102p.rtf_123",
+          "text": "sum,I fear we must very soon face the fundamental question of whether the kind of South Vietnam we would like to see emerge is really worth the high probability of a land war with China,a war in which Soviet neutrality simply cannot be assumed. I know that these are not new but I would feel utterly negligent if I did not raise them again at this time. It is instructive to remember that the bright promise of our predecessor Administration was early removed by a combination of accumulated momentum and events that led us into the first Cuban episode. I know that Cuba was not worth that price at the and I seriously question the higher price we may be forced to pay for Vietnam in Asia and in our relations with most of the rest of the world over the next decade."
+        },
+        {
+          "document_id": "FRUS286p::Kissinger_124",
+          "text": "the decision point as between U.S. and Israeli action'97that is if the King loses the tank battle. And there is nothing we can do now,except the things we are doing which are all pretty strong. SPLIT We are prepared for our air action,Mr. President. We can run two hundred sorties a day from the carriers. The land-based planes'97 we have had a full study made that looks pretty grim. The only fields we could use are in Turkey and the Turks almost certainly won'92t give us permission. The only other fields would be in Greece or Crete and for that we would have to use air refueling and it would take us 8 days to get them ready. SPLIT But the third carrier is on the way and within 8 days that can add to it and that would increase it by '85 SPLIT That is in SHAPE."
+        },
+        {
+          "document_id": "FRUS23p::Taylor_125",
+          "text": "supported this view in the early parts of the discussion,but in the later meetings expressed increasing concern over the importance of the missile threat from Cuba. SPLIT at this point spoke in favor of a military strike taking out the MRBMs and the planes as well * 'a0"
+        },
+        {
+          "document_id": "FRUS93p::President_126",
+          "text": "Hello,Henry. How are we getting along with our Greek friends? SPLIT I know that. I can see that,but not much support from Europe? SPLIT I see the danger. We have no support. SPLIT We have to defend their game plan. SPLIT It seems to me our course is to try to.'85 SPLIT I think it's a good try. SPLIT That's right. SPLIT I get it. Too bad he has to come back."
+        },
+        {
+          "document_id": "FRUS818p::SmithWalter_127",
+          "text": "said he believed that there might be an alternative to doing too much on the one hand or doing nothing on the other. The Congress had rejected the idea of the United States providing combat assistance to Indochina unless we were assured of support by our allies for this course of action. Since the Congress took that position regarding an air strike to save Dien Bien Phu,we have come to recognize that the fall of Dien Bien Phu need not necessarily amount to a military disaster or involve the complete failure of the Navarre Plan for victory in Indochina. The French are now pressing for U.S. assistance in the air even if Dien Bien Phu should fall. They argue that such air strikes by U.S. planes would enable them to continue the fight in Indochina. If they really mean this we might well avoid having to commit any U.S."
+        },
+        {
+          "document_id": "FRUSEXCOMM1::Mcnamara_128",
+          "text": "it,except in an emergency. SPLIT The next subject, invasion preparations and the action we'92re taking to be prepared for an invasion. SPLIT Well,we don'92t know where the tenth is. We looked very carefully last night for it. SPLIT This is the part we have to handle very precisely. It is very dangerous,and I don'92t think that we ought to stay over that terri- tory any longer than . . . SPLIT I think they know we know,Bobby. They'97 SPLIT Well,the one we don'92t know about is'97at the moment we think'97not started. It looks as though the crew that will construct the tenth site is working on the ninth. SPLIT We can stay away from . . . SPLIT It'92s terribly dangerous. SPLIT . . . contingencies and reactions thereto. SPLIT Yeah,I think we need one from [unclear],one member from the Joint Staff plus Paul Nitze. SPLIT So,you can count on that. Max is [unclear]."
+        },
+        {
+          "document_id": "DSCN0837_Turner_25-39-7c.rt.rtf_129",
+          "text": "          I believe that the present detailed negotiations with Iran over the hostages offer little prospect of success and accordingly, urge that we carefully reexamine whether we should continue the current '93haggling'94 with the Iranians if Deputy Secretary Christopher'92s current trip does not result in a quick resolution to the impasse. On 6 November I sent to Secretary Muskie our intelligence judgment that a detailed response to the Majlis'92  four points would likely be unproductive because:  -- It would require a protracted time to work out, during which developments in Iran could undermine the current fragile consensus that led to the Majlis'92 decision.  -- The US would be subjected to the possibility of the piecemeal release of the hostages.  -- A detailed approach would bog us down in a '93bazaar'94 type negotiation, largely on their terms.  -- A detailed legalistic approach would inevitably fail to satisfy the Iranians and would clearly identify areas where we could not meet the Majlis'92 terms.   An abrupt change of the US posture will no doubt cause some confusion in Tehran. We believe it will not, however, cause the hostages any harm.   "
+        },
+        {
+          "document_id": "FRUS295::Schlesinger_130",
+          "text": "estimate that there might be about 100 Cambodians on the island. We would prefer to land with 1 000. SPLIT 24 hours. We do not have the Holt there yet. The Holt will arrive at noon tomorrow our time. If it is to do anything,I would prefer to wait until the first light on the 15th. Until the Coral Sea arrives,all we can use are the helicopters at Utapao. SPLIT The helicopters would hover. SPLIT I think that Henry (Kissinger) is thinking of going tomorrow night. SPLIT We need the morning of the 16th for a coordinated assault. SPLIT I think you should wait. SPLIT If there is token resistance on the island,the Marines can handle it. If there is more,they can try to lock in and get more Marines to land the next day,with the Holt for additional support. It is a close call. There"
+        },
+        {
+          "document_id": "FRUS273.rtf_131",
+          "text": "          Dulte 1. Eyes only Acting Secretary. I believe that loss of Quemoy would have grave psychological repercussions and lead to mounting Communist action against deteriorating anti-Communist morale so that this would be beginning of chain of events which could gravely jeopardize entire off-shore position. If, however, defense of Quemoy as real estate cannot be substantially related to defense of Formosa and if, as I suspect, committal of US force and prestige might lead to constantly expanding US operations against mainland, then I still believe we should help to hold Quemoy if it is judged defensible with our aid, but I believe that Congress or in first instance Congressional leaders should be consulted as matter of urgency. Senator Smith concurs in US acting. Senator Mansfield not yet here."
+        },
+        {
+          "document_id": "FRUS173p::President_132",
+          "text": "entered the meeting,and after further discussion of the problem of providing statistics on relative build-up of NATO and Soviet bloc forces,and a question about the attitude of French and German representatives in Ambassadorial meetings (reported as not affirmative by Mr. Kohler) the SPLIT quickly approved the deployment recommendations of the Secretary of Defense. The SPLIT asked whether in fact there was much likelihood that IV. A. and B. could be undertaken without leading to IV. C. The"
+        },
+        {
+          "document_id": "FRUS368p::Lemnitzer_133",
+          "text": "pointed out that the Pathet Lao were stiffened by Viet Minh troops,and that this in his judgment made the difference. Senator Russell asked whether the enemy forces were better equipped than ours. General SPLIT said that they were not,in general,though in certain specific cases they might have an advantage. Secretary"
+        },
+        {
+          "document_id": "FRUS113::Colby_134",
+          "text": "great deal of criticism. The SPLIT What I'92m worried about is leakage and scandal in the present situation. The SPLIT In answer,I doubt we could have an immediate strategic effect. Secretary SPLIT We could have that next week. South Africa would like us to join with them in an effort,but we can avoid the problems that would create and deal with the blacks. Some would be encouraged for the US to take a role,and that would activate them. Mr. SPLIT By mid-week. Secretary SPLIT 8 June 27,1975. ANGOLA I. The current situation in Angola is highly unstable. Rivalry between contending nationalist groups has featured increasing violence,with each group trying to stake out territory and gain military superiority before independence on November 11 and final Portuguese withdrawal by next February. A. The fighting over the past few months has been between the two largest groups,the"
+        },
+        {
+          "document_id": "FRUS104p::Clifford_135",
+          "text": "theirs. We continue to fight at a higher level of intensity. Even were we to meet this full request of 205 000 men,and the pattern continues as it has,it is likely that by March he (General Westmoreland) may want another 200 000 to 300 000 men with no end in sight. The country we are trying to save is being subjected to enormous damage. Perhaps the country we are trying to save is relying on the United States too much. When we look ahead,we may find that we may actually be denigrating their ability to take over their own country rather than contributing to their ability to do it. We recommend in this paper that you meet the requirement for only those forces that may be needed to deal with any exigencies of the next 3'964 months. March'96April'96May could be an important period. We recommend an immediate decision to deploy"
+        },
+        {
+          "document_id": "FRUS299::President_136",
+          "text": "if it were required. The SPLIT then directed that the WSAG work out a precise scenario and that it get a message to the King to obtain a precise feeling for his most current view of Israeli intervention,especially on the ground. Secretary SPLIT agreed that they should meet as soon as the King'92s reply was received. Dr. SPLIT then concluded the meeting by informing the group that they would reconvene at 6,00 p.m. 13 The meeting adjourned. 1 'a0"
+        },
+        {
+          "document_id": "Christopher_Argentina_NSA2_P2.rtf_137",
+          "text": "          Iran.  The two leading US academic experts on Iran, James Bill and Marvin Zonis, recently were debriefed in the Department following their separate visits to Iran at the end of November. In a wide range of Iranian contacts, both men found intense rage against the Shah personally. This is a marked change from the past when Iranians were content to blame their troubles on '93the Government'94 and the Shah'92s advisers. Both professors see a slim chance that the Shah might retain a minimal role as constitutional monarch, but only if he moves quickly to negotiate a political compromise. They assess the opposition as very strong and extremely well-organized. Everywhere they found an eagerness for the US to play a decisive role in promoting a political solution to Iran'92s crisis. "
+        },
+        {
+          "document_id": "FRUS80p::Wheeler_138",
+          "text": "The Chiefs believe that ground action against the North Vietnamese effort is adequate to reverse the situation. Air strikes on the three targets are not necessary from a military point of view. However,a South Vietnamese attack on their target is acceptable. Ambassador"
+        },
+        {
+          "document_id": "FRUS266p.rtf_139",
+          "text": " II. Rules of Engagement At the moment,rules of engagement for both marine and air units are to respond to any attack and pursue the attacking forces with the objective of destroying them up to a point 11 miles from the DRVcoastline. Our units are permitted to fire beyond this point and in the case of destroyers,this means they could reach the shoreline with their guns. III. Additional Thoughts The 11-mile limitation referred to above reflects the fact that NVN probably claims that her territorial waters extend 12 miles off her coast. We do not admit this claim,and the theory is to show this by penetrating it to the extent of one mile. I agree that there is some logic to this position as far as regular patrols are but I wonder if we should not authorize our people to engage in hot pursuit of NVN attacking"
+        },
+        {
+          "document_id": "FRUS620::Dulles_140",
+          "text": "suggested that the pessimistic French reports from Saigon might be designed as a build-up to exaggerate the extent of their final victory. Governor SPLIT replied in the affirmative,and said that the whole operation was obviously a Vietminh preparation for the Geneva Conference. Secretary SPLIT added that while he was at Berlin he had warned Bidault,on the basis of American experience in Korea,that if Indochina were put on the agenda for the Geneva Conference it would be the signal for violent Vietminh attacks on the French Union forces in Indochina. This was precisely what had happened.}"
+        }
+      ]
+    },
+    {
+      "custom_id": "request-00000002",
+      "document_ids": [
+        "FRUS256p.rtf_141",
+        "DSCN0546::Brzezinski_142",
+        "Christopher_Argentina_NSA_P2.rtf_143",
+        "FRUS123p::Kissinger_144",
+        "FRUS289::Cutler_145",
+        "FRUSB146::Dulles_146",
+        "FRUS55p.rtf_147",
+        "FRUS104p::President_148",
+        "FRUS344p::Rusk_149",
+        "DSCN0542_Brown_12-59-5c.rtf_150",
+        "FRUS302p.rtf_151",
+        "FRUS172p.rtf_152",
+        "FRUS158p::Lodge_153",
+        "FRUS291::Scowcroft_154",
+        "FRUS131p::Moorer_155",
+        "FRUS45p::Mcnamara_156",
+        "FRUS119p::Flemming_157",
+        "DSCN0765::President_158",
+        "Vance_CIAfiles_NSA_Pc.rtf_159",
+        "FRUS18p::Rusk_160",
+        "FRUS85::Kissinger_161",
+        "FRUS55p.rtf_162",
+        "FRUS147p::Bundy_163",
+        "Vance_CIAfiles_Hostage_NSA_Pc.rtf_164",
+        "FRUS18p::Taylor_165",
+        "FRUS234p::Kissinger_166",
+        "FRUS124::Dulles_167",
+        "FRUS145partial.rtf_168",
+        "FRUS238.rtf_169",
+        "FRUS07.rtf_170",
+        "FRUS07p::President_171",
+        "FRUS99p::Mccone_172",
+        "FRUS295::Kissinger_173",
+        "FRUS123p::Kissinger_174",
+        "FRUS77p::Rusk_175",
+        "FRUS245p::Twining_176",
+        "FRUSB115p::President_177",
+        "FRUS49.rtf_178",
+        "FRUSB146::Dulles_179",
+        "FRUS30p::Dulles_180"
+      ],
+      "documents": [
+        {
+          "document_id": "FRUS256p.rtf_141",
+          "text": " Meanwhile,despite repeated Saudi affirmations that they turned off aid to the Royalists a month ago,we have hard evidence some arms are still getting through. So the UAR reacted the other day with a single plane \"warning\" raid on a Saudi supply point. Odds are that neither Saudis nor UAR want to start a war again,but there's always a risk. Yet if our Yemen effort collapses,it will add mightily to our woes in the Middle East. 2"
+        },
+        {
+          "document_id": "DSCN0546::Brzezinski_142",
+          "text": "They agreed that we need to go forward with Secretary Vance'92s proposal to the Soviets,but we should add to the list a request for information about any additional Soviet combat units which we may not as yet have identified,and that we should include the option of separating the Soviet troops from their equipment in Cuba. This approach is most likely to fail,and if it does,we must not confine our response to Cuba alone. That limitation carries a number of dangers. First,it is a very weak response to Soviet '93messing around in our backyard'94 which the public will see as nothing more than cosmetics and will not accept. Second,reinforcing our presence in Guantanamo runs the risk of merely legitimizing the Soviet combat ground force presence in Cuba,and perhaps provoking a Soviet reaction of increasing that presence. Third,it leaves wholly unaddressed the larger geostrategic"
+        },
+        {
+          "document_id": "Christopher_Argentina_NSA_P2.rtf_143",
+          "text": "          Iran. The precarious position of the Shah has been underscored by the two days of huge, well-disciplined demonstrations in Tehran, the major violence today in Isfahan (we do not yet know how many were killed), the renewed shutdown in the oil fields (production from  5.9 to 1.3 million barrels), and the continuing strikes of bank and government employees. If no compromise solution can be worked out, there will be an increased likelihood of violent confrontations between crowds and troops, attacks against Americans, and severe political damage from a rapidly deteriorating economy. There is room for serious doubt whether the security forces can withstand the present strain and maintain firm unity for much longer. "
+        },
+        {
+          "document_id": "FRUS123p::Kissinger_144",
+          "text": "said,no way'97 SPLIT Oh,God,no. SPLIT God,no. Those have to go. And'97 SPLIT Yes,sir. SPLIT Well,let'92s'97 SPLIT No. SPLIT Yes. SPLIT Yeah. SPLIT Well,we'92ll,um'97we'92ll have an exciting week next week. That'92s for sure. SPLIT I'92m raising them with you'97 SPLIT That'92s right. I'92m with you on that'97 SPLIT Unless the South Vietnamese collapse within that period. SPLIT That'92s right. SPLIT That'92s right. SPLIT That is right. SPLIT They'92re gonna lose Kontum. But to me what is so fascinating is that two weeks ago they were routed up there. They still haven'92t moved against Kontum. Now,for all I know,they may take it next week. But if they take three weeks to build up from provincial capital to provincial capital,we'92re going to kill them. SPLIT Yeah. SPLIT Well the northernmost province of South Vietnam,so if'97 SPLIT If they continue to take"
+        },
+        {
+          "document_id": "FRUS289::Cutler_145",
+          "text": "Admiral SPLIT then inquired if it would be necessary to use U.S. ground forces in a successful defense of these islands. Admiral SPLIT then inquired as to the probable character of any action which might have to be taken by U.S. forces against the Chinese Communist mainland. Admiral SPLIT then called upon the Acting Secretary of State to present the tentative views of his department. Secretary SPLIT then inquired if General SPLIT reminded him that the Joint Chiefs of Staff had at a recent Council meeting 10 presented a report 11 on the desirability of creating an International Volunteer Air Group (IVAG). It had been the view of the Joint Chiefs that while plans for such a group should be made,these plans should not be implemented at the present time. Accordingly,the Council had deferred action on creating IVAG. Nevertheless,said Mr. Cutler,did not the IVAG offer a"
+        },
+        {
+          "document_id": "FRUSB146::Dulles_146",
+          "text": "personnel of our U.S. MAAG on Formosa were too few in number and too busy to give this problem adequate attention,and Admiral Carney was now concerning himself with it personally. Along with this emphasis on more adequate operational intelligence,the Administration must see to it that we do everything we possibly can to develop the capabilities of the Chinese Nationalist Government itself to protect Formosa and the offshore islands,at least until such time as the London'96Paris pacts are ratified. On the whole,Secretary SPLIT reiterated,the situation was far more serious than he had believed it to be before he had taken his trip. He again repeated his conviction that the Chinese Communists will not call it quits on Formosa on any terms that the United States could accept. Sir Anthony Eden himself may be beginning to realize that the foregoing is the real position of Communist China."
+        },
+        {
+          "document_id": "FRUS55p.rtf_147",
+          "text": "a substantial increase in economic and military assistance to North Vietnam will enable them to press for a greater voice in the formulation of Communist policy in South Vietnam and Laos. Kosygin probably will argue that the Viet Cong campaign is progressing satisfactorily and that North Vietnam should avoid actions which might provoke US reprisals. He may also discuss political initiatives designed to inhibit US freedom of action,such as greater pressure toward reconvening the 14-nation conference on Laos. 10. It is unlikely that an increase in the Soviet presence in North Vietnam will bring about a change of Hanoi's tactics in prosecuting the Viet Cong war. Although factional differences appear to exist in the North Vietnamese party over certain areas of policy,it has always appeared that the party was basically united on the tactics to be used in the Viet Cong insurgency. The so-called '93extremists'94 in the North Vietnamese party seemed most to resent the lack of political and propaganda support from Moscow over South Vietnam. More vigorous Soviet backing of Hanoi may tend to reduce the differences between the factions."
+        },
+        {
+          "document_id": "FRUS104p::President_148",
+          "text": "As I told you last week,I wanted you to return today with your recommendations in response to General Westmoreland's request. Among the things I asked you to study were the following questions, 1. What particular forces are you recommending that we dispatch immediately? How do we get these forces? 2. How soon could we formulate what we want from the South Vietnamese? 3. What difficulties do you foresee with your recommendations,both with the Congress and financially? Clark SPLIT Westmoreland is asking for 200 000 men,and you are recommending 20 000 or so? Clark SPLIT Really '93get on your horses'94 on that. SPLIT If the ARVN are not equipped as well as the Vietcong,isn't that a sad commentary on us?"
+        },
+        {
+          "document_id": "FRUS344p::Rusk_149",
+          "text": "actual move. But this will get us in a position to move quickly if we have to move with the least possible warning and to get them thoroughly prepared to move at first light on Monday. SPLIT Well,all this does is to give them in effect an alert time for the most probable hour of commitment,but it does not'97,it specifically says do not execute unless directed by JCS. SPLIT It doesn'92t move them from where we'92ve already ordered them,that is in Kamina. SPLIT That'92s right. SPLIT Well,I do think we ought to give as much weight as we can to the Belgian [predominance]. And they have several hundred hostages,and they'92re putting in the paratroopers and are going to take casualties,and Spaak seems to feel that it'92s important to move. I think the Belgians'97. SPLIT Approximately a thousand,sir. SPLIT That'92s right,sir,and"
+        },
+        {
+          "document_id": "DSCN0542_Brown_12-59-5c.rtf_150",
+          "text": "them and other nations what to do. They insist on a clear hierarchy,and find it very difficult to think in terms of accepting diversity. The higher up in the system one goes,the more pronounced is this attitude. '93Who'85. Whom '94 Lenin'92s description of the world as a place of those who act to command and those who are acted upon,continues to underlie Soviet motivations. This is not to say that the Soviet leaders do not desire peace,or even that they will insist that it can exist only on precisely their terms. But it does mean that theirs is not a live and let live approach. They will not be persuaded,or much influenced,by appeals for equity or by the charms of reduction of they consider conflict,generally at some level of violence,inevitable between their system and all the rest. Whether in Cuba or Afghanistan,in"
+        },
+        {
+          "document_id": "FRUS302p.rtf_151",
+          "text": " Political Aspects In spite of economic difficulties there is no solid evidence that Trujillo's fall is imminent. Trujillo rules by force and will presumably remain in power as long as the armed forces continue to support him. While there is evidence of dissatisfaction on the part of a few officers there is as yet no cogent evidence of large-scale defection within the officer corps. The underground opposition to Trujillo composed of business,student and professional people is believed to by predominantly anti-Communist. They have substantially increased in numbers in recent years but have been unable to move effectively against Trujillo. In addition to opposition groups in the Dominican Republic,there are numerous exile groups located principally in Venezuela,Cuba,United States and Puerto Rico. In some cases these groups have been infiltrated by pro-Castro or pro-Communist elements. In the event the Trujillo regime should fall the degree of danger"
+        },
+        {
+          "document_id": "FRUS172p.rtf_152",
+          "text": "be easy to agree with our allies,and may in fact not be in our own interest. It is not clear that we should deliberately embark on a series of actions on the ground that would quickly fail if the Soviets chose to use their full conventional capability,thus facing us very quickly with the choice between defeat and escalation. It is central to our policy that we shall have to use nuclear weapons in the end,if all else fails,in order to save Berlin,and it is fundamental that the Russians should understand this fact. I think they are beginning to do so. But the specific course of military contingency planning remains open."
+        },
+        {
+          "document_id": "FRUS158p::Lodge_153",
+          "text": "We should shift from search and destroy strategy to a strategy of using our military power as a shield to permit the South Vietnamese society to develop as well as North Vietnamese society has been able to do. We need to organize South Vietnam on a block-by-block,precinct-by-precinct basis. 5 Douglas"
+        },
+        {
+          "document_id": "FRUS291::Scowcroft_154",
+          "text": "Do we know it is the crew? SPLIT Last night,there were long time lags before we got the information,and there was a lot of confusion about its accuracy. SPLIT This means that the force of 1 000 Americans from Utapao would be for operation to take the island,not the ship. SPLIT Not yet. SPLIT I see two operations. -720 '97The first is against the ship. '97The second is against the island. The urgency of the island operation is to stop the Americans from going to the mainland. On the ship,it is to stop it from going to Kompong Som. The optimum situation with the ship is to get the Holt between that ship and Kompong Som. We cannot do that until tomorrow. If we do not have that time,if they start to move,do we try to take the ship? Or do we wait until the"
+        },
+        {
+          "document_id": "FRUS131p::Moorer_155",
+          "text": "west of Hanoi there was only light SAM firing. Secretary SPLIT The only other more effective measure would be an amphibious landing. President SPLIT Yes. We could hit the marshalling yards and the warehouses on the docks. President SPLIT We are planning to execute. President SPLIT There are enough supplies in the DRV to permit the continuation of current operations. The question is what happens next August and next year if we leave the situation as it is. President SPLIT He also has a call on the resources operating north of the DMZ. President"
+        },
+        {
+          "document_id": "FRUS45p::Mcnamara_156",
+          "text": "said the Viet Cong is increasing its pressure in the areas north of South Vietnam. He cited a significant communications buildup which might mean that a major effort was being undertaken by the North Vietnamese to increase their military buildup for use either in Laos or in South Vietnam. He agreed we should wait for a week to see what developments take place in Laos. Our capability to undertake low-level reconnaissance will be brought to a 24- to 48-hour readiness status. Bromley Smith 2 1 'a0"
+        },
+        {
+          "document_id": "FRUS119p::Flemming_157",
+          "text": "said he was concerned with this paragraph as it related to mobilization requirements. If the question of our military strategy wasn'92t settled,at least for a considerable period,the Defense Department would be unable to provide ODM with a solid set of requirements called for by the agreed strategic plans. We must at least freeze our thinking long enough to make possible a realistic estimate of our mobilization requirements for war. The"
+        },
+        {
+          "document_id": "DSCN0765::President_158",
+          "text": "at best we have a stagnant situation in Iran and Afghanistan as well as in the Israeli/ Egyptian peace talks. On this latter point,the President said that he and President Brezhnev do not understand one another. The President said he does not know what Brezhnev'92s next step is and what he is aiming to accomplish. Perhaps Brezhnev is in the same position. Both of us,he said,must assume the worst of each other. As far Afghanistan,it was the President'92s judgment the Soviets are going to stay in that country for at least a year. He thought they were making progress against the resistance and they were succeeding in driving a wedge between ourselves and our Allies '96 with the help of the Allies,particularly the French. }"
+        },
+        {
+          "document_id": "Vance_CIAfiles_NSA_Pc.rtf_159",
+          "text": "          Afghanistan. The security situation in Kabul is deteriorating. Following the general strike yesterday, the Soviets this morning moved additional forces into the city and there was firing throughout the day. Soviet helicopter gunships and MIGs buzzed the city continuously, in an apparent effort to intimidate the population. We are recommending evacuation to the private American community, preferably on commercial flights when available. If none are, we are prepared to charter an aircraft if necessary. About 60 private and 20 official Americans remain in Afghanistan. Warren reported to me your comment at breakfast today about the possible desirability of closing or further cutting back on our embassy, and we are urgently reviewing this question.    "
+        },
+        {
+          "document_id": "FRUS18p::Rusk_160",
+          "text": "make it clear that,uh,what we're doing is eliminating this particular base or any other such base that is established. We ourselves are not moved to general war,we're simply doing what we said we would do if they took certain action. Uh,or we're going to decide that this is the time to eliminate the Cuban problem by actually eliminating the island. The other would be,if we have a few days'97from the military point of view,if we have the whole time'97uh,then I would think that,uh,there would be another course of action,a combination of things that,uh,we might wish to consider. We reinforce our forces in the southeastern part of the United States'97whatever is necessary from the military point of view to be able to give,to deliver an overwhelming strike at any of these installations,including the SAM sites. And,uh "
+        },
+        {
+          "document_id": "FRUS85::Kissinger_161",
+          "text": "problem of daily'97 SPLIT Of daily confrontation with the Russians. That takes care of shipping,also,with a lot of other countries. SPLIT The advantage of the'97if you blockade,there ought to be,you know,a week of heavy raids to run down their supplies and to reduce '92em; five days,three days of heavy raids. God,a few more days of raids like we had yesterday and they'92d be in'97they really hurt. [Omitted here is discussion of Laird and bombing North Vietnam,the effect of the bombing in the North and the ground war in the South on the negotiations in Paris,the Moscow Summit and the Vietnam war,the improvement of Air Force performance under General Vogt,and the military situation in South Vietnam. Also omitted is the President'92s brief telephone conversation with Laird about how to deal with the press vis-'e0-vis the continued bombing of North Vietnam.] 1 'a0"
+        },
+        {
+          "document_id": "FRUS55p.rtf_162",
+          "text": "is the key to victory in South Vietnam,and its objective is the population,who must be given something to fight for and something to fight with. They must also be supported by the regular forces against the larger VC units now prevalent,and these regular forces must give this supporting,reinforcing,and protective mission priority over attempts to find and kill the VC. 8. To supplement a vastly increased counterinsurgency effort within South Vietnam,the US/GVN should undertake a stepped-up program of psychological warfare against North Vietnam. This would include diplomatic,military,propaganda and economic pressures. This would also involve a program of bombing Communist targets,especially in Laos,but leading close to the North Vietnam frontier and into North Vietnam if necessary. This is relatively low-risk in Laos,and would encourage our friends and perhaps give pause to one enemy. (The pilots should be in the first instance Lao [ less than 1 line of source text not declassified ],phasing into the use of US pilots.)"
+        },
+        {
+          "document_id": "FRUS147p::Bundy_163",
+          "text": "Suppose you turn it around. Say you can't stop bombing without their doing something. Idea of getting something started is good. SPLIT Aren't you better off if you do this privately? 7 SPLIT That's OK. M. SPLIT President is not about to escalate like you say. But what do you lose. Bombing that far north doesn't do that much good. SPLIT I agree with you on a full suspension. SPLIT If we lost at Khe Sanh while stopping bombing we would be in a hell of a shape."
+        },
+        {
+          "document_id": "Vance_CIAfiles_Hostage_NSA_Pc.rtf_164",
+          "text": "          I received a call from Waldheim this afternoon who said he wanted to report to me a conversation he had with Foreign Minister Hameed of Sri Lanka, who had just been in Tehran on the Secretary General'92s behalf.  Second, he said that he had been told by the Foreign Minister that the Iranians will release the greater part of the hostages before Christmas. Third, he was told by the Foreign Minister that a decision had not yet been made as to whether the remaining hostages might appear before the so-called '93grand jury'94. He said further that he was told if they did, they would not be harmed but would be expelled from the country. I have some doubts on the weight that should be given to this message.   "
+        },
+        {
+          "document_id": "FRUS18p::Taylor_165",
+          "text": "Uh,we're impressed,Mr. President,with the great importance of getting a,a strike with all the benefit of surprise,uh,which would mean ideally that we would have all the missiles that are in Cuba above ground where we can take them out. Uh,that,that desire runs counter to the strong point the Secretary made if the other optimum would be to get every missile before it could,becomes operational. Uh,practically,I think the,our knowledge of the timing of the readiness is going to be so,so,uh,difficult that we'll never have the,the exact permanent,uh,the perfect timing. What we'd like to do is to look at this new photography,I think'97and take any additional'97and try to get the,the layout of the targets in as near an optimum,uh,position as possible,and then take 'em out without any warning whatsoever. That"
+        },
+        {
+          "document_id": "FRUS234p::Kissinger_166",
+          "text": "be predicted. To generalize from this would be disastrous in all areas. There can be a domino effect not related to Vietnam but to our competence in foreign policy. We must conduct our foreign policy with confidence and assurance,reiterating our commitments. The basic foreign policy of this country is sound. Our alliances are good,our relations with the Soviet Union are okay. In energy,food,raw materials,we still have the decisive voice. Our problem is getting the authority to do what is needed. If we can get the moral authority that is required,we can have a year and a half of foreign policy achievements. So long as faith in the United States'97that means faith in ourselves'97remains,we can overcome. We have had a setback but we can overcome it and have a productive period of foreign policy."
+        },
+        {
+          "document_id": "FRUS124::Dulles_167",
+          "text": "but according to instinctive lines. Western Europe will support us,although the Scandinavians will be reserved. Most of the Latin American countries will probably do so,given persuasion. Most of Asia will be against us,including India,Ceylon and probably Burma and most of Africa wherever it is vocal will also. In many areas the leaders will privately applaud. Mr. SPLIT said he thought it was clear that we should act immediately to call an emergency meeting of the UN Security Council. General SPLIT said it is preferable for us to go to Lebanon,and for the UK to go into Iraq and Kuwait. The SPLIT said this is a situation where it will be easy to get ourselves involved,and very hard to get out. However,there exists in Lebanon a very strong community having an interest in stability,commerce and ties with the West. The SPLIT said it"
+        },
+        {
+          "document_id": "FRUS145partial.rtf_168",
+          "text": "** '00-360 * -720 A direct military response to increased Communist pressure has the supreme disadvantage of involving our prestige and power in a remote area under the most adverse circumstances. There is no reason to assume that the Communists would limit their efforts to what we could contain with whatever conventional forces could be spared from other areas."
+        },
+        {
+          "document_id": "FRUS238.rtf_169",
+          "text": "he retreats,I attack.'94 Under present circumstances I believe that Communist China would be in a mood to postpone its advance into Southeast Asia even at the expense of what they would regard as a temporary stabilization of the Free World's position in South Viet-Nam so long as we did not cross the 17th parallel with forces on the ground and threaten to liberate North VietNam. Then-but only then-do I believe they would go to war with us. 2. Fundamentally the assessment in the SNIE is in accord with this judgment. It suggests that the actions taken by the U.S. would lead to essentially defensive responses. 3 See,for example,the marked passages on pages 7,8,10,12,13,15 and 16. 3. I have marked one passage on page 13 with an '93X'94. This passage suggests the possibility that if it looked as though South Viet-Nam were winning"
+        },
+        {
+          "document_id": "FRUS07.rtf_170",
+          "text": "Our objectives in any action taken as a result of this incident are, -720 a. To receive appropriate redress for the illegal destruction of the aircraft and probable death of the crew. b. To react to the extent required to prevent further incidents such as the Pueblo seizure,MDL marker repair incidents and this aircraft destruction. c. Within limitations imposed by accomplishment of objectives a and b,above,to prevent escalation of this incident into a larger conflict. d. To cause minimum disruption on other military operations worldwide. 4. US Forces are in a position at the present time to implement courses of action 1,2,3,6,and 7. 5 Courses of action 4,5,8,and 10 6 would require repositioning of forces and would probably involve withdrawing some naval forces from the SEA area. These latter courses of action would require a period of time for movement of forces and detailed planning. A combination of courses 1,2,3,and 7 could be implemented now and would be considered an appropriate initial response."
+        },
+        {
+          "document_id": "FRUS07p::President_171",
+          "text": "turned to the SPLIT asked him whether he felt that the communists could intervene with greater force SPLIT asked Mr. gates whether he felt the United States would have sufficient military power and SPLIT came away from that meeting feeling that the Eisenhower administration would support intervention'97they felt it was preferable to a communist success in Laos. 4}"
+        },
+        {
+          "document_id": "FRUS99p::Mccone_172",
+          "text": "consideration of our actions,we had to plan to take care of every single possibility,irrespective of how remote,and to be prepared to commit the forces,the resources,the money,etc.,to this end. The SPLIT did not engage in this discussion as I don't believe this to be the case. I think that we can,and must,figure out some way to protect our bases and believe that a net of clandestine operations can be created by the intelligence community which would serve as '93Paul Revere's'94 to furnish warning. (CIA follow this up.) 1 'a0"
+        },
+        {
+          "document_id": "FRUS295::Kissinger_173",
+          "text": "the Khmer will cave,and they should come in response to something that we had done. SPLIT I am worried about it getting out of hand. We will look sneaky and furtive about something we should be proud of. But the Thai thing does give me trouble. I think the Thai military will love it. But the Thai Government will say that it does not like it. The Liberals on the Hill will put forward a recommendation to withdraw our forces from Thailand. They will match this with some requests from the Thai Government. SPLIT I would urge that the spokesman make a short announcement at noon tomorrow. He should explain why we are doing it. He should say that it was ordered by you,executed by the National Security Council,and then answer no other questions. This would be noon. By 8 o'92clock,we will have decided the other. That will add to your strength. (General concurrence.) End of Meeting 1 'a0"
+        },
+        {
+          "document_id": "FRUS123p::Kissinger_174",
+          "text": "they'92ll'97 SPLIT Mr. President,I think they'92re going to kill you. They'92re going to put you into the Johnson position. This is the other argument for the blockade. SPLIT They'92re going to have you as the bomber. The guy'97when I looked at that DRV statement,they wanted you to break off the peace talks,Mr. President'97 SPLIT So you'92re the guy who doesn'92t talk. SPLIT Oh,yes,it got across. But all of this is minor because the'97these peace groups are going to keep backing'97 SPLIT So that six months from now'97three months from now'97 SPLIT '97it'92s forgotten that there was an invasion,and therefore'97 SPLIT That'92s impossible; inconceivable. SPLIT But,Mr. President,they'92re more likely to draft you'97 SPLIT They will not draft Connally'97 SPLIT I agree. SPLIT No question. SPLIT The only point I disagree is we can do all of this without killing too many civilians. I"
+        },
+        {
+          "document_id": "FRUS77p::Rusk_175",
+          "text": "then was asked his views. He said that he felt the reconnaissance flights had been a deterrent to PL operations,that they should be continued to the extent '93necessary and essential in developing photographic reconnaissance required by the situation'94. He opposed excessive flights and he opposed '93loitering'94 to gain visual observation of villages,encampments,etc. With this restriction,SPLIT agreed to the reconnaissance flight tomorrow with fighter-bomber accompaniment and orders to return fire. 4. The"
+        },
+        {
+          "document_id": "FRUS245p::Twining_176",
+          "text": "added further explanation that our normal procedure is to fly at 6 000 and 8 000 feet. We always have fighters ready for scrambling to protect our air traffic. Therefore,should difficulties result from this venture,we could possibly have an incident. He further stated that action on the part of the Communists of a minor nature,such as buzzing or flying alongside our aircraft,happens continually and it creates no problem for us. We do not regard any Communist action short of firing across the bow as a hostile act. Mr."
+        },
+        {
+          "document_id": "FRUSB115p::President_177",
+          "text": "admitted that the loss of Nanchi would be bad,but asked what was the alternative. Governor SPLIT stated that everyone knew the U.S. was committed to defend Formosa and the Pescadores. The question of the offshore islands created a terrible dilemma. If we announced that we would assist in the defense of the offshore islands,world opinion would not support us. On the other hand,if we announced that we would not assist in the defense of these islands,the Communists would immediately attack them and take them. The SPLIT stated his belief that there was nothing more that we could now do except to watch the situation as it develops and act on a day-to-day basis. Admiral SPLIT had decided to retain to himself the decision as to when U.S. forces would be used,rather than delegate this decision to anyone. He said he realized the difficult situation. Secretary"
+        },
+        {
+          "document_id": "FRUS49.rtf_178",
+          "text": "the Bloc while antagonizing moderate elements as well as the dissidents. The arrival of assistance is being handled skillfully,However,and the likelihood of significant anti-Sukarno reactions appears slight. The Soviet short-term objective re Indonesia appears to be to support Sukarno in the hope that he will eventually reassert his authority over the entire archipelago,and that in this process the indigenous Communists will gain a dominant position in the central government. In the event Sukarno cannot reassert his authority over the outlying areas,an alternate Soviet objective probably is to ensure Communist control of Java,and then to extend this control. In any event,the ultimate Soviet objective seems clear, by controlling Indonesia it hopes to gain control of the vital sea lanes between the Indian and Pacific Oceans together with access to the country'92s rich natural resources and its maritime facilities,thus facilitating the projection of its sea power into East and Southeast Asia."
+        },
+        {
+          "document_id": "FRUSB146::Dulles_179",
+          "text": "on the state of morale on Formosa,the SPLIT replied that of course morale on Formosa depended very largely on the United States itself. To this,the SPLIT observed that of course time changes things; but at this particular moment the United States could not sit idly by and watch the Chinese Nationalist forces on Quemoy and the Matsus sustain a terrific defeat or be wiped out,without such repercussions that we would be likely to lose Formosa itself as a result. Nor,on the other hand,could we force the Chinese Nationalists to agree to evacuate these offshore islands. In this was the dilemma and the danger of the current situation,which,however,could conceivably change in,say,a year'92s time. The discussion closed with an unanswered speculation by Admiral"
+        },
+        {
+          "document_id": "FRUS30p::Dulles_180",
+          "text": "agreed,and said he had discussed the matter with the British who shared this view. The SPLIT and the SPLIT agreed,and said he had been giving thought to the mission of any forces which might be sent in. Perhaps our dispatch should be on the basis of protecting,at the request of the Lebanese Government,lives and property of United States citizens,and of assisting the Lebanese Government in connection with its military program. In outlining the implications of the introduction of American forces,the SPLIT mentioned the following, once our forces were in,it would not be easy to establish a basis upon which they could retire and leave behind an acceptable situation; the move might create a wave of anti-Western feeling in the Arab world comparable to that associated with the British and French military operation against Egypt,even though the circumstances were quite different; it was"
+        }
+      ]
+    },
+    {
+      "custom_id": "request-00000003",
+      "document_ids": [
+        "FRUS110p::President_181",
+        "DSCN0682::State_182",
+        "DSCN0471_Vance_128-13-8.rtf_183",
+        "FRUS232p::Glenn_184",
+        "FRUS291::President_185",
+        "FRUS368p::Wiley_186",
+        "FRUS124.rtf_187",
+        "FRUS285::Kissinger_188",
+        "FRUS243p::Mcconnell_189",
+        "FRUS77p.rtf_190",
+        "FRUS201p::Twining_191",
+        "FRUS81::President_192",
+        "FRUS207.rtf_193",
+        "FRUS35p::Rusk_194",
+        "FRUS245p::Gray_195",
+        "FRUS63.rtf_196",
+        "FRUS84p::Dulles_197",
+        "FRUS178p::Norstad_198",
+        "FRUS40p::President_199",
+        "FRUS04partial.rtf_200",
+        "FRUS596p::DullesCIA_201",
+        "DSCN0481::State_202",
+        "FRUS84p::President_203",
+        "FRUS646::Wilson_204",
+        "DSCN0825::Duncan_205",
+        "FRUS18p::Mcnamara_206",
+        "FRUS285p.rtf_207",
+        "FRUS377p::Mccone_208",
+        "FRUS52partial.rtf_209",
+        "FRUS270.rtf_210",
+        "FRUS77p.rtf_211",
+        "FRUS270.rtf_212",
+        "FRUSC64.rtf_213",
+        "FRUS335p.rtf_214",
+        "FRUS266p::DullesCIA_215",
+        "INR_CIAfiles_NSA_P2.rtf_216",
+        "DSCN0572_Brzezinski_SAFE39B-29-90c.rtf_217",
+        "DSCN0506_Brzezinski_33-10-5_OCRc.rtf_218",
+        "FRUS164p::President_219",
+        "DSCN0677_Brzezinski_15-79-7c.rtf_220"
+      ],
+      "documents": [
+        {
+          "document_id": "FRUS110p::President_181",
+          "text": "said that he recognized that if the ChiCom regime could be destroyed,it would tremendously alter the situation in Asia to the advantage of the Free World and that he did not want to dismiss this possibility altogether even though it seemed unlikely at this time. Ray S."
+        },
+        {
+          "document_id": "DSCN0682::State_182",
+          "text": "Department believes that over the long run those currently not included in the Iranian decision making apparatus are likely to play an important role. (S) Power in Iran has been increasingly concentrated in the hands of the more radical leaders -- Khomeini,Behesthi,Montazeri,Bani-Sadr-- who see the world in moral terms and are uncompromisingly dedicated to '93Islamic'94 goals above all else. The present elite also includes,however,a group of moderates who are pragmatic and flexible and believe Islam and modernity can work together. They have lost much power in recent weeks,but remain on the fringes of the ruling circle. }"
+        },
+        {
+          "document_id": "DSCN0471_Vance_128-13-8.rtf_183",
+          "text": "         Shaba Invasion. In light of the Zairian counter attack in Shaba and on the advice of the military command, Morrison-Knudsen, the construction firm working on the Inga-Shaba electrification project has delayed until tomorrow the evacuation of its 62 employees and their dependents now gather outside Kolwezi. Fourteen other Americans are in rebel-held section of Kolwezi, along with an estimated 2,000 Belgian and perhaps 400 French nations. Rebel indiscipline has allegedly resulted in at least ten European but no American deaths. Given the uncertainties, we are working the French and Belgians on contingency planning for the reduce of expatriates in and around Kolwezi.   Zairian pleas for material assistance are so far modest, for the most part comprising FMS material already on order and in the pipeline. The categories are essential communications equipment and spares, aircraft spares, medicines and assistance with petroleum supplies which remain chronically low. DOD is stepping up pipeline deliveries.  "
+        },
+        {
+          "document_id": "FRUS232p::Glenn_184",
+          "text": "The idea here is very different from what I envisioned. I and most Senators thought of a surgical extraction,not of a ten-day to two-week operation with a bridgehead. This is a re-entry of a magnitude we have not envisioned. I think we have to keep this very quiet. I thought it was a one-shot airlift. SPLIT I can see North Vietnam deciding not to let us get these people out and attacking our bridgehead. Then we would have to send forces to protect our security force. That fills me with fear."
+        },
+        {
+          "document_id": "FRUS291::President_185",
+          "text": "Bill,will you please bring us up to date. SPLIT It looks like a very open port. Is that true? SPLIT Is it a very busy port? Are there any ships in it now? SPLIT We used to complain about supplies coming into Sihanoukville. One reason why Sihanouk was asked to leave in 1970 was because he turned his face away from the movement of supplies into the port. One of the purposes of our entry into Cambodia was to get this material that had been delivered there. SPLIT I do think we have to be certain of our facts. Overnight,Brent gave me a series of different reports that we were getting about the ship'92s location and about what was happening. We have to be more factual or at least more precise in pointing out our degree of knowledge. What do we know now? How certain are we of"
+        },
+        {
+          "document_id": "FRUS368p::Wiley_186",
+          "text": "asked whether this concentration of attention on Laos might not mean that we were being sucked into a diversionary play. To him it seemed that the situations in Berlin,Africa,and in Cuba itself were more important. Was there certainty that we were focusing on the right problems? Director"
+        },
+        {
+          "document_id": "FRUS124.rtf_187",
+          "text": "and aircraft losses grow,Israel may resort to unconventional tactics of trying to outflank Syrian forces by going through Lebanon or Jordan,thus risking the broadening of the war. If we hope to keep Jordan out of the fighting,we may have to talk to both Israelis and Jordanians soon. '97 Israel will doubtless request some urgent arms deliveries. We should probably hold off for another day,but on a contingency basis look into what can be done rapidly. 3"
+        },
+        {
+          "document_id": "FRUS285::Kissinger_188",
+          "text": "No. SPLIT Lee Kuan Yew has asked us to stay in Thailand as long as possible to give him time to work on getting the defenses of Malaysia ready. Bombing from Thailand will get us out quickly. SPLIT To bomb,even from Clark,we would be in trouble. This is a symptom of Vietnam. We can bomb from Guam with B'9652'92s or from the carriers. But we should know what we are doing. I am more in favor of seizing something,be it the island,the ship,or Kompong Som."
+        },
+        {
+          "document_id": "FRUS243p::Mcconnell_189",
+          "text": "The North Koreans have 450 planes. We need at least an equivalent number in South Korea. General SPLIT We had only 24 fighters in Japan. There are 70 enemy fighters that were in the area around Wonsan. The"
+        },
+        {
+          "document_id": "FRUS77p.rtf_190",
+          "text": "this Soviet position might occur. The USSR would regard a successful US military action against the bases,or against Cuba as a whole,as a very great defeat,which might substantially stiffen Western determination to resist Soviet demands in other confrontations,e.g. Berlin. If,therefore,they believed that US military action was all but imminent and unavoidable,they might make a last-minute offer to dismantle the bases in return for some Western concession which,while not offsetting their loss,offered some prospect of saving face. They might even attempt to dispose clandestinely of their missiles. It is difficult to conceive,however,how the Soviets could frame such moves or time them properly. Thus in this circumstance they might decide to let the US attack proceed and to recoup as much as possible thereafter through political exploitation and,perhaps,an off-setting injury to US interests elsewhere."
+        },
+        {
+          "document_id": "FRUS201p::Twining_191",
+          "text": "then gave a report on the small military actions being taken which Soviet intelligence might pick up. 8 General SPLIT also reported that a Communications Plan in support of Berlin was being prepared. He also said that the Joint Chiefs felt that we can handle a garrison airlift to Berlin with only a small augmentation,even in the face of,efforts to jam our communications. The SPLIT said that as regards Air Force and Navy plans,no decisions were needed now. However,if Norstad had to move large forces from southern to northern Europe,it might be necessary to supply up to 1 additional division from the United States. The"
+        },
+        {
+          "document_id": "FRUS81::President_192",
+          "text": "I asked you to come here because of the alarm of the last few hours. Ambassador Dobrynin called me late today with a very '93urgent'94 message. He read from a long-hand note. (Insert A) 2 I told him we would give it our attention. He said they were invading Czechoslovakia because the Czechs had asked them to come in. I notified the Secretary of State and called this NSC meeting to analyze these actions and try to determine what our national interest is. It is one country invading another Communist country. It is aggression. There is danger in aggression anywhere. We need to give immediate thought to timing of meeting with Soviets. The agenda is more full now than before. We must discuss all problems before us. Is October agreeable or should we meet earlier. There are serious questions, (1) Can we talk now after this. (2) Does our presence"
+        },
+        {
+          "document_id": "FRUS207.rtf_193",
+          "text": "area are on the east side of the island and a platform tower has been constructed just south of the administrative area. Today's photography readout confirms that despite the exchange between Vorontsov and myself the Soviets have moved precipitously to establish an installation in Cien Fuegos Bay which is probably designed to serve as a submarine staging base in the Caribbean. Because of the seriousness of this situation I have asked CIA to provide me with a briefing at 12,30 today at which time we will carefully evaluate the full range of photographic evidence now held in an effort to determine more precisely the full scope of Soviet activity in Cuba. I am also initiating,on an urgent basis,a detailed analysis of the strategic implications of this development. 6"
+        },
+        {
+          "document_id": "FRUS35p::Rusk_194",
+          "text": "Mr. Rusk reviewed developments of the past several days in the Dominican Republic. He explained that the PRD moved to overthrow Donald Reid Cabral,successfully ousted him quickly. However,some elements of the Army were determined not to allow ex-"
+        },
+        {
+          "document_id": "FRUS245p::Gray_195",
+          "text": "opened by explaining to the president that the State and Defense Departments were coordinating on a couple of subjects,such as reunification of Germany,European security,and contingency planning. The purpose of requesting this meeting is to obtain additional guidance in preparation for the foreign ministers talks to begin on March 31st. Secretary"
+        },
+        {
+          "document_id": "FRUS63.rtf_196",
+          "text": "the effect that a new cabinet has been formed today by independent,pro-West Khalidi. The press also reports that recently-ousted Prime Minister Nabulsi is a member of the new cabinet. With the exception of Nabulsi,the new cabinet,it is believed,will be generally amenable to Hussein'92s pro-West policy. 4. The enthusiasm of the pro-Egyptian/Syrian Palestinian Arabs for demonstrations against the King may be dampened by the attitude of the Army and by Hussein'92s apparent intention to use the Army to maintain order and support his throne. 5. It is too early to tell whether or not Hussein has weathered the storm. The Syrians might still be induced to intervene in support of their partisans. Iraq stands ready to move in to support Hussein if asked. Saud probably wishes Hussein success. And Israel must be expected to be prepared to take advantage of a break-up of the Hashemite Kingdom of Jordan. On balance,however,it appears that each of the neighboring states will work to preserve the Kingdom lest each might lose out in the division of the spoils."
+        },
+        {
+          "document_id": "FRUS84p::Dulles_197",
+          "text": "and Mr. SPLIT noted had been clarified somewhat as a result of his talk with Malik about fifteen minutes previously. 2 Mr. SPLIT remarked that there was much plotting going on in Lebanon,and probably there were well-advanced plans for a military coup to place Chehab in the Presidency. This effort by Chamoun to replace Chehab as army commander might bring such plans to a head. The SPLIT also noted that the U.N. is moving rapidly and vigorously to implement the Security Council resolution. Cordier is already in Beirut,and the SPLIT read from USUN'92s 1490 6 containing Cordier'92s report. The SPLIT noted that the SPLIT General plans rapidly to recruit several hundred observers from Italy,the Netherlands,Ceylon,and Burma. The SPLIT then reported on Malik'92s call at 4,30 Sunday afternoon at which time (speaking from an outline) Malik had said that any Middle East country inviting armed intervention"
+        },
+        {
+          "document_id": "FRUS178p::Norstad_198",
+          "text": "in a message received today,4 generally supports General Clay's suggestions but recommends in addition that '93with the removal of the barricades,jeeps or other vehicles should be sent through immediately'94. He specifies that '93no arms would be used except as clearly necessary for defense or rescue purposes'94. George W."
+        },
+        {
+          "document_id": "FRUS40p::President_199",
+          "text": "Do the rebels have much strength? I thought the General [Wessin y Wessin] had done pretty well with his tanks. SPLIT We want to be very,very careful not to sit here and let them augment their forces. Where are these Castroites coming from? The inside? SPLIT I sure don't want to wake up a few hours later and say we're awaiting developments and find out Castro's in charge. Now who are we depending on to avoid this? Bennett? SPLIT They tell me they have been expecting this and anticipating it and CIA has been telling US about it every day. Is that true? SPLIT Let's do that. SPLIT I don't think we could have been wrong yesterday,I think we will be wrong when we don't do enough,or we go in and do too much. We haven't done anything now but evacuate. But if we become a party"
+        },
+        {
+          "document_id": "FRUS04partial.rtf_200",
+          "text": " The main Pathet Lao effort seems to be an attack from the north toward Luang Prabang. A town called Nam Bac fell on January 7 after an intensive four-hour mortar and recoilless rifle attack. The Pathet Lao numbered about 700. Government forces destroyed some ammunition and apparently saved their weapons in the withdrawal to Muong Sai,30 miles west. This latter town possesses a 3000-foot sod runway. Possession of Nam Bac makes it possible for the Communists to go down the river toward Luang Prabang. The government forces,meanwhile,reportedly possess the road junction where the Xieng Khouang road forks to Luang Prabang and Vientiane. Furthermore,the troops in Luang Prabang have been reinforced by a battalion (338 men). The King has returned to Luang Prabang after the formalities at Vientiane. The bulk of the Boun Oum forces in the Xieng Khouang area have withdrawn about 40 miles southeast"
+        },
+        {
+          "document_id": "FRUS596p::DullesCIA_201",
+          "text": "SPLIT suggested,whether a further arrangement on sugar is concluded. The possibility of a sensational Soviet offer has been reported. The Soviets do not need sugar and purchase of Cuban sugar could be a very costly operation for them. The Cuban Under Secretary of Foreign Affairs has indicated that Cuba intends to recognize East Germany. A Cuban sugar magnate,Julio Lobo,who recently left Cuba after his holdings were seized by the government,has said that Guevara had stated to him that while Khrushchev may admit the possibility of coexistence between capitalism and socialism,such co-existence was not possible in Cuba. Cuba was likely to react strongly to the new U.S. export controls. It may press charges of new U.S. aggression. What it will do was,however,difficult to guess. A few American companies which had not so far been seized'97Sears Roebuck,Woolworth,and Coca Cola'97may now be intervened and taken over. Castro may make a personal appearance before the UN to present the Cuban case."
+        },
+        {
+          "document_id": "DSCN0481::State_202",
+          "text": "estimates that this diplomatic activity is not likely to show clear results for 36-48 hours. It may have to be supplemented by further diplomatic activity. It is the State Department's judgment that public pressure will only provoke greater counter-action by Amin and may well make him less flexible. If we can keep Amin faithful to what he has said thus far -- that is he is merely calling people in to Kampala to choose whether they wish to go or stay -- we might get through this without too much trouble. Military Actions"
+        },
+        {
+          "document_id": "FRUS84p::President_203",
+          "text": "want our intervention. The SPLIT agreed,and noted that in such circumstances we would have to fulfill our commitments. Mr. SPLIT commented that if we are forced to intervene,we should do everything possible to intervene under the most favorable auspices and circumstances,and also attempt to bolster the Lebanese army as soon as possible,so that our forces could withdraw quickly. The SPLIT directed General Twining to have the Chiefs of Staff study the military possibilities and problems involved. The SPLIT also felt that we should examine the possibility of putting in massive military support,possibly accompanied by numbers of technicians,as the Soviets did in Syria,as an alternative to military intervention. Mr."
+        },
+        {
+          "document_id": "FRUS646::Wilson_204",
+          "text": "also favored this proposal. Mr. SPLIT raised the question of what our reaction should be in the event that the Chinese Communists sent in MIG aircraft for operations over Indochina. Mr. SPLIT asked whether it would be sensible to forget about Indochina for a while and concentrate on the effort to get the remaining free nations of Southeast Asia in some sort of condition to resist Communist aggression against themselves. The"
+        },
+        {
+          "document_id": "DSCN0825::Duncan_205",
+          "text": "has suggested we move the carrier Eisenhower to the eastern mediterranean. This move would have little or no operational utility and might well be seen as an empty gesture underscoring our lack of options. It also threatens to cause an adverse reaction from both the Tehran mobs and the government with which we are trying to develop more positive relations. }"
+        },
+        {
+          "document_id": "FRUS18p::Mcnamara_206",
+          "text": "warheads for these launchers are not yet on Cuban soil. SPLIT No. SPLIT No,but it does possibly indicate a different course of action '85 SPLIT '85 and therefore,while I'm not suggesting how we should handle this,I think this is one of the most important actions we should take, to ascertain the location of the nuclear warheads for these missiles. Later in the discussion we can revert back to this. There are several alternative ways of approaching it. SPLIT I suggest,Mr. President,that if you're involved in several hundred strikes,this is what you would'97and against airfields'97this is what you would do,pre-invade. And,uh,it would be very difficult to convince anybody that this was not a pre-invasion strike. I think also once you get this volume of attack that public opinion reaction,uh,to this,as distinct from the reaction to an invasion,uh,there's"
+        },
+        {
+          "document_id": "FRUS285p.rtf_207",
+          "text": "          JCS has requested CINCSTRIKE to prepare to implement either of two plans previously prepared for this evacuation. CINCSTRIKE has replied that neither of the plans was appropriate at present and is forwarding a new plan (USJTF OPLAN 514'97Ready Move 3). The exact details of this plan are not yet available in Washington but from the attached messages the following outline can be seen: 1. Mission is to seize and secure Stanleyville, evacuate non-Congolese, and turn city over to friendly government. 2. Intelligence estimates indicate the enemy situation in Stanleyville represents a greater capability than existed in early September, therefore a larger force is necessary. This would comprise a small air strike force and an airborne battalion for initial assault, with a second airborne battalion ready at a forward staging base to be called forward if required. 3. Two routing plans are presented, with plan I'96B being recommended. "
+        },
+        {
+          "document_id": "FRUS377p::Mccone_208",
+          "text": "said that one of our informants had told us last August that there would be trouble in Panama in January,that Panama was Castro's number one priority target,and that Castro had agreed to send arms to revolutionary elements in Panama. The SPLIT referred to. Mr."
+        },
+        {
+          "document_id": "FRUS52partial.rtf_209",
+          "text": "under which a fourteen-power conference would begin. It should also be designed to exert pressure on the communist bloc by demonstrating in a deliberate and limited manner our readiness to take whatever measures may be appropriate to create for ourselves at least a reasonably strong negotiating position. The first step in so demonstrating our readiness would be to inform our SEATO allies,individually or collectively,of our concern at the dangerous nature of current bloc actions. The Russian failure to respond on the cease-fire question,the continuation of the Russian airlift and evidence of Pathet Lao military preparations against Paksane and Thakhek are significant in this regard. This ominous combination of circumstances would be described as casting doubt on Russian intentions to proceed with the conference in a meaningful manner. We would inform our SEATO allies that we were planning in concert with the Thai,whose security is immediately threatened "
+        },
+        {
+          "document_id": "FRUS270.rtf_210",
+          "text": "must be considered if National Policy is changed to provide such support. The Chief of Staff,United States Army,disagrees,pointing out that the off-shore islands are not essential to the defense of Formosa,and stating that he does not consider it within his purview to comment on the impact of the loss of these islands on the U.S. strategic position in the Far East from the political viewpoint. The Acting Secretary of Defense has not had an opportunity to thoroughly evaluate the split paper presented to him today,but is inclined to share the majority opinion as to the deteriorating effect of further loss in our international stategic position vis-'e0-vis the Communists. The Acting Secretary of Defense has approved the orders to CINCPAC mentioned above and feels that there is a possibility that an enlargement of the attack on Quemoy may require basic decisions as a matter of urgency."
+        },
+        {
+          "document_id": "FRUS77p.rtf_211",
+          "text": " Soviet reaction since the outbreak of the Cuban crisis indicates Soviet short run tactics are governed by the following considerations, 1. The USSR's first objective in the present stage of the crisis is to retain the bases in Cuba. The Soviets not only see considerable military value in these installations,but they regard them as a telling demonstration of the long-proclaimed shift in the '93world relation of forces.'94 Particularly now that the US has committed itself to their elimination,they believe that,if they can prevail,they will have scored a political victory of such proportions that opportunities for further advances will open up in all the areas of East-West contention. 9. With respect to the missiles already in Cuba it seems highly improbable that the USSR will agree to withdraw in the absence of major US concessions elsewhere. There is one circumstance,however,in which a break in"
+        },
+        {
+          "document_id": "FRUS270.rtf_212",
+          "text": " To the President of the United States from Secretary Anderson. Chinese Communists initiated heavy artillery shelling against selected targets on the island of Quemoy off the city of Amoy at 0145 EDT on 3 September. This firing diminished somewhat at 0420 EDT but was reported as continuing. It is estimated that the fire is coming from approximately 60 artillery pieces. Two U.S. MAAG personnel have been killed. Remainder of MAAG personnel,numbering 14 are to be evacuated. According to one report,a Chinese Communist assault is expected against Quemoy at daybreak 4 September their local time. CINCPAC has been alerted and directed to move carrier forces into a position from which support could be rendered,or a rescue mission undertaken,if directed. He is also being directed to place one or more ground observers on Quemoy in order that we may have good intelligence of the situation on that"
+        },
+        {
+          "document_id": "FRUSC64.rtf_213",
+          "text": " ** '00-360 * -720 CIA will present a revised plan for the Cuban operation. 1 They have done a remarkable job of reframing the landing plan so as to make it unspectacular and quiet,and plausibly Cuban in its essentials. The one major problem which remains is the air battle. I think there is unanimous agreement that at some stage the Castro Air Force must be removed. It is a very sketchy force,in very poor shape at the present,and Colonel Hawkins (Bissell's military brain) thinks it can be removed by six to eight simultaneous sorties of B-26s. These will be undertaken by Cuban pilots in planes with Cuban Air Force markings. This is the only really noisy enterprise that remains. My own belief is that this air battle has to come sooner or later,and that the longer we put it off,the harder it will be."
+        },
+        {
+          "document_id": "FRUS335p.rtf_214",
+          "text": "          He decided a. To adopt an aggressive and positive policy to localize and terminate the situation in the Middle East at the earliest possible time. He indicated that he was willing to accept the risks inherent in such a policy. The overt movement of forces will unequivocally spell out US intentions and assure other friendly nations of our firm intention to honor our commitments.  b. To augment CINCNELM's air capability by the deployment of two tactical fighter squadrons from CINCEUR and also a second carrier strike force from the Sixth Fleet. The President was concerned about the obvious imbalance of US air power vis-vis the air power of the UAR in the eastern Mediterranean and Red Sea area, i.e., 201 US vs 339 UAR aircraft. c. To preposition in Spain those B-47's included in the Middle East portion of CINCSAC's OPLAN 52'9663 in support of operations in the Middle East. This would provide the final augmentation necessary to give CINCNELM air parity with the UAR. "
+        },
+        {
+          "document_id": "FRUS266p::DullesCIA_215",
+          "text": "the movement of a light bomber group of Chinese Communist IL'9628s in the direction of the Amoy area. He closed his comments on the general topic of the offshore islands by stating that there existed no real evidence that the Chinese Communists were about to try to seize these offshore islands at the present time. He pointed out,however,that there were plenty of Chinese Communist troops in the general area if a decision to move were made. 1 'a0"
+        },
+        {
+          "document_id": "INR_CIAfiles_NSA_P2.rtf_216",
+          "text": " We have no evidence that Soviets or Cubans are involved in the present fighting. The Soviets,Cubans East Germans,and Angolans,however,have longstanding ties with the Katangans with arms,training,and logistical support. We also note that Soviet media have been less reticent than the TASS statement in expressing sympathy for the aims of the '93Congolese National Liberation Front'94 and in criticizing the US for allegedly planning to intervene in the crisis."
+        },
+        {
+          "document_id": "DSCN0572_Brzezinski_SAFE39B-29-90c.rtf_217",
+          "text": "to remove their troops from Cuba. But Kennedy did something else also,and hence the foregoing argument is not an unexpected plea from me for acquiescence. Kennedy responded to this '93unacceptable'94 situation,with which he had to live,by taking a number of steps designed to indicate to the public that he would assert U.S. interests,and if necessary,be prepared to use force. I personally do not favor sending more troops to Guantanamo,because Guantanamo to most Latin Americans looks like an imperialist outpost form days gone by -- and it tends to reinforce the legitimacy of the Soviet troop presence in Cuba. I do favor the other steps,which I have incorporated in your speech outline, more defense,more intelligence,some limited steps regarding China (because that actually does concern the Soviets and we have to do at least one thing that genuinely bothers them),and a more generally tough line on Soviet adventurism and disregard for our interests. We should do all of these things,even if the Soviets give us something on Cuba. The fact is that they will not give us enough to enable us to proclaim a victory,and,much more important,even if we did,I have not the slightest doubt that the public will not accept some cosmetic arrangement of relocation within Cuba as a Carter '93victory.'94"
+        },
+        {
+          "document_id": "DSCN0506_Brzezinski_33-10-5_OCRc.rtf_218",
+          "text": "          A gradual but steady toughening up in our policy is therefore the preferable alternative. It will require telling the country quite frankly that we cannot get the bridge out, short of a head-on military confrontation. Instead, there are other things that you are prepared to do in order to confront the Soviet Union with the face that d'e9tente must be a two-way street. Assertive Soviet behavior, different to our interests, will henceforth not be cost free.   Much of the foregoing should be communicated to the Soviets in advance as the likely consequence of Soviet unwillingness to adopt a position compatible with outcome number (1). I believe that this should be told to them directly, firmly, and unambiguously. They will probably reject us, in part because of their sense of confidence and in part because they simply do not take our warnings seriously any more. "
+        },
+        {
+          "document_id": "FRUS164p::President_219",
+          "text": "were sending the squadron as a gambit to get Faysal to withdraw support from the Royalists. This would look better to Nasser. The SPLIT also directed that we not have the squadron look as if it were in Saudi Arabia on a \"permanent\" engagement. We should tell the Saudis it would be there for only two months or so,though we would be prepared to keep it there longer if necessary. SPLIT said that he did not think Faysal would accept our offer. He felt we should make the proposal tentative and take every precaution to be sure that we did not end up defending Saudi mercenaries intervening in Yemen. He also said that we could not expect Nasser to withdraw from Yemen under present circumstances (i.e. short of Saudi disengagement). R. W. Komer 6 1 'a0"
+        },
+        {
+          "document_id": "DSCN0677_Brzezinski_15-79-7c.rtf_220",
+          "text": "Qom. I put the above before you since it seems to me that we should consider something unconventional,in addition to the more logical and rational options that we are considering. Paradoxically,if past history is any guide,it is the very gradual escalation of measures that in the end may prove to be more dangerous and produce a wider and even a more bloody conflict. In addition to the factors that I mentioned earlier,gradual escalation can also at some point tempt some neighboring powers to start making adversary noises and thus become eventually also engaged. I am not at all certain that the combination of moves mentioned above is the right one,but then Khomeini has us in a box by a series of rather unconventional moves himself."
+        }
+      ]
+    },
+    {
+      "custom_id": "request-00000004",
+      "document_ids": [
+        "FRUSC47p.rtf_221",
+        "FRUS73p::Mcnamara_222",
+        "FRUS278p::President_223",
+        "FRUS305.rtf_224",
+        "FRUS270.rtf_225",
+        "FRUS264.rtf_226",
+        "FRUS21p::Rusk_227",
+        "FRUS221p::Mcnamara_228",
+        "FRUS164p::Mcghee_229",
+        "FRUS253p.rtf_230",
+        "FRUS118p::Mcnamara_231",
+        "FRUS72.rtf_232",
+        "FRUS21.rtf_233",
+        "FRUS74::President_234",
+        "FRUS21p::Mcnamara_235",
+        "FRUS30.rtf_236",
+        "FRUS19partial.rtf_237",
+        "FRUS287p.rtf_238",
+        "FRUS596p::Dillon_239",
+        "FRUS90p.rtf_240",
+        "DSCN0466_Vance_128-13-3.rtf_241",
+        "DSCN0801::Nsc_242",
+        "FRUS199.rtf_243",
+        "FRUS266p::Dulles_244",
+        "FRUS131p::President_245",
+        "FRUS131p::President_246",
+        "FRUS18p::Taylor_247",
+        "FRUSEXCOMM3::Mccone_248",
+        "FRUS518::President_249",
+        "INR-PDB_CIAfile_NSA_Pc.rtf_250",
+        "FRUS33p.rtf_251",
+        "FRUS28p::Taylor_252",
+        "FRUS450::Wilson_253",
+        "DSCN0542_Brown_12-59-5c.rtf_254",
+        "FRUS596p::Stans_255",
+        "FRUS47::President_256",
+        "FRUS115p::Kirk_257",
+        "DSCN0624_Brzezinski_1-15-2c.rtf_258",
+        "FRUS291::Scowcroft_259",
+        "FRUS36p::Sweeney_260"
+      ],
+      "documents": [
+        {
+          "document_id": "FRUSC47p.rtf_221",
+          "text": "          On balance I think the gloomier parts of both papers are right. Diplomatic and public opinion are surely not ready for an invasion, but Castro's internal strength continues to grow. The battalion's dispersal would be a blow to U.S. prestige, but we should today have a hard time at the U.N. if it goes in. The one hope I see is in an early'97even if thin'97recognition of a rival regime. I think if a Government-in-Exile can be surfaced promptly we could and should follow Mann's suggestion of working toward its recognition fairly soon. (We could also put in a full trade embargo against Castro, and you could sorrowfully read him out of the liberal family in a strong and factual speech about his outrages.) Then, conceivably, we could hold back Bissell's battalion for about three months and even build it up somewhat. And when it did go in, the color of civil war would be quite a lot stronger."
+        },
+        {
+          "document_id": "FRUS73p::Mcnamara_222",
+          "text": "proposed move by SEATO into panhandle,recognizing that if we do we must be prepared to win,[ less than 1 line of source text not declassified ]. 2. Allen Dulles said we must anticipate a Chinese response if we move into the panhandle. 3."
+        },
+        {
+          "document_id": "FRUS278p::President_223",
+          "text": "Do they want a war by attacking our ships in the middle of the Gulf of Tonkin? Director SPLIT Are we going to react to their shooting at our ships over 40 miles from their shores? If yes,we should do more than merely return the fire of the attacking ships. If this is so,then the question involves no more than the number of North Vietnamese targets to be attacked. Secretary"
+        },
+        {
+          "document_id": "FRUS305.rtf_224",
+          "text": "military purposes,provided that such targets shall not be attacked where there is danger of hitting significant numbers of noncombatants in the target area,such as wives and children in military barracks area. D. Air reconnaissance is authorized over urban areas and surrounding belts provided plane maintains minimum altitude of three thousand feet and does not open or return fire. E. In the case of B'9626'92s,there must be a five-minute interval between any combat run on targets outside the urban area and surrounding belt,and any reconnaissance run within the area and belt. 5. Military objectives in the Congo primarily consist of towns and cities held by the rebels,with very little combat taking place other than in and around the towns. The policy now in effect permits the rebels to remain in the towns unmolested,control the communication and supplies that exist in the towns,and to have the comfort of urban facilities. Unless the restrictions on the use of air power are lifted,and a return to the Geneva Conventions adopted as a proper guideline,the rebels will have achieved a significant victory. There is no question that this is the chief purpose for which the rebel propaganda campaign is designed."
+        },
+        {
+          "document_id": "FRUS270.rtf_225",
+          "text": "island. It will also be possible for CINCPAC by air reconnaissance to observe the general situation in the Amoy area. He could make an aerial demonstration in this vicinity as was recently made at Tachen if this should be considered advisable and is so directed. Quemoy Island is garrisoned by approximately 50 000 Chinese Nationalist troops and is a relatively strong position. Today,the Joint Chiefs of Staff presented a paper 2 prepared prior to this attack and in reply to the earlier NSC query 3 in regard to the advisability of assisting in the offshore islands of which Quemoy is one. This paper is split. The Chairman of the Joint Chiefs of Staff,together with the Chief of Staff of the Air Force and the Chief of Naval Operations,recommend that National Policy should be changed to permit U.S. Naval and Air Forces to assist in the defense of 10"
+        },
+        {
+          "document_id": "FRUS264.rtf_226",
+          "text": "97To insure success under Option 1,a preponderance of US participation would be required. '97There is minimal risk to noncombatants in attacking this base area. There are also no known Cambodian units in this area. 3 '97The plan would take three to four weeks to conduct. '97The enemy is well-entrenched with an estimated strength of 4 000 men and a reserve of approximately 8 000 others who could be sent to the area in event of attack. Casualties to US/ARVN units would probably be of high intensity. In considering operations which would emphasize ARVN participation,MACV felt that attacks on the Parrot's Beak and Base Area 704 would be preferable. MACV pointed out the following considerations concerning operations in these areas, '97Compared with the option of attacking COSVN (Base Area 352/353),these operations have the advantages of shorter duration,more favorable terrain and the probability of fewer US/ARVN casualties. '97Some US involvement"
+        },
+        {
+          "document_id": "FRUS21p::Rusk_227",
+          "text": "You've seen actual missiles themselves and not just the boxes have you? SPLIT Yeah. Sure there is. SPLIT Pat,we don't know of any sixty-five-foot Soviet missile that has a range of,say,fifteen miles,do we? SPLIT In other words,if they are missiles this size,they are missiles of considerable range,I think. SPLIT The disadvantage in that is,of course,the,uh,the advance notice if he judges that we,we would not in this,in such approach here say exactly what we would do,but,uh,it might,of course,lead him to bring up mobile anti-aircraft weapons around these,uh,missiles themselves,uh,or,uh,take some other action that will make the strike that more difficult. Um,but there is that,there is that [move that?]. There are two other problems that we are concerned about. Uh,if we strike these missiles,we would"
+        },
+        {
+          "document_id": "FRUS221p::Mcnamara_228",
+          "text": "to send,roughly 63 Air Force F'964's; 33 Marine F'964's; 50 F'96100's; 50 A'964's; 30 F'968's; 22 F'96105's; and possibly some other aircraft. The F'964's and most of the other planes do have bombing capacity. Secretary SPLIT I propose,although there is some difference of opinion on this,that we move the USS Banner in to replace the Pueblo off North Korea. We are planning to send it into the area to join the Enterprise so that if we decide to move,it will be in position. If we decide to replace the Pueblo with the Banner we should be prepared to cover it with air and other support units. The SPLIT They can operate easily from Okinawa. Flying time is only about 2'961/2 hours. 1 'a0"
+        },
+        {
+          "document_id": "FRUS164p::Mcghee_229",
+          "text": "commented that we were not faced with a \"military\" threat. We don't think Nasser would attack but we want a plate glass window to insure that this is the case. The SPLIT thought so. The"
+        },
+        {
+          "document_id": "FRUS253p.rtf_230",
+          "text": "will enforce vigorously U.S. laws prohibiting the use of U.S. territory as a base for any military actions against a foreign country. RECOMMENDATIONS, We believe that if the collective measures described above are maintained,further Cuban attacks on or harassment of third country flag vessels engaged in commercial pursuits in the Caribbean appear unlikely. Moreover,we are reasonably assured that with the continuation of these measures,the forces currently assigned could intervene in time to prevent,if so authorized,a Cuban seizure of any of the four '93Express'94 vessels. In our judgement,further additional deterrent or protective measures such as escorting specific vessels that may be vulnerable to Cuban attack are not warranted at this time. Accordingly,we recommend that the U.S. continue, the present sea and air monitoring of the sailings of the Babun surveillance of Cuban naval and the maintenance of its naval presence in the area as a deterrent."
+        },
+        {
+          "document_id": "FRUS118p::Mcnamara_231",
+          "text": "suggested that (i) this Bloc action might portend a speed-up of Khrushchev's schedule; (ii) our own military preparations should be hastened accordingly. There was some disagreement with his diagnosis,but none with his prescription. 1 'a0"
+        },
+        {
+          "document_id": "FRUS72.rtf_232",
+          "text": "would be a setback to U.S. interests in the area. Whether the King continues to attempt to rule with a constitutional government or resorts to a military dictatorship,the struggle for power is unlikely to be expeditiously resolved. Saudi troops in Jordan and Iraqi troops in Western Iraq are prepared to support Hussein upon his request. Syrian troops in Jordan are confined to barracks and their withdrawal may be under consideration. Inconclusive evidence of possible Israeli mobilization has been reported. Strong representations are being made to Israel to keep hands off. The death of Hussein or the calling in of Iraqi troops could result in clashes among opposing forces and within the Jordan Army. Instructions have been issued to sail Sixth Fleet to Eastern Mediterranean and the Sixth Fleet Amphibious Task Group to Beirut. Two DDs are remaining in Massawa'96Aden area. In addition JCS are considering possible movements of certain ground and air units from Europe to staging bases in Turkey or Lebanon."
+        },
+        {
+          "document_id": "FRUS21.rtf_233",
+          "text": "the Laos-Cambodia border area but never confirmed. It would be helpful to know the exact size,status and location of this facility'97particularly whether it is in Cambodia. 3. It may also be that the value of logistic support to the Viet Cong via Laos has been overestimated and that in fact the bulk of this support arrives by sea or via Cambodia. Based on present intelligence holdings we are not able to arrive at a sound judgement on this question. Ground reconnaissance patrols into Laos would appear to be the best way to get detailed information on the extent of Communist activity there. 4. This information has been provided to the Chairman,Joint Chiefs of Staff and interested elements of the Joint Staff."
+        },
+        {
+          "document_id": "FRUS74::President_234",
+          "text": "said the situation seems to be still in hand in Jordan and moving approximately as forecast,etc. Any more support from us would be embarrassing. The SPLIT said that is done. The SPLIT said Snyder called at 7,30 and said it was moving and the news was out. The SPLIT does not think it will do any harm and the SPLIT said we can do this but do not want to do anything he does not ask for. The SPLIT said he thinks he knows he has our support. They praised him and the"
+        },
+        {
+          "document_id": "FRUS21p::Mcnamara_235",
+          "text": "than,no earlier than this coming Friday and with the strike therefore on Saturday,3 or anytime thereafter with twenty-four hours between the decision and time of strike. Uh,General Taylor will wish to comment on this,but the Chiefs are strong in their recommendation against that kind of an attack,believing that it would leave,uh,too great a capability in Cuba undestroyed. The specific number of sorties required to,to accomplish this end has not been worked out in detail. The capability is for something in excess of seven hundred sorties per day. Uh,it seems highly unlikely that that number would be required to carry out that limited an objective,but at least that capability is available in the air force alone,and the navy sorties would rise on top of that number. The Chiefs have also considered other alternatives extending into the full invasion,uh,you"
+        },
+        {
+          "document_id": "FRUS30.rtf_236",
+          "text": " '93Joint Evaluation of the Soviet Mission Threat in Cuba '94 based on intelligence obtained as of 9 p.m. that day. The evaluation,prepared by the Guided Missile and Astronautics Committee,the Joint Atomic Energy Intelligence Committee,and the National Photographic Interpretation Center,was codenamed Iron Bark because it drew upon intelligence material provided by the Central Intelligence Agency's important Soviet source,Colonel Oleg Penkovsky. It was based on '93relatively complete photo interpretation of U-2 photography'94 made on missions of October 14,and two on October 15 and '93very preliminary and incomplete readout'94 of coverage of six U-2 missions on October 17. The evaluation concluded that there was '93at least one Soviet regiment consisting of eight launchers and sixteen 1020-nm (SS-4) medium-range ballistic missiles now deployed in western Cuba at two launch sites.'94 These mobile missiles had to be considered operational and could be launched within 18 hours after the decision"
+        },
+        {
+          "document_id": "FRUS19partial.rtf_237",
+          "text": "          4. There is a serious gap in intelligence about the Communist build-up in the Plaine des Jarres. There is a possibility that they may plan an offensive before the rainy season sets in, in about a month. On the whole, the view is that Phoumi's forces can hold even if they are unlikely to advance very far. The Pentagon is undertaking to get better intelligence and also to see whether the dumps the Communists are creating might not be targetable and, conceivably, attacked [   less than 1 line of source text not declassified   ] volunteer pilots. This is staff work exploration, of  and no decisions have been made."
+        },
+        {
+          "document_id": "FRUS287p.rtf_238",
+          "text": " 3. So unless we send the fighters promptly,Faysal may again accuse us of breaking promises. Our Ambassador is very worried about further delays. We've already deployed practically everything but the fighters themselves,holding latter in Spain till UN observer teams could deploy to border area. Main UN element is arriving in Yemen 3 July and scheduled to deploy on 5 July. There may be some delay in this God-forsaken area but I share State/DOD feeling that we had better finally go ahead. To reassure you,rules of engagement permitting us to fire on aircraft committing hostile acts (e.g. bombing) are strictly standby and not to be authorized without your express approval. The only authority our aircraft now have is standard one of firing back in self defense if they themselves are shot at. To further limit risk of any confrontation,we're telling Cairo about squadron and will do so again with Nasser personally within the week. UAR did conduct one \"raid\" (last Sunday) after disengagement officially in effect,but UN observer believes after viewing scene that pilot jettisoned bombs by error. Meanwhile,YAR fortunes again seem on upgrade and Royalists weakening. Sign of times is that UK met Yemeni terms for release of 16 servicemen. In sum,we are still moving slowly,haltingly,but distinctly toward a successful exercise."
+        },
+        {
+          "document_id": "FRUS596p::Dillon_239",
+          "text": "loss of good feeling toward the U.S. in Latin America. When we had asked them about the reaction they had got in Central America,the Canadians had had to admit that they had no representative in that area. SPLIT pointed out that there were indications that Cuban aircraft on Cuban airfields had been recently painted with U.S. insignia. Our Ambassador was asking about these aircraft in a note 4 which would state that it was well-known that there were no U.S. aircraft in Cuba and which would suggest that the Cubans might be preparing a provocative military action. 1 'a0"
+        },
+        {
+          "document_id": "FRUS90p.rtf_240",
+          "text": " 2. We believe that most careful study is necessary of both intelligence and operational planning for proposed new venture. You may draw,if you wish,on the Cuban misadventure as proof of the dangers of bad intelligence,and of decisions based more on hope than reality. You should emphasize our insistence on continued detailed study and exchange of views. 3. Our earlier approval of 20-man drops 1 was heavily connected with the fact that we were not involved. 200-man teams with U.S. air support are a wholly different matter,and while we too will await results of further study,you should indicate that support for such drops would be a major shift in policy for us and would have to be supported by compelling evidence. If you concur,you should indicate that it still seems best to us to think in terms of smaller actions which might in themselves"
+        },
+        {
+          "document_id": "DSCN0466_Vance_128-13-3.rtf_241",
+          "text": "         We have also considered diplomatic steps which we might take to stabilize the Angola-Zaire border situation. Our concern is that military assistance from French, Belgian, and Moroccan sources being funneled through Zaire to UNITA ma prompt Neto to encourage a resumption of Katangan gendarme attacks aimed at Zaire. My conclusion is that we cannot dissuade the French and Belgians from their view that their long-term interests are served by an ultimate Savimbi victory. Accordingly, we will limit ourselves to again warning Mobutu against diversion of US-supplied equipment. We will also share with him our concerns that his continued interference in Angola, even as an intermediary for others, could jeopardize Congressional support for our present economic and military programs and provoke the Angolans and Katangans into stepping up their activities in Shaba. "
+        },
+        {
+          "document_id": "DSCN0801::Nsc_242",
+          "text": "had noted that there were suggestions the Shah might abdicate and leave a military government behind or that he might remain with a military government in place,and requested official guidance as to how he should reply in the event the Shah raised such a choice with him. Questions were raised regarding the Soviet role in Iran and the need to explain the organization and apparent nation-wide coordination which was appearing in the handling of the demonstrations,strikes and political demands in a variety of different industries and in various,separated parts of the country. Admiral"
+        },
+        {
+          "document_id": "FRUS199.rtf_243",
+          "text": " ** '00-360 * -720 When Secretary Dulles and others discussed Berlin contingency planning with you on January 29,1 the application of additional military force was reserved for governmental decision in the event that an initial probe followed by other measures proved unsuccessful. Though decision is reserved,the need for advance planning is evident,and the Department of State has been examining alternative possibilities. Short of general war,these appear to be two. One is the use of substantial force to attempt to reopen passage to Berlin. The other,a pacific counter-blockade,supplemented perhaps by other forms of naval reprisal,seems on preliminary examination to merit careful study also. There is attached a memorandum on this subject prepared in the State Department. Pacific blockade is considered an act of reprisal rather than an act of war. By applying this concept to Berlin situation,we might frame a strategy which"
+        },
+        {
+          "document_id": "FRUS266p::Dulles_244",
+          "text": ",who was obviously very concerned over this increased military activity,complained that he hadn'92t been able to find that the State Department had had any report from representatives of the Department resident in the area,with respect to the Communist shelling of the offshore islands. 3 Secretary SPLIT went on to ask whether we did not get reports on such events,and as to what is going on in the Quemoy area,from representatives of the Department of Defense . . . ."
+        },
+        {
+          "document_id": "FRUS131p::President_245",
+          "text": "is the restraints. The difficulty is civilian casualties. Mining may be the most humane course in this kind of situation. Secretary SPLIT I have to decide at 2,00 p.m. Admiral SPLIT Whatever we do we must always avoid saying what we'92re not going to do,like nuclear weapons. I referred to them saying that I did not consider them necessary. Obviously,we are not going to use nuclear weapons but we should leave it hanging over them. We should also leave the threat of marines hanging over them. To protect our 69 000 forces,if the GVN collapses,the 18 000 U.S. personnel in Da Nang would be in great peril. In terms of ground forces,an offensive role is one question,a defensive one is something else. We shouldn'92t give reassurances to the enemy that we are not going balls out. I like the three to twelve mile limit question. I"
+        },
+        {
+          "document_id": "FRUS131p::President_246",
+          "text": "stop movement into Haiphong,particularly the oil; we must bomb the power plants and the attacks must be heavy. There is no easy way. I would like to think that the mining is easy but there must be mining; we must hit the railroads so they cannot divert to rail and we will be hitting stock piles in a substantially increased way north of the 20th parallel. Either we do all that or nothing. Admiral SPLIT It is a different war. Admiral SPLIT Tell us what assets we had when we began and what we have there now. Admiral SPLIT Abrams has double the resources. Secretary SPLIT That is the other option. We have the Marine division in Okinawa. I have said we would not introduce ground troops. Leaving the mining out,can we step up the bombing on Hanoi and Haiphong? Admiral SPLIT The problem with respect to bombing"
+        },
+        {
+          "document_id": "FRUS18p::Taylor_247",
+          "text": "Well,I think that that thing is all over '85 SPLIT Well,I would think we would have,should be in a position to invade at any time if we so desired. Hence that,uh,in this preliminary,we should be,uh,it's all bonus if we are indeed taking out weapons [word unintelligible] '85 SPLIT I suspect,Mr. President,we'd have to take out the surface-to-air missiles in order to get in,to get in,take some of them out. Maybe [words unintelligible]."
+        },
+        {
+          "document_id": "FRUSEXCOMM3::Mccone_248",
+          "text": ". . . The Intelligence Community does not believe the measures to achieve a higher degree of action readiness for Soviet and bloc forces are being taken on a crash basis. Communist reaction to the U.S. quarantine against Cuba has not gone beyond the highly critical but [unclear] yesterday by the Soviet government. Surveillance of Cuba indicates the continued rapid progress in com- pletion of the IRBM and MRBM sites. No new sites have been discov- ered. On the U-2 flight yesterday,where apparently [unclear] one of them had 40 percent cloud coverage. Another had only 15 percent cloud coverage. [Unclear.] Buildings believed to afford nuclear storage are being assembled with great rapidity. Cuban naval vessels have been ordered to blocking positions at Banes and Santiago Bays. A survey of Soviet shipping shows 19 [16?] dry-cargo and 6 tanker ships en route to arrive in Cuba. Of these 22,9"
+        },
+        {
+          "document_id": "FRUS518::President_249",
+          "text": "asked Mr. dulles to conduct high reconnaissance in this area,avoiding,however,any flights into Russia. Flights over Syria and Israel should be conducted. Mr. SPLIT said our people should be alert. If the Soviets attack the French and British directly,we would be in war,and we would be justified in taking military action even if Congress were not in session. Mr. SPLIT said that if reconnaissance discloses Soviet Air Forces on Syrian bases he would think that there would be reason for the British and French to destroy them'85 . G Colonel,CE,US Army}"
+        },
+        {
+          "document_id": "INR-PDB_CIAfile_NSA_Pc.rtf_250",
+          "text": "          1. Still Growing Soviet Role in Afghanistan Soviet involvement in the war in Afghanistan military operations continues to increase. Soviet officers appear now to command, as well as advise Afghan units and  Soviet enlisted personnel may now be participating directly in combat operations against the insurgents, besides performing  technical tasks. The Soviets, however, still do not seem to have committed units of their own into the Afghan conflict. Evidence persists of tension between Amin and Moscow.   The intensified Soviet role probably reflects recommendations made by the military mission led by Soviet ground forces commander, General Pavlovskiy. The prolonged stay of his mission from mid-August until late October attests to the importance the Soviets attach to Afghanistan'92s acute security problems. Increased Soviet involvement, however, has not as yet resulted in a decline of insurgent activity. "
+        },
+        {
+          "document_id": "FRUS33p.rtf_251",
+          "text": " '93Joint Evaluation of Soviet Missile Threat in Cuba'94 (see *HYPERLINK \"https,//history.state.gov/historicaldocuments/frus1961-63v11/d30\" Document 30) for the initial evaluation. The new evaluation was based on intelligence as of 8 p.m. on October 19. It included Iron Bark material and was based on '93relatively complete photo interpretation'94 of four of the six U-2 missions of October 17 and part of the final two missions. This evaluation discovered an additional regiment of Soviet 1020-nm (SS-4) missiles at two sites east of Havana in the Sagua La Grande area that appeared to be more permanent than the two sites already identified at San Cristobal in western Cuba. This evaluation predicted that the two 2200-nm (SS-5) sites in the Guanajay area near Havana could be operational within 6 weeks and by December 15-30,respectively. Although there was still no evidence of currently operational nuclear storage facilities in Cuba,there was evidence that a site was"
+        },
+        {
+          "document_id": "FRUS28p::Taylor_252",
+          "text": "generally reviewed the situation stating that the Chiefs looked upon Cuba as a forward base of serious proportions,that it cannot be taken out totally by air; that the military operation would be sizeable,nevertheless necessary."
+        },
+        {
+          "document_id": "FRUS450::Wilson_253",
+          "text": ",if we are going to undertake a long-range settlement of Korea,the South Koreans must be '93dealt in'94. So far they had been on the outside of plans to settle their future. Secretary"
+        },
+        {
+          "document_id": "DSCN0542_Brown_12-59-5c.rtf_254",
+          "text": "Eastern Europe or Southeast Asia,they are willing to apply military strength,and are likely to be dissuaded from exercising it only by a conviction that the consequence will be very negative for them,and in the short run. The people who have risen to the top in such a system,however many similarities they have to democratic political leaders,will surely have great differences from them. In most cases they will see compromise as a sign of weakness,and conciliation as a sign of poor judgment."
+        },
+        {
+          "document_id": "FRUS596p::Stans_255",
+          "text": "asked if we knew whether the military support being provided by the Bloc was for internal security purposes only or also included equipment that could be used in an attack on other nations."
+        },
+        {
+          "document_id": "FRUS47::President_256",
+          "text": "93It looks as if they are attacking in Vietnam.'94 The conversation continued, SPLIT '93The battle has begun?'94 SPLIT '93Hmm.'94 SPLIT '93What'92s the situation? They'97is this the'97this is an attack on a broad front?'94 SPLIT '93How'97?'94 SPLIT '93How are they doing?'94 SPLIT '93How'92s the ARVN doing? It'92s done fairly well?'94 SPLIT '93Yeah.'94 SPLIT '93Sure.'94 SPLIT '93That'92s right.'94 SPLIT '93Well,I don'92t see why we don'92t do it right now. Is it'97it'92s weather?'94 SPLIT '93Well,now,let me ask'97what the hell is the situation here?'94 SPLIT '93Should we start bombing right now? I mean,[unclear]'97'94 SPLIT '93I understand that.'94 SPLIT '93September'97'94 SPLIT '93That'92s right.'94 SPLIT '93They haven'92t done that'97?'94 SPLIT '93I agree. Oh,I'92m not concerned about the attack,but I am concerned about the counterattack. By God,you'92ve got the Air Force there. Now,get them off their ass and get them up there and hit everything that moves'97'94 SPLIT '93I"
+        },
+        {
+          "document_id": "FRUS115p::Kirk_257",
+          "text": "suggested that we had no information that a drop of a 20-man team or a 200-man team on the mainland of China could survive. It was more likely,according to Admiral Kirk,that this request was being made simple as a means of dragging us into GRC plans for an invasion of the mainland. The"
+        },
+        {
+          "document_id": "DSCN0624_Brzezinski_1-15-2c.rtf_258",
+          "text": "          Impact of the Rescue Attempt on Iran: The failure of the rescue effort will strengthen enormously the Iranian resolve to resist '93imperialism'94 and virtually guarantees that no Iranian politician can support a negotiated settlement when (and if) the hostage issue is debated in the legislature. State believes the militants will not be inclined to kill the hostages since they would lose their leverage on the domestic political scene and their ability to continue to humiliate us. (C)  While the raid may provide further impetus for cementing Iranian-Soviet commercial ties, the Iranian leadership will still be very reluctant to rush into a security relationship with Moscow. It is also unlikely that any Iranian leader will be willing to enter into negotiations with the U.S. for some time to come. Instead, the Iranians will sit tight with what they have and await our next move, at least until the parliament considers the hostage issue. (C).   "
+        },
+        {
+          "document_id": "FRUS291::Scowcroft_259",
+          "text": "Holt gets there and we have things our way? SPLIT We must recognize that we have a problem with regard to Thailand. They have called in our Charg'e9 and they have told him that they do not want Thai bases used in connection with operations to release our ships. 3 SPLIT So far is has been OK. But if we use force,we may be in jeopardy. SPLIT Let'92s use one time for all this. SPLIT Right. SPLIT I have reservations about landing on the ship."
+        },
+        {
+          "document_id": "FRUS36p::Sweeney_260",
+          "text": "stated that he was certain the air strike would be '93successful'94; however,even under optimum conditions,it was not likely that all of the known missiles would be destroyed. (As noted in 4 above,the known missiles are probably no more than 60% of the total missiles on the Island.) General"
+        }
+      ]
+    },
+    {
+      "custom_id": "request-00000005",
+      "document_ids": [
+        "FRUS212p::Colby_261",
+        "FRUS705p::Flemming_262",
+        "FRUS73p::Rusk_263",
+        "FRUS221p::Mcnamara_264",
+        "FRUS280::SmithWalter_265",
+        "FRUS21p::Mcnamara_266",
+        "DSCN0759_Brzezinski_17-131-4c.rtf_267",
+        "FRUS28p::President_268",
+        "FRUS295::Kissinger_269",
+        "FRUS42.rtf_270",
+        "FRUS212p::Colby_271",
+        "FRUS377p::Bundy_272",
+        "FRUSEXCOMM8::Mcnamara_273",
+        "FRUS196::Kissinger_274",
+        "FRUS295::Jones_275",
+        "FRUS291::President_276",
+        "FRUS144p.rtf_277",
+        "FRUSEXCOMM7::Bundy_278",
+        "FRUS83p::Bundy_279",
+        "DSCN0455_Vance_7-20-3.rtf_280",
+        "FRUS13::Kissinger_281",
+        "FRUS454p::President_282",
+        "FRUS134.rtf_283",
+        "FRUS73p.rtf_284",
+        "FRUS23p::Mcnamara_285",
+        "DSCN0677_Brzezinski_15-79-7c.rtf_286",
+        "FRUSB164::Stassen_287",
+        "FRUSC25p.rtf_288",
+        "FRUS122p::Mcnamara_289",
+        "FRUS12p.rtf_290",
+        "FRUS97p::DullesCIA_291",
+        "FRUS595p.rtf_292",
+        "FRUS455p::Wilson_293",
+        "FRUS103p.rtf_294",
+        "FRUS295::Schlesinger_295",
+        "DSCN0720::Powell_296",
+        "FRUS196::Schlesinger_297",
+        "FRUS149::Twining_298",
+        "FRUS18p::Bundy_299",
+        "Vance_Argentina_NSA_P2.rtf_300"
+      ],
+      "documents": [
+        {
+          "document_id": "FRUS212p::Colby_261",
+          "text": "to Phnom Penh yesterday saying that there were no prospects for a compromise solution or a cease-fire. Boret met with Sihanouk'92s son,Prince Yuvaneath,in Bangkok. Yuvaneath admitted that he was not authorized to speak for his father but his claim that Sihanouk would not negotiate is undoubtedly correct. The government may soon invite Sihanouk to return and try to tie the invitation to an agreement that Communist forces not enter Phnom Penh or hinder the flow of relief supplies to the city. At this point,this sort of an orderly surrender is the best that can be hoped for."
+        },
+        {
+          "document_id": "FRUS705p::Flemming_262",
+          "text": "inquired as to the timing in carrying out the proposed Council action suggested by Mr. Cutler. As he understood it,the initial effort would be to work out the coalition,after which the problem would be taken up to Congress to find out their attitude toward U.S. participation. The SPLIT returned to the question of the timing. Would this course of action consume a matter of days,or weeks,or months? The"
+        },
+        {
+          "document_id": "FRUS73p::Rusk_263",
+          "text": "93Your thinking coincides with ours. we agree that the independence of Kuwait must not be destroyed by force and we are prepared to render the full political support you request. While Qasim is,to say the least,unpredictable,we are hopeful that given time to work political forces among the Arabs will dissuade Qasim from committing himself to an unfortunate course of action with unpredictable consequences."
+        },
+        {
+          "document_id": "FRUS221p::Mcnamara_264",
+          "text": "We do want moves which will buy us time. I propose the following steps, 1. Proceed to move armed forces from the U.S. and other places in the area to South Korea and South Korean waters. I propose moving about 250 aircraft in addition to those that are aboard the Enterprise . The SPLIT The Enterprise can remain off Korea without any effect whatever on our actions in Vietnam. It was going to the Gulf of Tonkin to supplant and not supplement any operations. We can keep the carrier it was to replace on station off Vietnam. The SPLIT We do have a problem,but I am reasonably confident that what General Wheeler and General Westmoreland have reported is satisfactory. The SPLIT They have approximately 400 jets compared to 200 jets in South Korea. The SPLIT Our aircraft would be superior to the bulk of their air force. We propose"
+        },
+        {
+          "document_id": "FRUS280::SmithWalter_265",
+          "text": "asked the president whether or not Dulles should go on to Formosa as result of invitation from Chinese Nationals. Pros and cons were discussed. SPLIT sending long report sent in by Allison 3 with regard to a confidential discussion some pro-American Japanese had with Chou En-lai. His estimate of situation serious. SPLIT and SPLIT asked about undertaking evacuation in case full-scale invasion is made. SPLIT said on his own authority he had told Nationalists that we would concur in any defensive action they undertook."
+        },
+        {
+          "document_id": "FRUS21p::Mcnamara_266",
+          "text": "really,is to consider fully these alternatives. SPLIT Yes. SPLIT That's exactly right. SPLIT We ought to work on that tonight. SPLIT '85 I would suggest that we,uh,divide the,the,uh,series of targets up by,in effect,numbers of DGZs and,uh,and,uh,numbers of sorties required to take those out for a series of alternatives starting only with the missiles and working up through the nuclear storage sites and the MIGs and the,er,and the SAMs and so on. So we can say,This target system would take so many points,eighty points and so many objects would take so many sorties to knock out. The,the'85 . Not because I think that these are reasonable alternatives '85 SPLIT '85 but they give an order [words unintelligible] to the President to get some idea of this. And this we can do,and this can"
+        },
+        {
+          "document_id": "DSCN0759_Brzezinski_17-131-4c.rtf_267",
+          "text": " The main issue is whether we are providing assistance to the insurgents. If this can become effective enough,the Soviet cost calculus could be significantly altered. The introduction of anti-helicopter weapons will be particularly important and review the status of the programs,the effectiveness of the insurgents and the possibility of sharply increased assistance and whether this could pay dividends. The limiting factors are the disorganization of the insurgents. This latter point should lead you to whether the Soviets will be able to substantially crush the insurgency by the end of the year,no matter what we do. This,in turn,raises a serious question, How will a Soviet success affect our regional and global position? How can we avoid having this look like a U.S. defeat? (S) (f) considerable success on the ground in Afghanistan itself,where the Soviets have, (1) sized the major population (2) controlled the"
+        },
+        {
+          "document_id": "FRUS28p::President_268",
+          "text": "requesting that we organize into two groups. One to study the advantages of what might be called a slow course of action which would involve a blockade to be followed by such further actions as appeared necessary as the situation evolved. Second would be referred to as a fast dynamic action which would involve the strike of substantial proportions with or without notice. * 'a0"
+        },
+        {
+          "document_id": "FRUS295::Kissinger_269",
+          "text": "They will hold them for bargaining. SPLIT I have just come back into this problem,having been out of town all day. My instinct would have been as follows, We have two problems, '97First,the problem of the crew and the ship and of how we win their release. '97Second,our general posture which goes beyond the crew and the ship. But that sort of thing comes later. In the immediate situation,I think I agree with Jim. We will take a beating if we kill the Americans. At the same time,we must understand that we cannot negotiate for them once they are on the mainland. If you are willing to take that position,then I think we can let them go. We should not let them become bargaining chips. SPLIT We have a pilot who thinks there may be Caucasians. It would have been a much better position"
+        },
+        {
+          "document_id": "FRUS42.rtf_270",
+          "text": " ** '00-360 * -720 You asked that I explore in the 303 Committee two possible CIA courses of action with respect to Cambodia, (a) CIA potential for creating covert paramilitary harassing operations directed against North Vietnamese Regular Forces in the sanctuary areas just over the Cambodian border (b) CIA capability for eliminating or reducing the arms traffic through Cambodia to communist forces in South Vietnam. CIA can develop the operations described in (a) above at some sacrifice to high priority operations now directed against the Viet Cong infrastructure in South Vietnam. CIA recommends against initiating such operations on the grounds of high cost versus expected low effectiveness against the large concentrations of regular NVN forces there. 2 The Committee members endorsed the CIA recommendation. With respect to (b) above,CIA has identified a number of Cambodian army officers who are actively involved in supporting the movement of arms and"
+        },
+        {
+          "document_id": "FRUS212p::Colby_271",
+          "text": "act,it underscores the ever-present possibility of a single incident that would overturn Thieu and bring on political chaos. 2 Thieu'92s new nominee for prime minister,Nguyen Ba Can,hopes to have a government formed by this weekend. Can will try to encourage representatives from the civilian opposition to join the cabinet. There is considerable reluctance,however,especially among important Buddhist and Catholic groups,to be associated with a Thieu government. In any case,we see no dramatic improvement likely to stem from this new government. Another factor is U.S. aid. A prompt and large-scale infusion would tend to restore confidence. The converse is obviously also true. The most likely outcome is a government willing to accept a settlement on Communist terms,i.e.,surrender. The Communists are repeating their willingness to negotiate with a post-Thieu government,in an obvious effort to encourage a political upheaval in Saigon. At the same"
+        },
+        {
+          "document_id": "FRUS377p::Bundy_272",
+          "text": "replied that he believed it was fair to say that the intelligence community had not predicted that civil disorder would break out in Panama as it had. He knew of no other crisis situation,with the possible exception of Bolivia,where an effort may be made by the leftists to overthrow La Paz's government. In response to the question of what we had done,Secretary"
+        },
+        {
+          "document_id": "FRUSEXCOMM8::Mcnamara_273",
+          "text": "low-altitude '97 SPLIT I think . . . well I think I'92d say it was shot down. Because the probabilities are that it was shot down,and we want an excuse to go in tomorrow and shoot up that SAM site and send in around'97 SPLIT Well,it might have had mechanical failure problems. Alexis SPLIT Let me start my proposition over again. We must be in a position to attack quickly. We'92ve been fired on today. We'92re going to send surveillance aircraft in tomorrow. Those are going to be fired on without question. We'92re going to respond. You can'92t do this very long. We'92re going to lose airplanes. We'92ll be shooting up Cuba bit by bit,but we'92re going to lose airplanes every day. You just can'92t maintain this position very long. So we must be prepared to attack Cuba quickly. That'92s the first proposition. Now,the second proposition."
+        },
+        {
+          "document_id": "FRUS196::Kissinger_274",
+          "text": "Colby'92s estimate 2 indicates that Thieu'92s pullback was designed to put him into a position to cut his losses and stagger through until 1976. He decided to do this because he was not getting enough support from the U.S. It was due to a lack of spare parts and ammunition. The idea of pulling back was not bad but when the move began,the refugees clogged the road and the troops did not know how to move anyway. Thieu was trying to get ready. His estimate and ours was the same; an all-out attack next year would finish him unless he got more support. So he wanted to stagger through this year and hope for a change. SPLIT The move could only have been carried out by surprise. SPLIT Ky is a boy scout,a flamboyant pop-off; he can not do the job. SPLIT Thieu has shown himself far and"
+        },
+        {
+          "document_id": "FRUS295::Jones_275",
+          "text": "to recycle. We would have to let them remain there overnight,against a force that we do not know. SPLIT No. It has only two or so that it uses itself. But we could take the Marines on to the Coral Sea,and thus get them close to the island. SPLIT We have nothing to confirm the exact force on that island. SPLIT But it cannot be in 24 hours,only in 48. Once you start cycling,it takes time. SPLIT That would not be enough. SPLIT On Wednesday night,the Coral Sea will help a little with its fighters. But not with Marines. Maybe the Hancock will do it. SPLIT With the Coral Sea,you have other vessels as well. You will have a total of five ships. You would have a good force,but it is very late at night to begin to cycle the Marines."
+        },
+        {
+          "document_id": "FRUS291::President_276",
+          "text": "the facts with which we are dealing? SPLIT Was all this in daylight? SPLIT How big is the ship? SPLIT If they try to move the ship,we must take steps to stop it,without sinking it. SPLIT How would this information come to us? Whom does the plane contact? SPLIT So that,within 10 minutes,any movement would be detected and available to us here. SPLIT And you have people on the ball in the Pentagon? SPLIT How do you get the information to Brent and then to me? SPLIT I am very concerned about the delay in reports. We must have the information immediately. There must be the quickest possible communication to me. SPLIT We must get the information to the NSC and to me. Jim,will you now please give us your report on the other options. SPLIT I have a question about that from my World"
+        },
+        {
+          "document_id": "FRUS144p.rtf_277",
+          "text": "of the overall world situation if Berlin were not an immediate issue? 7. What tactical air support is needed for the planned forces in Europe and what is the plan for providing such support? 8. The reduction in terms of days of combat of the supply backup of U.S. forces in Europe which will result from increasing our forces and from supplying the West Germans has been noted. Would this result in putting U.S. troops in a possible combat situation without adequate supplies? 9. If we add 6 divisions to NATO,may not Khrushchev add 6 or more divisions to the conventional forces facing NATO? Or will logistical problems,fear of attack by atomic weapons and preoccupations in the satellites set a limit on the Soviet conventional forces available for immediate use against NATO? 10. What is the estimated net gold cost per year of the movement of six divisions to Europe and what can be done to reduce it?"
+        },
+        {
+          "document_id": "FRUSEXCOMM7::Bundy_278",
+          "text": "The work'92s going on. While you were out of the room,Mr. President,we reached an infor- mal consensus that'97I don'92t know whether Tommy agrees'97that this last night'92s message was Khrushchev. And this one is his own hard- nosed people overruling him,this public one. That they didn'92t like what he said to you last night. Nor would I,if I were a Soviet hardnose."
+        },
+        {
+          "document_id": "FRUS83p::Bundy_279",
+          "text": "described the attack as providing only a bump in the upward curve of the military actions proposed in the scenario. With respect to whether the reconnaissance pictures we had obtained had been worthwhile,Secretary"
+        },
+        {
+          "document_id": "DSCN0455_Vance_7-20-3.rtf_280",
+          "text": " Shaba Situation. Now that the French are in Kolwezi,the Belgian Cabinet,after some debate,has decided to send Belgian paratroopers on Saturday morning to join the French. The French plan to remain in the Kolwezi area to reestablish order. Their forces have encountered considerable resistance since they landed this morning but have succeeded in freeing a number of hostage. They have,however,reported finding the bodies of about 40 Europeans."
+        },
+        {
+          "document_id": "FRUS13::Kissinger_281",
+          "text": "Pyongyang claims we shot first. SPLIT Their statement implies a straight drop on this. The SPLIT No. The only thing is that we considered the diplomatic scenario depends on the retaliation decided on. Both must be consistent. SPLIT With respect to the treaty,North Korea is the only country with defense treaties with USSR and the Chinese. Also there is an escape clause in Article I. The"
+        },
+        {
+          "document_id": "FRUS454p::President_282",
+          "text": "said he hoped that we would not forget that we could not strengthen the military position of tiny countries like Honduras by merely dumping modern arms into them. We should supplement this action by seeing to it that the armies of these countries were taught the effective use of the armament we provided. He thought this problem ought to be surveyed as a long-range affair."
+        },
+        {
+          "document_id": "FRUS134.rtf_283",
+          "text": " 1. You asked about the use of the guerrilla infiltration routes through Laos into South Vietnam. These routes have been in use intensively since the end of 1958 when the government of North Viet-Nam in effect declared guerrilla war on South Vietnam. 2. The Viet Cong (Communist guerrilla) strength in South Viet-Nam rose from about 2500 in September 1959 to 5000 in January 1960,and to an estimated 15 000 at the present time. 3. The percentage of these Viet Cong forces which have infiltrated from outside of the country,as compared with those who were recruited locally,is impossible to determine. However,it is known that substantial numbers have been entering South Viet-Nam from the north by way of Laos for a long time. General Craig,who has just returned from a visit to Southeast Asia with a Joint Staff team,2 considers that,since the cease-fire last May,there has been a very large movement of guerrilla forces into the panhandle of Laos in anticipation of an over-the-border offensive against South Vietnam. 4. Although we hear most about the infiltration by land,there is a lively business in transporting guerrillas by junk along the seacoast from the north into South Vietnam. Although they are occasionally intercepted,this traffic in guerrillas goes on without too much difficulty."
+        },
+        {
+          "document_id": "FRUS73p.rtf_284",
+          "text": "absence of direct hostile action unless they shoot first,it aims to show Recommendation 5 We recommend further that if such planes are downed either over Laos or North Vietnam,fighter escort should be provided with instructions to return ground fire and attack anti-aircraft installations. 3. Impasse in the Polish meetings . The actions recommended to this point are those which would occur before an impasse in the Polish discussions. When such an impasse has been reached,we expect to recommend selections from the following additional actions to strengthen our general position. No specific decisions are recommended at present,but such actions might include the following, (1) The expansion of T'9628 operations in Laos,including the use of third country pilots,but not Americans. (2) The introduction of harassing action by South Vietnamese forces into the Laotian Corridor (with U.S. advisors). (3) The authorization of South Vietnamese air strikes against North Vietnamese activities in the Laotian corridor. III. The Special Problem of the Laotian Right One continuing danger,in all our Laotian efforts,is the Right Wing. Both the relatively skillful Phoumi and the quite unpredictable Siho are capable of acting to overthrow Souvanna and take power at Vientiane at any time. De facto,they have much power there now. Any Right Wing takeover would be most destructive to our whole position."
+        },
+        {
+          "document_id": "FRUS23p::Mcnamara_285",
+          "text": "made the point that missiles in Cuba had no great military consequence because of the stalemate mentioned in my October 18th memorandum. General SPLIT took issue claiming that the military equation would not be changed by the appearance of these missiles. Dean SPLIT raised innumerable questions concerning military operations; the manner in which the strike could be properly covered with protective air and how it might be restricted and also the advisability of case one,as contrasted with case one,two and/or three. General"
+        },
+        {
+          "document_id": "DSCN0677_Brzezinski_15-79-7c.rtf_286",
+          "text": "they could stick it out and eventually prevail. They proved to be right. Since we are dealing with a fanatic,I wonder whether a strategy of graduated pressure would work. He will not be influenced by it,and he might be in a position to carry his supporters with him -- since at no point will the challenge to Khomeini be severe enough to make other Iranians wonder whether supporting him might not plunge Iran into some unpredictable abyss. In contrast,a sudden and dramatic move might have that effect. The question is, what could that move be? Since I do not believe that we should initiate hostilities while all our hostages are alive,the only combination of dramatic moves that could have a jolting effect might be as follows, a speech by you to the UN,combined with mining,combined perhaps with a bold '93taking into custody'94 strike at"
+        },
+        {
+          "document_id": "FRUSB164::Stassen_287",
+          "text": "asked whether it would not be desirable to have a study prepared as to ways and means of destroying the big guns and gun emplacements on the Chinese mainland opposite the offshore islands. No such attempt to destroy these gun emplacements would,of course,take place until after the ratification of the Paris agreements,and the effort would be made with conventional rather than with nuclear weapons. The"
+        },
+        {
+          "document_id": "FRUSC25p.rtf_288",
+          "text": " 1. It is evident on the basis of analysis in this paper and the basic paper on the implications of a ChiCom nuclear capability 2 that the significance of such a capability is not such as to justify the undertaking of actions which would involve great political costs or high military risks. 2. Direct action against the Chinese Communist nuclear facilities would,at best,put them out of operation for a few years (perhaps four to five). 3. A general threat of overt U.S. action to destroy the ChiCom nuclear production facilities in the event of major Chinese aggression would probably not be desirable. Threat of action in response to a specific instance of actual or threatened Chinese aggression would be preferable to a general threat,but would also have significant disadvantages. Whether it would be desirable would depend a good deal upon the circumstances surrounding a particular situation."
+        },
+        {
+          "document_id": "FRUS122p::Mcnamara_289",
+          "text": "charged in with all guns blazing,and charged in hard and with contempt in his voice for the intelligence community and he said this was pretty silly,and of course SPLIT understands the facts and figures business,this is his business; so he said there were 300 motorized junks,and 1300 sailing vessels,take 50 men each; this means that the most you can do is 100 000; you'd have to go back,and couldn't move heavy equipment; with LST's and he thinks this is for the birds; SPLIT said he had several recommendations to make; he wanted to bring two more SAC U-2s into Formosa; we gotta have intelligence; have no intelligence; implications that CIA has been doing a lousy job,make judgments on the wrong facts; SPLIT recommended keeping the 4th Carrier in the Pacific which it was due to come back apparently moving a couple of carriers into the Straits,bringing two more U-2s to Formosa;"
+        },
+        {
+          "document_id": "FRUS12p.rtf_290",
+          "text": " Times- Palatino- Defense and the JCS propose to provide armed fighter escorts for a [less than 1 line not declassified] reconnaissance aircraft which would fly a mission similar to that of 21 March except that it would proceed point- to-point without any orbits en route and would be manned by a reduced crew. The escort would be provided by an aircraft carrier in the area. The closest point of approach to Libya would be 75 nautical miles. The arguments for this proposal include, '97To establish our right to operate in international airspace. '97To confirm our refusal to accept Libya'92s (or any other) unilateral,illegal declaration of a '93restricted area'94 that includes international space. '97To resume collection of intelligence information on the Middle East,including Soviet involvement in the area. '97To provide some degree of protection to our aircraft as it conducts reconnaissance. '97To prevent Libya from claiming that this"
+        },
+        {
+          "document_id": "FRUS97p::DullesCIA_291",
+          "text": "ventured that Khrushchev is probably looking for a way out at this time. His first motive had been to point up Europe since things in the world had been going rather well for the U.S. (Lebanon and Quemoy). Mr. SPLIT agreed with Mr. Herter,stating that if a free election were held in East Germany,only 10% would vote Communist.}"
+        },
+        {
+          "document_id": "FRUS595p.rtf_292",
+          "text": " presented to the President (on about October 8th) the Defense recommendation for flights over Cuba by U'962 aircraft under SAC command. I reported the inquiry made by Gordon Gray and myself into the necessity for such operations,both for information of value to the conduct of clandestine operations,and for information as to any missile sites being prepared there. I also told him that,as to the question of such flights being conducted by military as against civilian agencies,my inquiry had disclosed that either would be capable of doing it. I recommended to him against military auspices."
+        },
+        {
+          "document_id": "FRUS455p::Wilson_293",
+          "text": "expressed a doubt as to the wisdom of keeping the Sixth Fleet in the area of hostilities once it had completed its task of assisting in the evacuation of Americans from the danger area. He said that the Defense Department needed guidance on this matter. The"
+        },
+        {
+          "document_id": "FRUS103p.rtf_294",
+          "text": " As you know,our scenario on the Middle East situation envisages three steps, c. Contingency planning for testing UAR interference with the right of free passage for ships of all nations through the Strait and the Gulf,and contingency planning for the use of force,as necessary,to support that right. Implementing action would be undertaken only after measures in the United Nations had been exhausted and after Congressional approval had been obtained. 4. A Military Plan to Deal With the Straits of Tiran Question A military task force may be required to support,with force,the right of innocent passage,on behalf of the international community,through the Gulf of Aqaba in view of the UAR's announced blockade. The essence of this concept is that an international force could keep the Strait open for all flags,thereby obviating an Arab-Israeli war. Such a task force should be composed"
+        },
+        {
+          "document_id": "FRUS295::Schlesinger_295",
+          "text": "he became reluctant. SPLIT There were no Caucasians on it. SPLIT It went out by telephone within half an hour after you gave it. SPLIT I think we should destroy the boats that still remain at the island. SPLIT I agree. It will go in at noon. SPLIT We understand it is doing 21 knots,not 25. SPLIT It is 10,00 o'92clock. SPLIT We are in serious trouble on the mechanical side. One shaft is out on the Hancock . The Okinawa has an oiler out. It is making only 10 knots. There has been a series of mishaps. SPLIT We have 11 choppers at Utapao. We can run operations against the vessel. In addition,we can land on the island with 120 Marines. We can support that with the force from Okinawa. All together,we would have 270 Marines. In all probability,we could take the island. The Marines"
+        },
+        {
+          "document_id": "DSCN0720::Powell_296",
+          "text": "asked if there were any possibility the rebels could take over the government. Secretary SPLIT asked what our ultimate aim was in the Afghan situation. The SPLIT noted that this,however,was not likely to be successful. The"
+        },
+        {
+          "document_id": "FRUS196::Schlesinger_297",
+          "text": "We are getting the first reports that the Cambodian troops are beginning to lose their drive. They are worried about U.S. support and losing their commanders. With adequate resupply they would have lasted through the dry season. But the morale is no good. The debate in Congress has hurt them badly. It is likely to collapse in two weeks. SPLIT How long do we keep the Americans there after Lon Nol leaves?"
+        },
+        {
+          "document_id": "FRUS149::Twining_298",
+          "text": "have recommended preparation for a large-scale use of force on May 27,to include meeting resistance with a large force,rebuilding of bridges,obstructions,etc. This force can comprise strength up to a division. Secretary SPLIT then spoke up in defense of the Joint Chiefs of Staff point of view. They recommend that we make up our minds now as to our sequence of action rather than attempt to address the problem only after we are stopped. (The SPLIT forcefully injected the position of the Joint Chiefs of Staff. The Joint Chiefs of Staff fear that the United States will go half way and then quit. They feel that if we do not carry through with our resolution to risk general war we might as well get out of Europe. To this viewpoint the SPLIT pointed out that our policies forbid a limited war in Europe,that we cannot fight the USSR on the ground conventionally,and that if we make up our minds to go through we must be prepared to fight a general nuclear war. To this the"
+        },
+        {
+          "document_id": "FRUS18p::Bundy_299",
+          "text": "Are you absolutely clear of your premise that an air strike must go to the whole air complex? SPLIT Now that seems to me that's '85 . It's perfectly possible that this,that they are in that sense a bluff. That doesn't make them any less offensive to us '85 SPLIT '85 because we can't have proof about it. SPLIT Yeah. SPLIT They're now talking about taking out the air force as well'85 . SPLIT I do raise again the question whether,uh,whether we [words unintelligible] the problem,military problem,but there is,I would think,a substantial political advantage in limiting the strike in surgical terms to the thing that is in fact the cause of action."
+        },
+        {
+          "document_id": "Vance_Argentina_NSA_P2.rtf_300",
+          "text": "          Iran '96 We understand from our Embassy in Tehran that, after a day of scattered small demonstrations throughout the city, with some shooting, crowds this evening poured out of the mosques and immediately confronted the troops. Firing was heavier in the northern quarter where the major hotels and the radio/ television stations are located.   Anti-American sentiment is high, and there have been a number of incidents in Tehran and Isfahan against Americans. At least two American homes have been bombed in the past few days. Last night five American-owned vehicles were burned in Isfahan. Several mullahs there have urged their followers to destroy American property. There have, however, been no injuries to Americans reported. I have again asked Bill Sullivan for his views on thinning out the American population, particularly dependents. We should have his answer tomorrow. "
+        }
+      ]
+    }
+  ],
+  "submission": {
+    "id": "batch-1790582473-cW4Cywjg30CGMgbxP84f",
+    "object": "batch",
+    "endpoint": "/v1/chat/completions",
+    "model": "openai/gpt-5.6-terra-20260709",
+    "completion_window": "24h",
+    "status": "validating",
+    "created_at": 1790582473,
+    "finalized_at": null,
+    "request_counts": {
+      "total": 5,
+      "completed": 0,
+      "failed": 0
+    },
+    "usage": null,
+    "results": null,
+    "error": null
+  },
+  "prompt": "\n\nSystem instructions:\nYou will receive a set of speech acts made by bureaucratic advisers in meetings during US Cold War crises.\n\nEach text can be classified as either \"political\" or \"military.\" These categories are mutually exclusive. Your task is to identify the texts that should be classified as \"political,\" as opposed to military.\nFor each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The text is political.\n\"0\": The text is not political; it is military.\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as JSON objects with an ID and text:\n\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nFor each text, return:\n* ID: ID of the text document\n* Label: Your classification, 1 or 0\n* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.\n\nReturn a JSON object matching the supplied output format schema.\nMake sure that you return a classification for every document provided.\n\n\n\nThe codebook is provided below, formatted as a JSON object.\n\nApply the codebook independently to every document.\n\n{\n  \"definition\": \"A speech act is classified as 'political' if it primarily addresses diplomatic, strategic, or governance-related considerations, including alliances, negotiations, public perception, internal political dynamics, or broader geopolitical implications. It focuses on the political context, motivations, or consequences of actions rather than the tactical or operational execution of military actions.\",\n  \"clarification\": \"The 'political' classification includes discussions about: (1) diplomatic strategies, negotiations, or alliances; (2) public or international perceptions and reactions; (3) internal political dynamics, such as leadership, governance, or societal trends; (4) broader geopolitical implications, such as regional stability or the balance of power; and (5) political motivations or intentions behind actions. It excludes purely tactical or operational military discussions, such as troop movements, targeting, logistics, or intelligence assessments that do not address broader political contexts.\",\n  \"positive_examples\": [\n    {\n      \"text\": \"On Angola. I favor action. If the U.S. does nothing when the Soviet-supported group gains dominance,I think all the movements will draw the conclusions that they must accommodate to the Soviet Union and China. I think reluctantly we must do something. But you must know that we have massive problems within the State Department. They are passionately opposed and it will leak. SPLIT He will resign and take some with him. SPLIT I also have a problem with the Ambassador to Tanzania. 2 He participated in giving the ransom for the students. I would like to recall and retire him. But you have to know there would be a major blow-up'97mostly blamed on me. Has Colby gone to Kaunda? SPLIT That is a disgrace. [Describes the State paper of objections.] 3 There isn'92t one African leader who doesn'92t govern by physical domination,except maybe Nigeria. SPLIT We should send\",\n      \"explanation\": \"This text discusses the political implications of U.S. action or inaction in Angola, including State Department opposition, potential resignations, and diplomatic fallout. These are inherently political considerations.\"\n    },\n    {\n      \"text\": \"Criticism (should be Critics) of our position believe we're intent on creating a constitutional and democratic government by pursuing last VC until he is dead. They see capacity of VC to hit the cities. I do not think we can move Thieu to a Greek solution'97offer of VC coming into govt. Part of peace thing, '97Communists have tried to overthrow GVN and ARVN. They failed. We are seeking one-man,one-vote constitutional system. We need to turn war to the ballot box. SPLIT In world opinion,bombing of Hanoi-Haiphong has impact. One Soviet indication,he made distinction between bombing battlefield and around H'96H.\",\n      \"explanation\": \"The text addresses political strategies, such as constitutional systems, negotiations with the Viet Cong, and the impact of bombing on world opinion, which are all political in nature.\"\n    },\n    {\n      \"text\": \" Options Until we have a clearer idea of how the power structure shakes down over the next days and how the Iranians intend to proceed to handle the hostage issue,it would be advisable not to commit ourselves to decisive actions for release. It is highly probable that no US action,whether pressure or persuasion,will have a strong positive influence on Iranian decisions. Rather,it is likely that the Iranian decision will be made essentially on the basis of interests of the leadership group. If we are not able to force a decision on the Iranians,we should take care not to make any move at this stage which could set back a decision. -- Dissent is growing in Iran among key elements of the middle class,professionals,government workers,and probably within the military. -- Nevertheless,the mass of the people,many of whom are armed revere\",\n      \"explanation\": \"This text focuses on political dynamics in Iran, including power structures, dissent, and the decision-making process, which are political considerations.\"\n    }\n  ],\n  \"negative_clarification\": \"A speech act is NOT classified as 'political' if it primarily addresses tactical or operational military actions, logistics, intelligence assessments, or the execution of military strategies without broader political context. This includes discussions about: (1) specific military operations, such as strikes, blockades, or deployments; (2) military logistics, such as troop movements, equipment, or readiness; (3) intelligence assessments of military capabilities or intentions; and (4) rules of engagement or operational constraints.\",\n  \"negative_examples\": [\n    {\n      \"text\": \"the Coral Sea operations,so that its first attack coincides with the attack on the island and on the ship. If we use the Coral Sea,you are then using it to protect the people on the operation. Second,if you use the Coral Sea with the smart bombs,you are hitting military targets and you will not possibly do harm to Americans. SPLIT If they are Cambodian ships,we should sink them. SPLIT I think you should reexamine the Coral Sea operation with the expectation to keep it going. Henry,what do you think? SPLIT And they should not stop until we tell them. SPLIT Can you get the boats? SPLIT I think we should hit the planes,the boats,and the ships if they are Cambodian. SPLIT Any other questions? SPLIT What is the distance between the targets and Kompong Som itself? SPLIT According to the schedule \",\n      \"explanation\": \"This text focuses on the operational details of military actions, such as the use of the Coral Sea, targeting military assets, and sinking ships, which are tactical military actions without broader political context.\"\n    },\n    {\n      \"text\": \" ** '00-360 * -720 Analysis of reconnaissance flight photography over Cuba has this morning confirmed the construction of a probable submarine deployment base in Cien Fuegos Bay. Specifically '97A Soviet submarine tender is anchored next to four buoys which the Soviets have placed in the Bay. '97[ less than 1 line of source text not declassified ] submarine nets have been emplaced across the approach to the deep water basin in which the mooring buoys and the tender are located. '97A Soviet LST is anchored at a fuel pier and a Soviet tanker is anchored in the northern bay. '97Two special purpose barges are also located in the area. '97Special construction on Alcatraz Island,an island in the Bay,appears to have been completed. This includes an administrative area,two single-story barracks,a soccer field,basketball court and probably handball,volleyball or tennis courts. An offshore wharf and swimming\",\n      \"explanation\": \"The text describes military reconnaissance findings, such as the construction of a submarine base and related infrastructure, which are military intelligence assessments.\"\n    },\n    {\n      \"text\": \"Except,if you use the Coral Sea,it limits some assets. Everybody is now on alert. We can do it when you say. We are ready to go. SPLIT We have fighter aircraft,including F'964'92s and A'967'92s. SPLIT Not necessarily. It depends on the type of target. SPLIT On Guam,if we are to do anything,we have to start pretty soon. But there are lots of press there. SPLIT There are many planes to load and to get ready. SPLIT I'92m not sure. SPLIT Only at Utapao. SPLIT Perhaps 6 or 9. SPLIT I am not sure. About 20 or more. SPLIT There are about 50 reporters on Guam right now,because of the refugees. SPLIT I'92m not sure. SPLIT The probability that the Americans are gone causes the problem. I think we have a high probability. SPLIT Everything is now moving,except the B'9652'92s. SPLIT Maybe longer. SPLIT Yes.\",\n      \"explanation\": \"This text is entirely about military logistics, such as aircraft types, readiness, and operational details, which are purely military considerations.\"\n    }\n  ]\n}\n"
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, conditions, or actions through moral values or judgments, such as fairness, equality, rights, freedom, respect, dignity, compassion, deservingness, virtue, injustice, or moral condemnation.",
+  "clarification": "Code as moral rhetoric when the excerpt makes a normative appeal grounded in ethical principles or uses unmistakably moral evaluative language. This includes explicit references to rights, equality, freedom, respect, fair or unfair treatment, protecting vulnerable people, deservingness, justified outrage, compassion toward suffering people, or virtues such as courage. It also includes framing a condition as intolerable, discriminatory, unjust, or second-class treatment.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The claim that every person, including the frail and vulnerable, has a place and purpose asserts inherent human worth."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The commitment to race equality and breaking down barriers makes an explicit equality-based moral appeal."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The statement invokes both equal access to courts and the claim that Americans deserve quality justice."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy promises, technical administration, economic arguments, descriptive statistics, or generic positive language merely because they concern socially beneficial outcomes. References to health, jobs, affordability, safety, community, or public services are not moral rhetoric unless they explicitly invoke a moral value, ethical duty, right, injustice, or judgment. Promotional claims such as success, quality, efficiency, or world leadership are also insufficient on their own.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical corporate-tax compliance reform without an ethical claim."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This reports economic growth figures and forecasts rather than making a moral evaluation."
+    },
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This proposes a water-services office and infrastructure oversight, but contains no explicit moral principle."
+    }
+  ]
+}

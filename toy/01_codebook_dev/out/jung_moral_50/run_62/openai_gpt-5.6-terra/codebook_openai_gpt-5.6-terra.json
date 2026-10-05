@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, conduct, institutions, or outcomes through moral values or obligations, such as fairness, equality, rights, dignity, freedom, respect, justice, compassion, protection of the vulnerable, virtue, or wrongdoing.",
+  "clarification": "Code as moral rhetoric when a passage makes an ethical judgment or appeal rather than merely describing a policy. This includes explicit claims about what people deserve, unfair discrimination, equal treatment, rights, freedom, justified grievance, humanitarian duties, civic responsibilities, or virtues such as courage and respect. It also includes clearly condemnatory terms for moral wrongs, such as repression, terror, or corruption.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It affirms the inherent worth and purpose of every person, specifically including frail and vulnerable people."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "It explicitly rejects unfair discrimination against people from low socioeconomic backgrounds."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It invokes race equality and removal of barriers faced by minority ethnic communities."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, administrative procedures, economic forecasts, spending promises, service improvements, or factual claims merely because they concern socially important subjects such as health, poverty, education, housing, or the environment. Terms such as efficient, accessible, adequate, comprehensive, successful, or priority are not enough by themselves unless they are linked to an explicit moral value, right, duty, or evaluative judgment.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "It promotes sports participation and health but contains no ethical judgment or moral principle."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "It describes a technical corporation-tax simplification measure and administrative savings."
+    },
+    {
+      "text": "1,100 day places are being provided and 800 extra residential care beds are being rolled out.",
+      "explanation": "It reports the number of care places and beds being provided, without moral evaluation."
+    }
+  ]
+}

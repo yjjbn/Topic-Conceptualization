@@ -1,0 +1,1860 @@
+{
+  "batch_id": null,
+  "arguments": {
+    "command": "submit",
+    "model": "openai/gpt-5.6-terra",
+    "mode": "streaming",
+    "provider": null,
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 1,
+    "runs": [
+      1
+    ],
+    "data_path": "..\\02_experiment\\data\\jung_codebookapply_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jungmoral.txt",
+    "test_rows": null,
+    "documents_per_request": 50,
+    "nametag": "jung_initialcoding_newdata",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "as_array": false,
+  "data": [
+    {
+      "": "1",
+      "doc": "51210_201505",
+      "text": "Seek the ability to retain the benefits of Executive and Assembly policies within the Executive budget for investment in public services rather than the Westminster budget.",
+      "cmp_code": "301",
+      "moral": "0",
+      "document_id": "48522"
+    },
+    {
+      "": "2",
+      "doc": "64620_201111",
+      "text": "Advocate for international acceptance of more flexible land-use rules where this can achieve greater economic returns with no detrimental environmental outcomes.",
+      "cmp_code": "703",
+      "moral": "1",
+      "document_id": "33425"
+    },
+    {
+      "": "3",
+      "doc": "64620_201111",
+      "text": "Improving health and wellbeing is essential to ensuring Maori can fully participate in modern society.",
+      "cmp_code": "705",
+      "moral": "0",
+      "document_id": "31939"
+    },
+    {
+      "": "4",
+      "doc": "53320_200705",
+      "text": "We will give the ESB a new mandate to develop renewable energy in Ireland with special emphasis on marine technology.",
+      "cmp_code": "416",
+      "moral": "0",
+      "document_id": "25832"
+    },
+    {
+      "": "5",
+      "doc": "62623_201510",
+      "text": "But we want to help even more.",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "9265"
+    },
+    {
+      "": "6",
+      "doc": "51421_201505",
+      "text": "We will work to make sure the British tourism industry is able to compete with other major world destinations and be a key generator of growth in the UK economy.",
+      "cmp_code": "403",
+      "moral": "0",
+      "document_id": "46465"
+    },
+    {
+      "": "7",
+      "doc": "63110_200410",
+      "text": "Australia’s system of democracy needs an overhaul to bring it into the twenty-first century.",
+      "cmp_code": "204",
+      "moral": "0",
+      "document_id": "8314"
+    },
+    {
+      "": "8",
+      "doc": "64951_198407",
+      "text": "training in basic skills,",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "41296"
+    },
+    {
+      "": "9",
+      "doc": "64620_201111",
+      "text": "The key for the future of tourism is to ensure we get high-quality visitors and increase the value we get from them – get them to spend more.",
+      "cmp_code": "410",
+      "moral": "1",
+      "document_id": "30476"
+    },
+    {
+      "": "10",
+      "doc": "64901_201111",
+      "text": "Māori representation on NZ Trade and Enterprise.",
+      "cmp_code": "607",
+      "moral": "0",
+      "document_id": "29184"
+    },
+    {
+      "": "11",
+      "doc": "64420_200207",
+      "text": "ACT wants and expects that to continue.",
+      "cmp_code": "502",
+      "moral": "0",
+      "document_id": "39494"
+    },
+    {
+      "": "12",
+      "doc": "51902_201505",
+      "text": "New skills provide a route into rewarding, fulfilling employment.",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "44263"
+    },
+    {
+      "": "13",
+      "doc": "64901_201111",
+      "text": "Refocus Māori Provider development to focus on outcomes in areas where services need to grow.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "29271"
+    },
+    {
+      "": "14",
+      "doc": "53420_200705",
+      "text": "are kept in a drug free, secure environment and are prepared, where appropriate, for re-integration into society.",
+      "cmp_code": "506",
+      "moral": "1",
+      "document_id": "23878"
+    },
+    {
+      "": "15",
+      "doc": "53620_200705",
+      "text": "Promote greater sharing of school and community sports facilities and make it a condition of the Sports Capital Programme that facilities be made available to schools where appropriate.",
+      "cmp_code": "502",
+      "moral": "1",
+      "document_id": "19998"
+    },
+    {
+      "": "16",
+      "doc": "53320_201102",
+      "text": "A tax-back scheme to help people not eligible for other means-tested supports to claim up to two years of their income tax back to fund full-time study in an authorised institution.",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "15826"
+    },
+    {
+      "": "17",
+      "doc": "64620_201111",
+      "text": "and introduce a power-to-weight restriction for novice drivers.",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "31139"
+    },
+    {
+      "": "18",
+      "doc": "61320_199211",
+      "text": "It is wrong to borrow to spend on ourselves, leaving our children to pay our debts.",
+      "cmp_code": "414",
+      "moral": "1",
+      "document_id": "62174"
+    },
+    {
+      "": "19",
+      "doc": "62420_201510",
+      "text": "Canada's story is the story of immigration.",
+      "cmp_code": "607",
+      "moral": "0",
+      "document_id": "11019"
+    },
+    {
+      "": "20",
+      "doc": "63810_201309",
+      "text": "This neglect is reﬂected in Labor’s approach to securing our borders against illicit drugs, illegal ﬁshing crews and people smuggling.",
+      "cmp_code": "601",
+      "moral": "1",
+      "document_id": "14"
+    },
+    {
+      "": "21",
+      "doc": "64620_201111",
+      "text": " Cancellation of the 90-day trial period.",
+      "cmp_code": "401",
+      "moral": "0",
+      "document_id": "34084"
+    },
+    {
+      "": "22",
+      "doc": "53620_201102",
+      "text": "Encouraging internationalisation of our services enterprises.",
+      "cmp_code": "407",
+      "moral": "0",
+      "document_id": "13600"
+    },
+    {
+      "": "23",
+      "doc": "53620_200705",
+      "text": "If we are to compete effectively and in a sustainable way, we will have to do so through even greater competitiveness in knowledgedriven industries.",
+      "cmp_code": "408",
+      "moral": "0",
+      "document_id": "19153"
+    },
+    {
+      "": "24",
+      "doc": "51620_201505",
+      "text": "and there are 760,000 more businesses than in 2010 providing jobs and creating wealth across the country.",
+      "cmp_code": "410",
+      "moral": "0",
+      "document_id": "44566"
+    },
+    {
+      "": "25",
+      "doc": "63810_201309",
+      "text": "Further, we will fund reliable communication and transport infrastructure that enables reasonable access to support services, hospitals and schools to foster and maintain the wellbeing and ongoing support of families.",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "312"
+    },
+    {
+      "": "26",
+      "doc": "51620_201505",
+      "text": "All this reflects a core Conservative belief: power to the people.",
+      "cmp_code": "301",
+      "moral": "0",
+      "document_id": "45804"
+    },
+    {
+      "": "27",
+      "doc": "64320_201111",
+      "text": "Within four years the amount that will be spent on superannuation is twenty times the amount that we spend on the unemployment benefit.”",
+      "cmp_code": "505",
+      "moral": "0",
+      "document_id": "35374"
+    },
+    {
+      "": "28",
+      "doc": "64420_200811",
+      "text": "Lower interest rates.",
+      "cmp_code": "408",
+      "moral": "0",
+      "document_id": "36358"
+    },
+    {
+      "": "29",
+      "doc": "51902_199705",
+      "text": "The policy of an SNP government will be to secure a sustainable and long term oil industry:",
+      "cmp_code": "416",
+      "moral": "1",
+      "document_id": "52981"
+    },
+    {
+      "": "30",
+      "doc": "64621_200207",
+      "text": "• ensure the needs of retired New Zealanders are met through a sustainable superannuation scheme.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "38927"
+    },
+    {
+      "": "31",
+      "doc": "51902_199705",
+      "text": "not subjects of an outmoded and decaying eighteenth century state.",
+      "cmp_code": "602",
+      "moral": "0",
+      "document_id": "52621"
+    },
+    {
+      "": "32",
+      "doc": "61320_201211",
+      "text": "and provide states, U.S. territories, and communities with two years of funding to build needed roads, bridges, and transit systems.",
+      "cmp_code": "411",
+      "moral": "1",
+      "document_id": "57898"
+    },
+    {
+      "": "33",
+      "doc": "64620_201111",
+      "text": "•  Over  130,000 homes  so far  are warmer,  drier, and healthier  thanks to  our  Warm Up  New Zealand: Heat Smart  scheme.",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "33472"
+    },
+    {
+      "": "34",
+      "doc": "64421_200207",
+      "text": "Public hospital waiting lists, for what is deemed by our health services as “non-urgent” surgery such as hip replacements, continue to rise.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "39298"
+    },
+    {
+      "": "35",
+      "doc": "64620_201111",
+      "text": "− Victoria Park Tunnel",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "30271"
+    },
+    {
+      "": "36",
+      "doc": "62420_201510",
+      "text": "and help more people in need through a program that is safe, secure, and humane.",
+      "cmp_code": "705",
+      "moral": "1",
+      "document_id": "11063"
+    },
+    {
+      "": "37",
+      "doc": "53951_200705",
+      "text": "in areas of high unemployment",
+      "cmp_code": "408",
+      "moral": "0",
+      "document_id": "17565"
+    },
+    {
+      "": "38",
+      "doc": "53420_200705",
+      "text": "including clean urban public transport modes,",
+      "cmp_code": "416",
+      "moral": "1",
+      "document_id": "23142"
+    },
+    {
+      "": "39",
+      "doc": "64901_201111",
+      "text": "We will review priorities based on an evaluation of progress achieved under Ka Hikitia.",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "29200"
+    },
+    {
+      "": "40",
+      "doc": "64901_200811",
+      "text": "We commit to addressing institutional racism.",
+      "cmp_code": "503",
+      "moral": "0",
+      "document_id": "35806"
+    },
+    {
+      "": "41",
+      "doc": "64620_201111",
+      "text": "Continue to cap back-office administration, and focus resources on frontline services.",
+      "cmp_code": "303",
+      "moral": "0",
+      "document_id": "32793"
+    },
+    {
+      "": "42",
+      "doc": "53320_200705",
+      "text": "representing the cause of community and amenity development in the planning and zoning system.",
+      "cmp_code": "502",
+      "moral": "1",
+      "document_id": "27044"
+    },
+    {
+      "": "43",
+      "doc": "51902_201505",
+      "text": "and will ask the next UK government to report on options including new borrowing powers for the bank.",
+      "cmp_code": "416",
+      "moral": "0",
+      "document_id": "43919"
+    },
+    {
+      "": "44",
+      "doc": "53520_201102",
+      "text": "De-politicise Committee Work: Chairs of committees will be assigned on a more proportional basis, while legislation will typically be introduced in a heads of Bill format to increase the chance of cross-party support",
+      "cmp_code": "204",
+      "moral": "0",
+      "document_id": "15081"
+    },
+    {
+      "": "45",
+      "doc": "53420_200705",
+      "text": "and services reformed.",
+      "cmp_code": "403",
+      "moral": "0",
+      "document_id": "23471"
+    },
+    {
+      "": "46",
+      "doc": "64420_200207",
+      "text": "in order to eliminate burdensome elements that fail a rigorous regulatory assessment.",
+      "cmp_code": "401",
+      "moral": "0",
+      "document_id": "40411"
+    },
+    {
+      "": "47",
+      "doc": "61620_200411",
+      "text": "Exports accounted for about 25 percent of the economic growth in the 1990s and supported about 12 million jobs.",
+      "cmp_code": "401",
+      "moral": "0",
+      "document_id": "60497"
+    },
+    {
+      "": "48",
+      "doc": "53520_201102",
+      "text": "By having a dedicated body to coordinate policy across Government we can target initiatives in cross cutting areas such as education, health care, and housing which will aim to prevent as much as possible problems like homelessness, child poverty and other avoidable problems caused by lack of joined up action.",
+      "cmp_code": "705",
+      "moral": "0",
+      "document_id": "15044"
+    },
+    {
+      "": "49",
+      "doc": "64620_201111",
+      "text": "−  Targeting young offenders with education, training, employment, parenting and living skills.",
+      "cmp_code": "506",
+      "moral": "1",
+      "document_id": "31437"
+    },
+    {
+      "": "50",
+      "doc": "64620_201111",
+      "text": "See our Trade policy for more details.",
+      "cmp_code": "107",
+      "moral": "0",
+      "document_id": "32972"
+    },
+    {
+      "": "51",
+      "doc": "51110_201505",
+      "text": "Increase alcohol and tobacco duties by a successive £1.4 billion every year in the Parliament.",
+      "cmp_code": "416",
+      "moral": "1",
+      "document_id": "50193"
+    },
+    {
+      "": "52",
+      "doc": "51340_201505",
+      "text": "Through this mechanism Scotland has succeeded in winning the argument to allow them to borrow money and issue their own bonds.",
+      "cmp_code": "301",
+      "moral": "0",
+      "document_id": "48050"
+    },
+    {
+      "": "53",
+      "doc": "64620_201111",
+      "text": "Provided extra WellChild/Plunket Tamariki Ora maternity visits for mums – targeting firsttime mothers.",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "32433"
+    },
+    {
+      "": "54",
+      "doc": "64951_198407",
+      "text": "M.P. 's will also be required to disclose their financial affairs.",
+      "cmp_code": "304",
+      "moral": "0",
+      "document_id": "41504"
+    },
+    {
+      "": "55",
+      "doc": "51951_201505",
+      "text": "This myth grew out of a report by the National Institute of Economic and Social Research (NIESR) in 2000, which concluded that 2.7 million jobs were directly related to our trade with the EU and another 500,000 were indirectly linked.",
+      "cmp_code": "110",
+      "moral": "0",
+      "document_id": "42783"
+    },
+    {
+      "": "56",
+      "doc": "64110_200811",
+      "text": "We know that we must urgently prepare for rising oil prices.",
+      "cmp_code": "416",
+      "moral": "0",
+      "document_id": "36874"
+    },
+    {
+      "": "57",
+      "doc": "64110_201111",
+      "text": "and use the funds to clean up our rivers,",
+      "cmp_code": "501",
+      "moral": "1",
+      "document_id": "35539"
+    },
+    {
+      "": "58",
+      "doc": "51901_201505",
+      "text": "We will also seek European agreement for fuel price reductions in rural areas, recognizing the additional costs of living in rural parts of Wales, as already introduced in the Highlands and Islands of Scotland.",
+      "cmp_code": "412",
+      "moral": "0",
+      "document_id": "52231"
+    },
+    {
+      "": "59",
+      "doc": "62623_201510",
+      "text": "Enacted and expanded Tax-Free Savings Accounts.",
+      "cmp_code": "402",
+      "moral": "0",
+      "document_id": "9220"
+    },
+    {
+      "": "60",
+      "doc": "51421_201505",
+      "text": "Introduce a National Food Strategy to promote the production and consumption of healthy, sustainable and affordable food.",
+      "cmp_code": "703",
+      "moral": "0",
+      "document_id": "47117"
+    },
+    {
+      "": "61",
+      "doc": "62320_201510",
+      "text": "to provide stable, ongoing funding to put 2,500 new officers on the streets and keep them there.",
+      "cmp_code": "605",
+      "moral": "0",
+      "document_id": "11786"
+    },
+    {
+      "": "62",
+      "doc": "61320_201211",
+      "text": "Democrats led the fight to enact the STOCK Act to ban congressional insider trading.",
+      "cmp_code": "304",
+      "moral": "1",
+      "document_id": "57605"
+    },
+    {
+      "": "63",
+      "doc": "64621_200207",
+      "text": "By this means we will rebuild the social contract necessary between officers and their personnel and we will put the responsibility for remuneration of our Defence Force personnel with the Executive who are accountable to the electorate, on whose behalf the armed forces serve.",
+      "cmp_code": "104",
+      "moral": "1",
+      "document_id": "37949"
+    },
+    {
+      "": "64",
+      "doc": "63320_201008",
+      "text": "We will cut business taxes across the board, especially for small businesses who will benefit from a head start on the company tax cut",
+      "cmp_code": "402",
+      "moral": "0",
+      "document_id": "4679"
+    },
+    {
+      "": "65",
+      "doc": "64320_201111",
+      "text": "What that tells me is that Maori will be right at the bottom. (Newspaper heading: ‘Crime hurts young, ethnic, poor’).",
+      "cmp_code": "705",
+      "moral": "1",
+      "document_id": "35359"
+    },
+    {
+      "": "66",
+      "doc": "62623_201510",
+      "text": "As a result of our investments in infrastructure, we have brought the average age of Canada's core public infrastructure down from a peak of 17 years in 2001 to an estimated 14.7 years in 2013.",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "9879"
+    },
+    {
+      "": "67",
+      "doc": "61620_200411",
+      "text": "America's economy is undergoing a fundamental transition from one based primarily on manufacturing to one based on innovation, services, and ideas.",
+      "cmp_code": "402",
+      "moral": "0",
+      "document_id": "60753"
+    },
+    {
+      "": "68",
+      "doc": "51902_201505",
+      "text": "This will deliver a total boost to the NHS Scotland budget of £2 billion by 202021.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "43655"
+    },
+    {
+      "": "69",
+      "doc": "51340_201505",
+      "text": "The EU public procurement directives adopted in January 2014 allow for social clauses to be inserted into public contracts to help address social inequalities while maintaining a value for money approach.",
+      "cmp_code": "403",
+      "moral": "1",
+      "document_id": "48142"
+    },
+    {
+      "": "70",
+      "doc": "53420_200705",
+      "text": "close to people, and supporting independent living.",
+      "cmp_code": "401",
+      "moral": "0",
+      "document_id": "24044"
+    },
+    {
+      "": "71",
+      "doc": "63110_200711",
+      "text": "· Support disadvantaged individuals and communities through improved public health, housing, education and transport",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "7179"
+    },
+    {
+      "": "72",
+      "doc": "64620_201111",
+      "text": "The Youth Mental Health Project is focused on improving provision of services for youth aged 13-19 with, or at risk of, mental health problems such as depression, anxiety, and substance abuse.",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "32573"
+    },
+    {
+      "": "73",
+      "doc": "63810_201309",
+      "text": "Older Australians need incentives to retain private health insurance cover",
+      "cmp_code": "706",
+      "moral": "0",
+      "document_id": "960"
+    },
+    {
+      "": "74",
+      "doc": "51320_201505",
+      "text": "The generation and supply businesses of the ‘Big Six’ energy companies will be separated.",
+      "cmp_code": "403",
+      "moral": "0",
+      "document_id": "54704"
+    },
+    {
+      "": "75",
+      "doc": "64621_200207",
+      "text": "Getting the greatest amount of health and disability support from our health spending is critical.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "38559"
+    },
+    {
+      "": "76",
+      "doc": "51902_199705",
+      "text": "Establish International Economic Credibility",
+      "cmp_code": "410",
+      "moral": "0",
+      "document_id": "52677"
+    },
+    {
+      "": "77",
+      "doc": "51620_201505",
+      "text": "We will keep the triple lock pension system.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "45775"
+    },
+    {
+      "": "78",
+      "doc": "64621_200207",
+      "text": "• ensure that all future appointments to the NZB board are made on the basis of experience, expertise, and appropriate representation from industry and consumers, and not political patronage.",
+      "cmp_code": "304",
+      "moral": "0",
+      "document_id": "37825"
+    },
+    {
+      "": "79",
+      "doc": "61620_200411",
+      "text": "Junk lawsuits add at least $60 billion to health care costs in America because doctors are forced to practice defensive medicine, ordering extensive, unnecessary, and expensive tests and procedures to keep trial lawyers at bay.",
+      "cmp_code": "411",
+      "moral": "1",
+      "document_id": "60721"
+    },
+    {
+      "": "80",
+      "doc": "53520_200705",
+      "text": "We will have a Commission on Taxation to examine tax schemes on an on-going basis.",
+      "cmp_code": "303",
+      "moral": "0",
+      "document_id": "21213"
+    },
+    {
+      "": "81",
+      "doc": "53110_200705",
+      "text": "provide a once-off grant to one-parent families when a child enters secondary school;",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "28211"
+    },
+    {
+      "": "82",
+      "doc": "53520_200705",
+      "text": "We will ensure that over time, the database will be developed into a health statistics database to be used as a research resource and management information tool.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "22073"
+    },
+    {
+      "": "83",
+      "doc": "64621_200207",
+      "text": "and will develop and fund programmes which will provide all families with support and guidance in this role.",
+      "cmp_code": "506",
+      "moral": "1",
+      "document_id": "38220"
+    },
+    {
+      "": "84",
+      "doc": "63620_200410",
+      "text": "I claim very directly that interest rates under a Labor Government would always be higher than under a Coalition Government, and that claim is based on two things.",
+      "cmp_code": "305",
+      "moral": "0",
+      "document_id": "7490"
+    },
+    {
+      "": "85",
+      "doc": "62420_201510",
+      "text": "and  prioritize community outreach and counter-radicalization, by creating the Office of the Community Outreach and Counter-radicalization Co-ordinator.",
+      "cmp_code": "606",
+      "moral": "1",
+      "document_id": "10938"
+    },
+    {
+      "": "86",
+      "doc": "64420_200207",
+      "text": "These are responsibilities that successive governments have failed to provide.",
+      "cmp_code": "305",
+      "moral": "0",
+      "document_id": "39394"
+    },
+    {
+      "": "87",
+      "doc": "51620_201505",
+      "text": "We have set out the bold aim of achieving full employment, with the highest employment rate of any major economy.",
+      "cmp_code": "404",
+      "moral": "0",
+      "document_id": "44775"
+    },
+    {
+      "": "88",
+      "doc": "51210_201505",
+      "text": "The potential of our island economy is strong.",
+      "cmp_code": "410",
+      "moral": "0",
+      "document_id": "48591"
+    },
+    {
+      "": "89",
+      "doc": "63810_200410",
+      "text": "It’s a vision that we still hold to now:",
+      "cmp_code": "305",
+      "moral": "0",
+      "document_id": "7316"
+    },
+    {
+      "": "90",
+      "doc": "51902_201505",
+      "text": "It is why we supported the limited extension of devolution in the Scotland Act 2012, and called for a far more substantial package of powers at that point.",
+      "cmp_code": "301",
+      "moral": "0",
+      "document_id": "44460"
+    },
+    {
+      "": "91",
+      "doc": "51620_201505",
+      "text": "Achieving this means seeing through our major reforms of tax and welfare.",
+      "cmp_code": "404",
+      "moral": "0",
+      "document_id": "44905"
+    },
+    {
+      "": "92",
+      "doc": "61620_200411",
+      "text": "After lapsing for eight years, the law now allows President Bush to work with other countries to reduce barriers to our products and services.",
+      "cmp_code": "401",
+      "moral": "0",
+      "document_id": "60509"
+    },
+    {
+      "": "93",
+      "doc": "62110_201510",
+      "text": "The treaty, known as a Foreign Investment Promotion and Protection Agreement or FIPA, is lop-sided, benefiting the Peoples' Republic of China, while providing no advantage to Canada.",
+      "cmp_code": "406",
+      "moral": "0",
+      "document_id": "12517"
+    },
+    {
+      "": "94",
+      "doc": "64422_200811",
+      "text": "No matter how you choose, I am grateful to live in a beautiful country I am deeply proud of.",
+      "cmp_code": "601",
+      "moral": "0",
+      "document_id": "36294"
+    },
+    {
+      "": "95",
+      "doc": "51320_201505",
+      "text": "Sure Start will have an obligation to provide families with access to childcare, opening their facilities to charities and local childcare providers.",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "54888"
+    },
+    {
+      "": "96",
+      "doc": "51901_201505",
+      "text": "We will involve disabled people and groups that represent the interests of disabled people in designing and developing such a system.",
+      "cmp_code": "706",
+      "moral": "0",
+      "document_id": "52023"
+    },
+    {
+      "": "97",
+      "doc": "62623_201510",
+      "text": "Reducing the expected parental contributions from the Canada Student Loans Program assessment to better recognize the financial realities faced by Canadian families – increasing support to approximately 92,000 students.",
+      "cmp_code": "506",
+      "moral": "1",
+      "document_id": "9270"
+    },
+    {
+      "": "98",
+      "doc": "51421_199705",
+      "text": "- Give children the best start by providing high quality early years education for every 3 and 4 year-old child whose parents want it.",
+      "cmp_code": "706",
+      "moral": "0",
+      "document_id": "53151"
+    },
+    {
+      "": "99",
+      "doc": "63620_200410",
+      "text": "We must maintain and strengthen the productivity gains of recent years.",
+      "cmp_code": "410",
+      "moral": "0",
+      "document_id": "7513"
+    },
+    {
+      "": "100",
+      "doc": "62420_201510",
+      "text": "We will make the compassionate care benefit easier to access, more flexible, and more inclusive.",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "10458"
+    },
+    {
+      "": "101",
+      "doc": "53620_200705",
+      "text": "make PE mandatory at second level,",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "19996"
+    },
+    {
+      "": "102",
+      "doc": "64901_200811",
+      "text": "Young people should not be charged for these courses. ",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "35931"
+    },
+    {
+      "": "103",
+      "doc": "61620_200811",
+      "text": "We oppose reinstituting the draft, whether directly or through compulsory national service.",
+      "cmp_code": "104",
+      "moral": "0",
+      "document_id": "58544"
+    },
+    {
+      "": "104",
+      "doc": "51421_201505",
+      "text": "working to deliver access for all, regardless of income, ethnicity, gender, age, belief, sexuality or disability.",
+      "cmp_code": "503",
+      "moral": "0",
+      "document_id": "46486"
+    },
+    {
+      "": "105",
+      "doc": "63810_201008",
+      "text": "The non-scheduled air and space transport sector comprises more than 1000 businesses, employing nearly 4000 people, and producing an industry turnover of nearly $1 billion.",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "3960"
+    },
+    {
+      "": "106",
+      "doc": "53320_200705",
+      "text": "Provide vouchers for music lessons at primary level to ensure where practicable, 30 hours of free tuition by qualified teachers is available to all students during one designated year.",
+      "cmp_code": "503",
+      "moral": "0",
+      "document_id": "27024"
+    },
+    {
+      "": "107",
+      "doc": "63320_201008",
+      "text": "This will drive localised educational responses and better learning outcomes for students",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "4631"
+    },
+    {
+      "": "108",
+      "doc": "53110_200705",
+      "text": "ensure that the right to flexible working practices is enshrined in law;",
+      "cmp_code": "701",
+      "moral": "1",
+      "document_id": "28248"
+    },
+    {
+      "": "109",
+      "doc": "63110_201309",
+      "text": "Caring for the health of the community requires more investment in preventative health, with a focus on tobacco, alcohol and obesity issues",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "3104"
+    },
+    {
+      "": "110",
+      "doc": "63710_201309",
+      "text": "establish a rural development bank to facilitate generational equity transfer;",
+      "cmp_code": "703",
+      "moral": "1",
+      "document_id": "8525"
+    },
+    {
+      "": "111",
+      "doc": "64420_200207",
+      "text": "One is Maori underachievement.",
+      "cmp_code": "706",
+      "moral": "0",
+      "document_id": "40715"
+    },
+    {
+      "": "112",
+      "doc": "64620_201111",
+      "text": "− 1.9 million matches with ACC.",
+      "cmp_code": "505",
+      "moral": "0",
+      "document_id": "29943"
+    },
+    {
+      "": "113",
+      "doc": "53520_201102",
+      "text": "If implemented these policies can make a real difference to Ireland’s energy cost competitiveness, energy security, and carbon footprint.",
+      "cmp_code": "411",
+      "moral": "1",
+      "document_id": "14606"
+    },
+    {
+      "": "114",
+      "doc": "62320_201510",
+      "text": "The world has been waiting nearly a decade for Canada to step up in these ways, and the NDP will do so.",
+      "cmp_code": "107",
+      "moral": "0",
+      "document_id": "11918"
+    },
+    {
+      "": "115",
+      "doc": "61320_200411",
+      "text": "Rather than looking at American industries only as polluters, we will work with the private sector to create partnerships that make a profit and a cleaner world for us all.",
+      "cmp_code": "501",
+      "moral": "1",
+      "document_id": "62065"
+    },
+    {
+      "": "116",
+      "doc": "63110_201008",
+      "text": "major airports located to minimise social and environmental impacts.",
+      "cmp_code": "501",
+      "moral": "0",
+      "document_id": "6453"
+    },
+    {
+      "": "117",
+      "doc": "63320_201309",
+      "text": "The Cancer Care Coordinators will provide support and education patients who have been diagnosed with cancer, their families, carers and staff",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "2334"
+    },
+    {
+      "": "118",
+      "doc": "64320_200509",
+      "text": "We believe every child deserves the best",
+      "cmp_code": "601",
+      "moral": "0",
+      "document_id": "37374"
+    },
+    {
+      "": "119",
+      "doc": "64620_201111",
+      "text": "and that capital markets can broaden and deepen their base and appeal, and be free to innovate.",
+      "cmp_code": "401",
+      "moral": "0",
+      "document_id": "34454"
+    },
+    {
+      "": "120",
+      "doc": "51901_201505",
+      "text": "Increasing reliance upon technology leaves countries open to attack by foreign powers without the need for conventional weapons.",
+      "cmp_code": "104",
+      "moral": "1",
+      "document_id": "52126"
+    },
+    {
+      "": "121",
+      "doc": "53320_200705",
+      "text": "The availability at competitive prices of high quality energy and communications services is vital for competitiveness,",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "25386"
+    },
+    {
+      "": "122",
+      "doc": "53420_200705",
+      "text": "Initial funding for the scheme will come from the allocation of seed and venture capital funding announced in the Budget (€175 million over a period of ten years), with further extra funding allocated as required.",
+      "cmp_code": "416",
+      "moral": "0",
+      "document_id": "23623"
+    },
+    {
+      "": "123",
+      "doc": "63810_200410",
+      "text": "My particular vision for a fourth term in government, and the task I give my party as a partner in Coalition with the Liberal Party, is to ensure that our regional cities and country towns and communities obtain the services and infrastructure they need to build on their renewed foundations and realise the promise of their future.",
+      "cmp_code": "411",
+      "moral": "1",
+      "document_id": "7361"
+    },
+    {
+      "": "124",
+      "doc": "61320_200411",
+      "text": "But we should never wait to act until we have no other choice but war.",
+      "cmp_code": "104",
+      "moral": "1",
+      "document_id": "61388"
+    },
+    {
+      "": "125",
+      "doc": "51421_201505",
+      "text": "Commission the Natural Capital Committee to investigate the potential for other resource taxes, including deposit refund schemes.",
+      "cmp_code": "416",
+      "moral": "0",
+      "document_id": "47106"
+    },
+    {
+      "": "126",
+      "doc": "53620_200705",
+      "text": "Fianna Fáil conducted the biggest ever reform of Civil Defence and the Army Reserve.",
+      "cmp_code": "104",
+      "moral": "0",
+      "document_id": "18924"
+    },
+    {
+      "": "127",
+      "doc": "53320_200705",
+      "text": "Ensure that the Marine Institute has the necessary resources to be at the cutting edge of international marine research,",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "25343"
+    },
+    {
+      "": "128",
+      "doc": "63620_200711",
+      "text": "We can reach that great goal of full employment.",
+      "cmp_code": "408",
+      "moral": "0",
+      "document_id": "6730"
+    },
+    {
+      "": "129",
+      "doc": "61620_200411",
+      "text": "Every element of America's homeland security plan is critical, because the terrorists are ruthless and resourceful - and we know they are preparing to attack us again.",
+      "cmp_code": "605",
+      "moral": "1",
+      "document_id": "59543"
+    },
+    {
+      "": "130",
+      "doc": "53620_201102",
+      "text": "o  each minister should prepare and publish a statement of the skills and roles sought for each board.",
+      "cmp_code": "303",
+      "moral": "0",
+      "document_id": "13914"
+    },
+    {
+      "": "131",
+      "doc": "63810_200711",
+      "text": "We have had an unprecedented 16 years of continuous economic expansion.",
+      "cmp_code": "410",
+      "moral": "0",
+      "document_id": "6565"
+    },
+    {
+      "": "132",
+      "doc": "64620_200811",
+      "text": "We want young New Zealanders to be able to join KiwiSaver and stay in it for their working lives.",
+      "cmp_code": "706",
+      "moral": "0",
+      "document_id": "36185"
+    },
+    {
+      "": "133",
+      "doc": "64901_200811",
+      "text": "• It has been four years since the Maori Commercial Settlement Act was passed, and most iwi are yet to receive any form of settlement from the Crown. ",
+      "cmp_code": "705",
+      "moral": "0",
+      "document_id": "35674"
+    },
+    {
+      "": "134",
+      "doc": "61620_201211",
+      "text": "Those policies have placed the federal government in the driver’s seat,",
+      "cmp_code": "301",
+      "moral": "0",
+      "document_id": "55494"
+    },
+    {
+      "": "135",
+      "doc": "51340_201505",
+      "text": "This has resulted in increased pressure in the health system and failed outcomes for healthcare staff, patients and the public.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "48146"
+    },
+    {
+      "": "136",
+      "doc": "64620_201111",
+      "text": "•  More than two in every three New  Zealanders  does unpaid work outside their  own households.",
+      "cmp_code": "606",
+      "moral": "0",
+      "document_id": "34420"
+    },
+    {
+      "": "137",
+      "doc": "63320_201008",
+      "text": "ACARA will work with States and Territories to ensure the Cadetships contribute towards state based senior awards, in the same way as other approved subjects under the National Curriculum",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "4781"
+    },
+    {
+      "": "138",
+      "doc": "61320_201211",
+      "text": "That’s why President Obama and Democrats in Congress have enacted infrastructure investments that will",
+      "cmp_code": "411",
+      "moral": "0",
+      "document_id": "57434"
+    },
+    {
+      "": "139",
+      "doc": "64620_201111",
+      "text": "Increased funding for early childhood education by $550 million, or 40 per cent, since 2008.",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "34241"
+    },
+    {
+      "": "140",
+      "doc": "63810_201008",
+      "text": "Labor’s Infrastructure Australia is a secretive organisation.",
+      "cmp_code": "304",
+      "moral": "0",
+      "document_id": "3903"
+    },
+    {
+      "": "141",
+      "doc": "64951_198407",
+      "text": "South Island domestic and industrial users will have their price discounted.",
+      "cmp_code": "412",
+      "moral": "0",
+      "document_id": "41339"
+    },
+    {
+      "": "142",
+      "doc": "63810_201008",
+      "text": "Labor has done little to educate the public on the benefits of cleaner fuels.",
+      "cmp_code": "501",
+      "moral": "1",
+      "document_id": "3997"
+    },
+    {
+      "": "143",
+      "doc": "53420_200705",
+      "text": "In 1997, a single person on the average industrial wage paid 22% of their income in income tax.",
+      "cmp_code": "402",
+      "moral": "0",
+      "document_id": "23015"
+    },
+    {
+      "": "144",
+      "doc": "64110_201111",
+      "text": "Together we're the co-leaders of the Green party",
+      "cmp_code": "0",
+      "moral": "0",
+      "document_id": "35493"
+    },
+    {
+      "": "145",
+      "doc": "51421_201505",
+      "text": "without allowing emissions from aviation to undermine our goal of a zero-carbon Britain by 2050.",
+      "cmp_code": "416",
+      "moral": "0",
+      "document_id": "46399"
+    },
+    {
+      "": "146",
+      "doc": "53320_200705",
+      "text": "The development of an ‘alternative growth pole’ along the Atlantic Corridor will be pursued.",
+      "cmp_code": "301",
+      "moral": "0",
+      "document_id": "26984"
+    },
+    {
+      "": "147",
+      "doc": "51320_201505",
+      "text": "This will be underpinned by new rights for patients.",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "54796"
+    },
+    {
+      "": "148",
+      "doc": "63810_201008",
+      "text": "Current investment in developing and protecting the Australian farm sector does not recognise the large contribution farmers make to our economy.",
+      "cmp_code": "703",
+      "moral": "1",
+      "document_id": "4151"
+    },
+    {
+      "": "149",
+      "doc": "62623_201510",
+      "text": "We recognize that adoption costs can be high and in some cases prohibitive for families.",
+      "cmp_code": "706",
+      "moral": "1",
+      "document_id": "9333"
+    },
+    {
+      "": "150",
+      "doc": "51901_201505",
+      "text": "We will increase access to the arts for young people, particularly those of disadvantaged backgrounds,",
+      "cmp_code": "503",
+      "moral": "0",
+      "document_id": "52502"
+    },
+    {
+      "": "151",
+      "doc": "64620_201111",
+      "text": "Direct this new spending to health, education, and a few carefully targeted initiatives.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "33121"
+    },
+    {
+      "": "152",
+      "doc": "51110_201505",
+      "text": "The Green Party is committed to bringing rail services into public ownership and control.",
+      "cmp_code": "413",
+      "moral": "1",
+      "document_id": "50545"
+    },
+    {
+      "": "153",
+      "doc": "63710_201309",
+      "text": "provide direct and meaningful support to land managers in delivering ecoservices; | and",
+      "cmp_code": "501",
+      "moral": "0",
+      "document_id": "8490"
+    },
+    {
+      "": "154",
+      "doc": "53420_200705",
+      "text": "and providing other services as required, thus contributing to Ireland’s political and economic well being.",
+      "cmp_code": "104",
+      "moral": "0",
+      "document_id": "24577"
+    },
+    {
+      "": "155",
+      "doc": "64420_200207",
+      "text": "• Conflicting roles and responsibilities.",
+      "cmp_code": "303",
+      "moral": "0",
+      "document_id": "40367"
+    },
+    {
+      "": "156",
+      "doc": "51902_200106",
+      "text": "An SNP government will strive to ensure that Scotland becomes a world leader in securing a sustainable environment",
+      "cmp_code": "416",
+      "moral": "1",
+      "document_id": "51190"
+    },
+    {
+      "": "157",
+      "doc": "51902_200106",
+      "text": "With the investment that we are promising in hospital buildings,",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "51280"
+    },
+    {
+      "": "158",
+      "doc": "63621_201008",
+      "text": "The question that should still be asked of Labor is:",
+      "cmp_code": "0",
+      "moral": "0",
+      "document_id": "4358"
+    },
+    {
+      "": "159",
+      "doc": "51620_201505",
+      "text": "And with new laws to crack down on domestic violence,",
+      "cmp_code": "605",
+      "moral": "1",
+      "document_id": "45645"
+    },
+    {
+      "": "160",
+      "doc": "53520_200705",
+      "text": "Fine Gael will support the on-going nationwide roll out of the “Food Dudes” Fruit and Vegetable Promotion programme to all primary schools in Ireland.",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "20972"
+    },
+    {
+      "": "161",
+      "doc": "53620_201102",
+      "text": "Every board shall publish before March of each year an annual report on  its own activities as opposed to the wider work of the state body.",
+      "cmp_code": "303",
+      "moral": "0",
+      "document_id": "13929"
+    },
+    {
+      "": "162",
+      "doc": "51421_201505",
+      "text": "In particular, as we expand access to talking therapies we expect many more people to recover and be able to seek work again.",
+      "cmp_code": "503",
+      "moral": "0",
+      "document_id": "46601"
+    },
+    {
+      "": "163",
+      "doc": "64901_201111",
+      "text": "and free up  resources  for whānau development.",
+      "cmp_code": "603",
+      "moral": "0",
+      "document_id": "29051"
+    },
+    {
+      "": "164",
+      "doc": "53520_200705",
+      "text": "We will give 1 weeks paid Parental leave for either parent to take, giving them more choice.",
+      "cmp_code": "603",
+      "moral": "0",
+      "document_id": "22925"
+    },
+    {
+      "": "165",
+      "doc": "62110_201510",
+      "text": "Policy alignment will ensure the wise use of public dollars.",
+      "cmp_code": "301",
+      "moral": "0",
+      "document_id": "12151"
+    },
+    {
+      "": "166",
+      "doc": "51621_201505",
+      "text": "At £1.4 Trillion, that equates to £54,353 per household;",
+      "cmp_code": "414",
+      "moral": "0",
+      "document_id": "54004"
+    },
+    {
+      "": "167",
+      "doc": "53110_200705",
+      "text": "maintain the Defence Forces’ proud reputation in peacekeeping",
+      "cmp_code": "106",
+      "moral": "1",
+      "document_id": "28323"
+    },
+    {
+      "": "168",
+      "doc": "63810_201309",
+      "text": "The Nationals are determined to eliminate the divide between those living in and those living outside major capital cities, including any limitation on access to a fair legal system that respects the rights and responsibilities of all Australians.",
+      "cmp_code": "503",
+      "moral": "1",
+      "document_id": "1105"
+    },
+    {
+      "": "169",
+      "doc": "53620_200705",
+      "text": "These moves will eliminate remaining inequality in the income tax system and enhance its progressive nature.",
+      "cmp_code": "402",
+      "moral": "1",
+      "document_id": "19219"
+    },
+    {
+      "": "170",
+      "doc": "51951_201505",
+      "text": "It is now enshrined in law that we must pay 0.7 per cent of our Gross National Income (GNI) on aid every year.",
+      "cmp_code": "109",
+      "moral": "0",
+      "document_id": "43310"
+    },
+    {
+      "": "171",
+      "doc": "51110_201505",
+      "text": "Caroline Lucas and housing In July 2014 Caroline Lucas MP introduced a Housing (Affordability, Supply and Tenant Protection) Bill to highlight the problems faced by private tenants.",
+      "cmp_code": "504",
+      "moral": "0",
+      "document_id": "49871"
+    },
+    {
+      "": "172",
+      "doc": "63320_201008",
+      "text": "Support for 2,500 additional aged care beds;",
+      "cmp_code": "504",
+      "moral": "1",
+      "document_id": "4502"
+    },
+    {
+      "": "173",
+      "doc": "53320_200705",
+      "text": "Develop new community policing structures, through local policing forums in individual communities, to reconnect the Gardaí and local communities in a spirit of genuine partnership.",
+      "cmp_code": "301",
+      "moral": "1",
+      "document_id": "25992"
+    },
+    {
+      "": "174",
+      "doc": "51620_201505",
+      "text": "We will: save you money by cutting government waste",
+      "cmp_code": "303",
+      "moral": "0",
+      "document_id": "45359"
+    },
+    {
+      "": "175",
+      "doc": "53320_201102",
+      "text": "Ireland should be the best place in the world to grow up, and to grow old.",
+      "cmp_code": "706",
+      "moral": "0",
+      "document_id": "16553"
+    },
+    {
+      "": "176",
+      "doc": "53520_201102",
+      "text": "Ministerial Cars: We will end the automatic entitlement to a State car for every Government Minister.",
+      "cmp_code": "303",
+      "moral": "0",
+      "document_id": "15394"
+    },
+    {
+      "": "177",
+      "doc": "64110_200811",
+      "text": "If you can’t trust Labour and National to go public about poisoned baby milk then what on earth can you trust them on.",
+      "cmp_code": "305",
+      "moral": "0",
+      "document_id": "36802"
+    },
+    {
+      "": "178",
+      "doc": "53320_200705",
+      "text": "All TDs will be entitled to put forward proposals for legislation and a lottery at the start of each session will determine which Bills will be debated.",
+      "cmp_code": "202",
+      "moral": "0",
+      "document_id": "26767"
+    },
+    {
+      "": "179",
+      "doc": "53320_200705",
+      "text": "We will put in train preparations for the 100th anniversary of the Easter Rising, in a manner that honours the contribution of the men and women of Easter Week,",
+      "cmp_code": "601",
+      "moral": "1",
+      "document_id": "27178"
+    },
+    {
+      "": "180",
+      "doc": "51902_201505",
+      "text": "We will support sensible immigration policies that meet our economic needs",
+      "cmp_code": "403",
+      "moral": "0",
+      "document_id": "43698"
+    },
+    {
+      "": "181",
+      "doc": "51421_201505",
+      "text": "Establishing the right accountability framework for schools.",
+      "cmp_code": "506",
+      "moral": "1",
+      "document_id": "46780"
+    },
+    {
+      "": "182",
+      "doc": "61620_200411",
+      "text": "Republicans share President Bush's understanding that just as events in Europe determined the outcome of the Cold War, events in the broader Middle East will set the course for the victory of free nations in the War on Terror.",
+      "cmp_code": "101",
+      "moral": "0",
+      "document_id": "60201"
+    },
+    {
+      "": "183",
+      "doc": "64621_200207",
+      "text": "• there is appropriate time for debate to be conducted.",
+      "cmp_code": "202",
+      "moral": "0",
+      "document_id": "37769"
+    },
+    {
+      "": "184",
+      "doc": "64621_200207",
+      "text": "All recreational fishers should help police the system to ensure that there is no room for poachers and quasi ‘recreational’ fishers who sell or raffle their catches.",
+      "cmp_code": "501",
+      "moral": "0",
+      "document_id": "38483"
+    },
+    {
+      "": "185",
+      "doc": "64620_201111",
+      "text": "•  Created  2000 jobs  during the recession  through state housing upgrades.",
+      "cmp_code": "701",
+      "moral": "0",
+      "document_id": "32210"
+    },
+    {
+      "": "186",
+      "doc": "51903_201505",
+      "text": "Constitutional stability for Northern Ireland;",
+      "cmp_code": "204",
+      "moral": "0",
+      "document_id": "43570"
+    },
+    {
+      "": "187",
+      "doc": "53520_201102",
+      "text": "It will dismantle the dysfunctional Health Service Executive (HSE) that was created by Micheál Martin in 2004,",
+      "cmp_code": "305",
+      "moral": "0",
+      "document_id": "14781"
+    },
+    {
+      "": "188",
+      "doc": "53420_200705",
+      "text": "conflicts with long-term strategies to cut waste volumes by recycling and reduction, requires huge scale to operate efficiently and generates large volumes of traffic.",
+      "cmp_code": "501",
+      "moral": "0",
+      "document_id": "23654"
+    },
+    {
+      "": "189",
+      "doc": "62110_201510",
+      "text": "and transition to a prosperous, decarbonized economy.",
+      "cmp_code": "416",
+      "moral": "0",
+      "document_id": "12615"
+    },
+    {
+      "": "190",
+      "doc": "51620_201505",
+      "text": "This will support our aim to make Britain the best place in Europe, and one of the top five worldwide, to do business by 2020.",
+      "cmp_code": "402",
+      "moral": "0",
+      "document_id": "44832"
+    },
+    {
+      "": "191",
+      "doc": "63810_201008",
+      "text": "The Nationals believe that, when wealth is generated in a region, a fair share of the resulting government revenue should be returned to that region and to regional Australia more generally.",
+      "cmp_code": "301",
+      "moral": "1",
+      "document_id": "3331"
+    },
+    {
+      "": "192",
+      "doc": "53320_200705",
+      "text": "Half a million of us regularly play sport, while 400,000 volunteer as coaches, match officials and referees.",
+      "cmp_code": "606",
+      "moral": "0",
+      "document_id": "27002"
+    },
+    {
+      "": "193",
+      "doc": "64901_200811",
+      "text": "We recognise the contribution that Mäori enterprise and entrepreneurship has made to our nation's economy.",
+      "cmp_code": "705",
+      "moral": "0",
+      "document_id": "35733"
+    },
+    {
+      "": "194",
+      "doc": "51621_201505",
+      "text": "We will: Work to secure the full implementation of the Military Covenant in Northern Ireland.",
+      "cmp_code": "104",
+      "moral": "1",
+      "document_id": "54293"
+    },
+    {
+      "": "195",
+      "doc": "53110_200705",
+      "text": "abolish the current 2% limit for funding political parties, which acts against new and smaller parties and could be seen as supporting the status quo;",
+      "cmp_code": "304",
+      "moral": "0",
+      "document_id": "28284"
+    },
+    {
+      "": "196",
+      "doc": "63320_200711",
+      "text": "After so long in office, Mr Howard has forgotten what fairness actually means.",
+      "cmp_code": "305",
+      "moral": "1",
+      "document_id": "6794"
+    },
+    {
+      "": "197",
+      "doc": "64621_200207",
+      "text": "• develop Parents as First Teacher (PAFT) programmes across the country.",
+      "cmp_code": "506",
+      "moral": "0",
+      "document_id": "38403"
+    },
+    {
+      "": "198",
+      "doc": "63620_201309",
+      "text": "We will crackdown on overseas producers who don’t cooperate with anti-dumping investigations",
+      "cmp_code": "406",
+      "moral": "0",
+      "document_id": "1793"
+    },
+    {
+      "": "199",
+      "doc": "53320_201102",
+      "text": "Labour will ensure that the Defence  Forces are appropriately equipped and staffed to meet Ireland’s  obligations to United Nations and EU peacekeeping missions.",
+      "cmp_code": "104",
+      "moral": "1",
+      "document_id": "16812"
+    },
+    {
+      "": "200",
+      "doc": "53320_201102",
+      "text": "Processing of applications and decision-making is subject to long delays, while the absence of legislation means there is frequent resort to the Courts for judicial review.",
+      "cmp_code": "705",
+      "moral": "0",
+      "document_id": "16325"
+    }
+  ],
+  "columns": [
+    "",
+    "doc",
+    "text",
+    "cmp_code",
+    "moral",
+    "document_id"
+  ],
+  "submitted_requests": [
+    {
+      "custom_id": "run-1-request-1",
+      "run": 1,
+      "document_ids": [
+        "48522",
+        "33425",
+        "31939",
+        "25832",
+        "9265",
+        "46465",
+        "8314",
+        "41296",
+        "30476",
+        "29184",
+        "39494",
+        "44263",
+        "29271",
+        "23878",
+        "19998",
+        "15826",
+        "31139",
+        "62174",
+        "11019",
+        "14",
+        "34084",
+        "13600",
+        "19153",
+        "44566",
+        "312",
+        "45804",
+        "35374",
+        "36358",
+        "52981",
+        "38927",
+        "52621",
+        "57898",
+        "33472",
+        "39298",
+        "30271",
+        "11063",
+        "17565",
+        "23142",
+        "29200",
+        "35806",
+        "32793",
+        "27044",
+        "43919",
+        "15081",
+        "23471",
+        "40411",
+        "60497",
+        "15044",
+        "31437",
+        "32972"
+      ]
+    },
+    {
+      "custom_id": "run-1-request-2",
+      "run": 1,
+      "document_ids": [
+        "50193",
+        "48050",
+        "32433",
+        "41504",
+        "42783",
+        "36874",
+        "35539",
+        "52231",
+        "9220",
+        "47117",
+        "11786",
+        "57605",
+        "37949",
+        "4679",
+        "35359",
+        "9879",
+        "60753",
+        "43655",
+        "48142",
+        "24044",
+        "7179",
+        "32573",
+        "960",
+        "54704",
+        "38559",
+        "52677",
+        "45775",
+        "37825",
+        "60721",
+        "21213",
+        "28211",
+        "22073",
+        "38220",
+        "7490",
+        "10938",
+        "39394",
+        "44775",
+        "48591",
+        "7316",
+        "44460",
+        "44905",
+        "60509",
+        "12517",
+        "36294",
+        "54888",
+        "52023",
+        "9270",
+        "53151",
+        "7513",
+        "10458"
+      ]
+    },
+    {
+      "custom_id": "run-1-request-3",
+      "run": 1,
+      "document_ids": [
+        "19996",
+        "35931",
+        "58544",
+        "46486",
+        "3960",
+        "27024",
+        "4631",
+        "28248",
+        "3104",
+        "8525",
+        "40715",
+        "29943",
+        "14606",
+        "11918",
+        "62065",
+        "6453",
+        "2334",
+        "37374",
+        "34454",
+        "52126",
+        "25386",
+        "23623",
+        "7361",
+        "61388",
+        "47106",
+        "18924",
+        "25343",
+        "6730",
+        "59543",
+        "13914",
+        "6565",
+        "36185",
+        "35674",
+        "55494",
+        "48146",
+        "34420",
+        "4781",
+        "57434",
+        "34241",
+        "3903",
+        "41339",
+        "3997",
+        "23015",
+        "35493",
+        "46399",
+        "26984",
+        "54796",
+        "4151",
+        "9333",
+        "52502"
+      ]
+    },
+    {
+      "custom_id": "run-1-request-4",
+      "run": 1,
+      "document_ids": [
+        "33121",
+        "50545",
+        "8490",
+        "24577",
+        "40367",
+        "51190",
+        "51280",
+        "4358",
+        "45645",
+        "20972",
+        "13929",
+        "46601",
+        "29051",
+        "22925",
+        "12151",
+        "54004",
+        "28323",
+        "1105",
+        "19219",
+        "43310",
+        "49871",
+        "4502",
+        "25992",
+        "45359",
+        "16553",
+        "15394",
+        "36802",
+        "26767",
+        "27178",
+        "43698",
+        "46780",
+        "60201",
+        "37769",
+        "38483",
+        "32210",
+        "43570",
+        "14781",
+        "23654",
+        "12615",
+        "44832",
+        "3331",
+        "27002",
+        "35733",
+        "54293",
+        "28284",
+        "6794",
+        "38403",
+        "1793",
+        "16812",
+        "16325"
+      ]
+    }
+  ]
+}

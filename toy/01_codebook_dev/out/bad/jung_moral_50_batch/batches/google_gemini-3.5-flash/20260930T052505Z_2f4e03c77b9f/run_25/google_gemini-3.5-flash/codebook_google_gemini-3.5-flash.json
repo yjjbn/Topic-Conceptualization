@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as language that frames political actions, goals, or actors using explicit moral vocabulary, values, ethical duties, virtues/vices, or standards of justice and human dignity. It seeks to persuade not merely through pragmatic, economic, or legal logic, but by appeal to what is inherently 'right' or 'wrong,' 'good' or 'evil,' 'fair' or 'unjust.'",
+  "clarification": "To classify a text as containing moral rhetoric (1), look for terms that invoke: 1) Core virtues and values (such as respect, courage, patriotism, caring, freedom/liberty); 2) Ethical obligations or human rights (e.g., human rights, protecting the vulnerable, dignity, humanitarian crises); 3) Judgments of fairness and justice (e.g., 'deserve,' unfair discrimination, justified anger, second-class treatment); 4) Strong normative and evaluative declarations of what is tolerable/intolerable or acceptable/shameful.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts that 'Every person, however frail or vulnerable, has a place and a purpose in this world,' which is a direct appeal to universal human dignity and inherent moral worth."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text promises to provide 'comfort and aid to suffering people' facing 'persecution,' directly using humanitarian ethics and compassionate duty frames."
+    },
+    {
+      "text": "Thanks to their skill, courage, and patriotism, the very dangerous work at the World Trade Center and Pentagon was done remarkably quickly and without a single fatality.",
+      "explanation": "This text praises workers for their 'skill, courage, and patriotism,' using explicit moral virtue terms ('courage' and 'patriotism') to evaluate their character positively."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as moral rhetoric (0) if it is purely technocratic, administrative, or programmatically policy-oriented, even if it targets welfare or social topics. Standard partisan critiques, statistical boasts, economic calculations, or descriptions of legally codified processes (like court structures or treaty parameters) should be excluded unless they are loaded with moralized value-judgments, virtues, or justice-based condemnations.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "While this text concerns public school bus infrastructure, it defines the goal purely in pragmatic terms ('efficient and accessible') rather than moral ones."
+    },
+    {
+      "text": "»  The Government have based their  fiscal plans on 1.75% growth in the  economy which cannot and will  not be achieved under their plans",
+      "explanation": "This is a typical political-economic critique of a government's fiscal plans, analyzing projected economic growth percentages without moral or ethical vocabulary."
+    },
+    {
+      "text": "If  there is  no contact from  the person,  Work and Income will suspend  the person’s benefit.",
+      "explanation": "This is a strictly administrative rule outlining conditions for benefit suspension. It describes procedural bureaucracy rather than moral duty or ethical behavior."
+    }
+  ]
+}

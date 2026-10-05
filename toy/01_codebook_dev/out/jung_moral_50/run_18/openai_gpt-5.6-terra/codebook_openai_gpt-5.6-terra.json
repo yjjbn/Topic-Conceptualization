@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly frames people, institutions, policies, or outcomes in terms of moral values, duties, rights, virtues, or judgments about what is just, fair, deserved, humane, respectful, free, corrupt, or intolerable.",
+  "clarification": "Classify a text as moral rhetoric when it does more than propose or describe a policy and explicitly invokes a normative moral principle. Relevant signals include rights, equality, fairness, discrimination, dignity or inherent worth, protection of vulnerable people, freedom, respect, justice, compassion, moral virtues, corruption, or statements that a condition is justified, deserved, or intolerable. Moral rhetoric may praise morally valued conduct or condemn morally wrong conduct.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth and purpose of every person, including vulnerable people, which is a direct dignity-based moral claim."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says educational inequalities between rich and poor and M\u0101ori and non-M\u0101ori must be closed, directly invoking equality."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "It explicitly rejects corruption and supports anti-bribery enforcement, invoking integrity in public conduct."
+    }
+  ],
+  "negative_clarification": "Do not classify text as moral rhetoric when it merely states a policy, administrative process, fiscal proposal, empirical claim, service target, or economic consequence. References to health, poverty, jobs, affordability, environmental risks, efficiency, accountability, or public services alone do not qualify unless the excerpt explicitly frames them through a moral value or moral judgment. Forceful political wording alone is insufficient where no moral principle is stated.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical proposal for simplifying corporation-tax compliance and contains no explicit moral value or judgment."
+    },
+    {
+      "text": "So that Australia can respond to threats to the marine environment  from pollution from ships, increased tourism, agricultural chemicals,  and illegal \ufb01shing, The Nationals will ensure that regulatory, research  and voluntary organisations are adequately funded and co-ordinated.",
+      "explanation": "Although it addresses environmental threats, it proposes funding and coordination without framing the issue in terms of moral duty, rights, or wrongdoing."
+    },
+    {
+      "text": "Support community services and volunteers working to combat loneliness, particularly in later life.",
+      "explanation": "It supports services addressing loneliness, but presents this as a programmatic commitment rather than explicitly invoking compassion, rights, or a moral obligation."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "definition": "Moral rhetoric refers to communication that uses evaluative, value-laden, or normative language to construct arguments based on ethical principles, moral obligations, virtues, fairness, justice, human dignity, or systemic right vs. wrong. It appeals to values and duties rather than empirical, technical, or standard programmatic details.",
+  "clarification": "To qualify as 'moral rhetoric', a text must contain language that signals ethical frameworks (e.g., 'respect', 'justice', 'human rights', 'terror', 'corruption', 'courage') or assertions about what individuals or groups morally 'deserve' or are 'entitled' to. It includes explicit condemnations of actions as 'intolerable' or 'unfairly discriminatory', appeals to core human values like 'liberty' or 'dignity', and calls to protect 'vulnerable' populations out of a sense of moral obligation or compassion. The focus is on the normative framing of policies rather than the empirical or administrative aspects of the proposals.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text explicitly asserts a deep moral belief in the inherent worth, dignity, and cosmic purpose of every person ('frail or vulnerable, has a place and a purpose in this world'), presenting an ethical worldview rather than a technical policy."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "This text utilizes the moral framework of justice and equality of treatment, explicitly condemning actions that 'unfairly discriminate' against people of lower socioeconomic backgrounds."
+    },
+    {
+      "text": "Thanks to their skill, courage, and patriotism, the very dangerous work at the World Trade Center and Pentagon was done remarkably quickly and without a single fatality.",
+      "explanation": "This text bestows moral and civic praise, explicitly celebrating positive ethical virtues like 'courage' and 'patriotism' of recovery workers."
+    }
+  ],
+  "negative_clarification": "Texts should NOT be classified as 'moral rhetoric' if they describe policies, budgets, or reforms using technocratic, administrative, or purely descriptive vocabulary, even if the target of the policy is socially beneficial (e.g., healthcare funding or environmental management). Criticism of opposing parties or government plans does not count as moral rhetoric unless it is framed explicitly in moralistic terms (e.g., accusing them of corruption, cruelty, or injustice), rather than standard economic inefficiency, cost issues, or simple policy disagreement.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "Although the text mentions keeping people 'fit and healthy', it describes a standard public sports development program ('Inspire Wales') using purely programmatic language, devoid of moralizing claims."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This text is entirely descriptive and empirical, summarizing economic growth data and forecast trends without any value judgments, moral framing, or ethical claims."
+    }
+  ]
+}

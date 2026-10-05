@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political or communicative language that explicitly appeals to ethical values, duties, fundamental rights, social justice, fairness, human dignity, or notions of virtue and vice. It goes beyond descriptive, technical, administrative, or standard pragmatic descriptions of policies by framing issues in terms of what is fundamentally good or bad, right or wrong, just or unjust.",
+  "clarification": "To classify a text under 'moral rhetoric' (1), it must satisfy one or more of the following conditions:\n- Employs overtly moral or ethical terms such as 'respect', 'justice', 'integrity', 'corruption', 'dignity', 'vulnerable', 'courage', 'freedom', or 'patriotism'.\n- Expresses normative moral indignation or value judgments about current states of affairs, accusing policies of being 'not tolerable', or framing outcomes as 'unfair discrimination' or 'second-class treatment'.\n- Invokes ethical duties or entitlements, stating that groups 'deserve' specific treatment or requiring 'protection' for 'vulnerable' citizens.\n- Asserts high-intensity emotional or value-laden critiques (e.g. describing opposition moves as 'slashing' or 'gutting' essential human programs).",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts a deeply moral philosophy regarding the inherent worth and spiritual value of human life ('has a place and a purpose in this world'), directly invoking human dignity."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text directly uses the explicitly moral concepts of 'values' and 'respect'."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This statement uses humanitarian and moral terminology, highlighting a compassionate duty to provide 'comfort and aid to suffering people facing... persecution'."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text under 'moral rhetoric' (0) if it:\n- Describes administrative, procedural, or programmatic steps of policy implementation (e.g. creating boards, building structures, or setting up review protocols) without moralized packaging.\n- Contains standard macroeconomic descriptions, tax policies, or financial analyses framed neutrally or technically.\n- Mentions non-moralized social goals (e.g. job creation, general education quality, or tourism promotion) using standard political jargon.\n- States empirical, statistical, or historical facts without expressing moral indignation or explicit value-laden judgment.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a purely technical and physical infrastructure proposal ('Provide broadband on all islands') with no moral, ethical, or value-based framing."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This text discusses corporate tax reform procedures in highly administrative, technical, and practical terms, lacking any moral overtones."
+    },
+    {
+      "text": "Measurement of water quality around New Zealand is inconsistent.",
+      "explanation": "This statement is an empirical and scientific critique noting that measurement consistency is lacking, completely avoiding moral rhetoric."
+    }
+  ]
+}

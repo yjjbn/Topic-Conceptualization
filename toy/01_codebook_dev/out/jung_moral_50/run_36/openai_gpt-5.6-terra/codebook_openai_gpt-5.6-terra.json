@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, policies, or outcomes in terms of moral values, rights, duties, deservingness, justice, equality, freedom, dignity, care, or wrongdoing.",
+  "clarification": "Code as moral rhetoric when the text makes an overt normative appeal: for example, it says something is fair or unfair, intolerable, justified, deserving, equal, free, respectful, protective of vulnerable people, or corrupt/repressive. It also includes explicit rights claims, moralized praise of virtues such as courage or caring, and condemnation of harms or injustices. The moral language may support the party's policy or criticize an opponent.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It makes a universal dignity-style claim that every person, including those who are frail or vulnerable, has a place and purpose."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It explicitly says socioeconomic and ethnic inequalities in qualifications must be closed."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes access to justice and the quality of justice that Americans deserve."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, factual claims, administrative proposals, technical plans, economic arguments, or positive promotional language unless they explicitly invoke a moral principle or judgment. References to health, poverty, sustainability, safety, accountability, growth, or affordability alone are not sufficient; the excerpt must frame them in moral terms such as rights, fairness, duty, equality, unjust treatment, or care for vulnerable people.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical proposal to simplify corporate tax compliance, with no explicit moral value or judgment."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "Providing broadband on islands is an infrastructure commitment stated without moral framing."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "The Food Waste Bill is an environmental regulatory proposal, but the excerpt does not explicitly present waste reduction as a moral obligation or justice claim."
+    }
+  ]
+}

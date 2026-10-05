@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as language that explicitly or implicitly appeals to moral foundations, ethical values, justice, rights, duties, virtues, or the intrinsic worth of human life. It serves to frame a policy, record, or critique not merely as pragmatic, efficient, or economically beneficial, but as inherently right or wrong, fair or unfair, compassionate or cruel.",
+  "clarification": "To classify a text as containing moral rhetoric, look for: 1. Key moral and value-laden terminology (e.g., 'respect', 'justice', 'rights', 'fairness', 'corruption', 'courage', 'equality'). 2. Normative claims about what individuals or groups 'deserve' or are 'expected' to do as a matter of ethical duty or reciprocity. 3. Ethical evaluations of social conditions using words like 'not tolerable', 'repression', or 'discriminated against'. 4. Altruistic appeals prioritizing the care, comforting, or protection of 'vulnerable' populations or 'suffering people'. Texts should be categorized as '1' if they establish an ethical standard of goodness, fairness, or human dignity to justify political positions.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text asserts the ultimate worth and dignity of 'frail or vulnerable' individuals, arguing they have 'a place and a purpose in this world' which is a deeply moral/humanist claim."
+    },
+    {
+      "text": "Monitor funding of minority ethnic and religious groups to ensure government support is fair, transparent and proportionate;",
+      "explanation": "The text explicitly utilizes the moral and ethical concept of 'fair' to define how government support must be distributed, appealing directly to the fairness/justice moral foundation."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses highly moralized humanitarian rhetoric, appealing to empathy and compassion by committing to provide 'comfort and aid to suffering people' facing 'persecution' and 'violence'."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as containing moral rhetoric if: 1. It is a standard technical, logistical, or administrative proposal (e.g., building roads, modifying transit schedules, processing permits). 2. It presents economic or fiscal objectives purely in terms of growth, efficiency, jobs, or cost-saving, without invoking moral value-claims. 3. It describes historical facts, statistics, or legislative actions neutrally, even if the policy itself relates to social welfare. 4. It contains strong, emotionally intense political language (e.g., 'gut', 'smash', 'bureaucracy') that is nevertheless framed in terms of pragmatic critique rather than moral principles.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text is focused entirely on logistical objectives—namely 'efficient and accessible' bus routes—relying on technical administrative values rather than moral ones."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This is a detailed, technocratic proposal for tax reform. Though it impacts micro enterprises, its language is purely analytical, fiscal, and administrative, containing no moral or ethical appeals."
+    },
+    {
+      "text": "Introducing car free zones in major cities on Sundays for particular times at weekends to allow for safe cycling in city centre locations.",
+      "explanation": "While creating car-free zones is a positive public welfare policy, the text presents it as a practical urban planning and safety initiative ('allow for safe cycling') rather than framing it in moral rhetoric."
+    }
+  ]
+}

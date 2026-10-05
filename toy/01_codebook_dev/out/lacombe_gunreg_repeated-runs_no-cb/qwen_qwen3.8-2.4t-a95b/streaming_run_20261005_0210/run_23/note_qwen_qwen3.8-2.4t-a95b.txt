@@ -1,0 +1,48 @@
+{
+  "note": "",
+  "batch_id": null,
+  "run": 23,
+  "arguments": {
+    "command": "submit",
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "mode": "streaming",
+    "provider": null,
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 16,
+    "runs": null,
+    "data_path": "data\\lacombe_codebookdev_100.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_lacombe_gunreg.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "lacombe_gunreg_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 83510,
+      "completion_tokens": 14973,
+      "total_tokens": 98483,
+      "cost": 0.1085956,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 82368,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.1085956,
+        "upstream_inference_prompt_cost": 0.0187576,
+        "upstream_inference_completions_cost": 0.089838
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 11506,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

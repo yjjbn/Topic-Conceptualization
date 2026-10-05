@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is the deliberate use of language that invokes ethical standards, fundamental human rights, fairness, justice, compassion, personal or civic virtues, or moral obligations (i.e., definitions of right, wrong, and what individuals 'deserve' by virtue of dignity), rather than presenting arguments on a purely technical, administrative, economic, or utilitarian basis.",
+  "clarification": "To classify a text as containing moral rhetoric, it must go beyond simply proposing a beneficial social policy and explicitly deploy evaluative or normative terminology. Key markers include: 1. Ethical concepts (e.g., 'respect', 'justice', 'fairness', 'corruption', 'equality'). 2. Statements indicating moral duty, intolerability, or desert (e.g., 'deserve', 'must be closed', 'not tolerable'). 3. Ideals of human virtue and dignity (e.g., 'frail', 'vulnerable', 'courage', 'patriotism', 'humanitarian').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This passage explicitly refers to human dignity and worth by asserting that 'Every person, however frail or vulnerable, has a place and a purpose in this world' using moral and philosophical framing rather than practical metrics."
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "The statement 'Their anger is justified' goes beyond factual assertion and applies an ethical endorsement ('justified') to validate a grievance."
+    },
+    {
+      "text": "Australians deserve a better future",
+      "explanation": "The phrase 'Australians deserve a better future' uses the moral concept of 'deservingness' to assert a normative entitlement."
+    }
+  ],
+  "negative_clarification": "Exclude texts that are purely descriptive of administrative reforms, fiscal spending, infrastructure projects, scientific reviews, or generic political commitments even if they aim to achieve positive societal outcomes (like poverty reduction, environmental protection, or education). If a statement lacks explicitly moralized, evaluative language or appeals to ethical frameworks, it must be coded as 0.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a purely programmatic commitment to provide broadband infrastructure, absent of any normative value framing."
+    },
+    {
+      "text": "This includes industry training and modern apprenticeships.",
+      "explanation": "The sentence merely details structural educational policy ('industry training and modern apprenticeships') without invoking moral virtues or duties."
+    },
+    {
+      "text": "\u00bb  The Government have based their  fiscal plans on 1.75% growth in the  economy which cannot and will  not be achieved under their plans",
+      "explanation": "An economic and growth critique focused on fiscal viability and targets, entirely free from ethical judgments."
+    }
+  ]
+}

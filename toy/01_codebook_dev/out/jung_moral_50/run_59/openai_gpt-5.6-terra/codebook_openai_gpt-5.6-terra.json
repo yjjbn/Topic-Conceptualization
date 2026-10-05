@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly expresses or invokes moral values, duties, rights, deserved treatment, fairness, equality, dignity, freedom, respect, protection of vulnerable people, or condemnation and praise in ethical terms.",
+  "clarification": "Code as moral rhetoric when a passage does more than advocate a policy or describe a social problem: it frames an issue in terms of what is right, wrong, fair, deserved, intolerable, respectful, equal, free, or owed to people. Explicit appeals to human rights, protection of vulnerable groups, and moral praise or condemnation count. The moral language may be brief, including a single value term or normative assertion.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It affirms the inherent worth and purpose of every person, especially those who are frail or vulnerable."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says educational inequalities between social and ethnic groups must be closed, making an explicit equality-based claim."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes universal access to courts and the quality of justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, technical administration, economic forecasts, spending proposals, or practical descriptions merely because they concern socially important subjects such as health, poverty, housing, safety, or the environment. A passage must contain an explicit ethical evaluation or value-based claim, rather than only an instrumental argument about costs, growth, efficiency, outcomes, or service provision.",
+  "negative_examples": [
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This is a detailed administrative proposal for water and sewerage infrastructure, with no ethical value claim."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This passage reports economic growth statistics and forecasts rather than making a moral judgment."
+    },
+    {
+      "text": "Support community services and volunteers working to combat loneliness, particularly in later life.",
+      "explanation": "Although it concerns loneliness, it simply proposes support for services and volunteers without explicitly invoking a moral principle."
+    }
+  ]
+}

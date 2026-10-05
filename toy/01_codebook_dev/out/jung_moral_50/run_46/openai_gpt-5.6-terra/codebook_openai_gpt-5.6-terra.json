@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly frames people, groups, institutions, or policies in terms of moral values, rights, dignity, fairness, equality, deservingness, freedom, compassion, duty, or moral condemnation and approval.",
+  "clarification": "Code as moral rhetoric when the text makes a normative appeal beyond ordinary policy effectiveness or material benefit. This includes explicit references to respect, justice, equality, rights, fairness, discrimination, protection of vulnerable people, compassion, liberty, deserved treatment, or praise and condemnation in ethical terms. It also includes statements that present an outcome as morally required, intolerable, justified, or a matter of human worth.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The claim that every person, however vulnerable, has a place and purpose affirms inherent human worth."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The passage explicitly invokes race equality and barriers faced by minority ethnic communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes a universal claim that no one should be denied court access and refers to justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code policy proposals, empirical claims, criticism, praise, or references to welfare and public services merely because they concern socially important subjects. Texts focused on administrative design, budgets, economic growth, security, health, efficiency, or service delivery are negative unless they explicitly use a moral value or ethical judgment. A practical claim that a policy is costly, burdensome, effective, or beneficial is not by itself moral rhetoric.",
+  "negative_examples": [
+    {
+      "text": "The Nationals will implement the third stage of AusLink, investing minimum funding of $35 billion.",
+      "explanation": "This is a transport-funding commitment with no ethical evaluation or value-based appeal."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This passage describes technical tax-compliance simplification rather than a moral principle."
+    },
+    {
+      "text": "Development of a land transition plan which will include regulation of farming practices to reduce environmental damage,",
+      "explanation": "It proposes environmental regulation, but does not explicitly frame the proposal in terms of moral obligation, rights, or justice."
+    }
+  ]
+}

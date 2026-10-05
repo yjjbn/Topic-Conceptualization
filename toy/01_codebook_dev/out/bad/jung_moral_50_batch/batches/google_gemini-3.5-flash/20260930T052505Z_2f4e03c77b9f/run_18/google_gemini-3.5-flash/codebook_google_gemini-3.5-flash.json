@@ -1,0 +1,25 @@
+{
+  "definition": "Moral rhetoric refers to language within political party manifestos and electoral programmes that appeals directly to ethical principles, social justice, human rights, moral duties, or compassionate values. It evaluates issues through a normative lens of right versus wrong, justice versus injustice, or the intrinsic dignity of persons, rather than evaluating them solely through administrative, technical, procedural, or fiscal standards.",
+  "clarification": "To be classified as moral rhetoric (1), a text should meet one or more of the following criteria:\n1. It contains explicit value-laden terms that assess virtue or vice (e.g., respect, dignity, greed, corruption, terror, courage, patriotism).\n2. It appeals directly to human rights, fairness, equality, or discrimination (e.g., 'race equality strategy', 'unfairly discriminate', 'civil repression').\n3. It uses urgent emotional or moral phrasing to describe human needs or suffering (e.g., 'desperately need', 'vulnerable', 'loneliness', 'comfort and aid').\n4. It evaluates an act, state, or opponent using normative concepts of desert or justice (e.g., 'the quality of justice they deserve', 'not tolerable').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text directly claims that every person possesses an intrinsic place and purpose regardless of their vulnerability, invoking fundamental moral concepts of human value."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text appeals heavily to compassion and ethics by describing commitments to provide comfort and aid to suffering people experiencing violence and persecution."
+    }
+  ],
+  "negative_clarification": "A text should NOT be classified as moral rhetoric (0) if it is characterized by:\n1. Factual, empirical, statistical, or demographic descriptions (e.g., reporting economic growth percentages, counting school beds, listing voting records).\n2. Administrative or procedural proposals detailing how policies will be structured or executed (e.g., creating a new office, reviewing legislation).\n3. Technical or fiscal adjustments, such as describing tax brackets, mortgage schemes, or transportation plans, without attaching a moralizing claim of justice or obligation.\n4. Standard party competition boosterism or programmatic claims that lack normative moral arguments (e.g., boasting about investments or stating that a policy will create jobs).",
+  "negative_examples": [
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This document outlines highly detailed and technical tax compliance mechanisms and feasibility studies for micro-enterprises without any moral or normative evaluation."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a basic, technical statement about infrastructure policy ('Provide broadband on all islands') devoid of value-laden framing."
+    }
+  ]
+}

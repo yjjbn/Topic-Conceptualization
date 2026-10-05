@@ -1,0 +1,205 @@
+Personal note:
+
+
+Original command-line arguments:
+[
+  ".\\classify_create_codebook.py",
+  "--model",
+  "openai/gpt-6-luna",
+  "--run",
+  "0",
+  "--test-rows",
+  "10"
+]
+
+Usage details:
+Generation ID: gen-1790452876-CbnkzW6bBzroJTbydGN0
+Cost (OpenRouter credits): 0.00118205
+Input tokens: 2309
+Output tokens: 1787
+API key (masked): ...7547
+
+
+Full request body sent to API:
+{
+  "model": "openai/gpt-6-luna",
+  "stream": false,
+  "messages": [
+    {
+      "role": "system",
+      "content": "You will receive a set of speech acts made by bucreaucratic advisers in meetings during the US Cold War.\n\nEach text can be classified as either \"political\" or \"military.\" These categories are mutually exclusive. Your task is to identify the texts that should be classified as \"political,\" as opposed to military.\nFor each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The text is political.\n\"0\": The text is not political; it is military.\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as JSON objects with an ID and text:\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nAfter you have classified all the texts, write a codebook that documents how you conceptualized \"political\" when making your classifications.\n\nYour codebook should contain:\n\n1. DEFINITION: Your definition of the \"political\" classification.\n2. CLARIFICATION: Additional explanation, such as inclusion criteria, that helps clarify when to classify a text as \"political,\" rather than \"military.\"\n3. POSITIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your clarification, up to 3 example texts that illustrate distinctive cases of \"political.\"\n4. POSITIVE EXAMPLE EXPLANATION: For each positive example, an explanation of why the positive example counts as \"political.\"\n5. NEGATIVE CLARIFICATION: Additional explanation, such as exclusion criteria, that helps clarify when NOT to classify a text as \"political,\" and therefore as \"military.\"\n6. NEGATIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your negative clarification, up to 3 example texts that illustrate distinctive negative cases of \"political.\"\n7. NEGATIVE EXAMPLE EXPLANATION: For each negative example, an explanation of why the negative example does not count as \"political.\"\n\nReturn your classifications with explanations and codebook in the JSON format provided.\nMake sure you return a classification for every document provided.\nThere are 10 documents in this request. "
+    },
+    {
+      "role": "user",
+      "content": "[{\"document_id\": \"FRUS278p::Rowan\", \"text\": \"Do we know for a fact that the North Vietnamese provocation took place? Can we nail down exactly what happened? We must be prepared to be accused of fabricating the incident. Secretary\"}, {\"document_id\": \"FRUS119p::Cutler\", \"text\": \"explained that the reason why the Planning Board had raised this '93hoary issue'94 was the view of some of its members that a state of mutual deterrence,resulting from atomic plenty on both sides,might enable the Soviet Union to avoid atomic war and nibble the free world to death piece by piece. The\"}, {\"document_id\": \"DSCN0542_Brown_12-59-5c.rtf\", \"text\": \" An important factor in deciding onus behavior in terms of planning our future military capability,and more immediately in terms of our rhetoric and actions in responding to or preempting Soviet actions elsewhere in the world,is what one believes the motivation of the Soviet leadership to be. You have now had interactions with Brezhnev and three of his Politburo colleagues,and will have drawn some conclusions of your own from those meetings. Both before and since,some of your statements suggest that you think Soviet political leaders are motivated towards ends similar to those sought by those in democratic countries. I urge caution about that conclusion. But from what I have been able to see of those who reach the top levels of the Soviet system,they are motivated by a drive,for themselves and for their country respectively,to be in a position to tell people around\"}, {\"document_id\": \"FRUS225p::Clifford\", \"text\": \"Buzz Wheeler makes a very logical case. But it disturbs me deeply. I think the President must proceed on the basis of probabilities and not possibilities. I think the North Koreans are not able to mount a massive military activity. They are engaged in harassments. We should not send fleets of our aircraft to Korea. I think that is wrong. I think this heightens tension and builds it up. If North Korea is planning something important that could then begin the provocation for us moving. I would get the planes and crews ready here at home. But our moral posture will be better if the North Koreans move first. I am deeply sorry about the ship and the 83 men but I do not think it is worth a resumption of the Korean War. The\"}, {\"document_id\": \"FRUS226p::Mcnamara\", \"text\": \"are not firm,I think it will prolong the Vietnam war substantially. Clark SPLIT We must protect ourselves from permitting the North Koreans and the North Vietnamese and the Soviets getting the belief that we are weak. I would go back to Kosygin. I think the Soviets knew of this or if they did not they have enough influence to shape the conduct of North Korea. I would not deal in a belligerent,public way,but I would show them that it is essential to give up the ship and the men. Director\"}, {\"document_id\": \"FRUS33p::Quarles\", \"text\": \"said that the MAAG chief,who is back here in Washington,thinks that a Chinese Communist blockade of the off-shore islands is very likely. He said that the Chinese Nationalists had only about 45 days'92 to two months'92 supplies on the islands unless they kept them resupplied. He also thought that Chinese Communist blockade of the off-shore islands could not be stopped unless U.S. forces intervened. The\"}, {\"document_id\": \"FRUS377p::Taylor\", \"text\": \"indicated that we could put U.S. Marines ashore in Haiti within 51 hours. The SPLIT said there was a unit which could be airdropped much sooner if an airfield were available. If we wished,we could keep the Marines aboard ships just over the horizon. Mr.\"}, {\"document_id\": \"FRUSB23p::DullesCIA\", \"text\": \"began with a prediction that the loss of Ichiang Island in the Tachens group to the Chinese Communists would shortly be followed by Chinese Communist attacks on the main group of the Tachen Islands. In the action against Ichiang,SPLIT said that the Communist forces had consisted of one regiment and two battalions of Chinese Communist troops,numbering between 3000 and 4000. Against this force the Nationalist garrison on Ichiang had consisted of just under 1000 guerrillas. The island had been captured after about two hours of fighting. The Communists had handled the action with considerable skill. They had had very careful cover so that there had been little warning,either of the landing forces or of the Communist air sorties,which had numbered 60. All U.S. personnel on the Tachens,numbering eight,had been evacuated except one individual. With the capture of the island,SPLIT pointed out,the Chinese\"}, {\"document_id\": \"FRUS136p.rtf\", \"text\": \"marshalled within 24 or 48 hours,and that the ChiComs could launch an attack on the Offshore Islands with little or no warning. Taylor This or any other major attack will be extremely costly to the ChiComs and,if they have sensible leadership,the adventure should not prove attractive. However,we probably do not think like Chinese and their eventual decision may run counter to what seems sensible to us. The prize to them would be the elimination of a large part of Chiang's best troops,a serious blow to ChiNat and U.S. prestige worldwide,and a great lift to the ChiCom home front. On the other hand,a reverse for the ChiComs would greatly increase the already serious internal situation and would exact a heavy price in military assets.\"}, {\"document_id\": \"FRUS147p::Rostow\", \"text\": \"Criticism (should be Critics) of our position believe we're intent on creating a constitutional and democratic government by pursuing last VC until he is dead. They see capacity of VC to hit the cities. I do not think we can move Thieu to a Greek solution'97offer of VC coming into govt. Part of peace thing, '97Communists have tried to overthrow GVN and ARVN. They failed. We are seeking one-man,one-vote constitutional system. We need to turn war to the ballot box. SPLIT In world opinion,bombing of Hanoi-Haiphong has impact. One Soviet indication,he made distinction between bombing battlefield and around H'96H.\"}]"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "classifications_and_codebook",
+      "strict": true,
+      "schema": {
+        "$defs": {
+          "CodebookLLMCodebook": {
+            "additionalProperties": false,
+            "properties": {
+              "definition": {
+                "title": "Definition",
+                "type": "string"
+              },
+              "clarification": {
+                "title": "Clarification",
+                "type": "string"
+              },
+              "positive_examples": {
+                "items": {
+                  "$ref": "#/$defs/Example"
+                },
+                "maxItems": 3,
+                "minItems": 1,
+                "title": "Positive Examples",
+                "type": "array"
+              },
+              "negative_clarification": {
+                "title": "Negative Clarification",
+                "type": "string"
+              },
+              "negative_examples": {
+                "items": {
+                  "$ref": "#/$defs/Example"
+                },
+                "maxItems": 3,
+                "minItems": 1,
+                "title": "Negative Examples",
+                "type": "array"
+              }
+            },
+            "required": [
+              "definition",
+              "clarification",
+              "positive_examples",
+              "negative_clarification",
+              "negative_examples"
+            ],
+            "title": "CodebookLLMCodebook",
+            "type": "object"
+          },
+          "Example": {
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "title": "Text",
+                "type": "string"
+              },
+              "explanation": {
+                "title": "Explanation",
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "explanation"
+            ],
+            "title": "Example",
+            "type": "object"
+          },
+          "ExplainedClassification": {
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "$ref": "#/$defs/Label"
+              },
+              "explanation": {
+                "title": "Explanation",
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "explanation"
+            ],
+            "title": "ExplainedClassification",
+            "type": "object"
+          },
+          "Label": {
+            "enum": [
+              "0",
+              "1"
+            ],
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "classifications": {
+            "additionalProperties": false,
+            "properties": {
+              "FRUS278p::Rowan": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUS119p::Cutler": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "DSCN0542_Brown_12-59-5c.rtf": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUS225p::Clifford": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUS226p::Mcnamara": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUS33p::Quarles": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUS377p::Taylor": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUSB23p::DullesCIA": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUS136p.rtf": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "FRUS147p::Rostow": {
+                "$ref": "#/$defs/ExplainedClassification"
+              }
+            },
+            "required": [
+              "FRUS278p::Rowan",
+              "FRUS119p::Cutler",
+              "DSCN0542_Brown_12-59-5c.rtf",
+              "FRUS225p::Clifford",
+              "FRUS226p::Mcnamara",
+              "FRUS33p::Quarles",
+              "FRUS377p::Taylor",
+              "FRUSB23p::DullesCIA",
+              "FRUS136p.rtf",
+              "FRUS147p::Rostow"
+            ],
+            "title": "Classifications",
+            "type": "object"
+          },
+          "codebook": {
+            "$ref": "#/$defs/CodebookLLMCodebook"
+          }
+        },
+        "required": [
+          "classifications",
+          "codebook"
+        ],
+        "title": "ClassificationsAndCodebook",
+        "type": "object"
+      }
+    }
+  },
+  "provider": {
+    "require_parameters": true
+  },
+  "plugins": [
+    {
+      "id": "response-healing"
+    }
+  ]
+}

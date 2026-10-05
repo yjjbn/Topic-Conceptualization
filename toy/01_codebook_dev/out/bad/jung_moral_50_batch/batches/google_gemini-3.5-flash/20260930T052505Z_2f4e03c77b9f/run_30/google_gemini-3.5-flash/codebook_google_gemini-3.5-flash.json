@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as language that frames political issues, societal groups, or public policies using moral values, ethical duties, virtues, or fundamental concepts of justice and rights. It transcends empirical, procedural, or pragmatic arguments, appealing instead to core ideas of what is right, wrong, just, fair, or humanly decent.",
+  "clarification": "To classify a text as containing moral rhetoric (1), look for terms or frames that rely on: 1) Explicit moral values and virtues (e.g., 'respect', 'courage', 'caring', 'self-discipline'). 2) Ethical concepts of fairness and justice (e.g., 'unfairly discriminate', 'justice they deserve', 'human rights', 'equality', 'discrimination'). 3) Moral obligations, duties, or deserts (e.g., 'expected to contribute', 'vulnerable people who deserve protection'). 4) High-empathy references to human suffering or dignity (e.g., 'frail', 'comfort and aid', 'persecution'). 5) Grave ethical offenses (e.g., 'corruption', 'repression').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text makes an explicit moral assertion about human worth, dignity, and spiritual purpose, focusing on the frail and vulnerable."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "This text frames ticket pricing policies around the moral concept of 'unfair discrimination', linking economics directly to social justice."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text utilizes high-empathy moral framing to describe the duty to provide 'comfort and aid' to those facing 'persecution' and 'suffering'."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as moral rhetoric (0) if it: 1) Discusses social, environmental, or economic issues in purely descriptive, technical, or causal terms without moralizing judgments (e.g., listing statistics, outlining environmental design). 2) Outlines standard administrative, regulatory, or policy proposals using dry, neutral language (e.g., building roads, proposing tax relief, creating agencies). 3) States standard political goals (e.g., improving education, cutting costs, creating jobs) without invoking core values of fairness, justice, or rights. 4) Boasts about party performance or goals without framing them around ethical imperatives.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text deals purely with transport logistics and efficiency for schools, lacking any moral values or ethical appeals."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This is a factual economic comparison of productivity between Canada and the US, devoid of moral or ethical terminology."
+    },
+    {
+      "text": "We will help parents by providing more information about services, allowing parents to compare ECE services in their area.",
+      "explanation": "This outlines a standard administrative proposal to provide information to parents, which is pragmatic rather than moral."
+    }
+  ]
+}

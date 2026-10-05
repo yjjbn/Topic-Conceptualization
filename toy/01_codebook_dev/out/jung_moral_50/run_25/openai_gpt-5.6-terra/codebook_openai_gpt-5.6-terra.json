@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, actions, or outcomes using moral values or duties, such as justice, fairness, equality, rights, freedom, respect, care, compassion, dignity, responsibility, protection from harm, or condemnation of wrongdoing.",
+  "clarification": "Code as moral rhetoric when the text does more than state a policy or practical objective and instead makes a value-based appeal about what is right, deserved, fair, humane, equal, respectful, or obligatory. This includes explicit rights claims, concern for vulnerable groups, condemnation of discrimination or corruption, praise of moral virtues, and assertions that an outcome is justified or intolerable.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement affirms the inherent worth and purpose of every person, explicitly including those who are frail or vulnerable."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The call for race equality and removal of barriers makes an explicit equality-based moral appeal."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The text invokes justice and says people deserve access to courts, directly framing the issue in moral terms."
+    }
+  ],
+  "negative_clarification": "Do not code policy commitments, technical descriptions, factual claims, economic arguments, institutional procedures, or general aspirational language when they lack an explicit moral evaluation or value-based justification. References to health, safety, poverty, environmental issues, or particular social groups alone are insufficient unless the text frames them through a moral principle such as rights, fairness, equality, compassion, duty, or unjust harm.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a concrete proposal for literacy and numeracy testing, with no moral principle or evaluative claim."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "The passage details a technical corporate-tax compliance reform rather than appealing to justice, rights, or other moral values."
+    },
+    {
+      "text": "As part of a nationwide review of critical infrastructure initiated by President Bush, due to be completed by December 2004, the Department of Homeland Security has already identified the highest-risk chemical sites and partnered with industry to enhance protections at those sites.",
+      "explanation": "This describes an infrastructure-security review and industry partnership in administrative, factual terms."
+    }
+  ]
+}

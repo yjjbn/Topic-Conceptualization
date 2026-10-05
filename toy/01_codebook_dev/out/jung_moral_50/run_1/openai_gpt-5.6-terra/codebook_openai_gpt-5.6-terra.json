@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, rights, duties, human worth, fairness, equality, freedom, justice, compassion, or condemnation/praise in order to evaluate people, institutions, conditions, or policies.",
+  "clarification": "Classify as moral rhetoric when the text does more than state a policy or practical consequence and instead frames an issue in ethical terms. This includes explicit references to respect, rights, equality, fairness, deservingness, freedom, protection of vulnerable people, humanitarian concern, corruption, repression, or judgments that a condition is justified, intolerable, or second-class treatment. Moral rhetoric can be positive (for example, affirming dignity or equality) or negative (for example, condemning terror or unfair discrimination).",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It makes a direct claim about the inherent worth and purpose of every person, including vulnerable people."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the removal of barriers faced by minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It uses ethical language about denying people court access and the justice they deserve."
+    }
+  ],
+  "negative_clarification": "Do not classify ordinary policy commitments, administrative proposals, factual claims, economic arguments, service improvements, or references to health, safety, affordability, and efficiency as moral rhetoric unless they are explicitly justified through a moral value or judgment. A policy may benefit disadvantaged groups without being moral rhetoric when the excerpt does not state an ethical principle such as fairness, rights, equality, dignity, or protection.",
+  "negative_examples": [
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This is an administrative proposal to create an office for water and sewerage infrastructure, without ethical evaluation."
+    },
+    {
+      "text": "By abolishing the mining tax, we will re-energise the entire industry and this will lead to increased mining investment with more mining projects coming on stream",
+      "explanation": "This makes an economic prediction about tax repeal and mining investment rather than a moral claim."
+    },
+    {
+      "text": "We will increase the state pension to at least \u20ac300 per week by 2012.",
+      "explanation": "It promises a pension increase but gives no explicit moral rationale such as justice, rights, or dignity."
+    }
+  ]
+}

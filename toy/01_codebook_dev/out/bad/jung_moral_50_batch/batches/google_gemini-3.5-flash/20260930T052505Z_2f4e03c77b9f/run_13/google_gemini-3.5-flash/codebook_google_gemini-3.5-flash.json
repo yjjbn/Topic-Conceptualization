@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political or social language that evaluates issues, policies, or groups in terms of ethical values, basic human rights, moral duties, empathy, virtues, or justice, rather than using strictly administrative, economic, or technical frames.",
+  "clarification": "To qualify as moral rhetoric, a text must contain explicit morally valenced words (such as justice, fairness, equality, respect, compassion, deserve, or corruption) or utilize strong ethical framing. This includes statements describing a policy situation as an absolute moral imperative (e.g., 'must be closed', 'intolerable'), emphasizing basic human dignity and vulnerability, framing economic or social issues around fairness and rights (such as human rights, religious freedom, or combating discrimination), or calling upon civic virtues (like patriotism, self-discipline, or courage).",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text explicitly appeals to inherent human dignity, value, and purpose, especially for vulnerable individuals, which is highly moralistic."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses highly moralized humanitarian language: 'providing comfort and aid to suffering people facing displacement and persecution.'"
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text explicitly appeals to basic moral principles by referencing 'values of respect.'"
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric if it is a standard, pragmatic policy proposal, factual report, structural/constitutional reform, or administrative decision, even if the policy itself targets a social good (e.g., building housing, increasing school budgets, or funding health programs). Simple mentions of social programs or technical descriptions of the law without explicit ethical or moralistic arguments must be excluded.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a simple infrastructure policy statement regarding broadband, completely lacking moral rhetoric."
+    },
+    {
+      "text": "If  there is  no contact from  the person,  Work and Income will suspend  the person’s benefit.",
+      "explanation": "This is a standard administrative rule from social service operations, containing no moral framing."
+    },
+    {
+      "text": "The trial ran in 15 community pharmacies around the country.",
+      "explanation": "This is a factual description of a trial location, containing no moral or normative elements."
+    }
+  ]
+}

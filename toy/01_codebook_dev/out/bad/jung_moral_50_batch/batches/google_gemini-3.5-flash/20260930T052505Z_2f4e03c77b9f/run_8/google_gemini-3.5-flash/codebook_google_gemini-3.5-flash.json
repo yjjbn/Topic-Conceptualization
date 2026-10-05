@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as language that appeals to moral principles, values, ethics (such as justice, fairness, equality, respect, compassion, or duty), and moral obligations to justify, advocate for, or criticize political actions, social states, and policies. It contrasts with purely technical, economic, or administrative arguments.",
+  "clarification": "To classify a text as containing moral rhetoric (1), the segment must utilize evaluation based on moral standards of right vs. wrong, or appeal to values like human rights, fairness, non-discrimination, care for the vulnerable, and civic responsibility. Key signs include vocabulary like 'respect', 'justice', 'human rights', 'unfair', 'courage', 'duty', and 'deserve'.",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "Directly and explicitly appeals to fundamental human values by using the phrase 'Values of respect.'"
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Expresses a deeply philosophical, moral assertion regarding the intrinsic value and purpose of 'every person, however frail or vulnerable' in the world."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Uses compassionate, humanitarian-centered language ('comfort and aid to suffering people', 'persecution') that frames assistance as a moral imperative."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as containing moral rhetoric (0) if it is purely descriptive, factual, or operational. This includes concrete policy proposals, logistical implementations, statistical statements, budget numbers, and administrative arguments, even if they refer to positive social goals like education or health, as long as they lack normatively evaluative, ethical, or value-laden rhetoric.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "A highly technical and operational fiscal policy detail regarding corporate tax compliance, which lacks any moral framework."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "A concrete, simple policy goal for telecommunications infrastructure ('broadband on all islands') without any moral reasoning."
+    },
+    {
+      "text": "Many new small businesses are started by women.",
+      "explanation": "An empirical, neutral demographic fact ('Many new small businesses are started by women') without moral evaluation."
+    }
+  ]
+}

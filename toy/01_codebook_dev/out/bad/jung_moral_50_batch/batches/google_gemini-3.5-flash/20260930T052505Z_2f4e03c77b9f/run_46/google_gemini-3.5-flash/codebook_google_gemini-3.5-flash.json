@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that appeals to moral values, ethical duties, virtues, principles of right and wrong, justice, fairness, human rights, or deep compassion, rather than relying strictly on economic, administrative, or pragmatic reasoning.",
+  "clarification": "To classify a text as containing 'moral rhetoric' (1), it must explicitly use morally charged terms (e.g., 'justice', 'respect', 'fair', 'equality', 'deserve', 'oppression', 'integrity') or frame issues in terms of inherent human dignity, ethical obligations, or virtues like courage and patriotism. Inclusion criteria: 1) Explicit reference to moral values or ethical concepts (e.g., human rights, discrimination, or fairness). 2) Framing a social status or action as an ethical imperative (e.g., 'must be closed' regarding unfair gaps, or 'vulnerable people deserve protection'). 3) Moral praise or condemnation (e.g., calling historical oppression 'terror', or commending 'courage').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text asserts the inherent moral worth and dignity of every single human being, regardless of their vulnerability ('has a place and a purpose in this world')."
+    },
+    {
+      "text": "Monitor funding of minority ethnic and religious groups to ensure government support is fair, transparent and proportionate;",
+      "explanation": "The text relies on 'fair' as an explicit moral value to guide government action, which directly satisfies the definition of moral rhetoric."
+    },
+    {
+      "text": "Thanks to their skill, courage, and patriotism, the very dangerous work at the World Trade Center and Pentagon was done remarkably quickly and without a single fatality.",
+      "explanation": "The text uses virtue-based moral rhetoric by commending the 'courage' and 'patriotism' of the workers."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as 'moral rhetoric' (0) if it only describes practical policy measures, economic calculations, administrative procedures, or fact-based observations. Even if the policy aims to achieve a good societal outcome (like safety, jobs, or education), it is classified as 0 if the language is purely pragmatic, technical, or descriptive, without using explicitly moralized framing or ethical keywords.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a basic, pragmatic proposal to deliver telecommunications infrastructure ('Provide broadband on all islands') without any moral framing."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This text details highly specific and complex tax policy mechanisms for micro-businesses, which is strictly technical/economic."
+    },
+    {
+      "text": "The trial ran in 15 community pharmacies around the country.",
+      "explanation": "This is a purely descriptive and empirical statement about where a medical trial was executed, devoid of any normative or evaluative claims."
+    }
+  ]
+}

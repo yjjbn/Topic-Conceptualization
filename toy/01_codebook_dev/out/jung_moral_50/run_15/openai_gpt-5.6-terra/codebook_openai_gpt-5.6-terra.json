@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly frames people, institutions, conduct, or political outcomes in terms of ethical values, rights, duties, dignity, justice, equality, fairness, freedom, deservingness, compassion, or moral condemnation and praise.",
+  "clarification": "Code texts as moral rhetoric when they do more than state a policy, outcome, or practical problem: they invoke a normative moral standard or portray an arrangement as right/wrong, fair/unfair, equal/unequal, respectful, tolerant, free, deserving, humane, or protective of vulnerable people. Explicit rights claims, equality claims, anti-discrimination language, appeals to inherent human worth, and praise or condemnation using ethical virtues or harms qualify.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement assigns every person, including those who are frail or vulnerable, inherent place and purpose; this is an explicit claim about human worth and dignity."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "The text says unequal educational outcomes by class and ethnicity must be closed, explicitly framing equality as an imperative."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "The text rejects corruption and calls for enforcement of anti-corruption standards, treating corruption as morally unacceptable."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy pledges, administrative arrangements, economic forecasts, technical reforms, or statements of benefits merely because they concern health, poverty, safety, jobs, education, or the environment. Such content qualifies only if it explicitly invokes a moral principle or ethical evaluation. General positive language such as efficient, comprehensive, successful, or world-class is not enough by itself.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a concrete proposal for literacy and numeracy testing, with no appeal to rights, fairness, dignity, or other moral values."
+    },
+    {
+      "text": "Labour will continue to invest in the water services  programme as part of the capital budget, focusing on minimising treated water lost through leakage.",
+      "explanation": "The statement commits funding for water infrastructure and leakage reduction, but frames this as service delivery rather than a moral obligation."
+    },
+    {
+      "text": "By abolishing the mining tax, we will re-energise the entire industry and this will lead to increased mining investment with more mining projects coming on stream",
+      "explanation": "This gives an economic rationale for abolishing a mining tax\u2014investment and projects\u2014not an ethical rationale."
+    }
+  ]
+}

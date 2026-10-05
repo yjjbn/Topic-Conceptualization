@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, policies, or outcomes through ethical values, duties, rights, justice, dignity, equality, freedom, compassion, or virtues and vices.",
+  "clarification": "Classify as moral rhetoric when the text makes an explicit normative appeal about what is fair, just, respectful, intolerable, deserved, rights-based, equal, compassionate, protective of vulnerable people, or expressive of civic or personal virtue. It also includes explicit condemnations of discrimination, corruption, oppression, or unjust treatment. The policy itself need not be morally framed, but the excerpt must contain an ethical evaluation or value claim.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth of every person, including those who are frail or vulnerable, by saying each has a place and purpose."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says educational disparities by class and ethnicity 'must be closed,' making an explicit equality-based moral claim."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes access to justice and the quality of justice that Americans deserve."
+    }
+  ],
+  "negative_clarification": "Do not classify technical policy proposals, descriptive claims, economic forecasts, administrative reforms, or assertions of effectiveness as moral rhetoric merely because they concern socially important topics such as health, housing, poverty, or the environment. Words such as efficient, adequate, successful, affordable, safe, and valuable are not sufficient on their own unless tied to an explicit ethical principle such as fairness, rights, dignity, or justice.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical proposal to simplify corporate tax compliance and reduce the need for advisers."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This provides economic growth figures and forecasts without ethical evaluation."
+    },
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This proposes an administrative body for water and sewerage infrastructure, with no stated moral value."
+    }
+  ]
+}

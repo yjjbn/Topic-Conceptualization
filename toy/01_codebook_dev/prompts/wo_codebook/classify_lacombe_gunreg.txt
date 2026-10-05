@@ -1,0 +1,22 @@
+You will receive a set of editorials from the American Rifleman, the National Rifle Association's official journal.
+
+Classify each editorial according to whether it is about "gun regulation." For each classification, provide a brief rationale for your decision.
+
+Use only one of these labels:
+"1": The text is about "gun regulation."
+"0": The text is not about "gun regulation."
+
+Each classification should contain:
+* The label, 1 or 0
+* A brief explanation of your decision
+
+The documents will be provided as a JSON array of objects, each containing document_id and text:
+[
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
+  ...
+]
+
+Return your classifications with explanations in the JSON format provided.
+Make sure you return a 1 or 0 classification for every document_id provided.
+Copy each document_id exactly from the input. Never generate or change document_ids.

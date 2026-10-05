@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes or evaluates actions, people, institutions, or outcomes through moral values, rights, duties, or judgments such as fairness, equality, respect, freedom, dignity, justice, compassion, protection of the vulnerable, or condemnation of harm and corruption.",
+  "clarification": "Code a text as moral rhetoric when it contains a clear normative appeal beyond ordinary policy efficacy or self-interest. This includes claims about what people deserve, rights and equal treatment, respect or dignity, freedom, care for suffering people, human rights, and explicit judgments that a condition is unjustified, intolerable, unfair, harmful, corrupt, or repressive.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It affirms the intrinsic worth of every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It explicitly says an educational gap between socioeconomic and ethnic groups must be closed, making an equality claim."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes universal access to courts and the quality of justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, technical administration, economic claims, factual descriptions, or general aspirations as moral rhetoric merely because their policies may have beneficial consequences. Terms such as efficient, adequate, successful, affordable, sustainable, priority, or value for money are not sufficient unless coupled with an explicit moral value or judgment.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a practical proposal for an efficient and accessible school-bus system, without an explicit moral principle."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a detailed tax-compliance reform justified by reduced administrative needs."
+    },
+    {
+      "text": "Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.",
+      "explanation": "This presents empirical welfare and poverty outcomes rather than a moral evaluation."
+    }
+  ]
+}

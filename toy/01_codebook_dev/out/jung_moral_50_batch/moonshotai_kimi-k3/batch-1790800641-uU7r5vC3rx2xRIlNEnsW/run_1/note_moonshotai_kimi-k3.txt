@@ -1,0 +1,85 @@
+{
+  "note": "",
+  "batch_id": "batch-1790800641-uU7r5vC3rx2xRIlNEnsW",
+  "run": 1,
+  "arguments": {
+    "command": "submit",
+    "model": "moonshotai/kimi-k3",
+    "repeats": 3,
+    "runs": null,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jungmoral.txt",
+    "test_rows": null,
+    "documents_per_request": 50,
+    "nametag": "jung_moral_50_batch",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 3004,
+      "completion_tokens": 4689,
+      "total_tokens": 7693,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 3198,
+      "completion_tokens": 4671,
+      "total_tokens": 7869,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 3128,
+      "completion_tokens": 4555,
+      "total_tokens": 7683,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 2949,
+      "completion_tokens": 4482,
+      "total_tokens": 7431,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

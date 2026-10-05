@@ -1,0 +1,38 @@
+{
+  "note": "",
+  "batch_id": "batch-1790811326-YrejgwYquf84OkHv2Fl2",
+  "run": 34,
+  "arguments": {
+    "command": "submit",
+    "model": "moonshotai/kimi-k3",
+    "repeats": 50,
+    "start_run": 4,
+    "runs": null,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jungmoral.txt",
+    "test_rows": null,
+    "documents_per_request": null,
+    "nametag": "jung_moral_50_batch",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 10836,
+      "completion_tokens": 15309,
+      "total_tokens": 26145,
+      "prompt_tokens_details": {
+        "cached_tokens": 9216,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

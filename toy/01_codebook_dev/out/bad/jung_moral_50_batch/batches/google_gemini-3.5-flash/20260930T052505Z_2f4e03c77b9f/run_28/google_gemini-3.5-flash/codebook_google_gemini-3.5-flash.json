@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language in political texts that explicitly evaluates policies, behaviors, or institutions using standards of right and wrong, core virtues (such as respect, compassion, and courage), duties, obligations, justice, and inherent human dignity, rather than relying solely on economic, technical, or pragmatic justifications.",
+  "clarification": "Included as moral rhetoric are: 1) Appeals to fundamental human values, rights, or justice (e.g., 'human rights', 'justice they deserve', 'unfairly discriminate'). 2) Emotional or normative condemnation of societal conditions (e.g., 'persecution', 'intolerable', 'terror'). 3) Invocation of moral obligations to care for the vulnerable (e.g., 'frail or vulnerable', 'combat loneliness', 'comfort the sick'). 4) Declarations of core virtues and values like freedom, respect, and courage (e.g., 'values of respect', 'freedom to choose', 'courage and patriotism').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text appeals directly to the inherent value and purpose of every human being, specifically centering on the moral obligation to recognize the dignity of the frail and vulnerable."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text explicitly references the foundational moral value of respect."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text utilizes strong moral-care language ('comfort and aid', 'suffering people') and frames actions around the prevention of moral harm ('displacement', 'persecution', 'violence')."
+    }
+  ],
+  "negative_clarification": "Excluded from moral rhetoric are: 1) Purely technical, logistical, or programmatic details of policy implementations. 2) Factual or economic claims lacking moralized adjectives or normative values-based judgment. 3) Simple descriptions of policy goals such as raising budgets, building roads, or revising laws, even if those policies might indirectly have positive social effects, unless they are explicitly justified in moral or ethical terms.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a straightforward, technical infrastructure proposal lacking any moral framing or value-laden justification."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This is a highly detailed, technical tax proposal focused on micro-enterprise regulatory feasibility and administration without moral rhetoric."
+    },
+    {
+      "text": "Introduce a competitive new system for how permits are processed for oil and gas exploration.",
+      "explanation": "This is a pragmatic, process-oriented regulatory policy proposal without ethical or values-based appeals."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly frames people, policies, institutions, or social conditions in terms of moral values, duties, rights, deservingness, justice, fairness, dignity, freedom, equality, compassion, or morally charged praise and condemnation.",
+  "clarification": "Classify a text as moral rhetoric when it makes or clearly implies a normative ethical evaluation rather than merely stating a policy, outcome, fact, preference, or practical benefit. This includes explicit claims about respect, rights, equality, discrimination, protection of vulnerable people, justice, freedom, and what people deserve; it also includes value-laden condemnation or praise, such as calling a condition intolerable, oppression terror, or courage patriotic.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth of every person, especially those who are frail or vulnerable, through the claim that each has a place and purpose."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and seeks to remove barriers faced by minority ethnic communities."
+    },
+    {
+      "text": "\u2022 Waiting lists are not tolerable.",
+      "explanation": "Calling waiting lists intolerable is an explicit normative condemnation rather than a neutral policy description."
+    }
+  ],
+  "negative_clarification": "Do not classify ordinary policy commitments, administrative proposals, factual claims, economic arguments, or statements of effectiveness as moral rhetoric merely because they concern socially important topics such as health, poverty, crime, education, or the environment. References to costs, jobs, efficiency, safety, accountability, growth, or service provision are not enough unless the passage explicitly expresses an ethical value, duty, right, or moral judgment.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a technical commitment to literacy and numeracy testing, with no ethical judgment or value claim."
+    },
+    {
+      "text": "By abolishing the mining tax, we will re-energise the entire industry and this will lead to increased mining investment with more mining projects coming on stream",
+      "explanation": "This argues for abolishing a mining tax on investment and economic grounds, not moral grounds."
+    },
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This lays out an institutional proposal for water and sewerage administration without moral evaluative language."
+    }
+  ]
+}

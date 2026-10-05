@@ -1,0 +1,29 @@
+{
+  "definition": "Moral rhetoric is defined as political and communicative language that explicitly appeals to or evokes moral, ethical, or normative principles. This includes language framed around rights, duties, justice, fairness, human dignity, virtue, vice, and obligations to others (especially the vulnerable), or expressions of moral condemnation and ethical outrage.",
+  "clarification": "To classify a text as containing moral rhetoric, look for: 1. Core moral or ethical terminology (e.g., justice, rights, equality, fairness, dignity, respect, courage, patriotism, corruption, greed). 2. Normative statements concerning what individuals are entitled to or deserve on an ethical level (e.g., 'deserve', 'duty', 'responsibility'). 3. Compassionate appeals to protect the vulnerable or alleviate suffering and oppression (e.g., humanitarian efforts, protecting the frail, combating civil repression). 4. Strong ethical condemnation of systemic inequality, discrimination, or corporate/state misconduct framed as moral failures.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts that every person has intrinsic value, a place, and a purpose, appealing directly to the moral concepts of human dignity and equal moral worth."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses strongly moralized language ('suffering', 'displacement', 'persecution') and asserts an ethical commitment to providing humanitarian assistance and comfort to those in need."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as containing moral rhetoric if: 1. It only presents standard administrative, logistical, or fiscal policies without any explicit ethical framing (e.g., establishing a program, revising tax codes). 2. It contains empirical, factual, or demographic statements without normative evaluations. 3. It utilizes standard political boosterism, generic party slogans (e.g., 'party of opportunity'), or economic optimism without clear appeals to moral duties, justice, or rights.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "This text describes standard public health and sports policy coordination. It is administrative and logistical, lacking any moral, ethical, or value-laden rhetoric."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This text is purely empirical and descriptive, reporting a factual economic metric about productivity without offering any moral evaluation or normative claim."
+    },
+    {
+      "text": "To cut GP waiting times and allow GPs to spend more time actually seeing patients, UKIP will reduce the burden of data collection, target chasing, revalidation and appraisal work that interferes with the care GPs can give to patients.",
+      "explanation": "This text describes an administrative health policy proposal to cut doctor waiting times by reducing bureaucratic burdens. It focuses on functional public administration rather than ethical principles."
+    }
+  ]
+}

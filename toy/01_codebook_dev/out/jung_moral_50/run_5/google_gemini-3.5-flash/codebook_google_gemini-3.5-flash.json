@@ -1,0 +1,25 @@
+{
+  "definition": "Moral rhetoric consists of expressions that use explicit or implicit ethical appeals, normative judgments about right and wrong, duties and obligations, justice, fairness, human dignity, or references to core civic and moral values to justify a political position, praise actions, or condemn opposing viewpoints.",
+  "clarification": "To classify a text as containing moral rhetoric, look for words that describe ethical values, such as 'respect', 'fairness', 'justice', 'integrity', 'freedom', 'compassion', or 'human rights'. It also includes texts asserting a moral duty or obligation, references to severe human suffering or persecution, and praise using virtue-laden words like 'courage' and 'patriotism'.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text asserts the inherent moral worth and purpose of every single person, particularly using the term 'vulnerable', which directly frames human value through an ethical lens."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text directly invokes the humanitarian duty to aid 'suffering people' facing 'persecution' and 'violence', which represents clear moral and ethical appeals."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric if it outlines operational policies, fiscal targets, economic indicators, or administrative procedures in a neutral, technical, or pragmatic manner. Even if these topics (e.g., healthcare, education, or taxes) have implicit ethical implications, they must use explicit moral language, values, or rights-based framing to count as moral rhetoric. Simple partisan criticisms do not qualify unless framed in terms of fundamental values or moral wrongs.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text outlines an administrative and logistical goal ('efficient and accessible school bus system') using neutral, non-moral, and pragmatic language."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This text presents a purely economic comparison regarding Canadian productivity without any value-laden, ethical, or moralizing framing."
+    }
+  ]
+}

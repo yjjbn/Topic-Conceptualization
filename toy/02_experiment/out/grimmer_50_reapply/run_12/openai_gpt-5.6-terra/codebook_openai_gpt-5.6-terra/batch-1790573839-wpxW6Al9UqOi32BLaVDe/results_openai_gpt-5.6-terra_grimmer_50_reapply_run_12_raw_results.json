@@ -1,0 +1,316 @@
+{
+  "id": "batch-1790573839-wpxW6Al9UqOi32BLaVDe",
+  "object": "batch",
+  "endpoint": "/v1/chat/completions",
+  "model": "openai/gpt-5.6-terra-20260709",
+  "completion_window": "24h",
+  "status": "completed",
+  "created_at": 1790573839,
+  "finalized_at": 1790574345,
+  "request_counts": {
+    "total": 5,
+    "completed": 5,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 74780,
+    "completion_tokens": 7550,
+    "total_tokens": 82330,
+    "cost": 0.12008,
+    "is_byok": false
+  },
+  "error": null,
+  "results": [
+    {
+      "id": "batch_req_6ab9fdfab2a48190abd9bb82fac5426a",
+      "custom_id": "request-00000001",
+      "response": {
+        "status_code": 200,
+        "request_id": "af41428b-3aae-4a14-a5d6-0362e272d47c",
+        "body": {
+          "model": "openai/gpt-5.6-terra",
+          "id": "gen-batch-1790573839-f2f1324759718f73d071",
+          "created": 1790574061,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"50\":{\"document_id\":\"50\",\"label\":\"0\",\"explanation\":\"Reid criticizes the administration's global-warming record and urges leadership, but does not claim responsibility for obtaining a concrete policy result.\"},\"57\":{\"document_id\":\"57\",\"label\":\"1\",\"explanation\":\"Kennedy explicitly says that he introduced the Human Cloning Ban and Stem Cell Research Protection Act. Under the clarification, introducing legislation is an affirmative policy initiative and counts as credit-claiming.\"},\"89\":{\"document_id\":\"89\",\"label\":\"1\",\"explanation\":\"Dorgan states that he authored legislation, signed into law, that created the National Center designation received by Bismarck State College. This directly links him to a concrete governmental result.\"},\"240\":{\"document_id\":\"240\",\"label\":\"0\",\"explanation\":\"Ensign comments on Michael Chertoff's confirmation and expresses a desire to work with him in the future. He claims no role in securing the confirmation or another tangible result.\"},\"453\":{\"document_id\":\"453\",\"label\":\"0\",\"explanation\":\"Nelson explains his votes against Iraq withdrawal resolutions and states his policy preference for measurable goals. The negative clarification excludes votes described solely as positions.\"},\"597\":{\"document_id\":\"597\",\"label\":\"0\",\"explanation\":\"Lugar honors recipients of his health and fitness award at a community event. This is a ceremonial recognition rather than a claim that he secured, produced, or materially advanced a governmental benefit or policy result.\"},\"656\":{\"document_id\":\"656\",\"label\":\"0\",\"explanation\":\"Kerry criticizes the Bush administration and the Dubai Ports deal but does not claim responsibility for a policy accomplishment.\"},\"918\":{\"document_id\":\"918\",\"label\":\"0\",\"explanation\":\"This release is a notice for a town meeting. The negative clarification specifically excludes town-meeting notices.\"},\"967\":{\"document_id\":\"967\",\"label\":\"0\",\"explanation\":\"Shelby announces that HHS will release Head Start funding, but does not say that he requested, secured, or otherwise obtained the award. This matches the negative clarification on agency-award announcements.\"},\"1021\":{\"document_id\":\"1021\",\"label\":\"0\",\"explanation\":\"Wyden and Smith announce committee-approved funding, but the release does not assert that either senator secured, authored, or otherwise obtained the listed funding. An announcement alone is insufficient.\"},\"1957\":{\"document_id\":\"1957\",\"label\":\"0\",\"explanation\":\"Dodd and Lieberman announce a Department of Transportation grant for Bradley International Airport without claiming a role in obtaining it. The negative clarification excludes such award announcements.\"},\"2318\":{\"document_id\":\"2318\",\"label\":\"1\",\"explanation\":\"Durbin says he helped secure an expedited federal environmental review and facilitated the airport project's return to the national priority list for federal funding. These are explicit claims of advancing concrete governmental outcomes.\"},\"2807\":{\"document_id\":\"2807\",\"label\":\"0\",\"explanation\":\"Lincoln applauds and helps recognize an agriculture proclamation signed by the governor. The release is principally ceremonial and does not claim that she secured or produced a concrete governmental benefit; the reference to her role in a past farm-bill debate is not an asserted legislative accomplishment.\"},\"3482\":{\"document_id\":\"3482\",\"label\":\"0\",\"explanation\":\"Mikulski and Cardin announce a DHS SAFER grant. Although Mikulski says she fights generally for program funding, neither senator claims to have obtained this particular grant, so this is an agency-award announcement without the required link.\"},\"3577\":{\"document_id\":\"3577\",\"label\":\"1\",\"explanation\":\"Sarbanes says that he worked with Senator Bunning and others to formulate and move flood-insurance reforms through Congress. This claims a role in materially advancing a concrete legislative result, even though the release also criticizes FEMA's implementation.\"},\"3659\":{\"document_id\":\"3659\",\"label\":\"0\",\"explanation\":\"Clinton welcomes an advisory-board recommendation and urges the HHS Secretary to adopt it, while promising to continue pressing for other workers' compensation. These are reactions and requests for future action, not claims that she secured the recommendation or compensation.\"},\"3687\":{\"document_id\":\"3687\",\"label\":\"0\",\"explanation\":\"Bingaman only announces a USDA award to New Mexico State University and comments on its value. He does not state that he requested, secured, or obtained the grant.\"},\"4208\":{\"document_id\":\"4208\",\"label\":\"1\",\"explanation\":\"Dorgan and Lott state that they will introduce the Media Ownership Act of 2007. The clarification expressly treats introducing legislation as credit-claiming because it claims an affirmative policy initiative.\"},\"4585\":{\"document_id\":\"4585\",\"label\":\"0\",\"explanation\":\"Schumer announces DHS grants to Westchester fire departments and notes his general support for firefighter-program funding, but does not claim to have secured these specific grants. The release therefore falls under the negative clarification for agency-award announcements.\"},\"4771\":{\"document_id\":\"4771\",\"label\":\"1\",\"explanation\":\"Clinton is described as having played a key role with SMAC in preventing the removal of four C-130 aircraft from Stratton Air National Guard Base. This is an explicit claim of protecting a concrete local facility benefit.\"}}",
+                "refusal": null,
+                "reasoning": null,
+                "reasoning_details": [
+                  {
+                    "type": "reasoning.encrypted",
+                    "data": "gAAAAABquf34J9orTkVuR12n8mrkLLv3WKVClV0EA2cfLm_wl5CH4kiIA9lk1dfcUboCgACwJgxv_qyeiJgmHn8RJYhgfUnuP8Y9C14-we13Ska-iAHRlT-7DOuH8GNWG5nma7P2ugS6uYLiCK3zknrsXXdnQ-m-4xR2JyviINf04uiJOUB09Ngk8FiLvSsgaJU3k-g2ZugNvGiJSadKelB9-a810I1r8AYCXDHrPy3rQfnsIXT9CDAa2xU94qH2CkO5IVEQZ1B24Nns0oRvZQ42eMt9gWCkxW3bLAL4yYyFoc-u0-i7uOQlAZzH9BoM_G4j5J7WQ_LEH7oDVErVVe3xo3Cklh4qo9D8L_KvVcCW_fnpWODDdtB4dFzG4sduK6lhh3zHVEJyZ_ARz95zWZXrthZ0mcE8ExuFsEo8GBH7J_Lo8jxsKiWMwPJdFrUwBzKfdy_UezO9dt9P0rTreoNsfZqVcjvX6T-BqN1Mgpdn6UmdTU9TAw64TdGLNGK6X7EwMh0ZVfuE_az8XjstQqo9fwOux9ZkdCzED86bQdZr0kx_XMRXtS-TufAAKNyBpUO6ru_DLzKfyAPHu6Nb-wLHJtLAKNJj1RHNXgSupBPP7z8SWmXBYE2NvY0YlVgQI9Ldj1OZSbwnmqD5linyaKZDrnFCUvEWigfLEZIxZwcWVoA38gJAkvNEa4Plonk0yUVfDCcd1PsK-GgMDRlNXMBjvQrBDhlUC0FtFV12BjtvUProX3iw1aqOy7d-sNutlKnRy3i0A6rfQ4eeMfmqYwivotKobW1Oc7sbvUTN47uyMdihg52UCH3xlpxV1vDyT1_0DRb-ggqeWYWBlzV_N2ajGMnu99_3ppYlKfV3vRlkJ2KjvxZlP1knc7zmsr3XB1JHbBIYT3CumtB5Q88ffWJY0vIY5hk1nuHq6SXDFCLBbCWKYUgM7UEdzIIizRVfViWPjwTtiiAbOpLQ7hj3YFTUwWUR33_VL_53BYbBrwTK2YOjY44F7ceHKQfJX9awMJPVQXmU4PBI85Ja3-QOERGln-S6Y-xoSJ7Det8fcnEFldKTWQFSaLcwgWMC8-SpHzxJ6AJOW1m8a7cCBpAnz6z4n2-1zc2Yy-9YztTl0Z3mfUq74lw7eytO14ttY_se_JlBMpyc3q2GEeHTrXv7_BwDjlRz8Y7Kw3Uwr6jS8zG-aqogmwXhz2wMU744g5VOK4Pf0jofkyQ4t6BSrHDpG3R3j4KSJvqPm47Mhk4c1P6fvlIfTc63ijxHNvyKw_90atOr5oJRmXl7FidANCaE0as-G42DNEGcpEph6M1ZpG8pvn8zcQMSP4JDP8nqVZ_AgA_j6x8a4ghyJxWpl_wqvNBbLRrIIHuPfdxotkoZ_rFfLuqNGPvWR0iH6qU2Or3gTrRbnNnR4OXuT9uB0a4AlNQGnRyO7ELicE-ZQv5sixxdCOMshJqFjLzxHWi3JCAw2LIx6HmK-9P20012FQrcIeDcZsvzDF8J08k1KpfPNy0cMjzSAxJclRzVh-PbtT5q7cE2RBmjVUsBX4CtNxbd1VENidWla1m8olUxvEeqP3kHaIt2LLJUGcUEUJspb3MszJKvhtDDDvRsVBIEQTqEBbonaQCxMOryC0jqc8u4eHaJTNTMg984q-8pMdVf7UqoXxozvSIftj9M5sHSMLllPmH9Dpm2Zv0AofhLNd5hBojS3j_S_peCCOR9JHf6-JECdmz1yv6GnyAJAt4Wau7GOoz8hm7gdCUASKVUBBZeTgY2jaG3LWCcl5rLMDoUYi8rEoR90weXa0Kdi2rN-pkHepA8GraC32Ct3opb91U0TBFeGUMSQu3HzkDdS3XaU5SMjBuR9_sOC7_XCYRbLGZCdeItDuhxxQB013ofcQMVp8Fm6dJWXapQuw3y7zQIIScNIqXt2mdHo1Jg_yTtAnMi8JiJ3uMpSPFpKAqQb2LNhOPs3FGhljPpgjs7Rc6Jsi4Nm0MT6eS8ULTZE_0_6txW2UPzw854B_E5sMw83DG8IFUbuaVBqNkwIKbuzIusSL0ITWFO7_U537Z0lRH7g-Lzy8NuHfuVrIdbdVmvrfkbmiInDbVBSLEwKawr8npPULP3stBn9-i-ZD08r5GWqfujw_sbGbDRXebAwkmvK6vYNqitI4xD2tgre59NM6nw0jgIeoThRJ82NFk_ofZmzciN_HMOS1xSqjTKkeVoOovfOksBsqrCG0srLm85SgHCnyaAduRHkoaUwk30quhPZ_Cw6Y79D3SSMXUQVXIWWFd6bSzc9BgKk_CQIIUI-CRS9VIg7oD2vWdY45N0DKHHb2dwqCzAANFn8mmIVlnsMctHj9U_PnKeZAR-ZwuV236bxGOm8W8IMiMiL8oW4Z2YGkeItg7TjcaD5Du-BuktyNsQMupg9fEIQXfnrSf3NvIv5-aS96ZwiJFG20k_QRyx276MuxFTfxKBzH4rhkeNvKiz_E4hk0gAs9oe-5OokMUQkZFYzucAGul6Yti87KeLt00VFzMC_rFHGJu8RA8G0nZEkT4qk_2YK3v3AzeJPps1OiwGQHyhnyX4wFp2jsLi3zeT_DOBscjziyJ0HF9etiTbOQ_x_ALzIBe-DPC8yjkV3ztuCtv8yocLLbNSZBWrm9oPaaHCu-0sAI-gpCzT1xMeDbH88YaHclMu2UXzNjua7UUIfsz_wVTHEg-a6z_fubq5PPKeU2GY9DVyfKYqvdPSPOcyvGgSMe73lvgu3MNZHn25GZK5epnMAtluNW1WWlj7cbuO5_sxdF2zp15_1yVkvkYSlSIA2e22Nim4zALtsGOpp_LHl9gYwTGX7YBRyxW01faFkKfspwHijo8vEK62gj6b1XSZ1skjnEucsWzVxCXYoAw0n0u0Wz0AG6Hg1_kF9O1VZNY05oOV5XnPQuV7v8NXAfRzoAFjSJwr4kIuE9nlkC4e6Za4owxWt-C6N1XIfxeWNYplbVrDve-Y5YZHQ2An5AYdaJhoXYzncFS5T-QlJjGilq17akbwJdEQwIm8kLlXThXuMbX-SiEbhbGSqeVcwlyXPPEpCJWcBkkvZ5Acc6nTodYztsIkxIxHH_fx6ox8YEfjbHtf6wf3bjWuxiA_DNIW7jPUvet9pK94bGKRdwHEjdtCeBYMVSlXEe4rQ242tuMwKMSR65SpGI04OcUWyOh-1SW3cSZMGhwOZNg5W-i5l_djBe1kDURmKMW3-hubfMBSq_oxm78nlEKnV9r7fbxTyzE7imq6iDXPIJ6EWE4yw8rRmljKSjAitVWDCxclk_vALFAXphGwsHNtdKBQrN0pqVaW0WAJX-VeaTF5vrpIuZUfzOuv_umElWCWhYFwxLPD1mR6KGrgZm8uidBVGNXsUSWaKcR0Ie8MexfPPb_XaJ4L4hbtfWvitxjsbZGk4j5zR6z9BqR01H6-LSfQ4lfRlpXM-X_TwXqol1YB-dlu__yiAP8kp8ft0pKhostmly0E1ekbSrxQHTRQm3w6_anoUCsl9RzyxQC70_FvnhYviL6JeLhedMcoQDLd6Z06NdU6pmL2Y4OVcsCwOva2uA3dPPXuT43jpzih5fVM7LM-csrpU5Sf8LYMaVyeEGDINo17g4jrfKF7mL4PdZYm10lZnhFWqjhl6xuD-DooFaoSTCpa5-_1gq9K8BmHXQ5nYfgmW1UhaPKY0svUUS-EUThvxHMzahIY9GSsOl_1wI0GmK9qqJgEvGG6kxMiY52nllYTE0SFrg==",
+                    "id": "rs_022d83b777d9c2c9016ab9fdede45487d1b6c743c1aa404c9c",
+                    "format": "openai-responses-v1",
+                    "index": 0
+                  }
+                ]
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "completed",
+              "logprobs": null
+            }
+          ],
+          "service_tier": "default",
+          "usage": {
+            "prompt_tokens": 13653,
+            "completion_tokens": 1447,
+            "total_tokens": 15100,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 370,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "OpenAI"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch_req_6ab9fdfad4a08190b197946629749bc5",
+      "custom_id": "request-00000002",
+      "response": {
+        "status_code": 200,
+        "request_id": "5c4a0458-1a4e-47d0-9f4e-895b6a9c65cf",
+        "body": {
+          "model": "openai/gpt-5.6-terra",
+          "id": "gen-batch-1790573839-e0eb8c6c61fc724e277f",
+          "created": 1790573843,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"133\":{\"document_id\":\"133\",\"label\":\"0\",\"explanation\":\"Kerry criticizes the Administration and the Dubai Ports deal, but claims no concrete accomplishment or role in obtaining a governmental result.\"},\"214\":{\"document_id\":\"214\",\"label\":\"0\",\"explanation\":\"This is a commemorative statement honoring those who served and died at Pearl Harbor. Ceremonial remarks are excluded under the negative clarification.\"},\"299\":{\"document_id\":\"299\",\"label\":\"0\",\"explanation\":\"Alexander notes an advocacy-group award based on his votes and states his fiscal-policy position. The release does not claim responsibility for securing or producing a concrete governmental benefit or result.\"},\"490\":{\"document_id\":\"490\",\"label\":\"0\",\"explanation\":\"Webb criticizes the Administration's foreign policy and advocates dialogue with adversaries. This is a policy view and criticism, not a claim of an accomplishment.\"},\"630\":{\"document_id\":\"630\",\"label\":\"0\",\"explanation\":\"Dodd comments on the effects and priorities of the Administration's proposed budget, without asserting that he secured the allocation or produced a specific result.\"},\"721\":{\"document_id\":\"721\",\"label\":\"0\",\"explanation\":\"Reid praises Iraqi elections, criticizes the President's strategy, and calls for further action. He does not claim an achieved policy, funding, or other concrete result.\"},\"773\":{\"document_id\":\"773\",\"label\":\"1\",\"explanation\":\"McCaskill is identified as among the senators who introduced a resolution honoring Senator Eagleton, and the release states that it passed the Senate unanimously. This links her to an affirmative legislative result.\"},\"1060\":{\"document_id\":\"1060\",\"label\":\"1\",\"explanation\":\"The release states that Nelson's small-business health-care amendment was included in the SCHIP legislation passed by the Senate. This is a concrete legislative result tied to his initiative.\"},\"1086\":{\"document_id\":\"1086\",\"label\":\"0\",\"explanation\":\"Dayton applauds Senate passage of additional LIHEAP funding and notes that he cosponsored unsuccessful amendments. The release presents votes and policy positions, but does not say he secured or obtained the enacted funding package.\"},\"1155\":{\"document_id\":\"1155\",\"label\":\"1\",\"explanation\":\"Leahy says that the committee unanimously adopted the Leahy-Hatch medical-criteria amendment and that this helped establish pillars of an asbestos trust fund. This claims a concrete, affirmative legislative advancement.\"},\"1313\":{\"document_id\":\"1313\",\"label\":\"0\",\"explanation\":\"Lieberman criticizes the House's failure to take up the D.C. voting-rights bill and urges future consideration. Although he describes efforts to encourage Senate leadership, no achievement is claimed.\"},\"1827\":{\"document_id\":\"1827\",\"label\":\"1\",\"explanation\":\"Lugar states that provisions of his Good Samaritan Hunger Relief Act will be included in the Grassley-Baucus Katrina tax-relief package. The inclusion of his legislative provision is a specific legislative result.\"},\"2003\":{\"document_id\":\"2003\",\"label\":\"0\",\"explanation\":\"Clinton announces that the Air Force will place a Predator squadron in New York, but does not assert that she requested, secured, or otherwise obtained the decision. Announcing an agency decision alone is excluded.\"},\"2143\":{\"document_id\":\"2143\",\"label\":\"0\",\"explanation\":\"Murray offers condolences and praise following Karen Marchioro's death. This is a memorial statement and contains no credit claim.\"},\"3047\":{\"document_id\":\"3047\",\"label\":\"1\",\"explanation\":\"The release links the Idaho Congressional Delegation's March 15 letter requesting action to USDA's planned potato purchase. This presents the delegation, of which the releasing senator is part, as having successfully requested a concrete agency action.\"},\"3201\":{\"document_id\":\"3201\",\"label\":\"1\",\"explanation\":\"Talent states that he worked with USDA officials to expedite approval of the Governor's disaster-designation request. The approved designation provides concrete federal assistance, and the release directly attributes a role to him.\"},\"3914\":{\"document_id\":\"3914\",\"label\":\"0\",\"explanation\":\"Frist gives general partisan credit to Republican economic policies for economic expansion and job creation. The codebook excludes broad partisan credit for general conditions without a specific accomplishment by the senator.\"},\"3950\":{\"document_id\":\"3950\",\"label\":\"1\",\"explanation\":\"Harkin is described as having authored the HeLP America Act, a comprehensive health-and-wellness legislative initiative. Under the clarification, introducing or authoring legislation is an affirmative policy initiative and counts as credit-claiming.\"},\"4124\":{\"document_id\":\"4124\",\"label\":\"0\",\"explanation\":\"Kennedy commends the President's statement and calls for Congress and the President to enact immigration reform. It is a request for future action, without a claimed accomplishment.\"},\"4344\":{\"document_id\":\"4344\",\"label\":\"0\",\"explanation\":\"Salazar says he joined colleagues in supporting a White House-Senate PATRIOT Act compromise. This is support for a compromise and a policy position, not a claim that he secured or produced the deal.\"}}",
+                "refusal": null,
+                "reasoning": null,
+                "reasoning_details": [
+                  {
+                    "type": "reasoning.encrypted",
+                    "data": "gAAAAABquf0eP9OGxZzzWeAdfdJsuNovGoiOhiPyQVGnZVqpZR-qr933Rb3wErEpqb_f8WAqZabU_9qPFnhgyShb_b1doUHL3IkuAP7Nq51dFkTygG7Vurmpi7zYurZmH796_YPeAz8zQ5mHFMkKt0cyCbfspctaQXNoHvb6kpOVzR9BM8ZttUlDr63eDXzmHTa5Cm2CdkkYd4B5evQ5WjzyM05mp2JyK_w0xYuxuTLxBNpcYIhxnG7HAK0Uia1WyBYSIkzmigpyqBciW8VCtE6srTO1nKwvjM806nQQxl6sHmB9SYXVcDg5JCpAHcymtXtOB2Z0idYUXCGnoxMWRldD_gG82sqLGY5DOeFdhy8pdbfPE_36LBCHzChmUf1V5p0ufPQ7mgh1r1ZI1yunq21v7J0Crdv7Iw1Zz0--S6ecRu13a8hLjoccuU6uhsrBs2Vuy0dQHhvRkkSZKlYlpHTPjbzxgtUH94S2qd83worpx2ghSGL-wIC_eR-cGKxGrE88wmcyUsb30CoDXglWVirFa4bZcB-UgFBa5Nu9xK6W5-r9w2jexhjSla8jqnI9QR3JI-fBEkEwo9HJN5jd03_Sbwivx0XM40h0wsDdbm3wxpzWCEHldvVnfliA7FGqSmjBvJascckxuF3BAtRgaBfEo_mH2wERJA3OqTkvCNqpCY77DwyxX6jIQH4o4oSWiYvt-4gzl0XC1j2Xhx9J5KFCJHmbffyzOouN5T2UcjkUBIt7-rK0YW-NTh07ccPfwxgMjPkS7v4IGZso7ln4wO9xwSgpinlBe7US-R9qS9smaVbZ-uLpKGqnmm8l1R61ntU1HJGhMFVzhYvp1nqhMUCqjqZmXAWIs2UDI2qnmnE8hTyqc5-j_jDDfTrZ_Oh42pVvSX6pZa7T2BJdivYLlDOJikFIl38Lld40JHiVdNMQ5j0ePksZnRAytpiaj3oWkJ0tCDX8ZuLnT7Z6T3byOKv_gi1eeveYuWCH9ItoRtl_X7nyKEZQGqSNdO1qkO1_1drpYIOAxi30On0kCdQDw6HZNGjqxDZGZiwQ_B7mMK4sExKzWAf_YN7DX1WA_OUgeJdV9GIfUynGt5db4zbQsFjvcFliTrEzHhp2YpW3OVrEDv8j3dIbGw_8WL1G3Ct6BkcbLGjXtMJMn5NA-HX6d-fSeQWfFAYo8ZXiGQJ7wks9dasmSQ997xOLoE6f9M6zUIYOYMGpNsiuy5cU4yl1KcgdSQufK8FhdYZR4NRQ4VkYGASnJDgNFS-B_b2gr_SIg6g0Io6sMRyD3KIfuFGoxORfWyxRz_v4d3BrUd_9csEEQYWYCrYNV0pguVmYShvKaBtcwYD2kGoAwhpNz_-Exrpq1GOzeGdj6BpHDyeMOvnsQw5izq9jW96I6aUFLjhPF8XSBVe3l-SxeN4fvziuUq_0q495zxEDmpFW-0kqs-CsILnuZw8ZdcCH6l9q_USkf06RjtfVz3hCE5MW7zKthFTGYDJPmoZfktyVvC1FKdwu_LXG3S0-Mj1F4jWnMIhXHM7VPD-lTCJSkICjwxYuWE4OgdlDYBt0hEwjWWlYTOBsx2Gsu0pZlYrbIBRiuuxK5GZZg3rG2W2XQV6lvzK63KMJ0eNyHwiiaZfeGzONScyvyRsQVqCevIqYNdT5uNczL12Ek96u09YADgRTUgktAtkShACMPC452RY9d-AnP63qiAL2E_6otDYQHVDdPm4PtMr3A2vJvteVgHxXjNB1r233e5jjJmIF5GiZ8wWiKzXSA80S5U4qFUlvoPoqxxHbWFJumShrRhgNBhPOqnxr2RE4lLsjsCf4M3iNe8PRPu1Lwiy0GYHZ0QmdGbf1nBl2rhAkGtRpo8mxnX98xkEOtwlvNY_ICrY4aH2ofIx_Pk1ic0yHmBWZcdxpRNPKD3UJ5gMmeGzwbHLxRw5e7ZOCLmHZNOvhi1KWaBTcWchlDSXXVpNzjgrhG4L7VF9ofgCvAZppmZ_Qc9U01KK-sfJCql9h7vZMKi1WG2YRSn4jIweBrY-h8xa9j5Gl_P6UKH3tEbE62KyhbtZQ86e-8IDN5_UCXdmPvKsw4jSs4a7hhbL42DyH5C9YQY8hUajx1jBLGnR23u9hwr3DzWJtzs-u3Swopa3I_p0UogtXb2Guje9G7ilwy2NMY1rQ3_4uZ5mdmW_vq7dFwBs16Zm9IiXOTijOYK74Qe8TkIdlJDCRfvRQxQLeZldtJly7BxQ3JtQzk6Ljfs2VfzexZWezaHCxHcydH6OCPcjToPQgmHew6D_IDfXOgvzhVksuDTvYs7YNNy9Ucv3dmiOCVXg1_-NBeXkW_IMLjE93JGDg03uqxOtlc8IbZGs6U6pbaQXVyPrWFoGZtr4xHhq4aTfZ3d-roBA9B0iqvPHFRpJFjkmjHqFdJ7N-AqS_LXaIQ-7x_sEzAPfJpncHOY0xR_TyinOOOtfnB1C7jROJM1VeiQ0rFydQJyWArdNIi2h5pp4e0gQwtnsbOxBopZPqYAAWsrkMwbc3C09zVhGwiNr7cdKO49XDnzYSP_3Dp2TeVpZfEnyFpq30PFJhRZ65g6ELQr2tEXb0oYUh8zajgJSGJjBQ3_TbdqkCZMUPEhIgKfH_1ESGKs7fDQA3UH89GCrrGFt1-peogSZ24jZcWfoNnSVtAhlE3ymC0ZM9KwXOmfBhGWj_ms9TWC7yQlZ6v4q3Q1bTg_mBLNA2TC0OzD55eq1FyOdrrH08FV3Z_CVu8RCVs1lq85BDaSJI6KIdHPu21oxc2-JwY2tUGH0AK4dqTJ9Ro76OyCZNBqKa272MKreFBXqmjmsYoZ3wKaV3NXonxGR8YyV-kaSypSgnjueVCnP-anPuLr87x5wD6-PBZ25pCnPBNlIAZz-AgaXfE-MFS19h0eFbYFlnJhNf9qPF6b_03jYnPikT_65JJBh1PCQrU2HLjUFavdM70uXDzLVHlNjkZRHyh8NmDbzeJnTYC3b4n8rdZDTpBhs9OvM24jSlDWsWqQk136sx0_1oBGZCk9zfSZ5sq6K8exYasNiHQgkPFUxpJFyGS-G7M5HBbzgxtxWubhIM07a-vHE_er3TNQqU_-rUXecng4zAIFjJkEmc47hWaex410Ra9u-qku_rQ9mU3Qod0Jv1xQ6cNa7CZq6irinVhgen8PE-6uTtbPu5CyWB_Uyb0l4mazz45HgPUg1xTtWxkgkLd3z4KJxWYCh6aBv3YhDgTVI4iEBvYzrmi7SJBjaGfQL5Q_X-jgVZY1kUxekUr0KiUZGmwqHEG4fYI4IF8zCbHwNfeS8_yMDiiTTxfYYyE3uzSPyYfbFXHHx7QX7CpRtpPLUZ8eprw6dbLXwohY6SZf6nyg==",
+                    "id": "rs_003fa300684396a7016ab9fd140ad087d1b26fd48486d90436",
+                    "format": "openai-responses-v1",
+                    "index": 0
+                  }
+                ]
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "completed",
+              "logprobs": null
+            }
+          ],
+          "service_tier": "default",
+          "usage": {
+            "prompt_tokens": 10762,
+            "completion_tokens": 1359,
+            "total_tokens": 12121,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 305,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "OpenAI"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch_req_6ab9fdfad50081909279b6a43c36434f",
+      "custom_id": "request-00000003",
+      "response": {
+        "status_code": 200,
+        "request_id": "e27c07e8-918d-439f-b05f-696ded6b7bd6",
+        "body": {
+          "model": "openai/gpt-5.6-terra",
+          "id": "gen-batch-1790573839-15a5c15a437d03cccca2",
+          "created": 1790573843,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"817\":{\"document_id\":\"817\",\"label\":\"1\",\"explanation\":\"Collins is described as sponsoring the Social Security Fairness Act and testifying in support of her legislation. The codebook specifies that introducing legislation is an affirmative policy initiative and counts as credit-claiming.\"},\"871\":{\"document_id\":\"871\",\"label\":\"0\",\"explanation\":\"Salazar questions and presses the Interior Secretary about proposed budget cuts and rule changes. This is criticism and a request for explanation, not a claim that he secured or achieved a concrete result.\"},\"1118\":{\"document_id\":\"1118\",\"label\":\"0\",\"explanation\":\"Carper gives his views on the defeated constitutional amendment and discusses his position on marriage policy. Although he references prior actions as governor, the release does not present him as securing or advancing a current concrete governmental benefit or result.\"},\"1177\":{\"document_id\":\"1177\",\"label\":\"0\",\"explanation\":\"Pryor and Chambliss call on the Air Force to reimburse subcontractors and say they will continue applying pressure and work on a legislative fix. These are requests and future efforts, without a claimed achievement.\"},\"1230\":{\"document_id\":\"1230\",\"label\":\"1\",\"explanation\":\"Harkin and Hatch are identified as principal authors of DSHEA, which gave FDA authority to issue the regulations, and as having pushed FDA to publish the GMP rules for over a decade. This links them to a concrete regulatory result.\"},\"1320\":{\"document_id\":\"1320\",\"label\":\"1\",\"explanation\":\"Hutchison explicitly says she was pleased to help secure the disaster-relief funding in the emergency appropriations bill. This is a direct claim of credit for federal funding.\"},\"1747\":{\"document_id\":\"1747\",\"label\":\"1\",\"explanation\":\"The release says the Senate approved legislation by Byrd, including his provision to increase federal support for the Youth ChalleNGe program. It also says Byrd worked with the National Guard Bureau to create the program, directly claiming legislative and policy accomplishments.\"},\"1862\":{\"document_id\":\"1862\",\"label\":\"1\",\"explanation\":\"Baucus and Tester state that they delivered on their promise to secure $12.5 million for specified Butte military projects. This directly claims credit for constituent funding.\"},\"2026\":{\"document_id\":\"2026\",\"label\":\"1\",\"explanation\":\"The bill is described as bipartisan legislation introduced by Leahy and Specter, and the Senate Judiciary Committee passed it. Introducing legislation and claiming its committee advancement are affirmative legislative accomplishments under the codebook.\"},\"2627\":{\"document_id\":\"2627\",\"label\":\"1\",\"explanation\":\"Talent states that the Senate approved his request for $1.5 million for the University of Missouri health-sciences facility. The release repeatedly characterizes him as securing the money, a direct funding credit claim.\"},\"2675\":{\"document_id\":\"2675\",\"label\":\"0\",\"explanation\":\"Dodd and Lieberman describe meeting with BRAC commissioners and making arguments against closing the base, but acknowledge that their work is not done and do not claim that the base was preserved. This is advocacy for future action rather than a claimed result.\"},\"3271\":{\"document_id\":\"3271\",\"label\":\"1\",\"explanation\":\"Crapo is identified as the author of the Financial Services Regulatory Relief Act, which received unanimous Senate passage. This is a direct claim of responsibility for a concrete legislative result.\"},\"3477\":{\"document_id\":\"3477\",\"label\":\"0\",\"explanation\":\"The release announces Senate confirmation of nominees and notes that Cornyn chaired their nominations hearing. It does not assert that Cornyn secured the confirmations or otherwise materially obtained the result; his statement is a policy view and future commitment.\"},\"3501\":{\"document_id\":\"3501\",\"label\":\"0\",\"explanation\":\"Tester expresses disappointment over the Air Force's planned missile elimination and promises to keep fighting for Malmstrom and seek another mission. The release contains no claimed success or concrete result.\"},\"3534\":{\"document_id\":\"3534\",\"label\":\"0\",\"explanation\":\"Domenici credits President Bush for the gasoline-price plan and states his own policy views about energy production. He does not claim responsibility for securing, producing, or advancing a specific governmental result.\"},\"3560\":{\"document_id\":\"3560\",\"label\":\"0\",\"explanation\":\"Pryor and the Arkansas delegation announce HUD grants, but do not say they requested, secured, or helped obtain them. Under the negative clarification, announcing an agency award without asserting the senator's role is not credit-claiming.\"},\"3729\":{\"document_id\":\"3729\",\"label\":\"1\",\"explanation\":\"Grassley notes that Dummermuth was one of the three names he nominated for the U.S. Attorney opening and announces the President's appointment. This links Grassley to materially advancing a specific appointment.\"},\"3744\":{\"document_id\":\"3744\",\"label\":\"1\",\"explanation\":\"Although the new CDC station is announced as a CDC plan, the release also states that CDC previously established an occupational health center in Hawaii at Senator Inouye's request. That is an explicit claim of obtaining agency action and a concrete local benefit.\"},\"3845\":{\"document_id\":\"3845\",\"label\":\"1\",\"explanation\":\"Bayh identifies himself as the lead sponsor of the Vehicle and Fuel Choices for American Security Act and says he has offered the energy plan. Sponsoring and offering specific legislation qualifies as an affirmative policy initiative.\"},\"4531\":{\"document_id\":\"4531\",\"label\":\"1\",\"explanation\":\"Thune and Clinton announce that they introduced legislation to preserve child-care eligibility for children of fallen service members. The codebook expressly includes introducing legislation as credit-claiming.\"}}",
+                "refusal": null,
+                "reasoning": null,
+                "reasoning_details": [
+                  {
+                    "type": "reasoning.encrypted",
+                    "data": "gAAAAABquf0eGti5MCbGS7CbQnyhBaXHDk4vYE9woBZ-JSdGoNCbKYVoIOkZygXraYQ8OBati6e6DwFBF8v0I0i9BbWM8MQ6KjkhUNIbxY1WEt-p0i4udB6maBYC9O59_Txr9J00L2MIDnJP8u9U_PM4kQspjIAKOnw4Gqj5CPSyZxNTVZSqqA0kDRLjv9yybTdVHV9uy45kqm_2MHXs0F036R-BHleoiOBB69gaT39NvPLjt0czPPjPEVLwYJh-HiKB1ZddE-6cv8wedfteXaK1bVbeRRK0WQVzq5XGagAZvinDLwZ5qWDeNIeTLy4Bi2lwgLmT2e1B8a2cTzKjKzmRS4EvYZ36SNdLXSQPgg70lA2-WhtOAHcovlpnOPSUA_htA8kMOAMBFb7sjYNpFjLTKs_awhcR0o4r8sOyGSQP-r1t-1-N3mgkTtEWfigI9bMhVRlcal_pisPaYGd5pPISAjH5vfumTRDRWsR767ru2w7ytkMAVP_SereP5_0994m8uVRnXeS-vGzai9feFElA5zhS1xyqkkVRvQJcyxPJaduHIzXckxPDUKAvoDWIam0fPh9DKY-g1BpjZfzLLfAJoIXGzkZuyAHDEcAMlRAiQBeTfMq2dKqRqeX5XGPNXXtSPZMQno3lCm-SxPRW7iIlyi8fFvksJNlpctbl90ZiHQ3qMffXL3LSV01wq8JrKgdPUHSPWBfKb1efzbOePVQ2wFtFZZSJOxFAqEZqjoX0PsAPGeV76LtMVUAmxzcNT7hRovqE-NykatQqdf660658YLwLa64mL1Jej_FWAhn1EsVnUHrNTsdgkQD6_shQWkos9pcJJwH73l-J4sCta66yWz-ev9K0A9VU1TOl4W_9RO0pJlaWGx73e6A3AuQSpieZTIvFYqIwDsAwhgS0NXvsa_ZoqUKhwm8ertasKBGp-_sqR_PrPOiWLPgbw42vwsF10_nveVp8UB0FQF0jjW9TVqsWKNBcZS74EuQ7nxWRzWSBMnUuDgK6A5KgT_b3HArjizSNn4pHr9zOUVjhW7la0mb0gTKwm4oTb_FOL3Fhy9mJKWn9UvwvBCG654X0q4AalLpo7XcVjzjU7XJUxCC9Lbaj_3iBAq-RZRqliZ_XmW7qBADnSONVJunCTuux5wbsz32Cd6kCMptZys1Y_dnsZ8x_rfsuHqjIgG9uAPYV9sFJ41PS2K-dhZa3DuBZqQEFrnz1RcYyLYm4G1n6kStbkNrestV3YNC1xh7m5WRcS8btHGKtwt9LowjQogBFMUouwPcmoiDJ2k_PGsrRZwEZ_Bx7FdryM_ApPnIhAuX_IlQwjUQdm_G--V9kv3dDlz1-XKhCNfcqjWMIvByuiwu5Ep5SoE7VNqD9iXtCES8HObFFljqOq0gfkqwL3JKn3PM963X6wdEVlEuE8I7ps11Sic-bsvE4JNCZOgB-iTL99Mn8qEjqdU1aMhlIA35BO39weKnFWJFn1fQo3KiS8L5pDyeyzmFP2c4Dq65WrOZvECLTN8xKdkGrQic-H2DqvFdQCv2kZ8ScHwnKLa4W7z0uxUH_AXw5VAFdcKi41APk9_gX_OUlm6uMjiOj1h5kjZdFpVtCi1FrJtCWQro_JfzgD3joZLvebjlntW9wUzYXracTN454qf_RsGFpj-O4bWj217cNE7v8-GjynoXzUcT_HZ9km7F-WwYSpoZujlytn9t4vLJwtfVDEz0dF69GmbYSL_XVIUaLBbtV4Su_IlmboyiagZt5UPIp-BtE1xkTbAhZclONShZQN-bnf0dLm_4KTJk8Uw94WksmiAx_oA0B29Z444Z-WK3UXwPpLTnVt-azO_gJo4Us9G-fdKZa8YOE3KdCmcix9vdPIA1npGmkwcFzqYeXCAby-gB8lpraFm0TLoVso4WBa1HTHEMGDLIxQXxcNdLMoSaoal5MDD8GePhcs5CP8Ri5lab0_5hT3IHZhKjzxnyFqu30E7B_3JvMOxnbXrjDLEg13gS4lcENyeMZhhuX3oRsIBCGOcqeFUDWXT08RHe6GLHDTDPjwe8wdhixTFNXIATd2sF_BjyDG5piuEyZVumDO5Clbww1wKfhA6Tq8SJEUr0zznxxp9yHAkww4QW6OU6YZQkIpUFFoJLwcas1ffUjB81m1qk6P1H8lCCEmjTqtIsrSE5opxmi7GKCRK403VYuElGxyuQfMSAg4bgNVWUfeuyyB4YsSkXa_6LRObYv7t1iwuicz61jYumjFSnM7PwWyvPUBXe2iILvJ4Ra3WPPJP227PNjYHWsGGPiUvWlu3jetRy0jJuXrZXJ1pcBVkbDyet2y5PIxW_I90VsOuYFcX76dP8h6pk-f7I7oobIo-UiA5JnaGIrnDPkE7sL33I5zmnkracBmhXji9w2EMKirKLI-cvpyFYCLhqObXVRbEUg9WQ10HMlhF--61mmob2-ExF8tKH_aAgvBGNezjFRWox0TIWnDtd6927dpcEmMx3tOsvKTkAGXoY-fq9OPoass8z8uwj1sIZkt_ENaKSdvVMAbeAlvKJRZ0YRj5S7SVtjs1Pey8xq9LwN267N6g0M4JMptEwB-KMBJb_50QSECjhwBkpccmwBDU-_MkK31VI7CDdlO3POx06fwr4v2fw8ldmJN6OjSYS53AVQx_r0lsDN5xhle2cEIBCd3yEzMITh-07-lUa46MLKyioVdTDW9_t-KbCE-cl7H9_TdA8sdlCIb76CmVVn9n-wi-qTvl9zJEv6cRb467lzV1uG-Id_RmwiWAQNiuGA05PMTi8GIHpzoMgfa2ITkEMAyDE6KQOk6BUEGQDZlOyeT16bw5Z9o4qWVE6WtU2oUod1AldDaT9YT7hNlcA5HZS90YkXipt2tWP7o_zENt-RVIXHmNi_Jjjhltvcr8CLIB4YHj5UaMz1sj28ZrqFvBRZmk9T1TWXx7DgbMJgF-qloqyNonj0O4GU8DNaOnKZrwppyYaN29IAGCIq8h-ZxN9BFL9Q6V1NXR0GI742wSWeZ_hlnaMhC4GKh5SLMaAQZL-6I9KmuBIh9mlblsQgJDEZf3xSuB_RruT5tdq-BaXSgqrZLtNg4QYSz771c1ejqMC9sz_wJcLMG24v9L4KeIUBm_3_Afg_Llnb5dm-JqfRBEhiP466O3one8sijM5HUS1l2Bz_KASr3RznyAkvzeElYa1OvNrergf_O519uZc1iQl7kBwf0pKRPQ3CH9Jz10fI9KEMML_uN05G1kLouQiXPCWLkuBAIh153T6NRVlTGM-8gw8spWx8N3Gtp4oFQnOh8fLKLPCH2ueZCjqUYFUIeqzEOtMXyvXXpjMujejKSvFV2mCFwU2t3C1UUNTvTsQyK-w7-MEs-ZBwIRK1gqYPJtg8Gc2aQyTkJJNBYFi9pGuMzQbd-IljWUwZaLbWvoVgrieH6rkXNtVJcUglpJfFa2t6osw1Pfq49SVfWhk6U92_H7QrjBdQRHHW3zIICfukyQ==",
+                    "id": "rs_05fd30529776845d016ab9fd13d5cc87d19b032284dad45ec3",
+                    "format": "openai-responses-v1",
+                    "index": 0
+                  }
+                ]
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "completed",
+              "logprobs": null
+            }
+          ],
+          "service_tier": "default",
+          "usage": {
+            "prompt_tokens": 15217,
+            "completion_tokens": 1513,
+            "total_tokens": 16730,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 343,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "OpenAI"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch_req_6ab9fdfad6a08190b78f0fe0f2172b3b",
+      "custom_id": "request-00000004",
+      "response": {
+        "status_code": 200,
+        "request_id": "567dcbc5-1fb7-4f2d-93d8-edecfbb72ca6",
+        "body": {
+          "model": "openai/gpt-5.6-terra",
+          "id": "gen-batch-1790573839-9fc136d55b6a773b950f",
+          "created": 1790573843,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"42\":{\"document_id\":\"42\",\"label\":\"1\",\"explanation\":\"Lott is part of an announced agreement that resulted in specific FEMA-strengthening provisions being included in the Collins-Lieberman legislation. The release also says his suggestions improved the bill, linking him to a concrete legislative result.\"},\"714\":{\"document_id\":\"714\",\"label\":\"1\",\"explanation\":\"The senator states, “I helped secure” more than $3 billion for ICE domestic enforcement and funding for 250 additional investigators. This is an explicit claim of helping obtain concrete appropriations.\"},\"794\":{\"document_id\":\"794\",\"label\":\"1\",\"explanation\":\"Bond says he co-authored the federal highway bill and that it is providing Missouri with $1 billion in new money and more than $4 billion total. This links him to a specific legislative and funding benefit.\"},\"805\":{\"document_id\":\"805\",\"label\":\"0\",\"explanation\":\"Shelby announces a DHS/FEMA grant to the Homewood Fire Department but does not state that he secured, requested, or otherwise helped obtain the award. Under the negative clarification, an agency-award announcement alone is not credit-claiming.\"},\"1257\":{\"document_id\":\"1257\",\"label\":\"1\",\"explanation\":\"In addition to announcing the Parma grant, DeWine says he wrote and passed the FIRE Act, helped secure approximately $650 million for it, and passed an updated version. These are explicit claims of producing and funding the program that generated the benefit.\"},\"1325\":{\"document_id\":\"1325\",\"label\":\"0\",\"explanation\":\"Dole expresses views and criticism regarding judicial nominations and says she would support a possible future procedural action. She does not claim responsibility for securing or producing a concrete result.\"},\"1749\":{\"document_id\":\"1749\",\"label\":\"0\",\"explanation\":\"Hutchison says she signed on as an original cosponsor and will work to pass the bill. The negative clarification excludes cosponsorships and requests for future action described solely as positions, absent a claimed achievement.\"},\"1897\":{\"document_id\":\"1897\",\"label\":\"0\",\"explanation\":\"Martinez states his position on pending offshore-drilling legislation, including conditional support and a possible filibuster. This is a policy view and contemplated future action, not a claim of obtaining a result.\"},\"1927\":{\"document_id\":\"1927\",\"label\":\"1\",\"explanation\":\"Snowe announces that $8.1 million was included in a passed appropriations bill and explicitly says the funding was requested by her and Senator Collins. That is a direct claim of helping obtain a specific funding benefit.\"},\"2335\":{\"document_id\":\"2335\",\"label\":\"1\",\"explanation\":\"Bayh says his Responsible Fatherhood Act had parts signed into law and describes prior governmental actions he took as governor, including increasing child-support collections. These are claims of affirmative policy accomplishments, beyond the ceremonial essay invitation.\"},\"2869\":{\"document_id\":\"2869\",\"label\":\"0\",\"explanation\":\"Jeffords explains why he voted for the Kerry and Levin amendments. The codebook specifically excludes votes described solely as positions, and he does not claim to have secured or produced a result.\"},\"3252\":{\"document_id\":\"3252\",\"label\":\"1\",\"explanation\":\"Nelson states that his amendment passed the Senate by a bipartisan vote and describes its concrete restriction on USDA spending. This is an explicit claim that his legislative initiative achieved a tangible Senate result.\"},\"4022\":{\"document_id\":\"4022\",\"label\":\"1\",\"explanation\":\"Kennedy explicitly says, “Today I am introducing legislation to extend Medicare to all Americans.” The clarification provides that introducing legislation is credit-claiming because it claims an affirmative policy initiative.\"},\"4122\":{\"document_id\":\"4122\",\"label\":\"1\",\"explanation\":\"Coleman and Levin present findings from a GAO study requested by their subcommittee and claim that, due to the Subcommittee’s oversight, collections from delinquent contractors rose substantially. This credits their joint oversight with concrete recovered taxpayer funds.\"},\"4184\":{\"document_id\":\"4184\",\"label\":\"0\",\"explanation\":\"Kyl is described as co-sponsoring an amendment for additional Border Patrol positions. Although the amendment seeks a concrete benefit, the release describes his role as cosponsorship and does not claim that the proposal passed or that he secured the funding; cosponsorship alone is excluded.\"},\"4207\":{\"document_id\":\"4207\",\"label\":\"1\",\"explanation\":\"Cornyn says he added an amendment to an appropriations bill requiring an IBWC report to Congress on the levees’ importance. This is a claim of having advanced a specific legislative policy action, even though the main letter also requests future DHS consideration.\"},\"4295\":{\"document_id\":\"4295\",\"label\":\"1\",\"explanation\":\"Murkowski introduces legislation to change Alaska’s Medicaid formula and states that she previously helped win a two-year change that brought Alaska an additional $34.11 million. Both are affirmative policy and funding claims.\"},\"4508\":{\"document_id\":\"4508\",\"label\":\"1\",\"explanation\":\"The release directly connects FEMA’s movement of 300 travel trailers and 100 mobile homes to Lott’s appeal the prior day to the President. This presents him as helping obtain a concrete disaster-relief benefit.\"},\"4677\":{\"document_id\":\"4677\",\"label\":\"0\",\"explanation\":\"Hutchison asks questions at a hearing, receives assurances, requests a future status report, and expresses support for the Army budget request. She does not claim that she secured Fort Hood funding, personnel, or another concrete outcome.\"},\"4774\":{\"document_id\":\"4774\",\"label\":\"1\",\"explanation\":\"Bayh states that the Senate unanimously approved an amendment offered by him and Durbin to address the Patriot Penalty. This claims credit for a specific legislative result, notwithstanding his subsequent request that conferees retain it.\"}}",
+                "refusal": null,
+                "reasoning": null,
+                "reasoning_details": [
+                  {
+                    "type": "reasoning.encrypted",
+                    "data": "gAAAAABquf0g0K5r5hHyZ3AKQ7qQscPG3vSSQ2rcBH9HT3TunNsfkXEW9aRfstDxOoVg_-RNx-x7tQB_ixRfdikOi-fI7yzXjJDLtY2G2aAWg-huIkBj6oZ0RlciKd5Gkn5Smbg2Z7CxejuzvIF6EiI6BPi3EaV7-XMPjh94mHQfKTNMa0WfZA4Aqb5f7xCAESKuxPWG-sA0LwAKBgjwoPVWsq1uiNRLT6ly91q-NXbpsxNETLpprLxDjBynsMisjjkhd0AsG5l36SO2vEXZogojvpA4g8GUCbF1xV4pT7bqzwz19r3M5wuFRmn4Qg4PjbSpjtYMnMhS56wXXLIvbnuErfF-V6Q7G03kSS-bA0Z7olHOcnvxGWd7R2iQuie2DU7Naolcgbl18raOvU86Ys4R0QVogpjbhYNotEzRwbdPF5PQXTF3AUtCdxsFVboyTkwVSzkluTVE8CgzINI7n1Q9fIQYg2DSORIYEmFo_3aRvIIralgmFXltuMqHpeYUfGNVq95F6P-TfTHiw2K-pCeCKnlNMAn4PHgxltoEvnoVcq0OjzB8mTsKCG2J0Svfx3Ow9fIdOt4vQYiWrbgaYtd9Rps5_fi7oGvT_IyjXT1WJeNDVt6rFYpbG_l285n209jXQYqSMI3tQfxi6E__iJbbahGPdCDgKrLAgW8wP80f4JNvDWOeAjp9DBBxZVwzlflQaMLpgCKhf_TxKlWwu0x8vEWpjEhlpG2gX2Ms3JOIRdnt1L3V8jur_DRJzUMaOnzglnjSnHAwopL5ddjzqQDl-3uKPV0JN-RQZZUTBEt-DkGlS_5iX9DZB1uEW5-Xn5OFSqCHO0r8697ioV12GW817YYpMi2lWMNwhukT-UUqD9cjWyvnCySjt6wQnbQNdcyfkQDyTLu771dxuIajJH32DjqC5QTOOeE-ndyDLvCXMJuADUyzjOzCfz8Bi5OoNIWA4NFD6WIq_lOhuWJLOA7fOBxNmeNaFj_BM814cCGuWJ8bcQrPRY5NO6q8cHltikHs3CrtlUTrD4ZuQ0ZJSPbT4tNdiQr6U1PrAEpNaHLZEHv3qChu_vSWj9S6AcAJacJZ7N8hR2egkEevizPXY2x6IiLYPnfaGpn0VMiK38vRk_0XoSPQL-p5idiFdUtjfHDIObSu7SQBdY3xPXo5qxeZpjA3kWaIXKhDKTDn-_CppkP6Wt6tpw-HMSWMcx5osbD2mPN-Xi2eNDVyWSbG0-Zv0iG056dXydIvqgFNRsaIkhT2KBzUlpawY4NtJMlLFXxQBiE-u_uRoPEERtgHCP-DTz2FfH0DEHnUSNP9qp1Ci_Q3-7U733VD0ulactVjfiJGhgtvJToYrIh3zSw2G7jweDgL3o0F93kRf1V77BwrKs2_Kzv9R5zU0dCvnCf8nzkThFP7c0wIlLgcqAOaVNxJ-xmfYSw8zxFSdxj1AMx6HDKICPReApq1aVb1CSyRu0UzWTMWUVTQMz3s4OCMog3kB224fTVFQ8pr-QQPf4oIIP7hJIi3vsBKdZkeCShzUfo896EaVS6HYzjE0nQpECz3Fsi3wucptmYuafF4rGxg4HLKl5nELlIu37JjDH5ywWWMgn9xpuqaokhb3AqBUy794Zki2ooqUaJlovGllIlJqRjDUQPs9Y42a4ZWTBxSPgiKhtTIP1iy3djJndj2VDzLb0Rdv_CJzwYC5jI2_1HT0qnVIyQSL4os5kkPD3U_7k6lxZwaj9PW-QYUEb2dfRM2MysbBHt283Jwufng9ASOfYfx2VFe7wh60ZtGzqgFhtqx4Utyb8c8RgJp3HhPp-9wP8KiivQhqD6uipSbIJYall1O2LXJB0QaVuweflDZ1uUNYNPL4VODKQX4pzge2so9DU0bKmoiGORXCHo0lMfxH74tmlAKXJoBZydpVW-mBijg6_I71-IdVUkv7bOIGnlcXk4NXcrP5_gB_gh5CFPkbgdhA9TFYTGW8uVPmkZzEl4mA9rF0975uZ7Q3oeQQXBdamz3C_l4CRCPTSXGZgWLZLsE4yCRnosU3zEwLdiPmLaD8BdF7ycqOACK7uCc8mrkOy8rKleslaMcwX-5UNyFgL6iRicJBXybtkribRbyRJHCnnXBHEBsChyIwohaSBpaeO5bLSOrThb_tGrokYpFd3ucghkZfhm_sK0Ck3nVJpb3I_8yOYw623EVb7hGMqGeXq2mF40q-aJIxfMIIl-Cv_DOyNznUJRnhGnGv-mvvhwZMpBCl898bUzcVsGUDxBAjhdQvKUyoE2gv7PAnNQKxEduUmQNx8RHjDOaoCpr1moxpsXUoXbdQMJpOBjmI_Lv_0A_logwtYFn7phpSus3pNvPHpUzQ89RqWHwhLVdu29EO6e6TBCybXDM2lxcx0eceZafmbpwLn6Pljn7eRTRsm5GYnsoXwjqF0C_CyO8Dg_i1pnT9u7gzdt9DOftm8NajiCq5Np7zq_mspAWuWGSbVlbaibUYqeX8nkmQotNFMX9ayVz3kvzvjj0nb81htOEZAo_3d5I8OAYTHTZ4_q8nZfFrX2auJsreEKHGIDfSebaAq0TcLQto6a6JCOXFSiU7r7OT_IKzWgnS1sq_K6v6p1AP5BRV5lnmb8yWkcFGcpIteQQy3b2GJglzEa0jRAGtqhS_a5qekKlljhw-RIAzKVoRoQcGGGCCsMXO94J7z1JKnmuAljDM5ADL9sU30MXUkjBlAxYlRi3o1mqtVZpq38PSb0FyHqUdFBT_TOf-2lVxWGgOiMrePnNobe9hK02TwKqetPEm9Hk4H7VmPK3FLEEf6Q9N3uO4Q0n3hndm6N299NZAvgIRPPpHaykOwsgW8-KNrv1Oeyn0S-ej3VuyDP_VrcLhMp7INNQQ9z6HPRrw5UQowKLesj6kMllGMwCVC-AjEXCud1SPtAynuFKU_12-prHRmFA8d468HfjJXF9I2n8VVBQj2oLhyH5pEIp8qa0N6c65QBdRYV2EjgrFcxVXzwqMLxV03-kW_YIWBSjev2JbM9sFCaLQ8sGLCOupxn94J222c9l9m8sTEvVaAopyPvbPT2qPb3T9S68yfbPoTPs01KljgOb27lkXTi-XhIyyBe6M_fSYgtmk7YSKeKe_O8hembVhLMsbeV3bqQ0J-Ooavkctz5w49-jLaERHhnKsY8kMxQtGSJBH7riKTqvyP4vY2NPvdXnzKtK11CYW0f9MdZFcsR6Zh_XI9CEhvRbgq1DIT-ilaxYZl1vDvG_lSPaDrr2P1rKAqBzpgBiY6oe7TMs5gX9hTj2-EN6QhDS8xqwpXo3N3DuaMb_99PP53Zlz-eMWgoulT_LM_SHsiMvgTTcnX_YXvAmtJLxbTqPD9ynLcjv6eMBej-Hu8rRcx_r5iC3PsCH73tpnRVgwm-vs9TCZ3gtclWypwWZh7yDE0hTAOtXdlt-2L5nSZnwOWnZfheGZKwfNVGAa0Rm7Z_zp57uhAy_8zuXByDJr-Vtdd6vB2uQWmbXBmkYZir4oMeUzZJR8FKFJAbp3-B7zUU9puW9dk8yRj5nRnGyWMfkQhz0ZVwmQUySld-jvPqbvutUXeeJlC2ldWaLemEaUjuBVcxlWPnMNzkyLkrGXR4CRBkH8QhyNPFcUMa2Z2smYYiDGNPO8_UlvqoYkPzfLqLDZU2B8PFIEEW47J4LnYHF4xNV5NfUoMf6kD7tjiTJWceOyTxEs4qiMMKt63_TEc6JwbGT3zFCJsY8M4cMH_IxnkFxCNR7INi0G4GP8jWJ9OtzrGqU1Lf6TL2WJF6m2rMQeKmLrJEALHJq0XPYeTIXoWT2IVti3-JULqLPAKIAipCQheRYOfZZQN5cHzwQvYnzfEQtht5tfjW4wJ8WHob30TBAxuOmtwAGy0MsN3wA7Hkbmc4=",
+                    "id": "rs_0ba73d4587e039ac016ab9fd13ebc487d19b927d2894626fce",
+                    "format": "openai-responses-v1",
+                    "index": 0
+                  }
+                ]
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "completed",
+              "logprobs": null
+            }
+          ],
+          "service_tier": "default",
+          "usage": {
+            "prompt_tokens": 17709,
+            "completion_tokens": 1595,
+            "total_tokens": 19304,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 391,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "OpenAI"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch_req_6ab9fdfad46c8190812bdd1b06c1a8b3",
+      "custom_id": "request-00000005",
+      "response": {
+        "status_code": 200,
+        "request_id": "c4e1bafb-b719-4591-9d91-1cf5fd7ef804",
+        "body": {
+          "model": "openai/gpt-5.6-terra",
+          "id": "gen-batch-1790573839-a21b7316ae38b23767d4",
+          "created": 1790573843,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"157\":{\"document_id\":\"157\",\"label\":\"0\",\"explanation\":\"This is only a brief title/notice about chairing a Small Business Committee markup. It does not describe any concrete result secured or materially advanced by the senator.\"},\"189\":{\"document_id\":\"189\",\"label\":\"0\",\"explanation\":\"Leahy advocates for cameras in federal courtrooms and says he has cosponsored related bills. Under the negative clarification, policy views and cosponsorships described solely as positions are not credit-claiming.\"},\"744\":{\"document_id\":\"744\",\"label\":\"0\",\"explanation\":\"Allard requests that the Air Force issue religious-expression guidelines and expresses hope that draft guidelines will be ready. This is a request for future action, not a claimed achievement.\"},\"873\":{\"document_id\":\"873\",\"label\":\"1\",\"explanation\":\"Landrieu links the Medicare penalty waiver to her letter and urgent inquiries, saying the agency recognized the inconsistency that the delegation brought to its attention. This claims a role in obtaining a concrete agency action benefiting hurricane-affected seniors.\"},\"964\":{\"document_id\":\"964\",\"label\":\"0\",\"explanation\":\"The release headline states that Landrieu and Kerry call for local contracts and write the SBA to speed verification. It describes requests for future action without claiming that a result was obtained.\"},\"1043\":{\"document_id\":\"1043\",\"label\":\"1\",\"explanation\":\"DeWine claims that he wrote and passed the FIRE Act, helped secure its funding, and that the local grant is awarded through that program. These are direct claims of producing and funding a tangible governmental benefit.\"},\"1139\":{\"document_id\":\"1139\",\"label\":\"0\",\"explanation\":\"Coleman offers condolences following Rep. Norwood's death and expresses hope that Congress will act in the future. The release does not claim a concrete accomplishment.\"},\"1610\":{\"document_id\":\"1610\",\"label\":\"1\",\"explanation\":\"Reid presents himself as part of the bipartisan Senate effort that produced and sent CHIP legislation to the President, a concrete legislative result that would cover additional children. The collective claim counts because he is part of the group taking credit.\"},\"1736\":{\"document_id\":\"1736\",\"label\":\"0\",\"explanation\":\"Domenici reports requesting an expedited hearing and approval for a bill he cosponsored, as well as asking for emergency aid. These are requests for future action and cosponsorship, with no claimed result secured.\"},\"2368\":{\"document_id\":\"2368\",\"label\":\"0\",\"explanation\":\"Craig announces the VA decision to expand services and thanks agency officials for hearing his concerns. He does not explicitly say he secured, requested successfully, or otherwise obtained the expansion, so this is an agency-decision announcement without a sufficient credit claim.\"},\"2382\":{\"document_id\":\"2382\",\"label\":\"1\",\"explanation\":\"Landrieu and Coleman explicitly introduced the CARES Act, which is an affirmative policy initiative under the clarification. The release also says Landrieu's intervention with DHS ensured that an Iraqi child could come to the United States for treatment.\"},\"2697\":{\"document_id\":\"2697\",\"label\":\"1\",\"explanation\":\"Inouye states that after emergency funding was denied, he \\\"went looking and found another federal funding source\\\" for $225,000 to control the coqui frog population. This directly claims responsibility for securing concrete federal funding.\"},\"2827\":{\"document_id\":\"2827\",\"label\":\"0\",\"explanation\":\"Lieberman's op-ed argues for continued military engagement in Iraq and praises the President's stance. It expresses policy views and does not claim that the senator secured or produced a specific governmental result.\"},\"2895\":{\"document_id\":\"2895\",\"label\":\"1\",\"explanation\":\"Although McCaskill discusses a Senate vote, the release also states that the bill contains McCaskill's amendment providing whistleblower and collective-bargaining rights for airport screeners. Identifying a concrete included provision as her amendment is a claim of materially advancing a policy result.\"},\"3038\":{\"document_id\":\"3038\",\"label\":\"0\",\"explanation\":\"Snowe supports Vice Admiral Allen's nomination and praises his qualifications and past performance. She does not claim responsibility for securing the nomination, confirmation, or another concrete result.\"},\"3143\":{\"document_id\":\"3143\",\"label\":\"1\",\"explanation\":\"Graham says he worked to include additional grant programs benefiting South Carolina research and training, and identifies a Graham-backed textile economic-adjustment provision in the bill. These are claims of advancing concrete legislative benefits.\"},\"3149\":{\"document_id\":\"3149\",\"label\":\"1\",\"explanation\":\"The budget includes an affordable-housing-fund provision specifically described as championed by Reed. This links Reed to a tangible provision included in a passed Senate budget resolution.\"},\"3817\":{\"document_id\":\"3817\",\"label\":\"0\",\"explanation\":\"Sessions praises TVA's decision to proceed with a nuclear-license application and says use of Bellefonte has been a priority of his. He does not claim that he secured or caused TVA's decision, so this is not credit-claiming.\"},\"4328\":{\"document_id\":\"4328\",\"label\":\"0\",\"explanation\":\"Alexander and Corker announce the Transportation Department's decision on air service and note that they wrote a letter supporting Jackson's application. The release does not assert that their letter obtained or secured the decision; it primarily announces an agency decision.\"},\"4403\":{\"document_id\":\"4403\",\"label\":\"1\",\"explanation\":\"Domenici is described as joining fellow caucus members to introduce the R-HoPE Act, which is an affirmative legislative initiative. The release further says the bill includes provisions he first authored and offered as legislation, linking him to concrete policy provisions.\"}}",
+                "refusal": null,
+                "reasoning": "**Evaluating legislative language**\n\nI’m thinking about the negative votes and how they focus on enrollment passage language for concrete legislative results. It seems like there’s no clear role for me here, just focusing on presentation. I'm wondering if general statements about broad congressional action could be counted as credit claiming? The reference to a bill as something “we are sending” suggests a need for credit. Oh, and I definitely need to check for the exact JSON schema object keys.",
+                "reasoning_details": [
+                  {
+                    "type": "reasoning.summary",
+                    "summary": "**Evaluating legislative language**\n\nI’m thinking about the negative votes and how they focus on enrollment passage language for concrete legislative results. It seems like there’s no clear role for me here, just focusing on presentation. I'm wondering if general statements about broad congressional action could be counted as credit claiming? The reference to a bill as something “we are sending” suggests a need for credit. Oh, and I definitely need to check for the exact JSON schema object keys.",
+                    "format": "openai-responses-v1",
+                    "index": 0
+                  },
+                  {
+                    "type": "reasoning.encrypted",
+                    "data": "gAAAAABquf0g6gnWF2dcI60Lb7PtnQ1brKGN7YYSCeHP96nmnPiztq2Cwsuyk-I2RhP-Hn2OZN-S2l8Kv7wMy8ulaqIF5LQG5HRVoT6sOXcdZ2JjL5R9D3QcVTe2NRnRDCjiefj3Q4iXCIoRhaLkj82bH-Ht8zYwmp1etV6nP4yXWd0GMZ6R5fdV42xrkUICYDX4PJDVcYzhNLlUabwKXZkiQb7L62ujj9TrXRCso-rqKwHUuNL2WlHXQyma5vp0uGbYC4bfr5DOHvG3_vpL_zG14kLmHQ7AYswkIoNcIcB-mU2JIAxoFGHhd5x0hVDK3lw0TY0dsoLUn5KP10a0ctH3qZ5M0w_Tw_5mo8DKdtXfiaTyUwZ8Ye8BZSLk_qwflYdjnIrTLGVHypwdf5pjL4_gV0Jlr5xx8-07RfrDWsqEoKE6kntW8Pyqc2LB2W9wxfnv8guZv9340PMvufCv_U98BBfHBw-d_bPOPWC45zVRjfylHev1IFEpRJADAWG8uF2YtsGwRPhobKZmpZxB2D7BKiLmi4Ia8rnS3VfHFkrmiM1c7P8eF1X6weQgZ9NfWB_Jl2XL45_REe4bhPQgZ1ME7BoeQVipyYPc2XFYicTYZpV6sCM2JPZPHKmNGWREpzl5mNhwgsaEMxGQHP6XLve4DD-lEw-gqUX-ImrZkDRUqrl6g0v5sLWOfqExgFr1bXD8eWQLnaG-bPiGdFU9mytMM3Ewc3j4hDcyi9yIgn4lxV7mzwXalkzQOBL2BjsZTl_5aTrsZhHdpdo7odnht1B3jXOV9bBj85bmoLuvGsc3Lh3oIaSuqEulK2DFt0w3YOfZzENB2JW-Q9fMX5PZwF5EAQCd-ccBxweR7Mq0jLCFm0WJoABrsT6ShN9vFwPZwsoXyaV2jIwLdy_2PR14bunxb5Sovo2W64Vc4kve_wqBH-wfBkRB1ejfeo9k7ajZfex3z6IRiEEraESZSbbEOL9aHgeTRXT3kNVbwfzkcNdGxP5IbwEazFga_hGDqVj9rwzQhoax4zNq7eK21CXarqVbu1u1QIVSH7RDu2o9lYjdUGfpyB9F6LFh5FC0754cp6MqdoPsY_TYGlui1JfD0GNtCmxE55FcEunkNGAoH_zdxuhUvY3LgEpVhEd2EZvkN9x5Qf7WbP2gLt0kXj6umfe4sM2FT9rGPTwy_FUDubAlqhloOMCA4vQB2nplXs6ND8OFOmFs_7ddzwJTiDIVqENFxpcA2AjXQZalFzx6E6ZXYakP6I0OyYrss85Wbheyp7MAGnad30adQC10ILjQl2xAnVa1Nt51R-s6NP0ItJ95kTfFAxK7boOaEbeM1Uj6yYL39gEN0o9tWeIP_9BpqxM7gTvz61SAWyo6QsdF8vfpI8rTk4CwfBBqCCJjlyqtjIYjC7pC64DWqmqZbrso65bF4gV5ObRXOJ5dXPYzDurXyxHjT4AdhMb3iaPpvkq4kbam0U7cE1wlOFKQ-hdiQQbUQiFm3vR2u1vVpMZJph_BZd09CN26kABh1TE0aSjfs8b-KgceiCWKFjCfR54uRgdMDQO4TK8B7Z5BcjlecBVNT6Hozq5caaLHdLIYa3Yt4QowvFWgFRk1KkDEEOpnGd98fChdPrl6u6NFw-2wAJDANXs0JdRGxY8iQI4hX-hPIBQyfXZejnOjF3Ma3Faa44Bpth5cMd5m3MMg1SRiqDIDDcjnRVkMZ7FchXPZX54kOIYirEjBWLJ2R7qPfvoF2keRjJp-dnLQe2NB8edvVB3D3eF7d4tP1Vcj6_nTsA7ZutOZXyPJJrDV0Si_Te77ICvxfban0LsDXF2o6wl2tPe7-KDprR4sU71MViOIG0zPINzH7xyBHvrlXNRZqex_HrJoBRc5eWHmtpHNHzD1TlpYa-uTqQTtxrWzvhT0bgJUrccWNIHRFYcjzrkdxPSKgjtPHAVlz0gxjQl04TR5L0NLa1QshNMurEGKPR98Rxb1H7II5gXnCbEqX2uPJ8xOHJXAgIfOrnlDl1AOuX7ZovewaSI-rMenefOS6VFwbh-eHov1DHrpPIiTUZ2D0U680NMdiZV-0TD25QHK8tudOKWjOsrgTy6ZSybqhubtuHiKp4zjMKc0Q3_PLi8AVZ7vT8zNHUcLEBEeDj4XHy632MQANoKa83OJ-aIVqVlkpLsXn9PjMZcYSrUjwscDwZDefCjzk55vNwTxV6HBxQ09Xogb4wtuyHXYVga7Q6XJHrvnRj8lt8AQgj1Qzo7nOgFrsC9QFmVmZOLlYLQ8tLe50lbiekOKa3lYK-VmNBXKaYv-NXcKeRItVfYOi2Y07gE9KsocIClUww4pWmjX_G60rlnWZFHTqVtV3-tVGq3Axs2t8U1FZxXsR32cvdQE45SWNh6pqKLBYxg9YVgu3UJr9Vls8RmW87toaaMa_m8UTluXe86bWvn3b-O6nYOkd09bEErNVhz8xDtNQh-cqTCIK3ekr3OxRnaaSVUdb_HNvRA2UDpdQqgi3nHfRZ6CLY3he089w3d0MBL_H90mKvsIirhIj4w8vRlY5aTkT_BYUB9dDoPQX4GaNYVB9HRyL5lhLmpHktYohum4Q58JKlpe_DS64-zynChpuaimW82po9_YZJowMXKFc32EHS7CGIBDcXpF43jJnMAzc9-Twc9r664Pv57QKeugsv1kZTnIBXNzkpilan49nvdLkjfcOKk3vwC2iczg80iShEecHOEYguX9cTU5esUlTdcTvxm0T5UyE-BJvoKo2T_xYhRIi1jCHeM5-lqRPUBDRZTZzxw2o59GnV5tA40RNG3sjop3V8iva6lHJnZ5uanfzlsONOSdC9wpcO9KoKIXEEPtsJvw68mr1s7h_pt8nt3cHZkxEFhUwuCa8nw8yc98AHQRx4jxHj65g11dAK4DFoDhYaHSv_fVPl68vyoKRq4kBNrHEOeo35e4bFxT5g2PZ7f8qEHzgmXWLqkhyqXUtV5tKSWqCkNumA8LnIOt1tqI7H2hvdtOrLkSsmng0tBCjUMd6dVTJNHVA6s8uj1VNIsSmJUiaDaOB1n92O84VzbBX8JTTUh-tp7q8rHzi65A_Z_iAP_Y8nFP6m3Lp7F117H0HBYVdwXBp_TyLwlqX9YN9DbzszOmerREQxfZpwzkCFEKKfY_khHpLVO7PjLDeqp_62ODaK3qki8e47-nySppTfsUXr3LDo4MAliqWswmoQmMAZ5toc7lHx0Rp_zQfaxJPAEWoLlHSJ_tKH8jCHVzzzBHCUTC6BvagdM0YPttCU3l6z76dKkBIuwEmuKSs-21hdHPDJ4yxer_fyKVF2oBO2ozOKWQgNYYwAjoSoDgMHKt55MxzZAbVuicVljYgK7tvhhIsK9urbmiqW12ZIqPm-VRgXxRSAmJKziWgG9Dw0_xgoMkuh18Led75XhmJTGuypiJ_lquawewf2z_-x6lf39Ru-tmDfX2gfvuN7BLhGeJvQTacG34wV_crCiAlu4RJ5KLjwIYQ4G3IjPMfmSe-J_LXsarLYTGmhDSaUJCQBeLVQzLcrRJNtFJ-KaG6ZPqm4PHatjnzIiJiUzVQyRwyNHoSZVkUAX-Afbt6K0MIXuXYHvgxxczqQAu3F8hYtNNTKNZRnqGck1O_3wcVa5R2Tq5ze6DOB-TqIv7vu0w1Gt7K6lYA6NInMzmcz7MQC3w5m2yHE-szenczGwxhZw-tR3ECqbW2Inbw1fYyXiuvHkP6tZ5qx0iqwL18bGehW9cGJH0L5_8qeyAjOP-2XbJw4aW9eydATNF0kA16vOC5NJmWHPSjR0d5IsgGpNoDho6vbl0uB1Cj9-aX4in2Jtc4MyW1l6Z4v1zLdb4KjF97fQs1NSRay1iBqVmTdGLgsw3rl8z_kZfZ-APEZv0mIV84RFMYvhPOXdyxr8SOm-uLSFkLwoSQa-R4tSr8_GmGZ7_rQWKCyqn4mflwuBBGjN32AcD07k1gD5Qb3uONaEhGcxr52LPfgYYsUF1E4u9TJ1Tf3aXBNMXsTMEWJxHz2c6PrpJItC7RP7y21gWGOoeGrLyGQ2oPThJ8HuE9pXiIColj5DrafBT_-N5870Hazd01tkENgP-h9GBF8c8EssswCA8fqP_QZheo-oChLsw8ZwVgQRQwUHiMdp3Te8TL9Mfns-nOW7k_vvHe2LkAwiNIAkPpplPHrrvaWmp0SoUYxlh7_ye0VumYwCPtFfe-jEj0aQvTv49OkIfu0kQYFMlzRlf-N50SMlHugMRYwfxU9620ScHBeFEuCRrmmm6oTMrnTDl8Cb_770NO_JTY2QmfEk-VYvwdlbnqbFif-yBnBTKj3Sc26OVnedSFMEzLvWMi8TTGeQ1nT-R5ugDSRHiMPEhVHNpWMq_k4YH_Go_Z8R4nmEdnt6bjF3PD3d2Djk5L_yF9r5BbHmUzt3sEEez0I7al_57NJp3nLGG0bZcDgLHO9gp5DT4QQJmzJQ2vbA=",
+                    "id": "rs_0baa55ccb1b164f7016ab9fd140eec87d18d6c49234944493e",
+                    "format": "openai-responses-v1",
+                    "index": 1
+                  }
+                ]
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "completed",
+              "logprobs": null
+            }
+          ],
+          "service_tier": "default",
+          "usage": {
+            "prompt_tokens": 17439,
+            "completion_tokens": 1636,
+            "total_tokens": 19075,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 460,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "OpenAI"
+        }
+      },
+      "error": null
+    }
+  ]
+}

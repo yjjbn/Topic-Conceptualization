@@ -1,0 +1,165 @@
+[
+  {
+    "run": 3,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 4,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 5,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 6,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 7,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-7-request-2",
+        "error": "Missing, duplicate, or unexpected document IDs."
+      }
+    ]
+  },
+  {
+    "run": 8,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 9,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 10,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 11,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-11-request-1",
+        "error": "Missing, duplicate, or unexpected document IDs."
+      },
+      {
+        "custom_id": "run-11-request-3",
+        "error": "1 validation error for Classifications\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='json\\n{\\n  \"classificati...oded 0.\"\\n    }\\n  ]\\n}', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+      }
+    ]
+  },
+  {
+    "run": 12,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 13,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 14,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 15,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 16,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 17,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 18,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 19,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 20,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 21,
+    "status": "success",
+    "errors": []
+  },
+  {
+    "run": 22,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-22-request-4",
+        "error": "(\"Connection broken: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)\", ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+      }
+    ]
+  },
+  {
+    "run": 23,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-23-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-23-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-23-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-23-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 24,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-24-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-24-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-24-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-24-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  }
+]

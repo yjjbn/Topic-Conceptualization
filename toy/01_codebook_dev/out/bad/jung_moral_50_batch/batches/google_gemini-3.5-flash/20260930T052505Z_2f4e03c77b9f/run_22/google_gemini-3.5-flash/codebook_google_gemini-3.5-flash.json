@@ -1,0 +1,33 @@
+{
+  "definition": "\"Moral rhetoric\" refers to the use of language that appeals directly to moral values, ethical principles, rights, duties, justice, compassion, fairness, or human dignity. It establishes normative standards of what is right, wrong, just, or honorable, rather than relying on technical, scientific, administrative, or pragmatic justifications.",
+  "clarification": "To classify a text under \"moral rhetoric\" (1), it must contain language that fits at least one of these criteria:\n- Uses explicit virtue-based or value-laden terminology (e.g., respect, dignity, justice, fairness, equality, freedom, courage, patriotism, responsibility).\n- Frames policy or political action around a moral duty, ethical obligation, or a humanitarian imperative (e.g., caring for the vulnerable, ending repression, or combating systemic unfairness/discrimination).\n- Evaluates actions, policies, or groups in explicitly moral/normative terms (e.g., labeling an action as \"justified\", \"unjust\", \"deserved\", or \"repressive\").",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "This text directly appeals to moral standards by explicitly naming \"respect\" as a core value."
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts a normative, ethical claim regarding the inherent dignity, worth, and purpose of vulnerable human beings."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses humanitarian and compassionate moral framing to describe the duty to provide \"comfort and aid\" to \"suffering\" and \"persecuted\" people."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text under \"moral rhetoric\" (0) if:\n- It focuses purely on administrative, procedural, or organizational details, even when dealing with social services (e.g., education, health, environmental protection).\n- It frames issues or outcomes purely in terms of economic efficiency, fiscal management, value-for-money, growth, or national competitiveness.\n- It makes factual, descriptive, historical, or statistical statements without employing normative, moral, or virtue-based language.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "Though transport policy facilitates public access, this text describes the proposal purely in pragmatic and logistical terms (\"efficient and accessible\")."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This is a technical tax policy proposal detailing how micro enterprise compliance will be structured, completely lacking in moralizing or ethical rhetoric."
+    },
+    {
+      "text": "The trial ran in 15 community pharmacies around the country.",
+      "explanation": "This is a purely descriptive and empirical statement about the implementation location of a pilot program, devoid of moral or value-based judgment."
+    }
+  ]
+}

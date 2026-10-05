@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that appeals to moral and ethical values, principles of justice, fairness, rights, duties, human dignity, moral virtues (such as respect, courage, or compassion), or moral obligations, as well as the explicit condemnation of moral evils (such as corruption, repression, discrimination, or systemic unfairness).",
+  "clarification": "To qualify as moral rhetoric, the text must invoke normative or evaluative criteria grounded in ethics or values (what is 'right', 'just', 'fair', or 'deserved') rather than purely pragmatic, economic, administrative, or technical considerations. Keywords that signal moral rhetoric include 'justice', 'fair', 'deserve', 'rights', 'dignity', 'corruption', 'respect', 'terror', 'courage', and 'equality'. Additionally, appeals to humanitarian compassion and social reciprocity (e.g. mutual obligations to contribute to society) are classified as moral rhetoric.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts that every person has intrinsic moral worth, 'place', and 'purpose' in the world, directly invoking the moral concept of human dignity."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses humanitarian moral rhetoric, appealing to the obligation to provide comfort and aid to suffering people, and condemning persecution."
+    },
+    {
+      "text": "Monitor funding of minority ethnic and religious groups to ensure government support is fair, transparent and proportionate;",
+      "explanation": "This text explicitly appeals to 'fairness' in the allocation of government support, referencing a fundamental moral standard."
+    }
+  ],
+  "negative_clarification": "Texts should NOT be classified as moral rhetoric if they simply present empirical facts, outline programmatic spending, describe logistical/bureaucratic mechanisms, or discuss standard public policy targets (e.g., environmental emissions reduction, educational tests, economic growth) without wrapping those actions in an explicit ethical argument. Strong political criticisms or emotional language (e.g., calling policy 'bureaucratic' or 'cumbersome') do not count as moral rhetoric unless they explicitly accuse political actors of violating human rights or ethical norms.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text is a purely pragmatic statement of transport policy aimed at accessibility and efficiency, with no ethical or moralized justification."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This text states economic growth data and statistical forecasts without any moral evaluation or normative framing."
+    },
+    {
+      "text": "We will introduce 1 weeks paid Paternity leave for the first time",
+      "explanation": "This is a programmatic policy announcement regarding paid paternity leave, lacking any moral, ethical, or value-based claims."
+    }
+  ]
+}

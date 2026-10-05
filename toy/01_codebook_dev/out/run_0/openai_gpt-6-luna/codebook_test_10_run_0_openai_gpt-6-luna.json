@@ -1,0 +1,25 @@
+{
+  "definition": "Classify a text as political when its primary concern is political leadership, diplomacy, legitimacy, public opinion, political objectives, or the domestic and international consequences of policy. Classify it as military when its primary concern is forces, weapons, operational capabilities, battlefield events, or military planning.",
+  "clarification": "A text can mention military forces or actions and still be political if its central purpose is to assess diplomatic choices, political signaling, legitimacy, or political consequences. Conversely, discussion of geopolitical stakes is not automatically political when the central issue is military capability or deterrence.",
+  "positive_examples": [
+    {
+      "text": "We must be prepared to be accused of fabricating the incident.",
+      "explanation": "The concern is the credibility and legitimacy of the account used to justify a response."
+    },
+    {
+      "text": "We are seeking one-man, one-vote constitutional system. We need to turn war to the ballot box.",
+      "explanation": "This explicitly concerns political institutions and the pursuit of political legitimacy."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as political merely because it concerns an international conflict or strategic risk. When its main focus is military force levels, operational readiness, weapons, logistics, or combat, classify it as military.",
+  "negative_examples": [
+    {
+      "text": "The Chinese Nationalists had only about 45 days' to two months' supplies on the islands unless they kept them resupplied.",
+      "explanation": "This assesses military logistics and the operational vulnerability of the islands."
+    },
+    {
+      "text": "We could put U.S. Marines ashore in Haiti within 51 hours.",
+      "explanation": "This describes deployment timing and operational capability."
+    }
+  ]
+}

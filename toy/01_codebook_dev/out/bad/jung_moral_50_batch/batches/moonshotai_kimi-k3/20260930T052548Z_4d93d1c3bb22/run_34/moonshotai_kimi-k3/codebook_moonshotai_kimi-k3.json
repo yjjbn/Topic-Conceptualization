@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, principles, or evaluations: appeals to concepts such as justice, fairness, equality, rights, dignity, freedom, compassion, duty, virtue (e.g., courage, honesty, caring), or moral judgments of praise or blame (e.g., 'deserve', 'justified', 'intolerable', 'terror', 'second-class treatment'). It frames an issue as a matter of right and wrong or of what people are owed, rather than as a purely technical, economic, or administrative matter.",
+  "clarification": "Classify as 1 when the text explicitly uses moral vocabulary or makes a moral evaluation, even within an otherwise policy-oriented sentence. Key triggers include: (a) named moral values or principles (respect, freedom, equality, human rights, dignity, fairness, justice); (b) moral evaluations of actions or states (deserve, justified, unfair, discriminated against, not tolerable, terror); (c) virtues and vices (courage, patriotism, caring, self-discipline, healthy marriages); (d) humanitarian compassion toward suffering or persecuted people framed as a moral commitment. The moral appeal may be brief; a single explicit value term suffices.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "A pure affirmation of inherent human worth: 'Every person, however frail or vulnerable, has a place and a purpose in this world.' This is dignity rhetoric with no policy content."
+    },
+    {
+      "text": "As our allies in spirit, they ended the Soviet terror that had consumed so many millions more.",
+      "explanation": "Moral condemnation language: 'Soviet terror that had consumed so many millions' evaluates a historical actor as evil, illustrating moral praise/blame rhetoric."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "A policy sentence built explicitly on the value of 'race equality' and breaking down barriers for minorities, showing how an explicit equality appeal inside a policy commitment still counts."
+    }
+  ],
+  "negative_clarification": "Do not classify as moral rhetoric merely because a policy touches a morally charged domain (poverty, health, welfare, immigration, crime, environment). If the text is framed as a technical mechanism, economic rationale, administrative arrangement, or factual claim without explicit moral vocabulary or evaluation, code 0. Exclude: slogans and boosterism without moral content ('party of opportunity', praise of farmers' efficiency); descriptive or empirical statements (growth figures, climate displacement described neutrally); value-adjacent policy goals stated instrumentally (IT education 'to participate fully in society', family reunification as a priority, disaster-response units); and tough or vivid language ('smash gangs', 'slashed benefits') when it expresses enforcement or criticism rather than a moral principle.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "A requirement to test children in literacy and numeracy is technocratic education policy; it contains no moral vocabulary or evaluation."
+    },
+    {
+      "text": "Once we have balanced the books, we will ensure that overall public spending grows again in line with the economy.",
+      "explanation": "A fiscal rule tying spending growth to the economy is purely technocratic, illustrating that consequential policy is not thereby moral rhetoric."
+    },
+    {
+      "text": "9)  Publishing the National Positive Ageing Strategy following consultation and direct participation of older people themselves, establish a proactive Ombudsman for Older People, prioritise the protection of vulnerable older people including through the introduction of modern mental capacity legislation.",
+      "explanation": "Although it concerns protecting vulnerable older people, the text is an enumeration of administrative instruments (ombudsman, legislation, strategy) without explicit moral appeal, showing that welfare-domain policy alone does not qualify."
+    }
+  ]
+}

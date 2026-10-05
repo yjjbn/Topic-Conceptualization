@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political communication that appeals directly to ethical principles, moral values, virtues, social justice, rights, duties, or statements concerning human dignity. Rather than presenting issues strictly in pragmatic, administrative, scientific, or financial terms, it frames debates in terms of right and wrong, fairness, and the protection of individuals.",
+  "clarification": "To identify moral rhetoric, look for the following inclusion criteria:\n1. Use of explicit ethical terms, such as 'respect', 'justice', 'unfair', 'discriminate', 'corrupt', 'courage', and 'dignity'.\n2. Ethical framing of duties, such as the collective responsibility to shield vulnerable populations (the elderly, children, victims of persecution) from harm or suffering.\n3. Moralized claims of desert or entitlement, such as asserting what a group 'deserves' or calling out 'second-class treatment' and 'intolerable' situations.\n4. Appeals to core societal and political virtues like 'freedom', 'patriotism', and 'family unity'.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts the inherent moral value and purpose of every single individual, explicitly emphasizing care and dignity for 'frail or vulnerable' people."
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "This text uses the evaluative and normatively charged word 'justified' to morally validate an group's emotional stance."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text addresses the moral obligation of providing aid and compassion to 'suffering people facing displacement and persecution' due to violence."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric if it displays the following exclusion criteria:\n1. It focuses on administrative operations, financial allocations, or public system mechanics without normative or moral evaluation.\n2. It addresses economic policy, jobs, and development targets using standard business terminology.\n3. It uses terms like 'desperately' or 'essential' in a strictly pragmatic, logistical, or non-moralized context to argue for resources.\n4. It reports on historical facts, legislative processes, or empirical research findings without ethical commentary.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text proposes school transport policy based on administrative criteria like 'efficient and accessible', lacking any moral or ethical framing."
+    },
+    {
+      "text": "The Nationals will implement the third stage of AusLink, investing minimum funding of $35 billion.",
+      "explanation": "This text is a purely pragmatic and financial announcement detailing budget expenditures for transport infrastructure."
+    },
+    {
+      "text": "Trading Down: For some mortgage holders that are in negative equity, trading down would produce a reduction in mortgage debt and more affordable monthly payments.",
+      "explanation": "This text presents practical financial advice on home refinancing and debt reduction, strictly using economic and financial concepts."
+    }
+  ]
+}

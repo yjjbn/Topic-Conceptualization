@@ -1,0 +1,352 @@
+[
+  {
+    "custom_id": "run-1",
+    "run": 1,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze each docu...7, 23455, 55839, 30815,', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-2",
+    "run": 2,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about what ...mpirical housing claim.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-3",
+    "run": 3,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me work through this...pliance — 0.\\n\\nCheck', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-4",
+    "run": 4,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a value at line 1 column 11450 [type=json_invalid, input_value='{\"classifications\": {\"28....\"}, \"34621\": {\"label\":', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-5",
+    "run": 5,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing an object at line 1 column 13517 [type=json_invalid, input_value='{\"classifications\":{\"288...s morally intolerable.\"', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-6",
+    "run": 6,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze each docu...ndemnations (\"not toler', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-7",
+    "run": 7,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...s small towns are \"disc', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-8",
+    "run": 8,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about what ...tablishment; technical.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-9",
+    "run": 9,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze each docu...le; policy detail.\\n140', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-10",
+    "run": 10,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 10643 [type=json_invalid, input_value='{  \"classifications\": { ...01\": {      \"label\": \"0', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-11",
+    "run": 11,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...ministration.\\n109. 319', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-12",
+    "run": 12,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...ision; cost-based.\\n122', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-13",
+    "run": 13,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...\\n\\nThe schema requires', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-14",
+    "run": 14,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me work through this...social goods.\\n48502: 0', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-15",
+    "run": 15,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 2302 [type=json_invalid, input_value='{\"classifications\":{\"288...\"9392\":{\"label\":\"0\",\"ex', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-16",
+    "run": 16,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze each docu...ree\") as a moral ideal.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-17",
+    "run": 17,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...al description.\\n61129:', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-18",
+    "run": 18,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a value at line 1 column 8881 [type=json_invalid, input_value='{\"classifications\": {\"28... provision.\"}, \"26592\":', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-19",
+    "run": 19,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...stitutional machinery);', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-20",
+    "run": 20,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 11524 [type=json_invalid, input_value='{  \"classifications\": { ...   \"label\": \"0\",      \"', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-21",
+    "run": 21,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...0: Hospital funding for', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-22",
+    "run": 22,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing an object at line 1 column 16220 [type=json_invalid, input_value='{\"classifications\": {\"28...nt; no moral language.\"', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-23",
+    "run": 23,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 5716 [type=json_invalid, input_value='{ \"classifications\": { \"...\"explanation\": \"Housing', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-24",
+    "run": 24,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 986 [type=json_invalid, input_value='{\"classifications\": {\"28... reduction plan heading', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-25",
+    "run": 25,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about what ...siness tax proposal; no', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-26",
+    "run": 26,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 39 column 25 [type=json_invalid, input_value='{\\n  \"classifications\": ...  \"14947\": { \"label\": \"', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-27",
+    "run": 27,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 11244 [type=json_invalid, input_value='{\"classifications\": {\"28...0\", \"explanation\": \"111', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-28",
+    "run": 28,
+    "status": "success",
+    "warnings": [],
+    "error": null
+  },
+  {
+    "custom_id": "run-29",
+    "run": 29,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a value at line 47 column 12 [type=json_invalid, input_value='{\\n  \"classifications\": ...dural.\"},\\n    \"16362\":', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-30",
+    "run": 30,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about what ...t moral appeal. (Border', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-31",
+    "run": 31,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task... of opportunity,\" \"envy', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-32",
+    "run": 32,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 10418 [type=json_invalid, input_value='{\"classifications\":{\"288...cultural policy without', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-33",
+    "run": 33,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 153 column 48 [type=json_invalid, input_value='{\\n  \"classifications\": ...\", \"explanation\": \"Arts', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-34",
+    "run": 34,
+    "status": "success",
+    "warnings": [],
+    "error": null
+  },
+  {
+    "custom_id": "run-35",
+    "run": 35,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...12, 31103, 55997, 52454', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-36",
+    "run": 36,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 11247 [type=json_invalid, input_value='{\"classifications\":{\"288...anation\":\"Appeals to \\'', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-37",
+    "run": 37,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 114 column 15 [type=json_invalid, input_value='{\\n  \"classifications\": ...ve.\"},\\n    \"35144\": {\"', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-38",
+    "run": 38,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 153 column 29 [type=json_invalid, input_value='{\\n  \"classifications\": ...5265\": {\"label\": \"0\", \"', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-39",
+    "run": 39,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about what ...selves constitute moral', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-40",
+    "run": 40,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about this ...nt unless moral framing', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-41",
+    "run": 41,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 4388 [type=json_invalid, input_value='{\"classifications\": {\"28...bel\": \"0\", \"explanation', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-42",
+    "run": 42,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 11009 [type=json_invalid, input_value='{ \"classifications\": { \"... \"33523\": { \"label\": \"0', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-43",
+    "run": 43,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about what ... Road corridor fragment', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-44",
+    "run": 44,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task... 9259 - 0\\n190. 41609 -', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-45",
+    "run": 45,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 806 [type=json_invalid, input_value='{\"classifications\":{\"288...\"3557\":{\"label\":\"0\",\"ex', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-46",
+    "run": 46,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me analyze this task...s from input list:\\n524', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-47",
+    "run": 47,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 7088 [type=json_invalid, input_value='{\"classifications\":{\"288...:\"Insurance cost claim;', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-48",
+    "run": 48,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 6166 [type=json_invalid, input_value='{\"classifications\": {\"28...xplanation\": \"Provision', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-49",
+    "run": 49,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: EOF while parsing a string at line 1 column 20446 [type=json_invalid, input_value='{\"classifications\": {\"28...y person\\'s inherent \\'', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  },
+  {
+    "custom_id": "run-50",
+    "run": 50,
+    "status": "error",
+    "warnings": [],
+    "error": "1 validation error for ClassificationsAndCodebook\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='Let me think about what ...tion.\\n109. 31962 - 0 -', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"
+  }
+]

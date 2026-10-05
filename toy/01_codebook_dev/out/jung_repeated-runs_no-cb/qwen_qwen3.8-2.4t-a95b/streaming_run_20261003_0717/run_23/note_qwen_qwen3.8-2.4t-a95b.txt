@@ -1,0 +1,71 @@
+{
+  "note": "",
+  "batch_id": null,
+  "run": 23,
+  "arguments": {
+    "command": "submit",
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "mode": "streaming",
+    "provider": null,
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jung.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "jung_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 4171,
+      "completion_tokens": 6495,
+      "total_tokens": 10666,
+      "cost": 0.040144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.040144,
+        "upstream_inference_prompt_cost": 0.001174,
+        "upstream_inference_completions_cost": 0.03897
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 4049,
+      "completion_tokens": 4870,
+      "total_tokens": 8919,
+      "cost": 0.030374,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 3968,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.030374,
+        "upstream_inference_prompt_cost": 0.001154,
+        "upstream_inference_completions_cost": 0.02922
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

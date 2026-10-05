@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes ethical values, human worth, rights, justice, equality, freedom, fairness, compassion, dignity, social inclusion, or moral condemnation and praise in order to evaluate people, policies, or social conditions.",
+  "clarification": "Code a text as moral rhetoric when it does more than describe a policy or its practical effects and instead frames an issue in terms of what is right, fair, deserved, intolerable, humane, free, equal, respectful, or socially valuable. This includes explicit references to discrimination, human rights, protecting vulnerable people, equal treatment, political rights, compassion for suffering people, and evaluative praise or condemnation such as calling conduct corrupt, terroristic, courageous, or justified.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The claim that every person, however frail or vulnerable, has a place and purpose directly asserts inherent human worth."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The commitment to race equality and breaking down barriers explicitly frames policy in terms of equality and discrimination."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The statement invokes a normative right not to be denied access to courts and says people deserve quality justice."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, factual claims, technical administrative reforms, economic forecasts, spending promises, or general positive language as moral rhetoric when they lack an explicit ethical evaluation or value claim. References to health, safety, poverty, affordability, transparency, or opportunity alone are not enough if they are presented only as practical policy objectives. Routine criticism of costs, regulation, or performance is also excluded unless it is explicitly framed as unfair, unjust, discriminatory, or otherwise morally wrong.",
+  "negative_examples": [
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "It proposes an office to oversee water and sewerage infrastructure; it is an administrative policy measure without ethical language."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "It gives economic growth figures and forecasts, which are factual claims rather than moral evaluations."
+    },
+    {
+      "text": "Public hospitals will receive additional funding to improve the services they provide for Australians aged over 75.",
+      "explanation": "It promises additional hospital funding for older Australians but does not state a claim about rights, fairness, dignity, or moral obligation."
+    }
+  ]
+}

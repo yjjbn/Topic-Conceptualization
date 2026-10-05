@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, ethical principles, rights, duties, deservingness, justice, equality, dignity, freedom, or condemnation/praise of conduct and social conditions.",
+  "clarification": "Classify a passage as moral rhetoric when it frames an issue in normative ethical terms rather than only as policy effectiveness, cost, administration, or empirical fact. This includes explicit claims about fairness or discrimination, equality and human rights, respect, freedom, protecting vulnerable people, deservingness, corruption, repression, and praise or condemnation grounded in ethical values.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth of every person, including frail and vulnerable people, through the claim that each has a place and purpose."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It uses a clear equality imperative by saying educational gaps between rich and poor and between M\u0101ori and non-M\u0101ori must be closed."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes justice and the principle that no one should be denied access to courts."
+    }
+  ],
+  "negative_clarification": "Do not classify a passage as moral rhetoric when it simply announces a policy, budget allocation, institutional reform, factual observation, economic forecast, or practical objective. References to health, poverty, safety, access, jobs, or environmental damage alone are insufficient unless the text explicitly frames them through an ethical value or evaluative moral judgment.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a procedural education policy requiring literacy and numeracy tests, with no ethical principle expressed."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This describes a technical change to corporation-tax compliance rather than a moral claim."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This reports economic-growth figures and forecasts without moral evaluation."
+    }
+  ]
+}

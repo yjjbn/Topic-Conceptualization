@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political or communicative language that explicitly frames issues, actions, or populations in terms of moral values, ethical virtues, moral duties, fundamental rights, compassion, justice, or fairness. It evaluates behavior or circumstances not merely on pragmatic, empirical, or economic grounds, but on whether they are inherently right, wrong, honorable, or unjust.",
+  "clarification": "To classify a text as containing 'moral rhetoric,' look for the following criteria: \n1. Direct use of value-laden terms indicating virtues (e.g., respect, courage, patriotism, caring, self-discipline) or ethical obligations (e.g., duty, justice, fairness, right, responsibility).\n2. Framing issues in terms of structural or systemic moral offenses (e.g., discrimination, corruption, repression, persecution).\n3. Expressing strong normative imperatives about what individuals or groups 'deserve' or what conditions are 'not tolerable' on humanistic grounds.\n4. Statements emphasizing the moral value and dignity of vulnerable populations (e.g., the sick, frail, or children) and the ethical duty to comfort, heal, or protect them.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text expresses a clear philosophical and moral claim about the inherent value, dignity, and purpose of every human being, specifically centering on vulnerable populations."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "This text uses the explicitly normative concept of 'justice they deserve' and evaluates the legal framework through the lens of ethical entitlement."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text appeals to moral compassion and ethical duties of humanitarian aid by using highly value-laden words like 'suffering' and 'persecution.'"
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as 'moral rhetoric' if: \n1. It proposes policies, laws, or financial budgets on purely economic, pragmatic, or administrative grounds, even if those policies might have social benefits (e.g., school funding, tax cuts, standard health subsidies).\n2. It reports factual accomplishments, statistical outputs, historical records, or demographics without employing evaluative moral language.\n3. It uses standard political boosterism, optimistic aspirations, or critiques of efficiency and bureaucracy that lack explicit appeals to moral virtues or justice.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a standard public policy statement aimed at transport efficiency and accessibility, lacking any evaluative moral or ethical vocabulary."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This text presents highly technical, administrative details of tax policy without any moral arguments or ethical appeals."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This text is an empirical and statistical report comparing productivity rates, representing objective economic analysis rather than moral rhetoric."
+    }
+  ]
+}

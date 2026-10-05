@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language that frames political issues, actors, or policies in terms of ethical principles, values, virtues, human dignity, or normative evaluations of right versus wrong, fairness, and justice, rather than using purely technical, economic, or administrative reasoning.",
+  "clarification": "A text is classified as containing moral rhetoric (1) if it appeals to core ethical values such as liberty/freedom, fairness/equality, compassion/care, moral duties/obligations, respect, or integrity/anti-corruption. This includes explicit moral evaluations such as calling situations 'intolerable' or actions 'justified', or praising the moral character/virtue of individuals.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text asserts that 'Every person, however frail or vulnerable, has a place and a purpose in this world,' which directly appeals to the moral value of human dignity and intrinsic worth."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "The text explicitly references 'Values of respect,' which is a direct appeal to core ethical values."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text describes a commitment to 'providing comfort and aid to suffering people' facing 'persecution,' which is classic moral and humanitarian rhetoric based on compassion."
+    }
+  ],
+  "negative_clarification": "A text is classified as not containing moral rhetoric (0) when it is descriptive, factual, or details specific policy actions, administrative tasks, and economic figures without framing them in an ethical, value-based, or justice-oriented context.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "This text discusses developing a sports program to keep people healthy, which is a pragmatic policy goal without moralistic framing."
+    },
+    {
+      "text": "/ and fast, frequent inner-city services.",
+      "explanation": "The text is an infrastructural transport fragment ('fast, frequent inner-city services') devoid of any moral rhetoric."
+    },
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This text states a specific policy mandate to test children's literacy and numeracy, which is purely educational-administrative and lacks ethical evaluations."
+    }
+  ]
+}

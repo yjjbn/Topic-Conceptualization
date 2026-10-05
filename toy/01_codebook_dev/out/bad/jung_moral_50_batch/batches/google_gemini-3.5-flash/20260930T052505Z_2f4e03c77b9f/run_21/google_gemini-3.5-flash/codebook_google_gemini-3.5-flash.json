@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political discourse that explicitly appeals to moral values, ethical duties, fundamental human rights, or questions of social justice and systemic fairness. It transcends empirical, pragmatic, or purely technical policy proposals by invoking what is inherently right, wrong, just, fair, or virtuous, often defining what individuals 'deserve' or are 'obligated' to do.",
+  "clarification": "To be classified as moral rhetoric (1), a text must use language that establishes an ethical imperative, appeals to virtues (such as respect, courage, or self-discipline), references core rights and values (such as equality, human rights, or freedom), or explicitly critiques unfairness (such as discrimination or structural injustice). It must not merely propose a policy that might lead to a good outcome, but must frame the issue through the lens of ethical values.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text utilizes moral/philosophical assertions regarding the intrinsic dignity, value, and purpose of every single human life ('Every person, however frail or vulnerable, has a place and a purpose')."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "This text directly utilizes the morally charged concept of 'unfairly discriminate,' which references systemic injustice and violations of ethical fairness."
+    },
+    {
+      "text": "Australians deserve a better future",
+      "explanation": "The use of the word 'deserve' shifts this from a standard policy promise to a moral claim about what citizens have a fundamental right or entitlement to receive."
+    }
+  ],
+  "negative_clarification": "Do not classify texts as moral rhetoric (0) if they only describe technical, administrative, infrastructure, or economic policies without assigning ethical values or obligations. Statements that praise an entity, promise growth, or criticize efficiency are not moral rhetoric unless they frame these claims within an explicit vocabulary of rights, duties, justice, or virtues.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "This is a programmatic policy statement to encourage fitness and sports programs. While promoting health is positive, the text does not contain any moralizing or ethical reasoning."
+    },
+    {
+      "text": "• Waiting lists are not tolerable.",
+      "explanation": "Though the phrase 'not tolerable' is a strong negative evaluation, it acts as a political and logistical complaint about waiting list times rather than an explicitly ethical or moral claim."
+    },
+    {
+      "text": "Trading Down: For some mortgage holders that are in negative equity, trading down would produce a reduction in mortgage debt and more affordable monthly payments.",
+      "explanation": "This text provides a purely technical, financial analysis of mortgage options and affordability, absent of any ethical vocabulary or appeals to fairness."
+    }
+  ]
+}

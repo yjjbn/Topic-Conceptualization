@@ -1,0 +1,29 @@
+You will receive a set of speech acts made by bureaucratic advisers in meetings during US Cold War crises.
+
+Each text can be classified as either "political" or "military." These categories are mutually exclusive. Your task is to identify the texts that should be classified as "political," as opposed to military.
+For each classification, provide a brief rationale for your decision.
+
+Use only one of these labels:
+"1": The text is political.
+"0": The text is not political; it is military.
+
+Each classification should contain:
+* The label, 1 or 0
+* A brief explanation of your decision
+
+The documents will be provided as JSON objects with an ID and text:
+
+[
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
+  ...
+]
+
+For each text, return:
+* ID: ID of the text document
+* Label: Your classification, 1 or 0
+* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.
+
+Return a JSON object matching the supplied output format schema.
+Make sure that you return a classification for every document provided.
+

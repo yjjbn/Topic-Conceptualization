@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly frames a political claim, policy, group, action, or outcome in terms of moral values, duties, rights, virtues, wrongs, deservingness, justice, equality, freedom, dignity, compassion, or protection from harm.",
+  "clarification": "Classify a text as moral rhetoric when it does more than advocate a policy or describe its practical effects: it must explicitly express or rely on a normative moral evaluation. Common signals include words such as fair, unfair, respect, right, justice, equality, freedom, deserve, justified, vulnerable, protection, corruption, repression, or terror. Moral rhetoric may praise virtues, condemn wrongdoing or harm, affirm equal status or rights, or state obligations toward people in need. It can occur in short fragments as well as complete policy statements.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement that every person, however frail or vulnerable, has a place and purpose affirms inherent human worth."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The call for a race-equality strategy explicitly invokes equality and the removal of barriers facing minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The passage says that no one should be denied court access and that Americans deserve quality justice, directly invoking justice and deservingness."
+    }
+  ],
+  "negative_clarification": "Do not classify text as moral rhetoric merely because it proposes a socially beneficial policy, refers to health, poverty, safety, education, or the environment, or uses favorable and unfavorable practical language. Technical commitments, performance claims, administrative reforms, economic arguments, and factual descriptions are negative unless they explicitly add a moral principle, judgment, right, duty, or value. General words such as efficient, adequate, successful, affordable, or better usually indicate instrumental rather than moral evaluation.",
+  "negative_examples": [
+    {
+      "text": "Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.",
+      "explanation": "This is a technical planning proposal to develop affordable housing through zones and permits; it contains no explicit moral claim."
+    },
+    {
+      "text": "Direct Action Plan to reduce emissions",
+      "explanation": "The phrase names an emissions-reduction plan but does not state a moral reason for it."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This passage describes a detailed corporation-tax compliance reform in administrative and economic terms."
+    }
+  ]
+}

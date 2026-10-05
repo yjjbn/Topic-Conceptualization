@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, actions, institutions, or outcomes through moral values, duties, rights, dignity, fairness, equality, freedom, compassion, or condemnation of injustice and wrongdoing.",
+  "clarification": "Classify as moral rhetoric when the text does more than propose a policy or describe an outcome: it expresses a normative ethical principle or portrays a group as entitled to fair, equal, dignified, compassionate, free, or protected treatment. Explicit references to rights, discrimination, equality, respect, deservingness, justice, corruption, vulnerability, suffering, or moral approval and condemnation qualify.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The claim that every person, however frail or vulnerable, has a place and purpose affirms inherent human worth and dignity."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "The statement that educational gaps between rich and poor and M\u0101ori and non-M\u0101ori must be closed is an explicit equality-based moral demand."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "The text frames corruption and bribery as wrongdoing to be prevented and prosecuted."
+    }
+  ],
+  "negative_clarification": "Do not classify a passage merely because it concerns socially important policy areas such as health, poverty, education, housing, safety, or the environment. Technical commitments, funding promises, performance claims, economic arguments, administrative reforms, and factual descriptions are negative unless they explicitly invoke an ethical value, right, duty, or moral evaluation.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "It promotes sports participation and health, but contains no explicit appeal to a moral value or ethical obligation."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "It proposes measures to reduce food waste, but states this as a regulatory policy rather than a moral duty or condemnation."
+    },
+    {
+      "text": "Public hospitals will receive additional funding to improve the services they provide for Australians aged over 75.",
+      "explanation": "It promises hospital funding for older people but does not frame that funding in terms of rights, dignity, fairness, or deservingness."
+    }
+  ]
+}

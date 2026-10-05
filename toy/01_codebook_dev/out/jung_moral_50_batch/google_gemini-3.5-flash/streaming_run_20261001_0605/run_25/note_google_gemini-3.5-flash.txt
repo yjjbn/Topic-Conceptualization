@@ -1,0 +1,117 @@
+{
+  "note": "",
+  "batch_id": null,
+  "run": 25,
+  "arguments": {
+    "command": "submit",
+    "model": "google/gemini-3.5-flash:floor",
+    "mode": "streaming",
+    "provider": null,
+    "session_id": null,
+    "repeats": 25,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jungmoral.txt",
+    "test_rows": null,
+    "documents_per_request": 50,
+    "nametag": "jung_moral_50_batch",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 2070,
+      "completion_tokens": 5822,
+      "total_tokens": 7892,
+      "cost": 0.0277515,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0277515,
+        "upstream_inference_prompt_cost": 0.0015525,
+        "upstream_inference_completions_cost": 0.026199
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3440,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 2297,
+      "completion_tokens": 5947,
+      "total_tokens": 8244,
+      "cost": 0.02848425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.02848425,
+        "upstream_inference_prompt_cost": 0.00172275,
+        "upstream_inference_completions_cost": 0.0267615
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3425,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 2223,
+      "completion_tokens": 5745,
+      "total_tokens": 7968,
+      "cost": 0.02751975,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.02751975,
+        "upstream_inference_prompt_cost": 0.00166725,
+        "upstream_inference_completions_cost": 0.0258525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3233,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 2017,
+      "completion_tokens": 7379,
+      "total_tokens": 9396,
+      "cost": 0.03471825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.03471825,
+        "upstream_inference_prompt_cost": 0.00151275,
+        "upstream_inference_completions_cost": 0.0332055
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 5000,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

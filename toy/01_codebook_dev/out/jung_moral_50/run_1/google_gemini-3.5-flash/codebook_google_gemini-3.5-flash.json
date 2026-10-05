@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language that explicitly appeals to normative concepts of morality, ethics, virtues, human dignity, rights, fairness, or justice. It goes beyond pragmatic or technical concerns to establish what is inherently right, wrong, just, or unjust, and frequently employs value-laden keywords such as respect, duty, fairness, corruption, freedom, or compassion.",
+  "clarification": "To classify a text as containing 'moral rhetoric' (1), it must formulate a clear value judgment, ethical duty, or rights-based argument. It should invoke moral principles to justify a position or critique an opponent. Keywords pointing to moral rhetoric include 'respect', 'justice', 'corruption', 'equality', 'deserve', 'freedom/liberty', 'fairness', 'compassion', and 'civic duty'.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text explicitly appeals to intrinsic human worth, dignity, and purpose, especially for frail and vulnerable people, which constitutes core moral rhetoric."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "Directly mentions 'respect', which is a fundamental moral value and virtue."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Uses morally expressive language like 'suffering' and 'persecution' to justify humanitarian action, framing the issue as an ethical duty of care."
+    }
+  ],
+  "negative_clarification": "Exclude texts that simply propose policies with positive social outcomes (such as environmental, health, or economic benefits) if they are described using neutral, technical, scientific, or purely administrative language. A text should not be labeled as moral rhetoric simply because it seeks a positive social goal, unless it explicitly frames that goal with ethical values or moral terminology.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text presents a pragmatic policy goal regarding school transport without any moral or ethical framing."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing \u2013 on a revenue neutral basis \u2013 a Single Business Tax for micro enterprises (with a turnover of less than \u20ac75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "Describes technical and administrative proposals for tax compliance with no moral reasoning."
+    },
+    {
+      "text": "To cut GP waiting times and allow GPs to spend more time actually seeing patients, UKIP will reduce the burden of data collection, target chasing, revalidation and appraisal work that interferes with the care GPs can give to patients.",
+      "explanation": "Proposes standard policy adjustments to improve healthcare efficiency and administrative workloads without invoking moral duties or values."
+    }
+  ]
+}

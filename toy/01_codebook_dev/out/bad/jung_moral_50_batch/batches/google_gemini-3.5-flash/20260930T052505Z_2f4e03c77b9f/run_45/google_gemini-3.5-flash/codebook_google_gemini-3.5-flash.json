@@ -1,0 +1,29 @@
+{
+  "definition": "Moral rhetoric is defined as political or social language that appeals to ethical values, duties, concepts of justice, fairness, liberty, human rights, compassion, or systemic virtues and vices, as opposed to language based on economic logic, administrative efficiency, technical parameters, or self-interest.",
+  "clarification": "To qualify as containing moral rhetoric, a text must use language that establishes a moral/ethical standard, invokes rights, duties, or values (e.g., 'respect', 'justice', 'human rights', 'freedom', 'equality'), frames behaviors/situations as moral wrongs (e.g., 'discrimination', 'repression', 'corruption', 'intolerable'), or praises moral character traits (e.g., 'caring', 'patriotism', 'courage'). The text must cross from simple policy mechanism/goals to value-driven justifications or framing.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts that every person, particularly the 'vulnerable', has 'a place and a purpose in this world', directly invoking fundamental human dignity and ethical worth."
+    },
+    {
+      "text": "playing a constructive role in world events focussed on human rights concerns.",
+      "explanation": "This text directly mentions 'human rights concerns', which is an explicit moral and ethical concept in global politics."
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "By evaluating anger as 'justified', the text applies a moral/normative judgment to validate public grievances."
+    }
+  ],
+  "negative_clarification": "Do not classify texts as containing moral rhetoric if they purely outline programmatic proposals, list statistical trends, critique administrative inefficiency, argue using standard fiscal/economic metrics, or describe technical, legal, and operational changes. Even if the policy's ultimate goal is socially positive (like improving schools, funding hospitals, or protecting the environment), the text must explicitly utilize moralizing or value-laden terminology rather than neutral administrative or descriptive jargon to be coded 1.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "While improving school buses benefits the community, the argument is framed entirely around 'efficient and accessible' systems, which are pragmatic/operational values, not moral ones."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This text details a complex tax policy proposal. It uses purely technical and administrative language ('Revenue Commissioners', 'revenue neutral basis', 'sole traders') without any moral framing."
+    }
+  ]
+}

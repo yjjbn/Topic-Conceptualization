@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political discourse that explicitly appeals to values, ethics, duties, rights, justice, fairness, and human dignity, framing political issues, policies, or opponents in terms of moral rightness, ethical obligations, or social injustice, rather than purely pragmatic, economic, or strategic terms.",
+  "clarification": "To be classified as moral rhetoric (1), a text must contain explicit moral vocabulary (e.g., 'respect', 'justice', 'corruption', 'unfair', 'discriminate', 'vulnerable', 'courage', 'freedom', 'rights') or frame an issue as an urgent ethical imperative or duty (such as protecting the vulnerable, correcting historic injustices, or preserving human dignity). The rhetoric should go beyond mere policy description, technocratic solutions, or strategic arguments.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text uses moral and existential framing ('place and purpose', 'frail or vulnerable') to assert the inherent worth and dignity of every individual, which is a classic moral rhetoric appeal."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses highly compassionate, humanitarian, and morally evaluative language ('comfort and aid', 'suffering', 'persecution') to frame policy in terms of ethical duty and relief of suffering."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "This text addresses 'corruption' and 'bribery', which are explicitly ethical and moral violations of public trust and legal integrity."
+    }
+  ],
+  "negative_clarification": "Texts should NOT be classified as moral rhetoric (0) if they describe policy mechanisms, economic projections, administrative adjustments, or strategic national interests without using evaluative moral language. Mentions of socially beneficial programs (such as healthcare, poverty alleviation councils, or environmental funding) are classified as 0 unless they are explicitly justified through a lens of moral obligation, justice, or human dignity rather than practical utility or administrative routine.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "This text outlines a practical, programmatic policy goal (promoting physical fitness and sports participation) without employing any moral vocabulary, appeals to justice, or ethical duties."
+    },
+    {
+      "text": "»  The Government have based their  fiscal plans on 1.75% growth in the  economy which cannot and will  not be achieved under their plans",
+      "explanation": "This text represents standard pragmatic and macroeconomic policy critique regarding growth projections and fiscal planning, completely lacking in moral or value-based language."
+    },
+    {
+      "text": "If  there is  no contact from  the person,  Work and Income will suspend  the person’s benefit.",
+      "explanation": "This text describes a dry, administrative and procedural rule of welfare enforcement, free of any evaluative, moral, or ethical rhetoric."
+    }
+  ]
+}

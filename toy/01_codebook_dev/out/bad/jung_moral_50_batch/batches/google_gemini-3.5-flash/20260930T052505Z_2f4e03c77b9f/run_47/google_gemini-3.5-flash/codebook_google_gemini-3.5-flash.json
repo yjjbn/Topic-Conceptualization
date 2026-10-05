@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, ethical duties, justice, fairness, human rights, or moral virtues (such as compassion, respect, and patriotism) to defend, criticize, or evaluate policies, actions, or groups.",
+  "clarification": "To classify a text as containing moral rhetoric (1), the text must explicitly employ moral concepts or evaluations rather than relying solely on administrative, fiscal, or economic calculations. Key indicators include: references to 'rights,' 'justice,' 'equality,' and 'fairness'; accusations of 'discrimination' or 'injustice'; appeals to human dignity or humanitarian care for the suffering; and praise of civic virtues like 'courage' and 'patriotism.'",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "Directly invokes the core ethical concept of respect ('Values of respect.')."
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Asserts the inherent dignity and spiritual value of every vulnerable person in the world, framing it as an ethical reality ('has a place and a purpose in this world')."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Uses explicit humanitarian and compassion-oriented terminology to justify aid to people suffering from persecution and violence."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as moral rhetoric (0) if it is purely descriptive of standard policy mechanics, fiscal budgets, infrastructure programs, or educational administration, even if the eventual goal is socially beneficial. Additionally, standard political boasts or factual reports of past policy performances without ethical framing do not count.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "Focuses strictly on pragmatic transportation concerns ('efficient and accessible school bus system') without referencing moral duties or fairness."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "An administrative, technical, and detailed proposal for reforming business taxes without any ethical packaging."
+    },
+    {
+      "text": "National reviewed the responsibilities of the Government's key tourism agencies, the Ministry of Tourism and Tourism NZ.",
+      "explanation": "A factual reporting of a procedural government review of agency duties with no normative or moral content."
+    }
+  ]
+}

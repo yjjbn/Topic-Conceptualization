@@ -1,0 +1,33 @@
+{
+  "definition": "Political speech acts are those that address strategic political considerations, policy decisions, political legitimacy, diplomatic negotiations, leadership motivation, international perception and credibility, or governance structures. They focus on political dimensions of decisions rather than military execution.",
+  "clarification": "Classify a text as 'political' when it deals with: (1) Political strategy and long-term policy objectives; (2) Political legitimacy, moral authority, or public perception; (3) Diplomatic relations or negotiations; (4) Political leadership analysis or motivations; (5) Governance or constitutional structures; (6) International political opinion; (7) Political decision-making about whether/when to use military force. Even texts discussing military operations can be political if the primary focus is on political rationale, credibility concerns, or diplomatic implications rather than the operations themselves.",
+  "positive_examples": [
+    {
+      "text": "Do we know for a fact that the North Vietnamese provocation took place? Can we nail down exactly what happened? We must be prepared to be accused of fabricating the incident.",
+      "explanation": "This is political because it focuses on credibility, public perception, and the political risk of being accused of deception - concerns about political legitimacy rather than military capability."
+    },
+    {
+      "text": "I think the President must proceed on the basis of probabilities and not possibilities. I would get the planes and crews ready here at home. But our moral posture will be better if the North Koreans move first. I am deeply sorry about the ship and the 83 men but I do not think it is worth a resumption of the Korean War.",
+      "explanation": "This is political because it emphasizes moral posture, political strategy about when to act, and political judgment about whether military action serves broader policy goals - focusing on political reasoning rather than military operations."
+    },
+    {
+      "text": "We are seeking one-man, one-vote constitutional system. We need to turn war to the ballot box. In world opinion, bombing of Hanoi-Haiphong has impact.",
+      "explanation": "This is political because it addresses governance structures, political legitimacy, and international political opinion about military actions - core political concerns rather than military execution."
+    }
+  ],
+  "negative_clarification": "Do NOT classify as political when the text: (1) Discusses military operations, tactics, logistics, or deployment; (2) Reports military facts about force composition, weapons, or battle outcomes; (3) Analyzes military costs/benefits from a purely military perspective; (4) Addresses military capabilities or constraints; (5) Presents military intelligence about enemy forces or movements. These texts are military in nature regardless of whether they might inform political decisions.",
+  "negative_examples": [
+    {
+      "text": "indicated that we could put U.S. Marines ashore in Haiti within 51 hours. The said there was a unit which could be airdropped much sooner if an airfield were available.",
+      "explanation": "This is military, not political, because it focuses on operational logistics and deployment timing - practical military execution details with no political analysis or consideration."
+    },
+    {
+      "text": "The ChiComs could launch an attack on the Offshore Islands with little or no warning. The Communist forces had consisted of one regiment and two battalions of Chinese Communist troops, numbering between 3000 and 4000. The island had been captured after about two hours of fighting.",
+      "explanation": "This is military, not political, because it reports military facts about force composition, battlefield outcomes, and tactical performance - military intelligence rather than political strategy or policy analysis."
+    },
+    {
+      "text": "said that the MAAG chief thinks that a Chinese Communist blockade of the off-shore islands is very likely. The Chinese Nationalists had only about 45 days to two months supplies on the islands unless they kept them resupplied. A blockade could not be stopped unless U.S. forces intervened.",
+      "explanation": "This is military, not political, because it focuses on military logistics (supply lines), military blockade tactics, and military intervention requirements - addressing military operational constraints rather than political considerations."
+    }
+  ]
+}

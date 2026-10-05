@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, duties, rights, fairness, equality, dignity, compassion, freedom, virtue, wrongdoing, or what people deserve or must be protected from.",
+  "clarification": "Classify as moral rhetoric when the text evaluates people, institutions, or outcomes in ethical terms, or appeals to a normative principle such as respect, justice, equal treatment, human rights, inclusion, care for vulnerable people, or civic responsibility. This includes both positive moral ideals and condemnation of harm, discrimination, corruption, oppression, or unjust treatment.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement affirms the inherent worth and purpose of every person, specifically including vulnerable people."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It makes an explicit normative demand to close inequalities between social and ethnic groups."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes access to justice and says people deserve quality justice."
+    }
+  ],
+  "negative_clarification": "Do not classify text merely because it proposes a policy that may have beneficial effects, mentions health or poverty, uses positive promotional language, or criticises a policy on economic, technical, administrative, or efficiency grounds. A moral value, ethical judgment, rights claim, or duty should be explicit or clearly integral to the wording.",
+  "negative_examples": [
+    {
+      "text": "Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.",
+      "explanation": "This is a technical proposal to expand affordable-home development mechanisms, with no explicit ethical principle."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This supplies economic growth figures and forecasts rather than a moral evaluation."
+    },
+    {
+      "text": "We will re-open the Western Rail Corridor from Ennis to Claremorris and examine the feasibility of reopening the line from Claremorris to Sligo.",
+      "explanation": "This is a transport-infrastructure proposal without moral language."
+    }
+  ]
+}

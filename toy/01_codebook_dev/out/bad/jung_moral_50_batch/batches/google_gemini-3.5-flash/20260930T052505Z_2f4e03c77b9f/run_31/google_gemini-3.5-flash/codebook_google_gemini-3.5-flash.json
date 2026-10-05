@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to the use of language that appeals to moral values, virtues, duties, human rights, justice, fairness, compassion, dignity, respect, or expressions of moral outrage.",
+  "clarification": "To classify a text as moral rhetoric, look for words or concepts that evaluate actions, policies, or groups using ethical criteria. This includes appeals to human dignity, equality, fairness, freedom, responsibility, and the ethical obligation to protect the vulnerable. It often contains evaluative vocabulary such as 'deserve', 'justice', 'persecution', 'discrimination', and 'respect', as well as expressive rhetoric targeting injustice or suffering.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text makes an explicit, universal moral assertion regarding the inherent worth, dignity, and value of every individual, particularly focusing on the frail and vulnerable."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text utilizes strong humanitarian and ethical rhetoric, appealing directly to the moral obligations of compassion, comfort, and protection for people suffering from persecution and violence."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text directly invokes 'respect' as a core foundational moral value."
+    }
+  ],
+  "negative_clarification": "Exclusion criteria: Do not classify texts as moral rhetoric if they consist of standard policy proposals, administrative procedures, factual descriptions, economic metrics, or technical planning that lack explicit moral justification or value-laden, ethical vocabulary. Statements of political intent or commitment are not moral rhetoric unless they directly appeal to moral values or ethical duties.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This excerpt is a standard policy proposal that outlines a functional public service goal (efficiency and accessibility of transport) without employing any moral vocabulary, appeals to virtue, or ethical justifications."
+    },
+    {
+      "text": "The international evidence is clear:",
+      "explanation": "This is a purely factual, evidence-based transition statement that lacks any normative value judgments, ethical framing, or moral rhetoric."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a straightforward infrastructure and technology deployment pledge that is purely pragmatic and lacks any moral reasoning or value-laden rhetoric."
+    }
+  ]
+}

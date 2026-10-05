@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates persons, groups, institutions, or outcomes through moral values or principles, such as rights, equality, fairness, respect, freedom, dignity, deservingness, compassion, protection of the vulnerable, or condemnation of wrongdoing.",
+  "clarification": "Code as moral rhetoric when the text does more than propose a policy or describe a problem: it invokes a normative moral standard, assigns moral worth, identifies unjust or discriminatory treatment, affirms rights or liberty, or uses ethically charged praise or condemnation. Explicit value terms and clear equivalents qualify.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It affirms the inherent worth of every person, including frail and vulnerable people, by saying each has a place and purpose."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "It explicitly identifies discrimination based on socioeconomic background as unfair."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It invokes race equality and the removal of barriers facing minority ethnic communities."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, administrative proposals, empirical claims, economic arguments, or generic positive language merely because they concern welfare, health, employment, poverty, safety, or public services. A policy serving a disadvantaged group is not sufficient unless the excerpt explicitly frames it through a moral value, right, fairness claim, or comparable ethical judgment.",
+  "negative_examples": [
+    {
+      "text": "Public hospitals will receive additional funding to improve the services they provide for Australians aged over 75.",
+      "explanation": "It proposes more hospital funding for people over 75, but does not articulate a right, fairness principle, or moral judgment."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "It mandates food-waste reduction, but frames this as a legislative requirement rather than a moral obligation."
+    },
+    {
+      "text": "Excessive regulations stream out of Brussels, adding huge administrative and financial burdens to the challenges already faced by small businesses.",
+      "explanation": "It criticises regulations as burdensome to businesses, which is a practical economic complaint rather than moral rhetoric."
+    }
+  ]
+}

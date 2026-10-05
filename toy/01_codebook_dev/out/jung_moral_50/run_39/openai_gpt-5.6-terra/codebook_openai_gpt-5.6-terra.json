@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes or evaluates conduct, institutions, or outcomes in terms of moral values, duties, rights, virtues, dignity, fairness, equality, freedom, compassion, or wrongdoing.",
+  "clarification": "Code as moral rhetoric when the excerpt does more than propose or describe policy: it expressly says that people deserve something, have rights, are treated unfairly, should be protected, or that a value such as respect, equality, freedom, integrity, or compassion should guide action. Explicit moral condemnation or praise, including references to repression, corruption, courage, or justified grievance, also qualifies.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It affirms the inherent worth and purpose of every person, explicitly including frail and vulnerable people."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the removal of barriers facing minority communities."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "It rejects corruption and bribery, directly invoking ethical standards of integrity."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy promises, administrative arrangements, factual claims, economic arguments, or technical descriptions merely because they concern socially important areas such as health, poverty, safety, housing, or the environment. A proposal to fund services or reduce a problem is not moral rhetoric unless it includes an explicit moral value, entitlement, ethical judgment, or normative condemnation/praise.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "It promotes sport and health, but uses no explicit moral principle or evaluative ethical language."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "It describes a technical corporate-tax compliance reform without moral claims."
+    },
+    {
+      "text": "Development of a land transition plan which will include regulation of farming practices to reduce environmental damage,",
+      "explanation": "It proposes environmental regulation but frames it as a policy mechanism rather than an explicit ethical duty or moral judgment."
+    }
+  ]
+}

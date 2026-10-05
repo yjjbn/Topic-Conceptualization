@@ -1,0 +1,338 @@
+{
+  "endpoint": "/v1/chat/completions",
+  "model": "openai/gpt-5.6-terra",
+  "requests": [
+    {
+      "custom_id": "run-2-request-1",
+      "body": {
+        "max_completion_tokens": 50000,
+        "plugins": [
+          {
+            "id": "response-healing"
+          }
+        ],
+        "provider": {
+          "preferred_min_throughput": {
+            "p75": 50
+          },
+          "require_parameters": true
+        },
+        "model": "openai/gpt-5.6-terra",
+        "stream": true,
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "codebook_classifications",
+            "strict": true,
+            "schema": {
+              "$defs": {
+                "Classification": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "document_id": {
+                      "title": "Document Id",
+                      "type": "string"
+                    },
+                    "label": {
+                      "enum": [
+                        "0",
+                        "1"
+                      ],
+                      "title": "Label",
+                      "type": "string"
+                    },
+                    "explanation": {
+                      "title": "Explanation",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "document_id",
+                    "label",
+                    "explanation"
+                  ],
+                  "title": "Classification",
+                  "type": "object"
+                }
+              },
+              "additionalProperties": false,
+              "properties": {
+                "classifications": {
+                  "items": {
+                    "$ref": "#/$defs/Classification"
+                  },
+                  "title": "Classifications",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "classifications"
+              ],
+              "title": "Classifications",
+              "type": "object"
+            }
+          }
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "You will receive a codebook and a set of excerpts from political party manifestos and electoral programmes.\n\nFollowing the codebook and using no other external information, classify each text according to whether it contains \"moral rhetoric.\" For each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The text contains \"moral rhetoric\"\n\"0\": The text does not contain \"moral rhetoric\"\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as a JSON array of objects, each containing document_id and text:\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nFor each text, return:\n* ID: ID of the text document\n* Label: Your classification, 1 or 0\n* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.\n\nReturn a JSON object matching the supplied output format schema.\nMake sure that you return a classification for every document provided.\n\n\n\nCodebook:\n{\n  \"definition\": \"Moral rhetoric is language that appeals to moral values, ethical principles, or normative judgments of right and wrong, rather than (or in addition to) pragmatic, economic, technocratic, or administrative considerations. It includes explicit invocations of moral concepts (justice, fairness, equality, dignity, respect, rights, freedom, moral desert), moral evaluations (justified, intolerable, discriminated against, second-class treatment), virtue and vice language (caring, compassion, courage, patriotism, healthy marriages; terror, persecution), affirmations of inherent human worth, and moral imperatives about what must or must not be done on ethical grounds.\",\n  \"clarification\": \"Classify as 1 when the text: (a) uses explicit moral vocabulary — fair/unfair, just/unjust, equality, dignity, respect, deserve, justified, tolerable/intolerable, discriminated, human rights; (b) invokes virtues or moral qualities — caring, compassion, courage, patriotism, self-discipline, healthy marriages; (c) frames an issue as a moral wrong or moral imperative — an inequality that 'must be closed', anger that 'is justified', 'Soviet terror'; or (d) affirms inherent human worth or rights as moral claims ('every person has a place and a purpose', 'we affirm their right'). The moral appeal may coexist with policy content; what matters is the presence of moral-evaluative language. Appeals to freedom/liberty as a value being protected or unjustly restricted are included. A text coded 1 need not propose any specific policy.\",\n  \"positive_examples\": [\n    {\n      \"text\": \"Every person, however frail or vulnerable, has a place and a purpose in this world.\",\n      \"explanation\": \"Affirms the inherent worth of every human being, 'however frail or vulnerable' — a direct moral claim about human dignity rather than a policy instrument.\"\n    },\n    {\n      \"text\": \"While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.\",\n      \"explanation\": \"Invokes justice and moral desert ('the quality of justice they deserve') and the ethical principle that no one should be denied access to the courts.\"\n    },\n    {\n      \"text\": \"Their anger is justified.\",\n      \"explanation\": \"A direct moral evaluation — declaring people's anger 'justified' is a judgment of moral legitimacy, not an empirical or policy claim.\"\n    }\n  ],\n  \"negative_clarification\": \"Classify as 0 when the text is a neutral description of policy instruments, programmes, funding, targets, or administrative structures; an economic or fiscal argument (growth, jobs, taxes, efficiency, value for money); a factual or statistical claim about performance or conditions, even on morally significant topics (poverty figures, welfare caseloads, waiting times); generic positive or negative adjectives without moral content (successful, thriving, groundbreaking, burdensome); partisan slogans and aspirational visions lacking moral vocabulary; or descriptive references to morally charged subjects (humanitarian disasters, vulnerable people, family reunification, special needs) where the text itself is instrumental and uses no moral-evaluative language. Equality-of-access arguments framed purely instrumentally (e.g., equipping people to participate in society) are coded 0 unless explicit moral vocabulary is present.\",\n  \"negative_examples\": [\n    {\n      \"text\": \"We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.\",\n      \"explanation\": \"A straightforward programme commitment (sports participation for fitness and health) with purely instrumental language and no moral vocabulary.\"\n    },\n    {\n      \"text\": \"In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.\",\n      \"explanation\": \"Economic growth statistics and forecasts; purely empirical analysis with no evaluative moral content.\"\n    },\n    {\n      \"text\": \"Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.\",\n      \"explanation\": \"A boundary case: it concerns poverty reduction, but frames it as a statistical achievement ('caseloads have declined by half', 'lifted out of poverty') rather than a moral appeal about justice or duty, so it is coded 0.\"\n    }\n  ]\n}\n\nThere are 50 documents in this request."
+          },
+          {
+            "role": "user",
+            "content": "[{\"document_id\": \"48522\", \"text\": \"Seek the ability to retain the benefits of Executive and Assembly policies within the Executive budget for investment in public services rather than the Westminster budget.\"}, {\"document_id\": \"33425\", \"text\": \"Advocate for international acceptance of more flexible land-use rules where this can achieve greater economic returns with no detrimental environmental outcomes.\"}, {\"document_id\": \"31939\", \"text\": \"Improving health and wellbeing is essential to ensuring Maori can fully participate in modern society.\"}, {\"document_id\": \"25832\", \"text\": \"We will give the ESB a new mandate to develop renewable energy in Ireland with special emphasis on marine technology.\"}, {\"document_id\": \"9265\", \"text\": \"But we want to help even more.\"}, {\"document_id\": \"46465\", \"text\": \"We will work to make sure the British tourism industry is able to compete with other major world destinations and be a key generator of growth in the UK economy.\"}, {\"document_id\": \"8314\", \"text\": \"Australia’s system of democracy needs an overhaul to bring it into the twenty-first century.\"}, {\"document_id\": \"41296\", \"text\": \"training in basic skills,\"}, {\"document_id\": \"30476\", \"text\": \"The key for the future of tourism is to ensure we get high-quality visitors and increase the value we get from them – get them to spend more.\"}, {\"document_id\": \"29184\", \"text\": \"Māori representation on NZ Trade and Enterprise.\"}, {\"document_id\": \"39494\", \"text\": \"ACT wants and expects that to continue.\"}, {\"document_id\": \"44263\", \"text\": \"New skills provide a route into rewarding, fulfilling employment.\"}, {\"document_id\": \"29271\", \"text\": \"Refocus Māori Provider development to focus on outcomes in areas where services need to grow.\"}, {\"document_id\": \"23878\", \"text\": \"are kept in a drug free, secure environment and are prepared, where appropriate, for re-integration into society.\"}, {\"document_id\": \"19998\", \"text\": \"Promote greater sharing of school and community sports facilities and make it a condition of the Sports Capital Programme that facilities be made available to schools where appropriate.\"}, {\"document_id\": \"15826\", \"text\": \"A tax-back scheme to help people not eligible for other means-tested supports to claim up to two years of their income tax back to fund full-time study in an authorised institution.\"}, {\"document_id\": \"31139\", \"text\": \"and introduce a power-to-weight restriction for novice drivers.\"}, {\"document_id\": \"62174\", \"text\": \"It is wrong to borrow to spend on ourselves, leaving our children to pay our debts.\"}, {\"document_id\": \"11019\", \"text\": \"Canada's story is the story of immigration.\"}, {\"document_id\": \"14\", \"text\": \"This neglect is reﬂected in Labor’s approach to securing our borders against illicit drugs, illegal ﬁshing crews and people smuggling.\"}, {\"document_id\": \"34084\", \"text\": \" Cancellation of the 90-day trial period.\"}, {\"document_id\": \"13600\", \"text\": \"Encouraging internationalisation of our services enterprises.\"}, {\"document_id\": \"19153\", \"text\": \"If we are to compete effectively and in a sustainable way, we will have to do so through even greater competitiveness in knowledgedriven industries.\"}, {\"document_id\": \"44566\", \"text\": \"and there are 760,000 more businesses than in 2010 providing jobs and creating wealth across the country.\"}, {\"document_id\": \"312\", \"text\": \"Further, we will fund reliable communication and transport infrastructure that enables reasonable access to support services, hospitals and schools to foster and maintain the wellbeing and ongoing support of families.\"}, {\"document_id\": \"45804\", \"text\": \"All this reflects a core Conservative belief: power to the people.\"}, {\"document_id\": \"35374\", \"text\": \"Within four years the amount that will be spent on superannuation is twenty times the amount that we spend on the unemployment benefit.”\"}, {\"document_id\": \"36358\", \"text\": \"Lower interest rates.\"}, {\"document_id\": \"52981\", \"text\": \"The policy of an SNP government will be to secure a sustainable and long term oil industry:\"}, {\"document_id\": \"38927\", \"text\": \"• ensure the needs of retired New Zealanders are met through a sustainable superannuation scheme.\"}, {\"document_id\": \"52621\", \"text\": \"not subjects of an outmoded and decaying eighteenth century state.\"}, {\"document_id\": \"57898\", \"text\": \"and provide states, U.S. territories, and communities with two years of funding to build needed roads, bridges, and transit systems.\"}, {\"document_id\": \"33472\", \"text\": \"•  Over  130,000 homes  so far  are warmer,  drier, and healthier  thanks to  our  Warm Up  New Zealand: Heat Smart  scheme.\"}, {\"document_id\": \"39298\", \"text\": \"Public hospital waiting lists, for what is deemed by our health services as “non-urgent” surgery such as hip replacements, continue to rise.\"}, {\"document_id\": \"30271\", \"text\": \"− Victoria Park Tunnel\"}, {\"document_id\": \"11063\", \"text\": \"and help more people in need through a program that is safe, secure, and humane.\"}, {\"document_id\": \"17565\", \"text\": \"in areas of high unemployment\"}, {\"document_id\": \"23142\", \"text\": \"including clean urban public transport modes,\"}, {\"document_id\": \"29200\", \"text\": \"We will review priorities based on an evaluation of progress achieved under Ka Hikitia.\"}, {\"document_id\": \"35806\", \"text\": \"We commit to addressing institutional racism.\"}, {\"document_id\": \"32793\", \"text\": \"Continue to cap back-office administration, and focus resources on frontline services.\"}, {\"document_id\": \"27044\", \"text\": \"representing the cause of community and amenity development in the planning and zoning system.\"}, {\"document_id\": \"43919\", \"text\": \"and will ask the next UK government to report on options including new borrowing powers for the bank.\"}, {\"document_id\": \"15081\", \"text\": \"De-politicise Committee Work: Chairs of committees will be assigned on a more proportional basis, while legislation will typically be introduced in a heads of Bill format to increase the chance of cross-party support\"}, {\"document_id\": \"23471\", \"text\": \"and services reformed.\"}, {\"document_id\": \"40411\", \"text\": \"in order to eliminate burdensome elements that fail a rigorous regulatory assessment.\"}, {\"document_id\": \"60497\", \"text\": \"Exports accounted for about 25 percent of the economic growth in the 1990s and supported about 12 million jobs.\"}, {\"document_id\": \"15044\", \"text\": \"By having a dedicated body to coordinate policy across Government we can target initiatives in cross cutting areas such as education, health care, and housing which will aim to prevent as much as possible problems like homelessness, child poverty and other avoidable problems caused by lack of joined up action.\"}, {\"document_id\": \"31437\", \"text\": \"−  Targeting young offenders with education, training, employment, parenting and living skills.\"}, {\"document_id\": \"32972\", \"text\": \"See our Trade policy for more details.\"}]"
+          }
+        ]
+      }
+    },
+    {
+      "custom_id": "run-2-request-2",
+      "body": {
+        "max_completion_tokens": 50000,
+        "plugins": [
+          {
+            "id": "response-healing"
+          }
+        ],
+        "provider": {
+          "preferred_min_throughput": {
+            "p75": 50
+          },
+          "require_parameters": true
+        },
+        "model": "openai/gpt-5.6-terra",
+        "stream": true,
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "codebook_classifications",
+            "strict": true,
+            "schema": {
+              "$defs": {
+                "Classification": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "document_id": {
+                      "title": "Document Id",
+                      "type": "string"
+                    },
+                    "label": {
+                      "enum": [
+                        "0",
+                        "1"
+                      ],
+                      "title": "Label",
+                      "type": "string"
+                    },
+                    "explanation": {
+                      "title": "Explanation",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "document_id",
+                    "label",
+                    "explanation"
+                  ],
+                  "title": "Classification",
+                  "type": "object"
+                }
+              },
+              "additionalProperties": false,
+              "properties": {
+                "classifications": {
+                  "items": {
+                    "$ref": "#/$defs/Classification"
+                  },
+                  "title": "Classifications",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "classifications"
+              ],
+              "title": "Classifications",
+              "type": "object"
+            }
+          }
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "You will receive a codebook and a set of excerpts from political party manifestos and electoral programmes.\n\nFollowing the codebook and using no other external information, classify each text according to whether it contains \"moral rhetoric.\" For each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The text contains \"moral rhetoric\"\n\"0\": The text does not contain \"moral rhetoric\"\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as a JSON array of objects, each containing document_id and text:\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nFor each text, return:\n* ID: ID of the text document\n* Label: Your classification, 1 or 0\n* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.\n\nReturn a JSON object matching the supplied output format schema.\nMake sure that you return a classification for every document provided.\n\n\n\nCodebook:\n{\n  \"definition\": \"Moral rhetoric is language that appeals to moral values, ethical principles, or normative judgments of right and wrong, rather than (or in addition to) pragmatic, economic, technocratic, or administrative considerations. It includes explicit invocations of moral concepts (justice, fairness, equality, dignity, respect, rights, freedom, moral desert), moral evaluations (justified, intolerable, discriminated against, second-class treatment), virtue and vice language (caring, compassion, courage, patriotism, healthy marriages; terror, persecution), affirmations of inherent human worth, and moral imperatives about what must or must not be done on ethical grounds.\",\n  \"clarification\": \"Classify as 1 when the text: (a) uses explicit moral vocabulary — fair/unfair, just/unjust, equality, dignity, respect, deserve, justified, tolerable/intolerable, discriminated, human rights; (b) invokes virtues or moral qualities — caring, compassion, courage, patriotism, self-discipline, healthy marriages; (c) frames an issue as a moral wrong or moral imperative — an inequality that 'must be closed', anger that 'is justified', 'Soviet terror'; or (d) affirms inherent human worth or rights as moral claims ('every person has a place and a purpose', 'we affirm their right'). The moral appeal may coexist with policy content; what matters is the presence of moral-evaluative language. Appeals to freedom/liberty as a value being protected or unjustly restricted are included. A text coded 1 need not propose any specific policy.\",\n  \"positive_examples\": [\n    {\n      \"text\": \"Every person, however frail or vulnerable, has a place and a purpose in this world.\",\n      \"explanation\": \"Affirms the inherent worth of every human being, 'however frail or vulnerable' — a direct moral claim about human dignity rather than a policy instrument.\"\n    },\n    {\n      \"text\": \"While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.\",\n      \"explanation\": \"Invokes justice and moral desert ('the quality of justice they deserve') and the ethical principle that no one should be denied access to the courts.\"\n    },\n    {\n      \"text\": \"Their anger is justified.\",\n      \"explanation\": \"A direct moral evaluation — declaring people's anger 'justified' is a judgment of moral legitimacy, not an empirical or policy claim.\"\n    }\n  ],\n  \"negative_clarification\": \"Classify as 0 when the text is a neutral description of policy instruments, programmes, funding, targets, or administrative structures; an economic or fiscal argument (growth, jobs, taxes, efficiency, value for money); a factual or statistical claim about performance or conditions, even on morally significant topics (poverty figures, welfare caseloads, waiting times); generic positive or negative adjectives without moral content (successful, thriving, groundbreaking, burdensome); partisan slogans and aspirational visions lacking moral vocabulary; or descriptive references to morally charged subjects (humanitarian disasters, vulnerable people, family reunification, special needs) where the text itself is instrumental and uses no moral-evaluative language. Equality-of-access arguments framed purely instrumentally (e.g., equipping people to participate in society) are coded 0 unless explicit moral vocabulary is present.\",\n  \"negative_examples\": [\n    {\n      \"text\": \"We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.\",\n      \"explanation\": \"A straightforward programme commitment (sports participation for fitness and health) with purely instrumental language and no moral vocabulary.\"\n    },\n    {\n      \"text\": \"In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.\",\n      \"explanation\": \"Economic growth statistics and forecasts; purely empirical analysis with no evaluative moral content.\"\n    },\n    {\n      \"text\": \"Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.\",\n      \"explanation\": \"A boundary case: it concerns poverty reduction, but frames it as a statistical achievement ('caseloads have declined by half', 'lifted out of poverty') rather than a moral appeal about justice or duty, so it is coded 0.\"\n    }\n  ]\n}\n\nThere are 50 documents in this request."
+          },
+          {
+            "role": "user",
+            "content": "[{\"document_id\": \"50193\", \"text\": \"Increase alcohol and tobacco duties by a successive £1.4 billion every year in the Parliament.\"}, {\"document_id\": \"48050\", \"text\": \"Through this mechanism Scotland has succeeded in winning the argument to allow them to borrow money and issue their own bonds.\"}, {\"document_id\": \"32433\", \"text\": \"Provided extra WellChild/Plunket Tamariki Ora maternity visits for mums – targeting firsttime mothers.\"}, {\"document_id\": \"41504\", \"text\": \"M.P. 's will also be required to disclose their financial affairs.\"}, {\"document_id\": \"42783\", \"text\": \"This myth grew out of a report by the National Institute of Economic and Social Research (NIESR) in 2000, which concluded that 2.7 million jobs were directly related to our trade with the EU and another 500,000 were indirectly linked.\"}, {\"document_id\": \"36874\", \"text\": \"We know that we must urgently prepare for rising oil prices.\"}, {\"document_id\": \"35539\", \"text\": \"and use the funds to clean up our rivers,\"}, {\"document_id\": \"52231\", \"text\": \"We will also seek European agreement for fuel price reductions in rural areas, recognizing the additional costs of living in rural parts of Wales, as already introduced in the Highlands and Islands of Scotland.\"}, {\"document_id\": \"9220\", \"text\": \"Enacted and expanded Tax-Free Savings Accounts.\"}, {\"document_id\": \"47117\", \"text\": \"Introduce a National Food Strategy to promote the production and consumption of healthy, sustainable and affordable food.\"}, {\"document_id\": \"11786\", \"text\": \"to provide stable, ongoing funding to put 2,500 new officers on the streets and keep them there.\"}, {\"document_id\": \"57605\", \"text\": \"Democrats led the fight to enact the STOCK Act to ban congressional insider trading.\"}, {\"document_id\": \"37949\", \"text\": \"By this means we will rebuild the social contract necessary between officers and their personnel and we will put the responsibility for remuneration of our Defence Force personnel with the Executive who are accountable to the electorate, on whose behalf the armed forces serve.\"}, {\"document_id\": \"4679\", \"text\": \"We will cut business taxes across the board, especially for small businesses who will benefit from a head start on the company tax cut\"}, {\"document_id\": \"35359\", \"text\": \"What that tells me is that Maori will be right at the bottom. (Newspaper heading: ‘Crime hurts young, ethnic, poor’).\"}, {\"document_id\": \"9879\", \"text\": \"As a result of our investments in infrastructure, we have brought the average age of Canada's core public infrastructure down from a peak of 17 years in 2001 to an estimated 14.7 years in 2013.\"}, {\"document_id\": \"60753\", \"text\": \"America's economy is undergoing a fundamental transition from one based primarily on manufacturing to one based on innovation, services, and ideas.\"}, {\"document_id\": \"43655\", \"text\": \"This will deliver a total boost to the NHS Scotland budget of £2 billion by 202021.\"}, {\"document_id\": \"48142\", \"text\": \"The EU public procurement directives adopted in January 2014 allow for social clauses to be inserted into public contracts to help address social inequalities while maintaining a value for money approach.\"}, {\"document_id\": \"24044\", \"text\": \"close to people, and supporting independent living.\"}, {\"document_id\": \"7179\", \"text\": \"· Support disadvantaged individuals and communities through improved public health, housing, education and transport\"}, {\"document_id\": \"32573\", \"text\": \"The Youth Mental Health Project is focused on improving provision of services for youth aged 13-19 with, or at risk of, mental health problems such as depression, anxiety, and substance abuse.\"}, {\"document_id\": \"960\", \"text\": \"Older Australians need incentives to retain private health insurance cover\"}, {\"document_id\": \"54704\", \"text\": \"The generation and supply businesses of the ‘Big Six’ energy companies will be separated.\"}, {\"document_id\": \"38559\", \"text\": \"Getting the greatest amount of health and disability support from our health spending is critical.\"}, {\"document_id\": \"52677\", \"text\": \"Establish International Economic Credibility\"}, {\"document_id\": \"45775\", \"text\": \"We will keep the triple lock pension system.\"}, {\"document_id\": \"37825\", \"text\": \"• ensure that all future appointments to the NZB board are made on the basis of experience, expertise, and appropriate representation from industry and consumers, and not political patronage.\"}, {\"document_id\": \"60721\", \"text\": \"Junk lawsuits add at least $60 billion to health care costs in America because doctors are forced to practice defensive medicine, ordering extensive, unnecessary, and expensive tests and procedures to keep trial lawyers at bay.\"}, {\"document_id\": \"21213\", \"text\": \"We will have a Commission on Taxation to examine tax schemes on an on-going basis.\"}, {\"document_id\": \"28211\", \"text\": \"provide a once-off grant to one-parent families when a child enters secondary school;\"}, {\"document_id\": \"22073\", \"text\": \"We will ensure that over time, the database will be developed into a health statistics database to be used as a research resource and management information tool.\"}, {\"document_id\": \"38220\", \"text\": \"and will develop and fund programmes which will provide all families with support and guidance in this role.\"}, {\"document_id\": \"7490\", \"text\": \"I claim very directly that interest rates under a Labor Government would always be higher than under a Coalition Government, and that claim is based on two things.\"}, {\"document_id\": \"10938\", \"text\": \"and  prioritize community outreach and counter-radicalization, by creating the Office of the Community Outreach and Counter-radicalization Co-ordinator.\"}, {\"document_id\": \"39394\", \"text\": \"These are responsibilities that successive governments have failed to provide.\"}, {\"document_id\": \"44775\", \"text\": \"We have set out the bold aim of achieving full employment, with the highest employment rate of any major economy.\"}, {\"document_id\": \"48591\", \"text\": \"The potential of our island economy is strong.\"}, {\"document_id\": \"7316\", \"text\": \"It’s a vision that we still hold to now:\"}, {\"document_id\": \"44460\", \"text\": \"It is why we supported the limited extension of devolution in the Scotland Act 2012, and called for a far more substantial package of powers at that point.\"}, {\"document_id\": \"44905\", \"text\": \"Achieving this means seeing through our major reforms of tax and welfare.\"}, {\"document_id\": \"60509\", \"text\": \"After lapsing for eight years, the law now allows President Bush to work with other countries to reduce barriers to our products and services.\"}, {\"document_id\": \"12517\", \"text\": \"The treaty, known as a Foreign Investment Promotion and Protection Agreement or FIPA, is lop-sided, benefiting the Peoples' Republic of China, while providing no advantage to Canada.\"}, {\"document_id\": \"36294\", \"text\": \"No matter how you choose, I am grateful to live in a beautiful country I am deeply proud of.\"}, {\"document_id\": \"54888\", \"text\": \"Sure Start will have an obligation to provide families with access to childcare, opening their facilities to charities and local childcare providers.\"}, {\"document_id\": \"52023\", \"text\": \"We will involve disabled people and groups that represent the interests of disabled people in designing and developing such a system.\"}, {\"document_id\": \"9270\", \"text\": \"Reducing the expected parental contributions from the Canada Student Loans Program assessment to better recognize the financial realities faced by Canadian families – increasing support to approximately 92,000 students.\"}, {\"document_id\": \"53151\", \"text\": \"- Give children the best start by providing high quality early years education for every 3 and 4 year-old child whose parents want it.\"}, {\"document_id\": \"7513\", \"text\": \"We must maintain and strengthen the productivity gains of recent years.\"}, {\"document_id\": \"10458\", \"text\": \"We will make the compassionate care benefit easier to access, more flexible, and more inclusive.\"}]"
+          }
+        ]
+      }
+    },
+    {
+      "custom_id": "run-2-request-3",
+      "body": {
+        "max_completion_tokens": 50000,
+        "plugins": [
+          {
+            "id": "response-healing"
+          }
+        ],
+        "provider": {
+          "preferred_min_throughput": {
+            "p75": 50
+          },
+          "require_parameters": true
+        },
+        "model": "openai/gpt-5.6-terra",
+        "stream": true,
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "codebook_classifications",
+            "strict": true,
+            "schema": {
+              "$defs": {
+                "Classification": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "document_id": {
+                      "title": "Document Id",
+                      "type": "string"
+                    },
+                    "label": {
+                      "enum": [
+                        "0",
+                        "1"
+                      ],
+                      "title": "Label",
+                      "type": "string"
+                    },
+                    "explanation": {
+                      "title": "Explanation",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "document_id",
+                    "label",
+                    "explanation"
+                  ],
+                  "title": "Classification",
+                  "type": "object"
+                }
+              },
+              "additionalProperties": false,
+              "properties": {
+                "classifications": {
+                  "items": {
+                    "$ref": "#/$defs/Classification"
+                  },
+                  "title": "Classifications",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "classifications"
+              ],
+              "title": "Classifications",
+              "type": "object"
+            }
+          }
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "You will receive a codebook and a set of excerpts from political party manifestos and electoral programmes.\n\nFollowing the codebook and using no other external information, classify each text according to whether it contains \"moral rhetoric.\" For each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The text contains \"moral rhetoric\"\n\"0\": The text does not contain \"moral rhetoric\"\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as a JSON array of objects, each containing document_id and text:\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nFor each text, return:\n* ID: ID of the text document\n* Label: Your classification, 1 or 0\n* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.\n\nReturn a JSON object matching the supplied output format schema.\nMake sure that you return a classification for every document provided.\n\n\n\nCodebook:\n{\n  \"definition\": \"Moral rhetoric is language that appeals to moral values, ethical principles, or normative judgments of right and wrong, rather than (or in addition to) pragmatic, economic, technocratic, or administrative considerations. It includes explicit invocations of moral concepts (justice, fairness, equality, dignity, respect, rights, freedom, moral desert), moral evaluations (justified, intolerable, discriminated against, second-class treatment), virtue and vice language (caring, compassion, courage, patriotism, healthy marriages; terror, persecution), affirmations of inherent human worth, and moral imperatives about what must or must not be done on ethical grounds.\",\n  \"clarification\": \"Classify as 1 when the text: (a) uses explicit moral vocabulary — fair/unfair, just/unjust, equality, dignity, respect, deserve, justified, tolerable/intolerable, discriminated, human rights; (b) invokes virtues or moral qualities — caring, compassion, courage, patriotism, self-discipline, healthy marriages; (c) frames an issue as a moral wrong or moral imperative — an inequality that 'must be closed', anger that 'is justified', 'Soviet terror'; or (d) affirms inherent human worth or rights as moral claims ('every person has a place and a purpose', 'we affirm their right'). The moral appeal may coexist with policy content; what matters is the presence of moral-evaluative language. Appeals to freedom/liberty as a value being protected or unjustly restricted are included. A text coded 1 need not propose any specific policy.\",\n  \"positive_examples\": [\n    {\n      \"text\": \"Every person, however frail or vulnerable, has a place and a purpose in this world.\",\n      \"explanation\": \"Affirms the inherent worth of every human being, 'however frail or vulnerable' — a direct moral claim about human dignity rather than a policy instrument.\"\n    },\n    {\n      \"text\": \"While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.\",\n      \"explanation\": \"Invokes justice and moral desert ('the quality of justice they deserve') and the ethical principle that no one should be denied access to the courts.\"\n    },\n    {\n      \"text\": \"Their anger is justified.\",\n      \"explanation\": \"A direct moral evaluation — declaring people's anger 'justified' is a judgment of moral legitimacy, not an empirical or policy claim.\"\n    }\n  ],\n  \"negative_clarification\": \"Classify as 0 when the text is a neutral description of policy instruments, programmes, funding, targets, or administrative structures; an economic or fiscal argument (growth, jobs, taxes, efficiency, value for money); a factual or statistical claim about performance or conditions, even on morally significant topics (poverty figures, welfare caseloads, waiting times); generic positive or negative adjectives without moral content (successful, thriving, groundbreaking, burdensome); partisan slogans and aspirational visions lacking moral vocabulary; or descriptive references to morally charged subjects (humanitarian disasters, vulnerable people, family reunification, special needs) where the text itself is instrumental and uses no moral-evaluative language. Equality-of-access arguments framed purely instrumentally (e.g., equipping people to participate in society) are coded 0 unless explicit moral vocabulary is present.\",\n  \"negative_examples\": [\n    {\n      \"text\": \"We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.\",\n      \"explanation\": \"A straightforward programme commitment (sports participation for fitness and health) with purely instrumental language and no moral vocabulary.\"\n    },\n    {\n      \"text\": \"In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.\",\n      \"explanation\": \"Economic growth statistics and forecasts; purely empirical analysis with no evaluative moral content.\"\n    },\n    {\n      \"text\": \"Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.\",\n      \"explanation\": \"A boundary case: it concerns poverty reduction, but frames it as a statistical achievement ('caseloads have declined by half', 'lifted out of poverty') rather than a moral appeal about justice or duty, so it is coded 0.\"\n    }\n  ]\n}\n\nThere are 50 documents in this request."
+          },
+          {
+            "role": "user",
+            "content": "[{\"document_id\": \"19996\", \"text\": \"make PE mandatory at second level,\"}, {\"document_id\": \"35931\", \"text\": \"Young people should not be charged for these courses. \"}, {\"document_id\": \"58544\", \"text\": \"We oppose reinstituting the draft, whether directly or through compulsory national service.\"}, {\"document_id\": \"46486\", \"text\": \"working to deliver access for all, regardless of income, ethnicity, gender, age, belief, sexuality or disability.\"}, {\"document_id\": \"3960\", \"text\": \"The non-scheduled air and space transport sector comprises more than 1000 businesses, employing nearly 4000 people, and producing an industry turnover of nearly $1 billion.\"}, {\"document_id\": \"27024\", \"text\": \"Provide vouchers for music lessons at primary level to ensure where practicable, 30 hours of free tuition by qualified teachers is available to all students during one designated year.\"}, {\"document_id\": \"4631\", \"text\": \"This will drive localised educational responses and better learning outcomes for students\"}, {\"document_id\": \"28248\", \"text\": \"ensure that the right to flexible working practices is enshrined in law;\"}, {\"document_id\": \"3104\", \"text\": \"Caring for the health of the community requires more investment in preventative health, with a focus on tobacco, alcohol and obesity issues\"}, {\"document_id\": \"8525\", \"text\": \"establish a rural development bank to facilitate generational equity transfer;\"}, {\"document_id\": \"40715\", \"text\": \"One is Maori underachievement.\"}, {\"document_id\": \"29943\", \"text\": \"− 1.9 million matches with ACC.\"}, {\"document_id\": \"14606\", \"text\": \"If implemented these policies can make a real difference to Ireland’s energy cost competitiveness, energy security, and carbon footprint.\"}, {\"document_id\": \"11918\", \"text\": \"The world has been waiting nearly a decade for Canada to step up in these ways, and the NDP will do so.\"}, {\"document_id\": \"62065\", \"text\": \"Rather than looking at American industries only as polluters, we will work with the private sector to create partnerships that make a profit and a cleaner world for us all.\"}, {\"document_id\": \"6453\", \"text\": \"major airports located to minimise social and environmental impacts.\"}, {\"document_id\": \"2334\", \"text\": \"The Cancer Care Coordinators will provide support and education patients who have been diagnosed with cancer, their families, carers and staff\"}, {\"document_id\": \"37374\", \"text\": \"We believe every child deserves the best\"}, {\"document_id\": \"34454\", \"text\": \"and that capital markets can broaden and deepen their base and appeal, and be free to innovate.\"}, {\"document_id\": \"52126\", \"text\": \"Increasing reliance upon technology leaves countries open to attack by foreign powers without the need for conventional weapons.\"}, {\"document_id\": \"25386\", \"text\": \"The availability at competitive prices of high quality energy and communications services is vital for competitiveness,\"}, {\"document_id\": \"23623\", \"text\": \"Initial funding for the scheme will come from the allocation of seed and venture capital funding announced in the Budget (€175 million over a period of ten years), with further extra funding allocated as required.\"}, {\"document_id\": \"7361\", \"text\": \"My particular vision for a fourth term in government, and the task I give my party as a partner in Coalition with the Liberal Party, is to ensure that our regional cities and country towns and communities obtain the services and infrastructure they need to build on their renewed foundations and realise the promise of their future.\"}, {\"document_id\": \"61388\", \"text\": \"But we should never wait to act until we have no other choice but war.\"}, {\"document_id\": \"47106\", \"text\": \"Commission the Natural Capital Committee to investigate the potential for other resource taxes, including deposit refund schemes.\"}, {\"document_id\": \"18924\", \"text\": \"Fianna Fáil conducted the biggest ever reform of Civil Defence and the Army Reserve.\"}, {\"document_id\": \"25343\", \"text\": \"Ensure that the Marine Institute has the necessary resources to be at the cutting edge of international marine research,\"}, {\"document_id\": \"6730\", \"text\": \"We can reach that great goal of full employment.\"}, {\"document_id\": \"59543\", \"text\": \"Every element of America's homeland security plan is critical, because the terrorists are ruthless and resourceful - and we know they are preparing to attack us again.\"}, {\"document_id\": \"13914\", \"text\": \"o  each minister should prepare and publish a statement of the skills and roles sought for each board.\"}, {\"document_id\": \"6565\", \"text\": \"We have had an unprecedented 16 years of continuous economic expansion.\"}, {\"document_id\": \"36185\", \"text\": \"We want young New Zealanders to be able to join KiwiSaver and stay in it for their working lives.\"}, {\"document_id\": \"35674\", \"text\": \"• It has been four years since the Maori Commercial Settlement Act was passed, and most iwi are yet to receive any form of settlement from the Crown. \"}, {\"document_id\": \"55494\", \"text\": \"Those policies have placed the federal government in the driver’s seat,\"}, {\"document_id\": \"48146\", \"text\": \"This has resulted in increased pressure in the health system and failed outcomes for healthcare staff, patients and the public.\"}, {\"document_id\": \"34420\", \"text\": \"•  More than two in every three New  Zealanders  does unpaid work outside their  own households.\"}, {\"document_id\": \"4781\", \"text\": \"ACARA will work with States and Territories to ensure the Cadetships contribute towards state based senior awards, in the same way as other approved subjects under the National Curriculum\"}, {\"document_id\": \"57434\", \"text\": \"That’s why President Obama and Democrats in Congress have enacted infrastructure investments that will\"}, {\"document_id\": \"34241\", \"text\": \"Increased funding for early childhood education by $550 million, or 40 per cent, since 2008.\"}, {\"document_id\": \"3903\", \"text\": \"Labor’s Infrastructure Australia is a secretive organisation.\"}, {\"document_id\": \"41339\", \"text\": \"South Island domestic and industrial users will have their price discounted.\"}, {\"document_id\": \"3997\", \"text\": \"Labor has done little to educate the public on the benefits of cleaner fuels.\"}, {\"document_id\": \"23015\", \"text\": \"In 1997, a single person on the average industrial wage paid 22% of their income in income tax.\"}, {\"document_id\": \"35493\", \"text\": \"Together we're the co-leaders of the Green party\"}, {\"document_id\": \"46399\", \"text\": \"without allowing emissions from aviation to undermine our goal of a zero-carbon Britain by 2050.\"}, {\"document_id\": \"26984\", \"text\": \"The development of an ‘alternative growth pole’ along the Atlantic Corridor will be pursued.\"}, {\"document_id\": \"54796\", \"text\": \"This will be underpinned by new rights for patients.\"}, {\"document_id\": \"4151\", \"text\": \"Current investment in developing and protecting the Australian farm sector does not recognise the large contribution farmers make to our economy.\"}, {\"document_id\": \"9333\", \"text\": \"We recognize that adoption costs can be high and in some cases prohibitive for families.\"}, {\"document_id\": \"52502\", \"text\": \"We will increase access to the arts for young people, particularly those of disadvantaged backgrounds,\"}]"
+          }
+        ]
+      }
+    },
+    {
+      "custom_id": "run-2-request-4",
+      "body": {
+        "max_completion_tokens": 50000,
+        "plugins": [
+          {
+            "id": "response-healing"
+          }
+        ],
+        "provider": {
+          "preferred_min_throughput": {
+            "p75": 50
+          },
+          "require_parameters": true
+        },
+        "model": "openai/gpt-5.6-terra",
+        "stream": true,
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "codebook_classifications",
+            "strict": true,
+            "schema": {
+              "$defs": {
+                "Classification": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "document_id": {
+                      "title": "Document Id",
+                      "type": "string"
+                    },
+                    "label": {
+                      "enum": [
+                        "0",
+                        "1"
+                      ],
+                      "title": "Label",
+                      "type": "string"
+                    },
+                    "explanation": {
+                      "title": "Explanation",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "document_id",
+                    "label",
+                    "explanation"
+                  ],
+                  "title": "Classification",
+                  "type": "object"
+                }
+              },
+              "additionalProperties": false,
+              "properties": {
+                "classifications": {
+                  "items": {
+                    "$ref": "#/$defs/Classification"
+                  },
+                  "title": "Classifications",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "classifications"
+              ],
+              "title": "Classifications",
+              "type": "object"
+            }
+          }
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "You will receive a codebook and a set of excerpts from political party manifestos and electoral programmes.\n\nFollowing the codebook and using no other external information, classify each text according to whether it contains \"moral rhetoric.\" For each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The text contains \"moral rhetoric\"\n\"0\": The text does not contain \"moral rhetoric\"\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as a JSON array of objects, each containing document_id and text:\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nFor each text, return:\n* ID: ID of the text document\n* Label: Your classification, 1 or 0\n* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.\n\nReturn a JSON object matching the supplied output format schema.\nMake sure that you return a classification for every document provided.\n\n\n\nCodebook:\n{\n  \"definition\": \"Moral rhetoric is language that appeals to moral values, ethical principles, or normative judgments of right and wrong, rather than (or in addition to) pragmatic, economic, technocratic, or administrative considerations. It includes explicit invocations of moral concepts (justice, fairness, equality, dignity, respect, rights, freedom, moral desert), moral evaluations (justified, intolerable, discriminated against, second-class treatment), virtue and vice language (caring, compassion, courage, patriotism, healthy marriages; terror, persecution), affirmations of inherent human worth, and moral imperatives about what must or must not be done on ethical grounds.\",\n  \"clarification\": \"Classify as 1 when the text: (a) uses explicit moral vocabulary — fair/unfair, just/unjust, equality, dignity, respect, deserve, justified, tolerable/intolerable, discriminated, human rights; (b) invokes virtues or moral qualities — caring, compassion, courage, patriotism, self-discipline, healthy marriages; (c) frames an issue as a moral wrong or moral imperative — an inequality that 'must be closed', anger that 'is justified', 'Soviet terror'; or (d) affirms inherent human worth or rights as moral claims ('every person has a place and a purpose', 'we affirm their right'). The moral appeal may coexist with policy content; what matters is the presence of moral-evaluative language. Appeals to freedom/liberty as a value being protected or unjustly restricted are included. A text coded 1 need not propose any specific policy.\",\n  \"positive_examples\": [\n    {\n      \"text\": \"Every person, however frail or vulnerable, has a place and a purpose in this world.\",\n      \"explanation\": \"Affirms the inherent worth of every human being, 'however frail or vulnerable' — a direct moral claim about human dignity rather than a policy instrument.\"\n    },\n    {\n      \"text\": \"While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.\",\n      \"explanation\": \"Invokes justice and moral desert ('the quality of justice they deserve') and the ethical principle that no one should be denied access to the courts.\"\n    },\n    {\n      \"text\": \"Their anger is justified.\",\n      \"explanation\": \"A direct moral evaluation — declaring people's anger 'justified' is a judgment of moral legitimacy, not an empirical or policy claim.\"\n    }\n  ],\n  \"negative_clarification\": \"Classify as 0 when the text is a neutral description of policy instruments, programmes, funding, targets, or administrative structures; an economic or fiscal argument (growth, jobs, taxes, efficiency, value for money); a factual or statistical claim about performance or conditions, even on morally significant topics (poverty figures, welfare caseloads, waiting times); generic positive or negative adjectives without moral content (successful, thriving, groundbreaking, burdensome); partisan slogans and aspirational visions lacking moral vocabulary; or descriptive references to morally charged subjects (humanitarian disasters, vulnerable people, family reunification, special needs) where the text itself is instrumental and uses no moral-evaluative language. Equality-of-access arguments framed purely instrumentally (e.g., equipping people to participate in society) are coded 0 unless explicit moral vocabulary is present.\",\n  \"negative_examples\": [\n    {\n      \"text\": \"We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.\",\n      \"explanation\": \"A straightforward programme commitment (sports participation for fitness and health) with purely instrumental language and no moral vocabulary.\"\n    },\n    {\n      \"text\": \"In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.\",\n      \"explanation\": \"Economic growth statistics and forecasts; purely empirical analysis with no evaluative moral content.\"\n    },\n    {\n      \"text\": \"Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.\",\n      \"explanation\": \"A boundary case: it concerns poverty reduction, but frames it as a statistical achievement ('caseloads have declined by half', 'lifted out of poverty') rather than a moral appeal about justice or duty, so it is coded 0.\"\n    }\n  ]\n}\n\nThere are 50 documents in this request."
+          },
+          {
+            "role": "user",
+            "content": "[{\"document_id\": \"33121\", \"text\": \"Direct this new spending to health, education, and a few carefully targeted initiatives.\"}, {\"document_id\": \"50545\", \"text\": \"The Green Party is committed to bringing rail services into public ownership and control.\"}, {\"document_id\": \"8490\", \"text\": \"provide direct and meaningful support to land managers in delivering ecoservices; | and\"}, {\"document_id\": \"24577\", \"text\": \"and providing other services as required, thus contributing to Ireland’s political and economic well being.\"}, {\"document_id\": \"40367\", \"text\": \"• Conflicting roles and responsibilities.\"}, {\"document_id\": \"51190\", \"text\": \"An SNP government will strive to ensure that Scotland becomes a world leader in securing a sustainable environment\"}, {\"document_id\": \"51280\", \"text\": \"With the investment that we are promising in hospital buildings,\"}, {\"document_id\": \"4358\", \"text\": \"The question that should still be asked of Labor is:\"}, {\"document_id\": \"45645\", \"text\": \"And with new laws to crack down on domestic violence,\"}, {\"document_id\": \"20972\", \"text\": \"Fine Gael will support the on-going nationwide roll out of the “Food Dudes” Fruit and Vegetable Promotion programme to all primary schools in Ireland.\"}, {\"document_id\": \"13929\", \"text\": \"Every board shall publish before March of each year an annual report on  its own activities as opposed to the wider work of the state body.\"}, {\"document_id\": \"46601\", \"text\": \"In particular, as we expand access to talking therapies we expect many more people to recover and be able to seek work again.\"}, {\"document_id\": \"29051\", \"text\": \"and free up  resources  for whānau development.\"}, {\"document_id\": \"22925\", \"text\": \"We will give 1 weeks paid Parental leave for either parent to take, giving them more choice.\"}, {\"document_id\": \"12151\", \"text\": \"Policy alignment will ensure the wise use of public dollars.\"}, {\"document_id\": \"54004\", \"text\": \"At £1.4 Trillion, that equates to £54,353 per household;\"}, {\"document_id\": \"28323\", \"text\": \"maintain the Defence Forces’ proud reputation in peacekeeping\"}, {\"document_id\": \"1105\", \"text\": \"The Nationals are determined to eliminate the divide between those living in and those living outside major capital cities, including any limitation on access to a fair legal system that respects the rights and responsibilities of all Australians.\"}, {\"document_id\": \"19219\", \"text\": \"These moves will eliminate remaining inequality in the income tax system and enhance its progressive nature.\"}, {\"document_id\": \"43310\", \"text\": \"It is now enshrined in law that we must pay 0.7 per cent of our Gross National Income (GNI) on aid every year.\"}, {\"document_id\": \"49871\", \"text\": \"Caroline Lucas and housing In July 2014 Caroline Lucas MP introduced a Housing (Affordability, Supply and Tenant Protection) Bill to highlight the problems faced by private tenants.\"}, {\"document_id\": \"4502\", \"text\": \"Support for 2,500 additional aged care beds;\"}, {\"document_id\": \"25992\", \"text\": \"Develop new community policing structures, through local policing forums in individual communities, to reconnect the Gardaí and local communities in a spirit of genuine partnership.\"}, {\"document_id\": \"45359\", \"text\": \"We will: save you money by cutting government waste\"}, {\"document_id\": \"16553\", \"text\": \"Ireland should be the best place in the world to grow up, and to grow old.\"}, {\"document_id\": \"15394\", \"text\": \"Ministerial Cars: We will end the automatic entitlement to a State car for every Government Minister.\"}, {\"document_id\": \"36802\", \"text\": \"If you can’t trust Labour and National to go public about poisoned baby milk then what on earth can you trust them on.\"}, {\"document_id\": \"26767\", \"text\": \"All TDs will be entitled to put forward proposals for legislation and a lottery at the start of each session will determine which Bills will be debated.\"}, {\"document_id\": \"27178\", \"text\": \"We will put in train preparations for the 100th anniversary of the Easter Rising, in a manner that honours the contribution of the men and women of Easter Week,\"}, {\"document_id\": \"43698\", \"text\": \"We will support sensible immigration policies that meet our economic needs\"}, {\"document_id\": \"46780\", \"text\": \"Establishing the right accountability framework for schools.\"}, {\"document_id\": \"60201\", \"text\": \"Republicans share President Bush's understanding that just as events in Europe determined the outcome of the Cold War, events in the broader Middle East will set the course for the victory of free nations in the War on Terror.\"}, {\"document_id\": \"37769\", \"text\": \"• there is appropriate time for debate to be conducted.\"}, {\"document_id\": \"38483\", \"text\": \"All recreational fishers should help police the system to ensure that there is no room for poachers and quasi ‘recreational’ fishers who sell or raffle their catches.\"}, {\"document_id\": \"32210\", \"text\": \"•  Created  2000 jobs  during the recession  through state housing upgrades.\"}, {\"document_id\": \"43570\", \"text\": \"Constitutional stability for Northern Ireland;\"}, {\"document_id\": \"14781\", \"text\": \"It will dismantle the dysfunctional Health Service Executive (HSE) that was created by Micheál Martin in 2004,\"}, {\"document_id\": \"23654\", \"text\": \"conflicts with long-term strategies to cut waste volumes by recycling and reduction, requires huge scale to operate efficiently and generates large volumes of traffic.\"}, {\"document_id\": \"12615\", \"text\": \"and transition to a prosperous, decarbonized economy.\"}, {\"document_id\": \"44832\", \"text\": \"This will support our aim to make Britain the best place in Europe, and one of the top five worldwide, to do business by 2020.\"}, {\"document_id\": \"3331\", \"text\": \"The Nationals believe that, when wealth is generated in a region, a fair share of the resulting government revenue should be returned to that region and to regional Australia more generally.\"}, {\"document_id\": \"27002\", \"text\": \"Half a million of us regularly play sport, while 400,000 volunteer as coaches, match officials and referees.\"}, {\"document_id\": \"35733\", \"text\": \"We recognise the contribution that Mäori enterprise and entrepreneurship has made to our nation's economy.\"}, {\"document_id\": \"54293\", \"text\": \"We will: Work to secure the full implementation of the Military Covenant in Northern Ireland.\"}, {\"document_id\": \"28284\", \"text\": \"abolish the current 2% limit for funding political parties, which acts against new and smaller parties and could be seen as supporting the status quo;\"}, {\"document_id\": \"6794\", \"text\": \"After so long in office, Mr Howard has forgotten what fairness actually means.\"}, {\"document_id\": \"38403\", \"text\": \"• develop Parents as First Teacher (PAFT) programmes across the country.\"}, {\"document_id\": \"1793\", \"text\": \"We will crackdown on overseas producers who don’t cooperate with anti-dumping investigations\"}, {\"document_id\": \"16812\", \"text\": \"Labour will ensure that the Defence  Forces are appropriately equipped and staffed to meet Ireland’s  obligations to United Nations and EU peacekeeping missions.\"}, {\"document_id\": \"16325\", \"text\": \"Processing of applications and decision-making is subject to long delays, while the absence of legislation means there is frequent resort to the Courts for judicial review.\"}]"
+          }
+        ]
+      }
+    }
+  ]
+}

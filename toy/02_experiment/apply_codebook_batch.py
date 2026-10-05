@@ -2,7 +2,6 @@ import argparse
 import json
 import os
 import re
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Literal
@@ -13,7 +12,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field, create_model
 
 BATCHES_URL = "https://openrouter.ai/api/beta/batches"
-DOCUMENTS_PER_REQUEST = 10
+DOCUMENTS_PER_REQUEST = 40
 
 
 class StrictModel(BaseModel, extra="forbid", strict=True):
@@ -41,7 +40,9 @@ def parse_args():
     parser.add_argument("--run", type=int, default=1)
     parser.add_argument("--codebook-path", type=Path, required=True)
     parser.add_argument("--data-path", type=Path, default=Path("./data/grimmer_codebookapply_300.csv"))
+    parser.add_argument("--data-encoding", default="utf8", help="CSV encoding; utf8-lossy replaces invalid bytes")
     parser.add_argument("--prompt-path", type=Path, default=Path("./prompts/apply_codebookLLM_grimmer.txt"))
+    parser.add_argument("--dry-run", action="store_true", help="validate and list batches without submitting")
     parser.add_argument("--out-folder", type=Path, default=Path("./out"))
     parser.add_argument("--test-rows", type=int, default=None)
     parser.add_argument("--note", default="", help="add a note if you want")
@@ -103,12 +104,12 @@ def request_json(method, url, api_key, body):
     return result
 
 
-def main():
-    args = parse_args()
-    load_dotenv()
-    api_key = os.environ.get("OPENROUTER_API_KEY")
+def prepare_batch(args):
 
-    documents = pl.read_csv(args.data_path)
+    documents = pl.read_csv(
+        args.data_path, schema_overrides={"document_id": pl.String},
+        encoding=getattr(args, "data_encoding", "utf8"),
+    )
     if args.test_rows is not None:
         documents = documents.sample(n=args.test_rows, seed=1)
 
@@ -137,6 +138,8 @@ def main():
     ]
     if len({item["document_id"] for item in document_inputs}) != len(document_inputs):
         raise ValueError("Document IDs must be unique.")
+    if not document_inputs:
+        raise ValueError("No documents to classify.")
     requests_list, submitted_requests = [], []
 
     for start in range(0, len(document_inputs), DOCUMENTS_PER_REQUEST):
@@ -171,8 +174,8 @@ def main():
         })
 
     print(
-        f"Submitting {len(requests_list)} requests for "
-        f"{len(document_inputs)} documents..."
+        f"Prepared {args.model}, run {args.run}: {len(requests_list)} requests for "
+        f"{len(document_inputs)} documents."
     )
 
     payload = {
@@ -181,6 +184,11 @@ def main():
         "requests": requests_list,
     }
 
+    return payload, submitted_requests, instructions
+
+
+def submit_batch(args, prepared, api_key, source=None):
+    payload, submitted_requests, instructions = prepared
     submitted_at = datetime.now(timezone.utc).isoformat()
     submission = request_json("POST", BATCHES_URL, api_key, payload)
     batch_id = submission.get("id")
@@ -218,10 +226,12 @@ def main():
         "arguments": {
             name: str(value) if isinstance(value, Path) else value
             for name, value in vars(args).items()
+            if name != "original_request_documents"
         },
         "documents_per_request": DOCUMENTS_PER_REQUEST,
-        "document_count": len(document_inputs),
-        "request_count": len(requests_list),
+        "document_count": sum(len(item["documents"]) for item in submitted_requests),
+        "request_count": len(submitted_requests),
+        "source": source,
         "submitted_requests": submitted_requests,
         "submission": submission,
         "prompt": prompt,
@@ -234,8 +244,19 @@ def main():
     print("Meta:", meta_path)
     print(
         f'\nRetrieve later with:\nuv run python retrieve_codebook_batch.py '
-        f'"{batch_id}"'
+        f'--meta-path "{meta_path}"'
     )
+
+
+def main():
+    args = parse_args()
+    prepared = prepare_batch(args)
+    if args.dry_run:
+        print("Dry run complete; no API requests submitted.")
+        return
+    load_dotenv()
+    api_key = os.environ.get("OPENROUTER_API_KEY")
+    submit_batch(args, prepared, api_key)
 
 
 if __name__ == "__main__":

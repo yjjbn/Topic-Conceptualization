@@ -1,0 +1,25 @@
+{
+  "definition": "'Moral rhetoric' refers to political communication that evaluates actions, policies, societies, or groups through the lens of ethical values, rights, duties, justice, fairness, human dignity, compassion, or virtue. Rather than assessing issues solely based on utility, pragmatic efficiency, or economic metrics, it frames arguments around what is fundamentally 'right' or 'wrong,' or what individuals are normatively owed.",
+  "clarification": "To classify a text as containing moral rhetoric, look for the explicit use of value-laden terms (e.g., 'respect', 'dignity', 'rights', 'equality', 'fairness', 'justice', 'courage', 'corruption', 'persecution', 'deserve', 'vulnerable'). Additionally, include texts that construct arguments based on social justice, ethical imperatives, or a humanitarian duty of care towards specific groups, even when using slightly broader terms.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Appeals directly to human dignity and inherent value ('place and purpose in this world') and expresses a compassionate moral duty toward 'frail or vulnerable' individuals."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Utilizes highly moralized and humanitarian framing focused on 'comfort and aid to suffering people' and condemns 'persecution'."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric if it describes policy proposals, economic data, administrative regulations, or infrastructure projects in a neutral or pragmatic manner. References to efficiency, performance metrics, standard welfare expansions, or fiscal measures do not count as moral rhetoric unless they are explicitly justified through moral duty, justice, or ethical concepts. Slogans and standard partisan claims regarding opportunity or records are also excluded if they lack explicit normative framing.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a standard technical policy statement focused on transport logistics and efficiency rather than ethical principles."
+    },
+    {
+      "text": "and free prescriptions and eye tests for the over-60s, without means testing.",
+      "explanation": "This text details specific policy entitlements and eligibility criteria without appealing to ethical values or rights."
+    }
+  ]
+}

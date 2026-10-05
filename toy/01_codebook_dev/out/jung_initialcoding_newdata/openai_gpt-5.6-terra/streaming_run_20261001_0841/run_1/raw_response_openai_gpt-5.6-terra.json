@@ -1,0 +1,166 @@
+[
+  {
+    "custom_id": "run-1-request-1",
+    "body": {
+      "id": "gen-1790844086-UlQ41wAvWors1S4eTypm",
+      "model": "openai/gpt-5.6-terra",
+      "provider": "OpenAI",
+      "created": 1790844086,
+      "usage": {
+        "prompt_tokens": 2693,
+        "completion_tokens": 1715,
+        "total_tokens": 4408,
+        "cost": 0.027311,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2690,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.027311,
+          "upstream_inference_prompt_cost": 0.006731,
+          "upstream_inference_completions_cost": 0.02058
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 560,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"classifications\":{\"14\":{\"label\":\"0\",\"explanation\":\"Criticizes border-security policy but does not make an explicit moral appeal.\"},\"312\":{\"label\":\"0\",\"explanation\":\"Describes infrastructure and service-access measures in practical policy terms.\"},\"8314\":{\"label\":\"0\",\"explanation\":\"Calls for democratic reform without invoking moral principles or duties.\"},\"9265\":{\"label\":\"1\",\"explanation\":\"The expressed desire to help people is an appeal to care and assistance.\"},\"11019\":{\"label\":\"0\",\"explanation\":\"This is a descriptive statement about Canada's immigration history.\"},\"11063\":{\"label\":\"1\",\"explanation\":\"Describing assistance as 'humane' explicitly invokes a moral standard.\"},\"13600\":{\"label\":\"0\",\"explanation\":\"This is an economic-policy objective concerning service enterprises.\"},\"15044\":{\"label\":\"1\",\"explanation\":\"It invokes preventing homelessness and child poverty, appealing to social care and avoidance of harm.\"},\"15081\":{\"label\":\"0\",\"explanation\":\"Proposes procedural parliamentary reforms without moral language.\"},\"15826\":{\"label\":\"0\",\"explanation\":\"Describes a specific tax-funded education support mechanism.\"},\"17565\":{\"label\":\"0\",\"explanation\":\"This is only a locational reference to high-unemployment areas.\"},\"19153\":{\"label\":\"0\",\"explanation\":\"Focuses on economic competitiveness and sustainability rather than moral values.\"},\"19998\":{\"label\":\"0\",\"explanation\":\"Proposes rules for sharing sports facilities in operational policy terms.\"},\"23142\":{\"label\":\"0\",\"explanation\":\"Refers to clean transport modes but does not articulate a moral claim.\"},\"23471\":{\"label\":\"0\",\"explanation\":\"This brief statement merely refers to services being reformed.\"},\"23878\":{\"label\":\"0\",\"explanation\":\"Describes secure, drug-free conditions and reintegration as correctional policy.\"},\"25832\":{\"label\":\"0\",\"explanation\":\"Sets an energy-development mandate and technology priority.\"},\"27044\":{\"label\":\"0\",\"explanation\":\"Addresses representation in planning and zoning policy without moral rhetoric.\"},\"29184\":{\"label\":\"0\",\"explanation\":\"States a proposal for Māori representation without an explicit moral appeal.\"},\"29200\":{\"label\":\"0\",\"explanation\":\"Describes a review based on evaluating policy progress.\"},\"29271\":{\"label\":\"0\",\"explanation\":\"Concerns administrative refocusing of Māori provider development.\"},\"30271\":{\"label\":\"0\",\"explanation\":\"This is simply the name of an infrastructure project.\"},\"30476\":{\"label\":\"0\",\"explanation\":\"Focuses on increasing tourism revenue and visitor value.\"},\"31139\":{\"label\":\"0\",\"explanation\":\"Proposes a technical driving restriction for novice drivers.\"},\"31437\":{\"label\":\"0\",\"explanation\":\"Outlines education and skills interventions for young offenders in policy terms.\"},\"31939\":{\"label\":\"1\",\"explanation\":\"Full participation for Māori invokes an inclusion and equal-participation value.\"},\"32793\":{\"label\":\"0\",\"explanation\":\"Sets an administrative spending priority between back-office and frontline services.\"},\"32972\":{\"label\":\"0\",\"explanation\":\"This is a cross-reference to another policy document.\"},\"33425\":{\"label\":\"0\",\"explanation\":\"Advocates flexible land-use rules based on economic and environmental outcomes.\"},\"33472\":{\"label\":\"0\",\"explanation\":\"Reports outcomes of a home-warming scheme without a moral appeal.\"},\"34084\":{\"label\":\"0\",\"explanation\":\"States a proposed cancellation of a trial period.\"},\"35374\":{\"label\":\"0\",\"explanation\":\"Provides a comparative spending statistic without moral evaluation.\"},\"35806\":{\"label\":\"1\",\"explanation\":\"Addressing institutional racism explicitly reflects an anti-discrimination and equality principle.\"},\"36358\":{\"label\":\"0\",\"explanation\":\"This is a concise economic-policy objective.\"},\"38927\":{\"label\":\"1\",\"explanation\":\"Ensuring retired people's needs are met appeals to care and social responsibility.\"},\"39298\":{\"label\":\"0\",\"explanation\":\"Reports a trend in hospital waiting lists.\"},\"39494\":{\"label\":\"0\",\"explanation\":\"Expresses a political expectation without moral reasoning.\"},\"40411\":{\"label\":\"0\",\"explanation\":\"Discusses regulatory assessment and removal of burdensome elements in technical terms.\"},\"41296\":{\"label\":\"0\",\"explanation\":\"This is a brief reference to basic-skills training.\"},\"43919\":{\"label\":\"0\",\"explanation\":\"Describes a request for a government report on borrowing powers.\"},\"44263\":{\"label\":\"0\",\"explanation\":\"Characterizes employment as rewarding and fulfilling, but makes no moral claim.\"},\"44566\":{\"label\":\"0\",\"explanation\":\"Provides an economic statistic about businesses, jobs, and wealth.\"},\"45804\":{\"label\":\"1\",\"explanation\":\"The claim that power should belong to people expresses a normative democratic value.\"},\"46465\":{\"label\":\"0\",\"explanation\":\"Focuses on tourism competitiveness and economic growth.\"},\"48522\":{\"label\":\"0\",\"explanation\":\"Concerns budgetary control and investment in public services.\"},\"52621\":{\"label\":\"1\",\"explanation\":\"Rejecting people being 'subjects' of a decaying state invokes freedom and civic dignity.\"},\"52981\":{\"label\":\"0\",\"explanation\":\"States an objective for a sustainable long-term oil industry.\"},\"57898\":{\"label\":\"0\",\"explanation\":\"Proposes time-limited infrastructure funding for states and communities.\"},\"60497\":{\"label\":\"0\",\"explanation\":\"Provides historical economic figures about exports and jobs.\"},\"62174\":{\"label\":\"1\",\"explanation\":\"Explicitly calls borrowing for current spending 'wrong' because it burdens future generations.\"}}}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "custom_id": "run-1-request-2",
+    "body": {
+      "id": "gen-1790844109-G73yXRiKg6SdM49YN8L0",
+      "model": "openai/gpt-5.6-terra",
+      "provider": "OpenAI",
+      "created": 1790844109,
+      "usage": {
+        "prompt_tokens": 2880,
+        "completion_tokens": 1907,
+        "total_tokens": 4787,
+        "cost": 0.0300825,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2877,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0300825,
+          "upstream_inference_prompt_cost": 0.0071985,
+          "upstream_inference_completions_cost": 0.022884
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 670,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"classifications\":{\"960\":{\"label\":\"0\",\"explanation\":\"A technical proposal concerning private health-insurance incentives, without moral framing.\"},\"4679\":{\"label\":\"0\",\"explanation\":\"A business-tax policy statement without moral values or ethical claims.\"},\"7179\":{\"label\":\"1\",\"explanation\":\"Supporting disadvantaged people and communities invokes concern for social disadvantage and welfare.\"},\"7316\":{\"label\":\"0\",\"explanation\":\"The reference to a continuing vision is generic and contains no moral appeal.\"},\"7490\":{\"label\":\"0\",\"explanation\":\"This is a comparative economic claim about interest rates, not moral rhetoric.\"},\"7513\":{\"label\":\"0\",\"explanation\":\"A productivity objective stated in economic and practical terms.\"},\"9220\":{\"label\":\"0\",\"explanation\":\"A factual statement about expanding tax-free savings accounts.\"},\"9270\":{\"label\":\"0\",\"explanation\":\"A technical adjustment to student-loan assessments, framed around financial circumstances rather than moral principles.\"},\"9879\":{\"label\":\"0\",\"explanation\":\"A factual claim about infrastructure investment and average asset age.\"},\"10458\":{\"label\":\"1\",\"explanation\":\"The phrase 'compassionate care' explicitly invokes a moral value of compassion.\"},\"10938\":{\"label\":\"0\",\"explanation\":\"An administrative counter-radicalization proposal without moral rhetoric.\"},\"11786\":{\"label\":\"0\",\"explanation\":\"A policing funding and staffing commitment expressed in practical terms.\"},\"12517\":{\"label\":\"0\",\"explanation\":\"It criticizes a treaty as economically lop-sided, but does not make an explicit moral or ethical appeal.\"},\"21213\":{\"label\":\"0\",\"explanation\":\"A procedural proposal to establish a taxation commission.\"},\"22073\":{\"label\":\"0\",\"explanation\":\"A technical plan for developing a health-statistics database.\"},\"24044\":{\"label\":\"0\",\"explanation\":\"Supporting independent living is a service objective without explicit moral evaluation.\"},\"28211\":{\"label\":\"0\",\"explanation\":\"A specific grant proposal for one-parent families, stated without moral framing.\"},\"32433\":{\"label\":\"0\",\"explanation\":\"A factual description of expanded maternity visits.\"},\"32573\":{\"label\":\"0\",\"explanation\":\"A description of youth mental-health service provision and target conditions.\"},\"35359\":{\"label\":\"0\",\"explanation\":\"The excerpt reports an expected social outcome and a newspaper heading, without a clear moral appeal.\"},\"35539\":{\"label\":\"0\",\"explanation\":\"Cleaning rivers is an environmental policy action stated without explicit moral language.\"},\"36294\":{\"label\":\"1\",\"explanation\":\"Expressions of gratitude and deep pride in the country are value-laden, emotive rhetoric.\"},\"36874\":{\"label\":\"0\",\"explanation\":\"An urgent practical warning about preparing for higher oil prices.\"},\"37825\":{\"label\":\"1\",\"explanation\":\"Rejecting political patronage in favor of merit-based appointments invokes integrity and fair governance.\"},\"37949\":{\"label\":\"1\",\"explanation\":\"It explicitly invokes a social contract, responsibility, and accountability to the electorate.\"},\"38220\":{\"label\":\"0\",\"explanation\":\"A service-support commitment for families without explicit ethical or moral claims.\"},\"38559\":{\"label\":\"0\",\"explanation\":\"A practical objective of maximizing health and disability support from spending.\"},\"39394\":{\"label\":\"1\",\"explanation\":\"It frames provision as a governmental responsibility and condemns successive governments for failing in that duty.\"},\"41504\":{\"label\":\"0\",\"explanation\":\"A disclosure requirement for MPs, stated as an institutional rule without moral rhetoric.\"},\"42783\":{\"label\":\"0\",\"explanation\":\"A factual discussion of research findings on EU trade-related jobs.\"},\"43655\":{\"label\":\"0\",\"explanation\":\"A budgetary claim about funding for NHS Scotland.\"},\"44460\":{\"label\":\"0\",\"explanation\":\"A factual account of support for devolution and further powers.\"},\"44775\":{\"label\":\"0\",\"explanation\":\"An economic employment target, despite being described as bold, contains no moral appeal.\"},\"44905\":{\"label\":\"0\",\"explanation\":\"A statement about completing tax and welfare reforms without moral framing.\"},\"45775\":{\"label\":\"0\",\"explanation\":\"A commitment to retain a pension system, stated in policy terms.\"},\"47117\":{\"label\":\"0\",\"explanation\":\"A food-policy proposal focused on health, sustainability, and affordability rather than an explicit moral appeal.\"},\"48050\":{\"label\":\"0\",\"explanation\":\"A claim about Scotland securing borrowing and bond-issuing powers.\"},\"48142\":{\"label\":\"0\",\"explanation\":\"A description of EU procurement rules and social clauses, presented in legal and administrative terms.\"},\"48591\":{\"label\":\"0\",\"explanation\":\"A positive economic assessment of the island economy, without moral rhetoric.\"},\"50193\":{\"label\":\"0\",\"explanation\":\"A fiscal proposal to increase alcohol and tobacco duties.\"},\"52023\":{\"label\":\"0\",\"explanation\":\"A participatory design commitment involving disabled people and representative groups, without explicit moral language.\"},\"52231\":{\"label\":\"0\",\"explanation\":\"A proposal for rural fuel-price reductions based on additional living costs.\"},\"52677\":{\"label\":\"0\",\"explanation\":\"A brief economic objective concerning international credibility.\"},\"53151\":{\"label\":\"1\",\"explanation\":\"Giving children 'the best start' invokes a value-laden concern for children's welfare and opportunity.\"},\"54704\":{\"label\":\"0\",\"explanation\":\"A structural proposal to separate energy-company businesses.\"},\"54888\":{\"label\":\"1\",\"explanation\":\"The stated obligation to provide family access to childcare invokes duty-based language.\"},\"57605\":{\"label\":\"0\",\"explanation\":\"A factual claim about enacting a ban on congressional insider trading, without explicit moral reasoning.\"},\"60509\":{\"label\":\"0\",\"explanation\":\"A factual statement about trade law and reducing market barriers.\"},\"60721\":{\"label\":\"0\",\"explanation\":\"An economic and legal critique of lawsuits and healthcare costs, not an explicit moral appeal.\"},\"60753\":{\"label\":\"0\",\"explanation\":\"A descriptive statement about economic transition.\"}}}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "custom_id": "run-1-request-3",
+    "body": {
+      "id": "gen-1790844138-VZQv480LGOgVogckuqw9",
+      "model": "openai/gpt-5.6-terra",
+      "provider": "OpenAI",
+      "created": 1790844138,
+      "usage": {
+        "prompt_tokens": 2735,
+        "completion_tokens": 1985,
+        "total_tokens": 4720,
+        "cost": 0.030656,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2732,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.030656,
+          "upstream_inference_prompt_cost": 0.006836,
+          "upstream_inference_completions_cost": 0.02382
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 763,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"classifications\":{\"2334\":{\"label\":\"0\",\"explanation\":\"Describes support and education services for cancer patients without an explicit moral appeal.\"},\"3104\":{\"label\":\"1\",\"explanation\":\"Uses care-oriented language about protecting the health of the community.\"},\"3903\":{\"label\":\"1\",\"explanation\":\"Characterizes the organization negatively as secretive, invoking a value of openness and accountability.\"},\"3960\":{\"label\":\"0\",\"explanation\":\"Provides factual business, employment, and turnover statistics.\"},\"3997\":{\"label\":\"0\",\"explanation\":\"Criticizes an opponent's public education efforts but does not make an explicit moral claim.\"},\"4151\":{\"label\":\"1\",\"explanation\":\"Argues that farmers' contribution ought to be recognized, appealing to fairness and due recognition.\"},\"4631\":{\"label\":\"0\",\"explanation\":\"Refers to localized responses and improved learning outcomes in practical terms.\"},\"4781\":{\"label\":\"0\",\"explanation\":\"Describes an administrative arrangement for cadetships and senior awards.\"},\"6453\":{\"label\":\"1\",\"explanation\":\"Appeals to minimizing social and environmental harm in airport location decisions.\"},\"6565\":{\"label\":\"0\",\"explanation\":\"States a factual claim about the duration of economic expansion.\"},\"6730\":{\"label\":\"1\",\"explanation\":\"Frames full employment as a 'great goal,' expressing a value-laden aspiration.\"},\"7361\":{\"label\":\"0\",\"explanation\":\"Sets out a policy vision for regional services and infrastructure without moral language.\"},\"8525\":{\"label\":\"1\",\"explanation\":\"Explicitly invokes generational equity, a fairness-based moral principle.\"},\"9333\":{\"label\":\"0\",\"explanation\":\"Acknowledges the practical financial burden of adoption costs without a moral appeal.\"},\"11918\":{\"label\":\"0\",\"explanation\":\"Makes a political commitment that Canada will act, without articulating a moral principle.\"},\"13914\":{\"label\":\"0\",\"explanation\":\"Proposes an administrative requirement for ministers to publish board role statements.\"},\"14606\":{\"label\":\"0\",\"explanation\":\"Focuses on energy costs, security, and carbon footprint as policy outcomes.\"},\"18924\":{\"label\":\"0\",\"explanation\":\"Makes a factual boast about reforms to Civil Defence and the Army Reserve.\"},\"19996\":{\"label\":\"0\",\"explanation\":\"States a proposal to make physical education mandatory, without moral rhetoric.\"},\"23015\":{\"label\":\"0\",\"explanation\":\"Provides a historical income-tax statistic.\"},\"23623\":{\"label\":\"0\",\"explanation\":\"Details funding sources and amounts for a scheme.\"},\"25343\":{\"label\":\"0\",\"explanation\":\"Calls for resources for marine research in technical and institutional terms.\"},\"25386\":{\"label\":\"0\",\"explanation\":\"States the economic importance of competitively priced energy and communications.\"},\"26984\":{\"label\":\"0\",\"explanation\":\"Describes a planned regional development initiative.\"},\"27024\":{\"label\":\"1\",\"explanation\":\"Advocates free music tuition being available to all students, appealing to equal access.\"},\"28248\":{\"label\":\"1\",\"explanation\":\"Explicitly frames flexible working as a legal right.\"},\"29943\":{\"label\":\"0\",\"explanation\":\"Reports a numerical figure for matches with ACC.\"},\"34241\":{\"label\":\"0\",\"explanation\":\"Reports an increase in education funding with numerical details.\"},\"34420\":{\"label\":\"0\",\"explanation\":\"Provides a descriptive statistic about unpaid work.\"},\"34454\":{\"label\":\"1\",\"explanation\":\"Appeals to the value of freedom by stating that capital markets should be free to innovate.\"},\"35493\":{\"label\":\"0\",\"explanation\":\"Merely identifies the speakers as co-leaders of a party.\"},\"35674\":{\"label\":\"0\",\"explanation\":\"States the timing and incomplete implementation of a settlement process without explicit moral evaluation.\"},\"35931\":{\"label\":\"1\",\"explanation\":\"Argues that young people should not be charged, expressing a normative view of fair access.\"},\"36185\":{\"label\":\"0\",\"explanation\":\"States a preference concerning young people's participation in KiwiSaver.\"},\"37374\":{\"label\":\"1\",\"explanation\":\"States that every child deserves the best, an explicit deservingness claim.\"},\"40715\":{\"label\":\"0\",\"explanation\":\"Identifies Maori underachievement as an issue without moral framing.\"},\"41339\":{\"label\":\"0\",\"explanation\":\"States a proposed price discount for specified users.\"},\"46399\":{\"label\":\"0\",\"explanation\":\"States a climate-policy objective in technical terms without an explicit moral appeal.\"},\"46486\":{\"label\":\"1\",\"explanation\":\"Advocates access for all regardless of identity or status, invoking equality and non-discrimination.\"},\"47106\":{\"label\":\"0\",\"explanation\":\"Proposes an investigation of potential resource taxes and refund schemes.\"},\"48146\":{\"label\":\"0\",\"explanation\":\"Describes pressure and poor outcomes in the health system without invoking moral principles.\"},\"52126\":{\"label\":\"0\",\"explanation\":\"Describes a security risk created by technological reliance.\"},\"52502\":{\"label\":\"1\",\"explanation\":\"Prioritizes access to the arts for disadvantaged young people, invoking inclusion and equity.\"},\"54796\":{\"label\":\"1\",\"explanation\":\"Explicitly promises new rights for patients.\"},\"55494\":{\"label\":\"0\",\"explanation\":\"Describes the federal government's increased role in neutral terms.\"},\"57434\":{\"label\":\"0\",\"explanation\":\"Refers to enacted infrastructure investments without a moral claim.\"},\"58544\":{\"label\":\"0\",\"explanation\":\"States opposition to conscription or compulsory service without explicit moral reasoning.\"},\"59543\":{\"label\":\"1\",\"explanation\":\"Uses morally condemnatory language about terrorists as ruthless while emphasizing the threat they pose.\"},\"61388\":{\"label\":\"1\",\"explanation\":\"Expresses a strong normative imperative against waiting until war is the only option.\"},\"62065\":{\"label\":\"1\",\"explanation\":\"Appeals to creating a cleaner world for everyone, invoking collective environmental responsibility.\"}}}"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "custom_id": "run-1-request-4",
+    "body": {
+      "id": "gen-1790844165-VtApN427quJYJt9ISdwH",
+      "model": "openai/gpt-5.6-terra",
+      "provider": "OpenAI",
+      "created": 1790844165,
+      "usage": {
+        "prompt_tokens": 2797,
+        "completion_tokens": 1944,
+        "total_tokens": 4741,
+        "cost": 0.030319,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2794,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.030319,
+          "upstream_inference_prompt_cost": 0.006991,
+          "upstream_inference_completions_cost": 0.023328
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 777,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"classifications\":{\"1105\":{\"label\":\"1\",\"explanation\":\"Invokes fairness, rights, and responsibilities in access to the legal system.\"},\"1793\":{\"label\":\"0\",\"explanation\":\"States an enforcement measure against non-cooperating producers without a moral appeal.\"},\"3331\":{\"label\":\"1\",\"explanation\":\"Explicitly appeals to a fair share of government revenue for regions.\"},\"4358\":{\"label\":\"0\",\"explanation\":\"Merely introduces a question directed at Labor.\"},\"4502\":{\"label\":\"0\",\"explanation\":\"Lists additional aged-care beds without moral or ethical framing.\"},\"6794\":{\"label\":\"1\",\"explanation\":\"Explicitly invokes fairness and accuses an opponent of losing sight of it.\"},\"8490\":{\"label\":\"0\",\"explanation\":\"Proposes support for land managers in practical policy terms.\"},\"12151\":{\"label\":\"0\",\"explanation\":\"Focuses on efficient and prudent use of public money rather than moral values.\"},\"12615\":{\"label\":\"0\",\"explanation\":\"Describes an economic and environmental transition without an explicit moral appeal.\"},\"13929\":{\"label\":\"0\",\"explanation\":\"Sets out a reporting requirement in administrative terms.\"},\"14781\":{\"label\":\"0\",\"explanation\":\"Criticises an institution as dysfunctional but does not invoke moral principles.\"},\"15394\":{\"label\":\"0\",\"explanation\":\"Proposes ending an automatic ministerial car entitlement without moral rhetoric.\"},\"16325\":{\"label\":\"0\",\"explanation\":\"Describes procedural delays and legal-review consequences.\"},\"16553\":{\"label\":\"0\",\"explanation\":\"Expresses an aspirational policy goal but no explicit moral principle or duty.\"},\"16812\":{\"label\":\"1\",\"explanation\":\"Appeals to Ireland's obligations and to peacekeeping commitments.\"},\"19219\":{\"label\":\"1\",\"explanation\":\"Frames tax reform around eliminating inequality and increasing progressivity.\"},\"20972\":{\"label\":\"0\",\"explanation\":\"Announces support for a school fruit and vegetable programme.\"},\"22925\":{\"label\":\"1\",\"explanation\":\"Appeals to parental choice and autonomy in proposing paid leave.\"},\"23654\":{\"label\":\"0\",\"explanation\":\"Gives practical objections concerning waste, efficiency, and traffic.\"},\"24577\":{\"label\":\"0\",\"explanation\":\"Refers to political and economic well-being in a descriptive policy context.\"},\"25992\":{\"label\":\"0\",\"explanation\":\"Proposes community-policing structures in operational terms.\"},\"26767\":{\"label\":\"1\",\"explanation\":\"Invokes equal parliamentary entitlement for all TDs to propose legislation.\"},\"27002\":{\"label\":\"0\",\"explanation\":\"Provides participation and volunteering statistics without moral framing.\"},\"27178\":{\"label\":\"1\",\"explanation\":\"Calls for commemorations that honour the contribution of Easter Week participants.\"},\"28284\":{\"label\":\"1\",\"explanation\":\"Criticises rules as acting against new and smaller parties, invoking political fairness.\"},\"28323\":{\"label\":\"1\",\"explanation\":\"Appeals to the Defence Forces' proud reputation in peacekeeping.\"},\"29051\":{\"label\":\"0\",\"explanation\":\"Mentions freeing resources for whānau development without moral language.\"},\"32210\":{\"label\":\"0\",\"explanation\":\"Reports job creation through housing upgrades.\"},\"33121\":{\"label\":\"0\",\"explanation\":\"Directs spending toward specified services and initiatives without moral rhetoric.\"},\"35733\":{\"label\":\"0\",\"explanation\":\"Recognises an economic contribution but does not articulate a moral claim.\"},\"36802\":{\"label\":\"1\",\"explanation\":\"Uses trust and the harm of poisoned baby milk to morally condemn opponents.\"},\"37769\":{\"label\":\"0\",\"explanation\":\"Addresses appropriate time for debate in procedural terms.\"},\"38403\":{\"label\":\"0\",\"explanation\":\"Proposes expansion of a parent-teacher programme without moral framing.\"},\"38483\":{\"label\":\"1\",\"explanation\":\"Calls on fishers to uphold the system and condemns poaching and deceptive conduct.\"},\"40367\":{\"label\":\"0\",\"explanation\":\"Simply identifies conflicting roles and responsibilities.\"},\"43310\":{\"label\":\"1\",\"explanation\":\"Uses mandatory language regarding an aid commitment, expressing a duty.\"},\"43570\":{\"label\":\"0\",\"explanation\":\"States a goal of constitutional stability without moral rhetoric.\"},\"43698\":{\"label\":\"0\",\"explanation\":\"Frames immigration policy around economic needs and practicality.\"},\"44832\":{\"label\":\"0\",\"explanation\":\"Sets a competitive business-ranking goal rather than making a moral appeal.\"},\"45359\":{\"label\":\"0\",\"explanation\":\"Promises savings through cutting government waste in practical fiscal terms.\"},\"45645\":{\"label\":\"1\",\"explanation\":\"Addresses domestic violence through protective, condemnatory policy framing.\"},\"46601\":{\"label\":\"0\",\"explanation\":\"Discusses expected recovery and employment effects of therapy access.\"},\"46780\":{\"label\":\"1\",\"explanation\":\"Invokes accountability as a governing value for schools.\"},\"49871\":{\"label\":\"0\",\"explanation\":\"Describes a bill and the problems facing private tenants without moral language.\"},\"50545\":{\"label\":\"0\",\"explanation\":\"States a commitment to public ownership of rail services without moral justification.\"},\"51190\":{\"label\":\"1\",\"explanation\":\"Appeals to environmental sustainability as a value and public aspiration.\"},\"51280\":{\"label\":\"0\",\"explanation\":\"Refers only to promised investment in hospital buildings.\"},\"54004\":{\"label\":\"0\",\"explanation\":\"Provides a financial total and per-household calculation.\"},\"54293\":{\"label\":\"0\",\"explanation\":\"Commits to implementing the Military Covenant without explicit moral reasoning.\"},\"60201\":{\"label\":\"1\",\"explanation\":\"Invokes the freedom of nations and victory in framing the War on Terror.\"}}}"
+          }
+        }
+      ]
+    }
+  }
+]

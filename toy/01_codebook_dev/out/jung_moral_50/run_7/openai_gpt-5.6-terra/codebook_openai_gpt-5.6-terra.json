@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, actions, or social conditions in terms of moral values, duties, rights, virtues, dignity, fairness, equality, freedom, justice, care, or wrongdoing.",
+  "clarification": "Code as moral rhetoric when the text makes an overt normative appeal beyond technical policy efficacy. This includes explicit references to respect, rights, freedom, equality, fairness, justice, protection of vulnerable people, human rights, deserved treatment, corruption, oppression, moral virtues, or an obligation to remedy an unjust disparity. It also includes clear moral judgments such as calling a condition intolerable, treatment second-class, or anger justified.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth and purpose of every person, explicitly including frail and vulnerable people."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says socioeconomic and ethnic educational inequalities must be closed, making an explicit equality-based moral demand."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "It explicitly rejects corruption and supports anti-corruption enforcement, identifying wrongdoing."
+    }
+  ],
+  "negative_clarification": "Do not code text merely because it proposes a socially beneficial policy, mentions health, poverty, safety, accessibility, environmental harms, or uses favorable promotional language. Technical commitments, spending proposals, economic claims, administrative reforms, and factual descriptions are not moral rhetoric unless they explicitly invoke a moral value, right, duty, or judgment.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "It promotes sporting activity and health, but contains no explicit claim about rights, fairness, duty, or moral wrongdoing."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "It proposes reducing food waste through a bill, but frames this as a regulatory policy rather than a moral obligation."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "It details a technical tax-compliance reform with no moral evaluation."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, actions, institutions, or outcomes through moral values, rights, duties, or standards, such as fairness, equality, respect, freedom, justice, dignity, compassion, integrity, or justified wrongdoing.",
+  "clarification": "Code as moral rhetoric when the text directly invokes a moral principle or entitlement, condemns unfair, discriminatory, oppressive, corrupt, or intolerable treatment, or praises moral virtues such as courage, respect, and caring. The moral language may support a specific policy, but the key criterion is an explicit evaluative appeal beyond technical effectiveness or material benefit.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts that every person, including those who are frail or vulnerable, has a place and purpose, expressing inherent human worth and dignity."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says an educational gap between social and ethnic groups must be closed, making an explicit equality-based claim."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes the principles that nobody should be denied court access and that people deserve quality justice."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, descriptions, performance claims, economic arguments, or administrative proposals merely because they concern socially important topics such as health, poverty, education, crime, or the environment. References to efficiency, cost, jobs, safety, growth, need, or public services are insufficient unless the text explicitly frames them in moral terms or invokes a moral right, duty, or judgment.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a technical proposal for literacy and numeracy testing, with no moral evaluation or value claim."
+    },
+    {
+      "text": "By abolishing the mining tax, we will re-energise the entire industry and this will lead to increased mining investment with more mining projects coming on stream",
+      "explanation": "This predicts investment effects from abolishing a mining tax; its reasoning is economic rather than moral."
+    },
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This proposes an administrative body for water and sewerage infrastructure and is operational rather than moral."
+    }
+  ]
+}

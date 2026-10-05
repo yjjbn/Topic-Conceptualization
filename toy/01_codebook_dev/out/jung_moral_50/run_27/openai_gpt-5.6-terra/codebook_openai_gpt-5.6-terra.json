@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, policies, or social conditions using ethical values, rights, duties, justice, fairness, dignity, freedom, compassion, or condemnation of wrongdoing.",
+  "clarification": "Code as moral rhetoric when the excerpt makes a normative appeal beyond practical effectiveness, economic benefit, or administrative design. This includes explicit references to respect, equality, rights, fairness, discrimination, deservingness, freedom, protecting vulnerable people, compassion, corruption, or morally charged judgments such as intolerable, justified, or terror. It can also include praise or condemnation grounded in ethical virtues or wrongs.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth of every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the need to remove barriers affecting minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes access to courts and the quality of justice that people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, descriptions, factual claims, economic arguments, administrative reforms, or statements of effectiveness merely because they concern socially important matters such as health, poverty, safety, or education. Terms such as adequate, efficient, accessible, successful, or priority are not moral rhetoric unless paired with an explicit ethical principle or moral evaluation.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a specific education-testing policy with no ethical evaluation."
+    },
+    {
+      "text": "Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.",
+      "explanation": "This proposes planning tools for affordable housing but does not appeal to rights, fairness, or moral duty."
+    },
+    {
+      "text": "fund independent scientific research to investigate the risks, hazards and costs of GMOs (including the associated use of agrichemicals) to human health, the environment, society and the economy.",
+      "explanation": "This calls for scientific research into GMO risks, which is an evidentiary and policy proposal rather than a moral appeal."
+    }
+  ]
+}

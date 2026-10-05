@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes ethical values, rights, duties, virtues, human worth, justice, equality, fairness, freedom, or moral approval or condemnation in order to characterize a policy, group, condition, or political goal.",
+  "clarification": "Code as moral rhetoric when the excerpt does more than state a policy or expected consequence and instead frames an issue in terms of what people deserve, what is just or unfair, who must be protected, or which values should guide public action. Explicit references to respect, rights, equality, discrimination, freedom, corruption, vulnerability, compassion, dignity, or moral virtues qualify. Moral praise or condemnation also qualifies when it clearly evaluates conduct or conditions.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement assigns every person, however vulnerable, inherent place and purpose, directly asserting human worth."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The call for race equality and removal of barriers explicitly invokes equality and inclusion."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The text says no one should be denied court access and refers to the justice people deserve, making direct rights-and-justice claims."
+    }
+  ],
+  "negative_clarification": "Do not code routine policy commitments, administrative arrangements, factual claims, economic forecasts, service improvements, or technical regulatory proposals merely because they concern health, poverty, safety, the environment, or disadvantaged groups. Terms such as efficient, adequate, comprehensive, successful, or value for money are not by themselves moral rhetoric. A policy can have socially beneficial effects without explicitly expressing a moral value or ethical judgment.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "It promotes sporting activity and health, but uses no ethical value, right, duty, or moral judgment."
+    },
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "It proposes a water-services office and infrastructure oversight, which is an administrative policy design rather than moral framing."
+    },
+    {
+      "text": "Direct Action Plan to reduce emissions",
+      "explanation": "The emissions-reduction policy title contains no explicit appeal to justice, responsibility, rights, or another moral value."
+    }
+  ]
+}

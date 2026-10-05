@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language that appeals to fundamental ethical values, principles of justice, character virtues, or normative duties (such as fairness, honesty, respect, compassion, and human rights). It typically frames issues as right versus wrong, fair versus unfair, or highlights obligations to protect vulnerable, suffering, or oppressed groups.",
+  "clarification": "To identify moral rhetoric, look for explicitly ethical concepts and value-laden words including 'unfairly discriminate', 'respect', 'vulnerable', 'caring', 'human rights', 'justice', 'courage', and 'patriotism'. It also includes appeals to moral obligations, such as what citizens 'deserve' or the need to combat 'corruption' or 'persecution'.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text uses highly moralized and ethical language ('frail or vulnerable', 'place and purpose') to affirm the intrinsic worth of human life."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "This text appeals directly to the moral principle of non-discrimination and fairness, arguing against 'unfair' discrimination."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text invokes strong ethical concepts of compassion and justice by seeking to provide 'comfort and aid' to those facing 'persecution' and 'suffering'."
+    }
+  ],
+  "negative_clarification": "Do not classify texts as containing moral rhetoric if they simply present policy proposals, economic goals, structural changes, or objective descriptions without explicit ethical, moral, or virtue-based framing. Pragmatic, logistical, and technical statements (e.g., building roads, reducing taxes, funding programs) are not moral rhetoric unless they explicitly use values-based or normative arguments to justify their aims.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a standard, logistical policy goal to ensure an 'efficient and accessible' school bus system, lacking any ethical or moral framing."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This text contains only economic statistics and forecasting facts, with no moral evaluations or values-based assertions."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a direct, brief infrastructure proposal to 'provide broadband' with no moral framing or appeal to values."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to the use of language that invokes ethics, core values, duties, rights, justice, fairness, compassion, civic virtues, or systemic moral indictments to persuade or justify political positions.",
+  "clarification": "To qualify as containing moral rhetoric, a text must use explicitly evaluative and value-laden vocabulary that moves beyond pragmatic or technical utility. Key indicators include explicit appeals to values (e.g., 'respect', 'compassion'), normative duties (e.g., 'expected to contribute', 'vulnerable', 'protection'), fairness/justice (e.g., 'unfairly discriminate', 'equality', 'justice'), human rights, or moral outrage (e.g., 'not tolerable', 'second class treatment').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text uses highly elevated moral rhetoric focused on human dignity and existential value, asserting that every person has 'a place and a purpose in this world'."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text appeals to core humanitarian values through emotionally and ethically charged words like 'suffering', 'persecution', and the moral duty of providing 'comfort and aid'."
+    },
+    {
+      "text": "We affirm their right to seek the full extension of the Constitution, with all the political rights and responsibilities it entails.     We recognize the valuable contributions made by the people of the United States Virgin Islands to the common welfare of the nation, including national defense, and their contributions to the federal treasury in the form of federal excise taxes paid on products produced in the territory.",
+      "explanation": "This text relies on formal civic and ethical constructs, explicitly invoking 'rights and responsibilities' and 'common welfare' to argue for constitutional status."
+    }
+  ],
+  "negative_clarification": "Texts should NOT be classified as moral rhetoric if they simply present policy proposals, procedural rules, factual statistics, or economic arguments using neutral or technical language. Even if the underlying topic is socially sensitive (e.g., poverty, healthcare, or budgeting), the text must be classified as 0 if it avoids explicitly ethical framing, moral indictments, or appeals to virtue.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "Although transporting school children is socially beneficial, this is a purely technical and programmatic transport policy formulation lacking moral framing."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This text is a purely descriptive and objective statement concerning economic productivity levels, containing no moral evaluation."
+    },
+    {
+      "text": "If  there is  no contact from  the person,  Work and Income will suspend  the person’s benefit.",
+      "explanation": "While this outlines a welfare benefit policy, the language is entirely administrative and procedural, stating the mechanics of suspension without any moralizing or ethical judgment."
+    }
+  ]
+}

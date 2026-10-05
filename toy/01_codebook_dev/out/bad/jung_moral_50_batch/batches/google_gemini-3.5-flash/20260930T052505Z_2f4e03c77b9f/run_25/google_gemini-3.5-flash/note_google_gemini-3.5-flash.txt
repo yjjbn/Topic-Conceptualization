@@ -1,0 +1,38 @@
+{
+  "note": "",
+  "batch_id": "batch-1790745906-ruHXvXMmizkG9TurTdWB",
+  "run": 25,
+  "arguments": {
+    "command": "submit",
+    "model": "google/gemini-3.5-flash",
+    "repeats": 50,
+    "run": 1,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\prompt_explain_codebookLLM_jungmoral.txt",
+    "test_rows": null,
+    "max_completion_tokens": 50000,
+    "nametag": "jung_moral_50_batch",
+    "out_folder": "out",
+    "note": "",
+    "provider": null,
+    "dry_run": false
+  },
+  "usage": {
+    "prompt_tokens": 8887,
+    "completion_tokens": 24425,
+    "total_tokens": 33312,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 14459,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "warnings": [],
+  "request_snapshot": "See batch_request.json in the batch folder."
+}

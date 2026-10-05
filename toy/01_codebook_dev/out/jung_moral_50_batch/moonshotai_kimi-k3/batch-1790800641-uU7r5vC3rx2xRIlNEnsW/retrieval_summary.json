@@ -1,0 +1,20 @@
+[
+  {
+    "run": 1,
+    "status": "success",
+    "warnings": [],
+    "error": null
+  },
+  {
+    "run": 2,
+    "status": "success",
+    "warnings": [],
+    "error": null
+  },
+  {
+    "run": 3,
+    "status": "success",
+    "warnings": [],
+    "error": null
+  }
+]

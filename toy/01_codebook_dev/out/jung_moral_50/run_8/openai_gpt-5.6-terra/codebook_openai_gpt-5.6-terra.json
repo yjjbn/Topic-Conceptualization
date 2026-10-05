@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, rights, duties, deservingness, fairness, equality, dignity, freedom, protection of vulnerable people, or moral condemnation and praise to evaluate a policy, group, action, or social condition.",
+  "clarification": "Code as moral rhetoric when the text does more than state a policy or practical outcome and frames its claim in terms of what is right, fair, just, intolerable, deserved, respectful, equal, free, humane, or virtuous. Explicit references to human rights, discrimination, corruption, social equality, compassion for suffering, courage, or the value of every person qualify. Moral rhetoric can be affirmative or condemnatory.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement assigns every person, including those who are frail or vulnerable, inherent worth and purpose."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "The assertion that educational gaps between social and ethnic groups must be closed is an explicit equality-based moral claim."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The passage invokes equal access to courts and the justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code text merely because it concerns socially important policy areas such as health, poverty, education, safety, or the environment. Technical proposals, spending promises, factual claims, economic arguments, institutional reforms, and general optimism are not moral rhetoric unless they explicitly use a moral principle or evaluative moral language. Terms such as efficient, adequate, successful, or affordable ordinarily indicate practical rather than moral evaluation.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a concrete education-testing proposal with no appeal to rights, fairness, or moral duty."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "The text proposes food-waste regulation but does not frame it as a moral obligation or ethical wrongdoing."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This passage reports economic growth data and forecasts rather than making a moral evaluation."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language that frames political positions, problems, or objectives in terms of moral duties, ethical principles, human rights, civic virtues, or concepts of fundamental rightness, wrongness, fairness, and justice.",
+  "clarification": "Texts classified as containing moral rhetoric typically invoke explicit value concepts (e.g., freedom, equality, justice, respect, dignity), virtues (e.g., courage, patriotism), or make clear normative/moral evaluations of actions or situations (e.g., calling certain situations 'intolerable', condemning 'corruption', or pleading to alleviate 'suffering').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text appeals directly to human dignity, asserting that every person has a 'place and purpose in this world', highlighting a moral perspective over a pragmatic one."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "The phrase 'unfairly discriminate' relies on concepts of moral justice and systemic fairness."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "The explicit reference to the value of 'respect' introduces a fundamental moral and interpersonal obligation."
+    }
+  ],
+  "negative_clarification": "Exclude texts that deal with administrative, financial, technical, or purely economic policies without explicit ethical, moral, or value-laden framing. Describing a targeted policy or outlining funding for public infrastructure, education, or welfare does not constitute moral rhetoric unless it is explicitly justified using the language of rights, moral duty, or systemic injustice.",
+  "negative_examples": [
+    {
+      "text": "and free prescriptions and eye tests for the over-60s, without means testing.",
+      "explanation": "This describes a specific healthcare and prescription policy. Although the policy aims to assist people, the framing lacks any ethical appeals or value-laden rhetoric."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a pragmatic proposal to provide broadband infrastructure, presenting a technical objective devoid of moralized language."
+    },
+    {
+      "text": "The trial ran in 15 community pharmacies around the country.",
+      "explanation": "The text presents a descriptive, factual statement about a pharmacy trial location, lacking any moral, normative, or value-based claims."
+    }
+  ]
+}

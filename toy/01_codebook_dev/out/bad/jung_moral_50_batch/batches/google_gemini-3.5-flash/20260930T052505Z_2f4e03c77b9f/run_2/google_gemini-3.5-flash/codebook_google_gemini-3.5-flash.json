@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language in political documents that appeals to ethical values, moral duties, social obligations, justice, fairness, compassion, human rights, or respect. It frames issues in terms of ethical correctness, right versus wrong, or virtues and vices rather than utilizing purely economic, technical, or pragmatic justifications.",
+  "clarification": "To qualify as moral rhetoric, a text must go beyond routine policy descriptions and employ evaluative language that addresses fundamental principles of equity, social justice, human rights, and core virtues. Inclusion criteria include: explicit terms of ethics/virtue (e.g., 'respect', 'fairness', 'corruption'); assertions of social justice and equal rights; normative claims of desert or duty ('what they deserve', 'not tolerable'); and framework of compassion and protection for highly vulnerable populations ('suffering people', 'vulnerable older people').",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "The text uses the explicit moral-evaluative term 'respect.'"
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text emphasizes universal human dignity and value, presenting it as a core ethical truth."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text uses compassionate humanitarian language to declare an ethical duty to relieve 'persecution' and 'suffering.'"
+    }
+  ],
+  "negative_clarification": "Exclude texts that present standard policy, economic goals, infrastructure planning, or regulatory changes in a neutral, technical, or purely factual manner. Even if these policies aim to benefit society, they do not constitute moral rhetoric unless they explicitly invoke ethical values, duties, or justice. Emotional political language (e.g., 'gutting investments' or 'slashing benefits') does not count unless directly tied to moral systems or ethical evaluations.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text is a standard, pragmatic policy description aiming for an 'efficient and accessible' transportation system, lacking any ethical evaluation."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This is an empirical, productivity-based economic analysis devoid of moral terms or claims."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a straightforward, technical infrastructure proposal without any value-based or ethical framing."
+    }
+  ]
+}

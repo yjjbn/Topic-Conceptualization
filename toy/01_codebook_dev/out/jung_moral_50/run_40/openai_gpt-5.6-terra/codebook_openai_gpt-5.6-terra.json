@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, policies, or outcomes through moral values or obligations, such as fairness, equality, dignity, rights, freedom, respect, care, protection, justice, corruption, deservingness, or moral praise and condemnation.",
+  "clarification": "Code a text as moral rhetoric when it does more than describe a policy or predict an effect: it frames an issue in terms of what is right, wrong, fair, deserved, intolerable, or owed to people. This includes explicit rights claims, appeals to equality or non-discrimination, concern for vulnerable or suffering people, and praise or condemnation using moral virtues or vices.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement gives every person, including those who are frail or vulnerable, inherent worth and purpose."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "The requirement that gaps between rich and poor and between Maori and non-Maori 'must be closed' is an explicit equality claim."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "The text condemns corruption and calls for anti-corruption enforcement, invoking a clear moral vice."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, administrative reforms, factual claims, economic arguments, or positive descriptions as moral rhetoric merely because they concern socially important subjects such as health, poverty, safety, or the environment. Terms such as efficient, comprehensive, successful, affordable, or value for money are not enough unless they are tied to an explicit moral principle or moral judgement.",
+  "negative_examples": [
+    {
+      "text": "Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.",
+      "explanation": "This is a technical housing-development proposal and contains no explicit moral value or judgement."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "The passage reports economic growth data and forecasts rather than making a moral evaluation."
+    },
+    {
+      "text": "Public hospitals will receive additional funding to improve the services they provide for Australians aged over 75.",
+      "explanation": "Additional hospital funding for older people is a policy promise, but it does not articulate a right, duty, fairness claim, or moral judgement."
+    }
+  ]
+}

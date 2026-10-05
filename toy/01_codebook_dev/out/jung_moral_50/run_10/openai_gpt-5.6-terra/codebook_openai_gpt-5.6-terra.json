@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, actions, institutions, or outcomes through ethical values, duties, rights, worth, fairness, justice, freedom, equality, compassion, or moral praise and condemnation.",
+  "clarification": "Code as moral rhetoric when the text does more than state a policy, outcome, or practical problem and instead invokes a normative ethical principle. This includes explicit references to respect, rights, equality, discrimination, deservingness, dignity or inherent worth, freedom, justice, corruption, oppression, care for suffering people, and virtues such as courage or patriotism. It also includes moral judgments such as calling a condition intolerable or an emotion justified.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement affirms the inherent worth and purpose of every person, especially those who are frail or vulnerable."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "The text explicitly rejects unfair discrimination based on socioeconomic background."
+    },
+    {
+      "text": "Our historic introduction of gay marriage has helped drive forward equality",
+      "explanation": "It evaluates gay marriage through the moral-political value of equality."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, administrative procedures, economic claims, factual descriptions, or promotional language merely because they concern socially important subjects such as health, poverty, jobs, education, or the environment. A proposal to provide funding or reduce a problem is not enough unless it is accompanied by explicit ethical evaluation, rights-based language, or a moral duty or value.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a concrete testing policy with no ethical principle or moral evaluation."
+    },
+    {
+      "text": "Labour will continue to invest in the water services  programme as part of the capital budget, focusing on minimising treated water lost through leakage.",
+      "explanation": "The statement describes investment to reduce water leakage in technical policy terms."
+    },
+    {
+      "text": "Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.",
+      "explanation": "It reports welfare-reform outcomes without explicitly framing them as just, fair, or morally required."
+    }
+  ]
+}

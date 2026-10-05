@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, actions, institutions, or social conditions in terms of moral values, rights, dignity, fairness, equality, freedom, deservingness, compassion, or moral wrongdoing.",
+  "clarification": "Code as moral rhetoric when a passage makes an overt value-based appeal or judgment rather than simply presenting a policy, outcome, or practical argument. This includes explicit references to respect, rights, equality, justice, freedom, fair or unfair treatment, protection of vulnerable people, compassion, human dignity, moral duty, or condemnation of oppressive or corrupt conduct. It also includes assertions that a group deserves something or that an inequality must be remedied.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It affirms the worth and purpose of every person, especially those who are frail or vulnerable, directly invoking human dignity."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly calls for race equality and for dismantling barriers faced by minority ethnic communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It states that no one should be denied court access and invokes the quality of justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, administrative proposals, factual claims, economic forecasts, or performance claims merely because they concern socially important subjects such as health, poverty, education, safety, or the environment. Practical terms such as efficient, adequate, accessible, comprehensive, successful, or value for money are not by themselves moral rhetoric. A proposal must contain an explicit moralized value or evaluative framing.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "The passage promotes sport and health, but contains no explicit claim about rights, fairness, dignity, or moral obligation."
+    },
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a technical proposal for literacy and numeracy testing, without moral evaluation."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "It proposes reducing food waste through legislation, but frames this as a policy requirement rather than a moral judgment."
+    }
+  ]
+}

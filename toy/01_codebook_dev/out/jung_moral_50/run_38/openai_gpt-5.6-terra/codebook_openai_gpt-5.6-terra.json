@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, duties, rights, deservingness, justice, equality, respect, freedom, compassion, protection of the vulnerable, or condemnation of wrongdoing.",
+  "clarification": "Classify as moral rhetoric when a text evaluates people, institutions, or policies in ethical terms; asserts that someone deserves, has a right to, must receive, or should be protected from something; or uses value-laden ideals such as equality, respect, fairness, freedom, justice, dignity, or compassion. Moral rhetoric can be positive praise or negative condemnation.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth of every person, including frail and vulnerable people."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says inequality in educational qualifications between rich and poor and ethnic groups must be closed."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes access to courts and the justice people deserve as normative principles."
+    }
+  ],
+  "negative_clarification": "Do not classify ordinary policy promises, administrative reforms, factual descriptions, economic forecasts, or practical statements of costs, efficiency, safety, growth, and service delivery as moral rhetoric merely because they concern socially important issues. Aspirational or promotional wording alone is insufficient unless it explicitly conveys an ethical value or judgment.",
+  "negative_examples": [
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This is a technical institutional proposal for water and sewerage infrastructure."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This provides economic growth statistics and forecasts rather than moral evaluation."
+    },
+    {
+      "text": "We will introduce 1 weeks paid Paternity leave for the first time",
+      "explanation": "This proposes paid paternity leave but does not explicitly ground it in rights, fairness, or another moral value."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, policies, or social conditions through moral principles, duties, rights, virtues, or judgments of fairness, equality, dignity, freedom, care, deservingness, or wrongdoing.",
+  "clarification": "Code as moral rhetoric when a passage presents an issue as right or wrong, just or unjust, fair or discriminatory, morally required, deserved, protective of inherent worth or rights, or when it praises or condemns conduct using moral virtues or vices. Explicit appeals to equality, respect, freedom, human rights, protection of vulnerable people, corruption, or humanitarian obligation qualify.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement affirms the intrinsic worth and purpose of every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It makes closing educational inequalities between rich and poor and M\u0101ori and non-M\u0101ori a moral imperative."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "It explicitly rejects corruption and invokes anti-bribery obligations."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, factual claims, administrative proposals, economic arguments, or technical descriptions merely because they concern socially important topics such as health, poverty, crime, education, or the environment. A benefit, target, or criticism counts only if it is expressly framed through a moral judgment or principle rather than practical effectiveness, cost, growth, safety, or administration.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "This promotes sports participation and health, but does not articulate a moral value or judgment."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical proposal for simplifying corporate tax compliance."
+    },
+    {
+      "text": "A Comprehensive Test Ban would strengthen our ability to stop the spread of nuclear weapons to other countries, which may be our greatest future security threat.",
+      "explanation": "The test-ban argument is framed in terms of security threat management, not moral obligation or judgment."
+    }
+  ]
+}

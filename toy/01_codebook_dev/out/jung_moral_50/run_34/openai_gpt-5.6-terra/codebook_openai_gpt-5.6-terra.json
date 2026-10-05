@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes ethical values, duties, rights, justice, equality, dignity, compassion, freedom, accountability, or moral praise and condemnation to evaluate people, institutions, or policies.",
+  "clarification": "Classify as moral rhetoric when the excerpt frames an issue in terms of what is fair or unfair, deserved, right, intolerable, respectful, equal, humane, free, accountable, or protective of vulnerable people. This includes explicit rights claims, appeals to common welfare, condemnations such as repression or corruption, and praise of moral virtues such as courage or care.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It makes an explicit claim about the inherent worth and purpose of every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the removal of barriers confronting minority ethnic communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It frames access to courts in terms of justice that Americans deserve."
+    }
+  ],
+  "negative_clarification": "Do not classify ordinary policy commitments, technical administration, economic forecasts, spending proposals, or descriptions of outcomes as moral rhetoric merely because they concern socially important topics. Terms such as efficient, comprehensive, affordable, successful, or safe are not enough unless they are tied to an explicit ethical principle or moral evaluation.",
+  "negative_examples": [
+    {
+      "text": "The Nationals will implement the third stage of AusLink, investing minimum funding of $35 billion.",
+      "explanation": "This is a funding commitment for transport infrastructure, with no appeal to rights, fairness, duty, or other moral values."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This describes a technical corporation-tax compliance reform rather than an ethical evaluation."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This reports economic growth data and forecasts without moral language."
+    }
+  ]
+}

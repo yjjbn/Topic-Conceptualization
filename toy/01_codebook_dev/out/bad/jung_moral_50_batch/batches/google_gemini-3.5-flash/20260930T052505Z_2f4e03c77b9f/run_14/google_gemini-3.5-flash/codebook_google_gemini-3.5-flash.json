@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is the use of language in political manifestos and policy text that appeals to ethical systems, moral values, duties, obligations, virtues, fairness, human rights, and the prevention of harm or injustice. It involves evaluates of right or wrong rather than mere programmatic efficiency or analytical facts.",
+  "clarification": "To identify moral rhetoric, look for: 1) Explicit moral terminology like 'respect', 'justice', 'rights', 'dignity', 'fairness', or 'corruption'. 2) Indication of a strong ethical imperative, using words like 'not tolerable', 'deserves', or 'essential rights' to judge a societal condition or opponent's action. 3) Virtues celebrated as moral benchmarks (e.g., 'caring', 'patriotism', 'self-discipline'). 4) Claims appealing directly to human empathy and protection of the weak or suffering (e.g., 'combating loneliness', 'vulnerable', 'humanitarian disasters').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts that every person, especially the frail or vulnerable, has a place and purpose. This is a profound moral and ethical declaration about human worth and dignity."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text highlights an ethical obligation to care for 'suffering people facing displacement and persecution', employing explicit compassion-based moral language."
+    },
+    {
+      "text": "Monitor funding of minority ethnic and religious groups to ensure government support is fair, transparent and proportionate;",
+      "explanation": "The text directly demands that state funding be 'fair', invoking a fundamental moral pillar of equity and justice."
+    }
+  ],
+  "negative_clarification": "Do NOT classify as moral rhetoric texts that: 1) Offer programmatic, technical, or administrative policy solutions without normative ethical justifications (e.g., planning roads, adjusting tax rates, establishing committees). 2) State empirical trends, statistical facts, or economic performance data (such as GDP metrics or historical timelines). 3) Outline operational procedures, legal rules, or organizational updates in neutral, bureaucratic language.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "A purely programmatic infrastructure proposal ('Provide broadband on all islands') devoid of ethical appeals or value-laden rhetoric."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This text focuses on empirical economic growth metrics and forecasts, analyzing the situation without moral evaluation or ethical judgment."
+    },
+    {
+      "text": "If  there is  no contact from  the person,  Work and Income will suspend  the person’s benefit.",
+      "explanation": "This text details a dry, procedural welfare agency rule. While welfare is socially important, the operational administrative mechanism listed contains no moral arguments."
+    }
+  ]
+}

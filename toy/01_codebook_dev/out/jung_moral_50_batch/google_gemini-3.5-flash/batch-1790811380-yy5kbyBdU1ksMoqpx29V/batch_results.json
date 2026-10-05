@@ -1,0 +1,18 @@
+{
+  "id": "batch-1790811380-yy5kbyBdU1ksMoqpx29V",
+  "object": "batch",
+  "endpoint": "/v1/chat/completions",
+  "model": "google/gemini-3.5-flash-20260519",
+  "completion_window": "24h",
+  "status": "in_progress",
+  "created_at": 1790811380,
+  "finalized_at": null,
+  "request_counts": {
+    "total": 49,
+    "completed": 0,
+    "failed": 0
+  },
+  "usage": null,
+  "results": null,
+  "error": null
+}

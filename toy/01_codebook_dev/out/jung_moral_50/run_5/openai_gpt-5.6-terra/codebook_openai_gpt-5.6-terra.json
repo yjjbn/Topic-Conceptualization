@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, actions, or outcomes through ethical values or principles, such as fairness, equality, rights, freedom, dignity, respect, compassion, justice, accountability, duty, or condemnation of oppression and wrongdoing.",
+  "clarification": "Code as moral rhetoric when the passage does more than state a policy, outcome, cost, or empirical condition and instead appeals to what is right, deserved, fair, humane, respectful, responsible, or unjust. This includes explicit praise of civic or human virtues, claims about rights or equal treatment, protection of vulnerable people, and condemnations such as discrimination, repression, corruption, or terror.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The claim that every person, however frail or vulnerable, has a place and purpose expresses inherent human worth and dignity."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "The passage explicitly rejects unfair discrimination against lower-income people, directly invoking fairness."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The call for race equality and removal of barriers invokes equal treatment and opposition to exclusion."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, technical administrative reforms, spending promises, factual claims, economic forecasts, or practical claims about efficiency, safety, growth, and service delivery unless they are explicitly framed through an ethical principle. Positive or negative wording alone, such as 'successful,' 'better,' 'burden,' or 'world leader,' is insufficient without a moral value judgment.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a concrete proposal for literacy and numeracy testing and contains no ethical evaluation."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "The passage reports economic growth figures and forecasts rather than making a moral appeal."
+    },
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This is an administrative proposal for water and sewerage oversight, not a claim about justice, rights, or ethical duty."
+    }
+  ]
+}

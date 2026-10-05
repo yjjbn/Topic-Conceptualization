@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, actions, or outcomes in terms of ethical principles, duties, rights, dignity, justice, fairness, equality, freedom, respect, compassion, or moral virtue and wrongdoing.",
+  "clarification": "Code as moral rhetoric when the excerpt makes a normative ethical appeal or judgment, such as saying a group deserves something, an outcome is intolerable or unjust, people have rights, discrimination should be addressed, vulnerable people require protection, or conduct such as corruption or terror is condemned. Explicit praise of moral virtues, humanitarian care, equality, or liberty also qualifies.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts that every person, including those who are frail or vulnerable, has a place and purpose, affirming inherent human worth."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says educational gaps between social and ethnic groups must be closed, making an explicit equality claim."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes access to courts and the quality of justice people deserve, directly using justice and deservingness language."
+    }
+  ],
+  "negative_clarification": "Do not code routine policy commitments, factual descriptions, economic forecasts, administrative reforms, spending proposals, or claims about efficiency, growth, safety, and service quality unless they explicitly frame the issue through an ethical value or moral judgment. Mere reference to poverty, health, minorities, or public services is not by itself sufficient.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a technical proposal for literacy and numeracy testing, with no ethical principle or moral evaluation."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This provides economic-growth statistics and forecasts rather than a normative moral claim."
+    },
+    {
+      "text": "Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.",
+      "explanation": "This proposes affordable-housing development mechanisms but does not explicitly invoke a right, fairness, justice, or other moral value."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "note": "",
+  "batch_id": "batch-1791012062-mPOnjew0E3vCJg3O6s8N",
+  "run": 18,
+  "arguments": {
+    "command": "submit",
+    "model": "mistralai/mistral-medium-3-5",
+    "mode": "batch",
+    "provider": null,
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jung.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "jung_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 4166,
+      "completion_tokens": 3767,
+      "total_tokens": 7933,
+      "prompt_tokens_details": {
+        "cached_tokens": 4049,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 4026,
+      "completion_tokens": 4200,
+      "total_tokens": 8226,
+      "prompt_tokens_details": {
+        "cached_tokens": 3935,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

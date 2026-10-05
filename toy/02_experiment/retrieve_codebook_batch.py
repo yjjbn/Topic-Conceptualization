@@ -13,8 +13,13 @@ BATCHES_URL = "https://openrouter.ai/api/beta/batches"
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--batch-id", help="batch ID to retrieve")
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("--batch-id", help="batch ID to retrieve")
+    source.add_argument("--meta-path", type=Path, help="one batch metadata file")
+    source.add_argument("--meta-root", type=Path, help="retrieve every batch under this output folder")
     args = parser.parse_args()
+    if args.meta_path or args.meta_root:
+        return args
     try:
         args.meta_path = find_meta_path(
             Path(__file__).resolve().parent / "out", args.batch_id
@@ -64,14 +69,10 @@ def get_batch(api_key, batch_id):
     return response.json()
 
 
-def main():
-    args = parse_args()
-    load_dotenv()
-    api_key = os.environ.get("OPENROUTER_API_KEY")
-
-    meta = json.loads(args.meta_path.read_text(encoding="utf-8"))
+def retrieve_one(meta_path, api_key):
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
     print("Retrieving batch:", meta["batch_id"])
-    print("Meta:", args.meta_path)
+    print("Meta:", meta_path)
     batch = get_batch(api_key, meta["batch_id"])
 
     submitted_requests = meta["submitted_requests"]
@@ -156,10 +157,10 @@ def main():
 
     errors = [results_by_id.get(i, {}).get("error", "Missing batch result") for i in ids]
     # Current metadata has no output_path; save beside the metadata file.
-    file_prefix = args.meta_path.stem.removeprefix("batch_meta_")
+    file_prefix = meta_path.stem.removeprefix("batch_meta_")
     output_path = (
         Path(meta["output_path"]) if meta.get("output_path")
-        else args.meta_path.with_name(f"results_{file_prefix}.csv")
+        else meta_path.with_name(f"results_{file_prefix}.csv")
     )
     raw_output_path = output_path.with_name(f"{output_path.stem}_raw_results.json")
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -185,11 +186,49 @@ def main():
         pl.Series("_retrieval_error", errors, dtype=pl.String, strict=False),
     )
 
+    if meta.get("source"):
+        source = meta["source"]
+        results_df = results_df.with_columns(
+            pl.lit(source["model"]).alias("source_model"),
+            pl.lit(source["run"]).alias("source_run"),
+            pl.lit(meta["arguments"]["run"]).alias("application_run"),
+            pl.lit(meta["arguments"]["model"]).alias("application_model"),
+            pl.lit(source["codebook_path"]).alias("codebook_path"),
+            pl.lit(meta["batch_id"]).alias("batch_id"),
+        )
+        if "classifications" in source:
+            originals = pl.DataFrame(source["classifications"], schema={
+                "document_id": pl.String, "original_label": pl.String,
+                "original_explanation": pl.String,
+            })
+            results_df = results_df.join(originals, on="document_id", how="left", validate="1:1").with_columns(
+                pl.col("label").alias("reapplied_label"),
+                (pl.col("original_label") == pl.col("label")).alias("agrees_with_original"),
+            )
+
     results_df.write_csv(output_path)
     missing_count = sum(error is not None for error in errors)
     if missing_count:
         print(f"WARNING: {missing_count}/{len(ids)} submitted documents have missing or invalid results.")
     print(f"CSV results: {output_path} ({len(ids)} submitted documents)")
+
+
+def main():
+    args = parse_args()
+    paths = sorted(args.meta_root.rglob("batch_meta_*.json")) if args.meta_root else [args.meta_path]
+    if not paths:
+        raise ValueError("No batch metadata files found.")
+    load_dotenv()
+    api_key = os.environ.get("OPENROUTER_API_KEY")
+    failures = []
+    for path in paths:
+        try:
+            retrieve_one(path, api_key)
+        except Exception as error:
+            print(f"ERROR: {path}: {error}")
+            failures.append(path)
+    if failures:
+        raise RuntimeError(f"Could not retrieve {len(failures)} batch(es); see errors above.")
 
 if __name__ == "__main__":
     main()

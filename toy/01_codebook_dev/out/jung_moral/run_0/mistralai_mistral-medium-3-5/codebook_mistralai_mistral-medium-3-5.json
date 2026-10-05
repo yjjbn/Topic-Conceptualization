@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language that explicitly or implicitly invokes ethical principles, values, or judgments about what is right, just, good, or virtuous. It often includes terms or phrases that appeal to notions of fairness, justice, equality, care, compassion, rights, or other ethical ideals.",
+  "clarification": "Moral rhetoric is identified when the text uses language that: (1) explicitly references moral values (e.g., 'justice,' 'equality,' 'respect,' 'rights'); (2) implies a moral judgment (e.g., 'unfairly discriminate,' 'justified anger'); or (3) expresses admiration or condemnation based on ethical principles (e.g., 'skill, courage, and patriotism'). It is not limited to religious or spiritual language but includes secular ethical appeals.",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "The phrase 'Values of respect' explicitly references a moral value, making it a clear example of moral rhetoric."
+    },
+    {
+      "text": "ACT aims to replace violence and poverty amongst Maori with caring and security through education, enterprise and self-discipline.",
+      "explanation": "The phrase 'replace violence and poverty amongst Maori with caring and security' invokes moral values of care, security, and justice, demonstrating moral rhetoric."
+    },
+    {
+      "text": "Thanks to their skill, courage, and patriotism, the very dangerous work at the World Trade Center and Pentagon was done remarkably quickly and without a single fatality.",
+      "explanation": "The phrase 'skill, courage, and patriotism' explicitly references moral virtues, which are central to moral rhetoric."
+    }
+  ],
+  "negative_clarification": "Texts that do not contain moral rhetoric are those that focus solely on practical, procedural, administrative, or factual matters without invoking ethical principles or judgments. These may include discussions of policies, economic measures, infrastructure, or other non-moral topics.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "The text discusses ensuring an efficient school bus system, which is a practical policy without any moral language."
+    },
+    {
+      "text": "Structural adjustment for river communities",
+      "explanation": "The text mentions 'Structural adjustment for river communities,' which is a practical or economic measure without moral rhetoric."
+    },
+    {
+      "text": "",
+      "explanation": "The text is empty, so it cannot contain moral rhetoric."
+    }
+  ]
+}

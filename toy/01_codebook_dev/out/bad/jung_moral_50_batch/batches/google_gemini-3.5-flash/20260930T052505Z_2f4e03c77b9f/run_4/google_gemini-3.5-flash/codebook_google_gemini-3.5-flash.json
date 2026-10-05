@@ -1,0 +1,29 @@
+{
+  "definition": "'Moral rhetoric' refers to language that appeals to moral values, ethical duties, justice, fairness, rights, human dignity, compassion for the suffering, or moral virtues (such as courage, patriotism, self-discipline, or respect). It involves evaluative claims about what is 'right', 'just', 'deserving', or 'fair', or denounces actions and situations as 'unjust', 'corrupt', 'discriminatory', or 'repressive'.",
+  "clarification": "To be classified as moral rhetoric (1), a text must use language that frames issues in terms of ethical imperatives, human rights, fundamental values (like liberty, equality, or family cohesion), or moral virtues/vices (such as corruption, bravery, or greed). It is not merely about policy choices or positive outcomes, but about the underlying moral justification or framing.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Appeals directly to inherent human dignity, worth, and purpose of vulnerable individuals, expressing a core moral value."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Emphasizes the moral duty of compassion, comfort, and humanitarian aid to those experiencing displacement, persecution, and violence."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "Directly addresses the moral and ethical violations of 'corruption' and 'bribery', advocating for ethical governance."
+    }
+  ],
+  "negative_clarification": "A text should NOT be classified as moral rhetoric (0) if it simply describes policy proposals, goals, or outcomes in neutral, technical, or pragmatic terms (e.g., 'efficient', 'accessible', 'sustainable', or 'cost-effective'), even if those policies might have positive social impacts. Statements of fact, budget figures, and general political boasts that lack explicit moral, ethical, or value-based framing are excluded.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "Focuses strictly on functional and pragmatic goals of efficiency and accessibility for a transit system rather than moral duties."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "A highly technical and administrative corporate tax proposal with no moral, ethical, or value-driven framing."
+    }
+  ]
+}

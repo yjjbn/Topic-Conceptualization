@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, or outcomes through ethical values, rights, duties, virtues, justice, fairness, equality, freedom, dignity, compassion, or wrongdoing.",
+  "clarification": "Classify a text as moral rhetoric when it contains an explicit normative appeal or judgment about what people deserve, how they ought to be treated, whose rights should be respected, what is fair or unjust, or what conduct or social condition is ethically good or bad. Moral rhetoric can concern both universal values (such as equality or human rights) and civic values (such as accountability, transparency, freedom, or opposition to corruption).",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement assigns inherent worth and purpose to every person, explicitly affirming human dignity."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The text explicitly invokes race equality and the removal of barriers affecting minority ethnic communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It uses clear justice and entitlement language: no one should be denied court access and people deserve quality justice."
+    }
+  ],
+  "negative_clarification": "Do not classify ordinary policy commitments, factual claims, economic arguments, administrative procedures, service expansions, or positive self-presentation as moral rhetoric merely because they concern socially important subjects. A proposal on health, housing, safety, poverty, or the environment is not enough unless the excerpt expressly frames it in moral terms such as rights, equality, fairness, dignity, unjust treatment, duty, or compassion.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "Testing children in literacy and numeracy is an education-policy proposal without an ethical evaluation or value claim."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "The Food Waste Bill is a concrete regulatory proposal, but it does not explicitly articulate a moral duty or judgment."
+    },
+    {
+      "text": "Despite the worst economic conditions in decades, National is investing an extra $100 million in patient subsidies for GP visits.",
+      "explanation": "Additional funding for GP subsidies is a spending announcement rather than an explicit appeal to justice, rights, or fairness."
+    }
+  ]
+}

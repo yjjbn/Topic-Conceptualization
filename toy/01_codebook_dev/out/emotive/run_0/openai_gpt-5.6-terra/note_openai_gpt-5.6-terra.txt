@@ -1,0 +1,674 @@
+Personal note:
+
+
+Original command-line arguments:
+[
+  ".\\classify_create_codebook.py",
+  "--nametag",
+  "emotive",
+  "--run",
+  "0",
+  "--data-path",
+  "./data/emotive_codebookdev_100.csv",
+  "--prompt-path",
+  "./prompts/prompt_explain_codebookLLM_emotive.txt",
+  "--model",
+  "openai/gpt-5.6-terra"
+]
+
+Usage details:
+Generation ID: gen-1790633300-yVkCgScbJtTHz9r8DAC4
+Cost (OpenRouter credits): 0.0953095
+Input tokens: 21190
+Output tokens: 3528
+API key (masked): ...7547
+
+
+Full request body sent to API:
+{
+  "model": "openai/gpt-5.6-terra",
+  "stream": false,
+  "messages": [
+    {
+      "role": "system",
+      "content": "You will receive a set parliamentary speeches held in the UK House of Commons.\n\nClassify each text according to whether the parliamentarian is using \"emotive rhetoric.\" For each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The parliamentarian is using emotive rhetoric.\n\"0\": The parliamentarian is not using emotive rhetoric.\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as a JSON array of objects, each containing document_id and text:\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nAfter you have classified all the texts, write a codebook that documents how you conceptualized \"emotive rhetoric\" when making your classifications. The purpose of the codebook is to communicate your concept of \"emotive rhetoric\" to an external coder, such that they could independently identify the same concept in this or a new set of documents in the same way that you would.\n\nYour codebook should contain:\n\n1. DEFINITION: Your definition of \"emotive rhetoric.\"\n2. CLARIFICATION: Additional explanation, such as inclusion criteria, that helps clarify when to classify a text as \"emotive rhetoric.\"\n3. POSITIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your clarification, the document_id's of up to 3 example texts from the original dataset that illustrate distinctive cases of \"emotive rhetoric.\"\n4. POSITIVE EXAMPLE EXPLANATION: For each positive example, an explanation of why the positive example counts as \"emotive rhetoric.\"\n5. NEGATIVE CLARIFICATION: Additional explanation, such as exclusion criteria or boundary rules, that helps clarify when NOT to classify a text as \"emotive rhetoric.\"\n6. NEGATIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your negative clarification, the document_id's of up to 3 example texts from the original dataset that illustrate distinctive negative cases of \"emotive rhetoric.\"\n7. NEGATIVE EXAMPLE EXPLANATION: For each negative example, an explanation of why the negative example does not count as \"emotive rhetoric.\"\n\nReturn your classifications with explanations and codebook in the JSON format provided.\nMake sure you return a 1 or 0 classification for every document_id provided.\nCopy each document_id exactly from the input. Never generate or change document_ids.\n\n\nThere are 100 documents in this request. Return exactly 100 classifications, one for each input document. Copy each document_id exactly; do not omit, duplicate, or invent IDs. "
+    },
+    {
+      "role": "user",
+      "content": "[{\"document_id\": \"133589\", \"text\": \"I thought that I would add a word as a Back Bench member of the Procedure Committee to endorse what the Chairman spelled out at some length I want to make two points The House should be grateful to the right hon Member for Bromley and Chislehurst Mr Forth  who sometimes points out that things that might be taken as simple are in fact more complex than they might appear on the surface I think that Hansard will show that this is a complicated matter We certainly found that to be the case in our debates in the Procedure Committee which is one reason why we wanted a relatively limited experiment to try to see how the complications would work through in a particular case I assure the right hon Gentleman that some of the points that he has raised formed part of our Committee debates In such arguments it is important that we have a balance and look not only at the complications difficulties and obstructions but at the positive side One aspect strikes me strongly from our consideration of specifically Welsh legislation This may not be the greatest example but it was dealt with in this House When we debated the Children s Commissioner for Wales many of us wanted to understand the arguments for that move so that we could see whether they were compelling in dealing with children s matters in England Speaking as secretary of the all party group on children and young people in care for much of that time I felt as if we in the rest of the United Kingdom were unaware of some of the matters being raised in the Welsh debate One aspect of the suggestion before us therefore is simply that we all have the capacity to learn from one another I believe that that can benefit the way in which these islands are governed My second point concerns finance and money It must strike people as crazy that the same arguments are repeated in many different places when those who can profit from the powerful arguments being adduced and who have the responsibility to act on them could hear the arguments themselves rather than repeats of them or repeats of repeats of the arguments They would then have the opportunity to share whatever wisdom other people who have heard those arguments have That is particularly important on complex and technical issues I speak as a member of the Science and Technology Committee that sometimes require much argument Some of those arguments stretch the understanding beyond or to the limits of what some of us can cope with If we want a Parliament better able to take informed decisions it is important that it tries to adjust some of its structures so as to be better informed and able to think matters through more carefully in line with the emphasis on pre legislative scrutiny which is a remarkable improvement in the way in which government is conducted I not only commend the report to the House but hope that its consequences will be that we see the benefits of such an arrangement and agreeing with the right hon Member for Bromley and Chislehurst its complications We can then make whatever changes are necessary to achieve the report s laudable aims without running aground on rocks in waters that we have not previously charted\"}, {\"document_id\": \"607499\", \"text\": \"I wonder whether the hon Gentleman remembers that exactly the same arguments were advanced mainly by members of his party before the minimum wage was introduced We were told that jobs would be lost that it would be a terrible thing but those predictions did not come true so perhaps the hon Gentleman is exaggerating his case\"}, {\"document_id\": \"17318\", \"text\": \"What representations she has received from interested groups on the Department s consultation paper on rhizomania\"}, {\"document_id\": \"127489\", \"text\": \"Of course we keep under constant discussion with the Americans who are our allies the issue of whether we require more troops It is not correct that specific requests have been made in respect of troops as at the present time but of course we have to keep the situation under constant review In respect of what is happening in Fallujah now it is important to say that the American patrol that has engaged in military action in respect of insurgents inside Fallujah was fired on by those insurgents It is therefore perfectly right and proper that they take action against those insurgents Tomorrow patrols by American and Iraqi police and civil defence forces will begin inside Fallujah The information that I have is that the vast bulk of people even in Fallujah want these insurgents to lay down their weapons and allow a proper process of dialogue to take place It is of course the case that we keep the situation under constant review as we should do because we have made a commitment to people in Iraq that we will ensure that we create a security situation in which a proper political process can work But at present we believe that we have sufficient troops\"}, {\"document_id\": \"107764\", \"text\": \"I am sure that my hon Friend agrees that it does politicians no good to be too adversarial even if we necessarily have to be adversarial sometimes He will also share my fear that despite yesterday s announcements the evident good will of Ministers and the ever rolling stream of initiatives and announcements the answer to the question     Do the Government have a coherent child care strategy based on choice     is sadly     No     I shall explain why As the Select Committee s report makes clear the Government s child care policy for working parents is inextricably linked to their anti poverty strategy There was some discussion in Committee about whether the anti poverty strategy was the foundation of their policy The Government have set themselves two main targets and the hon Member for Romsey Sandra Gidley  in a very good speech picked up one reducing the number of children in workless households by 2006 The second target is that 70 per cent of lone parents should be in paid work by 2010 Like the Chairman of the Select Committee I was extremely impressed by the oral evidence that we heard from Professor Moss on which I shall read out part of the Committee s conclusions The report states     Childcare should not just be about freeing parents so that they are able to work In his view     that is Professor Moss     childcare is a public good which is the right of all children regardless of whether their parents work or not     That point was alluded to by other speakers in the debate The report continued     The questions raised by Professor Moss suggested that the Government may be placing too much emphasis on a labour market driven strategy as the basis for childcare policy His evidence opened up an alternative vision of childcare based upon the choices made by parents and families themselves     It seems that not only Government Back Benchers but Front Benchers and indeed Cabinet Ministers agree Let me cite the comments of one of them     If I look back over the last six years I do think that we have given the impression that we think all mothers should be out to work preferably full time as soon as their children are a few months old    It s not our job to preach to people one way or the other it s about providing choices     Those are the words of no less a person than the Minister for Women published in The Daily Telegraph under the lurid headline     We ve failed mothers who stay at home admits Hewitt     The Opposition agree However as the hon Member for Romsey acutely observed it is hard for the Government to say that they want to provide choice for all parents while setting targets that would put 70 per cent of a group of those parents in the labour market There is certainly a tension if not a contradiction between those aims That is why the report is critical of the main instrument of that labour market driven strategy the child care tax credit It makes a series of suggestions for improving the credit but it also says that the credit though valuable to many parents     poses complex and interlocking problems about take up eligibility qualifying hours the proportion of costs which should be covered regional disparities and the funding of informal as well as formal care    The CCTC is certainly not consistent    with a childcare vision based on the choices made by parents and families themselves since it is only available to some of them     It concludes     We therefore believe that in the longer term the CCTC may have a less central role     It is significant that most although I grant not all of yesterday s child care announcements will assist parents who work in the labour market only A parent who does not work in the labour market will not be able obviously to take advantage of the new tax exemption for workplace nurseries announced yesterday That point was picked up by the Chairman of the Committee and the hon Member for Regent s Park and Kensington North Nor can it be claimed that this announcement was a response to the Select Committee recommending an enhanced role for employers which is in the words of the report     small but useful     Moreover a parent who does not work in the labour market would not I think be able to take advantage of any extension of the CCTC to cover informal carers a possible consequence of the consultation announced yesterday to     streamline this process and widen home caring     It cannot be claimed that this announcement was a response to the Select Committee recommending such an extension because the report fairly bluntly said     We do not believe that funding informal care through the CCTC is the best way forward     The Government may want to take note of that A lone parent who is not about to work in the labour market will not be able to take advantage of the help with child care costs for lone parents announced yesterday in the week before starting work The House may now begin to appreciate why the Government do not seem to have a clear and coherent strategy for child care based on parental choice That lack of clarity combined with the bewildering proliferation of funding streams and the administrative burdens that some providers report my hon Friend the Member for Mid Worcestershire mentioned this in the context of playgroups in his reference to the difference between quality and qualified staff may help to explain why demand for child care continues to outstrip supply The number of day nurseries is certainly up But the number of child minders is as the report puts it     decreasing in number     In 1997 there were almost 100 000 By this year that figure had fallen to almost 72 000 and the number of places in playgroups my hon Friend will have noticed this in his perusal of the report has fallen from more than 350 000 in 1997 to roughly 300 000\"}, {\"document_id\": \"572512\", \"text\": \"With permission Mr Speaker I will make a statement on the meeting of G8 Foreign Ministers in London last week which also allows me to update the House on international events over the recess The theme of the meeting was preventing and resolving conflict and dealing with its consequences There were important agreements in five areas that the UK had established as priorities The G8 agreed to support the re engagement of international financial institutions such as the International Monetary Fund with Somalia so it can invest in its economy and welcomed the Somalia conference which will be held in London on 7 May  The Ministers endorsed the Burmese Government s proposals for responsible investment to support political and economic progress while urging peace and reconciliation to end ethnic and religious conflicts On cyberspace we agreed to share best practice and build up the capacity of other countries to secure their networks effectively The UK s G8 presidency this year is being used to help create economic opportunities in countries in transition in the middle east and north Africa particularly for women and young people The Ministers endorsed our programme to promote investment support enterprise and work with Arab countries on the return of stolen assets The G8 agreed a landmark declaration on preventing sexual violence in conflict which I will return to shortly We also had extensive talks on pressing international issues In Syria we face worsening conflict and extreme humanitarian suffering Well over 70 000 people have died a truly horrific number 5 5 million people are in desperate humanitarian need and there are now 1 3 million refugees in neighbouring countries a quarter of a million more than when I last spoke to the House on the subject only last month The UK is deeply concerned that the UN relief effort is critically underfunded and that only 34 of the 1 5 billion humanitarian appeal has so far been provided even though the need will become far worse if the conflict continues The G8 agreed immediate priorities of increasing humanitarian access inside Syria ensuring that donors provide the funding they have promised and the need to support stability in host countries The G8 Ministers reaffirmed the view that the use of chemical weapons in Syria would demand a serious international response The UK is increasingly concerned that there is evidence of the use of chemical weapons in Syria These allegations must be fully and urgently investigated We welcome the UN Secretary General s announcement of an investigation into the allegations and call again on the Syrian regime to co operate fully and allow the investigation unfettered access to all areas They should take heed that the world is watching and those who order the use of chemical weapons or who participate in their use must be held to account We also agreed that a Syrian led political transition is urgently needed based on the principles of the Geneva communiqu\\u00e9 The opposition has stated that it is open to dialogue and we are supporting its efforts to prepare for political transition The Syrian Government must demonstrate that they are ready to enter negotiations in good faith We are calling on Russia to work with us to establish a genuine political effort on that basis I along with my American and French counterparts held talks with the Prime Minister designate and two vice presidents of the Syrian National Coalition ahead of the G8 We discussed how the coalition can best represent the interests of all Syria s communities and uphold human rights and how we can work together to increase services and humanitarian assistance inside Syria The UK is determined to do more to support the Syrian National Coalition Our aim is to bring about a political transition by building the credibility and capability of the moderate opposition and increasing pressure on the regime The package of non lethal assistance including protected vehicles and body armour that I announced last month is now being shipped to the region As I said during my previous statement to the House we have to be prepared to do even more to help to save lives Our policy on Syria cannot be static in the face of this growing calamity As the Prime Minister said last month we have taken no decision that we would like to send arms to the Syrian opposition but the UK and France argue that we will need further amendments to the EU arms embargo or even to lift it altogether As things stand we need greater flexibility if we decide that urgent action is necessary for example in response to a specific incident or continued grave deterioration on the ground or to create the conditions for a successful political transition I will discuss that with the Foreign Ministers of other key countries in the Friends of Syria Group in Istanbul on Saturday with EU Foreign Ministers in Luxembourg on Monday and in further international meetings next month The G8 Ministers also reviewed the threat to international security from North Korea We condemned its aggressive rhetoric the announcement that it would reopen the nuclear facility at Yongbyon and its development of nuclear and ballistic missile programmes breaching its international obligations We urged North Korea to engage in credible and authentic multilateral talks on denuclearisation to abide by its obligations under all relevant UN Security Council resolutions to abandon all its weapons programmes and to refrain from further provocative acts All G8 Ministers were clear that North Korea s current posture will lead only to further isolation We emphasised our willingness to take further significant measures if North Korea conducts another missile launch or nuclear test I discussed North Korea in detail with the Japanese Foreign Minister in the margins of the G8 and spoke to the South Korean Foreign Minister this morning I also welcome Secretary Kerry s visit to the region at the weekend I have laid a written ministerial statement today on these developments and the action that the Government are taking The G8 also discussed the recent E3 plus 3 talks on Iran s nuclear programme and the disappointing outcome Tehran s position falls short of what is needed for a diplomatic breakthrough We will continue the twin track approach of sanctions and negotiations but the G8 was clear that the window for diplomacy will not remain open for ever We also had very good discussions on the middle east peace process strongly welcoming Secretary Kerry s recent visits to the region and the US commitment to finding a just lasting and comprehensive peace Both sides must show bold political leadership and refrain from actions that threaten the viability of a two state solution I was delighted that the G8 Foreign Ministers agreed a major declaration on preventing sexual violence in conflict which is the first of its kind and the result of a year of effort and negotiations by the United Kingdom I pay tribute to the special representative of the UN Secretary General on sexual violence Zainab Bangura and to UN special envoy for refugees Angelina Jolie who has worked with me to develop this initiative from the beginning And very good work it has been The G8 has declared for the first time that rape and serious sexual violence in conflict constitute grave breaches of the Geneva convention G8 members have the responsibility to search for prosecute or transfer for trial individuals accused of such crimes regardless of their nationality and wherever they are in the world The G8 committed itself to the development of a comprehensive international protocol on the investigation and documentation of rape and sexual violence in conflict to increase the number of successful prosecutions We will now take the lead on developing this protocol with experts from all over the world We declared that there should never be any amnesty for sexual violence in peace agreements and pledged to review the doctrine and training that we provide to our own national military and police and to peacekeeping troops of other nations The declaration also includes vital commitments on women and children s rights and the protection of women human rights defenders The G8 endorsed the deployment of international experts to help build up the judicial investigative and legal capacity of other countries which the United Kingdom is already doing Our team of over 70 experts has been deployed to Bosnia the Syria border and Libya and will carry out further deployments this year to those three countries as well as to South Sudan Mali and the Democratic Republic of the Congo The G8 Ministers announced 23 million in new funding to back these efforts including 10 million from the UK Taken together that was an historic step marking a wholly new international effort to shatter the myths about sexual violence in conflict and end the culture of impunity We will now take this campaign to the United Nations I will lead a debate at the UN Security Council during our presidency in June and it will be one of my top priorities for the UN General Assembly in September In all these areas the G8 Foreign Ministers addressed the crises of today but also as I believe strongly we must always do addressed ourselves to improving the condition of humanity\"}, {\"document_id\": \"6656\", \"text\": \"I take my hon Friend s point One of the concerns about the work of the Phillips committee without any discredit to the distinguished individuals who carried it out was that it took so long It was not easy for the members of it to draw together the scientific evidence in a way that made it clear That is one of the reasons why the Government have chosen a different route for the inquiries that we have announced into foot and mouth disease\"}, {\"document_id\": \"318441\", \"text\": \"Having lived and worked in Zimbabwe may I suggest to the Prime Minister that the collapse of law and order in that country has now reached a point at which it is no longer a question simply of the internal trauma of the Zimbabwean people There is now a threat to the stability of the whole of southern Africa Does the Prime Minister agree that perhaps the only key to progress lies with the African Union and with SADC Will he try to impress upon the leaders in southern Africa who are now speaking out more eloquently than they have done before that the answer is not simply a mission to Zimbabwe but a withholding of recognition of Mugabe s Government by the African Union and SADC and a threat to the Zimbabwe Government that they will be suspended from the African Union and SADC if they do not embark immediately on the necessary reforms\"}, {\"document_id\": \"559965\", \"text\": \"It is critical that both the cost and availability of capital underpin the investment I have described and that is particularly true as the hon Gentleman says for small and medium sized enterprises We are working on that with the Department for Business Innovation and Skills my former Department but given that he has raised the matter in this way I will look at it again and report back directly to him\"}, {\"document_id\": \"170663\", \"text\": \"The hon Gentleman made a passing reference to the Welsh Assembly Will he confirm that he is in favour of scrapping the Welsh Assembly although the leader of the Conservative group in the Welsh Assembly wants it to have more powers\"}, {\"document_id\": \"581931\", \"text\": \"I know where my hon Friend is going with this I am obsessed with an ecosystems management of our fisheries Fish do not have passports they do not understand lines on maps and they may spawn in one country s waters and mature in another s Therefore whatever our status within the EU we need to have a system and that means we have to talk to all the countries who have responsibility for that ecosystem and some of them in the North sea are not members of the EU yet we talk to them and we work with them That is the way to manage conservation properly\"}, {\"document_id\": \"86806\", \"text\": \"May I add my congratulations to my right hon Friend The intervention is long overdue Does he agree however that history shows that intervention especially in Africa is often too little too late What has happened to the proposal floated at the UN some years ago for a rapid reaction force to which developed countries and some developing countries would contribute Such situations will always get worse unless there is early intervention No one wants to put British troops at risk but we need to recognise that we have both humanitarian and security obligations to take early and serious action to ensure that the combatants know where we stand\"}, {\"document_id\": \"232700\", \"text\": \"I take my hon Friend s point that there is some migration from the home counties to the Met but equally each home county has a record level of police officers so the effect has clearly not been that great However perhaps that should be considered within the wider parameters of the pay board\"}, {\"document_id\": \"671425\", \"text\": \"Turkey supports Hamas at a time when it is being reported that Hamas is building more rockets that will be able to go further into Israel and is starting to rebuild the terror tunnels What action is being taken to stop Hamas s preparations for a new war of aggression against Israel\"}, {\"document_id\": \"146732\", \"text\": \"In the hon Gentleman s little rant about reading standards he ignores the fact that examination results at the ages of 14 and 16 and at A level are now better than they have ever been We should be proud of that It is useful that we are raising standards in the secondary sector but I want to refer back to the class issue for a moment Is it not true that students from non traditional backgrounds whom we discussed extensively during the debates in the Committee that considered the Higher Education Bill have lower aspirations and very often because they do not know anyone who has attended a top university do not apply because they think that the university is expensive or not for them We as politicians as well as the universities certainly have a great deal of work to do in persuading those youngsters that they can apply and that they can succeed\"}, {\"document_id\": \"391372\", \"text\": \"I am pleased to follow the hon Member for Sherwood Paddy Tipping  I agreed with much of what he said but I will be supporting the EPS I do not consider myself to be a vertebrate or whatever I am a very cautious person but we need to pin things down In introducing this debate the Minister talked about the need to decarbonise the energy supply I do not think that anybody in the House would disagree with that I agree entirely that we have got to get CCS to work Coal and gas are important to our current energy supply and are likely to remain so for the foreseeable future so CCS is vital Indeed I am pleased to see that there will be a change with gas perhaps being allowed later However if we are to persuade people of the need to pay for CCS we will have to show results Much has been said about investment today The CBI has sent me and I am sure every other Member its paper on investment which says     An EPS could deter investment in CCS which would have an adverse impact on energy security     and continues     Introducing an EPS risks the unintended consequence of diverting investment away from UK clean coal and towards CCS projects in countries where the risk profile is lower     That is a point of view but as was pointed out earlier there is one thing being done in this country that is not done elsewhere and the Minister said it herself No other country has a statutory funding mechanism She has talked about 9 5 billion from the levy for four demonstration plants That is a considerable amount of the investment that will be needed for those four plants but the money will not come out of thin air rather it is money from the levy on the energy companies the cost of which will be met by the consumer at the end of the day We are therefore talking about giving 9 5 billion of consumers money to the energy companies to demonstrate CCS and possibly also for retrofitting Earlier the hon Member for Cheltenham Martin Horwood mentioned the increasing scepticism about climate change shown in polls of late However another type of scepticism is increasing and that is scepticism among energy consumers who are being asked to bear more and more costs for environmental issues helping with the grid and so on As we are in a period when wages are not rising and are not likely to rise for the foreseeable future yet energy bills continue to rise and more and more is being put on those bills there is a squeeze on the energy consumers who pay them If we are going to take consumers with us down this route we have to convince them that we are getting value for money for the huge amounts that we are putting into CCS and other things One way to do that is by putting the EPS in place I understand the point that the hon Member for Sherwood made about timing and he is right A year is a short time when we are talking about CCS which we have talked about for many years but have never really got off the ground for various reasons that I could go into at length but will not We have to show the consumer that we are putting real pressure on the companies to perform to ensure that the money is well invested that we will have a CCS system that works and reduces carbon emissions that the cost is worth while for reducing the long term emissions into the atmosphere and for helping to meet our challenging targets for carbon emissions reduction I understood the points that the Minister was making earlier and I do not disagree with a lot of them but the reality seems to be that the only new coal plants that will come into being in the next few years will be those sanctioned through the levy No one in their right mind will operate a coal plant without the levy To digress slightly we talked about gas earlier and I made the point in Committee about the terms of the national planning statement in England which I think will prevent new gas plant from being developed We took that up with the Minister Lord Hunt when he appeared before the Committee and he promised to look into the matter again This needs to be sorted out because it could stand in the way of the development of gas plant The EPS will show a determination to ensure that consumers are getting value for money and that they are actually going to get somewhere with these companies It will show that we are not just giving them money to build new plant This brings me to my worry about new clause 8 I do not doubt the Minister s sincerity on the new clause I do not doubt that the Government intend its effect to be that in reviewing the measure in future we will consider an EPS if we are not making fast enough moves towards decarbonisation To me however that is not what the new clause actually says The new clause says that we will look at     whether coal fired generating stations for which appropriate consent is given on or after 1st January 2020 that are built in Great Britain can be expected to be constructed so as to enable use of carbon capture and storage technology on all their generating capacity     Subsection 3 then says     A report under subsection 1 must also include a review of whether having regard to the other matters contained in the report any government policies should be revised     It does not talk about whether policies should be strengthened or whether we should consider introducing an EPS it simply talks about whether they should be revised We should bear in mind the fact that by that time the energy companies will have invested money in the plant and the Government will have invested 9 5 billion perhaps a lot more If disastrously carbon capture and storage is not working economically there will be massive pressure on the Government of the day Let us remember that 2020 is two Parliaments away and with the best will in the world whatever happens later this year the Minister is unlikely still to be in her post no offence meant to her of course In those circumstances there will be massive pressure on the Government of the day to allow the plants to continue to operate without CCS because of the money that has been put in and because of the effect on the energy system if they were taken out of commission For all those reasons it seems perfectly sensible indeed absolutely essential that we make it clear to the energy companies from the outset that there must be an emissions standard and that they must meet it We are putting this money in to help us to achieve our carbon reduction targets and if we do not do that there is real dangers ahead I also suggest that we would have grave difficulty in convincing the energy consumers who ultimately are paying for all this that that is the right thing to do I will support the emissions target tonight and I hope that the measure goes through I foresee great difficulty if it does not\"}, {\"document_id\": \"920225\", \"text\": \"Let me respond very briefly to the hon Gentleman He suggested that I did not agree with the statement I fully agreed with everything in it That is just for the hon Gentleman s instruction\"}, {\"document_id\": \"650702\", \"text\": \"I have been listening very carefully to the hon Lady To say that members of the energy intensive industries want us to go further and faster than other countries with the green stuff is a bit of a leap Although no one disputes that we must decarbonise the issue we need to address the hon Lady has not yet done so is the extent to which we need to do that more quickly and more unilaterally than others That is a fair question\"}, {\"document_id\": \"395880\", \"text\": \"I think I heard the right hon Gentleman say that he thought the Committee should be moved to the precincts of another Department Given the importance of the Committee the sensitivity of the information involved and the extreme responsibility that the Committee has does he not think there is a case for moving it to completely separate precincts\"}, {\"document_id\": \"938024\", \"text\": \"How can the anger of the public be assuaged when notwithstanding the powers granted to the courts they see continually repeat offences rewarded only with a suspended sentence\"}, {\"document_id\": \"558421\", \"text\": \"I understand that the respondents are arguably self selecting and it is not a scientific survey but the results are interesting none the less On the other hand just for balance there was a vox pop on Radio Leicester this morning in which people said that they did not think that 16 year olds would understand the issues or be interested I have to say as many other Opposition Members have done that when I speak to year 11 groups or to sixth forms as I will tomorrow at Madani high school I find that young people are very much engaged They may not be interested in the cut and thrust of party political debate in this place but they are certainly interested in the issues that affect them All my life I have seen Chancellors of the Exchequer of both parties pull rabbits out of hats in the Budget statement in this place and it is usually some sort of give away to pensioners Whatever party the Chancellor is from the party members behind him cheer and wave their Order Papers We do it because we know that we can put that give away on our leaflets and in our direct mail and we know that pensioners vote I suspect that if 16 year olds had the vote we would be less cavalier about trebling tuition fees to 9 000 abolishing the education maintenance allowance and levels of youth unemployment because we would be worried about those young people having their say at the ballot box It is entirely fair that they should They do not all have to vote we are talking about giving them the opportunity to vote I hope that the hon Member for Bristol West Stephen Williams divides the House I get the impression that he will If it is the will of the House that 16 year olds should have the vote will the Minister think about allowing them to vote in next year s European elections Then we could look at the level of engagement and at whether that galvanises people Perhaps she will comment on that when she sums up The proposal seems entirely fair and right let us just get on with it\"}, {\"document_id\": \"375973\", \"text\": \"It is Government policy to negotiate prisoner transfer agreements particularly with those countries with large numbers of nationals in our prisons As of 30 June 2009  the three countries with the largest numbers were Jamaica Nigeria and the Republic of Ireland We have prisoner transfer agreements with the Republic of Ireland and Nigeria A prisoner transfer agreement was signed with Jamaica in June 2007 but has yet to be implemented as the Jamaican Government need to introduce enabling legislation\"}, {\"document_id\": \"188730\", \"text\": \"I know from talking to my constituents in Hall Green how much they value the leadership that this Government and our Chancellor have shown on this issue But does my hon Friend accept that it is now the time to focus on the outcomes and the real contribution that each country makes and to put less store by the warm words and vague promises of those who are dragging their heels\"}, {\"document_id\": \"780849\", \"text\": \"It is disappointing but of course there are never that many Members here on a Friday traditionally it is the day we spend in our constituencies\"}, {\"document_id\": \"165361\", \"text\": \"Further to that point of order Sir Michael I hope that the Home Secretary can help us May we ask him through you if he will indicate which of the amendments in the group are covered by his proposals Those could easily be voted through and we should be halfway done\"}, {\"document_id\": \"56471\", \"text\": \"I bow to my hon Friend s knowledge of the north east but I have heard my hon Friend the Member for Middlesbrough Mr Bell give a completely different view of the nature of the north east from that of my hon Friend\"}, {\"document_id\": \"855456\", \"text\": \"As we mark 100 years since the end of world war one it is appropriate once again to underline our appreciation of the charities that support the armed forces community You will be aware Mr Speaker that many household names such as the Royal British Legion Blesma Combat Stress and SSAFA were formed around that time to look after the thousands of injured returning to Britain I meet and engage with charities weekly as does the Secretary of State who last week visited Tedworth House the excellent recovery centre run by Help for Heroes\"}, {\"document_id\": \"631466\", \"text\": \"Does my hon Friend know whether the UK has linked the considerable amount of aid we give Pakistan to the blasphemy laws in any way\"}, {\"document_id\": \"723350\", \"text\": \"My hon Friend makes a valuable point Birmingham airport is an essential part of the midlands economy It has been particularly encouraging to see the development of routes between Birmingham and far off parts of the world where there are strong business links such as the Indian subcontinent and the middle east That has been helped by the work of local Members of Parliament who have argued in support of the economic development of the area My colleagues in the Department for Transport regard this issue as immensely important and they will listen carefully to what my hon Friend has said I know they will continue to work alongside him and other midlands MPs in an attempt to continue the successful development of that airport\"}, {\"document_id\": \"253116\", \"text\": \"Lord Levy has accepted that he may have offered his opinion about who should be nominated for peerages In what capacity was that advice offered as the Prime Minister s middle eastern envoy his personal friend and tennis partner or because he is just coincidentally the Prime Minister s chief fundraiser\"}, {\"document_id\": \"615606\", \"text\": \"I concur entirely When we want to improve the efficiency of businesses we say that we must pay those at the top as much as we can to reward their energy and enterprise and that we must reduce the pay of those at the bottom because is in their own best interest There is one rule for the rich and one for the poor\"}, {\"document_id\": \"386281\", \"text\": \"I am enjoying the hon Gentleman s speech Is there not a danger with this new scheme of failing to recognise that the suppliers can be quite strong and are sometimes large international corporations themselves It may well be that the new system benefits only the likes of Unilever or to mention the company that I am associated with Nestl\\u00e9\"}, {\"document_id\": \"594505\", \"text\": \"The petition states The Petition of residents of East Cleveland Declares that Redcar and Cleveland Borough Council should allow Earthbeat to convert Guisborough Registry Office into a community theatre for the people of Guisborough and East Cleveland The Petitioners therefore request that the House of Commons urges Redcar and Cleveland Borough Council to allow Guisborough Registry Office to be converted into a community theatre And the Petitioners remain etc\"}, {\"document_id\": \"387608\", \"text\": \"I thank my hon Friend for raising this important issue We are aware of the strength of feeling on this matter and are firmly committed to ensuring that people suffering from asbestos related diseases receive the help and support that they need We hope to be in a position to give the Government s response on pleural plaques soon\"}, {\"document_id\": \"86679\", \"text\": \"It might not offer the boost that the hon Gentleman imagines and let me explain why We have the highest VAT registration threshold anywhere in the European Union so half the hotels in this country do not fall within the system and therefore do not charge VAT The type of measure that he proposes would cost the Exchequer about 650 million most of which would benefit the major hotel chains and luxury city hotels So the blunt measure that he proposes may not have the effect that he would wish\"}, {\"document_id\": \"228684\", \"text\": \"If I could get reliable statistics of that nature it would be very helpful One reason why we are carrying out a fundamental overhaul of our systems including our information systems is that such information is not easily to hand and when it has been in the past it has proved unreliable I accept that verifiable databases and information systems are a fundamental part of any modern organisation that is trying to tackle such problems I invite the hon Lady to take part in our longer discussions when I make a statement if I am allowed to do so on the transformation of the immigration and nationality directorate Everyone gets a second bite of the cherry under a new Labour Government\"}, {\"document_id\": \"376825\", \"text\": \"I have listened carefully to what the hon Gentleman said There is a difference between the Turks and Caicos islands which is an overseas territory where competence for good governance and European norms rests with the Foreign Office Jersey Guernsey and the Isle of Man are separate jurisdictions Provided they meet European Union norms their systems are their business and the business of their voters\"}, {\"document_id\": \"54318\", \"text\": \"No I have only three minutes to conclude my speech We have had endless consultation documents Pickering Sandler and Myners We have had various legislation too yet we now have a debate in the press about whether there will be a Green Paper at the time of the pre Budget report whether there will be a separate Inland Revenue document and whether the Government will set up a royal commission My view on royal commissions is that Harold Wilson put it very well when he said XRoyal Commissions take minutes and waste years     We do not have the time to wait for a royal commission but if the Secretary of State can offer a framework that we can work within to try to tackle the crisis I will end with the assurance that Opposition Members recognise that this is a problem that can be solved only with long term planning and on the basis of some recognition of the need for stability in future just as I gave an assurance that we would not get rid of stakeholder pensions When the industry came to us and said XWe need to know that stakeholder pensions will continue     we gave that assurance despite our concerns about stakeholder pensions I hope that the Secretary of State will set out at least the framework within which he will approach the problem So there we are I have lowered my expectations I am not asking for a policy I do not necessarily expect an assessment of the scale of the problem Even an account of how the Secretary of State might set about thinking about how to solve the problem would in itself constitute progress I am sorry that I have not had time to comment on the many speeches from hon Members on both sides of the House I was particularly struck by the number of speeches from Opposition Members on the subject of health I particularly enjoyed the contribution from my hon Friend the Member for Bournemouth West Mr Butterfill on pensions I always listen attentively to him and to my hon Friend the Member for Wycombe Mr Goodman on poverty and social capital We now look forward to hearing whether the Secretary of State can at least inch us forward by setting out the framework within which he will solve the problem 6 44 pm\"}, {\"document_id\": \"447592\", \"text\": \"My hon Friend is absolutely right The Dalit community represent the poorest of the poor in India and we are looking specifically at ways of introducing a scholarship scheme to bring advantage to hundreds of thousands of Dalit girls in that country\"}, {\"document_id\": \"767813\", \"text\": \"I think this Government were right to preside over a regime that has seen crime drop to an all time low which is why I come on to subject of budget All of the things that I have just mentioned and which the hon Member for Halifax mentioned do require money there is no getting away from that This Government have difficult decisions to make about the policing funding formula which they are currently considering It is important to remember that in the last Budget police funding was protected The police said that they were grateful for that and I am pleased that Conservative London Members were able to meet the Chancellor and put their case at this time of unprecedented threat from terrorism Yes I accept that the police need money but as well as money they also need for us in this House to give them the tools they need to do their job As a Member of Parliament I stood on a platform of giving the police the tools they need to do their job We did that in this House with the Psychoactive Substances Act 2016 We have all heard stories from police officers in our constituencies about having to deal with somebody who has taken a novel psychoactive substance has gone berserk been impossible to restrain and assaulted them We provided the police with the tools to do their job there and we are trying to do so again with the Investigatory Powers Bill We want to give them the tools to tackle the current technology that criminals are using I hope that when the hon Member for West Ham Lyn Brown winds up she will reflect on how the hon Member for Hackney North and Stoke Newington Ms Abbott came across to police officers when she made a litany of complaints about that Bill at the Dispatch Box yesterday How will police officers have felt about that when this Government are trying through that Bill to give them the tools they need to do their job the powers that they have asked this Government to provide for them For my part I will continue to support our brave police officers and I know that the hon Member for Halifax will as well I will continue to ask the House to give the police the tools they need and I will support the Government s amendment tonight to do our bit to keep our brave police officers safe so that when those officers face danger they know that our laws and our politicians are behind them to keep them safe\"}, {\"document_id\": \"361576\", \"text\": \"The funds spent on new schools can provide futuristic buildings such as Woodland primary school in Heywood which replaces three local primary schools and a special feature of which is extended community provision with a management structure to suit the local community Will the Secretary of State encourage other primary schools to support their local communities\"}, {\"document_id\": \"260376\", \"text\": \"Will the hon Gentleman confirm that credit unions which are mutual in character and crucial to coping with financial exclusion fall within the scope of the Bill I was unable to understand that point from reading it and his confirmation would be exceedingly helpful\"}, {\"document_id\": \"154681\", \"text\": \"We calculated back in June and we published a statement to say that we believed from the information we had that about 65 000 people needed assistance with schemes that had become insolvent We made our assessment on that basis Obviously we need much more information but let me make this absolutely clear once again we have not said that we will be able to match the assistance the compensation available in the pension protection fund nor do we accept any liability for what has happened in the past We have said that we should be able to provide some assistance particularly to those people who have lost the most and are in the worst position in terms of being closer to retirement and who cannot make up that money because of that proximity So we have made it absolutely clear that we do not in any way pledge to meet every single amount lost from these schemes We also said in our statement of 2 December that we will have a de minimis 10 below which we will not offer compensation\"}, {\"document_id\": \"848718\", \"text\": \"Just minutes ago Facebook announced that it would be taking down several pages associated with the extremist group Britain First Does the Prime Minister join me in welcoming that Does she not also accept that there needs to be a clear role provided by Government to give guidance to social media companies on how they operate in our democracy\"}, {\"document_id\": \"682538\", \"text\": \"I thank the Minister I was a little taken aback by the brevity of her opening remarks considering the number of amendments that have been proposed I may not be as brief as she was because there are several points I want to put on the record It is important to stress again that the Labour party has always supported the introduction of this important Bill We recognise that human trafficking is a heinous crime and that its complex nature demands specialist legislation but it has been a little difficult at times fully to understand the Government s approach When the original Bill was first published many charities organisations and lawyers shared the view that the Government had failed to provide the level of support for victims that we all wanted to see There were also some large gaps for example at the outset it contained nothing on supply chains Progress has been made in Committee in this House and in the other place I pay tribute to my noble Friends the right hon Baroness Royall Lord Rosser and Baroness Kennedy for their work in ensuring that we received this much improved Bill today I also pay tribute to the work done in the Committee that considered the draft Bill Tribute has already been paid to my right hon Friend the Member for Birkenhead Mr Field for the work that he and all the members of that Committee did on a cross party basis to make a set of recommendations that we have been able to consider question and argue for as the Bill passed through the House I want to comment on some of the progress that has been made through the Government amendments in the other place The position of anti slavery commissioner has been transformed it originally seemed to me that they would be nothing more than a Home Office civil servant with a remit exclusively covering prosecutions and with no independent overview of their work programme Even though that change has not gone as far as we hoped we hoped for something more akin to the Children s Commissioner we are pleased that the commissioner will have control over their finances will be able to appoint their own staff and promote good practice across the world and that public bodies will have a duty to co operate with them Most of all I am pleased that the commissioner s remit will include the support available to victims and survivors of trafficking and exploitation There have been significant improvements in the formulation of the statutory defence for victims of slavery who commit crimes in the course of their enslavement The original defence did not recognise the unique nature of child exploitation and the fact that a child cannot consent to their own enslavement The Opposition therefore welcome the removal of the compulsion element of the statutory defence in relation to children but we think that a problem remains not just in the conviction of perpetrators of slavery but in the prosecutions and charging decisions We are disappointed that the Government have not suggested an amendment to require the Director of Public Prosecutions to issue specific guidance on charging in cases of human trafficking victims Whichever party is in Government after 7 May will need to consider that again Another big area on which there has been movement is that of child advocates Although the new system introduced by the Government is not the system of child guardians required by the EU directive on child trafficking which was called for by the Joint Committee on the draft Bill and the charity coalition involved in the Anti Trafficking Monitoring Group some improvements have been made I pay tribute in particular to my right hon Friend the Member for Slough Fiona Mactaggart  who championed child advocates forcefully in the Bill Committee We now have an assurance that advocates will definitely be brought in and that they will be independent of other statutory bodies with responsibility for the child that they will have access to the necessary and appropriate information that they will be appointed as soon as is reasonably practicable where there are reasonable grounds to believe that a child may be a victim of human trafficking and that they will have the power to appoint and instruct legal representatives where appropriate I also welcome the practical moves in relation to the Gangmasters Licensing Authority and the fact that we will have a Government report looking at the GLA s work and a possible extension of its role within 12 months On another positive note we are very pleased with the significant progress that has been made on the reporting requirements placed on large firms in relation to their supply chains The Government could never claim to be genuinely committed to eradicating slavery in the UK if we did not address slavery in the supply chains of our large companies It was absurd that the Government did not include supply chains in the original Bill I pay tribute to my hon Friend the Member for Linlithgow and East Falkirk Michael Connarty  who has done so much to champion this issue over many years I am pleased that his tireless efforts have paid dividends in changing the Bill The Opposition were clear from the outset that we wanted a reporting requirement that was comprehensive that allowed direct comparability between companies and that included an enforcement mechanism Although we welcomed the moves originally announced by the Minister on Report we still wanted them to go further She will remember that we were particularly critical of the Government for repeating some of the mistakes that have hampered the transparency of supply chains legislation in California It has not always been clear which companies that legislation applies to and it has been hard for non governmental organisations to find out which companies ought to be complying and whether they actually are complying Moreover when two reports were looked at side by side they were often not directly comparable That is why we made it clear that the reporting requirement has to contain clear instructions as to what a report has to have in it A large firm may have 100 000 suppliers and it will be able to fill a report with good practice but what we need firms to do is to create a fair evaluation that addresses the key issues which means that we have to specify the key things to be addressed in the report We welcome the guidance as to what a report should contain and we hope it will encourage best practice but we still think that that should be compulsory guidance rather than just a steer We would also have liked it to contain a requirement for companies to report on what work they are doing to support victims who are found in their supply chains I recognise however that the Bill has come a long way and I thank the Minister for the way in which she has dealt with the changes to it over the past few months Before I finish I want to address two areas on which there has not been as much progress as the Opposition would have liked First on protection for victims although I welcome Lords amendment 46 and the introduction of some civil legal aid for victims and Lords amendment 61 which introduces enabling powers to put the national referral mechanism on a statutory footing that does not represent the proper system of recognising and supporting victims which we need  The Government s report on the national referral mechanism identified numerous failings that need to be addressed However whatever improvements are made to internal processes we still need a transparent and rigorous system that is open to challenge That is why we need a statutory national referral mechanism We hope that the Minister intends to use that enabling power as soon as possible Finally I want to turn to part 1 of the Bill and the offences of human trafficking and exploitation I welcome Lords amendments 1 to 4 Indeed I tabled a version of Lords amendment 3 on the first day of the Bill Committee in this place Those Government amendments however are very minor and do not address the severe structural deficiencies in our legislative response to human trafficking The human trafficking offences have developed in an ad hoc manner over the past decade The Bill consolidates the existing offences but it does not cover the gaps in current practice which were clearly presented to the draft Bill Committee by the police and to the Public Bill Committee by two expert lawyers All the evidence is backed up by some shocking statistics In 2013 the police identified 2 744 human trafficking victims including 602 children They were involved in different forms of exploitation However despite the identification of 2 744 victims there were just 104 prosecutions and 48 convictions Most shockingly the Government could not identify a single prosecution where the victim was a child Despite that the Bill contains no specific child offences and no specific offences of exploitation That is a huge lacuna yet throughout the passage of the Bill the Minister has been immune to arguments to amend it from charities and lawyers and immune to evidence from the police and even to the terrible statistics I have just given It is a great shame that the Bill has failed in that regard but I am pleased to say that a Labour Government would introduce specific offences of child and adult exploitation if we found ourselves in government in the next Parliament In conclusion it has been a great pleasure to work for the best part of a year on this important Bill which has been improved hugely during its passage through Parliament I reiterate my thanks to Members on both sides of the House for their work I also thank the many charities and voluntary sector bodies that have worked on the issues involved These groups work with victims in very difficult circumstances and have done a huge amount to use their front line experience to inform the work of this House and to improve the Bill\"}, {\"document_id\": \"361034\", \"text\": \"Where is the leader of the Liberal Democrats Where is the leader of the Conservative party I see that the leader of the SNP has dutifully travelled down to do the Tories work for them as he so often does Plaid Cymru and the SNP are the Tories little helpers In 1979 the SNP voted to destroy a Labour Government and usher in 18 years of miserable Tory rule In the European elections voting Plaid Cymru allowed the Tories to top the poll in Wales albeit on a pitiful vote of just over 6 per cent of the electorate Voting SNP will allow the Tories to get in at Westminster\"}, {\"document_id\": \"647166\", \"text\": \"My hon Friend is outlining circumstances of deep winter and people clearing snow or flooding in south east England Does he agree that when dealing with people who voluntarily try to help others we need to see substantive evidence during the passage of the Bill that the situation will be dramatically different in future\"}, {\"document_id\": \"574072\", \"text\": \"Will the Minister give way on that particular issue\"}, {\"document_id\": \"754021\", \"text\": \"The hon Gentleman will be aware that Scotland and Northern Ireland have their own separate legal systems Using his vast experience in that field how does he think they should overcome those problems I have been listening carefully to what he has been saying and it seems as if he is fundamentally disagreeing with those on his Front Bench on this issue\"}, {\"document_id\": \"235226\", \"text\": \"Given the new technical possibilities of the connecting for health programme the prospect of other Departments and bodies such as the police gaining access to medical records and the express concerns of the Information Commissioner will the Leader of the House press the Secretary of State for Health to make a statement further clarifying the legal ground rules for handling citizens medical data\"}, {\"document_id\": \"227816\", \"text\": \"The answer is quite simple it is important that a range of criteria be taken into account Since 1999 when the Immigration and Asylum Act was passed a particular premium was placed on the availability of accommodation but other issues have to be taken into account including the presence of other migrant communities and the availability of services The various interested parties should therefore consider a range of factors when weighing up these decisions\"}, {\"document_id\": \"864643\", \"text\": \"GTR has told me that these delays are going to carry on until mid July Does the Secretary of State agree that that is utterly unacceptable Will he ensure that Network Rail and GTR fix these problems in a matter of days not weeks\"}, {\"document_id\": \"876874\", \"text\": \"Evidence to the Health and Social Care Committee overwhelmingly showed the importance to patients of our maintaining close regulatory alignment not only here but across the EU Does my hon Friend agree with the Committee that we must do more to publish the contingency planning and the consequences of not maintaining alignment so that the public can see this\"}, {\"document_id\": \"897464\", \"text\": \"We will come further to that point The second point the hon and learned Lady made was that legal fees are not cheap She needs to answer therefore why a case was brought on something that clearly is not Government policy and that the Government have no intention of applying Therefore it is a hypothetical case this is something that the Government do not intend to pursue The hon and learned Lady also asked what Government policy is on this issue The Government s policy is extremely clear it is to deliver on the biggest democratic vote in our country s history and ensure that we leave on 29 March next year\"}, {\"document_id\": \"758719\", \"text\": \"I thank the hon Gentleman for his kind comments In my previous ministerial post it was a great pleasure for me to work with civil servants especially in Yorkshire including senior civil servants working there I saw myself how it is possible to have senior civil servants around the country I completely agree that the more we can get senior positions of all kinds around the country the better we will be able to serve the people whom we were elected to serve\"}, {\"document_id\": \"925467\", \"text\": \"I thank the right hon Gentleman and Labour colleagues for their work on the Bill Given our proximity to crashing out with a no deal Brexit which could have devastating consequences for our industry and particularly manufacturing industry does he agree that the Bill reassures business and underlines to it that we have the maximum possible process for preventing that\"}, {\"document_id\": \"795622\", \"text\": \"I congratulate the Secretary of State on how she is handling this matter which if I may say so is better than any Secretary of State since 2010 She says that she cannot respond to any substantive questions on Leveson 2 because it is under judicial review When will the judicial review be resolved so that we might come back to Leveson 2\"}, {\"document_id\": \"205798\", \"text\": \"The well being power is there to assist the people of Wales Clause 60 1 sets out the objects to which that power applies The answer is yes if it could be shown that an individual outside Wales could perform a duty that was to the benefit and for the well being of people in Wales that would not be outwith the clause The power to promote well being is closely modelled on similar powers given to local authorities in section 2 of the Local Government Act 2000 Local authorities too were given that power to reduce uncertainty over their powers to act where there was no specific power relevant to what they wanted to do even though it would benefit people in their area A similar provision was included in section 30 of the Greater London Authority Act 1999 for similar reasons The power would not alter any existing function of Ministers of the Crown and there are specific constraints on Welsh Ministers such as the prohibition on doing anything incompatible with Community law so those functions do not need to be restated The power would not override the International Development Act 2002\"}, {\"document_id\": \"230650\", \"text\": \"My hon Friend is absolutely right The situation for stroke patients for example is utterly depressing Even if they are able to secure early and intensive rehabilitation sometimes treatment cannot be followed up to maximise their chances of recovery owing to the lack of physiotherapists in post We must have more physiotherapists The Government said that we needed more physiotherapists and that there would be 60 per cent more People went into the profession as a result A physiotherapist told me     I knew what was intended so I went into the course Now there are no jobs     That is a deeply depressing fact it is a cruel irony played on people who took up such courses\"}, {\"document_id\": \"96647\", \"text\": \"Royal palaces in other countries probably experience the same problems with visitor numbers as those here That is why they are revisiting the issue of charging However I do not have the information that the hon Gentleman requests to hand\"}, {\"document_id\": \"235555\", \"text\": \"That is an alarming statistic It is of course for local electoral registration officers to maintain the register and ensure that it is as accurate as possible but recent legislation passed by the House gives the Electoral Commission powers to involve itself more closely in the work of individual electoral registration officers I hope that that will have some effect in the hon Gentleman s constituency\"}, {\"document_id\": \"225938\", \"text\": \"I thank the Secretary of State for her statement It is always fascinating to step with her into the parallel world that she inhabits where shiny new hospitals are delivered to a glad and happy local population Something puzzles me about the Secretary of State s statement When swathes of community hospitals are closed the Secretary of State does not come before the House but when they are about to be opened she does Can she explain why the closure of community hospitals is somebody else s fault but the opening of them is her responsibility Does the Secretary of State envisage that at the end of this process at the end of her vision there will be more community hospitals than the Government inherited Can she also clarify whether she will be counting in her total figure former district general hospitals such as Frenchay hospital which will be reduced to a community hospital Will we find that the Secretary of State comes back to the House to tell us that she has opened Frenchay community hospital while overlooking the fact that she has closed a district general hospital The financing of the new community hospitals might be under the local improvement finance trust LIFT private finance initiative or traditional forms of funding but does the Secretary of State not accept that there has been much criticism of the value for money of LIFT as recently as this week and of PFI Is she confident that trusts will not be saddled with long term financial burdens on over the odds terms compared with more traditional ways of paying Is this process not yet another example of the centralism of this Government Can the Secretary of State confirm that PCTs will need the permission of health authorities which will need the permission of Whitehall Where is the local democratic accountability in this process Why cannot the Secretary of State let go Why is there a control freak tendency so that when she talks the language of localism what she means is     Whitehall will decide\"}, {\"document_id\": \"849965\", \"text\": \"Over the weekend I raised the issue of the passporting of childcare payments by Northamptonshire County Council to local providers I am very pleased that a solution has been found I am grateful to Ministers for their support and their interest in this issue but will they join me in thanking the staff of children s services at Northamptonshire County Council for listening to the concerns and solving this matter so rapidly\"}, {\"document_id\": \"465866\", \"text\": \"I am grateful for that Mr Speaker This is important and I want to try to explain to the right hon Gentleman why I think he has got it wrong and why I think what we are proposing is right Let me explain the definition of who is terminally ill these are horrible things to have to discuss but let me explain It is Hold on a second The definition is the same one as I say it is six months Anyone out of work who lives longer than that will be given the extra support that comes from employment and support allowance That is irrespective of a person s income or their assets and it will last for 12 months not the six months that the Leader of the Opposition claimed On a means tested basis this additional support can last indefinitely So as I say it is the same test as under the last Government It has been put in place fairly we have listened very carefully to Macmillan Cancer Support and we have also made sure that someone is reviewing all the medical tests that take place under this system I know that the right hon Gentleman wants to try to create a distraction from the fact that he will not support welfare reform but I have answered his question so he should now answer mine why won t you back the Bill\"}, {\"document_id\": \"365460\", \"text\": \"In December 2005 Tony Blair surrendered the British rebate which Mrs Thatcher negotiated on the false promise that the CAP budget would be slashed Last year the UK paid 3 billion to the EU next year it will pay 6 5 billion How many teachers police officers and nurses will have to be cut to pay for that\"}, {\"document_id\": \"196411\", \"text\": \"Many hon Members on both sides of the House understand the Home Secretary s argument about the requirement for strategic resources but will he rethink the time scale Norfolk police authority covers both of our constituencies and it is unanimously in favour of one option on the grounds that it had better act quickly to avoid being dragged in It had hoped to merge with Suffolk police authority and Cambridgeshire police authority but unfortunately they are entirely opposed to the idea The Home Secretary also knows that the regional assembly has unanimously voted against his proposals Given the variety of options will we see a uniform pattern at the end of the day or are we into chaos theory\"}, {\"document_id\": \"178394\", \"text\": \"Will the Secretary of State clarify one important message in his statement In paragraph 17 he said that local authorities will be encouraged to bid for development funding available in the next three years to support planning for local demand management schemes where pricing is a major element Does that mean that local authorities that have a different sense of local priorities for example authorities that wish to invest in a relief road or in soft measures to improve bicycle use or bus use should take from his statement the message that they should not bother\"}, {\"document_id\": \"538173\", \"text\": \"My hon Friend is exactly right it is vital that the two Governments the UK Government and the Welsh Government in Cardiff work together on a range of issues not least the success of enterprise zones I am committed to doing that and I look forward very much to my first meeting with the Welsh business Minister Edwina Hart which is to take place shortly\"}, {\"document_id\": \"438909\", \"text\": \"I deeply regret to inform the hon Gentleman that I am a dinosaur when it comes to the Twittery thing I really have not a clue how it works May I discuss the matter with him later to find out exactly what he is talking about\"}, {\"document_id\": \"661368\", \"text\": \"Thank you Mr Speaker As we approach the 200th anniversary of Gurkha service in the British Army will my hon Friend look with sympathy on the recommendations made by the all party group on Gurkha welfare so that we do right by these veterans of the British Army too\"}, {\"document_id\": \"126657\", \"text\": \"I accept that totally If my hon Friend intends to speak later perhaps she will tell us whether she wears a helmet\"}, {\"document_id\": \"812456\", \"text\": \"The very last thing my constituents would want is the revocation of article 50 The British people voted for Brexit they expect the Prime Minister to deliver it and they have every confidence that she will Will she reassure the people of Gibraltar that no agreement will be made unless they are fully included in that agreement and that Spain has no veto over their future\"}, {\"document_id\": \"156244\", \"text\": \"Does my right hon Friend agree that the problem for those of us who do not oppose identity cards is that the Government are no longer trusted with anything so serious so we need some system to ensure that so large a change is not in the hands of a Government who have not shown themselves to be worthy Is not the Joint Committee a crucial step in making this a wholly parliamentary decision not a Government one\"}, {\"document_id\": \"281443\", \"text\": \"As my hon Friend knows both higher education policy and support for enterprise are matters for the Welsh Assembly Government and the status of institutions is a matter for the relevant authorities in Wales However he is right to draw attention to the importance of universities working closely with business I know that the North East Wales institute has a strong track record in working with the aerospace sector and a number of other important sectors in that part of the world My hon Friend will have to take the matter up with the Welsh Assembly Government directly but I wish him and the institute every success\"}, {\"document_id\": \"782838\", \"text\": \"From her experience in the Department for Transport my hon Friend knows how important it is to make connections between places it is an important means of underpinning growth She will be aware that through the national infrastructure fund funding will rise by 60 from this year to 2022 which is a huge investment and an appropriate one to make sure that the quality of our infrastructure keeps pace with the investments that our competitors are making\"}, {\"document_id\": \"261380\", \"text\": \"I have a view but I would not want to propose it to either side in Sri Lanka as a solution to things I suggest that the Northern Ireland peace process was ultimately successful because it was held in Northern Ireland There was also international chairmanship from three different countries People were constantly working on a peace process Members will recall that people were elected to be negotiators in Northern Ireland and that they were in effect locked up in Castle buildings in Belfast for almost three years and they were paid and had support to do nothing but negotiate It is important that there is that constant working at a peace process as is the fact that in negotiations people inevitably come together They have to come together because they are physically together and they are talking together That issue of talking is very important My hon Friend the Member for Edmonton Mr Love touched on that Even at the most desperate times over the last 30 years in this country there were lines of communication between those in Northern Ireland who were engaged in the strife there and our Government We should read the history books about what happened over the past 30 years At no time did the lines of communication cease That is missing in Sri Lanka The British Government and our allies should constantly press for there always to be a proper line of communication There is a line of communication with the Norwegians but another could be set up In Sri Lanka I met the people who had been displaced in the eastern part of the island That dramatically brought home the appalling tragedy for ordinary human beings of situations such as that in Sri Lanka We are talking in this nice Chamber this afternoon but the reality is that there are men women and children who are constantly and severely suffering because of the lack of peace and the lack of a proper peace process such as there was in Northern Ireland There is an issue to do with the diaspora which is also comparable to the Northern Ireland situation We have talked about what happened in our case One of the key reasons why the Northern Ireland process was successful was that the attitude of the Irish diaspora in Australia and other countries to an extent but most importantly in the United States changed towards what should happen in Ireland Nowadays almost everybody in the USA such as Irish American politicians and business people has signed up to the Good Friday agreement If we can get the Sri Lankan diaspora across the world to have a similar frame of mind if they begin to think that they can sign up to a process and then help the people of Sri Lanka economically and commercially that will be a considerable improvement However that cannot happen unless there is a proper ceasefire The other great lesson that people across the world and particularly in Sri Lanka can take from our experiences in Northern Ireland is that a ceasefire has to be meaningful Only when violence effectively ended in Northern Ireland did we see success Of course sporadic violence occurred and to a certain extent it will continue to occur among criminal elements in Northern Ireland but when the fighting stops and the ceasefire is effective everything is possible To me that is the first and most important thing that should happen There is another political issue In the past 30 years in this Chamber there has been a bipartisan approach and unanimity among all political parties on the importance of the peace process in Northern Ireland That has not happened in Sri Lanka but we should applaud the fact that it is beginning to happen If the political parties do not adopt a unified approach the issue of peace will become a political football which is the last thing that should happen\"}, {\"document_id\": \"833772\", \"text\": \"Does my colleague agree that Opposition Front Benchers are not supporting a jobs first Brexit If they wanted a jobs first Brexit they would keep us in the single market and the customs union\"}, {\"document_id\": \"358520\", \"text\": \"Yes it will I look forward to the participation of the hon Gentleman and his hon Friends on this issue as well\"}, {\"document_id\": \"429030\", \"text\": \"I do not think that it is evidence of that at all The hon Gentleman will know from his long service in government that from time to time there will inevitably be small errors in such large documents and particularly ones that have been carried over from documents and orders passed by the previous Administration Moving on to the substance of the order we have consolidated legislation on the conduct of Scottish Parliament elections so that the majority of rules governing them are now in one document making them easier for electoral administrators and political parties to use The order sets out that for the 2011 elections we will return to a manual count of ballot papers for both the Scottish Parliament constituency and regional elections\"}, {\"document_id\": \"104993\", \"text\": \"I simply refer to the manuscript amendment that will be before the House which proposes that oral questions to the Home Department shall be taken on Monday and that questions to the Department of Health shall be taken after that\"}, {\"document_id\": \"779979\", \"text\": \"The Secretary of State is already talking about Aleppo in the past tense but the besiegement is still happening right now and the British Government must do more What representations has she made to the Foreign Secretary about putting in place more and harder sanctions on Russia\"}, {\"document_id\": \"189962\", \"text\": \"The truth is that the Government are afraid to ask the people of the south west whether they feel differently from people in other areas who think that their regional assembly is a waste of their money Can the Minister not see that the arrogant imposition of the regional agenda is a sure sign that the Government can get their way only by stealth or by force\"}, {\"document_id\": \"227704\", \"text\": \"Indeed We are trying in this debate to highlight various issues A plethora of things can be done and are being done to deal with these issues As I said the young person who committed the offence that I have described is already in prison He received a sentence of 12 months and rightly so Further to what my hon Friend the Member for Bolton South East Dr Iddon said incidents can involve youths as young as eight or nine years of age Perhaps that is where our attention should be focused We must start to explain to young people the seriousness of the job that emergency workers undertake We must get them to understand how vital that work is and that it should not be impeded in any way Barry Dixon the chief fire officer feels that it is important that magistrates use the powers that they already have to deal with such wrongdoing so that young people do not carry on with abuse and assaults on fire crews As I said on Second Reading community penalties might be appropriate for the incidents that we are discussing My hon Friend the Member for Eltham Clive Efford talked about the respect agenda and the great work that is being done by the police and fire officers to engage with young people That is an important example of what can be done The Prince s Trust and the fire service run joint schemes in my area The young firefighters scheme is probably similar to the     Crucial Crew     programme that my hon Friend the Member for Bolton South East mentioned I know that firefighters attend a great variety of community events to talk about fire hazards and to show off their equipment which helps to develop relationships with young people in the community More than anything given all the work that my right hon Friend the Member for Swansea West has been doing we need to have the Bill on the statute book so as to add to the respect agenda the good community work that is being done and the penalties that are available We need to keep on highlighting the message to magistrates that they should be as firm as they can be and use all the powers at their disposal to stop young people developing the tendency to abuse and then later possibly to assault firefighters The situation is still as serious as it ever was The Bill is as necessary as it ever was I further congratulate the people whom I have mentioned who alongside my right hon Friend have been highlighting the matters that we are discussing I have already referred to the Manchester Evening News and the report by Neal Keeling Barry Dixon has undertaken a great deal of work and should be commended for so doing as has Councillor Fred Walker I know that that team of people will be delighted to see the Bill enacted Again I congratulate my right hon Friend the Member for Swansea West on introducing it\"}, {\"document_id\": \"835768\", \"text\": \"Yesterday saw the successful Second Reading of the Space Industry Bill which could see Prestwick in my constituency become the UK s first spaceport but the Ayrshire growth deal is central to ensuring the widest economic impact from that development The three local authorities and the Scottish Government are backing it so will the Chancellor now commit to the Ayrshire growth deal\"}, {\"document_id\": \"813079\", \"text\": \"He has the better of me I was genuinely being respectful to the hon Gentleman whom I know thinks and speaks passionately about the conventions of this place I am a relatively new Member but I regard its role in our national life as very important I would not have sought to catch your eye Mr Speaker had I not looked carefully into the underlying principles of the application made by the right hon Member for Orkney and Shetland Mr Carmichael  First and critically as he made clear in his application and as was reiterated by the hon Member for Perth and North Perthshire Pete Wishart  Opposition day motions if carried are not and never have been binding de jure on the Government The precedents are clear Between 1918 and 2015 there were 120 defeats of Governments most of them on substantive legislative matters on which the Chamber was exercising its core constitutional role of creating and amending the law of the land On those occasions however when the Government lost a vote on a Supply day the constitutional position was equally clear I greatly enjoyed reading one such occasion the debate on the devaluation of the green pound held on 23 January 1978 I was especially delighted to hear the two contributions made from a sedentary position by the hon Member for Bolsover Mr Skinner  who I am sorry is not in his place One was  Leave the Common Market That is the answer  The other one was  Get out of the Common Market That is the answer  He is nothing if not a beacon of consistency The Labour Government having lost the vote there was no suggestion in the closing remarks of either the Opposition spokesman or the Minister that the decision would be binding on the Government This to me is core to the issue Clearly the House can amend primary legislation including critically money Bills and pray against secondary legislation debating such matters either in Government time or on Opposition days What we are discussing here however is not an attempt by the Opposition to amend legislation but the manner outside legislation whereby the Opposition examine and challenge Government policy This too appears well established The 1981 Select Committee on Procedure quoted approvingly an earlier Select Committee of 1966  The real nature of Supply Days was the opportunity provided to the Opposition to examine Government activities of their own choice\"}, {\"document_id\": \"450383\", \"text\": \"I am certainly not going to suggest that the CSA in its long history has been so wonderful Indeed the initial legislation for it was an example of not taking account of the views and opinions of people who know about an issue In my experience it was always hard to enforce maintenance We could get orders and agreements as solicitors but enforcement was extremely difficult especially in respect of those who were quite willing to swap jobs and to evade payment The self employed were always particularly difficult to reach but we could have told the then Government about that If the views of the experts had been better integrated we might have had better legislation and better enforcement and I do not see how putting obstacles in the way of people exercising such powers is going to be helpful When there is a power differential between people many women are wary even as it is of pursuing claims in case that rebounds upon them or their children We can and will I hope debate those proposals further My aim is not necessarily to win support for that point of view at this time but to say that when we link up what is happening on legal aid and on child maintenance we see that there is a cumulative effect and it is important to look at that across the piece There will also be a more limited choice of housing for women who are separated Those who deal with housing and homelessness know that one of the biggest reasons why people present as homeless is that their relationship has broken down two into one house does not go It does not just happen to women but women are often given priority for re housing in the homelessness system because they have to care for children and the suggested changes in homelessness provision will make it more difficult for women and their children to obtain settled and secure accommodation It is not right to suggest that short term private lets are the solution to homelessness People may want to choose that solution but it should not be forced upon them There are pending changes which we do not know the details of to mortgage interest payments for people who currently claim income support and will in future claim the new universal credit When I worked as a solicitor I could sometimes obtain for women an ability to stay in the former matrimonial home if we were able to secure an arrangement whereby the mortgage was paid particularly in the transitional period They hoped to get employment and to be self supporting but at that point they were not and mortgage interest payments were often an important part of the package so we need to know what is happening with them Changes to tax credits will make it more difficult for women after separation and divorce to work as will changes to how child care is funded If we have all those measures and cumulatively they have an effect that each one might not seem to have in itself it is important that we audit them Therefore I urge people to support the amendment and to put just such an audit committee in place\"}, {\"document_id\": \"711259\", \"text\": \"I answered that question up to the last part earlier on Humberside has done really well over the last five years the level of crime is falling massively but we will all have to wait for the autumn statement although I have acknowledged that the existing formula will be used through to 2016 17 which was welcomed in the House last Monday when we paused the process\"}, {\"document_id\": \"389678\", \"text\": \"Jolly good As we seek to reduce reoffending why are young offenders not positively encouraged to take part in Duke of Edinburgh award schemes not least because those schemes in turn encourage self confidence and self discipline and are very much favoured by employers thereby leading hopefully to a job\"}, {\"document_id\": \"629026\", \"text\": \"I am happy to repeat what I said earlier The Libyan authorities are in no doubt of the importance that we attach to their engaging properly with UK victims seeking redress I raised it most recently with the Libyan Prime Minister last September Of course the country faces huge challenges which makes it difficult to make progress on this issue but I am committed to doing that and I am happy to meet the right hon Gentleman\"}, {\"document_id\": \"342423\", \"text\": \"There will be some confusion in many of my constituents minds about the role of the Foreign Secretary On intelligence sharing and the protocols that go with it the decision rests with the United States but that does not prevent him from making representations on behalf of this country to the United States Surely that is the role of Foreign Secretary making representations on behalf of this country\"}, {\"document_id\": \"557745\", \"text\": \"I have politely to say to the right hon Gentleman that his whole argument about there being uncertainty is fatally undermined by the fact that he cannot answer whether he wants a referendum or not Can I give him a little bit of advice He needs to go away get a policy come back and tell us what it is In the meantime our approach is what the British people want It is right for business it is right for our economy and we will fight for it in the years ahead\"}, {\"document_id\": \"754969\", \"text\": \"Does the hon Member agree that for specialist institutions in Glasgow such as the Glasgow School of Art and the Royal Conservatoire there is a great deal of risk for their students from Brexit At the moment the Conservatoire offers a unique melting pot of trad jazz and classical with pipers playing alongside ballerinas there are all kinds of things in the mix However all that is under threat if the Conservatoire can no longer be the international institution that it would like to be\"}, {\"document_id\": \"45175\", \"text\": \"The hon Gentleman will have to defend that position It is a reasonable position to take and Conservative Front Benchers also take a reasonable position although they seek to decry the position that I take My point is that because the Home Secretary will not have the flexibility that the original provisions provided the CSOs will be introduced with curtailed powers With the amendment if we wish to change that we will need primary legislation to do so That is wrong and we will unnecessarily deny CSOs the flexibility that they should have\"}, {\"document_id\": \"275573\", \"text\": \"The answer was a simple sum we did not need an extended essay There are now 15 per cent fewer students taking physics A level and 7 per cent fewer taking maths something that the Secretary of State ignored A quarter of state secondary schools have no physics teacher and fewer than half our maths teachers have maths degrees As Winston Churchill might have said if he was still in the curriculum     Never in the field of maths and physics have so many been taught so little by so few     How does the Minister explain that failure\"}, {\"document_id\": \"845331\", \"text\": \"Yes I can give my hon Friend that assurance Of course DEFRA is the lead agency within Government on emissions Only on Monday we put the renewable transport fuel obligation on the statute book The obligation specifically balances the two sides of that equation\"}, {\"document_id\": \"75203\", \"text\": \"As the days get longer and warmer the bane of many people s lives in Don Valley and Doncaster are those people who illegally use motor bikes without insurance on footpaths on estates where people live and on the streets That is despite the fact that on any Sunday morning at any given point in my constituency the regular white van pulls up to unload those motor bikes and the people who use them What is my hon Friend s advice for South Yorkshire police on having a strategy to tackle that bane of people s lives which could lead to serious accident and death\"}, {\"document_id\": \"414965\", \"text\": \"I will heed your injunction Mr Speaker but the question was a very general one about an update on the public expenditure review I shall say something about welfare if the Speaker will allow me The welfare bill has risen by 45 in the past 10 years and almost 1 in 3 that the Government spend goes towards welfare The current system is not protecting those who genuinely cannot work nor is it helping those desperately looking for work to find a new job quickly Close to 5 million people are on out of work benefits more than half of whom have spent at least half of the past 10 years in this situation Rather than rewarding work and supporting the vulnerable we are wasting the lives of millions of people That is why my right hon Friend the Secretary of State for Work and Pensions is working with me and other Cabinet colleagues to see what we can do fundamentally to reform the welfare system so that it rewards work and supports aspiration as well as saving the taxpayer on what someone once called the bills of social failure When we have decisions to announce we will bring them to the House and of course we will want to keep the House informed in other ways I have already given the Treasury Committee an unprecedented power to veto my preferred candidate to chair the independent Office for Budget Responsibility Mr Robert Chote and I can tell the House today that I have asked my hon Friends the Members for Gainsborough Mr Leigh and for Southport Dr Pugh to draw on their considerable expertise on the Public Accounts Committee in the last Parliament to advise the Government on how to improve the financial management systems that we have inherited and in turn improve accountability to the House We have many difficult choices to make but one thing is clear one party created this mess two parties are working hard to clear it up\"}, {\"document_id\": \"831187\", \"text\": \"My hon Friend makes an extremely good point We heard a very revealing comment earlier when it was said from the Labour Front Bench that work is not the route out of poverty If work is not the route out of poverty exactly what is\"}, {\"document_id\": \"753152\", \"text\": \"Transport is vital for creating the northern powerhouse connecting northern regions and supporting jobs which helps to rebalance the UK economy Work towards delivering an improved integrated transport system is well under way In 2014 we created Transport for the North and we have committed to spending a record 13 billion on transport in the north\"}, {\"document_id\": \"180077\", \"text\": \"I am delighted that the Leader of the House has moved the debate on As he mentioned my name I felt obliged to make a contribution on this issue To answer the hon Member for Windsor Adam Afriyie  the process has been relatively fast compared with previous occasions when it sometimes took six or seven months before Committees were set up The way forward is again to remove the power from the Government and the alternative Government and make it part of Mr Speaker s duties to convene Select Committees within a given period after a general election The delay which is to the benefit only of the Government would not then occur Members of Parliament would take control of their own Committees\"}]"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "classifications_and_codebook",
+      "strict": true,
+      "schema": {
+        "$defs": {
+          "CodebookLLMCodebook": {
+            "additionalProperties": false,
+            "properties": {
+              "definition": {
+                "title": "Definition",
+                "type": "string"
+              },
+              "clarification": {
+                "title": "Clarification",
+                "type": "string"
+              },
+              "positive_examples": {
+                "items": {
+                  "$ref": "#/$defs/DocumentExample"
+                },
+                "maxItems": 3,
+                "minItems": 1,
+                "title": "Positive Examples",
+                "type": "array"
+              },
+              "negative_clarification": {
+                "title": "Negative Clarification",
+                "type": "string"
+              },
+              "negative_examples": {
+                "items": {
+                  "$ref": "#/$defs/DocumentExample"
+                },
+                "maxItems": 3,
+                "minItems": 1,
+                "title": "Negative Examples",
+                "type": "array"
+              }
+            },
+            "required": [
+              "definition",
+              "clarification",
+              "positive_examples",
+              "negative_clarification",
+              "negative_examples"
+            ],
+            "title": "CodebookLLMCodebook",
+            "type": "object"
+          },
+          "DocumentExample": {
+            "additionalProperties": false,
+            "properties": {
+              "document_id": {
+                "description": "Copy the exact document_id from the input. Never generate or renumber IDs.",
+                "title": "Document Id",
+                "type": "string",
+                "enum": [
+                  "133589",
+                  "607499",
+                  "17318",
+                  "127489",
+                  "107764",
+                  "572512",
+                  "6656",
+                  "318441",
+                  "559965",
+                  "170663",
+                  "581931",
+                  "86806",
+                  "232700",
+                  "671425",
+                  "146732",
+                  "391372",
+                  "920225",
+                  "650702",
+                  "395880",
+                  "938024",
+                  "558421",
+                  "375973",
+                  "188730",
+                  "780849",
+                  "165361",
+                  "56471",
+                  "855456",
+                  "631466",
+                  "723350",
+                  "253116",
+                  "615606",
+                  "386281",
+                  "594505",
+                  "387608",
+                  "86679",
+                  "228684",
+                  "376825",
+                  "54318",
+                  "447592",
+                  "767813",
+                  "361576",
+                  "260376",
+                  "154681",
+                  "848718",
+                  "682538",
+                  "361034",
+                  "647166",
+                  "574072",
+                  "754021",
+                  "235226",
+                  "227816",
+                  "864643",
+                  "876874",
+                  "897464",
+                  "758719",
+                  "925467",
+                  "795622",
+                  "205798",
+                  "230650",
+                  "96647",
+                  "235555",
+                  "225938",
+                  "849965",
+                  "465866",
+                  "365460",
+                  "196411",
+                  "178394",
+                  "538173",
+                  "438909",
+                  "661368",
+                  "126657",
+                  "812456",
+                  "156244",
+                  "281443",
+                  "782838",
+                  "261380",
+                  "833772",
+                  "358520",
+                  "429030",
+                  "104993",
+                  "779979",
+                  "189962",
+                  "227704",
+                  "835768",
+                  "813079",
+                  "450383",
+                  "711259",
+                  "389678",
+                  "629026",
+                  "342423",
+                  "557745",
+                  "754969",
+                  "45175",
+                  "275573",
+                  "845331",
+                  "75203",
+                  "414965",
+                  "831187",
+                  "753152",
+                  "180077"
+                ]
+              },
+              "explanation": {
+                "description": "Explain why this example meets or does not meet the definition.",
+                "title": "Explanation",
+                "type": "string"
+              }
+            },
+            "required": [
+              "document_id",
+              "explanation"
+            ],
+            "title": "DocumentExample",
+            "type": "object"
+          },
+          "ExplainedClassification": {
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "$ref": "#/$defs/Label"
+              },
+              "explanation": {
+                "title": "Explanation",
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "explanation"
+            ],
+            "title": "ExplainedClassification",
+            "type": "object"
+          },
+          "Label": {
+            "enum": [
+              "0",
+              "1"
+            ],
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "classifications": {
+            "additionalProperties": false,
+            "properties": {
+              "133589": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "607499": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "17318": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "127489": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "107764": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "572512": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "6656": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "318441": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "559965": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "170663": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "581931": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "86806": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "232700": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "671425": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "146732": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "391372": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "920225": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "650702": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "395880": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "938024": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "558421": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "375973": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "188730": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "780849": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "165361": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "56471": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "855456": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "631466": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "723350": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "253116": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "615606": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "386281": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "594505": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "387608": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "86679": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "228684": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "376825": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "54318": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "447592": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "767813": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "361576": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "260376": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "154681": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "848718": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "682538": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "361034": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "647166": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "574072": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "754021": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "235226": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "227816": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "864643": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "876874": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "897464": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "758719": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "925467": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "795622": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "205798": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "230650": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "96647": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "235555": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "225938": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "849965": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "465866": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "365460": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "196411": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "178394": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "538173": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "438909": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "661368": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "126657": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "812456": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "156244": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "281443": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "782838": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "261380": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "833772": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "358520": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "429030": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "104993": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "779979": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "189962": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "227704": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "835768": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "813079": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "450383": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "711259": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "389678": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "629026": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "342423": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "557745": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "754969": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "45175": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "275573": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "845331": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "75203": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "414965": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "831187": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "753152": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "180077": {
+                "$ref": "#/$defs/ExplainedClassification"
+              }
+            },
+            "required": [
+              "133589",
+              "607499",
+              "17318",
+              "127489",
+              "107764",
+              "572512",
+              "6656",
+              "318441",
+              "559965",
+              "170663",
+              "581931",
+              "86806",
+              "232700",
+              "671425",
+              "146732",
+              "391372",
+              "920225",
+              "650702",
+              "395880",
+              "938024",
+              "558421",
+              "375973",
+              "188730",
+              "780849",
+              "165361",
+              "56471",
+              "855456",
+              "631466",
+              "723350",
+              "253116",
+              "615606",
+              "386281",
+              "594505",
+              "387608",
+              "86679",
+              "228684",
+              "376825",
+              "54318",
+              "447592",
+              "767813",
+              "361576",
+              "260376",
+              "154681",
+              "848718",
+              "682538",
+              "361034",
+              "647166",
+              "574072",
+              "754021",
+              "235226",
+              "227816",
+              "864643",
+              "876874",
+              "897464",
+              "758719",
+              "925467",
+              "795622",
+              "205798",
+              "230650",
+              "96647",
+              "235555",
+              "225938",
+              "849965",
+              "465866",
+              "365460",
+              "196411",
+              "178394",
+              "538173",
+              "438909",
+              "661368",
+              "126657",
+              "812456",
+              "156244",
+              "281443",
+              "782838",
+              "261380",
+              "833772",
+              "358520",
+              "429030",
+              "104993",
+              "779979",
+              "189962",
+              "227704",
+              "835768",
+              "813079",
+              "450383",
+              "711259",
+              "389678",
+              "629026",
+              "342423",
+              "557745",
+              "754969",
+              "45175",
+              "275573",
+              "845331",
+              "75203",
+              "414965",
+              "831187",
+              "753152",
+              "180077"
+            ],
+            "title": "Classifications",
+            "type": "object"
+          },
+          "codebook": {
+            "$ref": "#/$defs/CodebookLLMCodebook"
+          }
+        },
+        "required": [
+          "classifications",
+          "codebook"
+        ],
+        "title": "ClassificationsAndCodebook",
+        "type": "object"
+      }
+    }
+  },
+  "provider": {
+    "require_parameters": true
+  },
+  "plugins": [
+    {
+      "id": "response-healing"
+    }
+  ],
+  "max_completion_tokens": 50000
+}

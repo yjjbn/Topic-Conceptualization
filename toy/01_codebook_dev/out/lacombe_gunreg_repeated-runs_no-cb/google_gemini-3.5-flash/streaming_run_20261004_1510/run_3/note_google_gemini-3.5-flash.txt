@@ -1,0 +1,48 @@
+{
+  "note": "",
+  "batch_id": null,
+  "run": 3,
+  "arguments": {
+    "command": "submit",
+    "model": "google/gemini-3.5-flash:floor",
+    "mode": "streaming",
+    "provider": "google-ai-studio/flex",
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\lacombe_codebookdev_100.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_lacombe_gunreg.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "lacombe_gunreg_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 83662,
+      "completion_tokens": 12967,
+      "total_tokens": 96629,
+      "cost": 0.068755125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 77545,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.068755125,
+        "upstream_inference_prompt_cost": 0.010403625,
+        "upstream_inference_completions_cost": 0.0583515
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 10043,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

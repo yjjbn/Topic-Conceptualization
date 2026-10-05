@@ -1,0 +1,33 @@
+{
+  "definition": "'Moral rhetoric' refers to any discourse that evaluates, prescribes, or critiques actions, systems, and individuals on the basis of ethical values, moral duties, human rights, justice, fairness, compassion, or virtue, rather than evaluating them strictly on technical, pragmatic, or economic efficiency.",
+  "clarification": "To classify a text as containing 'moral rhetoric' (1), it must feature explicit language invoking moral values (e.g., justice, fairness, respect, dignity, or courage), highlight duties and obligations (e.g., what citizens 'deserve' or are 'expected to contribute'), reference human/civil rights violations (e.g., discrimination, oppression, persecution), or emphasize compassion toward the vulnerable. Policy proposals that frame standard socio-economic actions with a clear ethical duty or call to justice should be coded as positive.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text appeals strongly to the fundamental moral worth and inherent dignity of every single human being, focusing explicitly on the 'vulnerable' and assigning 'place and purpose' to their existence."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "This text uses the explicitly normative and moral concept of 'unfair discrimination' to critique and guide pricing policy, appealing directly to the principle of socioeconomic fairness."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text explicitly leverages moral and humanitarian terminology, emphasizing 'comfort and aid to suffering people' and opposing 'persecution' as ethical imperatives."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as containing 'moral rhetoric' (0) if it describes standard political, administrative, or macroeconomic policies in a dry, technical, or purely procedural manner. Statements that critique the government, discuss social issues (like poverty, environmental issues, or homelessness), or outline investments are NOT moral rhetoric unless they are explicitly framed using ethical terms like 'unjust', 'unfair', 'duty', or 'moral right'.",
+  "negative_examples": [
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "While this is a policy proposal targeting small business development, it does so using dry, technical tax jargon and administrative procedures without any ethical evaluations."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This represents a purely physical infrastructure policy goal (broadband access) without any moral or ideological framing."
+    },
+    {
+      "text": "Build on progress made under the Homelessness – an Integrated Strategy 2000, to continue to address factors resulting in homelessness",
+      "explanation": "This document addresses the major social issue of homelessness, but it does so in a strictly administrative and procedural tone ('integrated strategy', 'address factors'), completely lacking moralizing rhetoric or value-laden claims."
+    }
+  ]
+}

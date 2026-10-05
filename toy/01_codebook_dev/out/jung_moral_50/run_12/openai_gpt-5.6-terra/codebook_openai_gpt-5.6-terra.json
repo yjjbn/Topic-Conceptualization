@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly appeals to moral values, ethical judgments, rights, duties, human worth, justice, equality, fairness, freedom, compassion, or condemnation of wrongdoing.",
+  "clarification": "Code as moral rhetoric when the text presents a policy, group, action, or social condition in normative ethical terms\u2014for example, as fair or unfair, discriminatory, intolerable, justified, deserving, equal, free, respectful, caring, corrupt, or protective of vulnerable people. Explicit invocations of rights, dignity, human worth, justice, equality, compassion, courage, or patriotism also qualify. The moral language may support the party's own policy or condemn an opponent or social wrong.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement affirms that every person, however vulnerable, has a place and purpose; this is a direct claim about inherent human worth."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "The passage explicitly opposes unfair discrimination based on socioeconomic background, making a fairness and equality appeal."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The commitment to race equality and breaking down barriers directly invokes an egalitarian moral ideal."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy promises, administrative proposals, factual claims, economic arguments, performance claims, or technically beneficial outcomes unless they explicitly use moral or ethical evaluation. References to health, safety, poverty, jobs, affordability, culture, or environmental protection alone do not qualify; the text must frame them through a moral value, right, duty, or judgment rather than merely as policy goals or practical problems.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a concrete proposal for literacy and numeracy testing, with no ethical evaluation or value appeal."
+    },
+    {
+      "text": "By abolishing the mining tax, we will re-energise the entire industry and this will lead to increased mining investment with more mining projects coming on stream",
+      "explanation": "This argues that abolishing a mining tax will increase investment; it is an economic causal claim rather than moral rhetoric."
+    },
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "The text promotes sport and health, but does not articulate a moral right, duty, fairness claim, or ethical judgment."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "definition": "Moral rhetoric consists of arguments, claims, or declarations that appeal to core moral values, ethics, duties, rights, principles of justice, and human dignity. It seeks to frame policy objectives, actions, or critiques in terms of right and wrong, rather than purely pragmatic, economic, or technical considerations.",
+  "clarification": "To be classified as moral rhetoric (1), a text must use language that establishes a moral standard, validates a moral sentiment, or highlights an ethical duty. Key indicators include explicit appeals to values like 'respect', 'justice', 'human rights', 'freedom', 'caring', 'equality', 'courage', and 'patriotism', as well as the use of normative framing such as what citizens 'deserve', what is 'not tolerable', or accusations of being 'discriminated against'.",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "The text directly appeals to the moral value of 'respect' as a fundamental principle."
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text frames individual worth as an inherent moral truth, asserting that every person, including the vulnerable, has 'a place and a purpose'."
+    },
+    {
+      "text": "playing a constructive role in world events focussed on human rights concerns.",
+      "explanation": "The sentence explicitly highlights a policy goal focused on 'human rights concerns', which is a deeply institutionalized moral framework."
+    }
+  ],
+  "negative_clarification": "Texts should NOT be classified as moral rhetoric (0) if they are descriptive, administrative, or purely technical. Traditional political boasting about policy achievements, fiscal budgets, structural reforms, or general statements about public utilities, economic indicators, and infrastructure projects do not qualify, even if they aim for positive societal outcomes, unless they employ explicitly moralized or ethically loaded language.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru’s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "The text describes a standard administrative athletic initiative and health goal with no moral evaluations."
+    },
+    {
+      "text": "The Nationals will implement the third stage of AusLink, investing minimum funding of $35 billion.",
+      "explanation": "A standard infrastructure investment proposal outlining specific financial spending, completely lacking ethical or normative language."
+    }
+  ]
+}

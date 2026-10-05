@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language within a political text that appeals to ethical values, duties, human dignity, rights, justice, fairness, or moral virtues rather than purely technical, administrative, pragmatic, or economic calculations. It frames actions, actors, or systems as morally right/wrong, fair/unfair, or good/evil.",
+  "clarification": "To classify a text under label '1' (Moral Rhetoric), look for explicit normative language, appeals to fairness, human rights, human dignity, civic or ethical duties, and values-laden keywords such as 'deserve', 'justice', 'respect', 'vulnerable', 'courage', 'equality', 'corruption', 'persecution', 'patriotism', or 'unfairly discriminate'. It must clearly signal a moral imperative or pass a value judgment, rather than merely outline technical or economic operations.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text makes a profound ethical declaration on human dignity, stating that every person has inherent worth ('a place and a purpose in this world'), particularly those who are 'frail or vulnerable'."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text employs humanitarian and moral framing ('suffering people', 'persecution', 'comfort and aid') to define the ethical commitment of the political actor."
+    },
+    {
+      "text": "Thanks to their skill, courage, and patriotism, the very dangerous work at the World Trade Center and Pentagon was done remarkably quickly and without a single fatality.",
+      "explanation": "The statement explicitly celebrates the moral and civic virtues of individuals by citing their 'courage' and 'patriotism'."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric (label '0') if it only describes technical policy, economic forecasts, administrative rules, or standard resource allocations. Even if the policy may ultimately have a benevolent purpose, if the language itself remains descriptive, pragmatic, or focused on logistical execution (e.g. funding infrastructure, establishing oversight councils, or reporting statistics), it is not moral rhetoric.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a direct, programmatic infrastructure plan to deliver broadband, devoid of any normative or values-based argumentation."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "A highly detailed and technical description of a corporate/business tax proposal focusing on fiscal mechanism rather than ethical arguments."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "An empirical and comparative economic claim comparing US and Canadian productivity, utilizing factual metrics instead of moral/ethical evaluations."
+    }
+  ]
+}

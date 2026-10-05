@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that appeals to moral values, principles, virtues, or judgments of right and wrong, rather than to purely technical, administrative, economic, or factual considerations. It explicitly invokes concepts such as dignity, justice, fairness, equality, freedom, human rights, compassion, desert (what people 'deserve'), integrity (e.g. anti-corruption), or it morally condemns wrongs (repression, terror, discrimination) or affirms the worth of persons or groups.",
+  "clarification": "Include as moral rhetoric: (1) explicit invocations of fairness/unfairness, equality, freedom/liberty, justice, rights, or human dignity; (2) virtue language such as respect, courage, caring, or patriotism used to praise or exhort; (3) moral validation or condemnation, e.g. calling anger 'justified,' conditions 'not tolerable,' regimes 'terror,' or policies 'repression'; (4) claims about what people or groups 'deserve'; (5) appeals to moral ideals such as family unity, healthy marriages, self-reliance, or cultural recognition; (6) normative demands that inequalities 'must be closed' or that wrongs be remedied. The moral claim need not be elaborated\u2014a single morally charged term or normative judgment suffices if it carries the moral weight of the statement. The rhetoric may appear in any policy domain (economy, welfare, foreign affairs, environment).",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "An explicit affirmation of universal human dignity\u2014every person 'has a place and a purpose in this world' regardless of frailty. A paradigmatic moral claim about inherent human worth."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "Explicit equality rhetoric: a 'race equality strategy' to 'break down the barriers' facing minority communities invokes equality and anti-discrimination as moral principles."
+    },
+    {
+      "text": "Australians deserve a better future",
+      "explanation": "'Australians deserve a better future' rests the political appeal on desert\u2014what people are morally owed\u2014rather than on policy mechanics."
+    }
+  ],
+  "negative_clarification": "Do not classify as moral rhetoric: (1) purely technical, administrative, fiscal, or logistical policy statements (tax design, permit systems, reviews, targets); (2) economic or efficiency arguments (growth, productivity, value for money, competitiveness); (3) factual or statistical claims, even about morally significant topics such as poverty or welfare caseloads, when stated as outcomes or descriptions; (4) aspirational economic rhetoric ('thriving economy'); (5) institutional or constitutional design statements (court independence, ministerial powers); (6) policy mechanisms aimed at worthy goals but phrased in neutral administrative language (e.g. 'create a national council on poverty elimination,' 'provide additional resourcing for mental health services'); (7) descriptive praise that does not invoke virtues or principles (e.g. farmers are 'efficient,' research is 'lifesaving'); (8) party branding slogans without explicit moral content ('party of opportunity'); (9) morally loaded words used as neutral categories rather than appeals (e.g. 'humanitarian disasters' as a type of event); (10) tough or punitive enforcement language that lacks any appeal to values (e.g. 'smash organised criminal gangs').",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "A purely technical tax-compliance simplification measure; it contains no appeal to values, virtues, or right and wrong."
+    },
+    {
+      "text": "Create a national council on poverty elimination.",
+      "explanation": "Although poverty elimination is a morally resonant goal, the text merely proposes an administrative mechanism in neutral language; the moral impulse is implicit, not rhetorically expressed."
+    },
+    {
+      "text": "Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.",
+      "explanation": "An empirical claim that welfare reform reduced caseloads and poverty; it reports outcomes rather than appealing to moral principles, so it is factual advocacy, not moral rhetoric."
+    }
+  ]
+}

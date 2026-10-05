@@ -1,0 +1,33 @@
+{
+  "definition": "'Moral rhetoric' is defined as communication that frames political issues, actors, institutions, or policies in terms of ethics, fundamental values, or moral duties (e.g., justice, fairness, rights, liberty, respect, compassion, virtue, or corruption) rather than through purely administrative, technical, empirical, or economic frameworks.",
+  "clarification": "To classify a text under 'moral rhetoric' (label '1'), it must contain explicit appeals to ethical standards, fundamental human rights, or societal/civic values. This includes the use of normatively charged terms such as 'deserve,' 'unacceptable,' 'not tolerable,' 'equality,' 'freedom,' 'discriminated against,' 'caring,' 'corrupt,' 'terror,' or direct praise of virtues like 'courage' and 'patriotism.' It also includes calls to defend the vulnerable, address systemic inequalities framed as injustices, or satisfy basic moral duties to families and communities.",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "The text explicitly invokes 'values' and the ethical principle of 'respect,' making it a clear example of moral rhetoric."
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text appeals to the fundamental moral worth, dignity, and purpose of every individual, especially focusing on 'frail or vulnerable' lives."
+    },
+    {
+      "text": null,
+      "explanation": "The text uses the highly moralized term 'discriminated against' to criticize systematic unfairness in policy design, framing an issue through an equity/justice lens."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric (label '0') if it presents policy goals, legislative actions, or social improvements using neutral, empirical, administrative, or purely technical terms. Even if a policy concerns social welfare, safety, or environmental quality (which are inherently positive), it is coded as '0' if the language is instrumental or factual, lacking explicit value-laden, ethical, or moral framing.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text focuses purely on operational and efficiency criteria ('efficient and accessible school bus system') without framing the proposal in terms of rights, fairness, or moral duty."
+    },
+    {
+      "text": null,
+      "explanation": "A simple, direct infrastructure directive ('Provide broadband on all islands') that lacks any value-laden or ethical rhetoric."
+    },
+    {
+      "text": null,
+      "explanation": "An industrial and economic policy proposal described in standard pragmatic and economic terms, completely devoid of moral, ethical, or values-based argumentation."
+    }
+  ]
+}

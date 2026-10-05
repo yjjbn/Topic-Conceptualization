@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric in political manifestos refers to language that frames political actions, actors, policies, or societal issues in terms of ethical principles, moral values, duties, rights, justice, fairness, virtues, or compassion. It goes beyond technical, pragmatic, or purely descriptive policy statements to declare what is inherently 'right' or 'wrong,' 'just' or 'unjust,' 'good' or 'bad.'",
+  "clarification": "Include text as moral rhetoric (1) if it contains: 1) Direct appeals to ethical values or principles (e.g., 'respect', 'equality', 'freedom'). 2) Emotionally or normatively charged judgments about justice, fairness, or human rights (e.g., 'unfairly discriminate', 'quality of justice they deserve', 'discriminated against'). 3) Language emphasizing a moral duty of care, compassion, or protection for vulnerable groups (e.g., 'comfort the sick', 'protection of vulnerable older people', 'humanitarian disasters'). 4) Terms of moral praise/virtue (e.g., 'courage', 'patriotism', 'self-discipline') or moral condemnation of vice (e.g., 'civil repression', 'corruption').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts the inherent moral value and dignity of all individuals, focusing specifically on the vulnerable, which represents a clear moral/philosophical foundation."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "The term 'unfairly discriminate' directly introduces a moral and ethical standard of justice and fairness to critique pricing structures."
+    },
+    {
+      "text": "Put greater priority on family reunification, especially the reunion of children with their parents.",
+      "explanation": "This text appeals directly to the moral sanctity of the family and the ethical obligation to care for children and reunite them with parents."
+    }
+  ],
+  "negative_clarification": "Exclude text (0) if it is: 1) Purely descriptive, factual, or statistical (e.g., reporting demographic trends, budget numbers, or historical events). 2) Focused on administrative, pragmatic, or logistical policy details without ethical framing (e.g., infrastructure plans, building roads, scheduling reviews). 3) Partisan economic arguments or policy critiques that use critical language but lack explicit moral foundations, duties, or ethical vocabulary (e.g., critiquing regulatory burdens or tax levels). 4) Standard political self-praise or general optimistic statements that do not invoke specific moral virtues or duties.",
+  "negative_examples": [
+    {
+      "text": "And the Republican Party is the party of opportunity.",
+      "explanation": "While 'opportunity' has positive political connotations, in this context, it functions as a brief, non-moralized political slogan rather than an elaborated ethical argument."
+    },
+    {
+      "text": "But, increasingly, people are being forced to move because Climate change affects their environment so that it can no longer support them;",
+      "explanation": "This is a factual description of environmental migration due to climate change. Although the situation is tragic, the rhetoric itself is descriptive and lacks explicit moral framing or ethical vocabulary."
+    },
+    {
+      "text": "Despite the worst economic conditions in decades, National is investing an extra $100 million in patient subsidies for GP visits.",
+      "explanation": "Although healthcare investment supports well-being, the text describes a pragmatic fiscal budget allocation using neutral policy language rather than moral rhetoric."
+    }
+  ]
+}

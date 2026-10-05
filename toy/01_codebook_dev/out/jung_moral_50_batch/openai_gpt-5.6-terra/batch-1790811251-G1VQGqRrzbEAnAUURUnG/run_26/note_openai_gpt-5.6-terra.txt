@@ -1,0 +1,38 @@
+{
+  "note": "",
+  "batch_id": "batch-1790811251-G1VQGqRrzbEAnAUURUnG",
+  "run": 26,
+  "arguments": {
+    "command": "submit",
+    "model": "openai/gpt-5.6-terra",
+    "repeats": 50,
+    "start_run": 4,
+    "runs": null,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jungmoral.txt",
+    "test_rows": null,
+    "documents_per_request": null,
+    "nametag": "jung_moral_50_batch",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 10246,
+      "completion_tokens": 4118,
+      "total_tokens": 14364,
+      "prompt_tokens_details": {
+        "cached_tokens": 10243,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 49,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "id": "batch-1790574627-pVgTcl48sIG3TTsD8awC",
+  "object": "batch",
+  "endpoint": "/v1/chat/completions",
+  "model": "mistralai/mistral-medium-3.5-20260430",
+  "completion_window": "24h",
+  "status": "completed",
+  "created_at": 1790574627,
+  "finalized_at": 1790575427,
+  "request_counts": {
+    "total": 5,
+    "completed": 5,
+    "failed": 0
+  },
+  "usage": {
+    "prompt_tokens": 74265,
+    "completion_tokens": 9246,
+    "total_tokens": 83511,
+    "cost": 0.09037125,
+    "is_byok": false
+  },
+  "error": null,
+  "results": [
+    {
+      "id": "batch-c88e44d0-46c4017e-0",
+      "custom_id": "request-00000001",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1790574627-5ca3925f14ccd0fdadaa",
+          "created": 1790575119,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"50\": {\n    \"document_id\": \"50\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Reid's statement criticizes the Bush Administration's position on global warming but does not explicitly attribute any positive outcome, action, or achievement to his own efforts. The codebook's negative clarification states that credit-claiming does not occur when a senator merely criticizes others or discusses an issue without tying a positive outcome to their own actions. This statement is purely critical and does not involve personal attribution.\"\n  },\n  \"57\": {\n    \"document_id\": \"57\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Kennedy introduces legislation and discusses its provisions but does not explicitly claim credit for any specific outcome or action. The codebook's negative clarification states that routine legislative duties (e.g., introducing legislation) without explicit claims of personal responsibility do not qualify as credit-claiming. Kennedy's statement focuses on the importance of the bill rather than his direct role in achieving a tangible benefit.\"\n  },\n  \"89\": {\n    \"document_id\": \"89\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Dorgan explicitly states that he authored legislation that created the National Center designation for Bismarck State College and takes pride in the program's achievements. This aligns with the codebook's clarification, which identifies credit-claiming when a senator uses first-person language or explicitly ties a positive result to their direct involvement. Dorgan directly attributes the outcome to his legislative work.\"\n  },\n  \"240\": {\n    \"document_id\": \"240\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Ensign's statement praises Michael Chertoff's qualifications and expresses a willingness to work with him but does not claim credit for any specific action or outcome. The codebook's negative clarification states that general support or discussion of an issue without explicit attribution to the senator's efforts does not qualify as credit-claiming.\"\n  },\n  \"453\": {\n    \"document_id\": \"453\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Nelson discusses his stance on setting measurable goals in Iraq rather than arbitrary dates but does not explicitly attribute any positive outcome or action to his own efforts. The codebook's negative clarification states that statements that are purely informational or expressive of general support without claiming personal responsibility do not qualify as credit-claiming.\"\n  },\n  \"597\": {\n    \"document_id\": \"597\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Lugar honors the Evansville School Community Council's team for their work but does not explicitly claim credit for any specific action or outcome. The codebook's negative clarification states that credit-claiming does not occur when a senator merely discusses or commends others' efforts without tying a positive outcome to their own actions.\"\n  },\n  \"656\": {\n    \"document_id\": \"656\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Kerry criticizes the Bush Administration's handling of the Dubai Ports deal and port security but does not claim credit for any specific action or outcome. The codebook's negative clarification states that credit-claiming does not occur when a senator merely criticizes others or discusses an issue without explicit attribution to their own efforts.\"\n  },\n  \"918\": {\n    \"document_id\": \"918\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Allard announces a town meeting but does not claim credit for any specific action or outcome. The codebook's negative clarification states that routine announcements or invitations without explicit attribution to the senator's efforts do not qualify as credit-claiming.\"\n  },\n  \"967\": {\n    \"document_id\": \"967\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Shelby announces federal funding for Head Start programs but does not explicitly attribute the funding to his own efforts. The codebook's negative clarification states that credit-claiming does not occur when a senator merely announces funding without explicitly tying it to their direct involvement or advocacy.\"\n  },\n  \"1021\": {\n    \"document_id\": \"1021\",\n    \"label\": \"0\",\n    \"explanation\": \"Sens. Wyden and Smith announce funding approval for salmon recovery and ocean research but do not explicitly attribute the funding to their own efforts. The codebook's negative clarification states that credit-claiming does not occur when senators merely announce funding without explicitly tying it to their direct involvement or advocacy.\"\n  },\n  \"1957\": {\n    \"document_id\": \"1957\",\n    \"label\": \"0\",\n    \"explanation\": \"Sens. Dodd and Lieberman announce federal grants for Bradley International Airport but do not explicitly attribute the funding to their own efforts. The codebook's negative clarification states that credit-claiming does not occur when senators merely announce funding without explicitly tying it to their direct involvement or advocacy.\"\n  },\n  \"2318\": {\n    \"document_id\": \"2318\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Durbin explicitly states that he helped secure an expedited environmental review from the federal government and facilitated the return of the South Suburban Airport project to the national priority list for federal funding. This aligns with the codebook's clarification, which identifies credit-claiming when a senator explicitly ties a positive outcome to their direct involvement or advocacy.\"\n  },\n  \"2807\": {\n    \"document_id\": \"2807\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Lincoln applauds the Arkansas Women in Agriculture proclamation and discusses her role on the Agriculture Committee but does not explicitly attribute any positive outcome or action to her own efforts. The codebook's negative clarification states that credit-claiming does not occur when a senator merely discusses or commends others' efforts without tying a positive outcome to their own actions.\"\n  },\n  \"3482\": {\n    \"document_id\": \"3482\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Mikulski explicitly states that she fights each year to increase federal funding for the Assistance to Firefighters Grant Program (AFGP). This aligns with the codebook's clarification, which identifies credit-claiming when a senator explicitly ties a positive outcome to their direct involvement or advocacy.\"\n  },\n  \"3577\": {\n    \"document_id\": \"3577\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Sarbanes discusses concerns about FEMA and the National Flood Insurance Program but does not explicitly attribute any positive outcome or action to his own efforts. The codebook's negative clarification states that credit-claiming does not occur when a senator merely discusses or criticizes an issue without tying a positive outcome to their own actions.\"\n  },\n  \"3659\": {\n    \"document_id\": \"3659\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Clinton welcomes a decision by the Advisory Board but does not explicitly attribute the recommendation to her own efforts. The codebook's negative clarification states that credit-claiming does not occur when a senator merely discusses or supports an outcome without explicitly tying it to their direct involvement or advocacy.\"\n  },\n  \"3687\": {\n    \"document_id\": \"3687\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Bingaman announces funding for New Mexico State University but does not explicitly attribute the funding to his own efforts. The codebook's negative clarification states that credit-claiming does not occur when a senator merely announces funding without explicitly tying it to their direct involvement or advocacy.\"\n  },\n  \"4208\": {\n    \"document_id\": \"4208\",\n    \"label\": \"0\",\n    \"explanation\": \"Sens. Dorgan and Lott announce legislation to halt the FCC's easing of media ownership rules but do not explicitly attribute any positive outcome or action to their own efforts. The codebook's negative clarification states that credit-claiming does not occur when senators merely introduce legislation without explicitly tying a positive outcome to their direct involvement.\"\n  },\n  \"4585\": {\n    \"document_id\": \"4585\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Schumer explicitly states that he pushed for additional funding for the Assistance to Firefighters Grant Program and was among the first senators to recognize the need for a federal funding program for local governments and fire departments. This aligns with the codebook's clarification, which identifies credit-claiming when a senator explicitly ties a positive outcome to their direct involvement or advocacy.\"\n  },\n  \"4771\": {\n    \"document_id\": \"4771\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Clinton explicitly states that she played a key role in preventing the removal of four C-130 Aircraft from the Stratton Air National Guard base as part of the BRAC Commission. This aligns with the codebook's clarification, which identifies credit-claiming when a senator explicitly ties a positive outcome to their direct involvement or advocacy.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 13564,
+            "completion_tokens": 1960,
+            "total_tokens": 15524,
+            "prompt_tokens_details": {
+              "cached_tokens": 188,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-c88e44d0-46c4017e-75276",
+      "custom_id": "request-00000002",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1790574627-12af1f700965d2f99c4a",
+          "created": 1790575119,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"133\": {\n    \"document_id\": \"133\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Kerry criticizes the Dubai Ports deal and the Administration's handling of it, but does not explicitly attribute any positive outcome or achievement to his own efforts. The statement is purely critical and does not involve personal credit-claiming, as per the negative clarification.\"\n  },\n  \"214\": {\n    \"document_id\": \"214\",\n    \"label\": \"0\",\n    \"explanation\": \"The text commemorates Pearl Harbor and honors military service but does not involve any senator claiming credit for a specific action or outcome. It is purely ceremonial and informational, aligning with the negative clarification.\"\n  },\n  \"299\": {\n    \"document_id\": \"299\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Alexander acknowledges receiving an award from Americans for Tax Reform but does not explicitly claim credit for any specific legislative action or outcome. The statement is about recognition rather than personal attribution of a positive result, as outlined in the negative clarification.\"\n  },\n  \"490\": {\n    \"document_id\": \"490\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Webb criticizes the Bush Administration's foreign policy but does not claim credit for any specific action or outcome. The statement is purely critical and does not involve personal credit-claiming, per the negative clarification.\"\n  },\n  \"630\": {\n    \"document_id\": \"630\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Dodd discusses the impact of the proposed budget on Connecticut but does not explicitly attribute any positive outcome or achievement to his own efforts. The statement is informational and critical, not credit-claiming, as per the negative clarification.\"\n  },\n  \"721\": {\n    \"document_id\": \"721\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Reid discusses the challenges ahead in Iraq and criticizes the Administration but does not explicitly claim credit for any specific action or outcome. The statement is critical and does not involve personal credit-claiming, aligning with the negative clarification.\"\n  },\n  \"773\": {\n    \"document_id\": \"773\",\n    \"label\": \"0\",\n    \"explanation\": \"The text honors Senator Eagleton and discusses his legacy but does not involve any senator claiming credit for a specific action or outcome. It is purely commemorative and informational, as per the negative clarification.\"\n  },\n  \"1060\": {\n    \"document_id\": \"1060\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Nelson explicitly states that he supported the SCHIP program as Governor and worked with the Nebraska Legislature to create Kids Connection. He also mentions co-sponsoring an amendment, directly tying positive outcomes (expansion of children's health coverage) to his efforts. This aligns with the clarification for credit-claiming.\"\n  },\n  \"1086\": {\n    \"document_id\": \"1086\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Dayton applauds the passage of LIHEAP funding but does not explicitly claim credit for securing it. He expresses disappointment and discusses his cosponsorship of amendments, but there is no direct attribution of the outcome to his efforts. This aligns with the negative clarification.\"\n  },\n  \"1155\": {\n    \"document_id\": \"1155\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Leahy discusses asbestos legislation and his role in the process but does not explicitly claim credit for any specific outcome or action. The focus is on the legislative process rather than personal achievement, as per the negative clarification.\"\n  },\n  \"1313\": {\n    \"document_id\": \"1313\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Lieberman expresses frustration over the House's inaction on the D.C. voting rights bill but does not explicitly claim credit for any specific action or outcome. The statement is critical and does not involve personal credit-claiming, aligning with the negative clarification.\"\n  },\n  \"1827\": {\n    \"document_id\": \"1827\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Lugar explicitly states that he authored the Good Samaritan Hunger Relief Act, which is being included in the Katrina tax relief package. He directly ties the positive outcome (inclusion of the provision) to his legislative work, which is a clear example of credit-claiming as per the clarification.\"\n  },\n  \"2003\": {\n    \"document_id\": \"2003\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Clinton explicitly announces that she secured a new Predator squadron for New York, directly attributing the positive outcome to her efforts. This is a clear example of credit-claiming, as per the clarification.\"\n  },\n  \"2143\": {\n    \"document_id\": \"2143\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Murray's statement is a tribute to Karen Marchioro and does not involve any claim of personal responsibility for a positive outcome or achievement. It is purely commemorative, aligning with the negative clarification.\"\n  },\n  \"3047\": {\n    \"document_id\": \"3047\",\n    \"label\": \"0\",\n    \"explanation\": \"The text discusses the USDA's decision to purchase potatoes and mentions a letter from the Idaho Congressional Delegation, but no senator explicitly claims credit for the outcome. The statement is informational and does not involve personal credit-claiming, as per the negative clarification.\"\n  },\n  \"3201\": {\n    \"document_id\": \"3201\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Talent explicitly states that he worked with USDA officials to expedite the approval of the disaster designation for Missouri. He directly ties the positive outcome (disaster declaration) to his efforts, which is a clear example of credit-claiming as per the clarification.\"\n  },\n  \"3914\": {\n    \"document_id\": \"3914\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Frist discusses job growth and economic policies but does not explicitly attribute any positive outcome or achievement to his own efforts. The statement is informational and critical, not credit-claiming, as per the negative clarification.\"\n  },\n  \"3950\": {\n    \"document_id\": \"3950\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Harkin explicitly states that he authored the HeLP America Act, directly attributing the legislative effort to his work. This is a clear example of credit-claiming, as per the clarification.\"\n  },\n  \"4124\": {\n    \"document_id\": \"4124\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Kennedy commends the President's call for immigration reform and urges action but does not explicitly claim credit for any specific outcome or achievement. The statement is critical and does not involve personal credit-claiming, aligning with the negative clarification.\"\n  },\n  \"4344\": {\n    \"document_id\": \"4344\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Salazar supports the PATRIOT Act compromise but does not explicitly claim credit for any specific action or outcome. The statement is about his position on the issue, not personal attribution, as per the negative clarification.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 10411,
+            "completion_tokens": 1637,
+            "total_tokens": 12048,
+            "prompt_tokens_details": {
+              "cached_tokens": 2861,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-c88e44d0-46c4017e-135312",
+      "custom_id": "request-00000003",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1790574627-27f46f8b3cdf8c08fb4a",
+          "created": 1790575119,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"817\": {\n    \"document_id\": \"817\",\n    \"label\": \"0\",\n    \"explanation\": \"The text discusses a hearing on bipartisan legislation sponsored by Senators Collins and Feinstein but does not explicitly attribute any positive outcome, action, or achievement to their own efforts. The focus is on the legislative process and the issue at hand, not on personal credit-claiming. This aligns with the negative clarification, which states that routine legislative duties or general advocacy without a clear link to a specific outcome are not considered credit-claiming.\"\n  },\n  \"871\": {\n    \"document_id\": \"871\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Salazar questions the Secretary of the Interior about budget cuts affecting rural communities but does not claim credit for any specific action or outcome. The statement is critical and informational, focusing on the issue rather than personal achievement. This matches the negative clarification, which excludes purely critical or informational statements from credit-claiming.\"\n  },\n  \"1118\": {\n    \"document_id\": \"1118\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Carper issues a statement on the Senate's defeat of the gay marriage amendment, expressing his opinion and reasoning but not claiming credit for any action or outcome. The statement is purely expressive of his stance and does not tie a positive result to his own efforts, aligning with the negative clarification.\"\n  },\n  \"1177\": {\n    \"document_id\": \"1177\",\n    \"label\": \"0\",\n    \"explanation\": \"Senators Pryor and Chambliss call on the Air Force to take responsibility for unpaid bills but do not explicitly attribute any positive outcome or action to their own efforts. The focus is on urging action rather than claiming credit, which fits the negative clarification.\"\n  },\n  \"1230\": {\n    \"document_id\": \"1230\",\n    \"label\": \"0\",\n    \"explanation\": \"Sens. Harkin and Hatch welcome the publication of GMP regulations for dietary supplements and discuss their role in pushing for these regulations, but they do not explicitly claim credit for securing or directly causing the outcome. The language is more reflective of general support rather than direct attribution, which does not meet the criteria for credit-claiming as per the clarification.\"\n  },\n  \"1320\": {\n    \"document_id\": \"1320\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Hutchison explicitly states, 'I am pleased to help secure this funding,' directly attributing the passage of the emergency appropriations bill for drought and wildfire relief to her efforts. This is a clear example of credit-claiming, as she ties a positive outcome (securing funding) to her own advocacy and work, aligning with the positive examples in the codebook.\"\n  },\n  \"1747\": {\n    \"document_id\": \"1747\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Byrd explicitly states that he authored legislation to boost funding for the National Guard Youth ChalleNGe program and ties the program's success and expansion to his legislative work. This is a direct claim of credit for a positive outcome, matching the definition and positive examples of credit-claiming in the codebook.\"\n  },\n  \"1862\": {\n    \"document_id\": \"1862\",\n    \"label\": \"1\",\n    \"explanation\": \"Sens. Baucus and Tester explicitly state, 'we have delivered on our promise to secure federal funding' and 'Jon and I were proud to go to bat for these dollars,' directly attributing the $12.5 million in funding for military projects in Butte to their efforts. This is a clear instance of credit-claiming, as they tie a tangible benefit to their advocacy and legislative work.\"\n  },\n  \"2026\": {\n    \"document_id\": \"2026\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes the passage of the Leahy-Specter Data Privacy and Security Bill and discusses its provisions, but neither Senator Leahy nor Specter explicitly claims credit for the outcome. The focus is on the legislative process and the bill's content, not on personal attribution, which aligns with the negative clarification.\"\n  },\n  \"2627\": {\n    \"document_id\": \"2627\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Talent explicitly states, 'the Senate has approved my request for $1.5 million dollars,' directly attributing the funding for the Health Sciences Research and Education Facility to his own efforts. This is a clear example of credit-claiming, as he ties a positive outcome to his legislative work.\"\n  },\n  \"2675\": {\n    \"document_id\": \"2675\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes a meeting between Senators Dodd, Lieberman, and Rep. Simmons with BRAC Commissioners to discuss Sub Base New London. While the senators express their arguments and efforts, they do not explicitly claim credit for any specific outcome or action. The focus is on advocacy and discussion, not personal attribution, which fits the negative clarification.\"\n  },\n  \"3271\": {\n    \"document_id\": \"3271\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Crapo explicitly states, 'The measure, authored by Idaho Senator Mike Crapo,' and discusses his leadership in prompting reforms in the financial services industry. This directly ties the legislative outcome (passage of the bill) to his own efforts, making it a clear example of credit-claiming.\"\n  },\n  \"3477\": {\n    \"document_id\": \"3477\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Cornyn discusses the confirmation of Carol E. Dinkins to the Privacy and Civil Liberties Oversight Board and his role in the process but does not explicitly claim credit for the outcome. The focus is on the confirmation and the board's purpose, not on personal attribution, aligning with the negative clarification.\"\n  },\n  \"3501\": {\n    \"document_id\": \"3501\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Tester expresses disappointment and states he will 'continue to fight for Malmstrom,' but does not claim credit for any specific action or outcome. The statement is critical and focuses on future advocacy, not personal attribution, which fits the negative clarification.\"\n  },\n  \"3534\": {\n    \"document_id\": \"3534\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Domenici credits President Bush for addressing gasoline prices and discusses the need for congressional action but does not claim credit for any specific outcome or action tied to his own efforts. The focus is on the President's plan and general advocacy, not personal attribution, aligning with the negative clarification.\"\n  },\n  \"3560\": {\n    \"document_id\": \"3560\",\n    \"label\": \"0\",\n    \"explanation\": \"The text announces federal housing grants for Arkansas and includes statements from Senators Lincoln and Pryor, but neither explicitly claims credit for securing the funding. The focus is on the grants' benefits and general support, not personal attribution, which fits the negative clarification.\"\n  },\n  \"3729\": {\n    \"document_id\": \"3729\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Grassley discusses the appointment of Matt Dummermuth as interim U.S. Attorney but does not claim credit for the outcome. The focus is on the appointment and Dummermuth's qualifications, not on personal attribution, aligning with the negative clarification.\"\n  },\n  \"3744\": {\n    \"document_id\": \"3744\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Inouye explicitly states, 'at Senator Inouye's request, [the CDC] established a small occupational health center at the University of Hawaii at Hilo,' directly attributing the establishment of the CDC field station to his own efforts. This is a clear example of credit-claiming, as he ties a positive outcome to his advocacy.\"\n  },\n  \"3845\": {\n    \"document_id\": \"3845\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Bayh discusses OPEC's decision to raise oil prices and his sponsorship of energy legislation but does not explicitly claim credit for any specific outcome or action. The focus is on the issue and his legislative proposal, not personal attribution, aligning with the negative clarification.\"\n  },\n  \"4531\": {\n    \"document_id\": \"4531\",\n    \"label\": \"0\",\n    \"explanation\": \"Sens. Thune and Clinton introduce legislation to extend child care benefits for families of fallen soldiers and discuss their efforts, but they do not explicitly claim credit for any specific outcome or action. The focus is on the legislation's purpose and their advocacy, not personal attribution, which fits the negative clarification.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 15164,
+            "completion_tokens": 1956,
+            "total_tokens": 17120,
+            "prompt_tokens_details": {
+              "cached_tokens": 158,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-c88e44d0-46c4017e-219042",
+      "custom_id": "request-00000004",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1790574627-f48021e3afec4bfb9c94",
+          "created": 1790575119,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"42\": {\n    \"document_id\": \"42\",\n    \"label\": \"0\",\n    \"explanation\": \"The text describes a compromise between Senators Lott and Collins to strengthen FEMA within DHS. While the senators discuss their roles in the legislation, there is no explicit claim of personal responsibility for a positive outcome or achievement. The focus is on the collaborative process and the bill's provisions, not on individual credit-claiming. This aligns with the negative clarification, as the statement is informational and does not tie a positive result to the senators' direct involvement.\"\n  },\n  \"714\": {\n    \"document_id\": \"714\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Craig explicitly states, 'I helped secure more than $3 billion in the fiscal year 2006 Homeland Security appropriations bill for ICE's domestic enforcement efforts, as well as funding for 250 additional criminal investigators.' This is a clear example of credit-claiming, as he directly attributes the funding to his own efforts, matching the codebook's definition and positive examples.\"\n  },\n  \"794\": {\n    \"document_id\": \"794\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Bond discusses national security, economic policies, and his efforts to promote Missouri overseas, but he does not explicitly tie any positive outcome or achievement to his own actions. The text is largely informational and critical of others, without direct credit-claiming. This aligns with the negative clarification.\"\n  },\n  \"805\": {\n    \"document_id\": \"805\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Shelby announces funding for the Homewood Fire Department but does not explicitly claim personal responsibility for securing the funds. The statement is informational and does not tie the outcome to his direct involvement, as required by the negative clarification.\"\n  },\n  \"1257\": {\n    \"document_id\": \"1257\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator DeWine explicitly states that he 'wrote and passed the FIRE Act' and 'helped secure approximately $650 million for the FIRE Act.' This directly attributes the positive outcome (funding and legislation) to his own efforts, which is a clear example of credit-claiming as defined in the codebook.\"\n  },\n  \"1325\": {\n    \"document_id\": \"1325\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Dole expresses concern over judicial nominees and criticizes the process but does not claim credit for any specific action or outcome. The statement is purely critical and informational, aligning with the negative clarification.\"\n  },\n  \"1749\": {\n    \"document_id\": \"1749\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Hutchison co-sponsors a bill and discusses its benefits but does not explicitly claim personal responsibility for its creation or passage. The text describes her support and intentions but lacks direct attribution of a positive outcome to her actions, as required by the negative clarification.\"\n  },\n  \"1897\": {\n    \"document_id\": \"1897\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Martinez expresses his stance on legislation but does not claim credit for any specific outcome or action. The statement is critical and informational, without direct credit-claiming, aligning with the negative clarification.\"\n  },\n  \"1927\": {\n    \"document_id\": \"1927\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Snowe explicitly states, 'I pledge to continue to fight to not only preserve but expand the work at our nation's most efficient shipyard,' and notes that the funding was 'requested by Snowe and Sen. Susan Collins.' She also mentions her earlier letter to Appropriators requesting additional funding. This ties the positive outcome (funding for PNSY and veterans) to her direct advocacy, which is credit-claiming as per the codebook.\"\n  },\n  \"2335\": {\n    \"document_id\": \"2335\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Bayh invites children to participate in an essay contest and discusses his past work on fatherhood legislation, but he does not explicitly claim credit for a specific positive outcome or achievement in this press release. The focus is on encouraging participation and discussing general advocacy, not direct credit-claiming.\"\n  },\n  \"2869\": {\n    \"document_id\": \"2869\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Jeffords issues a statement on his vote in support of amendments but does not claim credit for any specific outcome or action. The statement is critical of the administration and focuses on his voting record, without direct credit-claiming, aligning with the negative clarification.\"\n  },\n  \"3252\": {\n    \"document_id\": \"3252\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Nelson explicitly states, 'I was gratified that my amendment... passed on a bipartisan vote of 72 to 26.' He also says, 'I want to put a stop to it until we get a level playing field,' directly tying the legislative outcome to his own efforts. This is a clear example of credit-claiming as defined in the codebook.\"\n  },\n  \"4022\": {\n    \"document_id\": \"4022\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Kennedy discusses the health care crisis and introduces legislation but does not explicitly claim credit for any specific positive outcome or achievement. The text is largely informational and critical, without direct credit-claiming, aligning with the negative clarification.\"\n  },\n  \"4122\": {\n    \"document_id\": \"4122\",\n    \"label\": \"0\",\n    \"explanation\": \"Senators Coleman and Levin announce a hearing and discuss their efforts to address waste, fraud, and abuse, but they do not explicitly claim personal responsibility for any specific positive outcome. The text is informational and critical, without direct credit-claiming, aligning with the negative clarification.\"\n  },\n  \"4184\": {\n    \"document_id\": \"4184\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Kyl co-sponsors legislation and discusses its benefits but does not explicitly claim personal responsibility for its creation or passage. The text describes the need for the amendment and its goals but lacks direct attribution of a positive outcome to his actions, as required by the negative clarification.\"\n  },\n  \"4207\": {\n    \"document_id\": \"4207\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Cornyn explicitly states, 'Sen. Cornyn has made several efforts on behalf of the impacted South Texas counties to see that federal funding is increased to make critical repairs and improvements to the IBWC levees. Sen. Cornyn added an amendment to the Department of State and Foreign Operations Appropriations bill...' This directly ties the positive outcome (funding and legislative action) to his own efforts, which is credit-claiming as per the codebook.\"\n  },\n  \"4295\": {\n    \"document_id\": \"4295\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Murkowski explicitly states, 'Senator Lisa Murkowski in 2003 proposed a permanent formula change and also another extension of extra state aid. In the absence of Congress tackling a revision of the overall Medicaid formula, she helped win a two-year change...' This directly attributes the legislative and funding outcomes to her own efforts, which is credit-claiming as defined in the codebook.\"\n  },\n  \"4508\": {\n    \"document_id\": \"4508\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Lott explicitly states, 'The announcement follows the Senator's Monday appeal to President Bush to authorize the immediate transport of available trailers staged outside the Katrina disaster area.' This ties the positive outcome (trailers being moved to Mississippi) to his direct advocacy, which is credit-claiming as per the codebook.\"\n  },\n  \"4677\": {\n    \"document_id\": \"4677\",\n    \"label\": \"0\",\n    \"explanation\": \"Senator Hutchison discusses BRAC funding and her support for the Army's budget request but does not explicitly claim personal responsibility for securing the funding or outcomes. The text describes her support and questions but lacks direct attribution of a positive outcome to her actions, aligning with the negative clarification.\"\n  },\n  \"4774\": {\n    \"document_id\": \"4774\",\n    \"label\": \"1\",\n    \"explanation\": \"Senator Bayh explicitly states, 'Last month, the Senate unanimously approved an amendment offered by Senators Bayh and Richard Durbin (D-IL) that would help end the Patriot Penalty...' and 'Bayh wrote the letter to demonstrate the existing support for his legislation...' This directly ties the legislative outcome to his own efforts, which is credit-claiming as defined in the codebook.\"\n  }\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 17739,
+            "completion_tokens": 1986,
+            "total_tokens": 19725,
+            "prompt_tokens_details": {
+              "cached_tokens": 167,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "batch-c88e44d0-46c4017e-314278",
+      "custom_id": "request-00000005",
+      "response": {
+        "status_code": 200,
+        "request_id": null,
+        "body": {
+          "model": "mistralai/mistral-medium-3-5",
+          "id": "gen-batch-1790574627-e8acfffd2bf5d4871d9d",
+          "created": 1790575120,
+          "system_fingerprint": null,
+          "object": "chat.completion",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\n  \"157\": {\"document_id\": \"157\", \"label\": \"0\", \"explanation\": \"The text is incomplete and does not provide any substantive content to evaluate. Without a clear statement or action from the senator, it cannot be classified as credit-claiming.\"},\n  \"189\": {\"document_id\": \"189\", \"label\": \"0\", \"explanation\": \"Senator Leahy discusses his support for cameras in courtrooms and his advocacy for transparency in government. However, he does not explicitly tie a positive outcome or achievement to his own efforts or legislative work. The statement is more about his stance on an issue rather than claiming credit for a specific action or result.\"},\n  \"744\": {\"document_id\": \"744\", \"label\": \"0\", \"explanation\": \"Senator Allard requests clarification on religious expression guidelines at the Air Force Academy. He does not claim credit for any specific outcome or achievement; instead, he is advocating for a policy change without explicitly attributing a positive result to his own actions.\"},\n  \"873\": {\"document_id\": \"873\", \"label\": \"1\", \"explanation\": \"Senator Landrieu explicitly states that she wrote a letter to Medicare Administrator Dr. Mark McClellan urging action to waive penalties for hurricane-affected seniors. The outcome (waiving the penalty) is directly tied to her advocacy, as she claims the agency responded to her inquiries. This is a clear example of credit-claiming.\"},\n  \"964\": {\"document_id\": \"964\", \"label\": \"0\", \"explanation\": \"The text is incomplete and lacks substantive content to evaluate. There is no clear statement or action from the senators that can be classified as credit-claiming.\"},\n  \"1043\": {\"document_id\": \"1043\", \"label\": \"1\", \"explanation\": \"Senator DeWine explicitly states that he wrote and passed the FIRE Act, which provided funding for firefighting grants. He also mentions his role in securing additional funding during appropriations processes. This is a direct attribution of a positive outcome (funding for firefighters) to his legislative work, making it a clear case of credit-claiming.\"},\n  \"1139\": {\"document_id\": \"1139\", \"label\": \"0\", \"explanation\": \"Senator Coleman expresses sympathy and support for the legacy of Rep. Charlie Norwood but does not explicitly claim credit for any specific action or outcome. The statement is more about honoring a colleague rather than attributing a positive result to his own efforts.\"},\n  \"1610\": {\"document_id\": \"1610\", \"label\": \"0\", \"explanation\": \"Senator Reid discusses the bipartisan effort behind the CHIP legislation and criticizes the President for opposing it. However, he does not explicitly claim personal credit for the bill's passage or any specific outcome. The focus is on the collective effort and criticism, not personal achievement.\"},\n  \"1736\": {\"document_id\": \"1736\", \"label\": \"1\", \"explanation\": \"Senator Domenici explicitly states that he cosponsored the Livestock Assistance Act of 2007 and wrote a letter to request expedited hearings on the bill. He ties the potential relief for farmers and ranchers to his legislative efforts, making this a clear example of credit-claiming.\"},\n  \"2368\": {\"document_id\": \"2368\", \"label\": \"1\", \"explanation\": \"Senator Craig announces the expansion of veterans' services in north central Idaho and explicitly states that he thanked VA officials for responding to his concerns. He ties the outcome (expanded services) to his advocacy as Chairman of the Senate Committee on Veterans' Affairs, making this credit-claiming.\"},\n  \"2382\": {\"document_id\": \"2382\", \"label\": \"1\", \"explanation\": \"Senators Landrieu and Coleman explicitly state that they introduced legislation (S. 1588) to require insurance companies to cover surgical costs for children with birth defects. Senator Landrieu also mentions her work to secure appropriations for Operation Smile and her intervention with the Department of Homeland Security to help a child receive treatment. These are direct attributions of positive outcomes to their legislative and advocacy efforts.\"},\n  \"2697\": {\"document_id\": \"2697\", \"label\": \"1\", \"explanation\": \"Senator Inouye explicitly states that he secured federal funding to control the coqui frog population on the Big Island after the Bush Administration denied Hawaii's request. He directly ties the outcome (funding) to his efforts, making this a clear case of credit-claiming.\"},\n  \"2827\": {\"document_id\": \"2827\", \"label\": \"0\", \"explanation\": \"Senator Lieberman's op-ed discusses the broader struggle against Islamist extremism and the importance of the war in Iraq. However, he does not explicitly claim credit for any specific action or outcome. The focus is on advocacy and criticism, not personal achievement.\"},\n  \"2895\": {\"document_id\": \"2895\", \"label\": \"0\", \"explanation\": \"Senator McCaskill discusses her vote to implement 9/11 Commission recommendations and the benefits of the legislation. However, she does not explicitly claim personal credit for securing the funding or outcomes. The statement focuses on the collective effort and the importance of the bill, not her individual role.\"},\n  \"3038\": {\"document_id\": \"3038\", \"label\": \"0\", \"explanation\": \"Senator Snowe discusses her support for Vice Admiral Thad Allen's nomination and praises the Coast Guard's work. However, she does not explicitly claim credit for any specific action or outcome. The statement is more about her stance on the nomination and the Coast Guard's achievements, not her personal contributions.\"},\n  \"3143\": {\"document_id\": \"3143\", \"label\": \"0\", \"explanation\": \"Senator Graham discusses his support for the Farm Bill and its provisions but does not explicitly claim credit for any specific outcome or achievement. He mentions his role on the Agriculture Committee and his efforts to include certain provisions, but the focus is on the collective legislative process rather than personal attribution.\"},\n  \"3149\": {\"document_id\": \"3149\", \"label\": \"0\", \"explanation\": \"Senator Reed discusses the budget resolution and its provisions but does not explicitly claim credit for any specific outcome. He mentions his support for certain programs and his role in proposing legislation, but the focus is on the collective effort and the importance of the budget, not his individual role.\"},\n  \"3817\": {\"document_id\": \"3817\", \"label\": \"1\", \"explanation\": \"Senator Sessions explicitly states that he has made it a priority to put the Bellefonte Nuclear Plant to good use for ratepayers since he came to the Senate. He ties the TVA's decision to move forward with the application process to his advocacy, making this a clear example of credit-claiming.\"},\n  \"4328\": {\"document_id\": \"4328\", \"label\": \"1\", \"explanation\": \"Senators Alexander and Corker explicitly state that they wrote a letter in support of Jackson's application to the Department of Transportation for air service. They tie the outcome (approval of air service) to their advocacy, making this credit-claiming.\"},\n  \"4403\": {\"document_id\": \"4403\", \"label\": \"1\", \"explanation\": \"Senator Domenici explicitly states that he is a primary cosponsor of the Rural Health Care Bill and that he has championed provisions to improve Medicare and Medicaid payments to rural physicians. He ties the bill's provisions to his past legislative efforts, making this a clear case of credit-claiming.\"}\n}",
+                "refusal": null,
+                "reasoning": null
+              },
+              "finish_reason": "stop",
+              "native_finish_reason": "stop",
+              "logprobs": null
+            }
+          ],
+          "service_tier": null,
+          "usage": {
+            "prompt_tokens": 17387,
+            "completion_tokens": 1707,
+            "total_tokens": 19094,
+            "prompt_tokens_details": {
+              "cached_tokens": 167,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "provider": "Mistral"
+        }
+      },
+      "error": null
+    }
+  ]
+}

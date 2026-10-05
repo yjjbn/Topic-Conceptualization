@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly frames an issue, policy, group, or action in terms of moral values, rights, duties, fairness, dignity, freedom, equality, compassion, virtue, or moral condemnation.",
+  "clarification": "Classify a text as moral rhetoric when it makes an evaluative appeal to how people ought to be treated or invokes moral principles such as respect, justice, equality, rights, protection of the vulnerable, freedom, or corruption. This includes explicit praise of virtues and condemnation of unjust, discriminatory, cruel, or intolerable conditions. A policy need not use the word 'moral' if its wording clearly invokes such a value.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth of every person, especially those who are frail or vulnerable, by saying each has a place and purpose."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the need to break down barriers affecting minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It frames court access as something nobody should be denied and refers to justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not classify ordinary policy commitments, technical administration, factual claims, economic arguments, or positive descriptions as moral rhetoric merely because they concern health, poverty, safety, employment, or public services. A proposal to fund services or reduce a harm is not enough unless it explicitly makes a value-based claim about rights, fairness, duties, dignity, or moral wrongness.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a straightforward infrastructure commitment to provide broadband on islands, with no moral framing."
+    },
+    {
+      "text": "Labour will continue to invest in the water services  programme as part of the capital budget, focusing on minimising treated water lost through leakage.",
+      "explanation": "This discusses investment in water services and leakage reduction in technical policy terms."
+    },
+    {
+      "text": "Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.",
+      "explanation": "It reports welfare and poverty outcomes without appealing to a moral principle or assigning moral praise or blame."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "definition": "Moral rhetoric is language that frames political issues, actors, or actions in terms of ethical principles, moral values, duties, human rights, justice, fairness, goodness, or fundamental virtues, as opposed to technical, logistical, or purely pragmatic concerns.",
+  "clarification": "To be classified as moral rhetoric (1), the text must explicitly invoke moral concepts (such as dignity, respect, human rights, fairness, or duty), declare certain actions or states as inherently just/unjust, or utilize morally charged normative labels (such as 'corruption', 'sin', or 'repression') that highlight ethical violations. Simple programmatic or policy assertions without such normative/ethical language should be coded as 0.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text appeals to existential value and human dignity by stating that every frail or vulnerable person has a place and purpose in the world."
+    },
+    {
+      "text": "playing a constructive role in world events focussed on human rights concerns.",
+      "explanation": "The text explicitly mentions 'human rights,' which is a central moral framework for international and domestic politics."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "The text directly references 'corruption' and 'bribery', which are explicitly moralized transgressions and ethical violations."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric (0) if it describes pragmatic, administrative, procedural, or technical aspects of policy, even if the policy itself targets a social good (e.g., funding healthcare or infrastructure), unless the text employs explicit moral framing or ethical vocabulary.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This text is a purely pragmatic, technical infrastructure goal ('Provide broadband on all islands') with no moral language or ethical framing."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This text presents neutral, data-driven economic facts and forecasts without any moral evaluations or ethical value judgments."
+    }
+  ]
+}

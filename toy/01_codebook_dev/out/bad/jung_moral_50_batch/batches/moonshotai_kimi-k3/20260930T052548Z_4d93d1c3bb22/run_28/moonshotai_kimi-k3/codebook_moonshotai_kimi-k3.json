@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that frames an issue, policy, group, or event in terms of moral values, principles, or judgments. This includes explicit appeals to values such as justice, fairness, equality, freedom/liberty, human rights, dignity, respect, compassion, and virtue (e.g., courage, patriotism, duty, self-discipline), as well as explicit moral evaluations (e.g., that something is deserved, justified, intolerable, discriminatory, or an injustice that must be remedied).",
+  "clarification": "Code 1 when the text (a) uses explicit moral vocabulary such as 'fair/unfair,' 'just/unjust,' 'deserve,' 'rights,' 'equality,' 'freedom,' 'dignity,' 'respect,' 'persecution,' 'discrimination,' 'courage,' or 'patriotism'; (b) renders a moral judgment on a situation (e.g., 'not tolerable,' 'justified,' 'second class treatment'); (c) frames a social problem as a moral imperative (e.g., a gap that 'must be closed,' the injustice of a 'poverty trap'); (d) invokes virtue or family-values framing (e.g., promoting 'healthy marriages,' 'self-discipline,' 'caring'); or (e) uses humanitarian-compassion language about suffering and aid. The moral framing must be explicit in the wording, not merely implied by the policy topic.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Directly affirms the intrinsic worth, place, and purpose of every person 'however frail or vulnerable' — a quintessential moral claim about human dignity."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between Māori and non-Māori must be closed",
+      "explanation": "Declares that the qualifications gap between rich and poor and between ethnic groups 'must be closed,' framing inequality as a moral wrong demanding remedy."
+    },
+    {
+      "text": "As our allies in spirit, they ended the Soviet terror that had consumed so many millions more.",
+      "explanation": "Describes allies 'in spirit' ending 'the Soviet terror,' casting geopolitics in moralized good-versus-evil terms."
+    }
+  ],
+  "negative_clarification": "Code 0 for: purely technical, procedural, fiscal, or administrative policy statements (tax schemes, permit systems, agency reviews, funding amounts); factual claims, statistics, and credit-claiming without moral vocabulary; economic or ideological preferences stated instrumentally (free market, lower taxes, growth targets); tough or emotive enforcement language lacking explicit moral values (e.g., 'smash organised criminal gangs'); social service provisions stated neutrally (pension levels, hospital funding, helplines); expectations or conditions of policy ('expected to contribute') without moral terminology; and aspirational or inspirational language that does not invoke moral values. Do not infer moral rhetoric merely from the subject matter (e.g., poverty, disability, environment) when the wording remains neutral and policy-focused.",
+  "negative_examples": [
+    {
+      "text": "Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.",
+      "explanation": "A technical housing-development priority (zones, permits) with no moral vocabulary despite housing being a morally charged topic."
+    },
+    {
+      "text": "We will change the Proceeds of Crime legislation to enable the police to smash organised criminal gangs.",
+      "explanation": "Aggressive anti-crime language ('smash organised criminal gangs') expresses toughness, not moral values; no appeal to justice, rights, or virtue."
+    },
+    {
+      "text": "Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.",
+      "explanation": "A statistical credit-claim about welfare caseloads and poverty reduction with no explicit moral framing or value language."
+    }
+  ]
+}

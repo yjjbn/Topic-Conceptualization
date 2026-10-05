@@ -1,0 +1,29 @@
+{
+  "definition": "Moral rhetoric is political communication that relies on normative claims, ethical virtues, moral duties, or references to justice, rights, and human dignity. It is language structured around ideas of what is right, fair, and decent, contrasted against what is corrupt, unacceptable, or oppressive.",
+  "clarification": "To classify a text as containing moral rhetoric, it must utilize words or phrases that evaluate policy or social realities in terms of ethical principles (e.g., 'justice', 'respect', 'terror', 'oppression', 'courage') rather than technical effectiveness, economic growth, or logistical feasibility. Key topics include basic human rights, social equity, duty to protect vulnerable groups, and individual liberty.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The assertion that every individual, regardless of their vulnerability, has an inherent place and purpose in the world appeals directly to basic human dignity and moral value."
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "Validates a public emotion using the moral and normative concept of 'justification' rather than a logical or programmatic argument."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Explicitly frames policy actions in terms of humanitarian duty, compassion, and the elimination of 'persecution' and 'suffering'."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric if it is primarily technical, programmatic, or administrative, even if it touches on important social areas like education, health, and transport. General political bragging, descriptions of budget sizes, or complaints about efficiency and red tape do not qualify unless they explicitly ground their argument in human rights, social justice, or moral values.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "While ensuring accessible schooling is socially beneficial, this is a dry, programmatic policy statement focusing on transport logistics."
+    },
+    {
+      "text": "»  The Government have based their  fiscal plans on 1.75% growth in the  economy which cannot and will  not be achieved under their plans",
+      "explanation": "This text offers a purely pragmatic critique of fiscal plans and economic growth projections, lacking any moralized or normative vocabulary."
+    }
+  ]
+}

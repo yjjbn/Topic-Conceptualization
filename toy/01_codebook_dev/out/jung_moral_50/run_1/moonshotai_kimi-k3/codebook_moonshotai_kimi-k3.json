@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that frames political issues, policies, groups, or events in explicitly moral terms: it appeals to moral values and principles (justice, fairness, equality, freedom, human rights, human dignity, respect, family, integrity), asserts moral duties or obligations (to protect the vulnerable, aid the suffering, reunite families), invokes moral virtues (courage, patriotism, caring, self-discipline), assigns moral desert (what people deserve), or passes moral judgment (what is justified, intolerable, repressive, corrupt, or unfair). It claims how things morally ought to be \u2014 what is right or wrong, just or unjust \u2014 rather than merely what is efficient, affordable, feasible, or administratively desirable.",
+  "clarification": "Classify a text as 1 when its wording itself carries the moral framing. Typical markers: (a) fairness/justice vocabulary \u2014 fair, unfair, discriminate, second-class treatment, equality, breaking down barriers; (b) rights and dignity claims \u2014 affirming rights, human rights concerns, intrinsic human worth; (c) liberty appeals \u2014 freedom to choose, free societies, freedom of artists; (d) moral desert and legitimation \u2014 deserve, justified; (e) moral condemnation \u2014 not tolerable, terror, repression, corruption; (f) normative imperatives that a wrong must be ended \u2014 e.g., an inequality that 'must be closed', a rhetorical question decrying a 'poverty trap'; (g) duty-laden compassion or protection language directed at suffering or vulnerable people \u2014 providing comfort and aid to the suffering or persecuted, protection of the vulnerable, family reunification of children with parents; (h) virtue language \u2014 courage, patriotism, caring, self-discipline, promoting healthy marriages; (i) explicit invocations of moral values such as respect; (j) moralized expectations of conduct, e.g., that newcomers are expected to contribute to society. Equal-entitlement claims (e.g., that all children regardless of circumstance must have access) count because they appeal to fairness. The domain of the policy (health, poverty, housing) is irrelevant; what matters is whether the text uses moral vocabulary, moral judgment, or moral duty language.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Declares that every person, 'however frail or vulnerable, has a place and a purpose in this world' \u2014 a direct affirmation of intrinsic human worth and dignity, the clearest form of moral rhetoric."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "Uses rights- and desert-based moral language ('no one should be denied access to the courts', 'the quality of justice they deserve') to frame tort reform as a matter of justice rather than mere legal policy."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "A 'race equality strategy to break down the barriers still faced by black and minority ethnic communities' explicitly invokes equality and frames discrimination as an injustice to be dismantled."
+    }
+  ],
+  "negative_clarification": "Do NOT classify as moral rhetoric merely because a policy concerns a morally significant area (poverty, health, disability, housing, older people, homelessness). Funding announcements, targets, institutional designs, service-delivery commitments, infrastructure, tax and regulatory mechanisms are 0 unless moral vocabulary or moral judgment appears in the wording. Exclude: descriptive or empirical claims and forecasts; achievement claims stated as fact (e.g., people 'lifted out of poverty'); emotive but non-moral policy criticism (budgets 'slashed', investments 'gutted', 'burdensome' regulation, 'hidden tax'); patriotic boosterism and praise of efficiency or quality; aspirational economic language (thriving economy, opportunity, free market, value for money); good-governance mechanisms (transparency, accountability, watchdogs, judicial independence) stated as institutional arrangements; cultural recognition or diversity programming described as policy without moral evaluation; and bare policy priorities (e.g., national employment first) without explicit fairness, rights, dignity, duty, or virtue language.",
+  "negative_examples": [
+    {
+      "text": "Create a national council on poverty elimination.",
+      "explanation": "Creating a 'national council on poverty elimination' names a morally significant goal but expresses it as an institutional mechanism with no moral vocabulary or judgment, illustrating that policy aimed at a moral end is not by itself moral rhetoric."
+    },
+    {
+      "text": "Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.",
+      "explanation": "'Nearly three million Americans have been lifted out of poverty' is a celebratory achievement claim stated as an empirical outcome; it does not invoke a moral principle, duty, or evaluation."
+    },
+    {
+      "text": "Lift benefits to at least pre 1991 equivalent levels \u2013 National slashed benefits in 1991, and these cuts have never been restored.",
+      "explanation": "Benefits were 'slashed' and 'never restored' \u2014 emotive criticism of past policy, but it appeals to no explicit fairness, rights, or dignity principle, illustrating the boundary between charged policy criticism and moral rhetoric."
+    }
+  ]
+}

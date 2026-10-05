@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, conditions, or policies through moral values or principles, such as rights, equality, fairness, respect, freedom, dignity, compassion, integrity, deservingness, or virtue and vice.",
+  "clarification": "Code as moral rhetoric when the text does more than describe a policy outcome and instead says or clearly implies that something is right, wrong, fair, unjust, deserved, intolerable, respectful, free, equal, protective of the vulnerable, or virtuous. Explicit rights claims, condemnation of discrimination or corruption, humanitarian compassion, and praise of virtues such as courage are included.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The assertion that every person, however vulnerable, has a place and purpose affirms inherent human worth and dignity."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "The claim that socioeconomic and ethnic qualification gaps must be closed invokes equality as a normative imperative."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "The commitment not to encourage corruption invokes integrity and condemns corrupt conduct."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, technical administration, factual claims, economic forecasts, or claims of efficiency, growth, quality, safety, and affordability unless the text explicitly connects them to a moral principle. A policy that may have beneficial social effects is not enough by itself. General positive language, partisan criticism, or references to health and welfare also do not qualify unless they articulate moral evaluation or a rights-, fairness-, dignity-, or compassion-based claim.",
+  "negative_examples": [
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "This is a regulatory proposal to reduce food waste, but it does not explicitly present waste reduction as a moral duty or moral wrong."
+    },
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "The text specifies literacy and numeracy testing, an administrative education policy without moral evaluation."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This passage provides economic statistics and forecasts rather than normative moral language."
+    }
+  ]
+}

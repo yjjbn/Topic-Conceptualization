@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, rights, duties, virtues, or judgments about what is fair, just, respectful, humane, intolerable, or deserved.",
+  "clarification": "Code texts as moral rhetoric when they frame a policy, group, condition, or action through an ethical principle or moral evaluation. This includes explicit appeals to equality, non-discrimination, human rights, freedom, respect, protection of vulnerable people, compassion, integrity, courage, or deservedness. It also includes clear condemnatory moral judgments, such as calling an outcome intolerable, unfair, or unjustified.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement assigns inherent worth and purpose to every person, including frail and vulnerable people."
+    },
+    {
+      "text": "work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.",
+      "explanation": "The proposal explicitly opposes unfair discrimination based on socioeconomic background."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The commitment to race equality and breaking down barriers invokes equality and inclusion as moral values."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, technical administration, spending plans, economic claims, factual descriptions, or generic positive language as moral rhetoric unless they expressly articulate an ethical value or moral judgment. References to health, poverty, safety, environment, jobs, or public services alone are insufficient; the text must morally frame them through a right, duty, fairness claim, virtue, or explicit condemnation.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is an administrative education-testing commitment, with no ethical principle or moral judgment."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "It requires steps to reduce food waste but frames this as legislation rather than an explicit moral duty or value."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "It provides economic statistics and forecasts without moral evaluation."
+    }
+  ]
+}

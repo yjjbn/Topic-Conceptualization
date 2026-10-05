@@ -1,0 +1,41 @@
+{
+  "note": "",
+  "batch_id": "batch-1790956383-N8GcrRxJy1WmPJ495xvc",
+  "run": 16,
+  "arguments": {
+    "command": "submit",
+    "model": "mistralai/mistral-medium-3-5",
+    "mode": "batch",
+    "provider": null,
+    "session_id": null,
+    "repeats": 25,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\grimmer_codebookdev_100.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_grimmer.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "grimmer_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 55201,
+      "completion_tokens": 5427,
+      "total_tokens": 60628,
+      "prompt_tokens_details": {
+        "cached_tokens": 55107,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

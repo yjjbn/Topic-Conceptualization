@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that appeals to ethical values, normative standards, human rights, social justice, fairness, civic/personal virtues, or humanitarian compassion to advocate for a policy, critique existing conditions, or validate a political stance, rather than relying solely on technical, pragmatic, economic, or administrative arguments.",
+  "clarification": "To qualify as containing 'moral rhetoric' (Label 1), the text must explicitly invoke concepts of: 1) Human rights, civil liberties, or personal freedoms. 2) Social justice, fairness, and the eradication of discrimination (e.g. 'unfairly discriminate', 'equality', 'second class treatment'). 3) Compassion, humanitarian care, or protecting vulnerable populations (e.g. 'vulnerable', 'frail', 'suffering'). 4) Ethical and civic virtues (e.g. 'respect', 'patriotism', 'courage', 'honesty', 'anti-corruption'). 5) Explicitly moral or normative evaluations of actions or emotional responses (e.g. 'justified anger'). Merely mentioning a social sector like healthcare or welfare in programmatic terms does not suffice; there must be explicit ethical framing.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text utilizes highly moralistic and dignity-based language, affirming that 'every person' has 'a purpose in this world' and explicitly focusing on the 'frail or vulnerable.'"
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "By asserting that 'Their anger is justified,' the text moves beyond descriptive or pragmatic policy to make a normative, moral evaluation that validates a group's grievance."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text uses compassionate humanitarian framing ('providing comfort and aid to suffering people' experiencing 'displacement and persecution') to justify its stance."
+    }
+  ],
+  "negative_clarification": "Classify a text as containing no moral rhetoric (Label 0) if it is purely descriptive, factual, pragmatic, or technical. This includes economic arguments, administrative procedures, infrastructure plans, and budget proposals. Even when texts address themes with high ethical potential (such as climate change, poverty, or healthcare), they must be coded as 0 if they use standard administrative, technical, or matter-of-fact language without explicit appeals to moral virtues, fairness, or human dignity.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a standard, programmatic infrastructure proposal ('Provide broadband on all islands') with no moral appeals or ethical framing."
+    },
+    {
+      "text": "»  The Government have based their  fiscal plans on 1.75% growth in the  economy which cannot and will  not be achieved under their plans",
+      "explanation": "This is a factual critique of the government's economic growth estimates, relying on quantitative and economic arguments rather than moral principles."
+    },
+    {
+      "text": "Measurement of water quality around New Zealand is inconsistent.",
+      "explanation": "The text presents a descriptive, factual critique regarding the inconsistency of environmental measurements, lacking any normative or moral language."
+    }
+  ]
+}

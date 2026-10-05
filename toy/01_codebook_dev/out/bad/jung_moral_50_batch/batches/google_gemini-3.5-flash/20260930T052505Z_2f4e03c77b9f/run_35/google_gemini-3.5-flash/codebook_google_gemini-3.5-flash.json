@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as political or social language that explicitly invokes ethical values, fundamental human rights, moral duties, virtues, or core concepts of justice, fairness, and human dignity, rather than relying strictly on administrative, technical, economic, or logistical arguments.",
+  "clarification": "To classify a text as containing moral rhetoric, look for explicit value words (such as 'justice', 'respect', 'equality', 'fairness', 'integrity', 'courage') or assertions of moral obligation and duty (e.g., claiming someone 'deserves' something, evaluating a policy as 'unjust' or 'not tolerable'). It also includes statements advocating for the protection of fundamentally vulnerable groups (like children, the frail, or victims of persecution) as a matter of ethical principle, or framing access to basic needs as a universal human right.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This statement expresses a powerful moral belief regarding the intrinsic value and purpose of every single person, explicitly calling out vulnerable and frail individuals."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses highly moralized humanitarian rhetoric, committing to provide comfort and aid to 'suffering people' facing 'persecution' because of violence."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text explicitly appeals to the core ethical value of 'respect' as its defining principle."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric if it outlines regular welfare, educational, environmental, or economic policies in a neutral, technical, or matter-of-fact tone. Although the ultimate objective of these policies may be socially beneficial or noble, the text must utilize explicit ethical/moral framing to qualify. Mentions of laws, administrative programs, standard funding levels, and statistical metrics should be excluded.",
+  "negative_examples": [
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This text outlines a highly detailed, technical, and administrative fiscal proposal for consolidating micro-enterprise tax filings. It is completely devoid of moral framing."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a standard, matter-of-fact infrastructure proposal to supply broadband to islands, lacking any moral or ethical rhetoric."
+    },
+    {
+      "text": "If  there is  no contact from  the person,  Work and Income will suspend  the person’s benefit.",
+      "explanation": "This text details a standard administrative sanction rule regarding benefits compliance. It contains no moral evaluation or ethical rhetoric."
+    }
+  ]
+}

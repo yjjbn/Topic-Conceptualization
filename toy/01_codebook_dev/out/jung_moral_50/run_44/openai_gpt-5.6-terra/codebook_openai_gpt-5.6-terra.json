@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, policies, or outcomes through ethical values, rights, duties, virtues, or standards of justice and wrongdoing.",
+  "clarification": "Classify as moral rhetoric when a passage invokes values such as respect, freedom, equality, fairness, dignity, justice, compassion, protection of vulnerable people, rights, corruption, or virtues such as courage and patriotism. It also includes clear normative judgements of deservingness, unjust treatment, discrimination, or intolerability when these convey an ethical evaluation rather than merely a technical policy preference.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The assertion that every person, including those who are frail or vulnerable, has a place and purpose affirms intrinsic human worth and dignity."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The call for race equality and to break down barriers for minority communities explicitly invokes equality and fairness."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The statement invokes universal access to courts and the quality of justice people deserve, directly appealing to rights and justice."
+    }
+  ],
+  "negative_clarification": "Do not classify passages that merely announce policies, report facts, describe administrative arrangements, forecast economic effects, or use positive promotional language without an explicit ethical value or judgement. References to health, poverty, safety, affordability, participation, or public services alone are not enough; the text must frame them in moral terms such as rights, fairness, dignity, injustice, duty, or virtue.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a practical commitment to an efficient and accessible school-bus system, with no explicit ethical principle."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This explains a technical corporation-tax compliance reform rather than making a moral evaluation."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This reports economic growth data and forecasts, with no moral language or ethical standard."
+    }
+  ]
+}

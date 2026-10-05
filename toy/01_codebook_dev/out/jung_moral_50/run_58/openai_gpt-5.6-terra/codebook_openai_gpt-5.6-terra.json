@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, duties, rights, fairness, human worth, justice, equality, freedom, compassion, or moral praise and condemnation to evaluate a condition, group, action, or policy.",
+  "clarification": "Classify as moral rhetoric when the excerpt does more than state a policy, outcome, or practical benefit and instead frames an issue in normative terms: for example, saying people deserve something, that exclusion is unfair or discriminatory, that a right must be respected, that vulnerable people require protection, or that an action advances equality or freedom. Explicit praise of virtues such as courage or condemnation of evils such as terror or corruption also qualifies.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth and purpose of every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It treats socioeconomic and ethnic educational disparities as inequalities that must be eliminated."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes a universal obligation not to deny court access and says people deserve justice."
+    }
+  ],
+  "negative_clarification": "Do not classify routine policy commitments, factual claims, technical proposals, economic arguments, or general positive language as moral rhetoric when they lack an explicit value-based evaluation. References to health, poverty, public services, environmental risks, affordability, or social groups alone are insufficient. National priorities and partisan criticism also do not qualify unless they expressly appeal to a moral value or wrong.",
+  "negative_examples": [
+    {
+      "text": "Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.",
+      "explanation": "This is a technical proposal for affordable-housing development zones, with no stated moral principle."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This excerpt gives economic-growth figures and forecasts rather than a moral evaluation."
+    },
+    {
+      "text": "Support community services and volunteers working to combat loneliness, particularly in later life.",
+      "explanation": "It proposes support to combat loneliness but does not explicitly frame that support as a moral duty, right, or value."
+    }
+  ]
+}

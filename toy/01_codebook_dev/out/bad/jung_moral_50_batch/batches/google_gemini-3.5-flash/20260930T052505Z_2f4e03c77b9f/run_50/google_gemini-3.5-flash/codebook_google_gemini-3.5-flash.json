@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as language that frames political issues, actors, actions, or policies in terms of ethical values, moral obligations, concepts of justice or fairness, virtues, compassion, or rights, rather than purely pragmatic, economic, or administrative arguments.",
+  "clarification": "To classify a text as containing moral rhetoric (1), the text must invoke values or principles that define right and wrong, duties, or ethical standards. Key indicators include explicit mentions of moral values (e.g., respect, caring, patriotism, courage, self-discipline), social justice (e.g., discrimination, equality, fairness), rights (e.g., human rights, civil liberties), and humanitarian/compassionate imperatives (e.g., relieving suffering, protecting the vulnerable, family reunification). Strong moral indignation ('unacceptable', 'intolerable', 'repression') also qualifies.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text asserts the fundamental moral value, place, and purpose of every human being, specifically highlighting 'frail' and 'vulnerable' individuals, which directly appeals to compassion and ethical dignity."
+    },
+    {
+      "text": "Monitor funding of minority ethnic and religious groups to ensure government support is fair, transparent and proportionate;",
+      "explanation": "The insistence that government support must be 'fair' directly invokes an ethical and moral baseline of justice and equity."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text calls for 'comfort and aid' to 'suffering people' escaping 'persecution', which is a classic humanitarian and compassionate argument based on moral duty."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric (0) if it is purely descriptive, technical, financial, or administrative. General expressions of economic policy, environmental regulations, law enforcement mechanics, structural reorganizations, or standard political self-praise (unless heavily laden with virtue language) do not meet the threshold for moral rhetoric. Statements criticizing inefficiency or waste, unless explicitly framed as a moral or ethical failure, should be classified as 0.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "The sentence 'Provide broadband on all islands.' is a standard infrastructure policy statement lacking any ethical, value-based, or moral arguments."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "The text outlines a highly detailed, technical, and administrative proposal for tax reform, relying purely on economic and pragmatic reasoning."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "The statement offers a factual comparison of productivity statistics between Canada and the United States, without making a moral claim."
+    }
+  ]
+}

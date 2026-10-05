@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as language in political texts that invokes, asserts, or appeals to values, ethics, moral duty, justice, human rights, or fundamental character virtues, as opposed to relying strictly on pragmatic, administrative, technical, or economic reasoning.",
+  "clarification": "To classify a text as containing moral rhetoric (1), it must contain terms or concepts that establish a clear ethical mandate, rights claims, character virtues (e.g., courage, patriotism, respect), human dignity, or systemic fairness (such as equality of opportunity, social justice, or protection of the most vulnerable). It often employs normative words like 'justice', 'equality', 'deserve', 'rights', 'vulnerable', 'corruption', 'oppression', or 'fairness'.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts the intrinsic value and purpose of every single human being, especially focusing on 'frail' and 'vulnerable' individuals, which represents a quintessential appeal to human dignity and moral worth."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text directly and explicitly invokes the moral concepts of 'values' and the ethical duty of 'respect'."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This statement uses humanitarian and compassionate terms like 'suffering', 'persecution', and 'comfort', appealing to moral solidarity with victims of violence."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric (0) if it is purely descriptive, technical, programmatic, or administrative. Criticism of political opponents, evaluations of cost-efficiency, statements about standard welfare programs, or general references to economic growth do not count as moral rhetoric unless they are explicitly grounded in moral duty, justice, or character virtues. Even when a text uses positive words like 'healthy' or 'successful,' it is classified as 0 if the focus remains on pragmatic policy implementation or economic targets.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a programmatic policy statement regarding a school bus system. It frames the goal in terms of 'efficiency' and 'accessibility' rather than moral obligations."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This text details a technical tax policy proposal regarding micro enterprises, explaining administrative procedures with no moral or normative value claims."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This is a factual economic analysis presenting GDP growth rates and economic forecasts, completely devoid of ethical or moral rhetoric."
+    }
+  ]
+}

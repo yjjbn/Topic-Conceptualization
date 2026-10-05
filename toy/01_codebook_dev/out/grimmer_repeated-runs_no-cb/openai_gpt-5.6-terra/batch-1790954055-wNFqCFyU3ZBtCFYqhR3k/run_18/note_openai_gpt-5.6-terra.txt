@@ -1,0 +1,41 @@
+{
+  "note": "",
+  "batch_id": "batch-1790954055-wNFqCFyU3ZBtCFYqhR3k",
+  "run": 18,
+  "arguments": {
+    "command": "submit",
+    "model": "openai/gpt-5.6-terra",
+    "mode": "batch",
+    "provider": null,
+    "session_id": null,
+    "repeats": 25,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\grimmer_codebookdev_100.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_grimmer.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "grimmer_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 53279,
+      "completion_tokens": 4017,
+      "total_tokens": 57296,
+      "prompt_tokens_details": {
+        "cached_tokens": 53276,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 996,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

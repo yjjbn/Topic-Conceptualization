@@ -1,0 +1,486 @@
+[
+  {
+    "run": 3,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-3-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-3-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-3-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-3-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 4,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-4-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-4-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-4-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-4-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 5,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-5-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-5-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-5-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-5-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 6,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-6-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-6-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-6-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-6-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 7,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-7-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-7-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-7-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-7-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 8,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-8-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-8-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-8-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-8-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 9,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-9-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-9-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-9-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-9-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 10,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-10-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-10-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-10-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-10-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 11,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-11-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-11-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-11-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-11-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 12,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-12-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-12-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-12-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-12-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 13,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-13-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-13-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-13-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-13-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 14,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-14-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-14-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-14-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-14-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 15,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-15-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-15-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-15-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-15-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 16,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-16-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-16-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-16-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-16-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 17,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-17-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-17-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-17-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-17-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 18,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-18-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-18-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-18-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-18-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 19,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-19-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-19-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-19-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-19-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 20,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-20-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-20-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-20-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-20-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 21,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-21-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-21-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-21-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-21-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 22,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-22-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-22-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-22-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-22-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 23,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-23-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-23-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-23-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-23-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  },
+  {
+    "run": 24,
+    "status": "error",
+    "errors": [
+      {
+        "custom_id": "run-24-request-1",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-24-request-2",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-24-request-3",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      },
+      {
+        "custom_id": "run-24-request-4",
+        "error": "HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='openrouter.ai', port=443): Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)\"))"
+      }
+    ]
+  }
+]

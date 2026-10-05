@@ -1,0 +1,34 @@
+You will receive a set of excerpts from US newspapers published between 1996 and 2013.
+
+Classify each text according to whether it is about "smoking ban enforcement." For each classification, provide a brief rationale for your decision.
+
+Use only one of these labels:
+"1": The text is about "smoking ban enforcement"
+"0": The text is not about "smoking ban enforcement"
+
+Each classification should contain:
+* The label, 1 or 0
+* A brief explanation of your decision
+
+The documents will be provided as a JSON array of objects, each containing document_id and text:
+[
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
+  ...
+]
+
+After you have classified all the texts, write a codebook that documents how you conceptualized "smoking ban enforcement" when making your classifications. The purpose of the codebook is to communicate your concept of "smoking ban enforcement" to an external coder, such that they could independently identify the same concept in this or a new set of documents in the same way that you would.
+
+Your codebook should contain:
+
+1. DEFINITION: Your definition of "smoking ban enforcement."
+2. CLARIFICATION: Additional explanation, such as inclusion criteria, that helps clarify when to classify a text as "smoking ban enforcement."
+3. POSITIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your clarification, the document_id's of up to 3 example texts from the original dataset that illustrate distinctive cases of "smoking ban enforcement."
+4. POSITIVE EXAMPLE EXPLANATION: For each positive example, an explanation of why the positive example counts as "smoking ban enforcement."
+5. NEGATIVE CLARIFICATION: Additional explanation, such as exclusion criteria or boundary rules, that helps clarify when NOT to classify a text as "smoking ban enforcement."
+6. NEGATIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your negative clarification, the document_id's of up to 3 example texts from the original dataset that illustrate distinctive negative cases of "smoking ban enforcement."
+7. NEGATIVE EXAMPLE EXPLANATION: For each negative example, an explanation of why the negative example does not count as "smoking ban enforcement."
+
+Return your classifications with explanations and codebook in the JSON format provided.
+Make sure you return a 1 or 0 classification for every document_id provided.
+Copy each document_id exactly from the input. Never generate or change document_ids.

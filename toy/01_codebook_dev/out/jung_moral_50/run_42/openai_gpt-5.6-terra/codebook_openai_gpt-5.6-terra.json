@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly frames a policy, group, condition, or action in terms of ethical values, rights, duties, virtues, justice, fairness, human dignity, compassion, freedom, equality, or moral approval and condemnation.",
+  "clarification": "Code as moral rhetoric when the text does more than state a policy or likely consequence and instead invokes a normative ethical standard. This includes explicit references to respect, rights, equality, discrimination, fairness, protection of vulnerable people, justice, freedom, accountability, corruption, compassion, civic duty, or virtues such as courage. It also includes clear moral judgments such as calling a condition intolerable, oppression terror, or anger justified.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement assigns inherent worth and purpose to every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The proposed race-equality strategy explicitly seeks to remove barriers faced by minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The passage invokes universal access to courts and the quality of justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, administrative plans, factual descriptions, economic arguments, numerical targets, or generic promotional language unless they expressly articulate an ethical value or moral judgment. References to health, safety, poverty, jobs, environmental protection, efficiency, or affordability alone are not moral rhetoric; they require explicit ethical framing such as rights, fairness, dignity, compassion, or injustice.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "Testing children in literacy and numeracy is an education policy without ethical framing."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "Simplifying preliminary corporation-tax returns is a technical administrative reform."
+    },
+    {
+      "text": "We will re-open the Western Rail Corridor from Ennis to Claremorris and examine the feasibility of reopening the line from Claremorris to Sligo.",
+      "explanation": "Reopening rail lines is an infrastructure proposal rather than a moral claim."
+    }
+  ]
+}

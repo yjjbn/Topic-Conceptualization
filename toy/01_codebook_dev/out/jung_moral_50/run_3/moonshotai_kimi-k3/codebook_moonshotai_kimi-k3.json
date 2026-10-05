@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that frames political issues, policies, groups, or events in explicitly moral terms. It appeals to moral values and principles (e.g., justice, fairness, equality, dignity, freedom, respect, compassion, integrity, human rights), renders moral judgments about right and wrong (what is intolerable, justified, deserved, or unjust), invokes virtues and vices (e.g., courage, patriotism, caring, self-discipline versus corruption, repression, terror), or asserts moral duties such as the protection of the vulnerable.",
+  "clarification": "Classify as 1 when the text does at least one of the following: (1) explicitly names a moral value or principle (respect, dignity, equality, fairness, justice, freedom, human rights, intercultural respect); (2) makes a moral evaluation of a policy, group, or state of affairs (e.g., calling something intolerable, justified, deserved, unfair, discriminatory, or second-class treatment); (3) affirms rights (human, political, constitutional) or the intrinsic worth of persons; (4) frames a duty of care, compassion, or protection toward vulnerable or suffering people (e.g., protecting vulnerable older people, comforting the persecuted, reuniting children with parents); (5) uses virtue or vice language (courage, patriotism, caring, self-discipline, healthy marriage) or condemns moral wrongs (corruption, civil repression, terror). The moral content can be brief but must be explicit in the words used; mere policy commitment, even to a good cause, is not enough unless it is framed through moral vocabulary or moral judgment.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "\"Every person, however frail or vulnerable, has a place and a purpose in this world\" affirms the intrinsic dignity and worth of all persons, especially the vulnerable \u2014 a paradigmatic moral claim."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "A \"comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities\" explicitly invokes equality and anti-discrimination as moral commitments."
+    },
+    {
+      "text": "Why are the poor still likely to be children of the poor, / caught in the poverty trap set by poor education, low-skilled jobs and unemployment?",
+      "explanation": "The rhetorical question about the poor being \"caught in the poverty trap\" indicts intergenerational poverty as a social injustice, rendering a moral judgment rather than a neutral policy description."
+    }
+  ],
+  "negative_clarification": "Do not classify as moral rhetoric texts that are purely descriptive, technocratic, fiscal, or operational: economic arguments (growth, productivity, taxes, value for money, competitiveness), administrative or institutional arrangements (reviews, offices, targets, reporting), factual claims about records or outputs, and neutral service-delivery commitments (e.g., adequate support, resourcing services) that lack moral vocabulary. Evaluative language alone is insufficient when the evaluation is economic or managerial (e.g., \"not getting value for money\") rather than ethical. Words with moral resonance used merely descriptively or as category labels (e.g., \"humanitarian disasters,\" \"lifesaving work,\" \"lifted out of poverty\" as an achievement statistic) do not count. Vague aspirational slogans (\"the party of opportunity\") and simple policy preferences (e.g., hiring preference for citizens) without explicit moral vocabulary are also excluded.",
+  "negative_examples": [
+    {
+      "text": "Taxes are lower.",
+      "explanation": "\"Taxes are lower\" is a purely descriptive economic claim with no moral values, judgments, or duties invoked \u2014 the clearest type of negative case."
+    },
+    {
+      "text": "and ensure adequate support for people with special needs.",
+      "explanation": "\"Ensure adequate support for people with special needs\" is a compassionate policy area but is phrased as a neutral service commitment; without explicit moral vocabulary (dignity, rights, duty, fairness) it does not qualify."
+    },
+    {
+      "text": "Plainly, motorists are not getting value for money from their roads.",
+      "explanation": "\"Motorists are not getting value for money from their roads\" is evaluative but the evaluation is economic (value for money), not ethical \u2014 illustrating that not all evaluative language is moral rhetoric."
+    }
+  ]
+}

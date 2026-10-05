@@ -1,0 +1,41 @@
+{
+  "note": "",
+  "batch_id": "batch-1791126726-Iagz8TDbxnQzrDT0FVKq",
+  "run": 36,
+  "arguments": {
+    "command": "submit",
+    "model": "openai/gpt-5.6-terra",
+    "mode": "batch",
+    "provider": null,
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\lacombe_codebookdev_100.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_lacombe_gunreg.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "lacombe_gunreg_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 83628,
+      "completion_tokens": 3449,
+      "total_tokens": 87077,
+      "prompt_tokens_details": {
+        "cached_tokens": 83625,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 815,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

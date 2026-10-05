@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes ethical values, duties, rights, justice, equality, dignity, freedom, compassion, or moral condemnation to evaluate a condition, group, action, or policy.",
+  "clarification": "Code as moral rhetoric when the text frames its position in terms of what people deserve, equal or fair treatment, rights or freedoms, protection of vulnerable people, compassion, respect, or the moral acceptability or wrongness of conduct. Explicit references to human rights, equality, unjust discrimination, corruption, repression, or justified grievance qualify.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement affirms the inherent worth and purpose of every person, specifically including people who are frail or vulnerable."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It presents closing disparities between rich and poor and between M\u0101ori and non-M\u0101ori as an imperative, invoking equality."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It explicitly says nobody should be denied court access and refers to the justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code mere policy commitments, administrative proposals, empirical claims, economic arguments, or ordinary positive/negative evaluations as moral rhetoric unless they explicitly rely on an ethical value or moral judgment. Terms such as efficient, successful, adequate, affordable, safe, or best are not enough by themselves.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical proposal to simplify corporate-tax compliance and reduce advisory costs."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This reports economic growth figures and forecasts without an ethical evaluation."
+    },
+    {
+      "text": "Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.",
+      "explanation": "This proposes an administrative office for water and sewerage oversight, rather than appealing to moral values."
+    }
+  ]
+}

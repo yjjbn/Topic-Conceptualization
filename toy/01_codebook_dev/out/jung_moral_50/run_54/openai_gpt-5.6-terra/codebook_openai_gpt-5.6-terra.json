@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly invokes moral values, rights, duties, deservingness, dignity, fairness, equality, freedom, compassion, virtue, or moral condemnation to assess people, institutions, or political action.",
+  "clarification": "Code a text as moral rhetoric when it does more than propose a policy or state an outcome: it frames an issue in terms of what is right or wrong, fair or unfair, deserved, humane, equal, respectful, free, or protective of vulnerable people. Explicit rights language, appeals to justice, condemnation of corruption or oppression, and praise of virtues such as courage or respect qualify.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth of every person, including those who are frail or vulnerable."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "It says educational inequalities by class and ethnicity must be closed, expressing an equality-based obligation."
+    },
+    {
+      "text": "and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.",
+      "explanation": "It explicitly rejects corruption and supports anti-bribery enforcement."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, administrative measures, factual claims, economic arguments, or positive descriptions merely because they concern health, poverty, education, jobs, safety, or the environment. Terms such as efficient, adequate, accessible, successful, or value for money are not moral rhetoric unless paired with an explicit moral principle or judgment.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a testing-policy commitment without an appeal to rights, justice, or other moral values."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This provides a technical tax-compliance reform rather than a moral evaluation."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "This proposes food-waste regulation but does not morally characterize waste or articulate a moral duty."
+    }
+  ]
+}

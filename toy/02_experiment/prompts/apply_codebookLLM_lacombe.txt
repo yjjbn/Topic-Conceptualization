@@ -1,0 +1,15 @@
+You will receive a codebook and a set of editorials from the American Rifleman.
+
+Following the codebook, classify each editorial according to whether it is about "gun regulation."
+Use only the definition and decision criteria provided in the codebook.
+
+Use only one of these labels:
+"1": The text is about gun regulation.
+"0": The text is not about gun regulation.
+
+The documents are provided as a JSON array of objects containing document_id and text.
+For each document, return its exact document_id, a label ("1" or "0"), and an explanation.
+Explain which parts of the codebook you relied on and any ambiguity in applying them.
+
+Return JSON matching the supplied output schema.
+Include every input document exactly once. Copy document_ids exactly; never generate or renumber them.

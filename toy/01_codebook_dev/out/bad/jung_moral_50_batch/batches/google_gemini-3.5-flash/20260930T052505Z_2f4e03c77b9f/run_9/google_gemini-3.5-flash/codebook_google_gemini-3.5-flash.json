@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to political language that frames societal issues, policy decisions, or group identities around moral values, ethical obligations, or normative standards of right and wrong. It leverages moral foundations such as justice, fairness, care, compassion, individual or national duty, and virtue to evaluate political realities or prescribe action.",
+  "clarification": "To classify a text as containing moral rhetoric (1), the text must explicitly or strongly implicitly use words or arguments rooted in moral evaluation or ethical principles rather than technical, administrative, or pragmatic calculations. Key indicators include: 1. Ethical concepts: Direct references to 'justice,' 'rights,' 'fairness,' 'respect,' or 'equality.' 2. Moral character/virtue: Words such as 'courage,' 'patriotism,' 'self-discipline,' or 'bribery/corruption.' 3. Moral obligations: Framing policies around duties to protect the 'vulnerable,' 'frail,' 'suffering,' or 'marginalized' populations, or evaluating treatment of groups as 'intolerable' or 'second-class.'",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement explicitly invokes the inherent moral value and worth of every person, emphasizing vulnerable populations and invoking an ethical purpose to human existence."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses high-intensity moral rhetoric of humanitarian compassion, expressing an ethical commitment to providing comfort and aid to suffering and persecuted individuals."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This is a direct, explicit declaration of moral values, using the ethical concept of 'respect' as its central framing."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as moral rhetoric (0) if it outlines standard programmatic, technical, or fiscal policies without any explicit ethical framing. Statements detailing funding targets, infrastructure plans, procedural reviews, regulatory setups, and empirical observations of economic data belong in this negative category. Partisan criticisms or boasts that focus strictly on competence, administrative burdens, or economic growth are also excluded unless they transition into distinct moral/ethical language.",
+  "negative_examples": [
+    {
+      "text": "The Nationals will implement the third stage of AusLink, investing minimum funding of $35 billion.",
+      "explanation": "This text details a concrete infrastructure policy with specific funding metrics, entirely devoid of ethical values or moralizing language."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This represents a purely empirical and analytical reporting of economic growth statistics without any ethical or normative value judgments."
+    },
+    {
+      "text": "Intellectual Property: We will review and update Intellectual Property legislation currently in place to benefit innovation.",
+      "explanation": "The passage outlines a pragmatic and technical legal review process focused on intellectual property, aiming at standard economic utility ('benefit innovation') rather than moral imperatives."
+    }
+  ]
+}

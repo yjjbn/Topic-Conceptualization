@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language that frames political, economic, or social issues in terms of values, duties, obligations, rights, virtues, justice, fairness, respect, dignity, compassion, or standards of 'right' and 'wrong.' It moves beyond standard technical, economic, or policy descriptions and instead appeals to an ethical framework detailing how individuals or institutions ought to behave based on moral criteria.",
+  "clarification": "To classify a text as containing moral rhetoric, look for: (1) Explicit mentions of core values or virtues (e.g., 'respect,' 'courage,' 'patriotism,' 'caring'). (2) Normative appeals to equity, justice, deserts, or human rights (e.g., 'deserve,' 'race equality,' 'family reunion,' 'injustice'). (3) Moral condemnations of bad societal states or actions (e.g., 'not tolerable,' 'unfairly discriminate,' 'corruption'). The presence of these concepts demonstrates an attempt to persuade readers based on moral worth rather than purely pragmatic or economic efficiency.",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "The text explicitly invokes the moral value of 'respect' in a concise value-based statement."
+    },
+    {
+      "text": "Australians deserve a better future",
+      "explanation": "The statement asserts what citizens 'deserve' (a better future), which is a classic moral desert/justice claim."
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This is a deeply philosophical and moral claim asserting the inherent human dignity, worth, and purpose of every individual, especially the vulnerable."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric if it presents policy, statistics, or administrative goals in purely technical, economic, or strategic terms. Even if the policy has an underlying social utility (e.g., improving roads or expanding schools), it does not count as moral rhetoric unless the phrasing relies on value-laden moral concepts or ethical duties. Standard partisan critiques, fiscal summaries, and descriptions of legislation should remain classified as '0.'",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This statement presents standard administrative goals ('efficient' and 'accessible') for public services without invoking any moral principles."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This is a factual statement highlighting economic data and growth projections without any ethical or normative evaluation."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a brief, concrete policy objective ('Provide broadband on all islands') that is purely developmental and lacks moral language."
+    }
+  ]
+}

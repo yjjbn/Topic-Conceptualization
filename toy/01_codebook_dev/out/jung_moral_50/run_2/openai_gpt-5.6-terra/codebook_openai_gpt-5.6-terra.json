@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, actions, or conditions using moral values, duties, rights, or wrongs\u2014for example fairness, equality, dignity, freedom, respect, justice, care, protection of vulnerable people, or condemnation of abuse and corruption.",
+  "clarification": "Code as moral rhetoric when a passage makes an explicit normative appeal about what is fair, deserved, tolerable, respectful, just, free, equal, caring, or protective of human dignity and vulnerability. This includes direct rights claims, condemnation of discrimination or terror, and assertions that a group must be protected or treated fairly. Moral rhetoric can occur alongside a concrete policy proposal.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The statement assigns inherent worth and purpose to every person, explicitly including frail and vulnerable people."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "The demand that social and ethnic qualification gaps 'must be closed' is an equality-based moral obligation."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The passage explicitly says no one should be denied court access and invokes the quality of justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, technical administrative plans, economic claims, performance praise, or statements of preference merely because they concern socially important subjects such as health, poverty, education, or the environment. Terms such as 'better,' 'efficient,' 'successful,' 'accessible,' and 'priority' are not sufficient unless they explicitly convey a moral principle, rights claim, duty, or moral judgment.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "Testing children in literacy and numeracy is a concrete education policy without an explicit moral appeal."
+    },
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "The Food Waste Bill is an environmental regulatory proposal, but the excerpt does not state that waste is morally wrong or invoke a moral duty."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "Economic-growth statistics and forecasts are descriptive rather than moral."
+    }
+  ]
+}

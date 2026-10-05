@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, actions, or social conditions through moral values, duties, rights, justice, dignity, equality, fairness, freedom, care, responsibility, or condemnatory praise/blame.",
+  "clarification": "Code as moral rhetoric when a passage makes an explicit normative claim about what is right, fair, deserved, intolerable, discriminatory, protective, respectful, free, equal, or socially responsible. This includes appeals to human rights, protection of vulnerable people, condemnation of corruption or repression, and praise or blame that rests on moral qualities such as courage, caring, or accountability.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It affirms the inherent worth and purpose of every person, including people who are frail or vulnerable."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the need to remove barriers faced by minority communities."
+    },
+    {
+      "text": "We will support a review of childcare funding with a view to providing more \ufb02exibility in the services available to smaller towns, which are discriminated against under the current model.",
+      "explanation": "It identifies discrimination against smaller towns, directly invoking unfair treatment."
+    }
+  ],
+  "negative_clarification": "Do not code ordinary policy commitments, technical administration, empirical claims, economic forecasts, or statements of desirable outcomes merely because they concern health, jobs, poverty, safety, or public services. Such passages require an explicit moral evaluation or value-based appeal, rather than a practical or instrumental rationale.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical proposal to simplify corporate tax compliance, with no moral principle or evaluation."
+    },
+    {
+      "text": "We will re-open the Western Rail Corridor from Ennis to Claremorris and examine the feasibility of reopening the line from Claremorris to Sligo.",
+      "explanation": "This is a transport-infrastructure proposal without moralized language."
+    },
+    {
+      "text": "1,100 day places are being provided and 800 extra residential care beds are being rolled out.",
+      "explanation": "This reports numbers of care places and beds, rather than making a moral claim."
+    }
+  ]
+}

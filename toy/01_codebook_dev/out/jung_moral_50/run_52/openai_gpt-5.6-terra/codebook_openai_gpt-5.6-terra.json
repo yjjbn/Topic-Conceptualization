@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, policies, or social conditions in terms of moral values, rights, duties, human worth, justice, fairness, equality, freedom, care, or wrongdoing.",
+  "clarification": "Classify as moral rhetoric when the text does more than state a policy, fact, benefit, or preference and instead invokes a normative ethical standard. This includes explicit references to respect, deservingness, rights, equality, freedom, fairness, discrimination, protection of vulnerable people, humanitarian concern, corruption, oppression, courage, or civic obligation. It also includes clear moral condemnation or vindication, such as describing treatment as unjustified, intolerable, second-class, discriminatory, or repressive.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It asserts the inherent worth and purpose of every person, explicitly including frail and vulnerable people."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It invokes race equality and the moral imperative of removing barriers faced by minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It frames access to courts and justice as something no one should be denied and that people deserve."
+    }
+  ],
+  "negative_clarification": "Do not classify routine policy commitments, administrative reforms, empirical claims, economic arguments, service expansion, or positive descriptions as moral rhetoric merely because they concern socially important subjects such as health, poverty, housing, education, safety, or the environment. Terms such as efficient, accessible, adequate, successful, or affordable are insufficient unless they are connected to an explicit moral principle or judgement.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "It promotes sports participation and health but does not articulate a moral value, right, or ethical judgement."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "It details a technical tax-compliance reform and its administrative benefits."
+    },
+    {
+      "text": "We will re-open the Western Rail Corridor from Ennis to Claremorris and examine the feasibility of reopening the line from Claremorris to Sligo.",
+      "explanation": "It proposes reopening railway lines without moral evaluation or value language."
+    }
+  ]
+}

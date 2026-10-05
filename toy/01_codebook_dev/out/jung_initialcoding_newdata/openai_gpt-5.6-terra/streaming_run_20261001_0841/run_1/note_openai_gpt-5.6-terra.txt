@@ -1,0 +1,119 @@
+{
+  "note": "",
+  "batch_id": null,
+  "run": 1,
+  "arguments": {
+    "command": "submit",
+    "model": "openai/gpt-5.6-terra",
+    "mode": "streaming",
+    "provider": null,
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 1,
+    "runs": [
+      1
+    ],
+    "data_path": "..\\02_experiment\\data\\jung_codebookapply_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jungmoral.txt",
+    "test_rows": null,
+    "documents_per_request": 50,
+    "nametag": "jung_initialcoding_newdata",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 2693,
+      "completion_tokens": 1715,
+      "total_tokens": 4408,
+      "cost": 0.027311,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 2690,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.027311,
+        "upstream_inference_prompt_cost": 0.006731,
+        "upstream_inference_completions_cost": 0.02058
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 560,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 2880,
+      "completion_tokens": 1907,
+      "total_tokens": 4787,
+      "cost": 0.0300825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 2877,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0300825,
+        "upstream_inference_prompt_cost": 0.0071985,
+        "upstream_inference_completions_cost": 0.022884
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 670,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 2735,
+      "completion_tokens": 1985,
+      "total_tokens": 4720,
+      "cost": 0.030656,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 2732,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.030656,
+        "upstream_inference_prompt_cost": 0.006836,
+        "upstream_inference_completions_cost": 0.02382
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 763,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 2797,
+      "completion_tokens": 1944,
+      "total_tokens": 4741,
+      "cost": 0.030319,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 2794,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.030319,
+        "upstream_inference_prompt_cost": 0.006991,
+        "upstream_inference_completions_cost": 0.023328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 777,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

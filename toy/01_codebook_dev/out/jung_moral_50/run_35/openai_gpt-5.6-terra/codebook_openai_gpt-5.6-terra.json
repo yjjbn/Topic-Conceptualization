@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, institutions, conduct, or policy in terms of moral values, duties, rights, justice, dignity, equality, freedom, compassion, responsibility, or wrongdoing.",
+  "clarification": "Classify a text as moral rhetoric when it does more than propose or describe a policy and instead invokes a normative ethical principle or moralized judgment. This includes explicit references to respect, rights, fairness, equality, freedom, deserved treatment, protection of vulnerable people, accountability for wrongdoing, compassion, or condemnation of oppression and corruption. It also includes clear claims that a condition is intolerable, discriminatory, justified, or unjust.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The assertion that every person, including those who are frail or vulnerable, has a place and purpose affirms inherent human worth."
+    },
+    {
+      "text": "The qualifications gap between the rich and the poor and between M\u0101ori and non-M\u0101ori must be closed",
+      "explanation": "The statement that a qualifications gap between social and ethnic groups must be closed explicitly condemns inequality."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The call for race equality and breaking down barriers directly invokes equality and anti-discrimination principles."
+    }
+  ],
+  "negative_clarification": "Do not classify routine policy commitments, administrative mechanisms, empirical claims, economic arguments, performance claims, or aspirational descriptions as moral rhetoric merely because they concern beneficial outcomes. Terms such as efficient, affordable, adequate, successful, safe, or sustainable ordinarily indicate policy performance rather than ethical evaluation unless tied to an explicit moral principle. A policy benefiting a disadvantaged group is not sufficient by itself without moralized language or framing.",
+  "negative_examples": [
+    {
+      "text": "Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.",
+      "explanation": "This is a concrete proposal for literacy and numeracy testing, with no ethical claim about rights, fairness, or moral obligation."
+    },
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "The passage details a technical corporation-tax compliance reform rather than evaluating conduct in moral terms."
+    },
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "Encouraging sport and health is a policy objective, but the text does not express a moral value or judgment."
+    }
+  ]
+}

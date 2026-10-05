@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to communication that frames political actions, goals, or problems around core ethical standards, principles of right and wrong, human dignity, justice, fairness, compassion, and duty. It seeks to motivate or justify policy not on purely technical, economic, or logistical terms, but on the grounds of ethical virtue and moral necessity.",
+  "clarification": "To classify a text as containing moral rhetoric, it must go beyond descriptive, empirical, or standard programmatic assertions. It should contain explicit moral vocabulary (e.g., 'respect', 'justice', 'fairness', 'corruption', 'vulnerable', 'freedom') or frame policies as moral imperatives (e.g., fulfilling duties of care to suffering or marginalized populations, protecting human rights, or championing civic virtues like courage and patriotism).",
+  "positive_examples": [
+    {
+      "text": "Values of respect.",
+      "explanation": "The text directly references 'Values of respect,' which explicitly calls upon foundational moral concepts."
+    },
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text affirms the intrinsic value, dignity, and purpose of every single human being, focusing on the frail and vulnerable, which is a classic expression of moral framing."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text appeals to humanitarian values of providing comfort and aid to people suffering from persecution, framing policy around the moral duty to relieve human suffering."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric if it is purely descriptive, technical, procedural, or focused strictly on economic/fiscal matters without a value-laden context. The mere mention of social groups (like children, older people, or farmers) or public services (like schools or hospitals) does not constitute moral rhetoric unless the text explicitly frames their treatment in terms of ethical duties, systemic injustice, or moral desert.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This text is a purely technological and logistical proposal to provide broadband, devoid of moral value statements."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This is a quantitative economic description reporting growth percentages, containing no appeal to moral or ethical standards."
+    },
+    {
+      "text": "Cumbersome bureaucracy is preventing children in remote rural areas from accessing any ECE.",
+      "explanation": "Although it concerns children, this text frames the problem strictly in terms of administrative inefficiency ('cumbersome bureaucracy') rather than ethical failures or injustice."
+    }
+  ]
+}

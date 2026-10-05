@@ -1,0 +1,48 @@
+{
+  "note": "",
+  "batch_id": null,
+  "run": 31,
+  "arguments": {
+    "command": "submit",
+    "model": "qwen/qwen3.8-2.4t-a95b",
+    "mode": "streaming",
+    "provider": null,
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 25,
+    "runs": null,
+    "data_path": "data\\grimmer_codebookdev_100.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_grimmer.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "grimmer_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 53516,
+      "completion_tokens": 5480,
+      "total_tokens": 58996,
+      "cost": 0.046392,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 53440,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.046392,
+        "upstream_inference_prompt_cost": 0.013512,
+        "upstream_inference_completions_cost": 0.03288
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language within political party manifestos or electoral programs that frames issues, values, or policies using explicit ethical concepts, moral duties, virtues, or normative claims of justice, fairness, and inherent human worth. It transcends purely empirical, fiscal, or administrative logic by explicitly appealing to ideas of right and wrong, moral obligation, or societal values.",
+  "clarification": "To be classified as containing moral rhetoric, a text must use evaluative vocabulary associated with ethical systems or values. This includes, but is not limited to: 1. Invocations of fundamental moral values (e.g., respect, justice, dignity, human rights). 2. Claims regarding inherent human worth, especially concerning vulnerable, weak, or suffering populations (e.g., care of the frail, aiding those facing persecution). 3. Explicit accusations of structural unfairness or moral offenses (e.g., 'unfairly discriminate', 'civil repression', 'corruption'). 4. Evaluative praise or condemnation utilizing virtue and vice terms (e.g., 'courage', 'patriotism', 'terror'). Bold policy arguments or emotional partisan complaints do not qualify unless they specifically recruit these moral foundations.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts that every individual possesses inherent place and purpose in the world, which is a core moral declaration regarding human worth and dignity."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "The text appeals to humanitarian duties of care, explicitly calling for 'comfort and aid' to those experiencing 'displacement and persecution', framing international assistance as a moral obligation."
+    },
+    {
+      "text": "We will support a review of childcare funding with a view to providing more \ufb02exibility in the services available to smaller towns, which are discriminated against under the current model.",
+      "explanation": "By explicitly calling out a policy model as one where smaller towns are 'discriminated against', the text relies on a moral and ethical critique of systemic unfairness."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric if: 1. It only outlines standard public administration, transport, or infrastructure plans without normative framing (e.g., building roads, scheduling buses). 2. It contains positive political boasts or generic policy ambitions (e.g., 'improving education', 'creating jobs') without integrating ethical duties. 3. It critiques budget cuts, economic performance, or regulations using aggressive or partisan language (e.g., 'slashed', 'excessive', 'cumbersome') that stays strictly within fiscal, procedural, or pragmatic borders. 4. It deals with bureaucratic, procedural, or regulatory standards of 'fairness' and 'transparency' in an administrative audit sense.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "Although promoting health and sports, this is a practical and positive public policy proposal lacking any moralizing arguments or ethical assertions."
+    },
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "Focuses strictly on the logistics and operational efficiency of a school bus network, which is entirely administrative."
+    },
+    {
+      "text": "- We have one court system",
+      "explanation": "A purely descriptive, factual claim about the court structure that has no rhetorical or normative element."
+    }
+  ]
+}

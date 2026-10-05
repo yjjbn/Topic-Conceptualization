@@ -1,0 +1,25 @@
+{
+  "definition": "Moral rhetoric refers to the use of value-laden, normative language that appeals to virtues, ethical principles, human dignity, rights, duties, fairness, and justice. It goes beyond technical, logistical, or purely pragmatic concerns to argue what is intrinsically right or wrong, or what individuals/communities deserve or are obligated to do.",
+  "clarification": "To classify a text as containing moral rhetoric (1), the passage must employ ethical buzzwords (e.g., 'respect', 'fairness', 'justice', 'corruption', 'equality', 'freedom') or frame arguments around fundamental moral imperatives such as protecting the vulnerable, honoring human dignity, celebrating civic/moral virtues (e.g., 'courage', 'patriotism'), or validating normative feelings (e.g., 'justified' anger). The presence of value-laden language that casts a policy in terms of ethical duty, rights, or justice is key.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text makes a profound ethical assertion about the intrinsic worth, dignity, and purpose of every human being, specifically referencing 'frail or vulnerable' individuals, which is a classic moral claim."
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "By validating emotion as 'justified,' this text makes a normative and ethical evaluation of a grievance, moving beyond descriptive facts to declare a moral judgment."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric (0) if it is purely technical, administrative, economic, or logistical, even if it covers topics like healthcare, education, or welfare. Additionally, standard political promises, factual records, and economic indicators lack the explicit normative or virtue-based framing required to count as moral rhetoric.",
+  "negative_examples": [
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This is a purely descriptive and empirical economic claim about productivity metrics, lacking any moralizing language or value-based framing."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a straightforward logistical and technical policy proposal to provide infrastructure (broadband), completely devoid of normative or ethical appeals."
+    }
+  ]
+}

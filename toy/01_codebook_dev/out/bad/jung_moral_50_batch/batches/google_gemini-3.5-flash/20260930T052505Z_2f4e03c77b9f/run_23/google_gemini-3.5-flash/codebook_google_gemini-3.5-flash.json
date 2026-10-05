@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is political communication that explicitly evaluates policies, groups, individuals, or states on the basis of ethical standards, fundamental human rights, fairness, moral duties, or personal and communal virtues (such as compassion, dignity, respect, and patriotism), rather than evaluating them solely through utilitarian, administrative, technical, or economic criteria.",
+  "clarification": "To classify a text as containing moral rhetoric (label 1), the excerpt must contain moral evaluative language. This includes: (a) Explicit mention of virtues and values (e.g., 'respect', 'courage', 'patriotism', 'self-discipline'); (b) Concepts of social justice, human rights, fairness, and discrimination (e.g., 'human rights', 'equality', 'unfairly discriminate'); (c) Normative evaluations of what is morally acceptable or tolerable ('not tolerable', 'deserve', 'justified'); (d) Altruistic commitments to defend or aid the vulnerable, the suffering, or victims of persecution/disaster.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Appeals directly to the fundamental and inherent moral worth, dignity, and purpose of every human being, regardless of their physical or social vulnerability."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "Uses heavy humanitarian/ethical vocabulary such as 'comfort', 'aid', 'suffering', and 'persecution' to justify policy, which represents a clear moral obligation of care."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "Directly explicitly refers to 'values of respect', referencing fundamental moral principles."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as containing moral rhetoric (label 0) if the policy proposal or evaluation is framed in purely technical, quantitative, administrative, or utilitarian terms (such as efficiency, cost-benefit, feasibility, economic growth, or organizational restructure) even if the ultimate policy area (like poverty or health) has ethical implications. The rhetoric itself must contain moral value markers, rather than just standard political self-promotion, neutral descriptions of past policies, or simple program titles.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a standard transportation policy proposal framed entirely in administrative terms ('efficient and accessible') rather than moral concepts."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This is a highly detailed, technical and administrative fiscal proposal detailing corporation tax feasibility with no moral evaluative language."
+    },
+    {
+      "text": "Measurement of water quality around New Zealand is inconsistent.",
+      "explanation": "This is a purely factual, empirical statement regarding administrative inconsistency in testing water quality, lacking any moral, ethical, or value-laden rhetoric."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, conduct, institutions, or outcomes through moral principles, duties, rights, virtues, or claims of justice and injustice.",
+  "clarification": "Classify as moral rhetoric when a text invokes values such as respect, freedom, equality, fairness, human rights, deservingness, care for vulnerable people, compassion, dignity, responsibility, or virtues such as courage and patriotism. It also includes explicit normative judgments that an outcome is intolerable, justified, discriminatory, or wrongful.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The assertion that every person, including those who are frail or vulnerable, has a place and purpose affirms inherent human worth."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "The proposal explicitly invokes race equality and the removal of barriers facing minority ethnic communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "The passage says no one should be denied court access and that Americans deserve quality justice, directly appealing to rights and deservingness."
+    }
+  ],
+  "negative_clarification": "Do not classify ordinary policy commitments, technical administration, factual claims, economic arguments, or generic praise as moral rhetoric merely because they concern socially important topics. References to health, poverty, the environment, employment, safety, or public services are negative unless they explicitly frame the issue in moral terms such as rights, fairness, duty, equality, or moral condemnation.",
+  "negative_examples": [
+    {
+      "text": "We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,",
+      "explanation": "It proposes a Food Waste Bill and a regulatory requirement, but gives no explicit moral justification for the policy."
+    },
+    {
+      "text": "By abolishing the mining tax, we will re-energise the entire industry and this will lead to increased mining investment with more mining projects coming on stream",
+      "explanation": "It argues for abolishing a mining tax in terms of investment and industry activity, not moral values."
+    },
+    {
+      "text": "Public hospitals will receive additional funding to improve the services they provide for Australians aged over 75.",
+      "explanation": "It proposes hospital funding for older people, but does not invoke rights, dignity, fairness, or another moral principle."
+    }
+  ]
+}

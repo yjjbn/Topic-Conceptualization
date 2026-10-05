@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is defined as language that frames political actions, actors, or objectives around core ethical values, obligations, virtues, and absolute principles of right and wrong. This includes explicit appeals to justice, fairness, equality, liberty, respect, compassion, and human rights, as well as the condemnation of moral transgressions (such as corruption, repression, and cruelty).",
+  "clarification": "To qualify as moral rhetoric, the text must go beyond pragmatic, technical, financial, or purely procedural justifications for a policy. It must explicitly frame an issue in terms of ethical duties, values, or rights. Key indicators include: (1) Value terms like 'respect', 'dignity', 'freedom', 'equality', 'justice'; (2) Virtue terms like 'courage', 'patriotism', 'honesty', 'caring', 'self-discipline'; (3) Moral deserts, i.e., what people 'deserve' or have a 'right' to; (4) Humanitarian appeals to save people from 'suffering', 'persecution', or 'repression'; (5) Condemnations of ethical failures like 'corruption', 'bribery', or 'systemic discrimination'.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text utilizes deeply ethical language, affirming the inherent worth, dignity, 'place and purpose' of 'every person, however frail or vulnerable', which represents a core moral claim about human value."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text explicitly invokes 'respect' as an essential foundational value, representing a direct appeal to moral values."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text frames policy in humanitarian, moral terms by prioritizing 'comfort and aid to suffering people' who are escaping 'persecution' and 'violence'."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as moral rhetoric if it describes standard public policy, welfare distributions, economic metrics, or administrative actions using neutral, technical, or pragmatic reasoning. Even if a policy (e.g., healthcare, education, or environmental protection) has an underlying ethical motive, it should be coded as '0' unless the text utilizes explicit moralizing language, value-laden adjectives, or ethical imperatives. Critiques of political opponents or bureaucracy that focus purely on inefficiency, cost, or lack of performance also do not count as moral rhetoric.",
+  "negative_examples": [
+    {
+      "text": "and free prescriptions and eye tests for the over-60s, without means testing.",
+      "explanation": "Although healthcare policy has moral implications, this text is a purely pragmatic description of providing free prescriptions and eye tests without means testing, using administrative rather than moral language."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This text outlines a simple infrastructure policy ('provide broadband on all islands') and lacks any moral, ethical, or value-based framing."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "This text represents a dry economic forecast and statistical analysis of GDP growth rates, which is purely empirical and devoid of moral rhetoric."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "definition": "\"Emotive rhetoric\" is the deliberate use of language specifically designed to evoke strong emotional responses (such as anger, fear, sympathy, distress, or moral outrage) in the audience. It departs from objective, factual, or logical exposition to achieve persuasive power through feeling.",
+  "clarification": "To identify emotive rhetoric, look for: (1) highly charged adjectives and adverbs (e.g., 'miserable', 'utterly unacceptable', 'heinous', 'devastating', 'horrific'); (2) vivid, dramatic, or disturbing imagery of human suffering, chaos, or danger; (3) strong sarcasm, mockery, and highly personalized partisan attacks; and (4) alarmist warnings of imminent catastrophe or moral failing.",
+  "positive_examples": [
+    {
+      "text": "My hon Friend is absolutely right The situation for stroke patients for example is utterly depressing Even if they are able to secure early and intensive rehabilitation sometimes treatment cannot be followed up to maximise their chances of recovery owing to the lack of physiotherapists in post We must have more physiotherapists The Government said that we needed more physiotherapists and that there would be 60 per cent more People went into the profession as a result A physiotherapist told me     I knew what was intended so I went into the course Now there are no jobs     That is a deeply depressing fact it is a cruel irony played on people who took up such courses",
+      "explanation": "The speaker repeatedly describes the situation as 'utterly depressing' and a 'deeply depressing fact' and attacks the policy as a 'cruel irony played on people', directly appealing to feelings of pity and outrage."
+    },
+    {
+      "text": "Where is the leader of the Liberal Democrats Where is the leader of the Conservative party I see that the leader of the SNP has dutifully travelled down to do the Tories work for them as he so often does Plaid Cymru and the SNP are the Tories little helpers In 1979 the SNP voted to destroy a Labour Government and usher in 18 years of miserable Tory rule In the European elections voting Plaid Cymru allowed the Tories to top the poll in Wales albeit on a pitiful vote of just over 6 per cent of the electorate Voting SNP will allow the Tories to get in at Westminster",
+      "explanation": "The speaker uses highly charged, partisan mockery ('miserable Tory rule', 'Tories' little helpers') aimed at provoking anger and tribal resentment rather than presenting a policy-based argument."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as emotive rhetoric if it merely expresses a simple, standard policy disagreement, lists negative statistics, or describes difficult situations using clinical, professional, or standard administrative vocabulary. The presence of standard political jargon (e.g., 'I disagree', 'it is disappointing', 'highly critical') without emotionally loaded modifiers or vivid dramatic framing does not suffice.",
+  "negative_examples": [
+    {
+      "text": "What representations she has received from interested groups on the Department s consultation paper on rhizomania",
+      "explanation": "This text is a purely procedural, matter-of-fact question regarding a consultation paper on plant disease, completely devoid of any emotional content."
+    },
+    {
+      "text": "It is Government policy to negotiate prisoner transfer agreements particularly with those countries with large numbers of nationals in our prisons As of 30 June 2009  the three countries with the largest numbers were Jamaica Nigeria and the Republic of Ireland We have prisoner transfer agreements with the Republic of Ireland and Nigeria A prisoner transfer agreement was signed with Jamaica in June 2007 but has yet to be implemented as the Jamaican Government need to introduce enabling legislation",
+      "explanation": "This speech conveys factual information about prisoner transfer agreements in a neutral, objective, and administrative tone."
+    }
+  ]
+}

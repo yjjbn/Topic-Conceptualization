@@ -1,0 +1,33 @@
+{
+  "definition": "'Moral rhetoric' refers to political communication that frames issues, actors, policies, or outcomes in terms of ethical values, normative rights, duties, justice, compassion, dignity, or vice and virtue, rather than purely pragmatic, economic, or technical considerations.",
+  "clarification": "To classify a text as containing moral rhetoric, it must go beyond simply proposing a policy or criticizing an opponent on technical grounds. It must use language that invokes moral principles (e.g., 'respect', 'fairness', 'justice', 'integrity'), asserts fundamental human rights or dignity, appeals to ethical duties of care (e.g., protecting the 'vulnerable', 'suffering'), or uses strong moralized labels (e.g., 'repression', 'courage', 'corruption').",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This statement appeals directly to the inherent human dignity and moral value of every individual, particularly those who are vulnerable."
+    },
+    {
+      "text": "but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.",
+      "explanation": "This text uses strong humanitarian framing ('comfort and aid', 'suffering', 'persecution') to describe an ethical obligation to help."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "The text explicitly invokes 'values of respect' as a normative foundation."
+    }
+  ],
+  "negative_clarification": "Do not classify a text as 'moral rhetoric' if it is a standard policy proposal, administrative detail, factual reporting of statistics, or economic/technical evaluation, even if the policy itself is in a sensitive area like healthcare or social welfare, unless the text explicitly frames it in moral or ethical terms.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This text presents a purely technical and logistical goal for transport policy without any moral framing."
+    },
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing – on a revenue neutral basis – a Single Business Tax for micro enterprises (with a turnover of less than €75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This is a detailed, technical fiscal proposal for micro-enterprises with no normative or moralized justification."
+    },
+    {
+      "text": "1,100 day places are being provided and 800 extra residential care beds are being rolled out.",
+      "explanation": "This statement consists entirely of factual, quantitative reporting regarding public service capacities."
+    }
+  ]
+}

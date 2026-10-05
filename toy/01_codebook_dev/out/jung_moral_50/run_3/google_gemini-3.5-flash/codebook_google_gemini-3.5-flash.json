@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric refers to language that invokes values, ethics, duties, rights, principles of justice, fairness, or human dignity to frame political arguments. It judges situations, systems, or actors based on moral rightness or wrongness rather than purely pragmatic, economic, or administrative considerations.",
+  "clarification": "To be classified as moral rhetoric, the text must contain words or phrases with distinct normative ethical weight. Examples include words like 'justice,' 'respect,' 'dignity,' 'fairness,' 'courage,' 'patriotism,' 'rights,' 'repression,' or strong ethical condemnations (e.g., 'not tolerable,' 'discriminated against,' 'deserved justice'). Text describing standard policy initiatives, even those targeting socially sensitive areas like health, environment, or welfare, should not be coded as moral rhetoric unless it is framed via these explicit moral or ethical concepts.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text utilizes highly explicit moral and philosophical framing about human dignity and intrinsic worth ('every person... has a place and a purpose in this world'), rather than standard policy goals."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "Directly invokes 'respect' as an explicit core value, which is a key ethical concept."
+    },
+    {
+      "text": "We will support a review of childcare funding with a view to providing more \ufb02exibility in the services available to smaller towns, which are discriminated against under the current model.",
+      "explanation": "Uses the moralized term 'discriminated against' to frame standard funding allocations as an ethical injustice or unfairness."
+    }
+  ],
+  "negative_clarification": "Exclude texts that are purely descriptive, pragmatic, or technocratic. Standard mentions of budgets, infrastructure projects, scientific research, and policy execution (even for noble goals like poverty reduction or environmental preservation) do not count as moral rhetoric unless they utilize explicit ethical principles or values to justify their ends.",
+  "negative_examples": [
+    {
+      "text": "A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing \u2013 on a revenue neutral basis \u2013 a Single Business Tax for micro enterprises (with a turnover of less than \u20ac75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).",
+      "explanation": "This is a purely technical and administrative explanation of a tax reform proposal without any moral framing."
+    },
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "A brief, purely descriptive policy objective for infrastructure development with no value-laden words."
+    },
+    {
+      "text": "Employment of New Zealanders wishing to work is our first priority.",
+      "explanation": "While it sets a major priority, it is framed as a pragmatic national/economic interest rather than a moral or ethical duty."
+    }
+  ]
+}

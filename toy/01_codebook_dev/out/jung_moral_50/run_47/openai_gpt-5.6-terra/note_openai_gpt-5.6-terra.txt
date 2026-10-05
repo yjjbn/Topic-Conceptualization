@@ -1,0 +1,1177 @@
+Personal note:
+
+
+Original command-line arguments:
+[
+  ".\\classify_create_codebook.py",
+  "--data-path",
+  "./data/jung_codebookdev_200.csv",
+  "--prompt-path",
+  "./prompts/prompt_explain_codebookLLM_jungmoral.txt",
+  "--nametag",
+  "jung_moral_50",
+  "--model",
+  "openai/gpt-5.6-terra",
+  "--session-id",
+  "jung50gpt",
+  "--run",
+  "47"
+]
+
+Usage details:
+Generation ID: gen-1790745974-2PCzv1CTZhjDgSXC5zqp
+Cost (OpenRouter credits): 0.0673008
+Input tokens: 11397
+Output tokens: 5418
+API key (masked): ...7547
+
+
+Full request body sent to API:
+{
+  "model": "openai/gpt-5.6-terra",
+  "stream": false,
+  "session_id": "jung50gpt",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You will receive a set of excerpts from political party manifestos and electoral programmes.\n\nClassify each text according to whether it contains \"moral rhetoric.\" For each classification, provide a brief rationale for your decision.\n\nUse only one of these labels:\n\"1\": The text contains \"moral rhetoric\"\n\"0\": The text does not contain \"moral rhetoric\"\n\nEach classification should contain:\n* The label, 1 or 0\n* A brief explanation of your decision\n\nThe documents will be provided as a JSON array of objects, each containing document_id and text:\n[\n  {\"document_id\": \"doc_001\", \"text\": \"...\"},\n  {\"document_id\": \"doc_002\", \"text\": \"...\"},\n  ...\n]\n\nAfter you have classified all the texts, write a codebook that documents how you conceptualized \"moral rhetoric\" when making your classifications. The purpose of the codebook is to communicate your concept of \"moral rhetoric\" to an external coder, such that they could independently identify the same concept in this or a new set of documents in the same way that you would.\n\nYour codebook should contain:\n\n1. DEFINITION: Your definition of \"moral rhetoric.\"\n2. CLARIFICATION: Additional explanation, such as inclusion criteria, that helps clarify when to classify a text as \"moral rhetoric.\"\n3. POSITIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your clarification, the document_id's of up to 3 example texts from the original dataset that illustrate distinctive cases of \"moral rhetoric.\"\n4. POSITIVE EXAMPLE EXPLANATION: For each positive example, an explanation of why the positive example counts as \"moral rhetoric.\"\n5. NEGATIVE CLARIFICATION: Additional explanation, such as exclusion criteria or boundary rules, that helps clarify when NOT to classify a text as \"moral rhetoric.\"\n6. NEGATIVE EXAMPLE (at least 1, no more than 3): To help demonstrate your negative clarification, the document_id's of up to 3 example texts from the original dataset that illustrate distinctive negative cases of \"moral rhetoric.\"\n7. NEGATIVE EXAMPLE EXPLANATION: For each negative example, an explanation of why the negative example does not count as \"moral rhetoric.\"\n\nReturn your classifications with explanations and codebook in the JSON format provided.\nMake sure you return a 1 or 0 classification for every document_id provided.\nCopy each document_id exactly from the input. Never generate or change document_ids.\n\n\nThere are 200 documents in this request. Return exactly 200 classifications, one for each input document. Copy each document_id exactly; do not omit, duplicate, or invent IDs. "
+    },
+    {
+      "role": "user",
+      "content": "[{\"document_id\": \"52467\", \"text\": \"We will continue to develop Plaid Cymru\\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.\"}, {\"document_id\": \"6755\", \"text\": \"Values of respect.\"}, {\"document_id\": \"40169\", \"text\": \"\\u2022 Waiting lists are not tolerable.\"}, {\"document_id\": \"24412\", \"text\": \"to ensure an efficient and accessible school bus system for communities across the country.\"}, {\"document_id\": \"5872\", \"text\": \"work with stakeholders to ensure ticket prices at sporting events do not unfairly discriminate against people from low socio economic backgrounds.\"}, {\"document_id\": \"50782\", \"text\": \"Much of the UK\\u2019s language, culture and way of life has been enriched by successive new arrivals over thousands of years.\"}, {\"document_id\": \"13949\", \"text\": \"The international evidence is clear:\"}, {\"document_id\": \"42378\", \"text\": \"and free prescriptions and eye tests for the over-60s, without means testing.\"}, {\"document_id\": \"3557\", \"text\": \"In government, The Nationals will place any money left in this program in the hands of school boards and principals who are best placed to know how and where the priorities for their schools lie.\"}, {\"document_id\": \"25686\", \"text\": \"Revive the National Adult Learning Council and local co-ordinating bodies so that diverse elements of lifelong learning can be linked into one coherent system through which learners can progress.\"}, {\"document_id\": \"35144\", \"text\": \"And as I\\u2019ve mentioned, as a result of our initiative, the Three Strikes legislation was passed.\"}, {\"document_id\": \"7608\", \"text\": \"and stop unions looking to restrict their freedom to choose how they want to work.\"}, {\"document_id\": \"61223\", \"text\": \"Every person, however frail or vulnerable, has a place and a purpose in this world.\"}, {\"document_id\": \"20605\", \"text\": \"Ensure that all children will be tested in literacy and numeracy at two stages during their primary school education.\"}, {\"document_id\": \"29536\", \"text\": \"- We have one court system\"}, {\"document_id\": \"7577\", \"text\": \"Many new small businesses are started by women.\"}, {\"document_id\": \"46125\", \"text\": \"Our economy will be thriving, delivering balanced growth with jobs that last in every nation and region.\"}, {\"document_id\": \"5948\", \"text\": \"courts and tribunals that are independent of the government of the day.\"}, {\"document_id\": \"58998\", \"text\": \"While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.\"}, {\"document_id\": \"24568\", \"text\": \"Prioritise the development of high-standard affordable homes by amending and expanding the use of Special Development Zones and / or a new permit scheme.\"}, {\"document_id\": \"39259\", \"text\": \"and contribute new technology.\"}, {\"document_id\": \"41579\", \"text\": \"/ and fast, frequent inner-city services.\"}, {\"document_id\": \"33523\", \"text\": \"Introduce a competitive new system for how permits are processed for oil and gas exploration.\"}, {\"document_id\": \"26889\", \"text\": \"Reduce by 50 per cent the rates bills of village shops, pubs and/or garages where they are the last one, two or three remaining in their communities.\"}, {\"document_id\": \"36614\", \"text\": \"\\u00b7 further support for back country reafforestation.\"}, {\"document_id\": \"37164\", \"text\": \"We will change the Proceeds of Crime legislation to enable the police to smash organised criminal gangs.\"}, {\"document_id\": \"25317\", \"text\": \"Although some schools provide such education, it is essential that all children regardless of the school they attend have access to a proper IT education so as to equip them with the knowledge and practical experience to participate fully in society.\"}, {\"document_id\": \"12796\", \"text\": \"\\u00bb  The Government have based their  fiscal plans on 1.75% growth in the  economy which cannot and will  not be achieved under their plans\"}, {\"document_id\": \"49190\", \"text\": \"We want waste designed out and fixing things \\u2013 making them last \\u2013 designed in.\"}, {\"document_id\": \"42955\", \"text\": \"Keep the current excise duty scheme that exempts from duty cider and perry made by small domestic producers\"}, {\"document_id\": \"3861\", \"text\": \"Structural adjustment for river communities\"}, {\"document_id\": \"52155\", \"text\": \"particularly those intended for civil repression,\"}, {\"document_id\": \"38427\", \"text\": \"\\u2022 provide additional resourcing for child and youth mental health services.\"}, {\"document_id\": \"57253\", \"text\": \"And we will continue to support America\\u2019s groundbreaking biomedical researchers in their lifesaving work.\"}, {\"document_id\": \"37084\", \"text\": \"In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.\"}, {\"document_id\": \"22588\", \"text\": \"so as to avoid the cost escalation associated with legal actions being driven into higher courts by inflation.\"}, {\"document_id\": \"52325\", \"text\": \"We will introduce a Food Waste Bill, requiring large food retailers and food manufacturers to take steps to reduce food waste,\"}, {\"document_id\": \"45084\", \"text\": \"This is improving education for our children.\"}, {\"document_id\": \"20594\", \"text\": \"Funding the development of a comprehensive range of materials and resources to support teaching through Irish.\"}, {\"document_id\": \"25048\", \"text\": \"Provide increased capital investment in visitor attractions and visitor activity facilities.\"}, {\"document_id\": \"15158\", \"text\": \"Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.\"}, {\"document_id\": \"38294\", \"text\": \"Employment of New Zealanders wishing to work is our first priority.\"}, {\"document_id\": \"34060\", \"text\": \"Develop individual NZ Inc country strategies to grow our exports with key markets.\"}, {\"document_id\": \"28316\", \"text\": \"playing a constructive role in world events focussed on human rights concerns.\"}, {\"document_id\": \"22820\", \"text\": \"(E.g. N52/N62 from Dundalk to Limerick, via the Midlands as a strategic road corridor)\"}, {\"document_id\": \"41140\", \"text\": \"ACT aims to replace violence and poverty amongst Maori with caring and security through education, enterprise and self-discipline.\"}, {\"document_id\": \"29054\", \"text\": \"Te Tiriti states the  conditions under which  iwi/hap\\u016b  and  the  Crown agreed to  co-operate in a unified  nation.\"}, {\"document_id\": \"20059\", \"text\": \"Introduce new incentives for the provision of Affordable Housing.\"}, {\"document_id\": \"41040\", \"text\": \"and ensure adequate support for people with special needs.\"}, {\"document_id\": \"19693\", \"text\": \"Work with the Regional Tourism Development Boards in conjunction with Local Authorities and the Tourism Industry to develop comprehensive, interactive local area tourism web sites carrying details of all possibilities in an area for tourists and with a booking facility.\"}, {\"document_id\": \"5850\", \"text\": \"establish comprehensive and transparent reporting requirements.\"}, {\"document_id\": \"46317\", \"text\": \"We will:  Use central government public procurement policy as a tool of local growth and community development, for example by purchasing from diverse sources and using local labour, goods and services,\"}, {\"document_id\": \"41717\", \"text\": \"The qualifications gap between the rich and the poor and between M\\u0101ori and non-M\\u0101ori must be closed\"}, {\"document_id\": \"13633\", \"text\": \"Support Tourism Ireland in coordinating \\u2018The Gathering 2012\\u2019 as a major  initiative to encourage people of irish heritage from all over the world to visit ireland in 2012, with a range of special programmes on offer.\"}, {\"document_id\": \"37998\", \"text\": \"New Zealand First has a plan that sets targets towards providing a sound economic base by the year 2020.\"}, {\"document_id\": \"33353\", \"text\": \"Measurement of water quality around New Zealand is inconsistent.\"}, {\"document_id\": \"62177\", \"text\": \"Their anger is justified.\"}, {\"document_id\": \"37533\", \"text\": \"and its highly successful KiwiReach home mortgage deposit subsidy scheme will be extended so that more New Zealanders benefit.\"}, {\"document_id\": \"46949\", \"text\": \"Support community services and volunteers working to combat loneliness, particularly in later life.\"}, {\"document_id\": \"51629\", \"text\": \"and assist Scotland\\u2019s aquaculture sector to become a world leader.\"}, {\"document_id\": \"11352\", \"text\": \"Put greater priority on family reunification, especially the reunion of children with their parents.\"}, {\"document_id\": \"15434\", \"text\": \"That means renegotiating the EU-IMF deal to include a jobs strategy,\"}, {\"document_id\": \"60582\", \"text\": \"They will soon become the scientists and researchers who make great discoveries, the engineers and mathematicians who build our communities, the doctors and nurses who heal and comfort the sick, the teachers who will educate the next generation, the leaders who transform government, the poets, artists, and writers who entertain and inspire.\"}, {\"document_id\": \"26592\", \"text\": \"Why are the poor still likely to be children of the poor, / caught in the poverty trap set by poor education, low-skilled jobs and unemployment?\"}, {\"document_id\": \"26332\", \"text\": \"Promote supervised after-school activities in schools and a wide range of positive afterschool options for children.\"}, {\"document_id\": \"16362\", \"text\": \"The recommendations of the  Forum will be drawn up into a White Paper for consideration and implementation by the Government to ensure that our education system can provide a sufficiently diverse number of schools which cater for  all religions and none.\"}, {\"document_id\": \"57031\", \"text\": \"As our allies in spirit, they ended the Soviet terror that had consumed so many millions more.\"}, {\"document_id\": \"38545\", \"text\": \"The focus will be on providing a stiffer test of what is in New Zealand\\u2019s best interests.\"}, {\"document_id\": \"49941\", \"text\": \"Green MP Caroline Lucas has voted against the bedroom tax at every opportunity.\"}, {\"document_id\": \"34264\", \"text\": \"Cumbersome bureaucracy is preventing children in remote rural areas from accessing any ECE.\"}, {\"document_id\": \"59800\", \"text\": \"As part of a nationwide review of critical infrastructure initiated by President Bush, due to be completed by December 2004, the Department of Homeland Security has already identified the highest-risk chemical sites and partnered with industry to enhance protections at those sites.\"}, {\"document_id\": \"40957\", \"text\": \"We\\u2019re putting a strong emphasis on early intervention and health promotion.\"}, {\"document_id\": \"12176\", \"text\": \"For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.\"}, {\"document_id\": \"59852\", \"text\": \"They are paving the way for societies that are free.\"}, {\"document_id\": \"1231\", \"text\": \"The Nationals will implement the third stage of AusLink, investing minimum funding of $35 billion.\"}, {\"document_id\": \"37898\", \"text\": \"There are as many risks to the health and well being of New Zealanders in ignoring this issue as there are in proceeding hastily.\"}, {\"document_id\": \"20258\", \"text\": \"Provide broadband on all islands.\"}, {\"document_id\": \"18940\", \"text\": \"and expand its capacity to deliver a range of medical facilities on UN mandated missions.\"}, {\"document_id\": \"1676\", \"text\": \"By abolishing the mining tax, we will re-energise the entire industry and this will lead to increased mining investment with more mining projects coming on stream\"}, {\"document_id\": \"24434\", \"text\": \"Speeding up delivery of the key recommendations in the McIver Report, to support and enhance the Post Leaving Certificate sector.\"}, {\"document_id\": \"57394\", \"text\": \"whose plans would gut investments in federally financed labs and universities that build new American industries\"}, {\"document_id\": \"20367\", \"text\": \"The Office of Tobacco Control will be mandated to carry out and publish a comprehensive review of anti-smoking programmes targeted at young people by all Departments and Agencies.\"}, {\"document_id\": \"23455\", \"text\": \"Insurance \\u2013 five years ago rising insurance costs were posing an enormous burden for households and a hidden tax on enterprise.\"}, {\"document_id\": \"55839\", \"text\": \"and imposing a cap limiting spending to the historical average percentage of GDP so that future Congresses cannot balance the budget by raising taxes.\"}, {\"document_id\": \"30815\", \"text\": \"We will make it easier for schools to employ people with specialist skills who may not be a registered teacher but can undergo basic teacher-training (which may be on the job).\"}, {\"document_id\": \"50786\", \"text\": \"But, increasingly, people are being forced to move because Climate change affects their environment so that it can no longer support them;\"}, {\"document_id\": \"36736\", \"text\": \"or our groundbraking free trade agreement with China,\"}, {\"document_id\": \"51003\", \"text\": \"We have all the ingredients to make a success of our economy and our society,\"}, {\"document_id\": \"42765\", \"text\": \"Allow  British  businesses  to  choose  to  employ  British  citizens first.\"}, {\"document_id\": \"23257\", \"text\": \"new bus priority measures and new park\"}, {\"document_id\": \"50848\", \"text\": \"and do not encourage corruption, enforcing the UN Convention against Corruption and the OECD Anti-Bribery Convention, and reporting fully upon their activities.\"}, {\"document_id\": \"25792\", \"text\": \"Provide a statutory watchdog for the National Car Test to improve accountability and standards.\"}, {\"document_id\": \"58860\", \"text\": \"We affirm their right to seek the full extension of the Constitution, with all the political rights and responsibilities it entails.     We recognize the valuable contributions made by the people of the United States Virgin Islands to the common welfare of the nation, including national defense, and their contributions to the federal treasury in the form of federal excise taxes paid on products produced in the territory.\"}, {\"document_id\": \"15896\", \"text\": \"Labour will continue to invest in the water services  programme as part of the capital budget, focusing on minimising treated water lost through leakage.\"}, {\"document_id\": \"32892\", \"text\": \"\\u2212  Expose these companies to private-sector discipline and greater scrutiny.\"}, {\"document_id\": \"15151\", \"text\": \"A Single Business Tax for Micro Enterprises: Fine Gael will direct the Revenue Commissioners to examine the feasibility of introducing \\u2013 on a revenue neutral basis \\u2013 a Single Business Tax for micro enterprises (with a turnover of less than \\u20ac75,000 per annum) to replace all the existing taxes on sole traders and small businesses (i.e. income tax, corporation tax, capital gains tax, VAT and PRSI).\"}, {\"document_id\": \"55208\", \"text\": \"We are proud of our record in strengthening the representation of women,\"}, {\"document_id\": \"17686\", \"text\": \"Smaller businesses get second class treatment.\"}, {\"document_id\": \"46749\", \"text\": \"Strengthen school leadership and governance.\"}, {\"document_id\": \"19178\", \"text\": \"The period to 2013 represents a major window of opportunity in resource terms to tackle, in particular, our infrastructure deficits before other expenditure pressures begin to emerge.\"}, {\"document_id\": \"288\", \"text\": \"So that Australia can respond to threats to the marine environment  from pollution from ships, increased tourism, agricultural chemicals,  and illegal \\ufb01shing, The Nationals will ensure that regulatory, research  and voluntary organisations are adequately funded and co-ordinated.\"}, {\"document_id\": \"16139\", \"text\": \"All of its  recommendations will be published.\"}, {\"document_id\": \"36512\", \"text\": \"\\u00b7 Our new target is to lift those numbers in training to ten per cent of the work force.\"}, {\"document_id\": \"31103\", \"text\": \"\\u2022  Tackling the  youth road toll:  \\u2212  Zero blood alcohol  for  under 20s.\"}, {\"document_id\": \"55997\", \"text\": \"Instead, we will let the free market and the public\\u2019s preferences determine the industry outcomes.\"}, {\"document_id\": \"52454\", \"text\": \"creating more jobs across the country.\"}, {\"document_id\": \"32134\", \"text\": \"This is a voluntary process.\"}, {\"document_id\": \"24569\", \"text\": \"Create a National Water and Sewerage Services Office in the Environmental Protection Agency to ensure the provision of an adequate and efficient network of water and sewerage infrastructure, and oversee the implementation by Local Authorities of Water Services Investment Programmes.\"}, {\"document_id\": \"31962\", \"text\": \"Recognise the relevance and contribution of Maori culture, language, and identity as an enabler of Maori success and a hallmark of New Zealand\\u2019s unique culture and heritage.\"}, {\"document_id\": \"51893\", \"text\": \"This will include a focus on ensuring sufficient Welsh speaking healthcare professionals and social workers to meet the needs of a bilingual society.\"}, {\"document_id\": \"13956\", \"text\": \"We will establish a new partial loan guarantee scheme which will give small businesses the credit they desperately need.\"}, {\"document_id\": \"34693\", \"text\": \"Set up a comprehensive review on 111 services in the new telecommunications environment.\"}, {\"document_id\": \"12606\", \"text\": \"We will create new jobs in Canada's oil and gas sector by refining the product we already produce, rather than shipping it out raw for refining in other countries.\"}, {\"document_id\": \"54012\", \"text\": \"Strategic vision for health provision.\"}, {\"document_id\": \"60928\", \"text\": \"Our President and our Party strongly oppose the Kyoto Protocol and similar mandatory carbon emissions controls that harm economic growth and destroy American jobs.\"}, {\"document_id\": \"28808\", \"text\": \"Introducing car free zones in major cities on Sundays for particular times at weekends to allow for safe cycling in city centre locations.\"}, {\"document_id\": \"32379\", \"text\": \"The trial ran in 15 community pharmacies around the country.\"}, {\"document_id\": \"61129\", \"text\": \"Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.\"}, {\"document_id\": \"9794\", \"text\": \"and will dedicate resources to help existing Centres provide satellite services to communities outside of urban centres and those without a Centre.\"}, {\"document_id\": \"45830\", \"text\": \"We will retain the Barnett Formula as the basis for determining the grant to cover that part of the Scottish Parliament\\u2019s budget not funded by tax revenues raised in Scotland.\"}, {\"document_id\": \"14411\", \"text\": \"Thornton Hall: We will revisit the proposal to build a new prison at Thornton Hall and consider alternatives to avoid the enormous cost yet to be incurred by the state in building a new prison.\"}, {\"document_id\": \"1544\", \"text\": \"Australians deserve a better future\"}, {\"document_id\": \"9177\", \"text\": \"First, making it more efficient to transport goods brings down prices, and lower prices make it easier to live, work and raise a family in the North.\"}, {\"document_id\": \"22380\", \"text\": \"We will initiate a research programme identifying those fisheries and species with the greatest development potential.\"}, {\"document_id\": \"45265\", \"text\": \"back plans for a new theatre, The Factory, Manchester;\"}, {\"document_id\": \"20230\", \"text\": \"Persons who are the subject of Sex Offenders Orders will be actively monitored\"}, {\"document_id\": \"23789\", \"text\": \"This is one of the most intensive special policing operations ever undertaken in the State.\"}, {\"document_id\": \"41880\", \"text\": \"Lift benefits to at least pre 1991 equivalent levels \\u2013 National slashed benefits in 1991, and these cuts have never been restored.\"}, {\"document_id\": \"55212\", \"text\": \"We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.\"}, {\"document_id\": \"33204\", \"text\": \"\\uf04f A reintroduction of regional fuel taxes.\"}, {\"document_id\": \"45274\", \"text\": \"We will deliver a comprehensive review of the BBC Royal Charter, ensuring it delivers value for money for the licence fee payer, while maintaining a world class service and supporting our creative industries.\"}, {\"document_id\": \"21787\", \"text\": \"We will increase the state pension to at least \\u20ac300 per week by 2012.\"}, {\"document_id\": \"39523\", \"text\": \"\\u2022 Reduce other regulations and red tape restricting the freedom of artists along with other entrepreneurs.\"}, {\"document_id\": \"42034\", \"text\": \"Development of a land transition plan which will include regulation of farming practices to reduce environmental damage,\"}, {\"document_id\": \"306\", \"text\": \"We will support a review of childcare funding with a view to providing more \\ufb02exibility in the services available to smaller towns, which are discriminated against under the current model.\"}, {\"document_id\": \"42288\", \"text\": \"To cut GP waiting times and allow GPs to spend more time actually seeing patients, UKIP will reduce the burden of data collection, target chasing, revalidation and appraisal work that interferes with the care GPs can give to patients.\"}, {\"document_id\": \"57672\", \"text\": \"and expanded the Child Tax Credit and Earned Income Tax Credit.\"}, {\"document_id\": \"13073\", \"text\": \"Examination must be made of the proposals for apartment blocks and hotels, etc, acquired by NAMA to be used for schools, homeless shelters, state-run nursing homes and stepdown facilities.\"}, {\"document_id\": \"40954\", \"text\": \"and other discounts are available for people on low incomes.\"}, {\"document_id\": \"36450\", \"text\": \"Hold referendum on MMP voting system\"}, {\"document_id\": \"60385\", \"text\": \"The next step, which our Party endorses, is to extend tax deductibility to the insurance premiums associated with HSAs.\"}, {\"document_id\": \"682\", \"text\": \"Australia\\u2019s farmers, \\ufb01shers and foresters are among the most ef\\ufb01cient and sustainable in the world, producing clean, green, high quality, reliable, safe and environmentally-friendly food, \\ufb01bre and timber \\u2013 each sector the envy of the world.\"}, {\"document_id\": \"9500\", \"text\": \"but we're also committed to providing comfort and aid to suffering people facing displacement and persecution because of the ongoing violence.\"}, {\"document_id\": \"40829\", \"text\": \"with a shorter limit on the time of any continuous spell,\"}, {\"document_id\": \"20757\", \"text\": \"1,100 day places are being provided and 800 extra residential care beds are being rolled out.\"}, {\"document_id\": \"3802\", \"text\": \"Direct Action Plan to reduce emissions\"}, {\"document_id\": \"39125\", \"text\": \"We will provide a favourable fiscal regime for coastal shipping\"}, {\"document_id\": \"19946\", \"text\": \"We will re-open the Western Rail Corridor from Ennis to Claremorris and examine the feasibility of reopening the line from Claremorris to Sligo.\"}, {\"document_id\": \"34271\", \"text\": \"We will help parents by providing more information about services, allowing parents to compare ECE services in their area.\"}, {\"document_id\": \"19713\", \"text\": \"We are committed to providing this leadership.\"}, {\"document_id\": \"17679\", \"text\": \"Put an end to the artificial inflation of ESB prices,\"}, {\"document_id\": \"24564\", \"text\": \"Build on progress made under the Homelessness \\u2013 an Integrated Strategy 2000, to continue to address factors resulting in homelessness\"}, {\"document_id\": \"5273\", \"text\": \"fund independent scientific research to investigate the risks, hazards and costs of GMOs (including the associated use of agrichemicals) to human health, the environment, society and the economy.\"}, {\"document_id\": \"22924\", \"text\": \"We will introduce 1 weeks paid Paternity leave for the first time\"}, {\"document_id\": \"17391\", \"text\": \"Incorporate teaching of different cultures, beliefs and languages into the mainstream curriculum to foster interculturalism.\"}, {\"document_id\": \"45350\", \"text\": \"Our historic introduction of gay marriage has helped drive forward equality\"}, {\"document_id\": \"39841\", \"text\": \"Highly skilled young people have much to offer New Zealand,\"}, {\"document_id\": \"42254\", \"text\": \"We will increase the number of immigration compliance and enforcement teams\"}, {\"document_id\": \"60685\", \"text\": \"Thanks to their skill, courage, and patriotism, the very dangerous work at the World Trade Center and Pentagon was done remarkably quickly and without a single fatality.\"}, {\"document_id\": \"18341\", \"text\": \"Establish an all-Ireland missing persons helpline which will be adequately resourced, properly run and widely advertised.\"}, {\"document_id\": \"61133\", \"text\": \"We endorse President Bush's plan to extend the benefits of welfare reform by strengthening work requirements and promoting healthy marriages, and offering training, transportation, and child care services to help people become self-sufficient.\"}, {\"document_id\": \"48502\", \"text\": \"and the cost of continued partition.\"}, {\"document_id\": \"37763\", \"text\": \"and a clear outline of the circumstances under which a minister would be required to relinquish their warrant.\"}, {\"document_id\": \"23951\", \"text\": \"Provide additional supports to increase the employment opportunities available to people\"}, {\"document_id\": \"27701\", \"text\": \"Ireland is producing markedly less social housing today than in the past.\"}, {\"document_id\": \"24967\", \"text\": \"Tabharfar gach c\\u00fanamh agus taca\\u00edocht don Aontas Eorpach i bhfeidhmi\\u00fa an chinnidh\"}, {\"document_id\": \"15496\", \"text\": \"Labour will insist on restructuring of bank boards, to ensure replacement of directors who presided over failed lending practices.\"}, {\"document_id\": \"17115\", \"text\": \"Establish the All-Ireland Inter-Parliamentary Forum.\"}, {\"document_id\": \"55411\", \"text\": \"And the Republican Party is the party of opportunity.\"}, {\"document_id\": \"51549\", \"text\": \"and for proper long term funding of council services.\"}, {\"document_id\": \"49187\", \"text\": \"We would: Reduce what we use, reuse it when we have finished with it and recycle as a last resort.\"}, {\"document_id\": \"6332\", \"text\": \"the promotion of collective agreements as the primary means of regulating employment.\"}, {\"document_id\": \"9392\", \"text\": \"Taxes are lower.\"}, {\"document_id\": \"55320\", \"text\": \"People coming to Britain from the EU to look for work are expected to contribute to our economy, and to our society.\"}, {\"document_id\": \"50213\", \"text\": \"\"}, {\"document_id\": \"15216\", \"text\": \"\\u2013 and to devolve more power to school principals and teachers to make tight budgets go further.\"}, {\"document_id\": \"12775\", \"text\": \"9)  Publishing the National Positive Ageing Strategy following consultation and direct participation of older people themselves, establish a proactive Ombudsman for Older People, prioritise the protection of vulnerable older people including through the introduction of modern mental capacity legislation.\"}, {\"document_id\": \"14267\", \"text\": \"Trading Down: For some mortgage holders that are in negative equity, trading down would produce a reduction in mortgage debt and more affordable monthly payments.\"}, {\"document_id\": \"54334\", \"text\": \"Monitor funding of minority ethnic and religious groups to ensure government support is fair, transparent and proportionate;\"}, {\"document_id\": \"30740\", \"text\": \"This includes industry training and modern apprenticeships.\"}, {\"document_id\": \"62468\", \"text\": \"A Comprehensive Test Ban would strengthen our ability to stop the spread of nuclear weapons to other countries, which may be our greatest future security threat.\"}, {\"document_id\": \"14947\", \"text\": \"Intellectual Property: We will review and update Intellectual Property legislation currently in place to benefit innovation.\"}, {\"document_id\": \"7850\", \"text\": \"Public hospitals will receive additional funding to improve the services they provide for Australians aged over 75.\"}, {\"document_id\": \"11615\", \"text\": \"Create a national council on poverty elimination.\"}, {\"document_id\": \"37761\", \"text\": \"limitations to ministerial powers,\"}, {\"document_id\": \"44486\", \"text\": \"With more meaningful tax powers, we could provide more incentives and support for businesses to invest in Scotland\"}, {\"document_id\": \"34621\", \"text\": \"National is funding great television content and good New Zealand stories, accessible to the public on a variety of platforms.\"}, {\"document_id\": \"42799\", \"text\": \"Excessive regulations stream out of Brussels, adding huge administrative and financial burdens to the challenges already faced by small businesses.\"}, {\"document_id\": \"9259\", \"text\": \"including providing tax relief on scholarships and bursaries,\"}, {\"document_id\": \"41609\", \"text\": \"The Authority will develop the curriculum it believes will develop learners who will fully realise their potential from a baseline of cultural knowledge and practice.\"}, {\"document_id\": \"20077\", \"text\": \"We are determined to ensure that provision is made for proper education and community facilities where new communities are created.\"}, {\"document_id\": \"32269\", \"text\": \"Despite the worst economic conditions in decades, National is investing an extra $100 million in patient subsidies for GP visits.\"}, {\"document_id\": \"28941\", \"text\": \"As part of the next government, the Green Party will ensure that these levies are introduced without delay.\"}, {\"document_id\": \"29995\", \"text\": \"If  there is  no contact from  the person,  Work and Income will suspend  the person\\u2019s benefit.\"}, {\"document_id\": \"22984\", \"text\": \"and according to a customer service charter for students and, where successful, grant funding is issued without delay\"}, {\"document_id\": \"30499\", \"text\": \"National reviewed the responsibilities of the Government's key tourism agencies, the Ministry of Tourism and Tourism NZ.\"}, {\"document_id\": \"28333\", \"text\": \"commit resources to create emergency response units that can be rapidly deployed in humanitarian disasters (now more frequent as a result of global warming).\"}, {\"document_id\": \"46238\", \"text\": \"Once we have balanced the books, we will ensure that overall public spending grows again in line with the economy.\"}, {\"document_id\": \"6097\", \"text\": \"renegotiate a defence relationship with our allies that promotes Australia's independent role in our region.\"}, {\"document_id\": \"40696\", \"text\": \"Plainly, motorists are not getting value for money from their roads.\"}]"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "classifications_and_codebook",
+      "strict": true,
+      "schema": {
+        "$defs": {
+          "CodebookLLMCodebook": {
+            "additionalProperties": false,
+            "properties": {
+              "definition": {
+                "title": "Definition",
+                "type": "string"
+              },
+              "clarification": {
+                "title": "Clarification",
+                "type": "string"
+              },
+              "positive_examples": {
+                "items": {
+                  "$ref": "#/$defs/DocumentExample"
+                },
+                "maxItems": 3,
+                "minItems": 1,
+                "title": "Positive Examples",
+                "type": "array"
+              },
+              "negative_clarification": {
+                "title": "Negative Clarification",
+                "type": "string"
+              },
+              "negative_examples": {
+                "items": {
+                  "$ref": "#/$defs/DocumentExample"
+                },
+                "maxItems": 3,
+                "minItems": 1,
+                "title": "Negative Examples",
+                "type": "array"
+              }
+            },
+            "required": [
+              "definition",
+              "clarification",
+              "positive_examples",
+              "negative_clarification",
+              "negative_examples"
+            ],
+            "title": "CodebookLLMCodebook",
+            "type": "object"
+          },
+          "DocumentExample": {
+            "additionalProperties": false,
+            "properties": {
+              "document_id": {
+                "description": "Copy the exact document_id from the input. Never generate or renumber IDs.",
+                "title": "Document Id",
+                "type": "string",
+                "enum": [
+                  "52467",
+                  "6755",
+                  "40169",
+                  "24412",
+                  "5872",
+                  "50782",
+                  "13949",
+                  "42378",
+                  "3557",
+                  "25686",
+                  "35144",
+                  "7608",
+                  "61223",
+                  "20605",
+                  "29536",
+                  "7577",
+                  "46125",
+                  "5948",
+                  "58998",
+                  "24568",
+                  "39259",
+                  "41579",
+                  "33523",
+                  "26889",
+                  "36614",
+                  "37164",
+                  "25317",
+                  "12796",
+                  "49190",
+                  "42955",
+                  "3861",
+                  "52155",
+                  "38427",
+                  "57253",
+                  "37084",
+                  "22588",
+                  "52325",
+                  "45084",
+                  "20594",
+                  "25048",
+                  "15158",
+                  "38294",
+                  "34060",
+                  "28316",
+                  "22820",
+                  "41140",
+                  "29054",
+                  "20059",
+                  "41040",
+                  "19693",
+                  "5850",
+                  "46317",
+                  "41717",
+                  "13633",
+                  "37998",
+                  "33353",
+                  "62177",
+                  "37533",
+                  "46949",
+                  "51629",
+                  "11352",
+                  "15434",
+                  "60582",
+                  "26592",
+                  "26332",
+                  "16362",
+                  "57031",
+                  "38545",
+                  "49941",
+                  "34264",
+                  "59800",
+                  "40957",
+                  "12176",
+                  "59852",
+                  "1231",
+                  "37898",
+                  "20258",
+                  "18940",
+                  "1676",
+                  "24434",
+                  "57394",
+                  "20367",
+                  "23455",
+                  "55839",
+                  "30815",
+                  "50786",
+                  "36736",
+                  "51003",
+                  "42765",
+                  "23257",
+                  "50848",
+                  "25792",
+                  "58860",
+                  "15896",
+                  "32892",
+                  "15151",
+                  "55208",
+                  "17686",
+                  "46749",
+                  "19178",
+                  "288",
+                  "16139",
+                  "36512",
+                  "31103",
+                  "55997",
+                  "52454",
+                  "32134",
+                  "24569",
+                  "31962",
+                  "51893",
+                  "13956",
+                  "34693",
+                  "12606",
+                  "54012",
+                  "60928",
+                  "28808",
+                  "32379",
+                  "61129",
+                  "9794",
+                  "45830",
+                  "14411",
+                  "1544",
+                  "9177",
+                  "22380",
+                  "45265",
+                  "20230",
+                  "23789",
+                  "41880",
+                  "55212",
+                  "33204",
+                  "45274",
+                  "21787",
+                  "39523",
+                  "42034",
+                  "306",
+                  "42288",
+                  "57672",
+                  "13073",
+                  "40954",
+                  "36450",
+                  "60385",
+                  "682",
+                  "9500",
+                  "40829",
+                  "20757",
+                  "3802",
+                  "39125",
+                  "19946",
+                  "34271",
+                  "19713",
+                  "17679",
+                  "24564",
+                  "5273",
+                  "22924",
+                  "17391",
+                  "45350",
+                  "39841",
+                  "42254",
+                  "60685",
+                  "18341",
+                  "61133",
+                  "48502",
+                  "37763",
+                  "23951",
+                  "27701",
+                  "24967",
+                  "15496",
+                  "17115",
+                  "55411",
+                  "51549",
+                  "49187",
+                  "6332",
+                  "9392",
+                  "55320",
+                  "50213",
+                  "15216",
+                  "12775",
+                  "14267",
+                  "54334",
+                  "30740",
+                  "62468",
+                  "14947",
+                  "7850",
+                  "11615",
+                  "37761",
+                  "44486",
+                  "34621",
+                  "42799",
+                  "9259",
+                  "41609",
+                  "20077",
+                  "32269",
+                  "28941",
+                  "29995",
+                  "22984",
+                  "30499",
+                  "28333",
+                  "46238",
+                  "6097",
+                  "40696"
+                ]
+              },
+              "explanation": {
+                "description": "Explain why this example meets or does not meet the definition.",
+                "title": "Explanation",
+                "type": "string"
+              }
+            },
+            "required": [
+              "document_id",
+              "explanation"
+            ],
+            "title": "DocumentExample",
+            "type": "object"
+          },
+          "ExplainedClassification": {
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "$ref": "#/$defs/Label"
+              },
+              "explanation": {
+                "title": "Explanation",
+                "type": "string"
+              }
+            },
+            "required": [
+              "label",
+              "explanation"
+            ],
+            "title": "ExplainedClassification",
+            "type": "object"
+          },
+          "Label": {
+            "enum": [
+              "0",
+              "1"
+            ],
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "classifications": {
+            "additionalProperties": false,
+            "properties": {
+              "52467": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "6755": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "40169": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "24412": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "5872": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "50782": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "13949": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "42378": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "3557": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "25686": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "35144": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "7608": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "61223": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20605": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "29536": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "7577": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "46125": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "5948": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "58998": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "24568": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "39259": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "41579": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "33523": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "26889": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "36614": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "37164": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "25317": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "12796": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "49190": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "42955": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "3861": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "52155": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "38427": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "57253": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "37084": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "22588": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "52325": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "45084": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20594": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "25048": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "15158": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "38294": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "34060": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "28316": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "22820": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "41140": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "29054": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20059": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "41040": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "19693": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "5850": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "46317": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "41717": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "13633": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "37998": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "33353": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "62177": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "37533": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "46949": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "51629": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "11352": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "15434": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "60582": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "26592": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "26332": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "16362": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "57031": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "38545": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "49941": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "34264": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "59800": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "40957": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "12176": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "59852": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "1231": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "37898": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20258": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "18940": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "1676": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "24434": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "57394": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20367": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "23455": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "55839": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "30815": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "50786": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "36736": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "51003": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "42765": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "23257": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "50848": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "25792": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "58860": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "15896": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "32892": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "15151": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "55208": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "17686": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "46749": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "19178": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "288": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "16139": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "36512": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "31103": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "55997": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "52454": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "32134": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "24569": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "31962": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "51893": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "13956": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "34693": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "12606": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "54012": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "60928": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "28808": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "32379": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "61129": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "9794": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "45830": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "14411": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "1544": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "9177": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "22380": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "45265": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20230": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "23789": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "41880": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "55212": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "33204": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "45274": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "21787": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "39523": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "42034": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "306": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "42288": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "57672": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "13073": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "40954": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "36450": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "60385": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "682": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "9500": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "40829": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20757": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "3802": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "39125": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "19946": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "34271": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "19713": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "17679": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "24564": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "5273": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "22924": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "17391": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "45350": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "39841": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "42254": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "60685": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "18341": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "61133": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "48502": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "37763": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "23951": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "27701": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "24967": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "15496": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "17115": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "55411": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "51549": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "49187": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "6332": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "9392": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "55320": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "50213": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "15216": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "12775": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "14267": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "54334": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "30740": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "62468": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "14947": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "7850": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "11615": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "37761": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "44486": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "34621": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "42799": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "9259": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "41609": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "20077": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "32269": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "28941": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "29995": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "22984": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "30499": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "28333": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "46238": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "6097": {
+                "$ref": "#/$defs/ExplainedClassification"
+              },
+              "40696": {
+                "$ref": "#/$defs/ExplainedClassification"
+              }
+            },
+            "required": [
+              "52467",
+              "6755",
+              "40169",
+              "24412",
+              "5872",
+              "50782",
+              "13949",
+              "42378",
+              "3557",
+              "25686",
+              "35144",
+              "7608",
+              "61223",
+              "20605",
+              "29536",
+              "7577",
+              "46125",
+              "5948",
+              "58998",
+              "24568",
+              "39259",
+              "41579",
+              "33523",
+              "26889",
+              "36614",
+              "37164",
+              "25317",
+              "12796",
+              "49190",
+              "42955",
+              "3861",
+              "52155",
+              "38427",
+              "57253",
+              "37084",
+              "22588",
+              "52325",
+              "45084",
+              "20594",
+              "25048",
+              "15158",
+              "38294",
+              "34060",
+              "28316",
+              "22820",
+              "41140",
+              "29054",
+              "20059",
+              "41040",
+              "19693",
+              "5850",
+              "46317",
+              "41717",
+              "13633",
+              "37998",
+              "33353",
+              "62177",
+              "37533",
+              "46949",
+              "51629",
+              "11352",
+              "15434",
+              "60582",
+              "26592",
+              "26332",
+              "16362",
+              "57031",
+              "38545",
+              "49941",
+              "34264",
+              "59800",
+              "40957",
+              "12176",
+              "59852",
+              "1231",
+              "37898",
+              "20258",
+              "18940",
+              "1676",
+              "24434",
+              "57394",
+              "20367",
+              "23455",
+              "55839",
+              "30815",
+              "50786",
+              "36736",
+              "51003",
+              "42765",
+              "23257",
+              "50848",
+              "25792",
+              "58860",
+              "15896",
+              "32892",
+              "15151",
+              "55208",
+              "17686",
+              "46749",
+              "19178",
+              "288",
+              "16139",
+              "36512",
+              "31103",
+              "55997",
+              "52454",
+              "32134",
+              "24569",
+              "31962",
+              "51893",
+              "13956",
+              "34693",
+              "12606",
+              "54012",
+              "60928",
+              "28808",
+              "32379",
+              "61129",
+              "9794",
+              "45830",
+              "14411",
+              "1544",
+              "9177",
+              "22380",
+              "45265",
+              "20230",
+              "23789",
+              "41880",
+              "55212",
+              "33204",
+              "45274",
+              "21787",
+              "39523",
+              "42034",
+              "306",
+              "42288",
+              "57672",
+              "13073",
+              "40954",
+              "36450",
+              "60385",
+              "682",
+              "9500",
+              "40829",
+              "20757",
+              "3802",
+              "39125",
+              "19946",
+              "34271",
+              "19713",
+              "17679",
+              "24564",
+              "5273",
+              "22924",
+              "17391",
+              "45350",
+              "39841",
+              "42254",
+              "60685",
+              "18341",
+              "61133",
+              "48502",
+              "37763",
+              "23951",
+              "27701",
+              "24967",
+              "15496",
+              "17115",
+              "55411",
+              "51549",
+              "49187",
+              "6332",
+              "9392",
+              "55320",
+              "50213",
+              "15216",
+              "12775",
+              "14267",
+              "54334",
+              "30740",
+              "62468",
+              "14947",
+              "7850",
+              "11615",
+              "37761",
+              "44486",
+              "34621",
+              "42799",
+              "9259",
+              "41609",
+              "20077",
+              "32269",
+              "28941",
+              "29995",
+              "22984",
+              "30499",
+              "28333",
+              "46238",
+              "6097",
+              "40696"
+            ],
+            "title": "Classifications",
+            "type": "object"
+          },
+          "codebook": {
+            "$ref": "#/$defs/CodebookLLMCodebook"
+          }
+        },
+        "required": [
+          "classifications",
+          "codebook"
+        ],
+        "title": "ClassificationsAndCodebook",
+        "type": "object"
+      }
+    }
+  },
+  "provider": {
+    "require_parameters": true
+  },
+  "plugins": [
+    {
+      "id": "response-healing"
+    }
+  ],
+  "max_completion_tokens": 50000
+}

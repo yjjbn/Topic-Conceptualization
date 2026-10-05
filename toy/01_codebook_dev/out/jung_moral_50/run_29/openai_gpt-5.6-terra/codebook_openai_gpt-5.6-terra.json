@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that explicitly evaluates people, actions, institutions, or outcomes using moral values, duties, rights, virtues, or standards of justice and injustice.",
+  "clarification": "Classify a passage as moral rhetoric when it invokes values such as respect, equality, freedom, fairness, dignity, rights, care for vulnerable people, humanitarian responsibility, accountability, integrity, or civic duty. Also include explicit moral judgments such as saying an outcome is intolerable, justified, discriminatory, oppressive, or undeserved, and praise or condemnation framed through moral virtues or wrongdoing. The rhetoric may accompany a concrete policy proposal if the policy is justified in these terms.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "It makes a direct claim of inherent worth and purpose for every person, especially vulnerable people."
+    },
+    {
+      "text": "We will establish a comprehensive race equality strategy to break down the barriers still faced by black and minority ethnic communities.",
+      "explanation": "It explicitly invokes race equality and the removal of barriers to minority communities."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "It invokes a universal claim to court access and the quality of justice people deserve."
+    }
+  ],
+  "negative_clarification": "Do not classify passages that merely state policies, administrative arrangements, targets, factual claims, economic benefits or costs, service improvements, or technical risks. References to health, poverty, safety, sustainability, participation, or disadvantaged groups are not sufficient by themselves unless the text expressly frames them through a moral value, right, obligation, or judgment. General positive language such as 'successful,' 'world class,' or 'better' is also insufficient unless it conveys a clear moral standard.",
+  "negative_examples": [
+    {
+      "text": "Simplifying Tax Compliance: We will allow all companies to base their preliminary corporation tax returns on prior year tax liabilities, reducing their need to hire advisers to estimate their current year tax liabilities before the year is finished.",
+      "explanation": "This is a technical tax-compliance proposal and is justified by reduced administrative needs, not moral values."
+    },
+    {
+      "text": "1,100 day places are being provided and 800 extra residential care beds are being rolled out.",
+      "explanation": "It reports service-delivery numbers without making a moral evaluation."
+    },
+    {
+      "text": "Development of a land transition plan which will include regulation of farming practices to reduce environmental damage,",
+      "explanation": "It proposes environmental regulation to reduce damage, but states this as a policy objective rather than an explicit moral duty or justice claim."
+    }
+  ]
+}

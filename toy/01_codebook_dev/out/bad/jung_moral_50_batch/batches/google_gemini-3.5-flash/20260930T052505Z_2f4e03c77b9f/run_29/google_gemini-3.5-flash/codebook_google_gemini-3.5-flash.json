@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that appeals to ethical values, moral duties, fundamental rights, fairness, compassion, or virtue. It represents claims about what is right or wrong, virtuous or corrupt, rather than simply pragmatic, technical, administrative, or fiscal policies.",
+  "clarification": "To classify a text as containing moral rhetoric, the statement must go beyond standard political or technical policy details to use language that invokes ethical standards (e.g., 'respect', 'fairness', 'justice', 'responsibility'), emotional or moral evaluations of situations (e.g., 'not tolerable', 'desperately need', 'vulnerable'), or expressions of moral values (e.g., 'courage', 'patriotism', 'freedom', 'human rights'). Look for normative words that make a claim about what society or individuals are ethically obligated to do.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "The text directly appeals to human dignity, declaring that every person, particularly the frail or vulnerable, has an inherent purpose and place in the world, which is a core moral/ethical assertion."
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "By validating 'anger' as 'justified', this text makes a clear ethical evaluation of a group's grievance, defining it as morally valid."
+    },
+    {
+      "text": "Thanks to their skill, courage, and patriotism, the very dangerous work at the World Trade Center and Pentagon was done remarkably quickly and without a single fatality.",
+      "explanation": "This text specifically invokes core moral and civic virtues by praising 'courage' and 'patriotism' in a crisis."
+    }
+  ],
+  "negative_clarification": "Do NOT classify a text as containing moral rhetoric if it is a standard, descriptive, or technical explanation of policy, fiscal figures, infrastructure plans, or political records. The mere mention of social issues (like education, health, or taxation) does not count unless the text uses emotionally or ethically charged language to frame those issues as moral conflicts or duties.",
+  "negative_examples": [
+    {
+      "text": "Provide broadband on all islands.",
+      "explanation": "This is a simple, direct infrastructure policy proposal containing no moral framing or value-laden rhetoric."
+    },
+    {
+      "text": "For the first time since records have been kept, Canada is falling far behind the U.S. in productivity.",
+      "explanation": "This is a factual and comparative economic claim about productivity levels, completely lacking in moral evaluations."
+    },
+    {
+      "text": "Intellectual Property: We will review and update Intellectual Property legislation currently in place to benefit innovation.",
+      "explanation": "This is an administrative proposal about reviewing and updating intellectual property law, framed in technical/functional terms."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "note": "",
+  "batch_id": null,
+  "run": 8,
+  "arguments": {
+    "command": "submit",
+    "model": "google/gemini-3.5-flash:floor",
+    "mode": "streaming",
+    "provider": "google-ai-studio/flex",
+    "session_id": null,
+    "repeats": 50,
+    "start_run": 1,
+    "runs": null,
+    "data_path": "data\\jung_codebookdev_200.csv",
+    "prompt_path": "prompts\\wo_codebook\\classify_jung.txt",
+    "test_rows": null,
+    "documents_per_request": 100,
+    "nametag": "jung_repeated-runs_no-cb",
+    "out_folder": "out",
+    "note": "",
+    "dry_run": false
+  },
+  "usage": [
+    {
+      "prompt_tokens": 4134,
+      "completion_tokens": 9259,
+      "total_tokens": 13393,
+      "cost": 0.043477425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1909,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.043477425,
+        "upstream_inference_prompt_cost": 0.001811925,
+        "upstream_inference_completions_cost": 0.0416655
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 4536,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    {
+      "prompt_tokens": 4007,
+      "completion_tokens": 14073,
+      "total_tokens": 18080,
+      "cost": 0.06504855,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1904,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.06504855,
+        "upstream_inference_prompt_cost": 0.00172005,
+        "upstream_inference_completions_cost": 0.0633285
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 9980,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  ]
+}

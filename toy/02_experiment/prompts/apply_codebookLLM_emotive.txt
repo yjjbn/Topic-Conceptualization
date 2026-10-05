@@ -1,0 +1,27 @@
+You will receive a codebook and a set of parliamentary speeches held in the UK House of Commons.
+
+Following the codebook and using no other external information, classify each text according to whether the parliamentarian is using "emotive rhetoric." For each classification, provide a brief rationale for your decision.
+
+Use only one of these labels:
+"1": The parliamentarian is using emotive rhetoric.
+"0": The parliamentarian is not using emotive rhetoric.
+
+Each classification should contain:
+* The label, 1 or 0
+* A brief explanation of your decision
+
+The documents will be provided as a JSON array of objects, each containing document_id and text:
+[
+  {"document_id": "doc_001", "text": "..."},
+  {"document_id": "doc_002", "text": "..."},
+  ...
+]
+
+For each text, return:
+* ID: ID of the text document
+* Label: Your classification, 1 or 0
+* Explanation: An explanation of the rationale for your classification. Explain which parts of the codebook's clarification or negative clarification you relied on the make your decision. If you faced any ambiguities or difficulties in making a classification, you can describe that here.
+
+Return a JSON object matching the supplied output format schema.
+Make sure that you return a classification for every document provided.
+

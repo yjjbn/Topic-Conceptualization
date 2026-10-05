@@ -1,0 +1,33 @@
+{
+  "definition": "Moral rhetoric is language that appeals to moral values, ethical principles, or normative judgments of right and wrong, rather than (or in addition to) pragmatic, economic, technocratic, or administrative considerations. It includes explicit invocations of moral concepts (justice, fairness, equality, dignity, respect, rights, freedom, moral desert), moral evaluations (justified, intolerable, discriminated against, second-class treatment), virtue and vice language (caring, compassion, courage, patriotism, healthy marriages; terror, persecution), affirmations of inherent human worth, and moral imperatives about what must or must not be done on ethical grounds.",
+  "clarification": "Classify as 1 when the text: (a) uses explicit moral vocabulary \u2014 fair/unfair, just/unjust, equality, dignity, respect, deserve, justified, tolerable/intolerable, discriminated, human rights; (b) invokes virtues or moral qualities \u2014 caring, compassion, courage, patriotism, self-discipline, healthy marriages; (c) frames an issue as a moral wrong or moral imperative \u2014 an inequality that 'must be closed', anger that 'is justified', 'Soviet terror'; or (d) affirms inherent human worth or rights as moral claims ('every person has a place and a purpose', 'we affirm their right'). The moral appeal may coexist with policy content; what matters is the presence of moral-evaluative language. Appeals to freedom/liberty as a value being protected or unjustly restricted are included. A text coded 1 need not propose any specific policy.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "Affirms the inherent worth of every human being, 'however frail or vulnerable' \u2014 a direct moral claim about human dignity rather than a policy instrument."
+    },
+    {
+      "text": "While no one should be denied access to the courts, the rule of lawyers threatens our global competitiveness, denies Americans access to the quality of justice they deserve, and puts every small business one lawsuit away from bankruptcy.",
+      "explanation": "Invokes justice and moral desert ('the quality of justice they deserve') and the ethical principle that no one should be denied access to the courts."
+    },
+    {
+      "text": "Their anger is justified.",
+      "explanation": "A direct moral evaluation \u2014 declaring people's anger 'justified' is a judgment of moral legitimacy, not an empirical or policy claim."
+    }
+  ],
+  "negative_clarification": "Classify as 0 when the text is a neutral description of policy instruments, programmes, funding, targets, or administrative structures; an economic or fiscal argument (growth, jobs, taxes, efficiency, value for money); a factual or statistical claim about performance or conditions, even on morally significant topics (poverty figures, welfare caseloads, waiting times); generic positive or negative adjectives without moral content (successful, thriving, groundbreaking, burdensome); partisan slogans and aspirational visions lacking moral vocabulary; or descriptive references to morally charged subjects (humanitarian disasters, vulnerable people, family reunification, special needs) where the text itself is instrumental and uses no moral-evaluative language. Equality-of-access arguments framed purely instrumentally (e.g., equipping people to participate in society) are coded 0 unless explicit moral vocabulary is present.",
+  "negative_examples": [
+    {
+      "text": "We will continue to develop Plaid Cymru\u2019s Inspire Wales programme to involve all ages in sporting activity and ensure our people stay fit and healthy.",
+      "explanation": "A straightforward programme commitment (sports participation for fitness and health) with purely instrumental language and no moral vocabulary."
+    },
+    {
+      "text": "In the six months to March of this year, the economy grew by less than 1%, and almost every forecaster expects the economy to grow at no more than about 3% for as far ahead as anyone can predict.",
+      "explanation": "Economic growth statistics and forecasts; purely empirical analysis with no evaluative moral content."
+    },
+    {
+      "text": "Since the 1996 Republican-led law, welfare caseloads have declined by half, and nearly three million Americans have been lifted out of poverty.",
+      "explanation": "A boundary case: it concerns poverty reduction, but frames it as a statistical achievement ('caseloads have declined by half', 'lifted out of poverty') rather than a moral appeal about justice or duty, so it is coded 0."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "definition": "Moral rhetoric is defined as political or communicative language that explicitly appeals to ethical norms, moral values, rights, social justice, fairness, duties, compassion, or evaluations of human dignity and virtue (such as courage, respect, or patriotism).",
+  "clarification": "To be classified as moral rhetoric, a text must go beyond standard technical or administrative policy proposals. It should employ evaluative concepts of right vs. wrong, fairness vs. unfairness, duty, or core political values like freedom, equality, justice, or caring. Look for terms such as 'respect', 'vulnerable', 'freedom', 'unfairly', 'justice', 'courage', and 'equality' used in a normative context.",
+  "positive_examples": [
+    {
+      "text": "Every person, however frail or vulnerable, has a place and a purpose in this world.",
+      "explanation": "This text asserts that every single person has 'a place and a purpose in this world' regardless of vulnerability, which is a fundamental declaration of inherent human dignity and moral value."
+    },
+    {
+      "text": "Values of respect.",
+      "explanation": "This text directly explicitly mentions 'Values of respect', which is a direct reference to moral concepts."
+    }
+  ],
+  "negative_clarification": "Do not classify texts as moral rhetoric if they only state factual statistics, outline standard policy tools (such as tax modifications or funding allocations), or complain about bureaucratic regulations, unless those policies or complaints are explicitly framed around moral duty or social justice.",
+  "negative_examples": [
+    {
+      "text": "to ensure an efficient and accessible school bus system for communities across the country.",
+      "explanation": "This is a simple transport policy designed to make a school bus system efficient and accessible. There is no usage of normative, emotional, or moralizing language."
+    },
+    {
+      "text": "If  there is  no contact from  the person,  Work and Income will suspend  the person’s benefit.",
+      "explanation": "This outlines an administrative rule and operational protocol for welfare suspension, lacking any ethical arguments or moral justification."
+    }
+  ]
+}
