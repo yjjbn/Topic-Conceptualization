@@ -1,0 +1,24 @@
+Your task is to revise a codebook for identifying "emotive rhetoric" in parliamentary speeches from the UK House of Commons.
+
+Previously, coders applied the original codebook to classify each speech as containing emotive rhetoric (1) or not (0). You will receive:
+1. The original codebook, consisting of a definition and a set of decision rules.
+2. A JSON array containing summarizing previous coders' classification decisions. Each JSON object contains:
+- document_id: ID of the document
+- text: The original text
+- percent_1: Percent of times (0-100) that the document was coded 1
+- explanation_1: An example of a coder's rationale for coding the document 1, if it was ever labelled 1
+- explanation_0: An example of a coder's rationale for coding the document 0, if it was ever labelled 0
+
+Your task is to revise the codebook so that future coders can make more consistent decisions on cases that were coded inconsistently ('percent_1' between 0 and 100).
+
+Your revised codebook should:
+1. As much as possible, preserve the existing rules and original conceptualization of "emotive rhetoric." All rules should continue to support the classifications of texts that were unanimously coded as 0 or 1.
+2. As much as possible, revisions should clarify existing rules, clarify how to apply them, or add specifications that were previously uncovered, rather than introducing substantive changes to the rules.
+3. Remain generalizable beyond this specific set of documents
+4. Document each revision and the rationale for the change.
+
+Return your codebook in the JSON format provided.
+
+Return two JSON sections: codebook and documentation.
+The codebook contains the definition and the complete decision_rules list. Each rule has number, rule (the full rule text), and status (revised, unchanged, or created). Status describes changes relative to the supplied codebook. Preserve existing rule numbers; append new numbers consecutively.
+Documentation contains one entry per revised or created rule, with number (the affected rule number) and description (the change and rationale). Omit unchanged rules from documentation.

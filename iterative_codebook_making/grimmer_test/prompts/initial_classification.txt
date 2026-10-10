@@ -1,0 +1,14 @@
+You will receive a set of press releases from US senators.
+
+Classify each text according to whether the senator is "credit-claiming." For each classification, provide a brief rationale for your decision.
+
+Use only one of these labels:
+"1": The senator is credit-claiming.
+"0": The senator is not credit-claiming.
+
+Each classification should contain:
+* The label, 1 or 0
+* A brief explanation of your decision
+
+Return a JSON object with a "classifications" object. Use each document_id as a key, with label and explanation inside its value.
+Copy each document_id exactly from the input, and make sure you return a 1 or 0 classification for every document_id provided.

@@ -1,0 +1,63 @@
+
+Codebook MODEL.DATASET_j.REVISION_WITHIN_DATASET_k
+
+I. INITIAL CODEBOOK GENERATION
+    1. Model A receives and codes dataset_0, 25x
+        Input: dataset_0
+        Output: coded dataset_0, 25x
+    2. Model A receives its coding of dataset_0 (distribution over 25), and is asked to generate a codebook, choosing decision rules where its coding is inconsistent. This becomes Codebook A.0.0
+        Input: coded dataset_0
+        Output: Codebook A.0.0
+    3. Consistency check of A.0.k (starting with k=0): Model A codes dataset_0 using Codebook A.0.k, 25x
+        Input: dataset_0, Codebook A.0.k
+        Output: coded dataset_0, 25x
+        Empirical: Agreement across 25x
+    4. If high agreement across 25x, freeze as Codebook A.0.k_final, move to II.
+    5. If low agreement across 25x:
+        5.1 ask Model A to revise Codebook A.0.k based on high disagreement cases
+            Input: high disagreement cases from dataset_0 in part (3)
+            Output: Revised Codebook A.0.(k+1)
+        5.2 Repeat (3)-(5), generating Codebook A.0.1/2/.../k_final etc until high agreement is achieved. Freeze as Codebook A.0.k_final, move to II
+            (from previous empirical results, think we'll be able to stick with A.0.0)
+II. ITERATIVE CODEBOOK EDITS WITH NEW DATA, with dataset_j and Codebook A.(j-1).k_final, starting with j=1
+    1. Model A codes dataset_j with Codebook A.(j-1).k_final, 25x
+        Input: dataset_j, Codebook A.(j-1).k_final
+        Output: coded dataset_j, 25x
+        Empirical: Agreement across 25x
+    2. If high agreement across 25x, freeze Codebook A.(j-1).k_final, move to III.
+    3. If low agreement across 25x, ask Model A to revise (additions only, no backtracking) Codebook A.(j-1).k_final based on high disagreement cases, outputting A.j.0
+        Input: High disagreement cases from dataset_j in part (1), Codebook A.(j-1).k_final
+        Output: Codebook A.j.0
+    4. Consistency check of A.j.k (starting with k=0): Model A codes (dataset_0...dataset_j) using Codebook A.j.k, 25x
+        Input: (dataset_0...dataset_j), Codebook A.j.k
+        Output: coded (dataset_0...dataset_j), 25x
+        Empirical: Agreement across 25x
+    5. If high agreement across 25x, freeze as Codebook A.j.k_final, increment j and return to (1)
+    6. If low agreement across 25x
+        6.1 Model A to revise Codebook A.j.k based on high disagreement cases
+            Input: high disagreement cases from (dataset_0...dataset_j) in part (4), Codebook A.j.k
+            Output: Revised Codebook A.j.(k+1)
+        6.2 Repeat (4)-(6), generating Codebook A.j.1/2/.../k_final etc until high agreement is achieved.
+            Freeze Codebook A.j.k_final, increment j and return to (1)
+III. ITERATIVE CODEBOOK EDITS WITH NEW MODEL. Set Codebook Ab.(j-1).k_final as Codebook A.(j-1).k_final
+    1. Model B (and Model A, if not already existing) codes dataset_j with Codebook Ab.(j-1).k_final
+        Input: dataset_j, Codebook Ab.(j-1).k_final
+        Output: B's coded dataset_j, 25x
+        Empirical: Agreement between A and B's coding distribution over 25x on dataset_j
+    2. If high agreement between Model A and Model B, use Codebook Ab.(j-1).k_final as final codebook
+    3. If low agreement between Model A and Model B, Model A to revise Codebook Ab.(j-1).k_final based on high disagreement cases
+        Input: high A-B disagreement cases from (1), Codebook Ab.(j-1).k_final
+        Output: Revised codebook Ab.j.0
+    4. Consistency check of codebook Ab.j.k, (starting with k=0): Model A and Model B codes (dataset_0...dataset_j) using Codebook Ab.j.k, 25x
+        Input: (dataset_0...dataset_j), Codebook Ab.j.k
+        Output: A, B coded (dataset_0...dataset_j), 25x
+        Empirical: A-B distributional Agreement across 25x
+    5. If high agreement across 25x, freeze as Codebook Ab.j.k_final, increment j, move to (1)
+    6. If low agreement across 25x,
+        6.1 Model A to revise Codebook Ab.j.k based on high A-B disagreement cases
+            Input: high A-B disagreement cases from (dataset_0...dataset_j) in part (4), Codebook Ab.j.k
+            Output: Revised Codebook Ab.j.(k+1)
+        6.2 Repeat (4)-(6), generating Codebook Ab.j.1/2/.../k_final etc until high agreement is achieved.
+            Freeze Codebook Ab.j.k_final, increment j, move to (1)
+
+

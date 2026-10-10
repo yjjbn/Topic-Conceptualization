@@ -1,0 +1,14 @@
+You will receive a set of parliamentary speeches held in the UK House of Commons.
+
+Classify each text according to whether the parliamentarian is using "emotive rhetoric." For each classification, provide a brief rationale for your decision.
+
+Use only one of these labels:
+"1": The parliamentarian is using emotive rhetoric.
+"0": The parliamentarian is not using emotive rhetoric.
+
+Each classification should contain:
+* The label, 1 or 0
+* A brief explanation of your decision
+
+Return a JSON object containing "classifications" objects. Use each document_id as a key, with label and explanation inside its value.
+Copy each document_id exactly from the input, and make sure you return a 1 or 0 classification for every document_id provided.

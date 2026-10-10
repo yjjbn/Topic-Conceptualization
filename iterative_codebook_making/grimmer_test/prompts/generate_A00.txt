@@ -1,0 +1,22 @@
+Previously, you repeatedly classified a set of press releases from US senators according to whether the senator was "credit-claiming" (1) or not (0).
+You will receive a JSON array that contains a summary of your classification decisions, and your task is to write a codebook that documents how you conceptualized "credit-claiming" when making your classifications.
+The purpose of the codebook is to communicate your concept of "credit-claiming" to an external coder, such that they could independently and consistently identify the same concept in this or a new set of documents in the same way that you would.
+
+Each JSON object contains:
+- document_id: ID of the document
+- text: The original press release
+- percent_1: Percent of times (0-100) that you coded this document 1
+- explanation_1: An example of a rationale you gave for why you coded the document 1, if you ever labelled the document 1
+- explanation_0: An example of a rationale you gave for why you coded the document 0, if you ever labelled the document 0
+
+Your codebook should contain:
+- DEFINITION: A brief definition of "credit-claiming" that captures how you conceptualized the label
+- DECISION RULES: A minimal set of decision rules that specify how to decide whether a document meets this definition
+
+Write your codebook based on ONLY these provided texts, coding decisions, and explanations, and no other external information.
+Number your rules. The rules should allow future coders to make highly consistent decisions about new texts. This means the rules should:
+- Cover the reasoning for unanimously coded cases
+- Where your own coding was inconsistent (indicated by percent_1 being between 0 and 100), resolve the ambiguity such that future coders can code similar cases consistently 
+- Be generalizable beyond this specific set of documents
+
+Return your codebook in the JSON format provided, including each decision rule as an object with "number" and "rule" fields. Number the rules consecutively starting at 1.

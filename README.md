@@ -1,6 +1,6 @@
 # Topic-Conceptualization
 
-In "toy":  
+The workflow folders are in the project root: `01_codebook_dev`, `02_experiment`, and `03_analysis`.
 
 to recreate environment:  
 uv sync --locked  

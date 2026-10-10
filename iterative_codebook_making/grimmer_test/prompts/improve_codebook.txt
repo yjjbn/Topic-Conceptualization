@@ -1,0 +1,14 @@
+You will receive
+A codebook you made to determine whether a US senator is credit-claiming.
+A list of documents that you have had trouble consistently labeling using this codebook
+
+Your task is to update the codebook by adding no more than 3 new decision rules that will allow you to code those documents consistently. Ideally, each classification decision should be traceable to at least one of the decision rules. The new rules should be generalizable beyond the disputed documents. Add the new rules under the “Decision Rules” section, continuing the existing numbering consecutively.
+New rules may amend earlier rules by explicitly identifying the rule being amended and specifying the change. However, preserve the text and numbering of all existing decision rules; append amendments as new rules rather than rewriting or deleting earlier ones.
+The updated codebook should contain two sections:
+Definition (identical to the codebook given to you)
+Decision rules (the rules preceding your newly added rules should be identical to the codebook given to you)
+
+Return the complete updated codebook. 
+
+
+Return two JSON sections: codebook and documentation. The codebook contains the definition and the complete decision_rules list. Each rule has number, rule (the full rule text), and status (revised, unchanged, or created). Status describes changes relative to the supplied codebook. Preserve existing rule numbers; append new numbers consecutively. Documentation contains one entry per revised or created rule, with number (the affected rule number) and description (the change and rationale). Omit unchanged rules from documentation.

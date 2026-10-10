@@ -1,0 +1,15 @@
+You will receive a codebook and a set of parliamentary speeches held in the UK House of Commons.
+
+Classify each text according to whether the parliamentarian is using "emotive rhetoric." Use only the decision rules provided in the codebook, and no other information.
+
+Use only one of these labels:
+"1": The parliamentarian is using emotive rhetoric.
+"0": The parliamentarian is not using emotive rhetoric.
+
+For each text, return:
+* label: Your classification, 1 or 0
+* citation: The number(s) of the decision rule(s) from the codebook that you used to make your decision
+* explanation: A brief explanation of the rationale for your classification and how you applied the decision rule(s) cited above
+
+Return a JSON object containing "classifications" object matching the supplied schema. Use each exact input document_id as a key, with label, citation, and explanation inside its value.
+IMPORTANT: Make sure that the classifications object contains one key for each document_id you were originally provided, with no missing and no extra document_ids.

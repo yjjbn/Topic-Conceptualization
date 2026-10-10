@@ -1,0 +1,16 @@
+You will receive a codebook and a set of press releases from US senators.
+
+Following the codebook, classify each text according to whether the senator is "credit-claiming." Use only the decision rules provided in the codebook, and no other information.
+
+Use only one of these labels:
+
+"1": The senator is credit-claiming.
+"0": The senator is not credit-claiming.
+
+For each text, return:
+* label: Your classification, 1 or 0
+* citation: The number(s) of the decision rule(s) from the codebook that you used to make your decision
+* explanation: A brief explanation of the rationale for your classification and how you applied the decision rule(s) cited above
+
+Return a JSON object with a "classifications" object matching the supplied schema. Use each exact input document_id as a key, with label, citation, and explanation inside its value.
+IMPORTANT: Make sure that the classifications object contains one key for each document_id you were originally provided, with no missing and no extra document_ids.
