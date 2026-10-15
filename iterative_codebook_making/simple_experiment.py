@@ -29,16 +29,34 @@ class Experiment:
         return sorted(set(values))
 
     def _documents(self, datasets):
-        tables = [load_documents(
-            self.session_dir / "data" / f"{self.session_dir.name}_{number}.csv"
-        ) for number in self._datasets(datasets)]
+        tables = []
+        for number in self._datasets(datasets):
+            matches = sorted((self.session_dir / "data").glob(f"*_{number}.csv"))
+            if not matches:
+                raise FileNotFoundError(f"No file ending in _{number}.csv in {self.session_dir / 'data'}")
+            if len(matches) > 1:
+                raise ValueError(f"More than one file ends in _{number}.csv: {[path.name for path in matches]}")
+            tables.append(load_documents(matches[0]))
         documents = pl.concat(tables)
         if documents["document_id"].n_unique() != documents.height:
             raise ValueError("Document IDs must be unique across the selected datasets.")
         return documents
 
-    def _version_dir(self, version):
-        return self.root / "codebooks" / f"version-{version:03d}"
+    def _version_dir(self, version, suffix=None):
+        name = f"version-{version:03d}"
+        folder = self.root / "codebooks"
+        matches = [path for path in folder.glob(f"{name}*")
+                   if path.is_dir() and (path.name == name or path.name.startswith(name + "-"))]
+        if len(matches) > 1:
+            raise ValueError(f"Multiple codebook folders use version {version}.")
+        if suffix:
+            if any(character in suffix for character in '\\/:*?"<>|'):
+                raise ValueError("Use a suffix without special filename characters.")
+            target = folder / f"{name}-{suffix}"
+            if matches and matches[0] != target:
+                raise ValueError(f"Version {version} already exists as {matches[0].name}. Use a new version number.")
+            return target
+        return matches[0] if matches else folder / name
 
     def codebook_path(self, version):
         return self._version_dir(version) / "codebook.json"
@@ -75,8 +93,6 @@ class Experiment:
             if batch.get("status") != "completed":
                 print(f"Batch: {batch.get('status', 'unknown')}. Rerun this review cell later.")
                 return False
-            if batch.get("request_counts", {}).get("failed", 0):
-                raise ValueError("The batch has failed requests. Inspect batch.json before continuing.")
         return True
 
     def _results(self, folder):
@@ -87,30 +103,39 @@ class Experiment:
         results = parse_classification_runs(folder)
         documents = load_documents(folder / "documents.csv")
         expected = set(documents["document_id"].to_list())
-        if results["run"].n_unique() != self.n_runs:
-            raise ValueError(f"Expected {self.n_runs} complete runs; resume the coding cell first.")
+        expected_runs = self.n_runs - len(_excluded_runs(folder))
+        if not (folder / "batch.json").exists() and results["run"].n_unique() != expected_runs:
+            raise ValueError(f"Expected {expected_runs} complete runs; resume the coding cell first.")
         for part in results.partition_by("run"):
             if part.height != len(expected) or set(part["document_id"].to_list()) != expected:
                 raise ValueError("Each run must contain all input document IDs exactly once.")
         return results
 
-    def code(self, datasets, version=None, model="A", preview=True):
+    def code(self, datasets, version=None, model="A", preview=True, mode=None, note=None):
         """Preview or submit coding; existing streaming runs and batches are reused."""
         folder = self._coding_dir(datasets, version, model)
+        if mode is None:
+            task_path = folder / "task.json"
+            mode = json.loads(task_path.read_text(encoding="utf-8"))["mode"] if task_path.exists() else self.mode
+        if mode not in {"stream", "batch"}:
+            raise ValueError("mode must be 'stream' or 'batch'.")
         documents = self._documents(datasets)
         book = None if version is None else self._book(version)
         prompt = self._prompt("initial_classification.txt" if book is None else "classify_w_codebook.txt")
         self._record(folder, {
             "kind": "coding", "datasets": self._datasets(datasets), "version": version,
-            "model": model, "model_id": self.models[model], "mode": self.mode,
+            "model": model, "model_id": self.models[model], "mode": mode,
             "n_runs": self.n_runs, "provider": self.provider,
             "documents": documents.to_dicts(), "prompt": prompt, "codebook": book,
         })
+        if note is not None:
+            (folder / "note.txt").write_text(note, encoding="utf-8")
         run_classifications(documents, prompt, self.models[model], self.api_key,
-                                   folder, mode=self.mode, n_runs=self.n_runs,
+                                   folder, mode=mode, n_runs=self.n_runs,
                                    dry_run=preview, codebook=book, provider=self.provider)
         print(f"{'Preview ready' if preview else 'Submitted/resumed'}: model {model}, datasets {self._datasets(datasets)}, "
-              f"{'no codebook' if version is None else f'version {version}'}, {self.n_runs} runs ({self.mode}).")
+              f"{'no codebook' if version is None else f'version {version}'}, {self.n_runs} runs ({mode}).",
+              folder)
 
     def review(self, datasets, version=None, model="A"):
         """Show alpha and agreement; persist document order for later reviews."""
@@ -126,75 +151,77 @@ class Experiment:
 
     def _summary(self, datasets, version, model):
         folder = self._coding_dir(datasets, version, model)
-        results = self._results(folder)
-        if results is None:
-            raise ValueError("Coding batch is pending. Review it again when completed.")
-        return codebook_input(load_documents(folder / "documents.csv"), results)
+        numbers = self._datasets(datasets)
+        if len(numbers) == 1 or (folder / "batch.json").exists() or list(folder.glob("run_*.json")):
+            folders = [folder]
+        else:
+            folders = [self._coding_dir(number, version, model) for number in numbers]
+        summaries = []
+        for saved_folder in folders:
+            results = self._results(saved_folder)
+            if results is None:
+                raise ValueError("Coding batch is pending. Review it again when completed.")
+            summaries.append(codebook_input(load_documents(saved_folder / "documents.csv"), results))
+        summary = pl.concat(summaries)
+        if summary["document_id"].n_unique() != summary.height:
+            raise ValueError("Document IDs must be unique across the selected datasets.")
+        return summary
 
-    def generate(self, datasets=0, version=1, preview=True):
+    def generate_codebook_0(self, datasets=0, version=0, preview=True):
         """Generate the first codebook from model A's coding without a codebook."""
-        self._request_book(datasets, version, None, preview, False, False)
+        return self._request_book(datasets, version, None, preview)
 
     def revise(self, datasets, source_version, version, preview=True,
-               additions_only=False, compare_models=False):
-        """Create a new numbered version; optionally use both models' coding summaries."""
+               suffix=None, note=None, crossmodel=False, prompt_file=None):
+        """Create a new numbered version; use model A's coding summaries."""
         if version <= source_version:
             raise ValueError("The new version must be greater than source_version.")
-        self._request_book(datasets, version, source_version, preview, additions_only, compare_models)
+        return self._request_book(datasets, version, source_version, preview, suffix, note, crossmodel, prompt_file)
 
-    def _request_book(self, datasets, version, source_version, preview, additions_only, both_models):
-        folder = self._version_dir(version)
+    def _request_book(self, datasets, version, source_version, preview, suffix=None, note=None,
+                      crossmodel=False, prompt_file=None):
+        folder = self._version_dir(version, suffix)
         summary = self._summary(datasets, source_version, "A")
+        if crossmodel:
+            other = self._summary(datasets, source_version, "B")
+            if not summary.select("document_id", "text").sort("document_id").equals(
+                    other.select("document_id", "text").sort("document_id")):
+                raise ValueError("Models A and B must have coded the same documents and text.")
+            fields = ["percent_1", "explanation_1", "explanation_0"]
+            summary = summary.rename({field: field + "_A" for field in fields})
+            other = other.drop("text").rename({field: field + "_B" for field in fields})
+            summary = summary.join(other, on="document_id").select(
+                "document_id", "text", "percent_1_A", "explanation_1_A", "explanation_0_A",
+                "percent_1_B", "explanation_1_B", "explanation_0_B",
+            )
         book = None if source_version is None else self._book(source_version)
-        prompt = self._prompt("generate_A00.txt" if book is None else "improve_codebook.txt")
-        if additions_only:
-            prompt += "\nPreserve the definition and all existing rule numbers and text verbatim. Append new rules only."
-        if both_models:
-            other = self._summary(datasets, source_version, "B").drop("text")
-            summary = summary.join(other, on="document_id", suffix="_B")
-            prompt += "\nResolve disagreement between models A and B. Unsuffixed coding summaries are A; _B fields are B."
+        if prompt_file is None:
+            prompt_file = ("improve_codebook crossmodel.txt" if crossmodel else
+                           "generate_A00.txt" if book is None else "improve_codebook.txt")
+        prompt = self._prompt(prompt_file)
         self._record(folder, {
             "kind": "codebook", "datasets": self._datasets(datasets), "version": version,
             "source_version": source_version, "model_id": self.models["A"],
-            "mode": self.mode, "provider": self.provider, "prompt": prompt,
+            "mode": "stream", "provider": self.provider, "prompt": prompt,
             "summary": summary.to_dicts(), "previous_codebook": book,
         })
-        if (folder / "batch.json").exists() or (folder / "codebook_response.json").exists():
-            print(f"Version {version} already submitted. Run experiment.show_codebook({version}).")
-            return
+        if note is not None:
+            (folder / "note.txt").write_text(note, encoding="utf-8")
+        if (folder / "codebook_response.json").exists():
+            return save_codebook(folder)
         kwargs = dict(coded_documents=summary, prompt=prompt, model=self.models["A"],
                       api_key=self.api_key, out_dir=folder, dry_run=preview,
-                      mode=self.mode, provider=self.provider)
+                      provider=self.provider)
         if book is None:
-            generate_codebook(**kwargs)
+            path = generate_codebook(**kwargs)
         else:
-            revise_codebook(**kwargs, previous_codebook=book)
-        print(f"{'Preview ready' if preview else 'Submitted'}: codebook version {version} ({self.mode}).")
+            path = revise_codebook(**kwargs, previous_codebook=book)
+        print(f"{'Preview ready' if preview else 'Saved'}: codebook version {version} (stream).")
+        return path
 
     def show_codebook(self, version):
-        """Display rules and documentation, and return the saved codebook Path."""
-        folder = self._version_dir(version)
-        if not self._ready(folder):
-            return
-        batch_path = folder / "batch.json"
-        response_path = folder / "codebook_response.json"
-        if batch_path.exists():
-            response = json.loads(batch_path.read_text())["results"][0]["response"]["body"]
-        elif response_path.exists():
-            response = json.loads(response_path.read_text())
-        else:
-            raise ValueError("No response yet. Submit the codebook request with preview=False first.")
-        data = json.loads(response["choices"][0]["message"]["content"])
-        book = data.get("codebook", data)
-        path = self.codebook_path(version)
-        path.write_text(json.dumps(book, indent=2, ensure_ascii=False), encoding="utf-8")
-        print(f"CODEBOOK — version {version}\n\n{book['definition']}\n")
-        for rule in book["decision_rules"]:
-            status = f" [{rule['status']}]" if "status" in rule else ""
-            print(f"{rule['number']}.{status} {rule['rule']}\n")
-        if "documentation" in data:
-            (folder / "documentation.json").write_text(json.dumps(data["documentation"], indent=2), encoding="utf-8")
-        return path
+        """Return the saved path; also extract responses saved by older code."""
+        return save_codebook(self._version_dir(version))
 
     def compare(self, datasets, version):
         folders = [self._coding_dir(datasets, version, model) for model in ["A", "B"]]
@@ -222,7 +249,7 @@ class Experiment:
                 state = "completed"
             else:
                 count = len(list(folder.glob("run_[0-9][0-9].json")))
-                state = "completed" if count == task.get("n_runs") else f"{count} runs saved" if count else "preview"
+                state = "completed" if count == task.get("n_runs", 0) - len(_excluded_runs(folder)) else f"{count} runs saved" if count else "preview"
             if (folder / "accepted.json").exists():
                 state = "accepted"
             rows.append({"task": str(folder.relative_to(self.root)), "state": state})
@@ -269,7 +296,6 @@ def build_classification_request(documents, prompt, codebook=None):
         "required": ["classifications"],
         "additionalProperties": False,
     }
-    prompt += f"\n\nThere are {len(documents)} documents in this request."
     return {
         "messages": [
             {"role": "system", "content": prompt},
@@ -292,39 +318,65 @@ def parse_classifications(response):
             {**values, "document_id": document_id}
             for document_id, values in classifications.items()
         ]
-    return pl.DataFrame(classifications)
+    table = pl.DataFrame(classifications)
+    return table.select(sorted(table.columns))
 
 
-def submit_classification_batch(documents, prompt, model, api_key, out_dir, n_runs=25, dry_run=False, codebook=None):
-    """Write the request; optionally submit it, reusing a saved batch ID."""
-    out_dir = Path(out_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-    body = build_classification_request(documents, prompt, codebook)
-    payload = {
-        "endpoint": "/v1/chat/completions",
-        "model": model,
-        "completion_window": "24h",
-        "requests": [
-            {"custom_id": f"run_{run:02d}", "body": body}
-            for run in range(1, n_runs + 1)
-        ],
-    }
-    request_path = out_dir / "batch_request.json"
-    batch_path = out_dir / "batch.json"
-    if not dry_run and batch_path.exists():
-        return json.loads(batch_path.read_text(encoding="utf-8"))
-    request_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    if dry_run:
-        return payload
-    response = requests.post(
-        "https://openrouter.ai/api/v1/batches",
-        headers={"Authorization": f"Bearer {api_key}"},
-        json=payload, timeout=120,
-    )
-    response.raise_for_status()
-    batch = response.json()
-    batch_path.write_text(json.dumps(batch, indent=2), encoding="utf-8")
-    return batch
+def _excluded_runs(folder):
+    path = Path(folder) / "excluded_runs.json"
+    return set(json.loads(path.read_text(encoding="utf-8"))) if path.exists() else set()
+
+
+def send_requests(payload, api_key, folder, names, mode, preview, request_file):
+    """Save a preview, or send requests and reuse any answers already saved."""
+    folder = Path(folder)
+    folder.mkdir(parents=True, exist_ok=True)
+    payload["stream"] = mode == "stream"
+    if mode == "batch":
+        payload = {
+            "endpoint": "/v1/chat/completions",
+            "model": payload["model"],
+            "completion_window": "24h",
+            "requests": [{"custom_id": name, "body": payload} for name in names],
+        }
+    (folder / request_file).write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    if preview:
+        return
+    if mode == "batch":
+        if (folder / "batch.json").exists():
+            return
+        response = requests.post(
+            "https://openrouter.ai/api/v1/batches",
+            headers={"Authorization": f"Bearer {api_key}"}, json=payload, timeout=120,
+        )
+        response.raise_for_status()
+        (folder / "batch.json").write_text(json.dumps(response.json(), indent=2), encoding="utf-8")
+        return
+    with OpenRouter(api_key=api_key) as client:
+        for number, name in enumerate(names, start=1):
+            if name in _excluded_runs(folder):
+                continue
+            filename = "codebook_response.json" if name == "codebook" else f"{name}.json"
+            path = folder / filename
+            if path.exists():
+                continue
+            for attempt in range(4):
+                response = send_stream(client, payload)
+                try:
+                    json.loads(response["choices"][0]["message"]["content"])
+                    break
+                except json.JSONDecodeError as error:
+                    if attempt < 3:
+                        print(f"{name}: invalid JSON; retry {attempt + 1}/3.")
+                        continue
+                    reason = response["choices"][0].get("finish_reason", "unknown")
+                    raise ValueError(
+                        f"{name} returned invalid JSON after 4 attempts (finish reason: {reason}). "
+                        "Rerun the cell to retry."
+                    ) from error
+            path.write_text(json.dumps(response, indent=2, ensure_ascii=False), encoding="utf-8")
+            if name != "codebook":
+                print(f"Run {number}/{len(names)}")
 
 
 def retrieve_classification_batch(api_key, out_dir):
@@ -361,26 +413,6 @@ def send_stream(client, payload):
     return output
 
 
-def stream_classification_runs(documents, prompt, model, api_key, out_dir, n_runs=25, dry_run=False, codebook=None, provider=None):
-    """Send each run once, saving responses and skipping runs already saved."""
-    out_dir = Path(out_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-    payload = {"model": model, **build_classification_request(documents, prompt, codebook), "stream": True}
-    if provider:
-        payload["provider"] = {"only": [provider]}
-    (out_dir / "stream_request.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    if dry_run:
-        return payload
-    with OpenRouter(api_key=api_key) as client:
-        for run in range(1, n_runs + 1):
-            path = out_dir / f"run_{run:02d}.json"
-            if path.exists():
-                continue
-            output = send_stream(client, payload)
-            path.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
-            print(f"Run {run}/{n_runs}")
-
-
 def parse_classification_runs(out_dir, mode=None):
     """Parse saved batch or streaming responses together and save a CSV."""
     out_dir = Path(out_dir)
@@ -388,12 +420,29 @@ def parse_classification_runs(out_dir, mode=None):
     runs = []
     if mode == "batch":
         batch = json.loads((out_dir / "batch.json").read_text(encoding="utf-8"))
-        for item in batch["results"]:
-            run = int(item["custom_id"].split("_")[1])
-            classifications = parse_classifications(item["response"]["body"])
-            runs.append(classifications.with_columns(pl.lit(run).alias("run")))
+        expected = set(load_documents(out_dir / "documents.csv")["document_id"].to_list())
+        skipped = []
+        for item in batch.get("results", []):
+            try:
+                run = int(item["custom_id"].split("_")[1])
+                classifications = parse_classifications(item["response"]["body"])
+                if (classifications.height != len(expected)
+                        or set(classifications["document_id"].to_list()) != expected
+                        or not set(classifications["label"].to_list()) <= {"0", "1"}
+                        or "explanation" not in classifications.columns):
+                    raise ValueError("Incomplete or invalid classifications")
+                runs.append(classifications.with_columns(pl.lit(run).alias("run")))
+            except (ValueError, KeyError, TypeError, pl.exceptions.PolarsError):
+                skipped.append(item.get("custom_id", "unknown"))
+        if skipped or batch.get("request_counts", {}).get("failed", 0):
+            print(f"Using {len(runs)} successful batch runs; omitted failed runs" +
+                  (f": {', '.join(skipped)}." if skipped else "."))
+        if not runs:
+            raise ValueError("No successful batch runs to review.")
     else:
         for path in sorted(out_dir.glob("run_*.json")):
+            if path.stem in _excluded_runs(out_dir):
+                continue
             if path.name.endswith(".in_progress.json"):
                 continue
             response = json.loads(path.read_text(encoding="utf-8"))
@@ -415,14 +464,14 @@ def codebook_input(documents, results):
     return documents.join(summary, on="document_id", how="left")
 
 
-def generate_codebook(coded_documents, prompt, model, api_key, out_dir, dry_run=False, mode="stream", provider=None, previous_codebook=None):
+def generate_codebook(coded_documents, prompt, model, api_key, out_dir, dry_run=False, provider=None, previous_codebook=None):
     """Preview or submit a request to generate a codebook."""
     return _request_codebook(coded_documents, prompt, model, api_key, out_dir,
-                             dry_run, mode, provider, previous_codebook)
+                             dry_run, provider, previous_codebook)
 
 
 def revise_codebook(coded_documents, prompt, model, api_key, out_dir,
-                    previous_codebook, dry_run=True, mode="stream", provider=None):
+                    previous_codebook, dry_run=True, provider=None):
     """Preview or submit a revision with rule statuses and change documentation."""
     rule_schema = {
         "type": "object",
@@ -441,7 +490,8 @@ def revise_codebook(coded_documents, prompt, model, api_key, out_dir,
                 "type": "object",
                 "properties": {
                     "definition": {"type": "string"},
-                    "decision_rules": {"type": "array", "items": rule_schema},
+                    "decision_rules": {"type": "array", "items": rule_schema,
+                                       "minItems": 1},
                 },
                 "required": ["definition", "decision_rules"],
                 "additionalProperties": False,
@@ -462,20 +512,12 @@ def revise_codebook(coded_documents, prompt, model, api_key, out_dir,
         "required": ["codebook", "documentation"],
         "additionalProperties": False,
     }
-    prompt += (
-        "\n\nReturn the full codebook and a separate documentation array. "
-        "Preserve existing rule numbers and append new rules after the highest existing number. "
-        "Mark each rule unchanged if its text is identical, revised if its text changed, "
-        "or created if it is new. Include exactly one documentation entry for each revised "
-        "or created rule, using that rule's number and describing the change and rationale. "
-        "Do not include unchanged rules in documentation."
-    )
     return _request_codebook(coded_documents, prompt, model, api_key, out_dir,
-                             dry_run, mode, provider, previous_codebook, schema)
+                             dry_run, provider, previous_codebook, schema)
 
 
 def _request_codebook(coded_documents, prompt, model, api_key, out_dir, dry_run=False,
-                      mode="stream", provider=None, previous_codebook=None, response_schema=None):
+                      provider=None, previous_codebook=None, response_schema=None):
     """Preview or send one codebook request and save the raw response."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -497,6 +539,7 @@ def _request_codebook(coded_documents, prompt, model, api_key, out_dir, dry_run=
                         "definition": {"type": "string"},
                         "decision_rules": {
                             "type": "array",
+                            "minItems": 1,
                             "items": {
                                 "type": "object",
                                 "properties": {
@@ -519,44 +562,36 @@ def _request_codebook(coded_documents, prompt, model, api_key, out_dir, dry_run=
         payload["response_format"]["json_schema"].update(
             name="codebook_revision", schema=response_schema,
         )
-    if mode == "stream" and provider:
+    if provider:
         payload["provider"] = {"only": [provider]}
-    payload["stream"] = mode == "stream"
-    if mode == "batch":
-        payload = {
-            "endpoint": "/v1/chat/completions", "model": model,
-            "completion_window": "24h",
-            "requests": [{"custom_id": "codebook", "body": payload}],
-        }
-    (out_dir / "codebook_request.json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    if dry_run:
-        return payload
-    if mode == "batch":
-        response = requests.post(
-            "https://openrouter.ai/api/v1/batches",
-            headers={"Authorization": f"Bearer {api_key}"}, json=payload, timeout=120,
-        )
-        response.raise_for_status()
-        response = response.json()
-        filename = "batch.json"
-    else:
-        with OpenRouter(api_key=api_key) as client:
-            response = send_stream(client, payload)
-        filename = "codebook_response.json"
-    (out_dir / filename).write_text(json.dumps(response, indent=2, ensure_ascii=False), encoding="utf-8")
-    return response
+    send_requests(payload, api_key, out_dir, ["codebook"], "stream", dry_run, "codebook_request.json")
+    if not dry_run:
+        return save_codebook(out_dir)
+
+
+def save_codebook(folder):
+    """Extract a streamed response into the codebook and optional revision notes."""
+    folder = Path(folder)
+    response = json.loads((folder / "codebook_response.json").read_text(encoding="utf-8"))
+    data = json.loads(response["choices"][0]["message"]["content"])
+    path = folder / "codebook.json"
+    path.write_text(json.dumps(data.get("codebook", data), indent=2, ensure_ascii=False), encoding="utf-8")
+    if "documentation" in data:
+        (folder / "documentation.json").write_text(json.dumps(data["documentation"], indent=2, ensure_ascii=False), encoding="utf-8")
+    return path
 
 
 def run_classifications(documents, prompt, model, api_key, out_dir, mode="stream", n_runs=25, dry_run=True, codebook=None, provider=None):
-    """Save inputs and preview or run classifications in the selected mode."""
+    """Save the input documents and send the repeated classification request."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     documents.write_csv(out_dir / "documents.csv")
-    settings = {"model": model, "mode": mode, "n_runs": n_runs, "provider": provider, "prompt": prompt, "codebook": codebook}
-    (out_dir / "settings.json").write_text(json.dumps(settings, indent=2, ensure_ascii=False), encoding="utf-8")
-    if mode == "batch":
-        return submit_classification_batch(documents, prompt, model, api_key, out_dir, n_runs, dry_run, codebook)
-    return stream_classification_runs(documents, prompt, model, api_key, out_dir, n_runs, dry_run, codebook, provider)
+    payload = {"model": model, **build_classification_request(documents, prompt, codebook)}
+    if provider:
+        payload["provider"] = {"only": [provider]}
+    names = [f"run_{run:02d}" for run in range(1, n_runs + 1)]
+    request_file = "batch_request.json" if mode == "batch" else "stream_request.json"
+    send_requests(payload, api_key, out_dir, names, mode, dry_run, request_file)
 
 
 def show_agreement(results, document_order=None):
@@ -570,7 +605,7 @@ def show_agreement(results, document_order=None):
     ).drop("document_id").to_numpy().T
     alpha = krippendorff.alpha(
         reliability_data=ratings, level_of_measurement="nominal", value_domain=[0, 1],
-    ) if results["label"].n_unique() > 1 else float("nan")
+    ) if ratings.shape[0] > 1 and results["label"].n_unique() > 1 else float("nan")
     agreement = results.group_by("document_id").agg(
         (pl.col("label") == "1").mean().alias("p_1"),
     ).with_columns(
@@ -594,13 +629,12 @@ def show_agreement(results, document_order=None):
     return document_order
 
 
-def compare_models(a_dir, b_dir, out_dir=None, n_runs=25):
+def compare_models(a_dir, b_dir, n_runs=25):
     """Compare label-1 percentages and nominal alpha for matching A/B run IDs.
 
     Use matching documents and complete runs in each model.
     Undefined correlation or any undefined run alpha is reported as NaN.
-    Print metrics and display the plot without writing files. out_dir is ignored
-    and retained only for compatibility with earlier notebook calls.
+    Print metrics and display the plot without writing files.
     """
     frames = []
     for name, directory in [("A", a_dir), ("B", b_dir)]:
@@ -622,7 +656,7 @@ def compare_models(a_dir, b_dir, out_dir=None, n_runs=25):
         b.rename({"label": "label_B"}), on=["document_id", "run"],
     ).sort("run", "document_id")
     alphas = []
-    for run in sorted(a["run"].unique().to_list()):
+    for run in sorted(paired["run"].unique().to_list()):
         ratings = paired.filter(pl.col("run") == run).select(
             pl.col("label_A").cast(pl.Float64), pl.col("label_B").cast(pl.Float64),
         ).to_numpy().T
@@ -630,28 +664,51 @@ def compare_models(a_dir, b_dir, out_dir=None, n_runs=25):
             reliability_data=ratings, level_of_measurement="nominal", value_domain=[0, 1],
         ) if len(set(ratings.flatten())) > 1 else float("nan")
         alphas.append({"run": run, "alpha": alpha})
-    run_alphas = pl.DataFrame(alphas)
+    run_alphas = pl.DataFrame(alphas, schema={"run": pl.Int64, "alpha": pl.Float64})
     mean_difference = comparison["difference_pp"].mean()
     correlation = comparison.select(pl.corr("percent_1_A", "percent_1_B")).item()
     mean_alpha = run_alphas["alpha"].mean()
+    sd_alpha = run_alphas["alpha"].std(ddof=1) if run_alphas.height > 1 else float("nan")
     metrics = pl.DataFrame({
-        "n_documents": [comparison.height], "n_runs": [n_runs],
+        "n_documents": [comparison.height],
+        "n_runs_A": [a["run"].n_unique()], "n_runs_B": [b["run"].n_unique()],
+        "n_paired_runs": [run_alphas.height],
         "mean_absolute_difference_pp": [mean_difference],
         "pearson_correlation": [correlation],
         "mean_pairwise_alpha": [mean_alpha],
+        "sd_pairwise_alpha": [sd_alpha],
     })
-    print(f"Mean difference in label-1 proportions: {mean_difference:.4f}")
+    print(f"Mean abs difference in label-1 proportions: {mean_difference:.4f}")
     print(f"Model correlation: {correlation:.4f}")
     print(f"Mean paired-run alpha: {mean_alpha:.4f}")
+    print(f"SD of paired-run alpha: {sd_alpha:.4f}")
+    print("Paired-run alphas:")
+    for run, alpha in run_alphas.iter_rows():
+        print(f"Run {run:02d}: {alpha:.4f}")
     fig, ax = plt.subplots(figsize=(6, 6))
     rng = np.random.default_rng(0)
     x = comparison["percent_1_A"].to_numpy() + rng.uniform(-0.005, 0.005, comparison.height)
     y = comparison["percent_1_B"].to_numpy() + rng.uniform(-0.005, 0.005, comparison.height)
     ax.scatter(x, y, color="black", s=20, alpha=0.7)
     ax.plot([0, 1], [0, 1], linestyle="--", color="0.5")
-    ax.set(xlabel=f"Proportion of {n_runs} A runs coded 1", ylabel=f"Proportion of {n_runs} B runs coded 1",
+    ax.set(xlabel=f"Proportion of {a['run'].n_unique()} A runs coded 1", ylabel=f"Proportion of {b['run'].n_unique()} B runs coded 1",
            xlim=(-0.02, 1.02), ylim=(-0.02, 1.02))
     ax.set_aspect("equal", adjustable="box")
+    fig.tight_layout()
+    plt.show()
+    ordered = comparison.sort("percent_1_A", "document_id", descending=[True, False])
+    positions = list(range(ordered.height))
+    fig, ax = plt.subplots(figsize=(12, 5))
+    ax.scatter(positions, ordered["percent_1_A"].to_numpy() * 100,
+               color="tab:blue", label="Model A", s=20)
+    ax.scatter(positions, ordered["percent_1_B"].to_numpy() * 100,
+               color="tab:orange", label="Model B", marker="x", s=25)
+    ax.set_xticks(positions, ordered["document_id"].to_list(), rotation=90, fontsize=6)
+    ax.set(xlabel="Document ID (ordered by model A, highest to lowest)",
+           ylabel="Runs coded 1 (%)", ylim=(-2, 102))
+    ax.set_axisbelow(True)
+    ax.grid(axis="y", color="0.9", linewidth=0.5)
+    ax.legend()
     fig.tight_layout()
     plt.show()
     return comparison, metrics
